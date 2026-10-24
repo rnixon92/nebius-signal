@@ -1,6 +1,6 @@
 {
  "provider": "fireworks",
- "updatedAt": "2026-10-24T11:40:17.311Z",
+ "updatedAt": "2026-10-24T19:57:17.816Z",
  "days": {
   "2026-07-27": {
    "z-ai/glm-5.2-20260616": 26477715430,
@@ -965,14 +965,14 @@
    "fireworks/ember-1-20260923": 603779256
   },
   "2026-10-24": {
-   "deepseek/deepseek-v4.1-flash-20261017": 209743196518,
-   "deepseek/deepseek-v4.1-flash-20260910": 52455747095,
-   "z-ai/glm-5.3-flash-20260826": 32089580162,
-   "moonshotai/kimi-k3-20260715": 24646772000,
-   "z-ai/glm-5.3-20260816": 12103641196,
-   "qwen/qwen3-reranker-8b": 325263814,
-   "fireworks/ember-1-20260923": 252374456,
-   "meta/muse-spark-open-20261015": 56063868
+   "deepseek/deepseek-v4.1-flash-20261017": 332154102375,
+   "deepseek/deepseek-v4.1-flash-20260910": 97598244487,
+   "z-ai/glm-5.3-flash-20260826": 63711348617,
+   "z-ai/glm-5.3-20260816": 33706225487,
+   "moonshotai/kimi-k3-20260715": 32397833735,
+   "qwen/qwen3-reranker-8b": 553749902,
+   "fireworks/ember-1-20260923": 303181892,
+   "meta/muse-spark-open-20261015": 78979930
   }
  }
 }

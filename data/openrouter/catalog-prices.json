@@ -38,8 +38,8 @@
  "~deepseek/deepseek-v4-flash-latest": {
   "name": "~deepseek/deepseek-v4-flash-latest",
   "input": 0.0422,
-  "output": 0.1694,
-  "cacheRead": 0.028
+  "output": 0.1763,
+  "cacheRead": 0.027
  },
  "~google/gemini-flash-latest": {
   "name": "~google/gemini-flash-latest",
@@ -103,8 +103,8 @@
  },
  "~z-ai/glm-flash-latest": {
   "name": "~z-ai/glm-flash-latest",
-  "input": 0.0393,
-  "output": 0.1028,
+  "input": 0.0507,
+  "output": 0.0702,
   "cacheRead": 0.03
  },
  "~z-ai/glm-latest": {
@@ -421,9 +421,9 @@
  },
  "deepseek/deepseek-v4-pro-20260423": {
   "name": "deepseek/deepseek-v4-pro",
-  "input": 0.307284,
-  "output": 0.614568,
-  "cacheRead": 0.025607
+  "input": 0.2088,
+  "output": 0.4176,
+  "cacheRead": 0.0174
  },
  "deepseek/deepseek-v4-pro-20260813": {
   "name": "deepseek/deepseek-v4-pro-0813",
@@ -1157,12 +1157,6 @@
   "output": -1000000,
   "cacheRead": null
  },
- "openai/gpt-3.5-turbo": {
-  "name": "openai/gpt-3.5-turbo",
-  "input": 0.5,
-  "output": 1.5,
-  "cacheRead": null
- },
  "openai/gpt-3.5-turbo-0613": {
   "name": "openai/gpt-3.5-turbo-0613",
   "input": 1,
@@ -1173,12 +1167,6 @@
   "name": "openai/gpt-3.5-turbo-16k",
   "input": 3,
   "output": 4,
-  "cacheRead": null
- },
- "openai/gpt-3.5-turbo-instruct": {
-  "name": "openai/gpt-3.5-turbo-instruct",
-  "input": 1.5,
-  "output": 2,
   "cacheRead": null
  },
  "openai/gpt-4": {
@@ -2023,9 +2011,9 @@
  },
  "tencent/hy3-20260706": {
   "name": "tencent/hy3",
-  "input": 0.132,
-  "output": 0.528,
-  "cacheRead": 0.033
+  "input": 0.0825,
+  "output": 0.33,
+  "cacheRead": 0.020625
  },
  "tencent/hy3-preview-20260421": {
   "name": "tencent/hy3-preview",
@@ -2035,9 +2023,9 @@
  },
  "tencent/hy4-preview-20260827": {
   "name": "tencent/hy4-preview",
-  "input": 0.834,
-  "output": 2.501,
-  "cacheRead": 0.042
+  "input": 0.7506,
+  "output": 2.2509,
+  "cacheRead": 0.0378
  },
  "thedrummer/cydonia-24b-v4.1": {
   "name": "thedrummer/cydonia-24b-v4.1",
@@ -2269,9 +2257,9 @@
  },
  "z-ai/glm-5.3-20260816": {
   "name": "z-ai/glm-5.3",
-  "input": 0.079,
-  "output": 1.4,
-  "cacheRead": 0.078
+  "input": 0.0908,
+  "output": 1.61,
+  "cacheRead": 0.0897
  },
  "z-ai/glm-5.3-flash-20260826": {
   "name": "z-ai/glm-5.3-flash",
