@@ -1,5 +1,14 @@
 [
  {
+  "id": "spot-cap-sku-e00k58wq19wjszct65fwm-2026-10-24",
+  "date": "2026-10-24",
+  "source": "gpu-spot",
+  "severity": "medium",
+  "title": "B200 spot near its cap in me-west1: $8.19 vs $8.5 on-demand",
+  "detail": "96% of on-demand. Spare capacity is almost gone.",
+  "url": "https://nebius.com/spot-prices"
+ },
+ {
   "id": "news-nebius launches ai data centre in paris as part of 1b european investment plan",
   "date": "2026-10-24",
   "source": "news",

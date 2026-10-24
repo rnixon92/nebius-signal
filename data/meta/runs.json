@@ -7,9 +7,9 @@
  },
  "gpu-spot": {
   "ok": true,
-  "lastAttempt": "2026-10-24T14:00:52.308Z",
-  "lastSuccess": "2026-10-24T14:00:52.308Z",
-  "summary": "12 SKUs listed; 12 series, 8617 hourly points"
+  "lastAttempt": "2026-10-24T17:26:31.471Z",
+  "lastSuccess": "2026-10-24T17:26:31.471Z",
+  "summary": "12 SKUs listed; 12 series, 8628 hourly points"
  },
  "openrouter": {
   "ok": true,
@@ -31,8 +31,8 @@
  },
  "sec": {
   "ok": true,
-  "lastAttempt": "2026-10-24T14:00:54.419Z",
-  "lastSuccess": "2026-10-24T14:00:54.419Z",
+  "lastAttempt": "2026-10-24T17:26:33.483Z",
+  "lastSuccess": "2026-10-24T17:26:33.483Z",
   "summary": "167 filings since 2025-01-01 (0 parsed this run)"
  },
  "jobs": {
@@ -43,21 +43,21 @@
  },
  "stock": {
   "ok": true,
-  "lastAttempt": "2026-10-24T14:00:54.692Z",
-  "lastSuccess": "2026-10-24T14:00:54.692Z",
+  "lastAttempt": "2026-10-24T17:26:33.664Z",
+  "lastSuccess": "2026-10-24T17:26:33.664Z",
   "summary": "501 closes, last 2026-10-23 $158.74"
  },
  "regions": {
   "ok": true,
-  "lastAttempt": "2026-10-24T14:00:52.640Z",
-  "lastSuccess": "2026-10-24T14:00:52.640Z",
+  "lastAttempt": "2026-10-24T17:26:31.812Z",
+  "lastSuccess": "2026-10-24T17:26:31.812Z",
   "summary": "10 regions, 6 GPU platforms"
  },
  "news": {
   "ok": true,
-  "lastAttempt": "2026-10-24T14:00:54.169Z",
-  "lastSuccess": "2026-10-24T14:00:54.169Z",
-  "summary": "366 headlines fetched; 349 kept, 139 matched to sites"
+  "lastAttempt": "2026-10-24T17:26:33.381Z",
+  "lastSuccess": "2026-10-24T17:26:33.381Z",
+  "summary": "327 headlines fetched; 352 kept, 140 matched to sites"
  },
  "epoch": {
   "ok": true,
