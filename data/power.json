@@ -140,7 +140,7 @@
    "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925110025/tm2530771-1_424b5.htm"
   },
   {
-   "customer": "Meta",
+   "customer": "Meta (first agreement)",
    "signed": "2025-11-11",
    "tcv": 2900,
    "tcvMax": null,
@@ -148,6 +148,16 @@
    "site": "Two dedicated GPU clusters",
    "status": "Delivering",
    "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925110025/tm2530771-1_424b5.htm"
+  },
+  {
+   "customer": "Meta (second agreement)",
+   "signed": "2026-03-16",
+   "tcv": 12000,
+   "tcvMax": 27000,
+   "years": 5,
+   "site": "Multiple locations incl. Lappeenranta; NVIDIA Vera Rubin",
+   "status": "Delivery from early 2027. $12B dedicated; Meta to buy up to $15B more of capacity third parties don't take",
+   "source": "https://www.businesswire.com/news/home/20260316469367/en/Nebius-Signs-New-AI-Infrastructure-Agreement-with-Meta"
   },
   {
    "customer": "Four Q2 2026 AI cloud deals",

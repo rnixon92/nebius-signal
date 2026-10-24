@@ -4,6 +4,7 @@ import type { Dashboard } from "../../shared/dashboard.ts";
 import { CHART_MARGIN, axisY, grid, type TipProps } from "../components/chart.tsx";
 import { TimeSeriesCard } from "../components/TimeSeriesCard.tsx";
 import type { Range } from "../lib/range.ts";
+import { ValuationPanel } from "./Valuation.tsx";
 
 const FUNCTION_ORDER = ["Engineering & product", "Sales & go-to-market", "Data center & power", "G&A & other"];
 import { Card, CardTitle, ChartFrame, DataTable, EmptyNote, ExtLink, Pill, Section, Segmented, Stat, TooltipCard } from "../components/ui.tsx";
@@ -276,11 +277,11 @@ export function FinancialsSection({ d, p }: { d: Dashboard; p: Palette }) {
     <Section
       id="financials"
       kicker="Reported"
-      title="Financials and guidance"
+      title="Financials and valuation"
       intro={
         <>
-          Quarterly revenue from Nebius's results, kept by hand in <code className="rounded bg-surface-2 px-1 text-[12px]">data/fundamentals.json</code>. The faded bars show
-          the average revenue each remaining quarter must deliver to hit full-year guidance.
+          What you're paying for the AI cloud once the ClickHouse and Toloka stakes, Avride and TripleTen are stripped out, how far a capacity build-out could take it, and the
+          reported results behind it. Figures are kept by hand in <code className="rounded bg-surface-2 px-1 text-[12px]">data/fundamentals.json</code> from Nebius's filings.
         </>
       }
     >
@@ -292,6 +293,9 @@ export function FinancialsSection({ d, p }: { d: Dashboard; p: Palette }) {
           </p>
         </Card>
       )}
+      <h2 className="mt-2 text-lg font-semibold tracking-tight">Valuation</h2>
+      <ValuationPanel d={d} p={p} />
+      <h2 className="mt-6 text-lg font-semibold tracking-tight">Results and guidance</h2>
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-5">
         <div className="lg:col-span-3">
           <ChartFrame

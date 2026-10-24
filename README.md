@@ -23,13 +23,13 @@ npm run dev         # dashboard at http://localhost:5173
 | `nebiusatlas.com` | Community-tracked customer list | Demand breadth (dates are discovery dates) |
 | SEC EDGAR | 6-K headlines, Form 4 insider trades, Form 144 planned sales | Material news and insider behaviour |
 | Greenhouse job board | Open roles by function and region | Build-out signal; new data-center hiring locations alert |
-| Yahoo Finance chart API | NBIS daily close | Price context |
+| Yahoo Finance chart API | NBIS daily close, plus CoreWeave, Nvidia, Oracle and SMH | Price context and relative performance |
 | `docs.nebius.com/overview/regions` | Live regions and the GPU types in each | A new region or GPU type = capacity going live (high alert) |
 | Epoch AI Frontier Data Centers (CC BY) | Satellite-estimated IT power over time at the Nebius sites it tracks (Vineland, Mäntsälä) | An independent read on how much capacity is actually live between quarterly letters |
 | Google News RSS | Data-center headlines, matched to sites and tagged risk/progress | Lawsuits, halts and power milestones show up in local news first |
-| `data/sites.json` | Site registry: status, MW, region, timing (hand-maintained) | The capacity pipeline that revenue follows |
+| `data/sites.json` | Site registry: status, MW, region, dated phases marked announced or estimate (hand-maintained, from the 20-F site list and letters) | The capacity pipeline and roadmap that revenue follows |
 | `data/power.json` | Contracted / connected / active power, guidance history, revenue per MW, long-term contracts (hand-maintained from shareholder letters) | Power is the revenue driver; the SEC collector extracts power statements from each new letter and raises an alert to update this file |
-| `data/fundamentals.json` | Quarterly revenue, ARR, guidance (hand-maintained) | Update after each results 6-K; the dashboard flags when one is out |
+| `data/fundamentals.json` | Quarterly revenue, ARR, guidance, consensus, balance sheets, share counts, capital raised (hand-maintained) | Drives the nowcast and the sum-of-the-parts valuation; update after each results 6-K |
 
 ## Daily updates
 

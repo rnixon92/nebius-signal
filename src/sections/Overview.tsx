@@ -7,8 +7,50 @@ import type { Range } from "../lib/range.ts";
 import type { Palette } from "../lib/theme.ts";
 
 export function StockChart({ d, p, range }: { d: Dashboard; p: Palette; range: Range }) {
+  const [mode, setMode] = useState<"price" | "peers">("price");
   const rows = useMemo(() => d.stock.series.map(([date, close]) => ({ date, close })), [d.stock.series]);
+  // Peers merged onto NBIS trading days; each series is re-based to 100 at the start of the visible range.
+  const peerRows = useMemo(() => {
+    const maps = d.stock.peers.map((pr) => [pr.ticker, new Map(pr.series)] as const);
+    return d.stock.series.map(([date, close]) => ({ date, NBIS: close, ...Object.fromEntries(maps.map(([t, m]) => [t, m.get(date)])) }));
+  }, [d.stock]);
   if (rows.length < 2) return null;
+
+  const toggle = (
+    <Segmented
+      label="Share price view"
+      value={mode}
+      onChange={setMode}
+      options={[
+        { value: "price", label: "Price" },
+        { value: "peers", label: "vs peers" },
+      ]}
+    />
+  );
+
+  if (mode === "peers") {
+    return (
+      <TimeSeriesCard
+        title="NBIS against peers"
+        sub="Indexed to 100 at the start of the range: CoreWeave (closest listed neocloud), Nvidia, Oracle and the semiconductor sector (SMH)"
+        p={p}
+        globalRange={range}
+        rows={peerRows}
+        series={[
+          { key: "NBIS", label: "NBIS", color: p.accent },
+          ...d.stock.peers.map((pr, i) => ({ key: pr.ticker, label: `${pr.ticker} · ${pr.name}`, color: p.series[i + 1]! })),
+        ]}
+        rebase
+        format={(v) => v.toFixed(0)}
+        yDomain={["auto", "auto"]}
+        events={d.events.filter((e) => e.kind === "earnings")}
+        csvName="nbis-vs-peers-indexed"
+        height={240}
+        controls={toggle}
+        note="Change shown is the return over the visible range. CoreWeave listed in March 2025, so longer ranges start it later. Click a ticker to hide it."
+      />
+    );
+  }
   return (
     <TimeSeriesCard
       title="NBIS share price"
@@ -23,6 +65,7 @@ export function StockChart({ d, p, range }: { d: Dashboard; p: Palette; range: R
       events={d.events}
       csvName="nbis-daily-close"
       height={240}
+      controls={toggle}
     />
   );
 }

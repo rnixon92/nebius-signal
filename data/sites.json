@@ -1,25 +1,644 @@
 [
- { "id": "mantsala-1", "epoch": "Nebius Mantsala", "name": "Mäntsälä 1", "country": "Finland", "model": "Owned", "mw": 75, "status": "live", "region": "eu-north1", "keywords": ["Mäntsälä", "Mantsala"], "note": "Expansion to 75 MW completed early 2026.", "sources": ["https://nebius.com/newsroom/nebius-to-construct-310-mw-ai-factory-in-finland"] },
- { "id": "mantsala-2", "name": "Mäntsälä 2", "country": "Finland", "model": "Not disclosed", "mw": 70, "status": "planned", "expected": "2027", "region": null, "keywords": ["Mäntsälä 2"], "sources": ["https://www.datacenterdynamics.com/en/news/nebius-expands-european-presence-announces-deployment-in-estonia-and-second-data-center-in-m%C3%A4nts%C3%A4l%C3%A4-finland/"] },
- { "id": "lappeenranta", "name": "Lappeenranta", "country": "Finland", "model": "Owned", "mw": 310, "status": "construction", "expected": "2027", "region": null, "keywords": ["Lappeenranta"], "sources": ["https://nebius.com/newsroom/nebius-to-construct-310-mw-ai-factory-in-finland"] },
- { "id": "keflavik", "name": "Keflavík (Verne)", "country": "Iceland", "model": "Colocation", "mw": null, "status": "live", "region": "eu-north2", "keywords": ["Iceland", "Keflavík", "Keflavik"], "note": "Private region for existing customers.", "sources": ["https://docs.nebius.com/overview/regions"] },
- { "id": "tallinn", "name": "Tallinn (Greenergy)", "country": "Estonia", "model": "Colocation", "mw": 22, "status": "construction", "expected": "Late 2026", "region": null, "keywords": ["Estonia", "Tallinn"], "sources": ["https://www.datacenterdynamics.com/en/news/nebius-expands-european-presence-announces-deployment-in-estonia-and-second-data-center-in-m%C3%A4nts%C3%A4l%C3%A4-finland/"] },
- { "id": "paris", "name": "Paris (Equinix PA10)", "country": "France", "model": "Colocation", "mw": null, "status": "live", "region": "eu-west1", "keywords": ["Paris", "Saint-Denis"], "sources": ["https://docs.nebius.com/overview/regions"] },
- { "id": "france-2", "name": "France, second region", "country": "France", "model": "Not disclosed", "mw": null, "status": "live", "region": "eu-west2", "keywords": [], "note": "Site not publicly identified; B300 region.", "sources": ["https://docs.nebius.com/overview/regions"] },
- { "id": "bethune", "name": "Béthune (near Lille)", "country": "France", "model": "Developer-built", "mw": 240, "status": "construction", "region": null, "keywords": ["Béthune", "Bethune", "Lille", "Hauts-de-France"], "sources": ["https://www.datacenterdynamics.com/en/news/nebius-plans-240mw-data-center-in-b%C3%A9thune-france/"] },
- { "id": "madrid", "name": "Madrid (Edged Getafe)", "country": "Spain", "model": "Leased", "mw": 18, "status": "live", "region": "eu-south1", "keywords": ["Madrid", "Getafe"], "sources": ["https://northwiseproject.com/nbis-stock-data-center-analysis/"] },
- { "id": "uk-longcross", "name": "Longcross Park (Ark)", "country": "UK", "model": "Colocation", "mw": null, "status": "live", "region": "uk-south1", "keywords": ["Longcross", "Surrey"], "note": "Region mapping between the two UK regions is not disclosed.", "sources": ["https://northwiseproject.com/nbis-stock-data-center-analysis/"] },
- { "id": "uk-harlow", "name": "Harlow (Kao Data)", "country": "UK", "model": "Colocation", "mw": 22, "status": "ramping", "expected": "Early 2027 for the second building", "region": "uk-south2", "keywords": ["Harlow", "Kao Data"], "note": "Region mapping is an assumption.", "sources": ["https://northwiseproject.com/nbis-stock-data-center-analysis/"] },
- { "id": "uk-newport", "name": "Newport (Vantage CWL1)", "country": "UK", "model": "Colocation", "mw": null, "status": "contracted", "region": null, "keywords": ["Newport", "Wales", "CWL1"], "sources": ["https://northwiseproject.com/nbis-stock-data-center-analysis/"] },
- { "id": "israel-modiin", "name": "Modi'in", "country": "Israel", "model": "Not disclosed", "mw": null, "mwNote": "4,000 B200 GPUs", "itMwEstimate": 6, "itMwBasis": "~4,000 B200 GPUs at ~1.4 kW each", "status": "live", "region": "me-west1", "keywords": ["Modi'in", "Modiin"], "sources": ["https://www.marketscreener.com/news/nebius-letter-to-shareholders-shareholder-letter-q3-ce7d5fd9df8df025"] },
- { "id": "israel-beit-shemesh", "name": "Beit Shemesh (Mega Or)", "country": "Israel", "model": "Colocation", "mw": 58, "status": "ramping", "expected": "Q3 2026 to Q1 2027", "region": null, "keywords": ["Beit Shemesh"], "sources": ["https://northwiseproject.com/nbis-stock-data-center-analysis/"] },
- { "id": "israel-masmiya", "name": "Masmiya (Mega Or)", "country": "Israel", "model": "Colocation", "mw": 22, "status": "ramping", "expected": "Q3 2026", "region": null, "keywords": ["Masmiya", "Masmiyya"], "sources": ["https://northwiseproject.com/nbis-stock-data-center-analysis/"] },
- { "id": "kansas-city", "name": "Kansas City (Patmos)", "country": "US", "model": "Colocation", "mw": null, "status": "live", "region": "us-central1", "keywords": ["Kansas City"], "sources": ["https://docs.nebius.com/overview/regions"] },
- { "id": "woodbury", "name": "Woodbury, Minnesota", "country": "US", "model": "Not disclosed", "mw": null, "status": "live", "region": "us-north1", "keywords": ["Woodbury", "Minnesota"], "sources": ["https://docs.nebius.com/overview/regions"] },
- { "id": "vineland", "epoch": "Microsoft-Nebius New Jersey", "name": "Vineland, New Jersey (DataOne)", "country": "US", "model": "Build-to-suit lease", "mw": 300, "status": "ramping", "region": null, "keywords": ["Vineland", "New Jersey"], "note": "Dedicated Microsoft capacity. Satellite estimates (Epoch AI) put ~50 MW of the planned 300 MW live as of Jul 2026; Bloom Energy said the first fuel-cell power block was ready on Oct 23, 2026.", "sources": ["https://blockspace.media/insight/bloom-energy-readies-nebius-power/"] },
- { "id": "independence", "name": "Independence, Missouri", "country": "US", "model": "Owned", "mw": 800, "mwNote": "1.2 GW envelope incl. on-site generation", "status": "planned", "expected": "First phase 2028", "region": null, "keywords": ["Independence", "Little Blue Valley"], "note": "Facing litigation and council restrictions (Oct 2026).", "sources": ["https://www.datacenterdynamics.com/en/news/nebius-plans-800mw-data-center-campus-in-kansas-city-missouri/"] },
- { "id": "pennsylvania", "name": "Butler Township, Pennsylvania", "country": "US", "model": "Owned", "mw": 1200, "mwNote": "First phase 260 MW", "status": "construction", "expected": "First 260 MW by Oct 2027", "region": null, "keywords": ["Pennsylvania", "Butler Township", "Highridge"], "sources": ["https://www.datacenterdynamics.com/en/news/nebius-details-plans-for-12gw-data-center-campus-in-pennsylvania/"] },
- { "id": "birmingham", "name": "Birmingham, Alabama", "country": "US", "model": "Owned", "mw": 300, "mwNote": "Third-party estimate", "status": "construction", "expected": "Through 2027", "region": null, "keywords": ["Birmingham", "Alabama", "Oxmoor"], "note": "Lawsuit over the project; developers seeking dismissal (Oct 2026).", "sources": ["https://northwiseproject.com/nbis-stock-data-center-analysis/"] },
- { "id": "neom", "name": "NEOM Oxagon (HUMAIN / DataVolt)", "country": "Saudi Arabia", "model": "Anchor tenant (framework agreement)", "mw": 50, "mwNote": "Up to 50 MW", "status": "planned", "region": null, "keywords": ["NEOM", "Oxagon", "HUMAIN", "DataVolt"], "note": "Framework agreement announced Oct 22, 2026 for up to 50 MW in a planned giga campus.", "sources": ["https://news.google.com/rss/search?q=Nebius+NEOM"] },
- { "id": "india", "name": "India (unannounced)", "country": "India", "model": "Unknown", "mw": null, "status": "unconfirmed", "region": null, "keywords": ["Hyderabad", "Chennai", "India"], "note": "No announced site, but Nebius is hiring data-center roles in Hyderabad.", "sources": ["https://careers.nebius.com/"] }
+ {
+  "id": "mantsala-1",
+  "epoch": "Nebius Mantsala",
+  "name": "Mäntsälä 1",
+  "country": "Finland",
+  "model": "Owned",
+  "mw": 75,
+  "status": "live",
+  "region": "eu-north1",
+  "keywords": [
+   "Mäntsälä",
+   "Mantsala"
+  ],
+  "note": "Expansion to 75 MW completed early 2026.",
+  "sources": [
+   "https://nebius.com/newsroom/nebius-to-construct-310-mw-ai-factory-in-finland"
+  ],
+  "phases": [
+   {
+    "by": "2024-10-08",
+    "mw": 40,
+    "basis": "announced",
+    "note": "Satellite estimate (Epoch AI)"
+   },
+   {
+    "by": "2026-03-31",
+    "mw": 75,
+    "basis": "announced",
+    "note": "Expansion to 75 MW completed early 2026"
+   }
+  ]
+ },
+ {
+  "id": "mantsala-2",
+  "name": "Mäntsälä 2",
+  "country": "Finland",
+  "model": "Not disclosed",
+  "mw": 70,
+  "status": "planned",
+  "expected": "2027",
+  "region": null,
+  "keywords": [
+   "Mäntsälä 2"
+  ],
+  "sources": [
+   "https://www.datacenterdynamics.com/en/news/nebius-expands-european-presence-announces-deployment-in-estonia-and-second-data-center-in-m%C3%A4nts%C3%A4l%C3%A4-finland/"
+  ],
+  "phases": [
+   {
+    "by": "2027-12-31",
+    "mw": 70,
+    "basis": "estimate",
+    "note": "Announced as 'capacity from 2027'; placed at end-2027"
+   }
+  ]
+ },
+ {
+  "id": "lappeenranta",
+  "name": "Lappeenranta",
+  "country": "Finland",
+  "model": "Owned",
+  "mw": 310,
+  "status": "construction",
+  "expected": "2027",
+  "region": null,
+  "keywords": [
+   "Lappeenranta"
+  ],
+  "sources": [
+   "https://nebius.com/newsroom/nebius-to-construct-310-mw-ai-factory-in-finland"
+  ],
+  "phases": [
+   {
+    "by": "2027-06-30",
+    "mw": 100,
+    "basis": "estimate",
+    "note": "First customer capacity in 2027; Meta delivery starts early 2027 (size not disclosed)"
+   },
+   {
+    "by": "2028-12-31",
+    "mw": 310,
+    "basis": "estimate",
+    "note": "Full 310 MW; timing not disclosed"
+   }
+  ],
+  "note": "Owned. Named site for the second Meta agreement ($12B dedicated capacity from early 2027 on Vera Rubin)."
+ },
+ {
+  "id": "keflavik",
+  "name": "Keflavík (Verne)",
+  "country": "Iceland",
+  "model": "Colocation",
+  "mw": null,
+  "status": "live",
+  "region": "eu-north2",
+  "keywords": [
+   "Iceland",
+   "Keflavík",
+   "Keflavik"
+  ],
+  "note": "Private region for existing customers.",
+  "sources": [
+   "https://docs.nebius.com/overview/regions"
+  ]
+ },
+ {
+  "id": "tallinn",
+  "name": "Tallinn (Greenergy)",
+  "country": "Estonia",
+  "model": "Colocation",
+  "mw": 22,
+  "status": "construction",
+  "expected": "Late 2026",
+  "region": null,
+  "keywords": [
+   "Estonia",
+   "Tallinn"
+  ],
+  "sources": [
+   "https://www.datacenterdynamics.com/en/news/nebius-expands-european-presence-announces-deployment-in-estonia-and-second-data-center-in-m%C3%A4nts%C3%A4l%C3%A4-finland/"
+  ],
+  "phases": [
+   {
+    "by": "2026-12-31",
+    "mw": 22,
+    "basis": "announced",
+    "note": "Targeted for late 2026"
+   }
+  ]
+ },
+ {
+  "id": "paris",
+  "name": "Paris (Equinix PA10)",
+  "country": "France",
+  "model": "Colocation",
+  "mw": null,
+  "status": "live",
+  "region": "eu-west1",
+  "keywords": [
+   "Paris",
+   "Saint-Denis"
+  ],
+  "sources": [
+   "https://docs.nebius.com/overview/regions"
+  ]
+ },
+ {
+  "id": "france-2",
+  "name": "France, second region",
+  "country": "France",
+  "model": "Not disclosed",
+  "mw": null,
+  "status": "live",
+  "region": "eu-west2",
+  "keywords": [],
+  "note": "Site not publicly identified; B300 region.",
+  "sources": [
+   "https://docs.nebius.com/overview/regions"
+  ]
+ },
+ {
+  "id": "bethune",
+  "name": "Béthune (near Lille)",
+  "country": "France",
+  "model": "Developer-built",
+  "mw": 240,
+  "status": "construction",
+  "region": null,
+  "keywords": [
+   "Béthune",
+   "Bethune",
+   "Lille",
+   "Hauts-de-France"
+  ],
+  "sources": [
+   "https://www.datacenterdynamics.com/en/news/nebius-plans-240mw-data-center-in-b%C3%A9thune-france/"
+  ],
+  "phases": [
+   {
+    "by": "2028-12-31",
+    "mw": 240,
+    "basis": "estimate",
+    "note": "240 MW at full deployment; no dates disclosed"
+   }
+  ]
+ },
+ {
+  "id": "madrid",
+  "name": "Madrid (Edged Getafe)",
+  "country": "Spain",
+  "model": "Leased",
+  "mw": 18,
+  "status": "live",
+  "region": "eu-south1",
+  "keywords": [
+   "Madrid",
+   "Getafe"
+  ],
+  "sources": [
+   "https://northwiseproject.com/nbis-stock-data-center-analysis/"
+  ],
+  "phases": [
+   {
+    "by": "2026-06-30",
+    "mw": 18,
+    "basis": "announced",
+    "note": "18 MW lease; region live"
+   }
+  ]
+ },
+ {
+  "id": "uk-longcross",
+  "name": "Longcross Park (Ark)",
+  "country": "UK",
+  "model": "Colocation",
+  "mw": null,
+  "status": "live",
+  "region": "uk-south1",
+  "keywords": [
+   "Longcross",
+   "Surrey"
+  ],
+  "note": "Region mapping between the two UK regions is not disclosed.",
+  "sources": [
+   "https://northwiseproject.com/nbis-stock-data-center-analysis/"
+  ]
+ },
+ {
+  "id": "uk-harlow",
+  "name": "Harlow (Kao Data)",
+  "country": "UK",
+  "model": "Colocation",
+  "mw": 22,
+  "status": "ramping",
+  "expected": "Early 2027 for the second building",
+  "region": "uk-south2",
+  "keywords": [
+   "Harlow",
+   "Kao Data"
+  ],
+  "note": "Region mapping is an assumption.",
+  "sources": [
+   "https://northwiseproject.com/nbis-stock-data-center-analysis/"
+  ],
+  "phases": [
+   {
+    "by": "2026-09-30",
+    "mw": 4.4,
+    "basis": "estimate",
+    "note": "Third-party inference: ~4.4 MW in an operating building"
+   },
+   {
+    "by": "2027-03-31",
+    "mw": 22,
+    "basis": "estimate",
+    "note": "Second building early 2027 (third-party)"
+   }
+  ]
+ },
+ {
+  "id": "uk-newport",
+  "name": "Newport (Vantage CWL1)",
+  "country": "UK",
+  "model": "Colocation",
+  "mw": null,
+  "status": "contracted",
+  "region": null,
+  "keywords": [
+   "Newport",
+   "Wales",
+   "CWL1"
+  ],
+  "sources": [
+   "https://northwiseproject.com/nbis-stock-data-center-analysis/"
+  ]
+ },
+ {
+  "id": "israel-modiin",
+  "name": "Modi'in",
+  "country": "Israel",
+  "model": "Not disclosed",
+  "mw": null,
+  "mwNote": "4,000 B200 GPUs",
+  "itMwEstimate": 6,
+  "itMwBasis": "~4,000 B200 GPUs at ~1.4 kW each",
+  "status": "live",
+  "region": "me-west1",
+  "keywords": [
+   "Modi'in",
+   "Modiin"
+  ],
+  "sources": [
+   "https://www.marketscreener.com/news/nebius-letter-to-shareholders-shareholder-letter-q3-ce7d5fd9df8df025"
+  ],
+  "phases": [
+   {
+    "by": "2025-12-31",
+    "mw": 6,
+    "basis": "estimate",
+    "note": "~4,000 B200 GPUs at ~1.4 kW"
+   }
+  ]
+ },
+ {
+  "id": "israel-beit-shemesh",
+  "name": "Beit Shemesh (Mega Or)",
+  "country": "Israel",
+  "model": "Colocation",
+  "mw": 58,
+  "status": "ramping",
+  "expected": "Q3 2026 to Q1 2027",
+  "region": null,
+  "keywords": [
+   "Beit Shemesh"
+  ],
+  "sources": [
+   "https://northwiseproject.com/nbis-stock-data-center-analysis/"
+  ],
+  "phases": [
+   {
+    "by": "2026-12-31",
+    "mw": 29,
+    "basis": "estimate",
+    "note": "Phased Q3 2026 to Q1 2027; half placed at end-2026"
+   },
+   {
+    "by": "2027-03-31",
+    "mw": 58,
+    "basis": "announced",
+    "note": "58 MW by Q1 2027"
+   }
+  ]
+ },
+ {
+  "id": "israel-masmiya",
+  "name": "Masmiya (Mega Or)",
+  "country": "Israel",
+  "model": "Colocation",
+  "mw": 22,
+  "status": "ramping",
+  "expected": "Q3 2026",
+  "region": null,
+  "keywords": [
+   "Masmiya",
+   "Masmiyya"
+  ],
+  "sources": [
+   "https://northwiseproject.com/nbis-stock-data-center-analysis/"
+  ],
+  "phases": [
+   {
+    "by": "2026-09-30",
+    "mw": 22,
+    "basis": "announced",
+    "note": "Delivery guided for Q3 2026"
+   }
+  ]
+ },
+ {
+  "id": "kansas-city",
+  "name": "Kansas City (Patmos)",
+  "country": "US",
+  "model": "Colocation (Patmos)",
+  "mw": 40,
+  "status": "live",
+  "region": "us-central1",
+  "keywords": [
+   "Kansas City"
+  ],
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm",
+   "https://nebius.com/blog/posts/nebius-opens-first-availability-zone-in-us",
+   "https://www.datacenterdynamics.com/en/news/patmos-adds-10mw-of-capacity-at-kansas-city-data-center/"
+  ],
+  "mwNote": "5 MW initially, expandable to 40 MW",
+  "phases": [
+   {
+    "by": "2025-04-30",
+    "mw": 5,
+    "basis": "announced",
+    "note": "Launched April 2025 with ~5 MW"
+   },
+   {
+    "by": "2026-12-31",
+    "mw": 40,
+    "basis": "estimate",
+    "note": "Expandable to 40 MW; Patmos adding 20 MW of site capacity in 2026"
+   }
+  ]
+ },
+ {
+  "id": "woodbury",
+  "name": "Minnesota (Woodbury)",
+  "country": "US",
+  "model": "Colocation",
+  "mw": null,
+  "status": "live",
+  "region": "us-north1",
+  "keywords": [
+   "Woodbury",
+   "Minnesota"
+  ],
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm",
+   "https://docs.nebius.com/overview/regions"
+  ],
+  "note": "Co-location contracts secured Feb 2026 (20-F); us-north1 region live with B300. Size not disclosed."
+ },
+ {
+  "id": "vineland",
+  "epoch": "Microsoft-Nebius New Jersey",
+  "name": "Vineland, New Jersey (DataOne)",
+  "country": "US",
+  "model": "Build-to-suit lease",
+  "mw": 300,
+  "status": "ramping",
+  "region": null,
+  "keywords": [
+   "Vineland",
+   "New Jersey"
+  ],
+  "note": "Dedicated Microsoft capacity. Satellite estimates (Epoch AI) put ~50 MW of the planned 300 MW live as of Jul 2026; Bloom Energy said the first fuel-cell power block was ready on Oct 23, 2026.",
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm",
+   "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm",
+   "https://blockspace.media/insight/bloom-energy-readies-nebius-power/"
+  ],
+  "phases": [
+   {
+    "by": "2026-04-15",
+    "mw": 50,
+    "basis": "announced",
+    "note": "Satellite estimate (Epoch AI)"
+   },
+   {
+    "by": "2026-12-31",
+    "mw": 300,
+    "basis": "announced",
+    "note": "Nebius (May 2026): remaining New Jersey capacity activates through 2026, majority in H2. Satellite showed 50 MW in July and on-site power only started in Oct, so this is at risk"
+   }
+  ]
+ },
+ {
+  "id": "independence",
+  "name": "Independence, Missouri",
+  "country": "US",
+  "model": "Owned (greenfield)",
+  "mw": 1200,
+  "mwNote": "1.2 GW per Nebius; ~800 MW from the utility plus on-site generation",
+  "status": "construction",
+  "expected": "Operational in 2027 (Nebius); full build-out ~2029-30",
+  "region": null,
+  "keywords": [
+   "Independence",
+   "Little Blue Valley"
+  ],
+  "note": "Groundbreaking May 12, 2026. One of Nebius's two gigawatt-scale US campuses. Facing litigation and council restrictions (Oct 2026).",
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm",
+   "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm",
+   "https://ded.mo.gov/press-room/nebius-breaks-ground-gigawatt-scale-ai-factory-independence",
+   "https://www.datacenterdynamics.com/en/news/nebius-plans-800mw-data-center-campus-in-kansas-city-missouri/"
+  ],
+  "phases": [
+   {
+    "by": "2027-10-31",
+    "mw": 250,
+    "basis": "estimate",
+    "note": "Nebius: Missouri operational in 2027. Size of the first phase not disclosed; the utility plant's first 250 MW is due Oct 2027"
+   },
+   {
+    "by": "2028-12-31",
+    "mw": 550,
+    "basis": "estimate",
+    "note": "Ramp toward 800 MW; timing not disclosed"
+   },
+   {
+    "by": "2029-12-31",
+    "mw": 800,
+    "basis": "estimate",
+    "note": "Utility expansion to ~1.1 GW by Dec 2029"
+   },
+   {
+    "by": "2030-12-31",
+    "mw": 1200,
+    "basis": "estimate",
+    "note": "Full 1.2 GW with on-site generation; timing not disclosed"
+   }
+  ]
+ },
+ {
+  "id": "pennsylvania",
+  "name": "Butler Township, Pennsylvania",
+  "country": "US",
+  "model": "Owned (greenfield)",
+  "mw": 1200,
+  "mwNote": "First phase 260 MW",
+  "status": "construction",
+  "expected": "First 260 MW by Oct 2027",
+  "region": null,
+  "keywords": [
+   "Pennsylvania",
+   "Butler Township",
+   "Highridge"
+  ],
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm",
+   "https://www.datacenterdynamics.com/en/news/nebius-details-plans-for-12gw-data-center-campus-in-pennsylvania/"
+  ],
+  "phases": [
+   {
+    "by": "2027-10-31",
+    "mw": 260,
+    "basis": "announced",
+    "note": "First 260 MW phase by Oct 2027"
+   },
+   {
+    "by": "2029-12-31",
+    "mw": 1200,
+    "basis": "estimate",
+    "note": "1.2 GW full build; timing not disclosed"
+   }
+  ],
+  "note": "Second gigawatt-scale US campus, announced May 2026; delivered in phases from 2027."
+ },
+ {
+  "id": "birmingham",
+  "name": "Birmingham, Alabama",
+  "country": "US",
+  "model": "Owned (greenfield)",
+  "mw": 300,
+  "mwNote": "Two buildings: 100 MW + 200 MW",
+  "status": "construction",
+  "expected": "First 100 MW spring 2027; 200 MW by fall 2028",
+  "region": null,
+  "keywords": [
+   "Birmingham",
+   "Alabama",
+   "Oxmoor"
+  ],
+  "note": "One of Nebius's five owned sites (3 GW total). Class-action trial scheduled for March 2027; no further expansion possible on the site.",
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm",
+   "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm",
+   "https://bhamwiki.com/w/Nebius_Birmingham_AI_Factory",
+   "https://birminghamwatch.org/2026/04/24/battle-against-oxmoor-valley-data-center-fizzles-but-residents-left-with-concerns/"
+  ],
+  "phases": [
+   {
+    "by": "2027-04-30",
+    "mw": 100,
+    "basis": "announced",
+    "note": "First building, 100 MW, operating spring 2027 (local filings; Nebius: Alabama operational in 2027)"
+   },
+   {
+    "by": "2028-10-31",
+    "mw": 300,
+    "basis": "announced",
+    "note": "Second building, 200 MW, fall 2028 (local filings)"
+   }
+  ]
+ },
+ {
+  "id": "neom",
+  "name": "NEOM Oxagon (HUMAIN / DataVolt)",
+  "country": "Saudi Arabia",
+  "model": "Anchor tenant (framework agreement)",
+  "mw": 50,
+  "mwNote": "Up to 50 MW",
+  "status": "planned",
+  "region": null,
+  "keywords": [
+   "NEOM",
+   "Oxagon",
+   "HUMAIN",
+   "DataVolt"
+  ],
+  "note": "Framework agreement announced Oct 22, 2026 for up to 50 MW in a planned giga campus.",
+  "sources": [
+   "https://news.google.com/rss/search?q=Nebius+NEOM"
+  ]
+ },
+ {
+  "id": "india",
+  "name": "India (unannounced)",
+  "country": "India",
+  "model": "Unknown",
+  "mw": null,
+  "status": "unconfirmed",
+  "region": null,
+  "keywords": [
+   "Hyderabad",
+   "Chennai",
+   "India"
+  ],
+  "note": "No announced site, but Nebius is hiring data-center roles in Hyderabad.",
+  "sources": [
+   "https://careers.nebius.com/"
+  ]
+ },
+ {
+  "id": "oklahoma",
+  "name": "Oklahoma",
+  "country": "US",
+  "model": "Colocation",
+  "mw": null,
+  "status": "contracted",
+  "region": null,
+  "keywords": [
+   "Oklahoma"
+  ],
+  "note": "Co-location contracts secured Feb 2026 (20-F). Location, partner and size not disclosed.",
+  "sources": [
+   "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+  ]
+ },
+ {
+  "id": "aib-southeast",
+  "name": "AIB Data Centers (southeastern US)",
+  "country": "US",
+  "model": "Leased (12-year term)",
+  "mw": 50,
+  "mwNote": "50 MW critical IT in two data halls",
+  "status": "contracted",
+  "expected": "Not disclosed",
+  "region": null,
+  "keywords": [
+   "AIB Data Centers"
+  ],
+  "note": "Announced Sep 30, 2026. City not disclosed.",
+  "phases": [
+   {
+    "by": "2027-12-31",
+    "mw": 50,
+    "basis": "estimate",
+    "note": "Online date not disclosed; placed at end-2027"
+   }
+  ],
+  "sources": [
+   "https://finance.yahoo.com/technology/ai/articles/aib-data-centers-signs-contract-121700973.html"
+  ]
+ }
 ]

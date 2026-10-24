@@ -12,7 +12,7 @@ export const PAGES = [
   { id: "customers", label: "Customers", title: "Customers" },
   { id: "hiring", label: "Hiring", title: "Hiring" },
   { id: "filings", label: "Filings", title: "Filings" },
-  { id: "financials", label: "Financials", title: "Financials" },
+  { id: "financials", label: "Financials", title: "Financials and valuation" },
   { id: "alerts", label: "Alerts", title: "Alerts" },
   { id: "sources", label: "Sources", title: "Sources and method" },
 ] as const;

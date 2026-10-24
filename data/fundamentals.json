@@ -1,24 +1,186 @@
 {
  "_note": "Hand-maintained from Nebius results releases and consensus aggregators. Update after each earnings 6-K (add the quarter with revenue, ARR and the consensus it was measured against); the dashboard flags when a newer results 6-K exists. USD millions.",
  "quarters": [
-  { "quarter": "2025-Q2", "end": "2025-06-30", "revenue": 105.1, "arr": null, "consensus": null, "source": "Implied by Q2 2026 revenue of $582.3M being +454% YoY" },
-  { "quarter": "2025-Q3", "end": "2025-09-30", "revenue": 146.1, "arr": null, "consensus": null, "source": "Q3 2025 results release (consistent with FY2025 total of $529.8M in the 20-F)" },
-  { "quarter": "2025-Q4", "end": "2025-12-31", "revenue": 227.7, "arr": 1250, "consensus": null, "source": "https://www.businesswire.com/news/home/20260212534404/en/" },
-  { "quarter": "2026-Q1", "end": "2026-03-31", "revenue": 399.0, "arr": 1920, "consensus": null, "source": "https://www.streetinsider.com/Guidance/Key+highlights+from+Nebius+Group%27s+Q1+letter+to+shareholders/26481589.html" },
-  { "quarter": "2026-Q2", "end": "2026-06-30", "revenue": 582.3, "arr": 3000, "consensus": 567.9, "adjEbitda": 236.2, "capex": 5700, "source": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926094568/tm2622968d1_ex99-2.htm" }
+  {
+   "quarter": "2025-Q2",
+   "end": "2025-06-30",
+   "revenue": 105.1,
+   "arr": null,
+   "consensus": null,
+   "source": "Implied by Q2 2026 revenue of $582.3M being +454% YoY"
+  },
+  {
+   "quarter": "2025-Q3",
+   "end": "2025-09-30",
+   "revenue": 146.1,
+   "arr": null,
+   "consensus": null,
+   "source": "Q3 2025 results release (consistent with FY2025 total of $529.8M in the 20-F)"
+  },
+  {
+   "quarter": "2025-Q4",
+   "end": "2025-12-31",
+   "revenue": 227.7,
+   "arr": 1250,
+   "consensus": null,
+   "source": "https://www.businesswire.com/news/home/20260212534404/en/"
+  },
+  {
+   "quarter": "2026-Q1",
+   "end": "2026-03-31",
+   "revenue": 399.0,
+   "arr": 1920,
+   "consensus": null,
+   "source": "https://www.streetinsider.com/Guidance/Key+highlights+from+Nebius+Group%27s+Q1+letter+to+shareholders/26481589.html"
+  },
+  {
+   "quarter": "2026-Q2",
+   "end": "2026-06-30",
+   "revenue": 582.3,
+   "arr": 3000,
+   "consensus": 567.9,
+   "adjEbitda": 236.2,
+   "capex": 5700,
+   "source": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926094568/tm2622968d1_ex99-2.htm"
+  }
  ],
  "upcoming": [
-  { "quarter": "2026-Q3", "end": "2026-09-30", "consensus": 905, "consensusRange": [877, 943], "expectedReport": "2026-11-10", "reportDateConfirmed": false, "consensusAsOf": "2026-10-24", "source": "https://www.marketbeat.com/stocks/NASDAQ/NBIS/earnings/" },
-  { "quarter": "2026-Q4", "end": "2026-12-31", "consensus": null, "consensusRange": null, "expectedReport": null, "reportDateConfirmed": false, "consensusAsOf": null, "source": null }
+  {
+   "quarter": "2026-Q3",
+   "end": "2026-09-30",
+   "consensus": 905,
+   "consensusRange": [
+    877,
+    943
+   ],
+   "expectedReport": "2026-11-10",
+   "reportDateConfirmed": false,
+   "consensusAsOf": "2026-10-24",
+   "source": "https://www.marketbeat.com/stocks/NASDAQ/NBIS/earnings/"
+  },
+  {
+   "quarter": "2026-Q4",
+   "end": "2026-12-31",
+   "consensus": null,
+   "consensusRange": null,
+   "expectedReport": null,
+   "reportDateConfirmed": false,
+   "consensusAsOf": null,
+   "source": null
+  }
  ],
  "guidance": {
   "year": 2026,
   "asOf": "2026-08-12",
-  "arrExit": [7000, 9000],
-  "revenue": [3000, 3400],
-  "capex": [20000, 25000],
-  "adjEbitdaMargin": 0.40,
+  "arrExit": [
+   7000,
+   9000
+  ],
+  "revenue": [
+   3000,
+   3400
+  ],
+  "capex": [
+   20000,
+   25000
+  ],
+  "adjEbitdaMargin": 0.4,
   "contractedPowerGw": 5,
   "source": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926094568/tm2622968d1_ex99-2.htm"
- }
+ },
+ "balanceSheets": [
+  {
+   "date": "2025-12-31",
+   "cash": 3678.1,
+   "debt": 4127.7,
+   "clickhouse": 737.1,
+   "toloka": 101.7,
+   "otherInvestments": 8.9,
+   "sharesClassA": 219465088,
+   "sharesClassB": 33551883,
+   "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926064092/nbis-20260331xex99d2.htm"
+  },
+  {
+   "date": "2026-03-31",
+   "cash": 9298.2,
+   "debt": 8450.4,
+   "clickhouse": 1517.7,
+   "toloka": 93.9,
+   "otherInvestments": 8.9,
+   "sharesClassA": 220406311,
+   "sharesClassB": 33491883,
+   "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926064092/nbis-20260331xex99d2.htm"
+  },
+  {
+   "date": "2026-06-30",
+   "cash": 8042.1,
+   "debt": 8545.7,
+   "clickhouse": 1517.7,
+   "toloka": 86.5,
+   "otherInvestments": 16.3,
+   "sharesClassA": 238400165,
+   "sharesClassB": 33455053,
+   "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm"
+  }
+ ],
+ "_balanceNote": "USD millions except share counts. cash excludes restricted cash; debt = current + non-current debt (mostly convertible notes, at carrying value). clickhouse/toloka are balance-sheet values of the minority stakes (non-marketable, re-measured on observable transactions). otherInvestments = venture fund + other. Leases excluded.",
+ "capitalRaised": [
+  {
+   "date": "2025-09-30",
+   "kind": "Convertible notes",
+   "amount": 4160,
+   "detail": "June and September 2025 issues, four series due 2029-2032 (accreting to $4.86B at maturity)",
+   "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm"
+  },
+  {
+   "date": "2026-03-20",
+   "kind": "Convertible notes",
+   "amount": 4340,
+   "detail": "$2.59B 1.25% due 2031 (conversion ~$183) and $1.75B 2.625% due 2033",
+   "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm"
+  },
+  {
+   "date": "2026-06-30",
+   "kind": "Share sales (ATM)",
+   "amount": 2811,
+   "detail": "12.7M Class A shares at ~$224 in May-June 2026; 12.3M shares still available under the program",
+   "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm"
+  },
+  {
+   "date": "2026-07-10",
+   "kind": "Secured loan",
+   "amount": 775,
+   "detail": "Backed by deployed GPUs and an investment-grade customer contract; SOFR + 2.50%, matures Oct 2030",
+   "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d2.htm"
+  },
+  {
+   "date": "2026-08-24",
+   "kind": "Convertible notes",
+   "amount": 5750,
+   "detail": "Upsized private offering, gross proceeds ~$5.75B",
+   "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845&type=6-K"
+  },
+  {
+   "date": "2026-10-22",
+   "kind": "Credit facility",
+   "amount": 3500,
+   "detail": "Citi financing facility for data-center growth (drawn as needed)",
+   "source": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845&type=6-K"
+  }
+ ],
+ "atmRemainingShares": 12270507,
+ "otherBusinesses": [
+  {
+   "name": "Avride",
+   "what": "Autonomous driving and delivery robots (consolidated)",
+   "defaultValue": null,
+   "note": "No public valuation; outside investors have funded it via SAFEs. Set your own."
+  },
+  {
+   "name": "TripleTen",
+   "what": "Edtech (consolidated)",
+   "defaultValue": null,
+   "note": "About 6% of group revenue in Q4 2025. Set your own."
+  }
+ ]
 }

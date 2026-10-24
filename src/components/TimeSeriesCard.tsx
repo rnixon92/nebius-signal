@@ -36,6 +36,8 @@ type Props<R extends { date: string }> = {
   note?: ReactNode;
   /** Extra filters shown under the header (e.g. region chips), in both the card and the expanded view. */
   filters?: ReactNode;
+  /** Index every series to 100 at the first visible point, so series on different scales compare as returns. */
+  rebase?: boolean;
 };
 
 const EVENT_LABEL: Record<ChartEvent["kind"], string> = { earnings: "Earnings", price: "Price change", capacity: "Capacity live", financing: "Financing", site: "Site" };
@@ -59,7 +61,20 @@ export function TimeSeriesCard<R extends { date: string }>(props: Props<R>) {
 
   const ranges = availableRanges(rows[0]?.date, rows.at(-1)?.date);
   const effective = ranges.includes(range) ? range : "All";
-  const visible = useMemo(() => clip(rows, effective), [rows, effective]);
+  const visible = useMemo(() => {
+    const clipped = clip(rows, effective);
+    if (!props.rebase) return clipped;
+    const base = Object.fromEntries(series.map((s) => [s.key, clipped.map((r) => (r as Record<string, unknown>)[s.key]).find((v): v is number => typeof v === "number" && v > 0)]));
+    return clipped.map((r) => {
+      const out: Record<string, unknown> = { ...r };
+      for (const s of series) {
+        const v = (r as Record<string, unknown>)[s.key];
+        const b = base[s.key];
+        out[s.key] = typeof v === "number" && b ? (v / b) * 100 : undefined;
+      }
+      return out as R;
+    });
+  }, [rows, effective, props.rebase, series]);
   // Lines use a true time axis so irregular sampling (archive snapshots, trading days) keeps honest
   // spacing; stacked bars need evenly spaced bands, so they stay categorical.
   const timeScale = props.kind !== "stacked";

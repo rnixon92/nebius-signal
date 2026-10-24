@@ -7,6 +7,7 @@ import { Card, CardTitle, DataTable, ExtLink, Stat, TooltipCard } from "../compo
 import { day, usdM } from "../lib/format.ts";
 import { href } from "../lib/router.ts";
 import type { Palette } from "../lib/theme.ts";
+import { RoadmapPanel } from "./Roadmap.tsx";
 
 const mw = (v: number) => (v >= 1000 ? `${(v / 1000).toFixed(v % 1000 ? 1 : 0)} GW` : `${Math.round(v)} MW`);
 
@@ -220,6 +221,8 @@ export function PowerPanel({ d, p }: { d: Dashboard; p: Palette }) {
         />
       )}
 
+      <RoadmapPanel d={d} p={p} />
+
       <Card>
         <CardTitle title="Live capacity: committed vs open to spot" sub="How much running capacity is locked into long-term contracts, and how much is left to sell on-demand or as spot" />
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
@@ -241,8 +244,9 @@ export function PowerPanel({ d, p }: { d: Dashboard; p: Palette }) {
               ))}
             </div>
             <p className="text-sm leading-relaxed text-ink-2">
-              Once fully delivered, the Microsoft and Meta contracts come to about <span className="font-semibold text-ink">{usdM(pw.committedAnnual)} a year</span>, more than the whole
-              run-rate in June, before counting the four $1B+ deals signed in Q2. Most of that isn't billing yet:{" "}
+              Once fully delivered, the Microsoft contract and the two Meta contracts come to about <span className="font-semibold text-ink">{usdM(pw.committedAnnual)} a year</span>,
+              about twice the whole run-rate in June, before counting the four $1B+ deals signed in Q2. Most of that isn't billing yet: the second Meta deal ($12B) only starts
+              delivering in early 2027, and{" "}
               {vineland ? (
                 <>
                   satellite estimates put Vineland, Microsoft's dedicated site, at about <span className="font-semibold text-ink">{vineland.latestMw} MW of {vineland.plannedMw ?? 300} MW</span> (

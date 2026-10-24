@@ -105,6 +105,17 @@ export type PowerData = {
   /** Satellite-observed IT power (Epoch AI), carried forward between observations; one column per site plus `total`. */
   observed: ({ date: string; total: number } & Record<string, number | string>)[];
   observedSites: { name: string; siteId: string | null; latestMw: number; latestDate: string; plannedMw: number | null; projection: { date: string; itMw: number } | null }[];
+  /**
+   * Capacity expected online by quarter end, from dated site phases (cumulative MW per site, grouped by
+   * geography), against Nebius's connected-power guidance and what's observed live.
+   */
+  roadmap: {
+    groups: string[];
+    rows: ({ date: string; total: number; announced: number; guidanceLow?: number; guidanceHigh?: number; observed?: number } & Record<string, number | string>)[];
+    phases: { site: string; group: string; by: string; mw: number; basis: "announced" | "estimate"; note: string }[];
+    /** Sites with live capacity but no disclosed MW, which the roadmap can't count. */
+    undisclosed: string[];
+  };
 };
 
 /** Dated annotation for time-series charts. */
@@ -127,7 +138,25 @@ export type Dashboard = {
     regionChanges: { date: string; kind: string; region: string; platform?: string }[];
   };
 
-  stock: { series: [string, number][]; last: { date: string; close: number; chg1d: number | null; chg30d: number | null } | null };
+  stock: {
+    series: [string, number][];
+    last: { date: string; close: number; chg1d: number | null; chg30d: number | null } | null;
+    peers: { ticker: string; name: string; series: [string, number][] }[];
+  };
+
+  /** Inputs for the sum-of-the-parts valuation; the page does the arithmetic so readers can change assumptions. USD millions unless noted. */
+  valuation: {
+    price: { value: number; date: string } | null;
+    balanceSheet: { date: string; cash: number; debt: number; clickhouse: number; toloka: number; otherInvestments: number; shares: number; source: string } | null;
+    sharesHistory: { date: string; shares: number; classA: number; classB: number }[];
+    arr: { value: number; date: string } | null;
+    arrGuidance: [number, number];
+    capitalRaised: { date: string; kind: string; amount: number; detail: string; source: string }[];
+    atmRemainingShares: number | null;
+    otherBusinesses: { name: string; what: string; defaultValue: number | null; note: string }[];
+    connectedTarget: [number, number] | null;
+    contractedMw: number | null;
+  };
 
   gpu: {
     snapshotTime: string | null;

@@ -15,6 +15,7 @@ import type { Filing } from "./sources/sec.ts";
 import { matchSites, type NewsItem, type Site } from "./sources/news.ts";
 import type { RegionsFile } from "./sources/regions.ts";
 import type { EpochFile } from "./sources/epoch.ts";
+import { PEERS as STOCK_PEERS } from "./sources/stock.ts";
 import { buildNowcast } from "./nowcast.ts";
 
 const FAMILY_ORDER = ["GB300", "B300", "GB200", "B200", "H200", "H100", "RTX PRO 6000", "L40S"];
@@ -50,6 +51,7 @@ export async function buildDashboard({ persistNowcast = false } = {}): Promise<D
     alerts: await alerts(),
     events: await events(),
     nowcast: await nowcast(persistNowcast),
+    valuation: await valuation(),
     power: await power(),
     sites: await sites(),
     stock: await stock(),
@@ -179,6 +181,7 @@ async function power(): Promise<Dashboard["power"]> {
   return {
     observed,
     observedSites,
+    roadmap: await roadmap(),
     definitions: f.definitions,
     contracted,
     connected,
@@ -265,13 +268,121 @@ async function alerts() {
 async function stock(): Promise<Dashboard["stock"]> {
   const prices = Object.entries(await readJson<Record<string, [number, number]>>("market/nbis.json", {})).sort(([a], [b]) => a.localeCompare(b));
   const series = prices.map(([d, [c]]) => [d, c] as [string, number]);
+  const peers: Dashboard["stock"]["peers"] = [];
+  for (const p of STOCK_PEERS) {
+    const rows = Object.entries(await readJson<Record<string, [number, number]>>(`market/peers/${p.ticker}.json`, {})).sort(([a], [b]) => a.localeCompare(b));
+    if (rows.length) peers.push({ ticker: p.ticker, name: p.name, series: rows.map(([d, [c]]) => [d, c]) });
+  }
   const last = series.at(-1);
-  if (!last) return { series, last: null };
+  if (!last) return { series, last: null, peers };
   const prev = series.at(-2);
   const monthAgo = [...series].reverse().find(([d]) => d <= addDays(last[0], -30));
   return {
     series,
     last: { date: last[0], close: last[1], chg1d: prev ? last[1] / prev[1] - 1 : null, chg30d: monthAgo ? last[1] / monthAgo[1] - 1 : null },
+    peers,
+  };
+}
+
+async function valuation(): Promise<Dashboard["valuation"]> {
+  type BS = { date: string; cash: number; debt: number; clickhouse: number; toloka: number; otherInvestments: number; sharesClassA: number; sharesClassB: number; source: string };
+  const f = await readJson<{
+    quarters: { end: string; arr: number | null }[];
+    guidance: { arrExit: [number, number] };
+    balanceSheets?: BS[];
+    capitalRaised?: Dashboard["valuation"]["capitalRaised"];
+    atmRemainingShares?: number;
+    otherBusinesses?: Dashboard["valuation"]["otherBusinesses"];
+  }>("fundamentals.json", { quarters: [], guidance: { arrExit: [0, 0] } });
+  const pw = await readJson<{ points: { metric: string; kind: string; mw: number; low?: number; high?: number; date: string }[] }>("power.json", { points: [] });
+  const prices = Object.entries(await readJson<Record<string, [number, number]>>("market/nbis.json", {})).sort(([a], [b]) => a.localeCompare(b));
+  const lastPrice = prices.at(-1);
+  const sheets = [...(f.balanceSheets ?? [])].sort((a, b) => a.date.localeCompare(b.date));
+  const bs = sheets.at(-1);
+  const lastArr = [...f.quarters].reverse().find((q) => q.arr);
+  const connected = pw.points.find((x) => x.metric === "connected" && x.kind === "target" && x.low !== undefined);
+  const contracted = [...pw.points].reverse().find((x) => x.metric === "contracted" && x.kind === "actual");
+  return {
+    price: lastPrice ? { value: lastPrice[1][0], date: lastPrice[0] } : null,
+    balanceSheet: bs ? { date: bs.date, cash: bs.cash, debt: bs.debt, clickhouse: bs.clickhouse, toloka: bs.toloka, otherInvestments: bs.otherInvestments, shares: bs.sharesClassA + bs.sharesClassB, source: bs.source } : null,
+    sharesHistory: sheets.map((s) => ({ date: s.date, shares: s.sharesClassA + s.sharesClassB, classA: s.sharesClassA, classB: s.sharesClassB })),
+    arr: lastArr ? { value: lastArr.arr!, date: lastArr.end } : null,
+    arrGuidance: f.guidance.arrExit,
+    capitalRaised: [...(f.capitalRaised ?? [])].sort((a, b) => b.date.localeCompare(a.date)),
+    atmRemainingShares: f.atmRemainingShares ?? null,
+    otherBusinesses: f.otherBusinesses ?? [],
+    connectedTarget: connected ? [connected.low!, connected.high!] : null,
+    contractedMw: contracted?.mw ?? null,
+  };
+}
+
+const ROADMAP_GROUP = (country: string) =>
+  country === "US" ? "United States" : country === "Finland" ? "Finland" : country === "UK" ? "United Kingdom" : country === "Israel" ? "Israel" : "Rest of Europe & other";
+const ROADMAP_GROUPS = ["United States", "Finland", "Rest of Europe & other", "United Kingdom", "Israel"];
+
+/** Quarter ends from `from` through `to`, inclusive. */
+function quarterEnds(from: string, to: string): string[] {
+  const out: string[] = [];
+  let y = Number(from.slice(0, 4));
+  let q = Math.ceil(Number(from.slice(5, 7)) / 3);
+  for (;;) {
+    const m = q * 3;
+    const d = `${y}-${String(m).padStart(2, "0")}-${m === 3 || m === 12 ? "31" : "30"}`;
+    if (d > to) break;
+    out.push(d);
+    if (++q > 4) {
+      q = 1;
+      y++;
+    }
+  }
+  return out;
+}
+
+async function roadmap(): Promise<Dashboard["power"]["roadmap"]> {
+  const sites = await readJson<Site[]>("sites.json", []);
+  const epoch = await readJson<EpochFile>("capacity/epoch.json", { updatedAt: "", sites: {} });
+  const pw = await readJson<{ points: { metric: string; kind: string; date: string; mw: number; low?: number; high?: number }[] }>("power.json", { points: [] });
+  const withPhases = sites.filter((s) => s.phases?.length);
+  const at = (s: Site, date: string, onlyAnnounced = false) => (s.phases ?? []).filter((p) => p.by <= date && (!onlyAnnounced || p.basis === "announced")).at(-1)?.mw ?? 0;
+
+  // Connected-power guidance: reported/targets through 2026, then the stated ">1 GW a year from 2027" pace.
+  const connected = pw.points.filter((p) => p.metric === "connected").sort((a, b) => a.date.localeCompare(b.date));
+  const ye26 = connected.find((p) => p.date === "2026-12-31" && p.low !== undefined);
+  const guidance = new Map<string, [number, number]>();
+  for (const p of connected) guidance.set(p.date, [p.low ?? p.mw, p.high ?? p.mw]);
+  if (ye26) {
+    guidance.set("2027-12-31", [ye26.low! + 1000, ye26.high! + 1000]);
+    guidance.set("2028-12-31", [ye26.low! + 2000, ye26.high! + 2000]);
+  }
+  const observedAt = (date: string) => Object.values(epoch.sites).reduce((a, s) => a + (s.timeline.filter((x) => !x.projected && x.date <= date).at(-1)?.itMw ?? 0), 0);
+  const lastObs = Object.values(epoch.sites).flatMap((s) => s.timeline.filter((x) => !x.projected).map((x) => x.date)).sort().at(-1) ?? "";
+
+  const rows = quarterEnds("2025-12-31", "2029-03-31").map((date) => {
+    const row: Dashboard["power"]["roadmap"]["rows"][number] = { date, total: 0, announced: 0 };
+    for (const g of ROADMAP_GROUPS) row[g] = 0;
+    for (const s of withPhases) {
+      const g = ROADMAP_GROUP(s.country);
+      const v = at(s, date);
+      row[g] = (row[g] as number) + v;
+      row.total += v;
+      row.announced += at(s, date, true);
+    }
+    const gd = guidance.get(date);
+    if (gd) {
+      row.guidanceLow = gd[0];
+      row.guidanceHigh = gd[1];
+    }
+    if (date <= addDays(lastObs, 92) && lastObs) row.observed = observedAt(date);
+    return row;
+  });
+
+  return {
+    groups: ROADMAP_GROUPS,
+    rows,
+    phases: withPhases
+      .flatMap((s) => (s.phases ?? []).map((p) => ({ site: s.name, group: ROADMAP_GROUP(s.country), by: p.by, mw: p.mw, basis: p.basis, note: p.note })))
+      .sort((a, b) => a.by.localeCompare(b.by) || a.site.localeCompare(b.site)),
+    undisclosed: sites.filter((s) => (s.status === "live" || s.status === "ramping" || s.status === "contracted") && !s.phases?.length).map((s) => s.name),
   };
 }
 

@@ -20,6 +20,8 @@ export type Site = {
   /** Live IT power estimated another way (e.g. from GPU counts), used to weight regions when no MW is disclosed. */
   itMwEstimate?: number;
   itMwBasis?: string;
+  /** Cumulative MW expected online by each date; basis says whether the timing was announced or estimated. */
+  phases?: { by: string; mw: number; basis: "announced" | "estimate"; note: string }[];
   status: "live" | "ramping" | "construction" | "planned" | "contracted" | "unconfirmed";
   expected?: string;
   region?: string | null;
