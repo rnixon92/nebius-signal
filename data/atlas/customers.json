@@ -1,0 +1,5543 @@
+{
+ "1x-technologies": {
+  "name": "1X Technologies",
+  "category": "Robotics & industry",
+  "use": "Uses Nebius AI Cloud to build general-purpose robots.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "agreement",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-05-13"
+ },
+ "2comply": {
+  "name": "2comply",
+  "category": "Security & compliance",
+  "use": "Nebius hosting for its compliance platform",
+  "services": [],
+  "workloads": [
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "accel": {
+  "name": "Accel",
+  "category": "Finance",
+  "use": "Used a Nebius H100 for a reinforcement-learning experiment.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-04-02"
+ },
+ "accenture": {
+  "name": "Accenture",
+  "category": "Business services",
+  "use": "Nebius infrastructure and Token Factory for applied AI",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius Token Factory"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "acrovision": {
+  "name": "Acrovision",
+  "category": "Business services",
+  "use": "Tavily search for a Dify chatbot implementation",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-21",
+  "baseline": false,
+  "latestEvidence": "2024-12-11"
+ },
+ "adaption": {
+  "name": "Adaption",
+  "category": "Model developers",
+  "use": "Partners with Nebius for reliable compute and AI infrastructure.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "relationship-context",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "aegis": {
+  "name": "Aegis",
+  "category": "Developer tools",
+  "use": "Token Factory inference for Rust code repair",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-22",
+  "baseline": false,
+  "latestEvidence": "2026-10-22"
+ },
+ "agenturo": {
+  "name": "Agenturo",
+  "category": "Developer tools",
+  "use": "Uses Tavily for primary search and fallback URL extraction.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "agora-cosmica": {
+  "name": "Agora Cosmica",
+  "category": "Consumer & commerce",
+  "use": "Nebius inference for free educational conversations",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "aible": {
+  "name": "Aible",
+  "category": "Workplace tools",
+  "use": "Runs its enterprise AI agent platform on Nebius AI Cloud.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving",
+   "Data processing",
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "aikium": {
+  "name": "Aikium",
+  "category": "Health & biotech",
+  "use": "Nebius GPU cloud resources for drug discovery",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius AI Studio",
+   "Nebius Token Factory"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2025-06-25"
+ },
+ "aimultiple": {
+  "name": "AIMultiple",
+  "category": "Science & research",
+  "use": "Benchmarked Nebius inference and Tavily agent search.",
+  "services": [
+   "Tavily",
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Agentic search",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "aisuke": {
+  "name": "AiSuke",
+  "category": "Workplace tools",
+  "use": "Uses Tavily for business-information search",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-21",
+  "baseline": false,
+  "latestEvidence": "2026-05-27"
+ },
+ "aivonic-labs-ab": {
+  "name": "Aivonic Labs",
+  "category": "Business services",
+  "use": "Tavily website extraction for sales callback preparation",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-16",
+  "baseline": false,
+  "latestEvidence": "2026-10-16"
+ },
+ "aizee": {
+  "name": "Aizee",
+  "category": "Workplace tools",
+  "use": "Tests and builds conversational AI agents with Nebius AI Studio.",
+  "services": [
+   "Nebius AI Studio"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2025-06-20"
+ },
+ "amara": {
+  "name": "Amara",
+  "category": "Consumer & commerce",
+  "use": "Uses Tavily for real-time search by AI agents.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-11",
+  "baseline": false,
+  "latestEvidence": "2026-10-11"
+ },
+ "ami": {
+  "name": "AMI",
+  "category": "Model developers",
+  "use": "Uses compute and storage for AI model research and training.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-08-12"
+ },
+ "anemos-bio": {
+  "name": "Anemos Bio",
+  "category": "Health & biotech",
+  "use": "Nebius compute for an eight-week cancer research pilot",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "anonimizator": {
+  "name": "Anonimizator",
+  "category": "Security & compliance",
+  "use": "Personal-data detection with Nebius Token Factory",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Data processing",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "antioch": {
+  "name": "Antioch",
+  "category": "Robotics & industry",
+  "use": "Runs robotics simulation workloads on Nebius GPU infrastructure.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Simulation"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-09-17"
+ },
+ "apify": {
+  "name": "Apify",
+  "category": "Developer tools",
+  "use": "Tested Tavily Search in a September 2026 RAG benchmark.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-11",
+  "baseline": false,
+  "latestEvidence": "2026-09-21"
+ },
+ "apostle-labs": {
+  "name": "Apostle Labs",
+  "category": "Workplace tools",
+  "use": "Nebius inference and RAG embeddings",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving",
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "arena": {
+  "name": "Arena",
+  "category": "Science & research",
+  "use": "Trained and deployed P2L on Nebius-hosted GB200 GPUs.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2025-06-18"
+ },
+ "aris-machina": {
+  "name": "Aris Machina",
+  "category": "Robotics & industry",
+  "use": "Names Tavily as the web-search provider for its AI agents.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "arker": {
+  "name": "Arker",
+  "category": "Data & infrastructure",
+  "use": "Nebius GPU compute in the EEA",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "ataraxis-ai": {
+  "name": "Ataraxis AI",
+  "category": "Health & biotech",
+  "use": "Deploying Nebius GPU resources for cancer diagnostics",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2025-06-25"
+ },
+ "athena-intelligence": {
+  "name": "Athena Intelligence",
+  "category": "Workplace tools",
+  "use": "Uses Tavily search and extraction for its enterprise AI analyst.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2025-04-03"
+ },
+ "aws": {
+  "name": "AWS",
+  "category": "Data & infrastructure",
+  "use": "Named among organizations trusting Tavily",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "bailar": {
+  "name": "Bailar",
+  "category": "Consumer & commerce",
+  "use": "Uses Tavily’s research API for internal grounded-search tooling.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-06",
+  "baseline": false,
+  "latestEvidence": "2026-10-06"
+ },
+ "baptist-health-south-florida": {
+  "name": "Baptist Health South Florida",
+  "category": "Health & biotech",
+  "use": "Pilots long-running Aible agents with Nebius cloud at the core.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "base44": {
+  "name": "Base44",
+  "category": "Developer tools",
+  "use": "LLM API calls through Nebius",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-14",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "basecamp-research": {
+  "name": "Basecamp Research",
+  "category": "Health & biotech",
+  "use": "Pre-trained EDEN on Nebius H200 GPUs in six weeks.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-08-12"
+ },
+ "baseten": {
+  "name": "Baseten",
+  "category": "Data & infrastructure",
+  "use": "Runs its inference stack and internal workloads on GPU clusters.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-14"
+ },
+ "bcg": {
+  "name": "BCG",
+  "category": "Business services",
+  "use": "Tavily endpoints for agent-powered workflows",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-15",
+  "baseline": false,
+  "latestEvidence": "2026-04-27"
+ },
+ "behavox": {
+  "name": "Behavox",
+  "category": "Security & compliance",
+  "use": "Named by Nebius as a client in its GPU-cloud presentation.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2025-05-08"
+ },
+ "bell-cyber": {
+  "name": "Bell Cyber",
+  "category": "Security & compliance",
+  "use": "Uses Tavily for cited research in security investigations.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "bellboy-robotics": {
+  "name": "Bellboy Robotics",
+  "category": "Robotics & industry",
+  "use": "Uses Nebius Physical AI Workbench for physical AI deployment",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-22",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "biophytis": {
+  "name": "Biophytis",
+  "category": "Health & biotech",
+  "use": "Longevity drug discovery with LynxKite on Nebius AI Cloud.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Simulation"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-13"
+ },
+ "black-forest-labs": {
+  "name": "Black Forest Labs",
+  "category": "Model developers",
+  "use": "Named Nebius AI Cloud customer.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-13"
+ },
+ "bladerunner-labs": {
+  "name": "BladeRunner Labs",
+  "category": "Business services",
+  "use": "Named Nebius GPU cloud customer",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2025-05-08"
+ },
+ "blinkin": {
+  "name": "Blinkin",
+  "category": "Developer tools",
+  "use": "Runs video and audio AI agents on Nebius AI Cloud.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2025-06-23"
+ },
+ "bloggable": {
+  "name": "Bloggable",
+  "category": "Media & creativity",
+  "use": "Uses Tavily web search in its research and competitor pipelines.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-13",
+  "baseline": false,
+  "latestEvidence": "2026-10-13"
+ },
+ "bmo": {
+  "name": "BMO",
+  "category": "Finance",
+  "use": "Uses Tavily to search public records for AML reviews.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-06"
+ },
+ "boardwalk": {
+  "name": "Boardwalk",
+  "category": "Data & infrastructure",
+  "use": "Discloses Tavily as the web-search provider for workflow agents.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "botts-ai": {
+  "name": "botts.ai",
+  "category": "Workplace tools",
+  "use": "Token Factory inference for open-weight models",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "brain-orchestra": {
+  "name": "Brain Orchestra",
+  "category": "Data & infrastructure",
+  "use": "Routes selected open-weight model requests to Nebius inference.",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-16"
+ },
+ "brave-software": {
+  "name": "Brave Software",
+  "category": "Consumer & commerce",
+  "use": "Uses Nebius inference for Answer with AI and Ask Brave.",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-17"
+ },
+ "bryn": {
+  "name": "Bryn",
+  "category": "Workplace tools",
+  "use": "Tavily web search for enrichment",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "bunq": {
+  "name": "bunq",
+  "category": "Finance",
+  "use": "Runs Finn’s open-weight models on Nebius",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-22",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "businessmcp": {
+  "name": "BusinessMCP",
+  "category": "Workplace tools",
+  "use": "Tavily web research for its assistant and sales",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "caltech": {
+  "name": "Caltech",
+  "category": "Science & research",
+  "use": "Cloud compute for mathematical research",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "cambrium": {
+  "name": "Cambrium",
+  "category": "Health & biotech",
+  "use": "Runs protein-design inference on Nebius AI Cloud GPUs.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-08-13"
+ },
+ "camocopy": {
+  "name": "CamoCopy",
+  "category": "Consumer & commerce",
+  "use": "Nebius hosting for AI chat and personal-data storage",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "candor": {
+  "name": "Candor",
+  "category": "Workplace tools",
+  "use": "Audience research with Tavily web search",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "cava": {
+  "name": "CAVA",
+  "category": "Consumer & commerce",
+  "use": "Tavily internet access for Ask Astro",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-16",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "centml": {
+  "name": "CentML",
+  "category": "Data & infrastructure",
+  "use": "Uses Nebius GPU compute to support its AI inference platform.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2025-05-23"
+ },
+ "channel3": {
+  "name": "Channel3",
+  "category": "Consumer & commerce",
+  "use": "GPU cloud infrastructure for AI model hosting",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "chatfuel": {
+  "name": "Chatfuel",
+  "category": "Workplace tools",
+  "use": "Serves AI chatbot models through Token Factory.",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius AI Studio",
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-09-24"
+ },
+ "cloop": {
+  "name": "Cloop",
+  "category": "Workplace tools",
+  "use": "Nebius inference for website chat and sales messages",
+  "services": [
+   "Nebius AI Studio",
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Data processing",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "cloudflare": {
+  "name": "Cloudflare",
+  "category": "Data & infrastructure",
+  "use": "Uses Nebius compute for Workers AI inference.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-06-10"
+ },
+ "cloudthrill": {
+  "name": "CloudThrill",
+  "category": "Business services",
+  "use": "Multimodal inference labs and Kubernetes model serving",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "coforge": {
+  "name": "Coforge",
+  "category": "Business services",
+  "use": "Tavily web research for CompanyLens",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "cognition": {
+  "name": "Cognition",
+  "category": "Developer tools",
+  "use": "Named by Nebius as a customer.",
+  "services": [],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-18"
+ },
+ "cohere": {
+  "name": "Cohere",
+  "category": "Model developers",
+  "use": "Uses Tavily search, contracted future Nebius AI Cloud capacity.",
+  "services": [
+   "Tavily",
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "agreement",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-13"
+ },
+ "compugen": {
+  "name": "Compugen",
+  "category": "Health & biotech",
+  "use": "Trained a cancer immune-feature model on Nebius AI Cloud.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-13"
+ },
+ "contri": {
+  "name": "Contri",
+  "category": "Workplace tools",
+  "use": "Tavily web research for business chat and planning",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-21",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "converge-bio": {
+  "name": "Converge Bio",
+  "category": "Health & biotech",
+  "use": "Trained a single-cell model on Nebius AI Cloud.",
+  "services": [
+   "Nebius AI Studio",
+   "Nebius AI Cloud",
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Model training",
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-19"
+ },
+ "core-automation": {
+  "name": "Core Automation",
+  "category": "Model developers",
+  "use": "Selected Nebius AI Cloud for planned foundation-model research.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "agreement",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-08-12"
+ },
+ "cortecs": {
+  "name": "Cortecs",
+  "category": "Data & infrastructure",
+  "use": "Nebius inference in a European LLM gateway",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "cosine": {
+  "name": "Cosine",
+  "category": "Developer tools",
+  "use": "Trains coding models on Nebius AI Cloud and Token Factory.",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Model training",
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-08-04"
+ },
+ "cotal": {
+  "name": "Cotal",
+  "category": "Developer tools",
+  "use": "Hosts agent sandboxes on Nebius",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "creatorai": {
+  "name": "CreatorAI",
+  "category": "Media & creativity",
+  "use": "Uses Tavily web search for trend and topic features.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-11",
+  "baseline": false,
+  "latestEvidence": "2026-10-10"
+ },
+ "cresco": {
+  "name": "Cresco",
+  "category": "Finance",
+  "use": "Tavily web search for stock analysis",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-21",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "crew-platforms": {
+  "name": "Crew",
+  "category": "Workplace tools",
+  "use": "Tavily web search for AI employees",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-15",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "cube27": {
+  "name": "CiteLadder",
+  "category": "Workplace tools",
+  "use": "Tavily search for commerce competitor research",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-15",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "cursor": {
+  "name": "Cursor",
+  "category": "Developer tools",
+  "use": "Runs large reinforcement-learning jobs on Nebius B300 GPUs.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-18"
+ },
+ "custodio-legal": {
+  "name": "Custodio Legal",
+  "category": "Workplace tools",
+  "use": "Legal document generation and embeddings with Token Factory",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Data processing",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "databricks": {
+  "name": "Databricks",
+  "category": "Data & infrastructure",
+  "use": "Named by Nebius and Tavily among Tavily users.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-07"
+ },
+ "datadog": {
+  "name": "Datadog",
+  "category": "Data & infrastructure",
+  "use": "Nebius AI services and H200 monitoring validation",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-22",
+  "baseline": false,
+  "latestEvidence": "2026-10-23"
+ },
+ "datarobot": {
+  "name": "DataRobot",
+  "category": "Data & infrastructure",
+  "use": "Runs its agent platform on Nebius Managed Kubernetes.",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "decart": {
+  "name": "Decart",
+  "category": "Model developers",
+  "use": "Named by Nebius as an AI-lab customer and technical partner.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "dentoo": {
+  "name": "Dentoo",
+  "category": "Health & biotech",
+  "use": "Nebius AI Studio fallback for its Dia chat assistant",
+  "services": [
+   "Nebius AI Studio",
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "dp-services": {
+  "name": "dp/Services",
+  "category": "Security & compliance",
+  "use": "Uses Tavily search and public-web extraction in its assistant.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "dream-security": {
+  "name": "Dream",
+  "category": "Security & compliance",
+  "use": "Named in Tavily for Startups' trusted-by list.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-10-14",
+  "baseline": false,
+  "latestEvidence": "2026-10-14"
+ },
+ "drova": {
+  "name": "Drova",
+  "category": "Security & compliance",
+  "use": "Tavily search and context enrichment",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-15",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "dualoop-coach": {
+  "name": "dualoop Coach",
+  "category": "Workplace tools",
+  "use": "Tavily web search for an AI coaching workspace",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "dubformer": {
+  "name": "Dubformer",
+  "category": "Media & creativity",
+  "use": "Trains speech models using Nebius GPUs and Object Storage.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-04"
+ },
+ "elastic": {
+  "name": "Elastic",
+  "category": "Data & infrastructure",
+  "use": "Tavily search for security advisory drafting",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "elaw": {
+  "name": "eLaw",
+  "category": "Workplace tools",
+  "use": "Tavily web retrieval for legal research",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-17",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "elnora-ai": {
+  "name": "Elnora",
+  "category": "Health & biotech",
+  "use": "Uses Tavily for web and literature retrieval in research agents.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "estateview": {
+  "name": "EstateView",
+  "category": "Finance",
+  "use": "Tavily search for AI-assisted estate planning",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "eulex": {
+  "name": "Eulex",
+  "category": "Workplace tools",
+  "use": "Optional Tavily web retrieval in Prompt Navigator",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "eurouter": {
+  "name": "EUrouter",
+  "category": "Data & infrastructure",
+  "use": "Routes model requests through Nebius Token Factory",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "everyais": {
+  "name": "everyais",
+  "category": "Data & infrastructure",
+  "use": "Routes model inference requests through Nebius Token Factory",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "evidence": {
+  "name": "Evidence",
+  "category": "Workplace tools",
+  "use": "Uses Tavily for web search and page extraction.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-08",
+  "baseline": false,
+  "latestEvidence": "2026-10-08"
+ },
+ "fal": {
+  "name": "fal",
+  "category": "Data & infrastructure",
+  "use": "Named by Nebius as a selected customer.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2025-05-20"
+ },
+ "fieldway": {
+  "name": "Fieldway",
+  "category": "Business services",
+  "use": "Used Tavily for client research and compared it with Exa.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-13"
+ },
+ "findyoujobs": {
+  "name": "FindYouJobs",
+  "category": "Workplace tools",
+  "use": "Tavily search for finding and researching jobs",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-15",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "flitig": {
+  "name": "Flitig",
+  "category": "Workplace tools",
+  "use": "Uses Tavily for news search when users enable that capability.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "forge-solutions": {
+  "name": "Forge",
+  "category": "Workplace tools",
+  "use": "Tavily searches for applicable building codes",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "freeme": {
+  "name": "FreeMe",
+  "category": "Consumer & commerce",
+  "use": "Nebius embeddings through OpenRouter for RAG fallback",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "friendliai": {
+  "name": "FriendliAI",
+  "category": "Data & infrastructure",
+  "use": "Runs its inference platform on Nebius GPU infrastructure",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-21",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "fuseable": {
+  "name": "Fuseable",
+  "category": "Workplace tools",
+  "use": "Tavily web search for AI features",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-16",
+  "baseline": false,
+  "latestEvidence": "2026-10-16"
+ },
+ "futuresmart-ai": {
+  "name": "FutureSmart AI",
+  "category": "Business services",
+  "use": "Uses Tavily web search and tested it in a 52-query review.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-30",
+  "baseline": false,
+  "latestEvidence": "2026-08-20"
+ },
+ "fyvie-ai": {
+  "name": "Fyvie",
+  "category": "Model developers",
+  "use": "Nebius GPU compute for model inference",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "gdelt-cloud": {
+  "name": "GDELT Cloud",
+  "category": "Data & infrastructure",
+  "use": "Tavily article extraction for event coding",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Data processing",
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-15",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "geico": {
+  "name": "GEICO",
+  "category": "Finance",
+  "use": "Deploys production AI with DataRobot and Nebius AI Cloud.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-09",
+  "baseline": false,
+  "latestEvidence": "2026-03-18"
+ },
+ "general-input": {
+  "name": "General Input",
+  "category": "Workplace tools",
+  "use": "Uses Tavily for web search.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "genesis-molecular-ai": {
+  "name": "Genesis Molecular AI",
+  "category": "Health & biotech",
+  "use": "Uses GPU infrastructure to develop AI models for drug discovery.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-20"
+ },
+ "genieforge": {
+  "name": "GenieForge",
+  "category": "Developer tools",
+  "use": "Uses Tavily for web search when a builder or app enables it.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "genius-loci": {
+  "name": "Genius Loci",
+  "category": "Workplace tools",
+  "use": "Tavily web search for guest chat",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-16",
+  "baseline": false,
+  "latestEvidence": "2026-10-16"
+ },
+ "geomage": {
+  "name": "Geomage",
+  "category": "Science & research",
+  "use": "Named by Nebius as a GPU-cloud client.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2025-05-08"
+ },
+ "google-deepmind": {
+  "name": "Google DeepMind",
+  "category": "Model developers",
+  "use": "CRISPR-GPT research training and inference on Nebius.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-05",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "gptree": {
+  "name": "GPTree",
+  "category": "Workplace tools",
+  "use": "Tavily web search inside AI conversations",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-17",
+  "baseline": false,
+  "latestEvidence": "2026-10-17"
+ },
+ "grafana-labs": {
+  "name": "Grafana Labs",
+  "category": "Data & infrastructure",
+  "use": "Uses Tavily for on-demand web search in Grafana Assistant.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "grax": {
+  "name": "GRAX",
+  "category": "Data & infrastructure",
+  "use": "Demonstrated Tavily search in a Salesforce enrichment agent.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-05",
+  "baseline": false,
+  "latestEvidence": "2025-02-25"
+ },
+ "groq": {
+  "name": "Groq",
+  "category": "Data & infrastructure",
+  "use": "Used Tavily for web search in its retired Compound systems.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "groundroute": {
+  "name": "GroundRoute",
+  "category": "Data & infrastructure",
+  "use": "Tavily search routing and benchmark testing",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-15",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "hadba": {
+  "name": "HADBA",
+  "category": "Workplace tools",
+  "use": "Uses Tavily for market, competitor and performance research.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-11",
+  "baseline": false,
+  "latestEvidence": "2026-10-11"
+ },
+ "happyrobot": {
+  "name": "HappyRobot",
+  "category": "Workplace tools",
+  "use": "Named in Tavily’s trusted-user list.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-10-13",
+  "baseline": false,
+  "latestEvidence": "2026-10-12"
+ },
+ "hark-labs": {
+  "name": "Hark",
+  "category": "Model developers",
+  "use": "Real-time AI inference on Nebius Token Factory",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-14",
+  "baseline": false,
+  "latestEvidence": "2026-10-13"
+ },
+ "heatseeker": {
+  "name": "Heatseeker",
+  "category": "Workplace tools",
+  "use": "Used Tavily to classify companies as B2B or B2C.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2024-08-23"
+ },
+ "hedy-ai": {
+  "name": "Hedy AI",
+  "category": "Workplace tools",
+  "use": "AI text processing through Nebius in the Netherlands",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-15",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "helical": {
+  "name": "Helical",
+  "category": "Health & biotech",
+  "use": "Trains and adapts biological models, including Helix-mRNA.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving",
+   "Simulation",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-09-24"
+ },
+ "heygen": {
+  "name": "HeyGen",
+  "category": "Media & creativity",
+  "use": "Trains AI models on Nebius GPUs using SkyPilot.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-14"
+ },
+ "higgsfield": {
+  "name": "Higgsfield",
+  "category": "Media & creativity",
+  "use": "Trained SOL 2.0 on Nebius Blackwell GPUs.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving",
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-23",
+  "baseline": false,
+  "latestEvidence": "2026-07-07"
+ },
+ "higgsfield-ai": {
+  "name": "Higgsfield AI",
+  "category": "Media & creativity",
+  "use": "Trains Soul 2.0 on Nebius B300s and runs inference.",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius Token Factory",
+   "Nebius AI Studio"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving",
+   "Data processing",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-13"
+ },
+ "hostyourai": {
+  "name": "HostYourAI",
+  "category": "Data & infrastructure",
+  "use": "Per-token inference for shared Router models",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-05-28"
+ },
+ "hyperbound": {
+  "name": "Hyperbound",
+  "category": "Workplace tools",
+  "use": "Uses Tavily as a search API for its AI agents.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "ibm": {
+  "name": "IBM",
+  "category": "Workplace tools",
+  "use": "IBM uses Tavily search in CUGA and its app gallery.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "iiit-delhi": {
+  "name": "Indraprastha Institute of Information Technology, Delhi",
+  "category": "Science & research",
+  "use": "Nebius compute for speech AI research",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "immersive-labs": {
+  "name": "Immersive",
+  "category": "Security & compliance",
+  "use": "Named by Tavily among its trusted users.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-10-10",
+  "baseline": false,
+  "latestEvidence": "2026-10-10"
+ },
+ "inceptron": {
+  "name": "Inceptron",
+  "category": "Data & infrastructure",
+  "use": "Nebius infrastructure for EU inference workloads",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "industrial-next": {
+  "name": "Industrial Next",
+  "category": "Robotics & industry",
+  "use": "Uses Nebius credits for action-model reasoning experiments.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-05-08"
+ },
+ "inherent": {
+  "name": "Inherent",
+  "category": "Model developers",
+  "use": "Trained its Faraday AI Scientist on Nebius AI Cloud",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "injester": {
+  "name": "Injester",
+  "category": "Consumer & commerce",
+  "use": "Tavily extraction and Nebius inference for web restructuring",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius Token Factory",
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search",
+   "Data processing",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-21",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "insightopus": {
+  "name": "InsightOpus",
+  "category": "Workplace tools",
+  "use": "Tavily web search for prospecting signals",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-17",
+  "baseline": false,
+  "latestEvidence": "2026-10-17"
+ },
+ "intergral": {
+  "name": "Intergral",
+  "category": "Developer tools",
+  "use": "Lists Tavily as an engineering provider.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [],
+  "evidence": "relationship-context",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "ironclad": {
+  "name": "Ironclad",
+  "category": "Workplace tools",
+  "use": "Named in Tavily’s trusted-by listings.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-10-13",
+  "baseline": false,
+  "latestEvidence": "2026-10-13"
+ },
+ "jetbrains": {
+  "name": "JetBrains",
+  "category": "Developer tools",
+  "use": "Nebius Mellum2 training infrastructure. Tavily search.",
+  "services": [
+   "Nebius AI Cloud",
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search",
+   "Model training",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-22"
+ },
+ "jinbay": {
+  "name": "Jinbay",
+  "category": "Business services",
+  "use": "Tavily for recruiting candidate research",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-21",
+  "baseline": false,
+  "latestEvidence": "2025-03-26"
+ },
+ "jua": {
+  "name": "Jua",
+  "category": "Model developers",
+  "use": "Trains weather models and serves forecasts for energy markets.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving",
+   "Simulation"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-08-28"
+ },
+ "k2k": {
+  "name": "K2K",
+  "category": "Robotics & industry",
+  "use": "Uses Nebius for Palermo video analysis and real-time alerts.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-02",
+  "baseline": false,
+  "latestEvidence": "2026-10-14"
+ },
+ "kagi-assistant": {
+  "name": "Kagi Assistant",
+  "category": "Consumer & commerce",
+  "use": "Uses Nebius model APIs to generate Assistant responses",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "kedalia": {
+  "name": "Kedalia",
+  "category": "Developer tools",
+  "use": "Optional EU inference for coding and email checks",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "kindora": {
+  "name": "Kindora",
+  "category": "Workplace tools",
+  "use": "Tavily search for donor and prospect intelligence",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-15",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "kineto": {
+  "name": "Kineto",
+  "category": "Media & creativity",
+  "use": "Nebius model inference and Tavily assistant web search",
+  "services": [
+   "Tavily",
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Agentic search",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-15",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "kissanai": {
+  "name": "KissanAI",
+  "category": "Workplace tools",
+  "use": "Trains and serves Dhenu models for agricultural AI assistants.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving",
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2025-06-24"
+ },
+ "knowledgepilot": {
+  "name": "KnowledgePilot",
+  "category": "Workplace tools",
+  "use": "Uses Nebius for AI question answering",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "knull": {
+  "name": "Knull",
+  "category": "Workplace tools",
+  "use": "Tavily for capability-dependent web research and search",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-16",
+  "baseline": false,
+  "latestEvidence": "2026-10-16"
+ },
+ "kontinent": {
+  "name": "Kontinent",
+  "category": "Data & infrastructure",
+  "use": "Token Factory inference through its AI gateway",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "konwo": {
+  "name": "Konwo",
+  "category": "Workplace tools",
+  "use": "Nebius models power real-time phone conversations.",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "krisp": {
+  "name": "Krisp",
+  "category": "Workplace tools",
+  "use": "Trained accent-conversion voice models on Nebius H100 GPUs.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Storage",
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2024-11-24"
+ },
+ "kugelaudio": {
+  "name": "KugelAudio",
+  "category": "Model developers",
+  "use": "Runs speech synthesis and recognition inference on Nebius GPUs.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "langchain": {
+  "name": "LangChain",
+  "category": "Developer tools",
+  "use": "Built WebLangChain with Tavily web search and retrieval.",
+  "services": [
+   "Tavily",
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-09",
+  "baseline": false,
+  "latestEvidence": "2025-12-05"
+ },
+ "langwatch": {
+  "name": "LangWatch",
+  "category": "Developer tools",
+  "use": "Agent simulation tests with Nebius-served models",
+  "services": [
+   "Nebius AI Studio",
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving",
+   "Simulation"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "latent-labs": {
+  "name": "Latent Labs",
+  "category": "Health & biotech",
+  "use": "Trains and runs protein-design models on Blackwell GPUs.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-14"
+ },
+ "legalon": {
+  "name": "LegalOn",
+  "category": "Workplace tools",
+  "use": "Uses Tavily to retrieve data for its applications and AI agents.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "lexarna": {
+  "name": "Lexarna",
+  "category": "Workplace tools",
+  "use": "Tavily web search for research and drafting",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-21",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "lightfern": {
+  "name": "Lightfern",
+  "category": "Workplace tools",
+  "use": "Runs inference for AI email drafting and real-time autocomplete.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "lightning-ai": {
+  "name": "Lightning AI",
+  "category": "Data & infrastructure",
+  "use": "Named by Nebius as a customer with a GPU platform integration.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-15"
+ },
+ "liner": {
+  "name": "Liner",
+  "category": "Consumer & commerce",
+  "use": "Tested Tavily search and research in 2026 benchmarks.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-28",
+  "baseline": false,
+  "latestEvidence": "2026-08-21"
+ },
+ "linkup": {
+  "name": "Linkup",
+  "category": "Data & infrastructure",
+  "use": "Scores web pages on Nebius and benchmarks Tavily search.",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius Token Factory",
+   "Tavily"
+  ],
+  "workloads": [
+   "Inference/serving",
+   "Data processing",
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-14"
+ },
+ "lioma": {
+  "name": "Lioma",
+  "category": "Workplace tools",
+  "use": "Tavily web search for company research",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "lity-club": {
+  "name": "Lity Club",
+  "category": "Workplace tools",
+  "use": "Serverless document recognition for a legal copilot",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius Serverless AI"
+  ],
+  "workloads": [
+   "Data processing",
+   "Inference/serving",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "liveavtr": {
+  "name": "LiveAVTR",
+  "category": "Workplace tools",
+  "use": "Uses Tavily for its agents’ optional internet-search tool.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "lmsys-sglang": {
+  "name": "LMSYS · SGLang",
+  "category": "Data & infrastructure",
+  "use": "Used Nebius GPUs for development and R1 inference experiments.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-02"
+ },
+ "localign": {
+  "name": "Localign",
+  "category": "Workplace tools",
+  "use": "Uses Nebius EU-hosted open models in default Mode A.",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-03",
+  "baseline": false,
+  "latestEvidence": "2026-10-03"
+ },
+ "logical-intelligence": {
+  "name": "Logical Intelligence",
+  "category": "Model developers",
+  "use": "Develops AI reasoning models on the Nebius platform.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-05-13"
+ },
+ "london-institute": {
+  "name": "London Institute for Mathematical Sciences",
+  "category": "Science & research",
+  "use": "Uses Nebius compute for mathematics and physics research.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "luma-ai": {
+  "name": "Luma",
+  "category": "Model developers",
+  "use": "Nebius powered inference for Dream Machine’s launch.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving",
+   "Storage"
+  ],
+  "evidence": "named",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2024-09-17"
+ },
+ "lurus": {
+  "name": "Lurus",
+  "category": "Workplace tools",
+  "use": "Operates AI models on Nebius Token Factory",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "lynx-analytics": {
+  "name": "Lynx Analytics",
+  "category": "Health & biotech",
+  "use": "Ran graph AI on Nebius AI Cloud before its March 2026 split.",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius AI Studio",
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving",
+   "Agentic search",
+   "Storage",
+   "Simulation"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-13"
+ },
+ "lynxkite": {
+  "name": "LynxKite",
+  "category": "Health & biotech",
+  "use": "Uses Nebius AI Cloud for graph AI and drug-discovery work.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving",
+   "Data processing",
+   "Agentic search",
+   "Storage",
+   "Simulation"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "mangoapps": {
+  "name": "MangoApps",
+  "category": "Workplace tools",
+  "use": "Uses Tavily for optional web-search fallback in workforce bots.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "mastercard": {
+  "name": "Mastercard",
+  "category": "Finance",
+  "use": "Uses Tavily’s agentic web search to verify merchant categories.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-14"
+ },
+ "meingpt": {
+  "name": "MeinGPT",
+  "category": "Workplace tools",
+  "use": "Offers Nebius-hosted language models for workplace AI",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-16",
+  "baseline": false,
+  "latestEvidence": "2026-10-17"
+ },
+ "melious": {
+  "name": "Melious",
+  "category": "Data & infrastructure",
+  "use": "Uses Nebius for open-weight model inference",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "merge": {
+  "name": "Merge",
+  "category": "Developer tools",
+  "use": "Tavily search in Merge Gateway",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-15",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "meta-platforms": {
+  "name": "Meta",
+  "category": "Consumer & commerce",
+  "use": "Uses Nebius AI Cloud, with more capacity planned from 2027.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-19"
+ },
+ "microsoft": {
+  "name": "Microsoft",
+  "category": "Workplace tools",
+  "use": "Uses dedicated AI infrastructure delivered in phases.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-22"
+ },
+ "milestone-systems": {
+  "name": "Milestone Systems",
+  "category": "Robotics & industry",
+  "use": "Nebius model training and announced synthetic-video launch",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Data processing",
+   "Model training",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-15"
+ },
+ "mills-it-consulting": {
+  "name": "WASH AI",
+  "category": "Workplace tools",
+  "use": "Tavily web search for WASH AI",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-15",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "mimicx-ai": {
+  "name": "Mimicx AI",
+  "category": "Model developers",
+  "use": "Real-time deepfake verification on Nebius",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "mirage": {
+  "name": "Mirage",
+  "category": "Media & creativity",
+  "use": "Trains audio-to-video models on Nebius GPU clusters.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2025-11-06"
+ },
+ "mistral-ai": {
+  "name": "Mistral AI",
+  "category": "Model developers",
+  "use": "Uses Nebius GPUs for model training.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-19"
+ },
+ "mithril": {
+  "name": "Mithril",
+  "category": "Data & infrastructure",
+  "use": "Runs real-time and batch inference through Nebius Token Factory.",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "modulawai": {
+  "name": "ModulawAI",
+  "category": "Workplace tools",
+  "use": "Uses Tavily for legal web research and citation checks.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-14"
+ },
+ "monday-com": {
+  "name": "monday.com",
+  "category": "Workplace tools",
+  "use": "Uses Token Factory inference and Tavily web search",
+  "services": [
+   "Nebius Token Factory",
+   "Tavily"
+  ],
+  "workloads": [
+   "Inference/serving",
+   "Agentic search",
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-18"
+ },
+ "mongodb": {
+  "name": "MongoDB",
+  "category": "Data & infrastructure",
+  "use": "Uses Tavily tools for agent search, crawling and extraction.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-30",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "moon-surgical": {
+  "name": "Moon Surgical",
+  "category": "Health & biotech",
+  "use": "Uses Nebius Physical AI Workbench",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-22",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "moonvalley": {
+  "name": "Moonvalley",
+  "category": "Model developers",
+  "use": "Uses Nebius compute to develop its Marey video model.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2025-07-21"
+ },
+ "mount-sinai-health-system": {
+  "name": "Mount Sinai Health System",
+  "category": "Health & biotech",
+  "use": "Transferred a validated analytical agent to Nebius cloud",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-06",
+  "baseline": false,
+  "latestEvidence": "2026-03-16"
+ },
+ "moveo-ai": {
+  "name": "Moveo.AI",
+  "category": "Workplace tools",
+  "use": "GPU compute for self-hosted models",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "multiply-labs": {
+  "name": "Multiply Labs",
+  "category": "Health & biotech",
+  "use": "Trains robotics models on Nebius H100 GPUs",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "nathan-brank": {
+  "name": "Nathan & Brank",
+  "category": "Business services",
+  "use": "Uses Tavily for live research in AI chat and lead enrichment.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "nebulock": {
+  "name": "Nebulock",
+  "category": "Security & compliance",
+  "use": "Listed among Tavily’s trusted developers",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-10-16",
+  "baseline": false,
+  "latestEvidence": "2026-10-16"
+ },
+ "neodemos": {
+  "name": "NeoDemos",
+  "category": "Workplace tools",
+  "use": "Token Factory embeddings for council document search",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Data processing",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "neuralwatt": {
+  "name": "Neuralwatt",
+  "category": "Data & infrastructure",
+  "use": "Uses Nebius GPU infrastructure and AI compute services",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "neurodiverso": {
+  "name": "Neurodiverso",
+  "category": "Consumer & commerce",
+  "use": "Nebius model inference for the Liah assistant",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "nexcite": {
+  "name": "nexcite",
+  "category": "Consumer & commerce",
+  "use": "Uses Tavily for web search and extraction of web sources.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-13",
+  "baseline": false,
+  "latestEvidence": "2026-10-13"
+ },
+ "nexla": {
+  "name": "Nexla",
+  "category": "Data & infrastructure",
+  "use": "Runs video-to-itinerary AI pipelines on Nebius B200 GPUs.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving",
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "ninjatech-ai": {
+  "name": "NinjaTech AI",
+  "category": "Workplace tools",
+  "use": "Uses Tavily for trending-news research in video agents.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "noctovisor": {
+  "name": "Noctovisor",
+  "category": "Security & compliance",
+  "use": "Tavily news-search evaluation and page-reading fallback",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-01",
+  "baseline": false,
+  "latestEvidence": "2026-10-01"
+ },
+ "noli-ai": {
+  "name": "Noli AI",
+  "category": "Workplace tools",
+  "use": "Uses Tavily web search in its Knowledge Base assistant.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "nolla-health": {
+  "name": "Nolla Health",
+  "category": "Health & biotech",
+  "use": "Post-trained clinical models on 32 Nebius B200 GPUs",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Simulation"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "nomaris": {
+  "name": "Nomaris",
+  "category": "Workplace tools",
+  "use": "Tavily search for legal research and counterparty checks",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-21",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "norma": {
+  "name": "Norma",
+  "category": "Workplace tools",
+  "use": "Tavily search for firm research during onboarding and refreshes",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "normacore": {
+  "name": "NormaCore",
+  "category": "Robotics & industry",
+  "use": "Stores robot data and runs GPU training and Serverless AI jobs.",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius Serverless AI"
+  ],
+  "workloads": [
+   "Model training",
+   "Storage",
+   "Data processing",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-09-28"
+ },
+ "novis": {
+  "name": "Novis",
+  "category": "Workplace tools",
+  "use": "Lists Nebius for open models available on customer request.",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "nttpc-communications": {
+  "name": "NTTPC Communications",
+  "category": "Data & infrastructure",
+  "use": "Tavily search in a Dify AI agent demonstration",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-21",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "nucleo": {
+  "name": "Nucleo",
+  "category": "Health & biotech",
+  "use": "Trains medical imaging models on Nebius GPU compute",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "numezis": {
+  "name": "Numezis",
+  "category": "Workplace tools",
+  "use": "Uses Tavily for company research and regulatory monitoring.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "nvidia": {
+  "name": "NVIDIA",
+  "category": "Data & infrastructure",
+  "use": "Nebius customer and Tavily search user",
+  "services": [
+   "Nebius AI Cloud",
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search",
+   "Model training"
+  ],
+  "evidence": "named",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "nyb-ai": {
+  "name": "NYB.AI",
+  "category": "Health & biotech",
+  "use": "Runs molecular docking and screening on Nebius AI Cloud.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Simulation"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-07-23"
+ },
+ "ocean": {
+  "name": "Ocean",
+  "category": "Security & compliance",
+  "use": "Uses Tavily in production email investigation agents.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-13",
+  "baseline": false,
+  "latestEvidence": "2026-10-14"
+ },
+ "odin": {
+  "name": "Odin",
+  "category": "Finance",
+  "use": "Tavily web search for industry and market research",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "oneadvanced": {
+  "name": "OneAdvanced",
+  "category": "Workplace tools",
+  "use": "Uses Tavily for optional web search in Intelligent Chat.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "openbenchmarks": {
+  "name": "Openbenchmarks",
+  "category": "Science & research",
+  "use": "Benchmarked Nebius inference and Tavily search APIs",
+  "services": [
+   "Tavily",
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Agentic search",
+   "Inference/serving",
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-28",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "openhands": {
+  "name": "OpenHands",
+  "category": "Developer tools",
+  "use": "Uses Tavily as the default search engine in OpenHands Cloud.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-14",
+  "baseline": false,
+  "latestEvidence": "2026-10-14"
+ },
+ "openstockai": {
+  "name": "OpenStockAI",
+  "category": "Finance",
+  "use": "Tavily search for investment research",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-21",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "orbiq": {
+  "name": "Orbiq",
+  "category": "Security & compliance",
+  "use": "Uses Nebius Token Factory as its primary inference provider.",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-06",
+  "baseline": false,
+  "latestEvidence": "2026-03-04"
+ },
+ "orbit": {
+  "name": "ORBIT",
+  "category": "Business services",
+  "use": "Nebius inference for diagnostics and interview summaries",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "outerbounds": {
+  "name": "Outerbounds",
+  "category": "Data & infrastructure",
+  "use": "Runs Metaflow training and inference on Nebius GPUs.",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius AI Studio",
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving",
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "outerview": {
+  "name": "Outerview",
+  "category": "Media & creativity",
+  "use": "Tavily web search for interview preparation",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-15",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "overworld": {
+  "name": "Overworld",
+  "category": "Model developers",
+  "use": "Nebius customer featured at GTC 2026.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-30",
+  "baseline": false,
+  "latestEvidence": "2026-04-09"
+ },
+ "pado": {
+  "name": "PADO",
+  "category": "Data & infrastructure",
+  "use": "Procures Nebius GPUs for a beta service with isolated tenants.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Storage"
+  ],
+  "evidence": "named",
+  "firstListedAt": "2026-10-06",
+  "baseline": false,
+  "latestEvidence": "2026-10-06"
+ },
+ "palantir": {
+  "name": "Palantir",
+  "category": "Workplace tools",
+  "use": "Signed Nebius deal for planned sovereign AI integration.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "agreement",
+  "firstListedAt": "2026-10-08",
+  "baseline": false,
+  "latestEvidence": "2026-09-23"
+ },
+ "palatial": {
+  "name": "Palatial",
+  "category": "Robotics & industry",
+  "use": "GPU generation of simulation-ready robotics assets",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-15",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "parsr": {
+  "name": "PARSR",
+  "category": "Workplace tools",
+  "use": "Beta service uses Tavily for questions needing current web info.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "patricia": {
+  "name": "Patricia",
+  "category": "Workplace tools",
+  "use": "Uses Tavily when assistant tasks need public-web information.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "pawrate": {
+  "name": "Pawrate",
+  "category": "Consumer & commerce",
+  "use": "Uses Tavily to find veterinarians from an approximate location.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-13"
+ },
+ "pdfs-build": {
+  "name": "pdfs.build",
+  "category": "Developer tools",
+  "use": "Tavily web search for its document assistant",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-15",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "peerbound": {
+  "name": "Peerbound",
+  "category": "Workplace tools",
+  "use": "Uses Tavily for company enrichment and Slack agent web search.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "perforated": {
+  "name": "Perforated",
+  "category": "Model developers",
+  "use": "Nebius compute for an eight-week research pilot",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-12"
+ },
+ "photoroom": {
+  "name": "Photoroom",
+  "category": "Media & creativity",
+  "use": "Trains and serves image models for its photo-editing tools.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-13"
+ },
+ "pipeshift": {
+  "name": "Pipeshift",
+  "category": "Data & infrastructure",
+  "use": "Runs inference workloads on Nebius GPU infrastructure",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-21",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "pleias": {
+  "name": "Pleias",
+  "category": "Data & infrastructure",
+  "use": "TractoAI training and Nebius document processing",
+  "services": [
+   "TractoAI",
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Data processing",
+   "Inference/serving",
+   "Model training",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "pokta-labs": {
+  "name": "Pokta Labs",
+  "category": "Health & biotech",
+  "use": "Runs PoktaCare on Token Factory and benchmarks LLMs with Nebius.",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-28",
+  "baseline": false,
+  "latestEvidence": "2026-08-18"
+ },
+ "porsche": {
+  "name": "Porsche",
+  "category": "Robotics & industry",
+  "use": "Generates synthetic driving videos on Nebius compute.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving",
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "portable": {
+  "name": "Portable",
+  "category": "Business services",
+  "use": "Tavily web search for customer company research",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-21",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "positronic-robotics": {
+  "name": "Positronic Robotics",
+  "category": "Robotics & industry",
+  "use": "Trained machine-learning models for its cleaning robots.",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius Serverless AI"
+  ],
+  "workloads": [
+   "Model training",
+   "Storage",
+   "Data processing",
+   "Simulation",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-18"
+ },
+ "prem-confidential-api": {
+  "name": "PREM Confidential API",
+  "category": "Data & infrastructure",
+  "use": "Uses Nebius for zero-retention AI inference",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "prima-mente": {
+  "name": "Prima Mente",
+  "category": "Health & biotech",
+  "use": "Trains and serves Pleiades models on a reserved GPU cluster.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-14"
+ },
+ "prime-intellect": {
+  "name": "Prime Intellect",
+  "category": "Data & infrastructure",
+  "use": "Trains on Nebius and uses INTELLECT-3 via OpenRouter.",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-01-13"
+ },
+ "princeton-university": {
+  "name": "Princeton University",
+  "category": "Science & research",
+  "use": "Researchers used Nebius AI Cloud for joint CRISPR-GPT research.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-05",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "prior-labs": {
+  "name": "Prior Labs",
+  "category": "Model developers",
+  "use": "Featured in a Nebius interview about TabPFN research.",
+  "services": [],
+  "workloads": [],
+  "evidence": "relationship-context",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": null
+ },
+ "prisma-labs": {
+  "name": "Prisma Labs",
+  "category": "Media & creativity",
+  "use": "Named by Nebius as a GPU-cloud client.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2025-05-08"
+ },
+ "prominai": {
+  "name": "ProminAI",
+  "category": "Business services",
+  "use": "Tavily search for its free AI visibility check",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-21",
+  "baseline": false,
+  "latestEvidence": "2026-08-08"
+ },
+ "prosus": {
+  "name": "Prosus",
+  "category": "Finance",
+  "use": "Runs Token Factory inference and uses Nebius H200 GPUs.",
+  "services": [
+   "Nebius Token Factory",
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving",
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-05"
+ },
+ "prozessx": {
+  "name": "XOS",
+  "category": "Workplace tools",
+  "use": "Tavily web research for XOS agents",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-15",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "pulsar-platform": {
+  "name": "Pulsar",
+  "category": "Workplace tools",
+  "use": "Nebius APIs for the Pulsar Platform core platform",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-22",
+  "baseline": false,
+  "latestEvidence": "2026-10-22"
+ },
+ "qadvo": {
+  "name": "Qadvo",
+  "category": "Workplace tools",
+  "use": "Uses Tavily for product specs, warranties and market research.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "qcentroid": {
+  "name": "QCentroid",
+  "category": "Data & infrastructure",
+  "use": "Tavily search for quantum computing feasibility research",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-21",
+  "baseline": false,
+  "latestEvidence": "2026-01-12"
+ },
+ "quantori": {
+  "name": "Quantori",
+  "category": "Health & biotech",
+  "use": "Molecular model training and simulations on Nebius GPUs",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving",
+   "Simulation"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-14"
+ },
+ "rasa": {
+  "name": "Rasa",
+  "category": "Developer tools",
+  "use": "Token Factory inference for voice-agent demonstrations",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "reactor": {
+  "name": "Reactor",
+  "category": "Data & infrastructure",
+  "use": "Runs real-time world-model inference on Nebius.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-14"
+ },
+ "read-ai": {
+  "name": "Read AI",
+  "category": "Workplace tools",
+  "use": "Uses Tavily to bring public web information into Ask Read.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "recalld": {
+  "name": "Recalld",
+  "category": "Data & infrastructure",
+  "use": "Tavily powers optional web search in Recalld Chat.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-16",
+  "baseline": false,
+  "latestEvidence": "2026-10-16"
+ },
+ "recavo-labs": {
+  "name": "Recavo",
+  "category": "Workplace tools",
+  "use": "Uses Tavily web search for AI pre-call briefs.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-03",
+  "baseline": false,
+  "latestEvidence": "2026-10-03"
+ },
+ "rechnungskit": {
+  "name": "Rechnungskit",
+  "category": "Workplace tools",
+  "use": "Token Factory for Kit, product suggestions and support drafts",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "recraft": {
+  "name": "Recraft",
+  "category": "Model developers",
+  "use": "Trains image models and serves image generation on Nebius.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving",
+   "Storage",
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-20"
+ },
+ "redis": {
+  "name": "Redis",
+  "category": "Data & infrastructure",
+  "use": "Tavily web search for Redis’ internal Haink agent",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-21",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "reflection": {
+  "name": "Reflection",
+  "category": "Model developers",
+  "use": "Signed a Nebius compute agreement worth over $1 billion.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "agreement",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-13"
+ },
+ "requesty": {
+  "name": "Requesty",
+  "category": "Data & infrastructure",
+  "use": "Routes model inference requests to Nebius",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "revolut": {
+  "name": "Revolut",
+  "category": "Finance",
+  "use": "Trains models and serves fraud and support agents on Nebius.",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving",
+   "Data processing",
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-13"
+ },
+ "revyn": {
+  "name": "Revyn",
+  "category": "Workplace tools",
+  "use": "Tavily web search inside Ask Revyn",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-21",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "rhoda": {
+  "name": "Rhoda",
+  "category": "Robotics & industry",
+  "use": "Trains video-based robotics models on Nebius GPUs and storage.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-21"
+ },
+ "rivet": {
+  "name": "Rivet",
+  "category": "Developer tools",
+  "use": "Dependency upgrades with Token Factory and Tavily",
+  "services": [
+   "Nebius Token Factory",
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "roboforce": {
+  "name": "RoboForce",
+  "category": "Robotics & industry",
+  "use": "Develops and tests AI models for industrial robots.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Simulation",
+   "Inference/serving",
+   "Data processing",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-13"
+ },
+ "robot-company": {
+  "name": "Robot Company",
+  "category": "Robotics & industry",
+  "use": "Robot simulation and training on Nebius serverless GPUs",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius Serverless AI"
+  ],
+  "workloads": [
+   "Data processing",
+   "Inference/serving",
+   "Model training",
+   "Simulation",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "rogo": {
+  "name": "Rogo",
+  "category": "Finance",
+  "use": "Named by Nebius as an AI Cloud customer.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-02-12"
+ },
+ "rox": {
+  "name": "Rox",
+  "category": "Workplace tools",
+  "use": "Uses Tavily search and extraction for sales account research.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "runrobot": {
+  "name": "RunRobot",
+  "category": "Robotics & industry",
+  "use": "Runs robot policy simulations on Nebius GPUs",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Simulation"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-03-15"
+ },
+ "salesforce": {
+  "name": "Salesforce",
+  "category": "Workplace tools",
+  "use": "Salesforce AI Research uses Tavily in Enterprise Deep Research.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-30",
+  "baseline": false,
+  "latestEvidence": "2026-09-30"
+ },
+ "saturn-cloud": {
+  "name": "Saturn Cloud",
+  "category": "Data & infrastructure",
+  "use": "Runs hosted AI development tiers on Nebius hardware",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Data processing",
+   "Inference/serving",
+   "Model training",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-15",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "schulki": {
+  "name": "schulKI",
+  "category": "Workplace tools",
+  "use": "Nebius for classroom chat and handwriting recognition",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving",
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "semianalysis": {
+  "name": "SemiAnalysis",
+  "category": "Science & research",
+  "use": "Uses Nebius for inference, training and storage benchmarks.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving",
+   "Model training",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "senitix": {
+  "name": "Senitix",
+  "category": "Workplace tools",
+  "use": "Tavily web search for Senitix AI",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "sentientpro": {
+  "name": "SentientPro",
+  "category": "Workplace tools",
+  "use": "Tavily web search for research and industry news",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "seqera": {
+  "name": "Seqera",
+  "category": "Health & biotech",
+  "use": "Ran protein-design and structure pipelines on Nebius GPUs.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving",
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-08"
+ },
+ "sereact": {
+  "name": "Sereact",
+  "category": "Robotics & industry",
+  "use": "Robot simulation and training on Nebius",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Data processing",
+   "Model training",
+   "Simulation",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-21",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "shared-learnings": {
+  "name": "Shared Learnings",
+  "category": "Business services",
+  "use": "Tavily search fallback for Settings Checker, Insights and News.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-04",
+  "baseline": false,
+  "latestEvidence": "2026-10-04"
+ },
+ "shopify": {
+  "name": "Shopify",
+  "category": "Consumer & commerce",
+  "use": "Trains models on Nebius H200 clusters using SkyPilot.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Storage",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-17"
+ },
+ "shout": {
+  "name": "Shout",
+  "category": "Workplace tools",
+  "use": "Uses Token Factory for AI inference on prompts and messages.",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-25"
+ },
+ "sievestack": {
+  "name": "SieveStack",
+  "category": "Health & biotech",
+  "use": "Runs molecular simulations and trains models for drug discovery.",
+  "services": [
+   "Nebius AI Cloud",
+   "TractoAI"
+  ],
+  "workloads": [
+   "Model training",
+   "Simulation",
+   "Inference/serving",
+   "Data processing",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-08"
+ },
+ "simulacra-ai": {
+  "name": "Simulacra AI",
+  "category": "Science & research",
+  "use": "Trains molecular wavefunction models on Nebius.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-16"
+ },
+ "skypilot-tokens": {
+  "name": "SkyPilot Tokens",
+  "category": "Data & infrastructure",
+  "use": "Model serving on Nebius GPUs and Token Factory",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "sligo-ai": {
+  "name": "Sligo AI",
+  "category": "Workplace tools",
+  "use": "Lists Tavily as an engineering provider for procurement agents.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [],
+  "evidence": "relationship-context",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "slingshot-ai": {
+  "name": "Slingshot AI",
+  "category": "Health & biotech",
+  "use": "Trains and serves models for Ash, its mental-health chatbot.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-08"
+ },
+ "snowflake": {
+  "name": "Snowflake",
+  "category": "Data & infrastructure",
+  "use": "Used Tavily search in ArcticSwarm research.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-15",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "socialcrawl": {
+  "name": "SocialCrawl",
+  "category": "Data & infrastructure",
+  "use": "Tavily web search, extraction, mapping and crawling",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search",
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "solidagent": {
+  "name": "Solidagent",
+  "category": "Workplace tools",
+  "use": "Nebius infrastructure for chatbot inference",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "solo-tech": {
+  "name": "Solo Tech",
+  "category": "Robotics & industry",
+  "use": "Nebius infrastructure and Token Factory robot reasoning",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "spinrun": {
+  "name": "Spinrun",
+  "category": "Workplace tools",
+  "use": "Uses Tavily for agent web search and page reading.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "splave-pc": {
+  "name": "Splave PC",
+  "category": "Consumer & commerce",
+  "use": "Uses Tavily for Sentinel PC hardware research.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-05-27"
+ },
+ "sprind": {
+  "name": "SPRIND",
+  "category": "Science & research",
+  "use": "Uses Tavily to research AI funding applicants' expertise.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-04"
+ },
+ "stage5": {
+  "name": "Stage5",
+  "category": "Workplace tools",
+  "use": "Uses Tavily web search in its AI-agent services.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "stanford-crispr-gpt": {
+  "name": "Stanford · CRISPR-GPT",
+  "category": "Health & biotech",
+  "use": "Fine-tunes gene-editing models on Nebius H100 GPUs.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-14"
+ },
+ "stevens-institute-of-technology": {
+  "name": "Stevens Institute of Technology",
+  "category": "Science & research",
+  "use": "Nebius compute supports mathematics research",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-16",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "sword-health": {
+  "name": "Sword Health",
+  "category": "Health & biotech",
+  "use": "Trains and serves AI models for Dawn and Thrive.",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-13"
+ },
+ "synthlabs": {
+  "name": "SynthLabs",
+  "category": "Model developers",
+  "use": "Validates reasoning datasets and trains models with TractoAI.",
+  "services": [
+   "TractoAI",
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving",
+   "Data processing",
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "tako": {
+  "name": "Tako",
+  "category": "Data & infrastructure",
+  "use": "Tested Tavily search and research APIs in benchmarks",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-15",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "tamguking": {
+  "name": "Tamguking",
+  "category": "Consumer & commerce",
+  "use": "Uses Tavily to find academic reference materials.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-21",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "tasksmind": {
+  "name": "tasksmind",
+  "category": "Developer tools",
+  "use": "Hosts a bug-investigation model on a Nebius vLLM endpoint.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-13",
+  "baseline": false,
+  "latestEvidence": "2026-10-13"
+ },
+ "td-synnex": {
+  "name": "TD SYNNEX",
+  "category": "Business services",
+  "use": "Reserved Nebius AI Cloud B300 capacity for partners.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "agreement",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "teamteacher": {
+  "name": "TeamTeacher",
+  "category": "Workplace tools",
+  "use": "Uses Tavily for web searches derived from teachers’ prompts.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-14"
+ },
+ "telecom-sudparis": {
+  "name": "Télécom SudParis",
+  "category": "Science & research",
+  "use": "Uses Nebius GPUs for LLM safety and synthetic news research.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-06",
+  "baseline": false,
+  "latestEvidence": "2026-10-06"
+ },
+ "temple-university": {
+  "name": "Temple University",
+  "category": "Science & research",
+  "use": "Nebius compute supports collaborative mathematics research",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "testgorilla": {
+  "name": "TestGorilla",
+  "category": "Workplace tools",
+  "use": "Uses Tavily to retrieve public web information for AI features.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-13"
+ },
+ "textcortex": {
+  "name": "TextCortex",
+  "category": "Workplace tools",
+  "use": "Routes DeepSeek V4 Pro requests through Nebius.",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "thestage-ai": {
+  "name": "TheStage AI",
+  "category": "Data & infrastructure",
+  "use": "Optimizes inference and trains speech models on Nebius GPUs.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving",
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-18"
+ },
+ "thingsboard": {
+  "name": "ThingsBoard",
+  "category": "Robotics & industry",
+  "use": "Uses Tavily for AI-requested web searches",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "thoughtflash": {
+  "name": "thoughtflash",
+  "category": "Business services",
+  "use": "Nebius language models for its website chat assistant",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "tibr": {
+  "name": "Tibr",
+  "category": "Workplace tools",
+  "use": "Uses Tavily search to ground answers in its quoting assistant.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-07-31"
+ },
+ "tiki-taka-media": {
+  "name": "CrunchJunkie",
+  "category": "Workplace tools",
+  "use": "Tavily search for enabled research and content briefs",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-04",
+  "baseline": false,
+  "latestEvidence": "2026-10-04"
+ },
+ "tilde-research": {
+  "name": "Tilde Research",
+  "category": "Model developers",
+  "use": "Trained research models and tested storage on Nebius AI Cloud.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "together-ai": {
+  "name": "Together AI",
+  "category": "Data & infrastructure",
+  "use": "Tavily search for Open Deep Research",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "toloka": {
+  "name": "Toloka",
+  "category": "Data & infrastructure",
+  "use": "Fine-tunes open models on Nebius compute",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-21",
+  "baseline": false,
+  "latestEvidence": "2026-10-22"
+ },
+ "toutmark": {
+  "name": "Toutmark",
+  "category": "Business services",
+  "use": "Uses Tavily for search result analysis and citation tracking.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-11",
+  "baseline": false,
+  "latestEvidence": "2026-10-11"
+ },
+ "trace3": {
+  "name": "Trace3",
+  "category": "Business services",
+  "use": "Evaluated Nebius AI Cloud firsthand",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-17",
+  "baseline": false,
+  "latestEvidence": "2026-10-17"
+ },
+ "transcripta-bio": {
+  "name": "Transcripta Bio",
+  "category": "Health & biotech",
+  "use": "Nebius compute for transcriptomic drug discovery",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-07-02"
+ },
+ "treeng": {
+  "name": "Treeng",
+  "category": "Workplace tools",
+  "use": "Uses Tavily for Research Pro",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-21",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "trefolio": {
+  "name": "trefolio",
+  "category": "Finance",
+  "use": "Tavily search for investment research",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "trialhub": {
+  "name": "TrialHub",
+  "category": "Health & biotech",
+  "use": "Generates clinical-trial embeddings on Nebius AI Cloud GPUs.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Data processing",
+   "Agentic search",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-13"
+ },
+ "troutman-pepper-locke": {
+  "name": "Troutman Pepper Locke",
+  "category": "Business services",
+  "use": "Named in Tavily’s trusted-by listing",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-10-16",
+  "baseline": false,
+  "latestEvidence": "2026-10-16"
+ },
+ "trustedrouter": {
+  "name": "TrustedRouter",
+  "category": "Data & infrastructure",
+  "use": "Routes inference through Nebius Token Factory with ZDR enabled",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-01",
+  "baseline": false,
+  "latestEvidence": "2026-10-23"
+ },
+ "typesafe-ai": {
+  "name": "TypeSafe AI",
+  "category": "Model developers",
+  "use": "Customer AI prompts processed on Nebius compute",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "ultimate-fighting-bots": {
+  "name": "Ultimate Bots",
+  "category": "Robotics & industry",
+  "use": "Runs Studio and trains robots on Nebius AI Cloud.",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius Serverless AI"
+  ],
+  "workloads": [
+   "Storage",
+   "Data processing",
+   "Inference/serving",
+   "Model training",
+   "Simulation"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "university-of-cambridge": {
+  "name": "University of Cambridge",
+  "category": "Science & research",
+  "use": "Nebius cloud supports mathematical reinforcement learning",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-15",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "university-of-copenhagen": {
+  "name": "University of Copenhagen",
+  "category": "Science & research",
+  "use": "Tavily literature retrieval for MOSAIC thesis research",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-15",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "university-of-southern-california": {
+  "name": "University of Southern California",
+  "category": "Science & research",
+  "use": "USC researchers use Nebius research-credit compute.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-30",
+  "baseline": false,
+  "latestEvidence": "2026-10-10"
+ },
+ "university-of-washington": {
+  "name": "University of Washington",
+  "category": "Science & research",
+  "use": "Token Factory for mathematical research pipelines",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Data processing",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-19",
+  "baseline": false,
+  "latestEvidence": "2026-10-22"
+ },
+ "unum": {
+  "name": "Unum",
+  "category": "Data & infrastructure",
+  "use": "Trains models, optimizes libraries and stores data on Nebius.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Data processing",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "upstage-console": {
+  "name": "Upstage Console",
+  "category": "Data & infrastructure",
+  "use": "Lists Tavily as a Console inference service provider.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-21",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "utrecht-university": {
+  "name": "Utrecht University",
+  "category": "Science & research",
+  "use": "Uses Nebius research credits for disease biomarker research.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-11",
+  "baseline": false,
+  "latestEvidence": "2026-08-13"
+ },
+ "vals-ai": {
+  "name": "Vals AI",
+  "category": "Science & research",
+  "use": "Uses Tavily for finance, tax and legal research benchmarks.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "vaultpoint-systems": {
+  "name": "Zetadeck",
+  "category": "Workplace tools",
+  "use": "Powers its workspace AI agent with Token Factory",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "veil-research": {
+  "name": "Veil",
+  "category": "Workplace tools",
+  "use": "Uses Tavily web search for broader literature discovery.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-05",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "ventpack": {
+  "name": "VentPack",
+  "category": "Health & biotech",
+  "use": "Offers optional Tavily search for wellness info and resources.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "vllm-project": {
+  "name": "vLLM project",
+  "category": "Data & infrastructure",
+  "use": "Uses Nebius GPUs and storage for inference tests and benchmarks.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving",
+   "Storage",
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "voicely": {
+  "name": "Voicely",
+  "category": "Workplace tools",
+  "use": "Enhances dictation via Nebius Token Factory's EU endpoint.",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "voxel51": {
+  "name": "Voxel51",
+  "category": "Data & infrastructure",
+  "use": "Uses Nebius GPUs in a synthetic driving-data reference pipeline.",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius Serverless AI"
+  ],
+  "workloads": [
+   "Inference/serving",
+   "Data processing",
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "walddialog": {
+  "name": "WaldDialog",
+  "category": "Science & research",
+  "use": "Token Factory chatbot for forest-use questions",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "weave-ai": {
+  "name": "Weave AI",
+  "category": "Consumer & commerce",
+  "use": "Uses Tavily as a web-search fallback in its premium feature.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-28"
+ },
+ "weinwolf-gruppe": {
+  "name": "Weinwolf Gruppe",
+  "category": "Consumer & commerce",
+  "use": "Uses Tavily for automated wine product descriptions.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-11",
+  "baseline": false,
+  "latestEvidence": "2026-10-17"
+ },
+ "weisscam": {
+  "name": "Weisscam",
+  "category": "Workplace tools",
+  "use": "AI inference for its shared business workspace",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-20",
+  "baseline": false,
+  "latestEvidence": "2026-10-20"
+ },
+ "weka": {
+  "name": "WEKA",
+  "category": "Data & infrastructure",
+  "use": "Benchmarks distributed inference caching on Nebius B300 GPUs.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "wildflow": {
+  "name": "Wildflow",
+  "category": "Science & research",
+  "use": "Uses Nebius AI Cloud for 3D coral reef reconstruction.",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius Serverless AI"
+  ],
+  "workloads": [
+   "Storage",
+   "Data processing",
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-09-24"
+ },
+ "wincom-solutions": {
+  "name": "WinCom Solutions",
+  "category": "Workplace tools",
+  "use": "Tavily web research for AI colleagues",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-15",
+  "baseline": false,
+  "latestEvidence": "2026-10-15"
+ },
+ "wobby": {
+  "name": "Actian AI Analyst",
+  "category": "Workplace tools",
+  "use": "Reported Tavily use in Wobby’s agent workflows.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "wonder": {
+  "name": "Wonder",
+  "category": "Developer tools",
+  "use": "Tavily search and retrieval for AI design features",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-19"
+ },
+ "world-labs": {
+  "name": "World Labs",
+  "category": "Model developers",
+  "use": "Named by Nebius as a physical-AI customer.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-09-27"
+ },
+ "writer": {
+  "name": "WRITER",
+  "category": "Workplace tools",
+  "use": "Uses Tavily search and extraction in its Research Agent.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-09-27"
+ },
+ "wubble": {
+  "name": "Wubble",
+  "category": "Media & creativity",
+  "use": "Runs music-model inference, fine-tuning and audio analysis.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving",
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2025-02-07"
+ },
+ "xaid": {
+  "name": "xAID",
+  "category": "Health & biotech",
+  "use": "Trains a 3D model to analyze chest and abdominal CT scans.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-24",
+  "baseline": true,
+  "latestEvidence": "2026-10-19"
+ },
+ "yerevan-state-university": {
+  "name": "Yerevan State University",
+  "category": "Science & research",
+  "use": "Molecular-model training with YerevaNN on Nebius H100 GPUs.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-10",
+  "baseline": false,
+  "latestEvidence": "2026-10-10"
+ },
+ "yerevann": {
+  "name": "YerevaNN",
+  "category": "Science & research",
+  "use": "Molecular and satellite-model training, plus docking on Nebius",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Simulation",
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2026-10-14"
+ },
+ "yomi": {
+  "name": "Yomi",
+  "category": "Consumer & commerce",
+  "use": "Tavily search for personal-agent answers",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-18",
+  "baseline": false,
+  "latestEvidence": "2026-10-18"
+ },
+ "youkti": {
+  "name": "Youkti",
+  "category": "Workplace tools",
+  "use": "Named in Tavily’s trusted-user listing.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-10-10",
+  "baseline": false,
+  "latestEvidence": "2026-10-10"
+ },
+ "zencoder": {
+  "name": "Zencoder",
+  "category": "Developer tools",
+  "use": "Nebius AI Studio inference and AI Cloud model training.",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius AI Studio"
+  ],
+  "workloads": [
+   "Inference/serving",
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-09-27",
+  "baseline": false,
+  "latestEvidence": "2025-09-01"
+ },
+ "zeta": {
+  "name": "zeta",
+  "category": "Media & creativity",
+  "use": "Nebius infrastructure for AI model training",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-21",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
+ },
+ "zuluworksai": {
+  "name": "ZuluWorks Intel",
+  "category": "Workplace tools",
+  "use": "Uses Tavily for news articles and weekly competitor searches.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-11",
+  "baseline": false,
+  "latestEvidence": "2026-10-11"
+ }
+}

@@ -1,0 +1,130 @@
+{
+ "deepseek/deepseek-v4.1-flash-20260910": {
+  "name": "deepseek/deepseek-v4.1-flash",
+  "input": 0.3,
+  "output": 1.2,
+  "cacheRead": 0.01,
+  "firstSeen": "2026-10-24",
+  "lastSeen": "2026-10-24"
+ },
+ "deepseek/deepseek-v4.1-flash-20261017": {
+  "name": "deepseek/deepseek-v4.1-flash-1017",
+  "input": 0.3,
+  "output": 1.2,
+  "cacheRead": 0.006,
+  "firstSeen": "2026-10-24",
+  "lastSeen": "2026-10-24"
+ },
+ "google/gemma-3-27b-it": {
+  "name": "google/gemma-3-27b-it",
+  "input": 0.1,
+  "output": 0.3,
+  "cacheRead": null,
+  "firstSeen": "2026-10-24",
+  "lastSeen": "2026-10-24"
+ },
+ "meta/muse-spark-open-20261015": {
+  "name": "meta/muse-spark-open",
+  "input": 1.25,
+  "output": 4.25,
+  "cacheRead": 0.15,
+  "firstSeen": "2026-10-24",
+  "lastSeen": "2026-10-24"
+ },
+ "minimax/minimax-m3.1-flash-20261019": {
+  "name": "minimax/minimax-m3.1-flash",
+  "input": 0.15,
+  "output": 0.6,
+  "cacheRead": 0.015,
+  "firstSeen": "2026-10-24",
+  "lastSeen": "2026-10-24"
+ },
+ "moonshotai/kimi-k2.7-code-20260612": {
+  "name": "moonshotai/kimi-k2.7-code",
+  "input": 0.95,
+  "output": 4,
+  "cacheRead": 0.15,
+  "firstSeen": "2026-10-24",
+  "lastSeen": "2026-10-24"
+ },
+ "nousresearch/hermes-4-405b": {
+  "name": "nousresearch/hermes-4-405b",
+  "input": 1,
+  "output": 3,
+  "cacheRead": null,
+  "firstSeen": "2026-10-24",
+  "lastSeen": "2026-10-24"
+ },
+ "nvidia/nemotron-3-nano-30b-a3b": {
+  "name": "nvidia/nemotron-3-nano-30b-a3b",
+  "input": 0.06,
+  "output": 0.24,
+  "cacheRead": null,
+  "firstSeen": "2026-10-24",
+  "lastSeen": "2026-10-24"
+ },
+ "openai/gpt-oss-120b": {
+  "name": "openai/gpt-oss-120b",
+  "input": 0.15,
+  "output": 0.6,
+  "cacheRead": null,
+  "firstSeen": "2026-10-24",
+  "lastSeen": "2026-10-24"
+ },
+ "qwen/qwen3-30b-a3b-instruct-2507": {
+  "name": "qwen/qwen3-30b-a3b-instruct-2507",
+  "input": 0.1,
+  "output": 0.3,
+  "cacheRead": null,
+  "firstSeen": "2026-10-24",
+  "lastSeen": "2026-10-24"
+ },
+ "qwen/qwen3-embedding-8b": {
+  "name": "qwen/qwen3-embedding-8b",
+  "input": 0.01,
+  "output": 0,
+  "cacheRead": null,
+  "firstSeen": "2026-10-24",
+  "lastSeen": "2026-10-24"
+ },
+ "reflection/beam-1.0-501b-a23b-20261016": {
+  "name": "reflection/beam-1.0-501b-a23b",
+  "input": 0.25,
+  "output": 1,
+  "cacheRead": 0.05,
+  "firstSeen": "2026-10-24",
+  "lastSeen": "2026-10-24"
+ },
+ "z-ai/glm-5.1-20260406": {
+  "name": "z-ai/glm-5.1",
+  "input": 1.4,
+  "output": 4.4,
+  "cacheRead": null,
+  "firstSeen": "2026-10-24",
+  "lastSeen": "2026-10-24"
+ },
+ "z-ai/glm-5.2-20260616": {
+  "name": "z-ai/glm-5.2",
+  "input": 1.4,
+  "output": 4.4,
+  "cacheRead": 0.14,
+  "firstSeen": "2026-10-24",
+  "lastSeen": "2026-10-24"
+ },
+ "z-ai/glm-5.3-20260816": {
+  "name": "z-ai/glm-5.3",
+  "input": 1.4,
+  "output": 4.4,
+  "cacheRead": 0.26,
+  "firstSeen": "2026-10-24",
+  "lastSeen": "2026-10-24"
+ },
+ "z-ai/glm-5.3-flash-20260826": {
+  "name": "z-ai/glm-5.3-flash",
+  "input": 0.15,
+  "output": 0.5,
+  "cacheRead": 0.03,
+  "firstSeen": "2026-10-24",
+  "lastSeen": "2026-10-24"
+ }
+}

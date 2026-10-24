@@ -1,0 +1,20 @@
+{
+ "_note": "Hand-maintained from Nebius results releases. Update after each earnings 6-K; the dashboard flags when a newer results 6-K exists than the latest quarter here. Revenue and ARR in USD millions.",
+ "quarters": [
+  { "quarter": "2025-Q2", "end": "2025-06-30", "revenue": 105.1, "arr": null, "source": "Implied by Q2 2026 revenue of $582.3M being +454% YoY" },
+  { "quarter": "2025-Q3", "end": "2025-09-30", "revenue": 146.1, "arr": null, "source": "Q3 2025 results release (consistent with FY2025 total of $529.8M in the 20-F)" },
+  { "quarter": "2025-Q4", "end": "2025-12-31", "revenue": 227.7, "arr": 1250, "source": "https://www.businesswire.com/news/home/20260212534404/en/" },
+  { "quarter": "2026-Q1", "end": "2026-03-31", "revenue": 399.0, "arr": 1920, "source": "https://www.streetinsider.com/Guidance/Key+highlights+from+Nebius+Group%27s+Q1+letter+to+shareholders/26481589.html" },
+  { "quarter": "2026-Q2", "end": "2026-06-30", "revenue": 582.3, "arr": 3000, "adjEbitda": 236.2, "capex": 5700, "source": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926094568/tm2622968d1_ex99-2.htm" }
+ ],
+ "guidance": {
+  "year": 2026,
+  "asOf": "2026-08-12",
+  "arrExit": [7000, 9000],
+  "revenue": [3000, 3400],
+  "capex": [20000, 25000],
+  "adjEbitdaMargin": 0.40,
+  "contractedPowerGw": 5,
+  "source": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465926094568/tm2622968d1_ex99-2.htm"
+ }
+}

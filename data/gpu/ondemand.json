@@ -1,0 +1,98 @@
+{
+ "lastChecked": "2026-10-24",
+ "current": {
+  "NVIDIA GB300 NVL72": {
+   "name": "NVIDIA GB300 NVL72",
+   "family": "GB300",
+   "onDemand": null,
+   "onDemandFrom": false,
+   "preemptibleFrom": null
+  },
+  "NVIDIA HGX B300": {
+   "name": "NVIDIA HGX B300",
+   "family": "B300",
+   "onDemand": 9.5,
+   "onDemandFrom": false,
+   "preemptibleFrom": 0.99
+  },
+  "NVIDIA GB200 NVL72": {
+   "name": "NVIDIA GB200 NVL72",
+   "family": "GB200",
+   "onDemand": null,
+   "onDemandFrom": false,
+   "preemptibleFrom": null
+  },
+  "NVIDIA HGX B200": {
+   "name": "NVIDIA HGX B200",
+   "family": "B200",
+   "onDemand": 8.5,
+   "onDemandFrom": false,
+   "preemptibleFrom": 0.99
+  },
+  "NVIDIA HGX H200": {
+   "name": "NVIDIA HGX H200",
+   "family": "H200",
+   "onDemand": 5.4,
+   "onDemandFrom": false,
+   "preemptibleFrom": 0.79
+  },
+  "NVIDIA HGX H100": {
+   "name": "NVIDIA HGX H100",
+   "family": "H100",
+   "onDemand": 4.5,
+   "onDemandFrom": false,
+   "preemptibleFrom": 0.79
+  },
+  "NVIDIA RTX PRO 6000": {
+   "name": "NVIDIA RTX PRO 6000",
+   "family": "RTX PRO 6000",
+   "onDemand": 1.8,
+   "onDemandFrom": false,
+   "preemptibleFrom": 0.79
+  },
+  "NVIDIA L40S with Intel CPU": {
+   "name": "NVIDIA L40S with Intel CPU",
+   "family": "L40S",
+   "onDemand": 1.55,
+   "onDemandFrom": true,
+   "preemptibleFrom": 0.74
+  },
+  "NVIDIA L40S with AMD CPU": {
+   "name": "NVIDIA L40S with AMD CPU",
+   "family": "L40S",
+   "onDemand": 1.82,
+   "onDemandFrom": true,
+   "preemptibleFrom": 0.9
+  }
+ },
+ "changes": [
+  {
+   "date": "2026-10-01",
+   "name": "NVIDIA HGX H100",
+   "from": 3.85,
+   "to": 4.5,
+   "source": "https://www.spheron.network/blog/nebius-gpu-price-hike-2026-h100-to-b300-rates-rise-up-to-21/"
+  },
+  {
+   "date": "2026-10-01",
+   "name": "NVIDIA HGX H200",
+   "from": 4.5,
+   "to": 5.4,
+   "source": "https://www.spheron.network/blog/nebius-gpu-price-hike-2026-h100-to-b300-rates-rise-up-to-21/"
+  },
+  {
+   "date": "2026-10-01",
+   "name": "NVIDIA HGX B200",
+   "from": 7.15,
+   "to": 8.5,
+   "source": "https://www.spheron.network/blog/nebius-gpu-price-hike-2026-h100-to-b300-rates-rise-up-to-21/"
+  },
+  {
+   "date": "2026-10-01",
+   "name": "NVIDIA HGX B300",
+   "from": 7.85,
+   "to": 9.5,
+   "source": "https://www.spheron.network/blog/nebius-gpu-price-hike-2026-h100-to-b300-rates-rise-up-to-21/"
+  }
+ ]
+}

@@ -1,0 +1,68 @@
+name: Daily collect and deploy
+
+on:
+  schedule:
+    - cron: "17 6 * * *" # 06:17 UTC daily, off the top of the hour when schedulers are busiest
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore: ["data/**", "public/data/**"]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: daily
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    if: github.event_name != 'push'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - name: Collect all sources
+        run: npm run collect
+        env:
+          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT || format('nebius-signal collector (github.com/{0})', github.repository) }}
+          NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
+      - name: Commit new data
+        run: |
+          git config user.name "nebius-signal-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data public/data
+          git diff --cached --quiet || git commit -m "data: daily collect $(date -u +%F)"
+          git push
+
+  deploy:
+    needs: collect
+    if: always() && (needs.collect.result == 'success' || needs.collect.result == 'skipped')
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          ref: main
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run build
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,2287 @@
+{
+ "0001104659-26-117978": {
+  "accession": "0001104659-26-117978",
+  "form": "6-K",
+  "filed": "2026-10-22",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926117978/tm2628078d1_ex99-1.htm",
+  "title": "Nebius secures $3.5 billion financing facility with Citi"
+ },
+ "0001513845-26-000136": {
+  "accession": "0001513845-26-000136",
+  "form": "4",
+  "filed": "2026-10-21",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000136/form4.xml",
+  "owner": "Grimme Arne",
+  "role": "Director",
+  "plan10b5": true,
+  "trades": [
+   {
+    "date": "2026-10-20",
+    "code": "P",
+    "shares": 151,
+    "price": 164.62,
+    "acquired": true
+   },
+   {
+    "date": "2026-10-21",
+    "code": "P",
+    "shares": 148,
+    "price": 167.94,
+    "acquired": true
+   }
+  ]
+ },
+ "0001513845-26-000134": {
+  "accession": "0001513845-26-000134",
+  "form": "4",
+  "filed": "2026-10-20",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000134/form4.xml",
+  "owner": "Grimme Arne",
+  "role": "Director",
+  "plan10b5": true,
+  "trades": [
+   {
+    "date": "2026-10-19",
+    "code": "P",
+    "shares": 148,
+    "price": 169.99,
+    "acquired": true
+   }
+  ]
+ },
+ "0001513845-26-000132": {
+  "accession": "0001513845-26-000132",
+  "form": "4",
+  "filed": "2026-10-19",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000132/form4.xml",
+  "owner": "Boynton John Wilson IV",
+  "role": "Director",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-10-15",
+    "code": "S",
+    "shares": 200,
+    "price": 164.8,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-15",
+    "code": "S",
+    "shares": 500,
+    "price": 166.78,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-15",
+    "code": "S",
+    "shares": 500,
+    "price": 167.8,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-15",
+    "code": "S",
+    "shares": 100,
+    "price": 168.57,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-15",
+    "code": "S",
+    "shares": 100,
+    "price": 170,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-15",
+    "code": "S",
+    "shares": 400,
+    "price": 171.38,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-15",
+    "code": "S",
+    "shares": 200,
+    "price": 172.59,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-15",
+    "code": "S",
+    "shares": 400,
+    "price": 174.7,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-15",
+    "code": "S",
+    "shares": 500,
+    "price": 175.72,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-15",
+    "code": "S",
+    "shares": 700,
+    "price": 176.72,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-15",
+    "code": "S",
+    "shares": 400,
+    "price": 177.9,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-15",
+    "code": "S",
+    "shares": 400,
+    "price": 179.03,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-15",
+    "code": "S",
+    "shares": 600,
+    "price": 180.26,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-15",
+    "code": "S",
+    "shares": 400,
+    "price": 181.27,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-15",
+    "code": "S",
+    "shares": 200,
+    "price": 182.21,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-15",
+    "code": "S",
+    "shares": 200,
+    "price": 184.35,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-15",
+    "code": "S",
+    "shares": 400,
+    "price": 186.67,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-15",
+    "code": "S",
+    "shares": 960,
+    "price": 188.2,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-15",
+    "code": "S",
+    "shares": 100,
+    "price": 188.77,
+    "acquired": false
+   }
+  ]
+ },
+ "0001513845-26-000130": {
+  "accession": "0001513845-26-000130",
+  "form": "4",
+  "filed": "2026-10-16",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000130/form4.xml",
+  "owner": "Grimme Arne",
+  "role": "Director",
+  "plan10b5": true,
+  "trades": [
+   {
+    "date": "2026-10-15",
+    "code": "P",
+    "shares": 148,
+    "price": 169.99,
+    "acquired": true
+   },
+   {
+    "date": "2026-10-16",
+    "code": "P",
+    "shares": 148,
+    "price": 169.99,
+    "acquired": true
+   }
+  ]
+ },
+ "0001950047-26-010270": {
+  "accession": "0001950047-26-010270",
+  "form": "144",
+  "filed": "2026-10-15",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000195004726010270/primary_doc.xml",
+  "owner": "THE JOHN W BOYNTON IV TR OF 2006",
+  "role": "Director",
+  "proposedShares": 7260,
+  "proposedValue": 1350432.6
+ },
+ "0001513845-26-000128": {
+  "accession": "0001513845-26-000128",
+  "form": "4",
+  "filed": "2026-10-13",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000128/form4.xml",
+  "owner": "Boroditsky Marc",
+  "role": "Chief Revenue Officer",
+  "plan10b5": true,
+  "trades": [
+   {
+    "date": "2026-10-12",
+    "code": "M",
+    "shares": 7000,
+    "price": 0,
+    "acquired": true
+   },
+   {
+    "date": "2026-10-12",
+    "code": "S",
+    "shares": 7000,
+    "price": 211.23,
+    "acquired": false
+   }
+  ]
+ },
+ "0000886982-26-000526": {
+  "accession": "0000886982-26-000526",
+  "form": "SCHEDULE 13G/A",
+  "filed": "2026-10-07",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000088698226000526/primary_doc.xml"
+ },
+ "0001513845-26-000126": {
+  "accession": "0001513845-26-000126",
+  "form": "4",
+  "filed": "2026-10-06",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000126/form4.xml",
+  "owner": "Nave Ophir",
+  "role": "COO",
+  "plan10b5": true,
+  "trades": [
+   {
+    "date": "2026-10-05",
+    "code": "S",
+    "shares": 16220,
+    "price": 231.12,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-05",
+    "code": "S",
+    "shares": 61210,
+    "price": 232.37,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-05",
+    "code": "S",
+    "shares": 56426,
+    "price": 233.19,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-05",
+    "code": "S",
+    "shares": 48845,
+    "price": 234.21,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-05",
+    "code": "S",
+    "shares": 106718,
+    "price": 235.24,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-05",
+    "code": "S",
+    "shares": 73588,
+    "price": 235.99,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-05",
+    "code": "S",
+    "shares": 18224,
+    "price": 237.15,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-05",
+    "code": "S",
+    "shares": 48655,
+    "price": 238.22,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-05",
+    "code": "S",
+    "shares": 48061,
+    "price": 239.23,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-05",
+    "code": "S",
+    "shares": 14853,
+    "price": 240,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-05",
+    "code": "S",
+    "shares": 1200,
+    "price": 241.02,
+    "acquired": false
+   },
+   {
+    "date": "2026-10-05",
+    "code": "S",
+    "shares": 6000,
+    "price": 243.5,
+    "acquired": false
+   }
+  ]
+ },
+ "0001950047-26-010048": {
+  "accession": "0001950047-26-010048",
+  "form": "144",
+  "filed": "2026-10-05",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000195004726010048/primary_doc.xml",
+  "owner": "OPHIR NAVE",
+  "role": "Director",
+  "proposedShares": 500000,
+  "proposedValue": 121405000
+ },
+ "0001513845-26-000124": {
+  "accession": "0001513845-26-000124",
+  "form": "4",
+  "filed": "2026-10-05",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000124/form4.xml",
+  "owner": "Korolenko Andrey",
+  "role": "Chief Infrastructure Officer",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-10-01",
+    "code": "S",
+    "shares": 29090,
+    "price": 234.16,
+    "acquired": false
+   }
+  ]
+ },
+ "0001513845-26-000122": {
+  "accession": "0001513845-26-000122",
+  "form": "4",
+  "filed": "2026-10-05",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000122/form4.xml",
+  "owner": "Shtan Danila",
+  "role": "Chief Technology Officer",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-10-01",
+    "code": "S",
+    "shares": 14546,
+    "price": 234.16,
+    "acquired": false
+   }
+  ]
+ },
+ "0001513845-26-000120": {
+  "accession": "0001513845-26-000120",
+  "form": "4",
+  "filed": "2026-10-05",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000120/form4.xml",
+  "owner": "Volozh Arkadiy",
+  "role": "CEO",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-10-01",
+    "code": "S",
+    "shares": 37778,
+    "price": 234.16,
+    "acquired": false
+   }
+  ]
+ },
+ "0001104659-26-112824": {
+  "accession": "0001104659-26-112824",
+  "form": "6-K",
+  "filed": "2026-10-01",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926112824/tm2626792d1_ex99-1.htm",
+  "title": "Nebius acquires Inferize to strengthen Nebius Token Factory’s production inference stack"
+ },
+ "0001513845-26-000118": {
+  "accession": "0001513845-26-000118",
+  "form": "4",
+  "filed": "2026-10-01",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000118/form4.xml",
+  "owner": "Boynton John Wilson IV",
+  "role": "Director",
+  "plan10b5": true,
+  "trades": [
+   {
+    "date": "2026-09-29",
+    "code": "S",
+    "shares": 50,
+    "price": 235.01,
+    "acquired": false
+   }
+  ]
+ },
+ "0001950047-26-009868": {
+  "accession": "0001950047-26-009868",
+  "form": "144",
+  "filed": "2026-09-29",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000195004726009868/primary_doc.xml",
+  "owner": "THE JOHN W BOYNTON IV TR OF 2006",
+  "role": "Director",
+  "proposedShares": 50,
+  "proposedValue": 11866.5
+ },
+ "0001513845-26-000116": {
+  "accession": "0001513845-26-000116",
+  "form": "4",
+  "filed": "2026-09-21",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000116/form4.xml",
+  "owner": "Boroditsky Marc",
+  "role": "Chief Revenue Officer",
+  "plan10b5": true,
+  "trades": [
+   {
+    "date": "2026-06-15",
+    "code": "S",
+    "shares": 4500,
+    "price": 250,
+    "acquired": false
+   },
+   {
+    "date": "2026-07-15",
+    "code": "S",
+    "shares": 22386,
+    "price": 197,
+    "acquired": false
+   }
+  ]
+ },
+ "0001513845-26-000114": {
+  "accession": "0001513845-26-000114",
+  "form": "4",
+  "filed": "2026-09-17",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000114/form4.xml",
+  "owner": "Boynton John Wilson IV",
+  "role": "Director",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-09-15",
+    "code": "S",
+    "shares": 1264,
+    "price": 207.67,
+    "acquired": false
+   },
+   {
+    "date": "2026-09-15",
+    "code": "S",
+    "shares": 1900,
+    "price": 208.84,
+    "acquired": false
+   },
+   {
+    "date": "2026-09-15",
+    "code": "S",
+    "shares": 1100,
+    "price": 209.74,
+    "acquired": false
+   },
+   {
+    "date": "2026-09-15",
+    "code": "S",
+    "shares": 400,
+    "price": 210.53,
+    "acquired": false
+   },
+   {
+    "date": "2026-09-15",
+    "code": "S",
+    "shares": 200,
+    "price": 211.88,
+    "acquired": false
+   },
+   {
+    "date": "2026-09-15",
+    "code": "S",
+    "shares": 300,
+    "price": 213.4,
+    "acquired": false
+   },
+   {
+    "date": "2026-09-15",
+    "code": "S",
+    "shares": 900,
+    "price": 214.81,
+    "acquired": false
+   },
+   {
+    "date": "2026-09-15",
+    "code": "S",
+    "shares": 200,
+    "price": 215.59,
+    "acquired": false
+   },
+   {
+    "date": "2026-09-15",
+    "code": "S",
+    "shares": 100,
+    "price": 216.52,
+    "acquired": false
+   }
+  ]
+ },
+ "0001513845-26-000112": {
+  "accession": "0001513845-26-000112",
+  "form": "4",
+  "filed": "2026-09-16",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000112/form4.xml",
+  "owner": "Boroditsky Marc",
+  "role": "Chief Revenue Officer",
+  "plan10b5": true,
+  "trades": [
+   {
+    "date": "2026-09-14",
+    "code": "M",
+    "shares": 5000,
+    "price": 0,
+    "acquired": true
+   },
+   {
+    "date": "2026-09-14",
+    "code": "S",
+    "shares": 5000,
+    "price": 209.26,
+    "acquired": false
+   },
+   {
+    "date": "2026-09-14",
+    "code": "M",
+    "shares": 2000,
+    "price": 0,
+    "acquired": true
+   },
+   {
+    "date": "2026-09-14",
+    "code": "S",
+    "shares": 2000,
+    "price": 208.63,
+    "acquired": false
+   }
+  ]
+ },
+ "0001950047-26-009522": {
+  "accession": "0001950047-26-009522",
+  "form": "144",
+  "filed": "2026-09-15",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000195004726009522/primary_doc.xml",
+  "owner": "THE JOHN W BOYNTON IV TR OF 2006",
+  "role": "Director",
+  "proposedShares": 6364,
+  "proposedValue": 1350377.16
+ },
+ "0001104659-26-105749": {
+  "accession": "0001104659-26-105749",
+  "form": "6-K",
+  "filed": "2026-09-08",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926105749/tm2624958d1_ex99-1.htm",
+  "title": "Palantir and Nebius partner to deliver a complete sovereign AI stack to Palantir customers names Nebius its preferred sovereign AI infrastructure partner, bringing Nebius compute and inference inside the Palantir perimet"
+ },
+ "0001513845-26-000110": {
+  "accession": "0001513845-26-000110",
+  "form": "4",
+  "filed": "2026-09-03",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000110/form4.xml",
+  "owner": "Weigand Matthew Robert",
+  "role": "Director",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-09-01",
+    "code": "A",
+    "shares": 1352,
+    "price": 0,
+    "acquired": true
+   }
+  ]
+ },
+ "0001513845-26-000108": {
+  "accession": "0001513845-26-000108",
+  "form": "4",
+  "filed": "2026-09-03",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000108/form4.xml",
+  "owner": "Ryan Charles E",
+  "role": "Director",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-09-01",
+    "code": "A",
+    "shares": 1352,
+    "price": 0,
+    "acquired": true
+   }
+  ]
+ },
+ "0001513845-26-000106": {
+  "accession": "0001513845-26-000106",
+  "form": "4",
+  "filed": "2026-09-03",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000106/form4.xml",
+  "owner": "Grimme Arne",
+  "role": "Director",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-09-01",
+    "code": "A",
+    "shares": 1352,
+    "price": 0,
+    "acquired": true
+   }
+  ]
+ },
+ "0001513845-26-000104": {
+  "accession": "0001513845-26-000104",
+  "form": "4",
+  "filed": "2026-09-03",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000104/form4.xml",
+  "owner": "Radinsky Kira",
+  "role": "Director",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-09-01",
+    "code": "A",
+    "shares": 1352,
+    "price": 0,
+    "acquired": true
+   }
+  ]
+ },
+ "0001513845-26-000102": {
+  "accession": "0001513845-26-000102",
+  "form": "4",
+  "filed": "2026-09-03",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000102/form4.xml",
+  "owner": "Bunina Elena",
+  "role": "Director",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-09-01",
+    "code": "A",
+    "shares": 1352,
+    "price": 0,
+    "acquired": true
+   }
+  ]
+ },
+ "0001513845-26-000100": {
+  "accession": "0001513845-26-000100",
+  "form": "4",
+  "filed": "2026-09-03",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000100/form4.xml",
+  "owner": "Nave Ophir",
+  "role": "COO",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-09-01",
+    "code": "A",
+    "shares": 1352,
+    "price": 0,
+    "acquired": true
+   }
+  ]
+ },
+ "0001513845-26-000098": {
+  "accession": "0001513845-26-000098",
+  "form": "4",
+  "filed": "2026-09-03",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000098/form4.xml",
+  "owner": "Volozh Arkadiy",
+  "role": "CEO",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-09-01",
+    "code": "A",
+    "shares": 1352,
+    "price": 0,
+    "acquired": true
+   }
+  ]
+ },
+ "0001513845-26-000096": {
+  "accession": "0001513845-26-000096",
+  "form": "4",
+  "filed": "2026-09-03",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000096/form4.xml",
+  "owner": "Boynton John Wilson IV",
+  "role": "Director",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-09-01",
+    "code": "A",
+    "shares": 1352,
+    "price": 0,
+    "acquired": true
+   }
+  ]
+ },
+ "0001513845-26-000094": {
+  "accession": "0001513845-26-000094",
+  "form": "4",
+  "filed": "2026-09-02",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000094/form4.xml",
+  "owner": "Alonso Sanchez Maria del Dado",
+  "role": "CFO",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-09-01",
+    "code": "S",
+    "shares": 470,
+    "price": 196,
+    "acquired": false
+   }
+  ]
+ },
+ "0001973379-26-000316": {
+  "accession": "0001973379-26-000316",
+  "form": "144",
+  "filed": "2026-08-31",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000197337926000316/primary_doc.xml",
+  "owner": "Alonso Sanchez Maria del Dado",
+  "role": "Officer",
+  "proposedShares": 450,
+  "proposedValue": 90900
+ },
+ "0001104659-26-101076": {
+  "accession": "0001104659-26-101076",
+  "form": "6-K",
+  "filed": "2026-08-26",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926101076/tm2624077d1_ex99-1.htm",
+  "title": "Netherlands August 26, 2026 Nebius Group N.V. (the Company; NASDAQ: NBIS), the AI cloud company, today announced that all resolutions proposed at the Annual General Meeting of the Company (the AGM), held on August 25,"
+ },
+ "0001104659-26-100347": {
+  "accession": "0001104659-26-100347",
+  "form": "6-K",
+  "filed": "2026-08-24",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926100347/tm2623863d1_ex99-1.htm",
+  "title": "Nebius Group announces closing of private offering of convertible senior notes, with aggregate gross proceeds of approximately $5.75 billion"
+ },
+ "0001104659-26-098924": {
+  "accession": "0001104659-26-098924",
+  "form": "6-K",
+  "filed": "2026-08-20",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926098924/tm2623617d1_ex99-1.htm",
+  "title": "Nebius Group announces pricing of upsized private offering of $5.0 billion of convertible senior notes"
+ },
+ "0001104659-26-098590": {
+  "accession": "0001104659-26-098590",
+  "form": "6-K",
+  "filed": "2026-08-19",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926098590/tm2623513d1_ex99-1.htm",
+  "title": "Nebius Group announces proposed private offering of $4.50 billion of convertible senior notes"
+ },
+ "0001513845-26-000092": {
+  "accession": "0001513845-26-000092",
+  "form": "4",
+  "filed": "2026-08-18",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000092/form4.xml",
+  "owner": "Ryan Charles E",
+  "role": "Director",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-08-14",
+    "code": "S",
+    "shares": 13315,
+    "price": 263.32,
+    "acquired": false
+   },
+   {
+    "date": "2026-08-14",
+    "code": "S",
+    "shares": 9283,
+    "price": 264.78,
+    "acquired": false
+   },
+   {
+    "date": "2026-08-14",
+    "code": "S",
+    "shares": 10113,
+    "price": 265.45,
+    "acquired": false
+   },
+   {
+    "date": "2026-08-14",
+    "code": "S",
+    "shares": 9622,
+    "price": 266.67,
+    "acquired": false
+   },
+   {
+    "date": "2026-08-14",
+    "code": "S",
+    "shares": 5000,
+    "price": 268.61,
+    "acquired": false
+   },
+   {
+    "date": "2026-08-14",
+    "code": "S",
+    "shares": 2667,
+    "price": 269.64,
+    "acquired": false
+   }
+  ]
+ },
+ "0001513845-26-000090": {
+  "accession": "0001513845-26-000090",
+  "form": "4",
+  "filed": "2026-08-18",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000090/form4.xml",
+  "owner": "Boynton John Wilson IV",
+  "role": "Director",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-08-14",
+    "code": "S",
+    "shares": 100,
+    "price": 258.55,
+    "acquired": false
+   },
+   {
+    "date": "2026-08-14",
+    "code": "S",
+    "shares": 200,
+    "price": 263.51,
+    "acquired": false
+   },
+   {
+    "date": "2026-08-14",
+    "code": "S",
+    "shares": 400,
+    "price": 264.75,
+    "acquired": false
+   },
+   {
+    "date": "2026-08-14",
+    "code": "S",
+    "shares": 496,
+    "price": 266.78,
+    "acquired": false
+   },
+   {
+    "date": "2026-08-14",
+    "code": "S",
+    "shares": 404,
+    "price": 267.87,
+    "acquired": false
+   },
+   {
+    "date": "2026-08-14",
+    "code": "S",
+    "shares": 600,
+    "price": 270.44,
+    "acquired": false
+   },
+   {
+    "date": "2026-08-14",
+    "code": "S",
+    "shares": 700,
+    "price": 271.75,
+    "acquired": false
+   },
+   {
+    "date": "2026-08-14",
+    "code": "S",
+    "shares": 1000,
+    "price": 272.76,
+    "acquired": false
+   },
+   {
+    "date": "2026-08-14",
+    "code": "S",
+    "shares": 500,
+    "price": 273.78,
+    "acquired": false
+   },
+   {
+    "date": "2026-08-14",
+    "code": "S",
+    "shares": 300,
+    "price": 275.8,
+    "acquired": false
+   },
+   {
+    "date": "2026-08-14",
+    "code": "S",
+    "shares": 400,
+    "price": 277.02,
+    "acquired": false
+   },
+   {
+    "date": "2026-08-14",
+    "code": "S",
+    "shares": 196,
+    "price": 277.86,
+    "acquired": false
+   }
+  ]
+ },
+ "0001950047-26-008147": {
+  "accession": "0001950047-26-008147",
+  "form": "144",
+  "filed": "2026-08-14",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000195004726008147/primary_doc.xml",
+  "owner": "THE JOHN W BOYNTON IV TR OF 2006",
+  "role": "Officer",
+  "proposedShares": 5296,
+  "proposedValue": 1350691.84
+ },
+ "0001973379-26-000293": {
+  "accession": "0001973379-26-000293",
+  "form": "144",
+  "filed": "2026-08-14",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000197337926000293/primary_doc.xml",
+  "owner": "Ryan Charles E",
+  "role": "Director",
+  "proposedShares": 50000,
+  "proposedValue": 12752000
+ },
+ "0001104659-26-094844": {
+  "accession": "0001104659-26-094844",
+  "form": "6-K",
+  "filed": "2026-08-12",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094844/nbis-20260812xex99d1.htm",
+  "title": "Nebius offers one of the few global, at scale, multi-tenant clouds purpose-built for AI, with a significant presence in Europe, the U.S., and other geographies around the world."
+ },
+ "0001104659-26-094568": {
+  "accession": "0001104659-26-094568",
+  "form": "6-K",
+  "filed": "2026-08-12",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-1.htm",
+  "title": "Nebius reports second quarter 2026 financial"
+ },
+ "0000886982-26-000308": {
+  "accession": "0000886982-26-000308",
+  "form": "SCHEDULE 13G/A",
+  "filed": "2026-08-07",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000088698226000308/primary_doc.xml"
+ },
+ "0000886982-26-000305": {
+  "accession": "0000886982-26-000305",
+  "form": "SCHEDULE 13G",
+  "filed": "2026-08-07",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000088698226000305/primary_doc.xml"
+ },
+ "0001513845-26-000088": {
+  "accession": "0001513845-26-000088",
+  "form": "4/A",
+  "filed": "2026-08-05",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000088/form4a.xml"
+ },
+ "0001104659-26-087080": {
+  "accession": "0001104659-26-087080",
+  "form": "6-K",
+  "filed": "2026-07-27",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926087080/tm2621374d1_ex99-1.htm",
+  "title": "Shareholders of Nebius Group N.V."
+ },
+ "0001513845-26-000086": {
+  "accession": "0001513845-26-000086",
+  "form": "4",
+  "filed": "2026-07-24",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000086/form4.xml",
+  "owner": "Almog Yael",
+  "role": "General Counsel",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-07-22",
+    "code": "A",
+    "shares": 7793,
+    "price": 218.16,
+    "acquired": true
+   }
+  ]
+ },
+ "0001045810-26-000062": {
+  "accession": "0001045810-26-000062",
+  "form": "SCHEDULE 13G",
+  "filed": "2026-07-20",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000104581026000062/primary_doc.xml"
+ },
+ "0001104659-26-084606": {
+  "accession": "0001104659-26-084606",
+  "form": "6-K/A",
+  "filed": "2026-07-17",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926084606/tm2620779d1_6ka.htm"
+ },
+ "0001513845-26-000084": {
+  "accession": "0001513845-26-000084",
+  "form": "4",
+  "filed": "2026-07-17",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000084/form4.xml",
+  "owner": "Boynton John Wilson IV",
+  "role": "Director",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-07-15",
+    "code": "S",
+    "shares": 200,
+    "price": 187.79,
+    "acquired": false
+   },
+   {
+    "date": "2026-07-15",
+    "code": "S",
+    "shares": 200,
+    "price": 189.24,
+    "acquired": false
+   },
+   {
+    "date": "2026-07-15",
+    "code": "S",
+    "shares": 400,
+    "price": 192.33,
+    "acquired": false
+   },
+   {
+    "date": "2026-07-15",
+    "code": "S",
+    "shares": 700,
+    "price": 194.07,
+    "acquired": false
+   },
+   {
+    "date": "2026-07-15",
+    "code": "S",
+    "shares": 1200,
+    "price": 196.1,
+    "acquired": false
+   },
+   {
+    "date": "2026-07-15",
+    "code": "S",
+    "shares": 1500,
+    "price": 197.3,
+    "acquired": false
+   },
+   {
+    "date": "2026-07-15",
+    "code": "S",
+    "shares": 500,
+    "price": 198.25,
+    "acquired": false
+   },
+   {
+    "date": "2026-07-15",
+    "code": "S",
+    "shares": 1058,
+    "price": 198.87,
+    "acquired": false
+   },
+   {
+    "date": "2026-07-15",
+    "code": "S",
+    "shares": 300,
+    "price": 200.04,
+    "acquired": false
+   },
+   {
+    "date": "2026-07-15",
+    "code": "S",
+    "shares": 300,
+    "price": 201.24,
+    "acquired": false
+   },
+   {
+    "date": "2026-07-15",
+    "code": "S",
+    "shares": 600,
+    "price": 202.29,
+    "acquired": false
+   }
+  ]
+ },
+ "0001104659-26-084452": {
+  "accession": "0001104659-26-084452",
+  "form": "6-K",
+  "filed": "2026-07-17",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926084452/tm2620683d1_ex99-1.htm",
+  "title": "Amsterdam, July 17, 2026 Nebius Group N.V. (Nasdaq:"
+ },
+ "0001950047-26-007111": {
+  "accession": "0001950047-26-007111",
+  "form": "144",
+  "filed": "2026-07-15",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000195004726007111/primary_doc.xml",
+  "owner": "JOHN W BOYNTON TTEE THE JOHN W BOYNTON IV TR OF 2006",
+  "role": "Officer",
+  "proposedShares": 6958,
+  "proposedValue": 1350478.22
+ },
+ "0001513845-26-000082": {
+  "accession": "0001513845-26-000082",
+  "form": "3",
+  "filed": "2026-07-08",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000082/form3.xml"
+ },
+ "0001513845-26-000080": {
+  "accession": "0001513845-26-000080",
+  "form": "4",
+  "filed": "2026-07-06",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000080/form4.xml",
+  "owner": "Volozh Arkadiy",
+  "role": "CEO",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-07-01",
+    "code": "S",
+    "shares": 46627,
+    "price": 235.45,
+    "acquired": false
+   }
+  ]
+ },
+ "0001513845-26-000078": {
+  "accession": "0001513845-26-000078",
+  "form": "4",
+  "filed": "2026-07-06",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000078/form4.xml",
+  "owner": "Shtan Danila",
+  "role": "Chief Technology Officer",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-07-01",
+    "code": "S",
+    "shares": 16937,
+    "price": 235.45,
+    "acquired": false
+   }
+  ]
+ },
+ "0001513845-26-000076": {
+  "accession": "0001513845-26-000076",
+  "form": "4",
+  "filed": "2026-07-06",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000076/form4.xml",
+  "owner": "Korolenko Andrey",
+  "role": "Chief Infrastructure Officer",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-07-01",
+    "code": "S",
+    "shares": 33871,
+    "price": 235.45,
+    "acquired": false
+   }
+  ]
+ },
+ "0001104659-26-074352": {
+  "accession": "0001104659-26-074352",
+  "form": "6-K",
+  "filed": "2026-06-16",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926074352/tm2618059d1_ex99-1.htm",
+  "title": "Nebius completes acquisition of Eigen"
+ },
+ "0001513845-26-000074": {
+  "accession": "0001513845-26-000074",
+  "form": "4",
+  "filed": "2026-06-15",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000074/form4.xml",
+  "owner": "Boynton John Wilson IV",
+  "role": "Director",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-06-15",
+    "code": "S",
+    "shares": 100,
+    "price": 246.17,
+    "acquired": false
+   },
+   {
+    "date": "2026-06-15",
+    "code": "S",
+    "shares": 200,
+    "price": 248.73,
+    "acquired": false
+   },
+   {
+    "date": "2026-06-15",
+    "code": "S",
+    "shares": 3206,
+    "price": 250.08,
+    "acquired": false
+   },
+   {
+    "date": "2026-06-15",
+    "code": "S",
+    "shares": 200,
+    "price": 251.89,
+    "acquired": false
+   },
+   {
+    "date": "2026-06-15",
+    "code": "S",
+    "shares": 200,
+    "price": 253.58,
+    "acquired": false
+   },
+   {
+    "date": "2026-06-15",
+    "code": "S",
+    "shares": 200,
+    "price": 255.03,
+    "acquired": false
+   },
+   {
+    "date": "2026-06-15",
+    "code": "S",
+    "shares": 100,
+    "price": 257.54,
+    "acquired": false
+   },
+   {
+    "date": "2026-06-15",
+    "code": "S",
+    "shares": 606,
+    "price": 259.45,
+    "acquired": false
+   },
+   {
+    "date": "2026-06-15",
+    "code": "S",
+    "shares": 900,
+    "price": 260.76,
+    "acquired": false
+   },
+   {
+    "date": "2026-06-15",
+    "code": "S",
+    "shares": 100,
+    "price": 262.09,
+    "acquired": false
+   }
+  ]
+ },
+ "0001950047-26-006113": {
+  "accession": "0001950047-26-006113",
+  "form": "144",
+  "filed": "2026-06-15",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000195004726006113/primary_doc.xml",
+  "owner": "JOHN W BOYNTON TTEE THE JOHN W BOYNTON IV TR OF 2006",
+  "role": "Officer",
+  "proposedShares": 5812,
+  "proposedValue": 1350476.32
+ },
+ "0001513845-26-000072": {
+  "accession": "0001513845-26-000072",
+  "form": "4",
+  "filed": "2026-06-05",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000072/form4.xml",
+  "owner": "Shtan Danila",
+  "role": "Chief Technology Officer",
+  "plan10b5": true,
+  "trades": [
+   {
+    "date": "2026-06-04",
+    "code": "S",
+    "shares": 15678,
+    "price": 238.9621,
+    "acquired": false
+   }
+  ]
+ },
+ "0001513845-26-000070": {
+  "accession": "0001513845-26-000070",
+  "form": "4",
+  "filed": "2026-06-03",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000070/form4.xml",
+  "owner": "Boroditsky Marc",
+  "role": "Chief Revenue Officer",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-06-02",
+    "code": "S",
+    "shares": 10776,
+    "price": 276.2002,
+    "acquired": false
+   }
+  ]
+ },
+ "0001513845-26-000068": {
+  "accession": "0001513845-26-000068",
+  "form": "4",
+  "filed": "2026-06-03",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000068/form4.xml",
+  "owner": "Alonso Sanchez Maria del Dado",
+  "role": "CFO",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-06-02",
+    "code": "S",
+    "shares": 1509,
+    "price": 276.2002,
+    "acquired": false
+   }
+  ]
+ },
+ "0001973379-26-000218": {
+  "accession": "0001973379-26-000218",
+  "form": "144",
+  "filed": "2026-06-02",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000197337926000218/primary_doc.xml",
+  "owner": "Alonso Sanchez Maria del Dado",
+  "role": "Officer",
+  "proposedShares": 1509,
+  "proposedValue": 416786.1
+ },
+ "0000935836-26-000303": {
+  "accession": "0000935836-26-000303",
+  "form": "SCHEDULE 13G",
+  "filed": "2026-05-27",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000093583626000303/primary_doc.xml"
+ },
+ "0001104659-26-065681": {
+  "accession": "0001104659-26-065681",
+  "form": "20-F/A",
+  "filed": "2026-05-22",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926065681/nbis-20251231x20fa.htm"
+ },
+ "0001513845-26-000066": {
+  "accession": "0001513845-26-000066",
+  "form": "4",
+  "filed": "2026-05-22",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000066/form4.xml",
+  "owner": "Tal Boaz",
+  "role": "General Counsel",
+  "plan10b5": true,
+  "trades": [
+   {
+    "date": "2026-05-20",
+    "code": "S",
+    "shares": 2600,
+    "price": 199,
+    "acquired": false
+   },
+   {
+    "date": "2026-05-20",
+    "code": "S",
+    "shares": 2000,
+    "price": 200,
+    "acquired": false
+   },
+   {
+    "date": "2026-05-20",
+    "code": "S",
+    "shares": 500,
+    "price": 199.0092,
+    "acquired": false
+   }
+  ]
+ },
+ "0001104659-26-064092": {
+  "accession": "0001104659-26-064092",
+  "form": "6-K",
+  "filed": "2026-05-20",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926064092/nbis-20260331xex99d1.htm",
+  "title": "Nebius Group also owns significant equity stakes in ClickHouse and Toloka, both of which were previously spun out of the Group."
+ },
+ "0001513845-26-000064": {
+  "accession": "0001513845-26-000064",
+  "form": "4",
+  "filed": "2026-05-19",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000064/form4.xml",
+  "owner": "Boroditsky Marc",
+  "role": "Chief Revenue Officer",
+  "plan10b5": true,
+  "trades": [
+   {
+    "date": "2026-05-15",
+    "code": "S",
+    "shares": 4500,
+    "price": 217.55,
+    "acquired": false
+   }
+  ]
+ },
+ "0001513845-26-000062": {
+  "accession": "0001513845-26-000062",
+  "form": "4/A",
+  "filed": "2026-05-15",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000062/form4a.xml"
+ },
+ "0001513845-26-000061": {
+  "accession": "0001513845-26-000061",
+  "form": "4",
+  "filed": "2026-05-15",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000061/form4.xml",
+  "owner": "Korolenko Andrey",
+  "role": "Chief Infrastructure Officer",
+  "plan10b5": true,
+  "trades": [
+   {
+    "date": "2026-05-13",
+    "code": "M",
+    "shares": 500000,
+    "price": 0,
+    "acquired": true
+   },
+   {
+    "date": "2026-05-13",
+    "code": "S",
+    "shares": 500000,
+    "price": 203.24,
+    "acquired": false
+   }
+  ]
+ },
+ "0001513845-26-000057": {
+  "accession": "0001513845-26-000057",
+  "form": "4",
+  "filed": "2026-05-15",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000057/form4.xml",
+  "owner": "Bunina Elena",
+  "role": "Director",
+  "plan10b5": true,
+  "trades": [
+   {
+    "date": "2026-05-13",
+    "code": "S",
+    "shares": 5000,
+    "price": 203.18,
+    "acquired": false
+   },
+   {
+    "date": "2026-05-13",
+    "code": "S",
+    "shares": 5894,
+    "price": 210,
+    "acquired": false
+   }
+  ]
+ },
+ "0001973379-26-000172": {
+  "accession": "0001973379-26-000172",
+  "form": "144",
+  "filed": "2026-05-13",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000197337926000172/primary_doc.xml",
+  "owner": "Bunina Elena",
+  "role": "Director",
+  "proposedShares": 10894,
+  "proposedValue": 2253640
+ },
+ "0001104659-26-059872": {
+  "accession": "0001104659-26-059872",
+  "form": "6-K",
+  "filed": "2026-05-13",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-1.htm",
+  "title": "Nebius reports first quarter 2026 financial results"
+ },
+ "0001513845-26-000055": {
+  "accession": "0001513845-26-000055",
+  "form": "4",
+  "filed": "2026-05-08",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000055/form4.xml",
+  "owner": "Bunina Elena",
+  "role": "Director",
+  "plan10b5": true,
+  "trades": [
+   {
+    "date": "2026-05-06",
+    "code": "S",
+    "shares": 5556,
+    "price": 180,
+    "acquired": false
+   },
+   {
+    "date": "2026-05-06",
+    "code": "S",
+    "shares": 5263,
+    "price": 190,
+    "acquired": false
+   }
+  ]
+ },
+ "0001973379-26-000158": {
+  "accession": "0001973379-26-000158",
+  "form": "144",
+  "filed": "2026-05-06",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000197337926000158/primary_doc.xml",
+  "owner": "Bunina Elena",
+  "role": "Director",
+  "proposedShares": 5263,
+  "proposedValue": 999970
+ },
+ "0001973379-26-000157": {
+  "accession": "0001973379-26-000157",
+  "form": "144",
+  "filed": "2026-05-06",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000197337926000157/primary_doc.xml",
+  "owner": "Bunina Elena",
+  "role": "Director",
+  "proposedShares": 5556,
+  "proposedValue": 1000080
+ },
+ "0001513845-26-000053": {
+  "accession": "0001513845-26-000053",
+  "form": "4",
+  "filed": "2026-05-05",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000053/form4.xml",
+  "owner": "Bunina Elena",
+  "role": "Director",
+  "plan10b5": true,
+  "trades": [
+   {
+    "date": "2026-05-04",
+    "code": "S",
+    "shares": 5882,
+    "price": 170,
+    "acquired": false
+   }
+  ]
+ },
+ "0001973379-26-000155": {
+  "accession": "0001973379-26-000155",
+  "form": "144",
+  "filed": "2026-05-04",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000197337926000155/primary_doc.xml",
+  "owner": "Bunina Elena",
+  "role": "Director",
+  "proposedShares": 5882,
+  "proposedValue": 999940
+ },
+ "0001104659-26-053464": {
+  "accession": "0001104659-26-053464",
+  "form": "6-K",
+  "filed": "2026-05-01",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926053464/tm2613296d1_ex99-1.htm",
+  "title": "Nebius agrees to acquire Eigen AI, strengthening Nebius Token Factory as a frontier inference platform"
+ },
+ "0001104659-26-052948": {
+  "accession": "0001104659-26-052948",
+  "form": "20-F",
+  "filed": "2026-04-30",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm"
+ },
+ "0001513845-26-000051": {
+  "accession": "0001513845-26-000051",
+  "form": "4",
+  "filed": "2026-04-16",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000051/form4.xml",
+  "owner": "Boroditsky Marc",
+  "role": "Chief Revenue Officer",
+  "plan10b5": true,
+  "trades": [
+   {
+    "date": "2026-04-15",
+    "code": "S",
+    "shares": 4500,
+    "price": 160.1,
+    "acquired": false
+   }
+  ]
+ },
+ "0001513845-26-000049": {
+  "accession": "0001513845-26-000049",
+  "form": "4",
+  "filed": "2026-04-14",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000049/form4.xml",
+  "owner": "Bunina Elena",
+  "role": "Director",
+  "plan10b5": true,
+  "trades": [
+   {
+    "date": "2026-04-10",
+    "code": "S",
+    "shares": 7143,
+    "price": 140,
+    "acquired": false
+   },
+   {
+    "date": "2026-04-13",
+    "code": "S",
+    "shares": 6667,
+    "price": 150,
+    "acquired": false
+   },
+   {
+    "date": "2026-04-14",
+    "code": "S",
+    "shares": 6250,
+    "price": 161.22,
+    "acquired": false
+   }
+  ]
+ },
+ "0001973379-26-000146": {
+  "accession": "0001973379-26-000146",
+  "form": "144",
+  "filed": "2026-04-14",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000197337926000146/primary_doc.xml",
+  "owner": "Bunina Elena",
+  "role": "Director",
+  "proposedShares": 6250,
+  "proposedValue": 1007750
+ },
+ "0001973379-26-000145": {
+  "accession": "0001973379-26-000145",
+  "form": "144",
+  "filed": "2026-04-13",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000197337926000145/primary_doc.xml",
+  "owner": "Bunina Elena",
+  "role": "Director",
+  "proposedShares": 6667,
+  "proposedValue": 1000050
+ },
+ "0001973379-26-000144": {
+  "accession": "0001973379-26-000144",
+  "form": "144",
+  "filed": "2026-04-10",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000197337926000144/primary_doc.xml",
+  "owner": "Bunina Elena",
+  "role": "Director",
+  "proposedShares": 7143,
+  "proposedValue": 1000020
+ },
+ "0001513845-26-000047": {
+  "accession": "0001513845-26-000047",
+  "form": "4",
+  "filed": "2026-04-08",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000047/form4.xml",
+  "owner": "Korolenko Andrey",
+  "role": "Chief Infrastructure Officer",
+  "plan10b5": true,
+  "trades": [
+   {
+    "date": "2026-04-06",
+    "code": "S",
+    "shares": 31357,
+    "price": 111.2002,
+    "acquired": false
+   }
+  ]
+ },
+ "0001513845-26-000045": {
+  "accession": "0001513845-26-000045",
+  "form": "4",
+  "filed": "2026-04-02",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000045/form4.xml",
+  "owner": "Volozh Arkadiy",
+  "role": "CEO",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-04-01",
+    "code": "S",
+    "shares": 33358,
+    "price": 103.7314,
+    "acquired": false
+   }
+  ]
+ },
+ "0001513845-26-000043": {
+  "accession": "0001513845-26-000043",
+  "form": "4",
+  "filed": "2026-04-01",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000043/form4.xml",
+  "owner": "Shtan Danila",
+  "role": "Chief Technology Officer",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-03-31",
+    "code": "S",
+    "shares": 13489,
+    "price": 98.7754,
+    "acquired": false
+   }
+  ]
+ },
+ "0001513845-26-000041": {
+  "accession": "0001513845-26-000041",
+  "form": "4",
+  "filed": "2026-04-01",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000041/form4.xml",
+  "owner": "Korolenko Andrey",
+  "role": "Chief Infrastructure Officer",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-03-31",
+    "code": "S",
+    "shares": 26976,
+    "price": 98.7754,
+    "acquired": false
+   }
+  ]
+ },
+ "0001513845-26-000039": {
+  "accession": "0001513845-26-000039",
+  "form": "4",
+  "filed": "2026-04-01",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000039/form4.xml",
+  "owner": "Tal Boaz",
+  "role": "General Counsel",
+  "plan10b5": false,
+  "trades": [
+   {
+    "date": "2026-03-31",
+    "code": "S",
+    "shares": 3036,
+    "price": 98.7754,
+    "acquired": false
+   }
+  ]
+ },
+ "0001973379-26-000128": {
+  "accession": "0001973379-26-000128",
+  "form": "144",
+  "filed": "2026-03-30",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000197337926000128/primary_doc.xml",
+  "owner": "Volozh Arkadiy",
+  "role": "Officer",
+  "proposedShares": 38000,
+  "proposedValue": 3831160
+ },
+ "0001104659-26-032735": {
+  "accession": "0001104659-26-032735",
+  "form": "6-K",
+  "filed": "2026-03-20",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926032735/tm268409d4_ex99-1.htm",
+  "title": "Nebius Group announces closing of private offering of convertible senior notes, with aggregate gross proceeds of approximately $4.3 billion"
+ },
+ "0001513845-26-000037": {
+  "accession": "0001513845-26-000037",
+  "form": "3",
+  "filed": "2026-03-18",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000037/form3.xml"
+ },
+ "0001513845-26-000034": {
+  "accession": "0001513845-26-000034",
+  "form": "3",
+  "filed": "2026-03-18",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000034/form3.xml"
+ },
+ "0001513845-26-000032": {
+  "accession": "0001513845-26-000032",
+  "form": "3",
+  "filed": "2026-03-18",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000032/form3.xml"
+ },
+ "0001513845-26-000030": {
+  "accession": "0001513845-26-000030",
+  "form": "3",
+  "filed": "2026-03-18",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000030/form3.xml"
+ },
+ "0001513845-26-000028": {
+  "accession": "0001513845-26-000028",
+  "form": "3",
+  "filed": "2026-03-18",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000028/form3.xml"
+ },
+ "0001513845-26-000026": {
+  "accession": "0001513845-26-000026",
+  "form": "3",
+  "filed": "2026-03-18",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000026/form3.xml"
+ },
+ "0001513845-26-000024": {
+  "accession": "0001513845-26-000024",
+  "form": "3",
+  "filed": "2026-03-18",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000024/form3.xml"
+ },
+ "0001513845-26-000022": {
+  "accession": "0001513845-26-000022",
+  "form": "3",
+  "filed": "2026-03-18",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000022/form3.xml"
+ },
+ "0001513845-26-000020": {
+  "accession": "0001513845-26-000020",
+  "form": "3",
+  "filed": "2026-03-18",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000020/form3.xml"
+ },
+ "0001513845-26-000018": {
+  "accession": "0001513845-26-000018",
+  "form": "3",
+  "filed": "2026-03-18",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000018/form3.xml"
+ },
+ "0001513845-26-000014": {
+  "accession": "0001513845-26-000014",
+  "form": "3",
+  "filed": "2026-03-18",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000014/form3.xml"
+ },
+ "0001513845-26-000006": {
+  "accession": "0001513845-26-000006",
+  "form": "3",
+  "filed": "2026-03-18",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000006/form3.xml"
+ },
+ "0001513845-26-000004": {
+  "accession": "0001513845-26-000004",
+  "form": "3",
+  "filed": "2026-03-18",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000004/form3.xml"
+ },
+ "0001513845-26-000002": {
+  "accession": "0001513845-26-000002",
+  "form": "3",
+  "filed": "2026-03-18",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000002/form3.xml"
+ },
+ "0001104659-26-029863": {
+  "accession": "0001104659-26-029863",
+  "form": "6-K",
+  "filed": "2026-03-18",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926029863/tm268409d3_ex99-1.htm",
+  "title": "Nebius Group announces pricing of upsized private offering of $4.0 billion of convertible senior notes"
+ },
+ "0001104659-26-029074": {
+  "accession": "0001104659-26-029074",
+  "form": "6-K",
+  "filed": "2026-03-17",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926029074/tm268409d2_ex99-1.htm",
+  "title": "Nebius Group announces proposed private offering of $3.75 billion of convertible senior notes"
+ },
+ "0001973379-26-000114": {
+  "accession": "0001973379-26-000114",
+  "form": "144",
+  "filed": "2026-03-16",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000197337926000114/primary_doc.xml",
+  "owner": "Bunina Elena",
+  "role": "Director",
+  "proposedShares": 16442,
+  "proposedValue": 2092047.5
+ },
+ "0001104659-26-027886": {
+  "accession": "0001104659-26-027886",
+  "form": "6-K",
+  "filed": "2026-03-16",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926027886/tm268879d1_ex99-1.htm",
+  "title": "Nebius signs new AI infrastructure agreement with Meta; deal to accelerate growth of Nebius’s core business in AI cloud"
+ },
+ "0001973379-26-000099": {
+  "accession": "0001973379-26-000099",
+  "form": "144",
+  "filed": "2026-03-13",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000197337926000099/primary_doc.xml",
+  "owner": "Nave Ophir",
+  "role": "Officer",
+  "proposedShares": 2422,
+  "proposedValue": 261272
+ },
+ "0001104659-26-026163": {
+  "accession": "0001104659-26-026163",
+  "form": "6-K",
+  "filed": "2026-03-11",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926026163/tm268532d1_ex99-1.htm",
+  "title": "NVIDIA and Nebius"
+ },
+ "0001973379-26-000077": {
+  "accession": "0001973379-26-000077",
+  "form": "144",
+  "filed": "2026-03-04",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000197337926000077/primary_doc.xml",
+  "owner": "Ryan Charles E",
+  "role": "Director",
+  "proposedShares": 35333,
+  "proposedValue": 3066904
+ },
+ "0001950047-26-001633": {
+  "accession": "0001950047-26-001633",
+  "form": "144",
+  "filed": "2026-02-23",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000195004726001633/primary_doc.xml",
+  "owner": "JOHN W BOYNTON TTEE THE JOHN W BOYNTON IV TR OF 2006",
+  "role": "Officer",
+  "proposedShares": 50000,
+  "proposedValue": 4896000
+ },
+ "0000940594-26-000014": {
+  "accession": "0000940594-26-000014",
+  "form": "SCHEDULE 13G/A",
+  "filed": "2026-02-17",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000094059426000014/primary_doc.xml"
+ },
+ "0001104659-26-013947": {
+  "accession": "0001104659-26-013947",
+  "form": "6-K",
+  "filed": "2026-02-12",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926013947/tm266173d2_6k.htm"
+ },
+ "0001104659-26-013946": {
+  "accession": "0001104659-26-013946",
+  "form": "6-K",
+  "filed": "2026-02-12",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926013946/tm266173d1_ex99-1.htm",
+  "title": "Nebius reports fourth quarter and full-year 2025 financial results"
+ },
+ "0001104659-26-012492": {
+  "accession": "0001104659-26-012492",
+  "form": "6-K",
+  "filed": "2026-02-10",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926012492/tm265786d1_ex99-1.htm",
+  "title": "extends Nebius's cloud platform capabilities with real-time search infrastructure for AI critical capability in fast-growing agentic AI market to capture multibillion-dollar opportunity"
+ },
+ "0001973379-25-000338": {
+  "accession": "0001973379-25-000338",
+  "form": "144",
+  "filed": "2025-12-30",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000197337925000338/primary_doc.xml",
+  "owner": "Radinsky Kira",
+  "role": "Director",
+  "proposedShares": 500,
+  "proposedValue": 43795
+ },
+ "0001973379-25-000337": {
+  "accession": "0001973379-25-000337",
+  "form": "144",
+  "filed": "2025-12-29",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000197337925000337/primary_doc.xml",
+  "owner": "Nave Ophir",
+  "role": "Officer",
+  "proposedShares": 2300,
+  "proposedValue": 201457
+ },
+ "0001973379-25-000336": {
+  "accession": "0001973379-25-000336",
+  "form": "144",
+  "filed": "2025-12-29",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000197337925000336/primary_doc.xml",
+  "owner": "Bunina Elena",
+  "role": "Director",
+  "proposedShares": 2300,
+  "proposedValue": 201457
+ },
+ "0001973379-25-000335": {
+  "accession": "0001973379-25-000335",
+  "form": "144",
+  "filed": "2025-12-29",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000197337925000335/primary_doc.xml",
+  "owner": "Volozh Arkadiy",
+  "role": "Officer",
+  "proposedShares": 41000,
+  "proposedValue": 3591190
+ },
+ "0000940594-25-000015": {
+  "accession": "0000940594-25-000015",
+  "form": "SCHEDULE 13G/A",
+  "filed": "2025-11-14",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000094059425000015/primary_doc.xml"
+ },
+ "0001104659-25-110831": {
+  "accession": "0001104659-25-110831",
+  "form": "6-K",
+  "filed": "2025-11-13",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925110831/tm2531034d1_ex99-1.htm",
+  "title": "Nebius Group N.V. (or the Company) and its subsidiaries (or the Group) are a technology group building full-stack AI infrastructure including high-performance"
+ },
+ "0001104659-25-110028": {
+  "accession": "0001104659-25-110028",
+  "form": "6-K",
+  "filed": "2025-11-12",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925110028/tm2530882d3_ex99-1.htm",
+  "title": "Nebius Group N.V., a public limited company (naamloze vennootschap) formed under the laws of the Netherlands with its corporate seat (statutaire zetel) in Amsterdam, the Netherlands, registered in the Dutch trade registe"
+ },
+ "0001104659-25-110025": {
+  "accession": "0001104659-25-110025",
+  "form": "424B5",
+  "filed": "2025-11-12",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925110025/tm2530771-1_424b5.htm"
+ },
+ "0001104659-25-109806": {
+  "accession": "0001104659-25-109806",
+  "form": "6-K",
+  "filed": "2025-11-12",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925109806/tm2530882d1_ex99-1.htm",
+  "title": "Nebius reports third quarter financial results"
+ },
+ "0001104659-25-109803": {
+  "accession": "0001104659-25-109803",
+  "form": "6-K",
+  "filed": "2025-11-12",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925109803/tm2530882d2_6k.htm"
+ },
+ "0001104659-25-101520": {
+  "accession": "0001104659-25-101520",
+  "form": "6-K",
+  "filed": "2025-10-22",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925101520/tm2529289d1_6k.htm"
+ },
+ "0001973379-25-000276": {
+  "accession": "0001973379-25-000276",
+  "form": "144",
+  "filed": "2025-10-01",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000197337925000276/primary_doc.xml"
+ },
+ "0001104659-25-091939": {
+  "accession": "0001104659-25-091939",
+  "form": "6-K",
+  "filed": "2025-09-22",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925091939/tm2526625d1_6k.htm"
+ },
+ "0001104659-25-089969": {
+  "accession": "0001104659-25-089969",
+  "form": "6-K",
+  "filed": "2025-09-15",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925089969/tm2525580d4_6k.htm"
+ },
+ "0001973379-25-000261": {
+  "accession": "0001973379-25-000261",
+  "form": "144",
+  "filed": "2025-09-12",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000197337925000261/primary_doc.xml"
+ },
+ "0001410578-25-002149": {
+  "accession": "0001410578-25-002149",
+  "form": "6-K",
+  "filed": "2025-09-12",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000141057825002149/tm2525503d8_6k.htm"
+ },
+ "0001410578-25-002147": {
+  "accession": "0001410578-25-002147",
+  "form": "424B5",
+  "filed": "2025-09-12",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000141057825002147/tm2525503-7_424b5.htm"
+ },
+ "0001104659-25-089208": {
+  "accession": "0001104659-25-089208",
+  "form": "FWP",
+  "filed": "2025-09-11",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925089208/tm2525503d1_fwp.htm"
+ },
+ "0001104659-25-089203": {
+  "accession": "0001104659-25-089203",
+  "form": "FWP",
+  "filed": "2025-09-11",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925089203/tm2525502d2_fwp.htm"
+ },
+ "0001104659-25-089197": {
+  "accession": "0001104659-25-089197",
+  "form": "FWP",
+  "filed": "2025-09-11",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925089197/tm2525503d2_fwp.htm"
+ },
+ "0001104659-25-088885": {
+  "accession": "0001104659-25-088885",
+  "form": "424B5",
+  "filed": "2025-09-10",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925088885/tm2525503-3_424b5.htm"
+ },
+ "0001104659-25-088874": {
+  "accession": "0001104659-25-088874",
+  "form": "FWP",
+  "filed": "2025-09-10",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925088874/tm2525503d6_fwp.htm"
+ },
+ "0001104659-25-088873": {
+  "accession": "0001104659-25-088873",
+  "form": "FWP",
+  "filed": "2025-09-10",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925088873/tm2525503d5_fwp.htm"
+ },
+ "0001104659-25-088872": {
+  "accession": "0001104659-25-088872",
+  "form": "FWP",
+  "filed": "2025-09-10",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925088872/tm2525503d4_fwp.htm"
+ },
+ "0001104659-25-088860": {
+  "accession": "0001104659-25-088860",
+  "form": "6-K",
+  "filed": "2025-09-10",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925088860/tm2525580d2_6k.htm"
+ },
+ "0001104659-25-088312": {
+  "accession": "0001104659-25-088312",
+  "form": "6-K",
+  "filed": "2025-09-08",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925088312/tm2525580d1_6k.htm"
+ },
+ "0001958244-25-004308": {
+  "accession": "0001958244-25-004308",
+  "form": "144",
+  "filed": "2025-09-05",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000195824425004308/primary_doc.xml"
+ },
+ "0001969223-25-000717": {
+  "accession": "0001969223-25-000717",
+  "form": "144",
+  "filed": "2025-09-03",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000196922325000717/primary_doc.xml"
+ },
+ "0001104659-25-081649": {
+  "accession": "0001104659-25-081649",
+  "form": "6-K",
+  "filed": "2025-08-22",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925081649/tm2524116d1_6k.htm"
+ },
+ "0001085146-25-005177": {
+  "accession": "0001085146-25-005177",
+  "form": "SCHEDULE 13G/A",
+  "filed": "2025-08-14",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000108514625005177/primary_doc.xml"
+ },
+ "0001104659-25-075028": {
+  "accession": "0001104659-25-075028",
+  "form": "6-K",
+  "filed": "2025-08-07",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925075028/tm2522866d1_6k.htm"
+ },
+ "0001104659-25-070330": {
+  "accession": "0001104659-25-070330",
+  "form": "6-K",
+  "filed": "2025-07-24",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925070330/tm2521636d1_6k.htm"
+ },
+ "0001104659-25-066935": {
+  "accession": "0001104659-25-066935",
+  "form": "6-K",
+  "filed": "2025-07-10",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925066935/tm2520527d1_6k.htm"
+ },
+ "0001104659-25-065768": {
+  "accession": "0001104659-25-065768",
+  "form": "424B7",
+  "filed": "2025-07-03",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925065768/tm2519765-1_424b7.htm"
+ },
+ "0001973379-25-000196": {
+  "accession": "0001973379-25-000196",
+  "form": "144",
+  "filed": "2025-07-01",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000197337925000196/primary_doc.xml"
+ },
+ "0001104659-25-056817": {
+  "accession": "0001104659-25-056817",
+  "form": "6-K",
+  "filed": "2025-06-05",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925056817/tm2517269d1_6k.htm"
+ },
+ "0001104659-25-055197": {
+  "accession": "0001104659-25-055197",
+  "form": "6-K",
+  "filed": "2025-06-02",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925055197/tm2516825d1_6k.htm"
+ },
+ "0001104659-25-054826": {
+  "accession": "0001104659-25-054826",
+  "form": "6-K",
+  "filed": "2025-05-30",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925054826/tm2516622d1_6k.htm"
+ },
+ "0001104659-25-053454": {
+  "accession": "0001104659-25-053454",
+  "form": "6-K",
+  "filed": "2025-05-28",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925053454/tm2516359d1_6k.htm"
+ },
+ "0001104659-25-050975": {
+  "accession": "0001104659-25-050975",
+  "form": "6-K",
+  "filed": "2025-05-20",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925050975/tm2515580d1_6k.htm"
+ },
+ "0001085146-25-003266": {
+  "accession": "0001085146-25-003266",
+  "form": "SCHEDULE 13G/A",
+  "filed": "2025-05-15",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000108514625003266/primary_doc.xml"
+ },
+ "0001104659-25-045373": {
+  "accession": "0001104659-25-045373",
+  "form": "6-K",
+  "filed": "2025-05-07",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925045373/tm2514304d1_6k.htm"
+ },
+ "0001104659-25-044097": {
+  "accession": "0001104659-25-044097",
+  "form": "S-8",
+  "filed": "2025-05-02",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925044097/tm2513807d1_s8.htm"
+ },
+ "0001104659-25-044092": {
+  "accession": "0001104659-25-044092",
+  "form": "F-3ASR",
+  "filed": "2025-05-02",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925044092/tm2513807-3_f3asr.htm"
+ },
+ "0001558370-25-005991": {
+  "accession": "0001558370-25-005991",
+  "form": "20-F",
+  "filed": "2025-04-30",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000155837025005991/nbis-20241231x20f.htm"
+ },
+ "0001104659-25-042228": {
+  "accession": "0001104659-25-042228",
+  "form": "6-K",
+  "filed": "2025-04-30",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925042228/tm2513666d1_6k.htm"
+ },
+ "0001973379-25-000107": {
+  "accession": "0001973379-25-000107",
+  "form": "144",
+  "filed": "2025-03-17",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000197337925000107/primary_doc.xml"
+ },
+ "0001973379-25-000106": {
+  "accession": "0001973379-25-000106",
+  "form": "144",
+  "filed": "2025-03-17",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000197337925000106/primary_doc.xml"
+ },
+ "0001104659-25-015480": {
+  "accession": "0001104659-25-015480",
+  "form": "6-K",
+  "filed": "2025-02-20",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925015480/tm257185d1_6k.htm"
+ },
+ "0001085146-25-001440": {
+  "accession": "0001085146-25-001440",
+  "form": "SCHEDULE 13G",
+  "filed": "2025-02-14",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000108514625001440/primary_doc.xml"
+ }
+}
