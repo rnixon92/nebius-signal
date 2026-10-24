@@ -28,7 +28,7 @@ export function Home({ d, p, range }: { d: Dashboard; p: Palette; range: Range }
       hopper: famAvg(HOPPER),
       tokens: d.tokens.daily.filter((x) => !x.partial).slice(-60).map((x) => ({ date: x.date, v: x.total })),
       customers: d.atlas.cumulative.map((c) => ({ date: c.date, v: c.total })),
-      roles: d.jobs.postedByMonth.map((m) => ({ date: m.date, v: Object.entries(m).reduce((a, [k, v]) => (k === "date" ? a : a + Number(v)), 0) })),
+      roles: d.jobs.daily.map((x) => ({ date: x.date, v: x.total })),
       revenue: d.fundamentals.quarters.map((q) => ({ date: q.end, v: q.revenue })),
       arr: d.fundamentals.quarters.filter((q) => q.arr).map((q) => ({ date: q.end, v: q.arr! })),
     };
@@ -117,7 +117,7 @@ export function Home({ d, p, range }: { d: Dashboard; p: Palette; range: Range }
         <SummaryCard
           label="Open roles"
           value={d.jobs.total.toLocaleString()}
-          note={`${dc} in data center & power · ${d.jobs.new7d} posted this week`}
+          note={`${dc} in data center & power · ${d.jobs.closed30d} closed in 30 days · ${d.jobs.medianDaysToClose ?? "—"} days median to close`}
           trend={trends.roles}
           trendFormat={(v) => `${v} roles`}
           p={p}

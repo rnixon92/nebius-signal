@@ -7,13 +7,18 @@ import type { Alert, SourceResult } from "../lib/types.ts";
 type GhJob = { id: number; title: string; location?: { name?: string }; absolute_url: string };
 type GhDept = { id: number; name: string; parent_id: number | null; jobs: GhJob[] };
 
-/** `posted` is Greenhouse's first_published date; `firstSeen` is when this collector first saw the role. */
-export type Job = { title: string; dept: string; function: string; location: string; region: string; posted: string; firstSeen: string; closedAt?: string };
-export type JobsDay = { total: number; byFunction: Record<string, number>; byRegion: Record<string, number> };
+/**
+ * `posted` is Greenhouse's first_published date; `firstSeen` is when the role was first observed (by this
+ * collector or in an archived snapshot). `closedAt` is when it left the board: filled or withdrawn, the
+ * board doesn't say which. `closedApprox` marks closures dated from sparse archive snapshots.
+ */
+export type Job = { title: string; dept: string; function: string; location: string; region: string; posted: string; firstSeen: string; closedAt?: string; closedApprox?: boolean };
+/** `source: "archive"` marks counts reconstructed from Internet Archive snapshots of the board. */
+export type JobsDay = { total: number; byFunction: Record<string, number>; byRegion: Record<string, number>; source?: "archive" };
 
 export const FUNCTIONS = ["Data center & power", "Sales & go-to-market", "Engineering & product", "G&A & other"] as const;
 
-function classify(chain: string, title: string): (typeof FUNCTIONS)[number] {
+export function classify(chain: string, title: string): (typeof FUNCTIONS)[number] {
   const t = `${chain} ${title}`;
   if (/data ?cent|\bDC\b|construction|facilit|electrical|mechanical|\bpower\b|energy|site (lead|manager|selection)|real estate|commissioning/i.test(t)) return "Data center & power";
   if (/sales|account (exec|manag)|solutions? (architect|engineer)|partner|channel|alliances|marketing|\bBDR\b|\bSDR\b|business development|customer success|go[- ]to[- ]market|\bGTM\b|\b(AMER|EMEA|APAC)\b/i.test(t)) return "Sales & go-to-market";
@@ -21,7 +26,7 @@ function classify(chain: string, title: string): (typeof FUNCTIONS)[number] {
   return "G&A & other";
 }
 
-function region(location: string): string {
+export function region(location: string): string {
   if (/united states|\bUSA?\b|new york|san francisco|california|texas|kansas|missouri|new jersey|seattle|chicago|boston|canada|toronto|vancouver|americas|mexico|brazil/i.test(location)) return "Americas";
   if (/israel|tel aviv/i.test(location)) return "Israel";
   if (/singapore|japan|tokyo|india|asia|korea|seoul|australia|sydney|apac|taiwan|hong kong/i.test(location)) return "Asia-Pacific";
@@ -57,12 +62,10 @@ export async function collectJobs(): Promise<SourceResult> {
   const bootstrap = Object.keys(prev).length === 0;
   const roles: Record<string, Job> = {};
   for (const [id, j] of open) roles[id] = { ...j, firstSeen: prev[id]?.firstSeen ?? date };
-  // Keep closed roles for 120 days so time-to-fill and churn stay computable.
-  const keepClosedAfter = new Date(Date.now() - 120 * 864e5).toISOString().slice(0, 10);
+  // Closed roles are kept forever: total roles posted, closures and time-to-close all depend on them.
   for (const [id, j] of Object.entries(prev)) {
     if (open.has(id)) continue;
-    const closedAt = j.closedAt ?? date;
-    if (closedAt >= keepClosedAfter) roles[id] = { ...j, closedAt };
+    roles[id] = j.closedAt ? j : { ...j, closedAt: date, closedApprox: false };
   }
   await writeJson("jobs/roles.json", sortKeys(roles));
 

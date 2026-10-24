@@ -11,7 +11,7 @@ import { day, pct, usd, usdM } from "../lib/format.ts";
 import type { Palette } from "../lib/theme.ts";
 
 /** Horizontal single-color bars for a ranked list (one series → one color). */
-function BarList({ items, color, total }: { items: { name: string; count: number }[]; color: string; total?: number }) {
+function BarList({ items, color, total, suffix = "" }: { items: { name: string; count: number }[]; color: string; total?: number; suffix?: string }) {
   const max = Math.max(...items.map((i) => i.count), 1);
   return (
     <ul className="flex flex-col gap-2">
@@ -24,7 +24,7 @@ function BarList({ items, color, total }: { items: { name: string; count: number
             <span className="block h-full rounded-r-[4px]" style={{ width: `${(i.count / max) * 100}%`, background: color }} />
           </span>
           <span className="tnum text-right text-ink">
-            {i.count}
+            {i.count}{suffix}
             {total ? <span className="sr-only"> of {total}</span> : null}
           </span>
         </li>
@@ -94,50 +94,99 @@ export function CustomersSection({ d, p, range }: { d: Dashboard; p: Palette; ra
 
 export function HiringSection({ d, p, range }: { d: Dashboard; p: Palette; range: Range }) {
   const j = d.jobs;
+  const [split, setSplit] = useState<"status" | "function">("status");
   const fnColor = (f: string) => p.series[FUNCTION_ORDER.indexOf(f)] ?? p.other;
+  const since = j.trackedSince ? day(j.trackedSince, true) : "the first run";
   return (
     <Section
       id="hiring"
       kicker="Build-out"
       title="Hiring"
-      intro="Open roles on Nebius's Greenhouse board, classified by function from department and title. Data-center hiring in a new location tends to come before a site announcement, so new locations raise an alert."
+      intro={
+        <>
+          Every role on Nebius's Greenhouse board since {since}: open now, and closed (filled or withdrawn; the board doesn't say which). History before the collector started
+          comes from Internet Archive snapshots of the board. Data-center hiring in a new location tends to come before a site announcement, so new locations raise an alert.
+        </>
+      }
     >
-      <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
-        <Stat label="Open roles" value={j.total.toLocaleString()} />
-        <Stat label="Data center & power" value={(j.byFunction.find((f) => f.name === "Data center & power")?.count ?? 0).toLocaleString()} />
-        <Stat label="Posted in the last 7 days" value={j.new7d.toLocaleString()} note="By Greenhouse posting date" />
+      <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
+        <Stat label="Open roles" value={j.total.toLocaleString()} note={`${j.new7d} posted in the last 7 days`} />
+        <Stat label="Roles tracked" value={j.tracked.toLocaleString()} note={`Open and closed, since ${since}`} />
+        <Stat label="Closed in the last 30 days" value={j.closed30d.toLocaleString()} note="Left the board: filled or withdrawn" />
+        <Stat label="Median days to close" value={j.medianDaysToClose === null ? "—" : `${j.medianDaysToClose} days`} note="Posting to closing, roles closed in the last 180 days" />
       </div>
+
       <TimeSeriesCard
-        title="Open roles by month posted"
-        sub="Still-open roles grouped by posting month and function"
+        title="Roles over time"
+        sub="Open roles as observed, and cumulative roles posted and closed among all roles tracked. Click a series to hide it."
+        p={p}
+        globalRange={range}
+        rows={j.daily}
+        series={[
+          { key: "total", label: "Open", color: p.series[0]! },
+          { key: "posted", label: "Total posted", color: p.series[1]! },
+          { key: "closed", label: "Total closed", color: p.series[2]! },
+        ]}
+        format={(v) => Math.round(v).toLocaleString()}
+        change="pct"
+        tooltipFooter={(r) => (r.archive ? "From an Internet Archive snapshot" : "From the daily collector")}
+        csvName="nebius-roles-over-time"
+        height={280}
+        note="Before the collector started, points come from sparse archive snapshots (gaps of weeks to months), so closure dates there are approximate: a role is dated to the first snapshot it's missing from. Roles that opened and closed between snapshots are invisible."
+      />
+
+      <TimeSeriesCard
+        title="Roles by month posted"
+        sub={split === "status" ? "Each bar is every role posted that month: still open plus already closed" : "Every role posted that month, by function"}
         p={p}
         globalRange="All"
         rows={j.postedByMonth}
-        series={FUNCTION_ORDER.map((f) => ({ key: f, label: f, color: fnColor(f) }))}
+        series={
+          split === "status"
+            ? [
+                { key: "Closed", label: "Closed", color: p.series[2]! },
+                { key: "Still open", label: "Still open", color: p.series[0]! },
+              ]
+            : FUNCTION_ORDER.map((f) => ({ key: f, label: f, color: fnColor(f) }))
+        }
         kind="stacked"
         format={(v) => String(v)}
         change="none"
+        controls={
+          <Segmented
+            label="Split roles by"
+            value={split}
+            onChange={setSplit}
+            options={[
+              { value: "status", label: "Status" },
+              { value: "function", label: "Function" },
+            ]}
+          />
+        }
+        tooltipFooter={(r) => `${Number(r["Still open"]) + Number(r["Closed"])} posted`}
         csvName="nebius-roles-by-month"
-        height={240}
-        note="Only roles still open today are visible, so older months undercount: filled roles have dropped off. Read the recent months and the mix, not the long-run slope."
+        height={260}
+        note="Recent months are mostly still open because roles take ~3 months to close. Months before the archive history starts would undercount, so they're not shown."
       />
+
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
         <Card>
-          <CardTitle title="By function" />
+          <CardTitle title="Open roles by function" />
           <BarList items={j.byFunction} color={p.accent} />
         </Card>
         <Card>
-          <CardTitle title="By region" />
+          <CardTitle title="Open roles by region" />
           <BarList items={j.byRegion} color={p.accent} />
         </Card>
-        {j.daily.length < 2 ? (
-          <Card>
-            <CardTitle title="Open roles over time" />
-            <EmptyNote>Daily counts start {day(j.daily[0]?.date ?? d.generatedAt, true)}. A trend appears after a few daily runs.</EmptyNote>
-          </Card>
-        ) : (
-          <TimeSeriesCard title="Open roles over time" p={p} globalRange={range} rows={j.daily} series={[{ key: "total", label: "Open roles", color: p.accent }]} format={(v) => String(v)} csvName="nebius-open-roles" height={180} />
-        )}
+        <Card>
+          <CardTitle title="Median days to close" sub="By function, roles closed in the last 180 days" />
+          {j.daysToCloseByFunction.length === 0 ? (
+            <EmptyNote>Appears once roles have been seen closing.</EmptyNote>
+          ) : (
+            <BarList items={j.daysToCloseByFunction.map((f) => ({ name: f.name, count: f.days }))} color={p.accent} suffix=" d" />
+          )}
+          <p className="mt-3 text-xs text-ink-3">Longer means harder to hire, or roles kept open as standing pipelines.</p>
+        </Card>
       </div>
       <Card>
         <CardTitle title="Data center & power roles" sub="Where Nebius is staffing physical build-out" />

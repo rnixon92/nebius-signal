@@ -1,4 +1,574 @@
 {
+ "2024-11-22": {
+  "total": 54,
+  "byFunction": {
+   "Data center & power": 4,
+   "Sales & go-to-market": 8,
+   "Engineering & product": 31,
+   "G&A & other": 11
+  },
+  "byRegion": {
+   "Europe & other": 40,
+   "Americas": 10,
+   "Remote": 4
+  },
+  "source": "archive"
+ },
+ "2024-12-28": {
+  "total": 60,
+  "byFunction": {
+   "Data center & power": 5,
+   "Sales & go-to-market": 10,
+   "Engineering & product": 33,
+   "G&A & other": 12
+  },
+  "byRegion": {
+   "Americas": 12,
+   "Europe & other": 45,
+   "Remote": 3
+  },
+  "source": "archive"
+ },
+ "2025-01-10": {
+  "total": 61,
+  "byFunction": {
+   "Data center & power": 8,
+   "Sales & go-to-market": 10,
+   "Engineering & product": 34,
+   "G&A & other": 9
+  },
+  "byRegion": {
+   "Americas": 14,
+   "Europe & other": 44,
+   "Remote": 3
+  },
+  "source": "archive"
+ },
+ "2025-02-15": {
+  "total": 58,
+  "byFunction": {
+   "Data center & power": 4,
+   "Sales & go-to-market": 14,
+   "Engineering & product": 31,
+   "G&A & other": 9
+  },
+  "byRegion": {
+   "Americas": 18,
+   "Europe & other": 34,
+   "Remote": 4,
+   "Israel": 2
+  },
+  "source": "archive"
+ },
+ "2025-02-20": {
+  "total": 63,
+  "byFunction": {
+   "Data center & power": 4,
+   "Sales & go-to-market": 14,
+   "Engineering & product": 36,
+   "G&A & other": 9
+  },
+  "byRegion": {
+   "Americas": 18,
+   "Europe & other": 36,
+   "Remote": 4,
+   "Israel": 5
+  },
+  "source": "archive"
+ },
+ "2025-07-08": {
+  "total": 104,
+  "byFunction": {
+   "Data center & power": 14,
+   "Sales & go-to-market": 24,
+   "Engineering & product": 54,
+   "G&A & other": 12
+  },
+  "byRegion": {
+   "Americas": 33,
+   "Europe & other": 60,
+   "Israel": 6,
+   "Remote": 3,
+   "Asia-Pacific": 2
+  },
+  "source": "archive"
+ },
+ "2025-07-16": {
+  "total": 109,
+  "byFunction": {
+   "Data center & power": 14,
+   "Sales & go-to-market": 24,
+   "Engineering & product": 57,
+   "G&A & other": 14
+  },
+  "byRegion": {
+   "Americas": 34,
+   "Europe & other": 64,
+   "Israel": 6,
+   "Remote": 3,
+   "Asia-Pacific": 2
+  },
+  "source": "archive"
+ },
+ "2025-07-25": {
+  "total": 117,
+  "byFunction": {
+   "Data center & power": 14,
+   "Sales & go-to-market": 28,
+   "Engineering & product": 57,
+   "G&A & other": 18
+  },
+  "byRegion": {
+   "Americas": 36,
+   "Europe & other": 68,
+   "Israel": 7,
+   "Remote": 3,
+   "Asia-Pacific": 3
+  },
+  "source": "archive"
+ },
+ "2025-08-26": {
+  "total": 124,
+  "byFunction": {
+   "Data center & power": 11,
+   "Sales & go-to-market": 32,
+   "Engineering & product": 59,
+   "G&A & other": 22
+  },
+  "byRegion": {
+   "Americas": 38,
+   "Europe & other": 73,
+   "Israel": 5,
+   "Remote": 5,
+   "Asia-Pacific": 3
+  },
+  "source": "archive"
+ },
+ "2025-10-08": {
+  "total": 149,
+  "byFunction": {
+   "Data center & power": 15,
+   "Sales & go-to-market": 42,
+   "Engineering & product": 62,
+   "G&A & other": 30
+  },
+  "byRegion": {
+   "Americas": 42,
+   "Europe & other": 94,
+   "Remote": 5,
+   "Israel": 6,
+   "Asia-Pacific": 2
+  },
+  "source": "archive"
+ },
+ "2026-03-27": {
+  "total": 323,
+  "byFunction": {
+   "Data center & power": 59,
+   "Sales & go-to-market": 84,
+   "Engineering & product": 143,
+   "G&A & other": 37
+  },
+  "byRegion": {
+   "Europe & other": 151,
+   "Remote": 11,
+   "Americas": 119,
+   "Israel": 37,
+   "Asia-Pacific": 5
+  },
+  "source": "archive"
+ },
+ "2026-03-31": {
+  "total": 326,
+  "byFunction": {
+   "Data center & power": 59,
+   "Sales & go-to-market": 87,
+   "Engineering & product": 145,
+   "G&A & other": 35
+  },
+  "byRegion": {
+   "Europe & other": 152,
+   "Remote": 11,
+   "Americas": 121,
+   "Israel": 36,
+   "Asia-Pacific": 6
+  },
+  "source": "archive"
+ },
+ "2026-04-01": {
+  "total": 329,
+  "byFunction": {
+   "Data center & power": 60,
+   "Sales & go-to-market": 89,
+   "Engineering & product": 145,
+   "G&A & other": 35
+  },
+  "byRegion": {
+   "Europe & other": 154,
+   "Remote": 12,
+   "Americas": 121,
+   "Israel": 36,
+   "Asia-Pacific": 6
+  },
+  "source": "archive"
+ },
+ "2026-04-09": {
+  "total": 339,
+  "byFunction": {
+   "Data center & power": 61,
+   "Sales & go-to-market": 90,
+   "Engineering & product": 157,
+   "G&A & other": 31
+  },
+  "byRegion": {
+   "Europe & other": 155,
+   "Remote": 9,
+   "Americas": 126,
+   "Israel": 43,
+   "Asia-Pacific": 6
+  },
+  "source": "archive"
+ },
+ "2026-06-22": {
+  "total": 319,
+  "byFunction": {
+   "Data center & power": 60,
+   "Sales & go-to-market": 63,
+   "Engineering & product": 161,
+   "G&A & other": 35
+  },
+  "byRegion": {
+   "Remote": 8,
+   "Europe & other": 165,
+   "Americas": 97,
+   "Israel": 44,
+   "Asia-Pacific": 5
+  },
+  "source": "archive"
+ },
+ "2026-07-21": {
+  "total": 332,
+  "byFunction": {
+   "Data center & power": 75,
+   "Sales & go-to-market": 60,
+   "Engineering & product": 162,
+   "G&A & other": 35
+  },
+  "byRegion": {
+   "Europe & other": 167,
+   "Americas": 110,
+   "Asia-Pacific": 10,
+   "Israel": 42,
+   "Remote": 3
+  },
+  "source": "archive"
+ },
+ "2026-07-30": {
+  "total": 336,
+  "byFunction": {
+   "Data center & power": 75,
+   "Sales & go-to-market": 60,
+   "Engineering & product": 165,
+   "G&A & other": 36
+  },
+  "byRegion": {
+   "Europe & other": 167,
+   "Americas": 111,
+   "Asia-Pacific": 15,
+   "Israel": 40,
+   "Remote": 3
+  },
+  "source": "archive"
+ },
+ "2026-08-05": {
+  "total": 351,
+  "byFunction": {
+   "Data center & power": 75,
+   "Sales & go-to-market": 70,
+   "Engineering & product": 165,
+   "G&A & other": 41
+  },
+  "byRegion": {
+   "Americas": 116,
+   "Israel": 43,
+   "Europe & other": 175,
+   "Asia-Pacific": 14,
+   "Remote": 3
+  },
+  "source": "archive"
+ },
+ "2026-08-13": {
+  "total": 365,
+  "byFunction": {
+   "Data center & power": 75,
+   "Sales & go-to-market": 70,
+   "Engineering & product": 174,
+   "G&A & other": 46
+  },
+  "byRegion": {
+   "Americas": 118,
+   "Israel": 48,
+   "Europe & other": 175,
+   "Asia-Pacific": 22,
+   "Remote": 2
+  },
+  "source": "archive"
+ },
+ "2026-08-20": {
+  "total": 350,
+  "byFunction": {
+   "Data center & power": 73,
+   "Sales & go-to-market": 66,
+   "Engineering & product": 173,
+   "G&A & other": 38
+  },
+  "byRegion": {
+   "Americas": 112,
+   "Israel": 46,
+   "Europe & other": 171,
+   "Asia-Pacific": 19,
+   "Remote": 2
+  },
+  "source": "archive"
+ },
+ "2026-09-04": {
+  "total": 376,
+  "byFunction": {
+   "Data center & power": 70,
+   "Sales & go-to-market": 76,
+   "Engineering & product": 183,
+   "G&A & other": 47
+  },
+  "byRegion": {
+   "Americas": 117,
+   "Asia-Pacific": 23,
+   "Israel": 48,
+   "Europe & other": 185,
+   "Remote": 3
+  },
+  "source": "archive"
+ },
+ "2026-09-14": {
+  "total": 379,
+  "byFunction": {
+   "Data center & power": 67,
+   "Sales & go-to-market": 74,
+   "Engineering & product": 193,
+   "G&A & other": 45
+  },
+  "byRegion": {
+   "Americas": 115,
+   "Asia-Pacific": 24,
+   "Europe & other": 192,
+   "Israel": 45,
+   "Remote": 3
+  },
+  "source": "archive"
+ },
+ "2026-09-23": {
+  "total": 381,
+  "byFunction": {
+   "Data center & power": 65,
+   "Sales & go-to-market": 69,
+   "Engineering & product": 198,
+   "G&A & other": 49
+  },
+  "byRegion": {
+   "Americas": 107,
+   "Asia-Pacific": 30,
+   "Europe & other": 195,
+   "Israel": 46,
+   "Remote": 3
+  },
+  "source": "archive"
+ },
+ "2026-09-28": {
+  "total": 381,
+  "byFunction": {
+   "Data center & power": 63,
+   "Sales & go-to-market": 66,
+   "Engineering & product": 205,
+   "G&A & other": 47
+  },
+  "byRegion": {
+   "Americas": 105,
+   "Asia-Pacific": 31,
+   "Europe & other": 196,
+   "Israel": 46,
+   "Remote": 3
+  },
+  "source": "archive"
+ },
+ "2026-10-04": {
+  "total": 364,
+  "byFunction": {
+   "Data center & power": 67,
+   "Sales & go-to-market": 58,
+   "Engineering & product": 189,
+   "G&A & other": 50
+  },
+  "byRegion": {
+   "Americas": 105,
+   "Asia-Pacific": 32,
+   "Europe & other": 181,
+   "Israel": 43,
+   "Remote": 3
+  },
+  "source": "archive"
+ },
+ "2026-10-10": {
+  "total": 376,
+  "byFunction": {
+   "Data center & power": 76,
+   "Sales & go-to-market": 63,
+   "Engineering & product": 185,
+   "G&A & other": 52
+  },
+  "byRegion": {
+   "Asia-Pacific": 37,
+   "Europe & other": 180,
+   "Israel": 43,
+   "Americas": 113,
+   "Remote": 3
+  },
+  "source": "archive"
+ },
+ "2026-10-11": {
+  "total": 376,
+  "byFunction": {
+   "Data center & power": 76,
+   "Sales & go-to-market": 63,
+   "Engineering & product": 185,
+   "G&A & other": 52
+  },
+  "byRegion": {
+   "Asia-Pacific": 37,
+   "Europe & other": 180,
+   "Israel": 43,
+   "Americas": 113,
+   "Remote": 3
+  },
+  "source": "archive"
+ },
+ "2026-10-12": {
+  "total": 376,
+  "byFunction": {
+   "Data center & power": 76,
+   "Sales & go-to-market": 63,
+   "Engineering & product": 185,
+   "G&A & other": 52
+  },
+  "byRegion": {
+   "Asia-Pacific": 37,
+   "Europe & other": 180,
+   "Israel": 43,
+   "Americas": 113,
+   "Remote": 3
+  },
+  "source": "archive"
+ },
+ "2026-10-13": {
+  "total": 382,
+  "byFunction": {
+   "Data center & power": 74,
+   "Sales & go-to-market": 66,
+   "Engineering & product": 194,
+   "G&A & other": 48
+  },
+  "byRegion": {
+   "Asia-Pacific": 38,
+   "Europe & other": 183,
+   "Israel": 49,
+   "Americas": 110,
+   "Remote": 2
+  },
+  "source": "archive"
+ },
+ "2026-10-14": {
+  "total": 378,
+  "byFunction": {
+   "Data center & power": 73,
+   "Sales & go-to-market": 64,
+   "Engineering & product": 191,
+   "G&A & other": 50
+  },
+  "byRegion": {
+   "Asia-Pacific": 37,
+   "Europe & other": 180,
+   "Israel": 51,
+   "Americas": 108,
+   "Remote": 2
+  },
+  "source": "archive"
+ },
+ "2026-10-15": {
+  "total": 383,
+  "byFunction": {
+   "Data center & power": 74,
+   "Sales & go-to-market": 66,
+   "Engineering & product": 190,
+   "G&A & other": 53
+  },
+  "byRegion": {
+   "Asia-Pacific": 37,
+   "Europe & other": 183,
+   "Israel": 51,
+   "Americas": 110,
+   "Remote": 2
+  },
+  "source": "archive"
+ },
+ "2026-10-16": {
+  "total": 376,
+  "byFunction": {
+   "Data center & power": 74,
+   "Sales & go-to-market": 68,
+   "Engineering & product": 184,
+   "G&A & other": 50
+  },
+  "byRegion": {
+   "Asia-Pacific": 37,
+   "Europe & other": 177,
+   "Israel": 50,
+   "Americas": 110,
+   "Remote": 2
+  },
+  "source": "archive"
+ },
+ "2026-10-17": {
+  "total": 375,
+  "byFunction": {
+   "Data center & power": 74,
+   "Sales & go-to-market": 67,
+   "Engineering & product": 183,
+   "G&A & other": 51
+  },
+  "byRegion": {
+   "Europe & other": 175,
+   "Asia-Pacific": 37,
+   "Americas": 113,
+   "Israel": 48,
+   "Remote": 2
+  },
+  "source": "archive"
+ },
+ "2026-10-20": {
+  "total": 382,
+  "byFunction": {
+   "Data center & power": 73,
+   "Sales & go-to-market": 72,
+   "Engineering & product": 183,
+   "G&A & other": 54
+  },
+  "byRegion": {
+   "Europe & other": 177,
+   "Asia-Pacific": 41,
+   "Americas": 114,
+   "Israel": 48,
+   "Remote": 2
+  },
+  "source": "archive"
+ },
  "2026-10-24": {
   "total": 384,
   "byFunction": {

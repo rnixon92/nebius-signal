@@ -130,12 +130,20 @@ export type Dashboard = {
 
   jobs: {
     total: number;
-    daily: { date: string; total: number }[];
+    /** Open roles as observed (archive snapshots, then daily runs), with cumulative roles posted and closed among all roles ever seen. */
+    daily: { date: string; total: number; posted: number; closed: number; archive: boolean }[];
+    /** Every role ever seen (open + closed) since the archive history starts. */
+    tracked: number;
+    trackedSince: string | null;
+    closed30d: number;
+    /** Median days from posting to leaving the board, for roles closed in the last 180 days. */
+    medianDaysToClose: number | null;
+    daysToCloseByFunction: { name: string; days: number; n: number }[];
     byFunction: { name: string; count: number }[];
     byRegion: { name: string; count: number }[];
     new7d: number;
     dcRoles: { title: string; location: string; posted: string; url: string }[];
-    /** Open roles by posting month and function (survivorship-biased: closed roles are invisible). */
+    /** Roles by posting month: "Still open" + "Closed" = all posted that month, plus the same total split by function. */
     postedByMonth: ({ date: string } & Record<string, number | string>)[];
   };
 

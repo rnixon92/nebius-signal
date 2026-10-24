@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-24T05:13:01.616Z",
+ "generatedAt": "2026-10-24T05:30:15.970Z",
  "sources": [
   {
    "id": "gpu-ondemand",
@@ -253,10 +253,10 @@
      ],
      "source": "https://www.marketbeat.com/stocks/NASDAQ/NBIS/earnings/"
     },
-    "estimate": 917.1512034713436,
-    "low": 883.708120913825,
-    "high": 950.5942860288621,
-    "tilt": 0.013426744167230525,
+    "estimate": 918.2975553842332,
+    "low": 884.812672149228,
+    "high": 951.7824386192384,
+    "tilt": 0.014693431363793717,
     "lean": "in line",
     "coverage": 0.37282608695652175,
     "priorFromLastSurprise": 0.01267828843106178,
@@ -284,12 +284,12 @@
      {
       "id": "dc-hiring",
       "label": "Data-center hiring mix",
-      "value": "15% of new roles (prior quarter 28%)",
-      "score": -0.44885361552028225,
+      "value": "12% of new roles (prior quarter 15%)",
+      "score": -0.2127266000739918,
       "weight": 0.5,
       "coverage": 1,
       "note": "Build-out staffing leads capacity by one to three quarters, so it's weighted lightly for the current one. Survivorship-biased: only still-open roles are visible.",
-      "contribution": -0.0024078444680971406
+      "contribution": -0.0011411572715339501
      },
      {
       "id": "blackwell-spot",
@@ -347,14 +347,14 @@
     "reportDateConfirmed": false,
     "anchor": {
      "kind": "guidance-implied",
-     "value": 1301.548796528656,
+     "value": 1300.4024446157666,
      "range": null,
      "source": null
     },
-    "estimate": 1322.433054303896,
-    "low": 1282.760062674779,
-    "high": 1362.1060459330129,
-    "tilt": 0.016045697119416412,
+    "estimate": 1322.1980854009341,
+    "low": 1282.532142838906,
+    "high": 1361.8640279629622,
+    "tilt": 0.016760688873979697,
     "lean": "no consensus",
     "coverage": 0.5554347826086956,
     "priorFromLastSurprise": 0.01267828843106178,
@@ -382,12 +382,12 @@
      {
       "id": "dc-hiring",
       "label": "Data-center hiring mix",
-      "value": "15% of new roles (prior quarter 15%)",
-      "score": -0.0030769230769229663,
+      "value": "14% of new roles (prior quarter 12%)",
+      "score": 0.1954887218045112,
       "weight": 0.5,
       "coverage": 1,
       "note": "Build-out staffing leads capacity by one to three quarters, so it's weighted lightly for the current one. Survivorship-biased: only still-open roles are visible.",
-      "contribution": -0.000011079331627276436
+      "contribution": 0.0007039124229360091
      },
      {
       "id": "blackwell-spot",
@@ -452,8 +452,8 @@
   "history": [
    {
     "date": "2026-10-24",
-    "2026-Q3": 917.2,
-    "2026-Q4": 1322.4
+    "2026-Q3": 918.3,
+    "2026-Q4": 1322.2
    }
   ]
  },
@@ -528,7 +528,7 @@
     ],
     "spotPools": 0,
     "dcRolesOpen": 0,
-    "dcRolesPosted90d": 0,
+    "dcRolesPosted90d": 1,
     "news90d": 0,
     "risk90d": 0,
     "progress90d": 0,
@@ -1041,7 +1041,7 @@
     "platforms": [],
     "spotPools": 0,
     "dcRolesOpen": 5,
-    "dcRolesPosted90d": 4,
+    "dcRolesPosted90d": 5,
     "news90d": 1,
     "risk90d": 0,
     "progress90d": 0,
@@ -10629,8 +10629,275 @@
   "total": 384,
   "daily": [
    {
+    "date": "2024-11-22",
+    "total": 54,
+    "posted": 55,
+    "closed": 0,
+    "archive": true
+   },
+   {
+    "date": "2024-12-28",
+    "total": 60,
+    "posted": 74,
+    "closed": 12,
+    "archive": true
+   },
+   {
+    "date": "2025-01-10",
+    "total": 61,
+    "posted": 82,
+    "closed": 19,
+    "archive": true
+   },
+   {
+    "date": "2025-02-15",
+    "total": 58,
+    "posted": 102,
+    "closed": 43,
+    "archive": true
+   },
+   {
+    "date": "2025-02-20",
+    "total": 63,
+    "posted": 111,
+    "closed": 47,
+    "archive": true
+   },
+   {
+    "date": "2025-07-08",
+    "total": 104,
+    "posted": 188,
+    "closed": 81,
+    "archive": true
+   },
+   {
+    "date": "2025-07-16",
+    "total": 109,
+    "posted": 197,
+    "closed": 82,
+    "archive": true
+   },
+   {
+    "date": "2025-07-25",
+    "total": 117,
+    "posted": 206,
+    "closed": 86,
+    "archive": true
+   },
+   {
+    "date": "2025-08-26",
+    "total": 124,
+    "posted": 237,
+    "closed": 105,
+    "archive": true
+   },
+   {
+    "date": "2025-10-08",
+    "total": 149,
+    "posted": 296,
+    "closed": 140,
+    "archive": true
+   },
+   {
+    "date": "2026-03-27",
+    "total": 323,
+    "posted": 581,
+    "closed": 247,
+    "archive": true
+   },
+   {
+    "date": "2026-03-31",
+    "total": 326,
+    "posted": 591,
+    "closed": 259,
+    "archive": true
+   },
+   {
+    "date": "2026-04-01",
+    "total": 329,
+    "posted": 602,
+    "closed": 259,
+    "archive": true
+   },
+   {
+    "date": "2026-04-09",
+    "total": 339,
+    "posted": 624,
+    "closed": 281,
+    "archive": true
+   },
+   {
+    "date": "2026-06-22",
+    "total": 319,
+    "posted": 790,
+    "closed": 447,
+    "archive": true
+   },
+   {
+    "date": "2026-07-21",
+    "total": 332,
+    "posted": 871,
+    "closed": 518,
+    "archive": true
+   },
+   {
+    "date": "2026-07-30",
+    "total": 336,
+    "posted": 916,
+    "closed": 538,
+    "archive": true
+   },
+   {
+    "date": "2026-08-05",
+    "total": 351,
+    "posted": 940,
+    "closed": 561,
+    "archive": true
+   },
+   {
+    "date": "2026-08-13",
+    "total": 365,
+    "posted": 969,
+    "closed": 578,
+    "archive": true
+   },
+   {
+    "date": "2026-08-20",
+    "total": 350,
+    "posted": 991,
+    "closed": 612,
+    "archive": true
+   },
+   {
+    "date": "2026-09-04",
+    "total": 376,
+    "posted": 1044,
+    "closed": 652,
+    "archive": true
+   },
+   {
+    "date": "2026-09-14",
+    "total": 379,
+    "posted": 1069,
+    "closed": 675,
+    "archive": true
+   },
+   {
+    "date": "2026-09-23",
+    "total": 381,
+    "posted": 1112,
+    "closed": 714,
+    "archive": true
+   },
+   {
+    "date": "2026-09-28",
+    "total": 381,
+    "posted": 1125,
+    "closed": 723,
+    "archive": true
+   },
+   {
+    "date": "2026-10-04",
+    "total": 364,
+    "posted": 1138,
+    "closed": 755,
+    "archive": true
+   },
+   {
+    "date": "2026-10-10",
+    "total": 376,
+    "posted": 1169,
+    "closed": 780,
+    "archive": true
+   },
+   {
+    "date": "2026-10-11",
+    "total": 376,
+    "posted": 1169,
+    "closed": 780,
+    "archive": true
+   },
+   {
+    "date": "2026-10-12",
+    "total": 376,
+    "posted": 1184,
+    "closed": 780,
+    "archive": true
+   },
+   {
+    "date": "2026-10-13",
+    "total": 382,
+    "posted": 1190,
+    "closed": 794,
+    "archive": true
+   },
+   {
+    "date": "2026-10-14",
+    "total": 378,
+    "posted": 1203,
+    "closed": 804,
+    "archive": true
+   },
+   {
+    "date": "2026-10-15",
+    "total": 383,
+    "posted": 1204,
+    "closed": 815,
+    "archive": true
+   },
+   {
+    "date": "2026-10-16",
+    "total": 376,
+    "posted": 1220,
+    "closed": 825,
+    "archive": true
+   },
+   {
+    "date": "2026-10-17",
+    "total": 375,
+    "posted": 1220,
+    "closed": 841,
+    "archive": true
+   },
+   {
+    "date": "2026-10-20",
+    "total": 382,
+    "posted": 1231,
+    "closed": 842,
+    "archive": true
+   },
+   {
     "date": "2026-10-24",
-    "total": 384
+    "total": 384,
+    "posted": 1245,
+    "closed": 861,
+    "archive": false
+   }
+  ],
+  "tracked": 1245,
+  "trackedSince": "2024-11-22",
+  "closed30d": 147,
+  "medianDaysToClose": 98,
+  "daysToCloseByFunction": [
+   {
+    "name": "Data center & power",
+    "days": 130,
+    "n": 70
+   },
+   {
+    "name": "Sales & go-to-market",
+    "days": 101,
+    "n": 173
+   },
+   {
+    "name": "Engineering & product",
+    "days": 109,
+    "n": 225
+   },
+   {
+    "name": "G&A & other",
+    "days": 69,
+    "n": 112
    }
   ],
   "byFunction": [
@@ -11038,95 +11305,220 @@
   ],
   "postedByMonth": [
    {
-    "date": "2025-10-01",
-    "Data center & power": 1,
-    "Sales & go-to-market": 0,
-    "Engineering & product": 0,
-    "G&A & other": 0
+    "date": "2024-11-01",
+    "Still open": 1,
+    "Closed": 46,
+    "Data center & power": 4,
+    "Sales & go-to-market": 9,
+    "Engineering & product": 22,
+    "G&A & other": 12
    },
    {
-    "date": "2025-11-01",
-    "Data center & power": 1,
-    "Sales & go-to-market": 0,
+    "date": "2024-12-01",
+    "Still open": 0,
+    "Closed": 19,
+    "Data center & power": 2,
+    "Sales & go-to-market": 3,
+    "Engineering & product": 10,
+    "G&A & other": 4
+   },
+   {
+    "date": "2025-01-01",
+    "Still open": 1,
+    "Closed": 10,
+    "Data center & power": 2,
+    "Sales & go-to-market": 4,
     "Engineering & product": 4,
-    "G&A & other": 0
-   },
-   {
-    "date": "2025-12-01",
-    "Data center & power": 1,
-    "Sales & go-to-market": 0,
-    "Engineering & product": 1,
-    "G&A & other": 0
-   },
-   {
-    "date": "2026-01-01",
-    "Data center & power": 5,
-    "Sales & go-to-market": 0,
-    "Engineering & product": 4,
-    "G&A & other": 0
-   },
-   {
-    "date": "2026-02-01",
-    "Data center & power": 6,
-    "Sales & go-to-market": 0,
-    "Engineering & product": 9,
-    "G&A & other": 0
-   },
-   {
-    "date": "2026-03-01",
-    "Data center & power": 5,
-    "Sales & go-to-market": 2,
-    "Engineering & product": 8,
     "G&A & other": 1
    },
    {
-    "date": "2026-04-01",
-    "Data center & power": 1,
-    "Sales & go-to-market": 2,
-    "Engineering & product": 7,
-    "G&A & other": 0
+    "date": "2025-02-01",
+    "Still open": 3,
+    "Closed": 24,
+    "Data center & power": 0,
+    "Sales & go-to-market": 4,
+    "Engineering & product": 17,
+    "G&A & other": 6
    },
    {
-    "date": "2026-05-01",
-    "Data center & power": 8,
+    "date": "2025-03-01",
+    "Still open": 3,
+    "Closed": 14,
+    "Data center & power": 2,
     "Sales & go-to-market": 0,
-    "Engineering & product": 8,
+    "Engineering & product": 15,
     "G&A & other": 0
    },
    {
-    "date": "2026-06-01",
-    "Data center & power": 5,
-    "Sales & go-to-market": 2,
-    "Engineering & product": 15,
+    "date": "2025-04-01",
+    "Still open": 0,
+    "Closed": 7,
+    "Data center & power": 1,
+    "Sales & go-to-market": 3,
+    "Engineering & product": 2,
+    "G&A & other": 1
+   },
+   {
+    "date": "2025-05-01",
+    "Still open": 0,
+    "Closed": 14,
+    "Data center & power": 2,
+    "Sales & go-to-market": 6,
+    "Engineering & product": 4,
     "G&A & other": 2
    },
    {
-    "date": "2026-07-01",
-    "Data center & power": 11,
-    "Sales & go-to-market": 8,
-    "Engineering & product": 21,
+    "date": "2025-06-01",
+    "Still open": 2,
+    "Closed": 30,
+    "Data center & power": 8,
+    "Sales & go-to-market": 9,
+    "Engineering & product": 9,
+    "G&A & other": 6
+   },
+   {
+    "date": "2025-07-01",
+    "Still open": 0,
+    "Closed": 26,
+    "Data center & power": 1,
+    "Sales & go-to-market": 4,
+    "Engineering & product": 12,
+    "G&A & other": 9
+   },
+   {
+    "date": "2025-08-01",
+    "Still open": 2,
+    "Closed": 33,
+    "Data center & power": 3,
+    "Sales & go-to-market": 15,
+    "Engineering & product": 6,
+    "G&A & other": 11
+   },
+   {
+    "date": "2025-09-01",
+    "Still open": 2,
+    "Closed": 36,
+    "Data center & power": 4,
+    "Sales & go-to-market": 7,
+    "Engineering & product": 11,
+    "G&A & other": 16
+   },
+   {
+    "date": "2025-10-01",
+    "Still open": 1,
+    "Closed": 20,
+    "Data center & power": 6,
+    "Sales & go-to-market": 3,
+    "Engineering & product": 4,
     "G&A & other": 8
    },
    {
+    "date": "2025-11-01",
+    "Still open": 5,
+    "Closed": 10,
+    "Data center & power": 1,
+    "Sales & go-to-market": 2,
+    "Engineering & product": 10,
+    "G&A & other": 2
+   },
+   {
+    "date": "2025-12-01",
+    "Still open": 2,
+    "Closed": 15,
+    "Data center & power": 2,
+    "Sales & go-to-market": 4,
+    "Engineering & product": 9,
+    "G&A & other": 2
+   },
+   {
+    "date": "2026-01-01",
+    "Still open": 9,
+    "Closed": 31,
+    "Data center & power": 12,
+    "Sales & go-to-market": 9,
+    "Engineering & product": 15,
+    "G&A & other": 4
+   },
+   {
+    "date": "2026-02-01",
+    "Still open": 15,
+    "Closed": 94,
+    "Data center & power": 23,
+    "Sales & go-to-market": 35,
+    "Engineering & product": 39,
+    "G&A & other": 12
+   },
+   {
+    "date": "2026-03-01",
+    "Still open": 16,
+    "Closed": 91,
+    "Data center & power": 13,
+    "Sales & go-to-market": 24,
+    "Engineering & product": 52,
+    "G&A & other": 18
+   },
+   {
+    "date": "2026-04-01",
+    "Still open": 10,
+    "Closed": 53,
+    "Data center & power": 7,
+    "Sales & go-to-market": 17,
+    "Engineering & product": 30,
+    "G&A & other": 9
+   },
+   {
+    "date": "2026-05-01",
+    "Still open": 16,
+    "Closed": 57,
+    "Data center & power": 13,
+    "Sales & go-to-market": 15,
+    "Engineering & product": 36,
+    "G&A & other": 9
+   },
+   {
+    "date": "2026-06-01",
+    "Still open": 24,
+    "Closed": 64,
+    "Data center & power": 14,
+    "Sales & go-to-market": 22,
+    "Engineering & product": 33,
+    "G&A & other": 19
+   },
+   {
+    "date": "2026-07-01",
+    "Still open": 48,
+    "Closed": 62,
+    "Data center & power": 19,
+    "Sales & go-to-market": 32,
+    "Engineering & product": 36,
+    "G&A & other": 23
+   },
+   {
     "date": "2026-08-01",
-    "Data center & power": 5,
-    "Sales & go-to-market": 12,
-    "Engineering & product": 19,
-    "G&A & other": 7
+    "Still open": 43,
+    "Closed": 62,
+    "Data center & power": 9,
+    "Sales & go-to-market": 29,
+    "Engineering & product": 42,
+    "G&A & other": 25
    },
    {
     "date": "2026-09-01",
-    "Data center & power": 9,
-    "Sales & go-to-market": 12,
-    "Engineering & product": 40,
-    "G&A & other": 10
+    "Still open": 71,
+    "Closed": 32,
+    "Data center & power": 10,
+    "Sales & go-to-market": 17,
+    "Engineering & product": 55,
+    "G&A & other": 21
    },
    {
     "date": "2026-10-01",
+    "Still open": 104,
+    "Closed": 8,
     "Data center & power": 16,
-    "Sales & go-to-market": 32,
-    "Engineering & product": 30,
-    "G&A & other": 26
+    "Sales & go-to-market": 33,
+    "Engineering & product": 32,
+    "G&A & other": 31
    }
   ]
  },

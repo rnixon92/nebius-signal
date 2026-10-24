@@ -58,6 +58,11 @@ export function TimeSeriesCard<R extends { date: string }>(props: Props<R>) {
   const ranges = availableRanges(rows[0]?.date, rows.at(-1)?.date);
   const effective = ranges.includes(range) ? range : "All";
   const visible = useMemo(() => clip(rows, effective), [rows, effective]);
+  // Lines use a true time axis so irregular sampling (archive snapshots, trading days) keeps honest
+  // spacing; stacked bars need evenly spaced bands, so they stay categorical.
+  const timeScale = props.kind !== "stacked";
+  const plotted = useMemo(() => (timeScale ? visible.map((r) => ({ ...r, t: toTime(r.date) })) : visible), [visible, timeScale]);
+  const axisTicks = useMemo(() => (visible.length > 1 ? timeTicks(toTime(visible[0]!.date), toTime(visible.at(-1)!.date)) : { ticks: [], format: (t: number) => day(new Date(t).toISOString()) }), [visible]);
   const shown = series.filter((s) => !hidden.has(s.key));
   const events = (props.events ?? []).filter((e) => visible.length && e.date >= visible[0]!.date && e.date <= visible.at(-1)!.date);
 
@@ -99,16 +104,20 @@ export function TimeSeriesCard<R extends { date: string }>(props: Props<R>) {
       {view === "chart" ? (
         <div style={{ height: big ? "min(62vh, 640px)" : (props.height ?? 280) }}>
           <ResponsiveContainer>
-            <ComposedChart data={visible} margin={{ ...CHART_MARGIN, top: big ? 18 : 8 }} barCategoryGap="12%">
+            <ComposedChart data={plotted} margin={{ ...CHART_MARGIN, top: big ? 18 : 8 }} barCategoryGap="12%">
               <CartesianGrid {...grid(p)} />
-              <XAxis {...axisX(p)} />
+              {timeScale ? (
+                <XAxis {...axisX(p)} dataKey="t" type="number" scale="time" domain={["dataMin", "dataMax"]} ticks={axisTicks.ticks} tickFormatter={axisTicks.format} interval={0} />
+              ) : (
+                <XAxis {...axisX(p)} />
+              )}
               <YAxis {...axisY(p, props.axisFormat ?? props.format)} domain={props.yDomain ?? [0, "auto"]} ticks={props.yTicks} />
               {props.refY?.map((r) => <ReferenceLine key={r.label} y={r.y} stroke={p.rule} label={{ value: r.label, position: "insideTopRight", fill: p.ink3, fontSize: 11 }} />)}
               {showEvents &&
                 events.map((e, i) => (
                   <ReferenceLine
                     key={`${e.date}-${i}`}
-                    x={e.date}
+                    x={timeScale ? toTime(e.date) : e.date}
                     stroke={p.ink3}
                     strokeOpacity={0.55}
                     label={big ? { value: EVENT_LABEL[e.kind], position: "insideTopLeft", fill: p.ink3, fontSize: 10, offset: 4 } : undefined}
@@ -285,6 +294,8 @@ function SeriesTip<R>({ active, label, payload, series, format, footer, events, 
   if (!active || !payload?.length) return null;
   const row = payload[0]?.payload as Record<string, unknown> | undefined;
   if (!row) return null;
+  // On a time axis the label is a timestamp; the row always carries its ISO date.
+  label = String(row.date ?? label);
   const items = series
     .map((s) => ({ name: s.label, v: row[s.key], color: s.color }))
     .filter((x): x is { name: string; v: number; color: string } => typeof x.v === "number");
@@ -322,6 +333,33 @@ function IconButton({ label, onClick, children }: { label: string; onClick: () =
 }
 
 const fmtCell = (v: unknown, format: (v: number) => string) => (typeof v === "number" ? format(v) : "—");
+
+const toTime = (date: string) => Date.parse(`${date.slice(0, 10)}T00:00:00Z`);
+
+const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+/**
+ * Calendar-aligned ticks for a time axis: quarter or month starts for long spans, week starts for
+ * medium ones, evenly stepped days for short ones. Labels gain a year when the span crosses one.
+ */
+function timeTicks(min: number, max: number): { ticks: number[]; format: (t: number) => string } {
+  const spanDays = (max - min) / 864e5;
+  const d0 = new Date(min);
+  const multiYear = d0.getUTCFullYear() !== new Date(max).getUTCFullYear();
+  const ticks: number[] = [];
+  if (spanDays > 120) {
+    const step = spanDays > 900 ? 6 : spanDays > 400 ? 3 : spanDays > 200 ? 2 : 1;
+    const m = new Date(Date.UTC(d0.getUTCFullYear(), d0.getUTCMonth() + 1, 1));
+    while (m.getUTCMonth() % step) m.setUTCMonth(m.getUTCMonth() + 1);
+    for (; m.getTime() <= max; m.setUTCMonth(m.getUTCMonth() + step)) ticks.push(m.getTime());
+    return { ticks, format: (t) => { const x = new Date(t); return multiYear ? `${MON[x.getUTCMonth()]} '${String(x.getUTCFullYear()).slice(2)}` : MON[x.getUTCMonth()]!; } };
+  }
+  const stepDays = spanDays > 45 ? 14 : spanDays > 20 ? 7 : spanDays > 8 ? 3 : 1;
+  const start = new Date(min);
+  if (stepDays >= 7) while (start.getUTCDay() !== 1) start.setUTCDate(start.getUTCDate() + 1); // Mondays
+  for (let t = start.getTime(); t <= max; t += stepDays * 864e5) ticks.push(t);
+  return { ticks, format: (t) => day(new Date(t).toISOString(), false) };
+}
 
 function downloadCsv<R extends { date: string }>(name: string, rows: R[], series: Series[]) {
   const esc = (s: string) => (/[",\n]/.test(s) ? `"${s.replace(/"/g, '""')}"` : s);

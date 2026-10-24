@@ -340,22 +340,51 @@ async function atlas(): Promise<Dashboard["atlas"]> {
 async function jobs(): Promise<Dashboard["jobs"]> {
   const roles = await readJson<Record<string, Job>>("jobs/roles.json", {});
   const daily = await readJson<Record<string, JobsDay>>("jobs/daily.json", {});
-  const open = Object.entries(roles).filter(([, j]) => !j.closedAt);
-  const weekAgo = addDays(today(), -7);
+  const all = Object.entries(roles);
+  const open = all.filter(([, j]) => !j.closedAt);
+  const t = today();
+  const weekAgo = addDays(t, -7);
   const posted = (j: Job) => j.posted ?? j.firstSeen;
+  const trackedSince = Object.entries(daily).map(([d]) => d).sort()[0] ?? null;
 
-  // Open roles by the month they were posted. Closed roles are invisible, so older months undercount.
+  // Every role ever seen, by posting month: still open vs closed, and the same total by function.
+  // Months before the archive history starts miss roles that closed before anyone looked.
   const months = new Map<string, Record<string, number>>();
-  for (const [, j] of open) {
+  for (const [, j] of all) {
     const m = posted(j).slice(0, 7);
     const row = months.get(m) ?? {};
+    const status = j.closedAt ? "Closed" : "Still open";
+    row[status] = (row[status] ?? 0) + 1;
     row[j.function] = (row[j.function] ?? 0) + 1;
     months.set(m, row);
   }
   const postedByMonth = [...months.entries()]
     .sort(([a], [b]) => a.localeCompare(b))
-    .filter(([m]) => m >= addDays(today(), -365).slice(0, 7))
-    .map(([m, row]) => ({ date: `${m}-01`, ...Object.fromEntries(FUNCTIONS.map((f) => [f, row[f] ?? 0])) }));
+    .filter(([m]) => m >= (trackedSince ?? t).slice(0, 7))
+    .map(([m, row]) => ({ date: `${m}-01`, "Still open": row["Still open"] ?? 0, Closed: row["Closed"] ?? 0, ...Object.fromEntries(FUNCTIONS.map((f) => [f, row[f] ?? 0])) }));
+
+  // Cumulative roles posted and closed as of each observed day, among roles ever seen.
+  const postedDates = all.map(([, j]) => posted(j)).sort();
+  const closedDates = all.flatMap(([, j]) => (j.closedAt ? [j.closedAt] : [])).sort();
+  const countTo = (sorted: string[], date: string) => {
+    let lo = 0;
+    let hi = sorted.length;
+    while (lo < hi) {
+      const mid = (lo + hi) >> 1;
+      if (sorted[mid]! <= date) lo = mid + 1;
+      else hi = mid;
+    }
+    return lo;
+  };
+
+  // Time to close: posting → leaving the board, for recent closures (filled or withdrawn).
+  const recentClosed = all.filter(([, j]) => j.closedAt && j.closedAt >= addDays(t, -180));
+  const days = (j: Job) => Math.max(0, (Date.parse(j.closedAt!) - Date.parse(posted(j))) / 864e5);
+  const median = (xs: number[]) => {
+    if (!xs.length) return null;
+    const s = [...xs].sort((a, b) => a - b);
+    return Math.round(s.length % 2 ? s[(s.length - 1) / 2]! : (s[s.length / 2 - 1]! + s[s.length / 2]!) / 2);
+  };
   const tally = (key: (j: Job) => string, order?: readonly string[]) => {
     const m = new Map<string, number>();
     for (const [, j] of open) m.set(key(j), (m.get(key(j)) ?? 0) + 1);
@@ -364,7 +393,18 @@ async function jobs(): Promise<Dashboard["jobs"]> {
   };
   return {
     total: open.length,
-    daily: Object.entries(daily).sort(([a], [b]) => a.localeCompare(b)).map(([date, d]) => ({ date, total: d.total })),
+    daily: Object.entries(daily)
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([date, d]) => ({ date, total: d.total, posted: countTo(postedDates, date), closed: countTo(closedDates, date), archive: d.source === "archive" })),
+    tracked: all.length,
+    trackedSince,
+    closed30d: all.filter(([, j]) => j.closedAt && j.closedAt >= addDays(t, -30)).length,
+    medianDaysToClose: median(recentClosed.map(([, j]) => days(j))),
+    daysToCloseByFunction: FUNCTIONS.flatMap((f) => {
+      const ds = recentClosed.filter(([, j]) => j.function === f).map(([, j]) => days(j));
+      const m = median(ds);
+      return m === null ? [] : [{ name: f, days: m, n: ds.length }];
+    }),
     byFunction: tally((j) => j.function, FUNCTIONS),
     byRegion: tally((j) => j.region),
     new7d: open.filter(([, j]) => posted(j) >= weekAgo).length,
