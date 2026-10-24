@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-10-24T04:34:17.587Z",
+ "generatedAt": "2026-10-24T04:36:49.134Z",
  "sources": [
   {
    "id": "gpu-ondemand",
    "label": "Nebius GPU rate card",
    "url": "https://nebius.com/prices",
    "ok": true,
-   "lastSuccess": "2026-10-24T04:33:51.848Z",
+   "lastSuccess": "2026-10-24T04:36:22.633Z",
    "summary": "9 GPU rows (7 with list prices)",
    "stale": false
   },
@@ -15,8 +15,8 @@
    "label": "Nebius spot price API",
    "url": "https://nebius.com/spot-prices",
    "ok": true,
-   "lastSuccess": "2026-10-24T04:33:52.825Z",
-   "summary": "12 SKUs listed; 12 series, 8628 hourly points",
+   "lastSuccess": "2026-10-24T04:36:23.490Z",
+   "summary": "12 SKUs listed; 12 series, 8616 hourly points",
    "stale": false
   },
   {
@@ -24,7 +24,7 @@
    "label": "OpenRouter provider pages",
    "url": "https://openrouter.ai/provider/nebius",
    "ok": true,
-   "lastSuccess": "2026-10-24T04:34:12.429Z",
+   "lastSuccess": "2026-10-24T04:36:44.056Z",
    "summary": "Nebius 90 days of history; 11/11 peers",
    "stale": false
   },
@@ -33,7 +33,7 @@
    "label": "jimmyresearch OpenRouter CSV",
    "url": "https://jimmyresearch.com/openrouter/",
    "ok": true,
-   "lastSuccess": "2026-10-24T04:34:12.576Z",
+   "lastSuccess": "2026-10-24T04:36:44.218Z",
    "summary": "231 snapshots to 2026-10-23; Nebius rank 55 of 96",
    "stale": false
   },
@@ -42,7 +42,7 @@
    "label": "Nebius Atlas",
    "url": "https://nebiusatlas.com/",
    "ok": true,
-   "lastSuccess": "2026-10-24T04:34:14.344Z",
+   "lastSuccess": "2026-10-24T04:36:45.749Z",
    "summary": "363 customers (0 new since last run)",
    "stale": false
   },
@@ -61,7 +61,7 @@
    "label": "Greenhouse job board",
    "url": "https://careers.nebius.com/",
    "ok": true,
-   "lastSuccess": "2026-10-24T04:34:17.493Z",
+   "lastSuccess": "2026-10-24T04:36:49.042Z",
    "summary": "384 open roles (0 new)",
    "stale": false
   },
@@ -70,7 +70,7 @@
    "label": "Yahoo Finance (NBIS)",
    "url": "https://finance.yahoo.com/quote/NBIS",
    "ok": true,
-   "lastSuccess": "2026-10-24T04:34:17.586Z",
+   "lastSuccess": "2026-10-24T04:36:49.132Z",
    "summary": "501 closes, last 2026-10-23 $158.74",
    "stale": false
   }
@@ -2101,7 +2101,7 @@
   }
  },
  "gpu": {
-  "snapshotTime": "2026-10-24T04:29:40.651026Z",
+  "snapshotTime": "2026-10-24T04:32:01.294404Z",
   "onDemand": [
    {
     "name": "NVIDIA GB300 NVL72",
@@ -6368,18 +6368,18 @@
    {
     "date": "2026-10-24",
     "partial": true,
-    "total": 7973866956,
+    "total": 8132047489,
     "byModel": {
-     "deepseek/deepseek-v4.1-flash-20261017": 4589708230,
-     "qwen/qwen3-embedding-8b": 2464382548,
-     "qwen/qwen3-30b-a3b-instruct-2507": 219484085,
-     "reflection/beam-1.0-501b-a23b-20261016": 111409429,
-     "z-ai/glm-5.3-flash-20260826": 105073731,
-     "z-ai/glm-5.2-20260616": 88311263,
-     "deepseek/deepseek-v4.1-flash-20260910": 87065305,
-     "moonshotai/kimi-k2.7-code-20260612": 72160525,
-     "nvidia/nemotron-3-nano-30b-a3b": 61487098,
-     "Others": 174784742
+     "deepseek/deepseek-v4.1-flash-20261017": 4607798596,
+     "qwen/qwen3-embedding-8b": 2553192192,
+     "qwen/qwen3-30b-a3b-instruct-2507": 225813098,
+     "reflection/beam-1.0-501b-a23b-20261016": 129390608,
+     "z-ai/glm-5.3-flash-20260826": 110772551,
+     "z-ai/glm-5.2-20260616": 93464960,
+     "deepseek/deepseek-v4.1-flash-20260910": 90132810,
+     "moonshotai/kimi-k2.7-code-20260612": 73450582,
+     "nvidia/nemotron-3-nano-30b-a3b": 63948048,
+     "Others": 184084044
     }
    }
   ],

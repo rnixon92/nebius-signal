@@ -1,51 +1,51 @@
 {
  "gpu-ondemand": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:33:51.848Z",
-  "lastSuccess": "2026-10-24T04:33:51.848Z",
+  "lastAttempt": "2026-10-24T04:36:22.633Z",
+  "lastSuccess": "2026-10-24T04:36:22.633Z",
   "summary": "9 GPU rows (7 with list prices)"
  },
  "gpu-spot": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:33:52.825Z",
-  "lastSuccess": "2026-10-24T04:33:52.825Z",
-  "summary": "12 SKUs listed; 12 series, 8628 hourly points"
+  "lastAttempt": "2026-10-24T04:36:23.490Z",
+  "lastSuccess": "2026-10-24T04:36:23.490Z",
+  "summary": "12 SKUs listed; 12 series, 8616 hourly points"
  },
  "openrouter": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:34:12.429Z",
-  "lastSuccess": "2026-10-24T04:34:12.429Z",
+  "lastAttempt": "2026-10-24T04:36:44.056Z",
+  "lastSuccess": "2026-10-24T04:36:44.056Z",
   "summary": "Nebius 90 days of history; 11/11 peers"
  },
  "openrouter-market": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:34:12.576Z",
-  "lastSuccess": "2026-10-24T04:34:12.576Z",
+  "lastAttempt": "2026-10-24T04:36:44.218Z",
+  "lastSuccess": "2026-10-24T04:36:44.218Z",
   "summary": "231 snapshots to 2026-10-23; Nebius rank 55 of 96"
  },
  "atlas": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:34:14.344Z",
-  "lastSuccess": "2026-10-24T04:34:14.344Z",
+  "lastAttempt": "2026-10-24T04:36:45.749Z",
+  "lastSuccess": "2026-10-24T04:36:45.749Z",
   "summary": "363 customers (0 new since last run)"
  },
  "sec": {
   "ok": false,
-  "lastAttempt": "2026-10-24T04:34:17.415Z",
+  "lastAttempt": "2026-10-24T04:36:48.923Z",
   "lastSuccess": "2026-10-24T04:31:36.027Z",
   "summary": "167 filings since 2025-01-01 (0 parsed this run)",
   "error": "HTTP 403 for https://data.sec.gov/submissions/CIK0001513845.json"
  },
  "jobs": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:34:17.493Z",
-  "lastSuccess": "2026-10-24T04:34:17.493Z",
+  "lastAttempt": "2026-10-24T04:36:49.042Z",
+  "lastSuccess": "2026-10-24T04:36:49.042Z",
   "summary": "384 open roles (0 new)"
  },
  "stock": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:34:17.586Z",
-  "lastSuccess": "2026-10-24T04:34:17.586Z",
+  "lastAttempt": "2026-10-24T04:36:49.132Z",
+  "lastSuccess": "2026-10-24T04:36:49.132Z",
   "summary": "501 closes, last 2026-10-23 $158.74"
  }
 }
