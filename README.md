@@ -31,13 +31,13 @@ npm run dev         # dashboard at http://localhost:5173
 
 ## Daily updates
 
-`.github/workflows/daily.yml` runs the collector at 06:17 UTC, commits the new data and deploys the dashboard to GitHub Pages. To enable it on a GitHub repo:
+`.github/workflows/collect.yml` runs fast-moving sources hourly (spot prices, SEC filings, site news, regions, share price) and everything daily at 06:47 UTC, commits the new data and deploys the dashboard to GitHub Pages. To enable it on a GitHub repo:
 
 1. Settings → Pages → Source: **GitHub Actions**.
 2. Secret `SEC_USER_AGENT` (e.g. `nebius-signal you@example.com`). SEC rejects automated requests without a real contact email; `gh secret set SEC_USER_AGENT --body "nebius-signal you@example.com"`.
 3. Optional: secret `NTFY_TOPIC` to get high and medium alerts as push notifications via [ntfy](https://ntfy.sh).
 
-Run it on demand from the Actions tab (**Daily collect and deploy → Run workflow**).
+Run it on demand from the Actions tab (**Collect and deploy → Run workflow**, choose all or hourly).
 
 ## Quarter nowcast
 

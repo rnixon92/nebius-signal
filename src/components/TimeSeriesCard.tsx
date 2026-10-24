@@ -219,7 +219,7 @@ function Header({ title, sub, right }: { title: string; sub?: ReactNode; right: 
   return (
     <div className="mb-3 flex flex-wrap items-start justify-between gap-x-4 gap-y-2">
       <div className="min-w-0">
-        <h3 className="text-[15px] font-semibold text-ink">{title}</h3>
+        <h2 className="text-[15px] font-semibold text-ink">{title}</h2>
         {sub && <p className="mt-0.5 text-[13px] leading-snug text-ink-3">{sub}</p>}
       </div>
       {right}

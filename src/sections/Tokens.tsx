@@ -111,7 +111,7 @@ export function TokensSection({ d, p, range }: { d: Dashboard; p: Palette; range
             p={p}
             globalRange={range}
             rows={revenue}
-            series={[{ key: "week", label: "7-day revenue", color: p.series[0]! }]}
+            series={[{ key: "week", label: "7-day revenue", color: p.accent }]}
             format={(v) => usd(v)}
             csvName="nebius-openrouter-revenue-estimate"
             height={220}
@@ -130,7 +130,7 @@ export function TokensSection({ d, p, range }: { d: Dashboard; p: Palette; range
           p={p}
           globalRange={range}
           rows={t.market}
-          series={[{ key: "share", label: "Share", color: p.series[0]! }]}
+          series={[{ key: "share", label: "Share", color: p.accent }]}
           format={(v) => pct(v, { digits: 2 })}
           change="diff"
           diffFormat={(v) => `${(v * 100).toFixed(2)} pts`}
@@ -145,7 +145,7 @@ export function TokensSection({ d, p, range }: { d: Dashboard; p: Palette; range
               <li key={x.slug} className="grid grid-cols-[6.5rem_1fr_4.5rem_3.5rem] items-center gap-2 text-[13px]">
                 <span className={`truncate ${x.isNebius ? "font-semibold text-ink" : "text-ink-2"}`}>{x.name}</span>
                 <span className="h-2 overflow-hidden rounded-full" aria-hidden>
-                  <span className="block h-full rounded-r-[4px]" style={{ width: `${Math.max(1, (x.week / maxPeer) * 100)}%`, background: x.isNebius ? p.series[0] : p.muted }} />
+                  <span className="block h-full rounded-r-[4px]" style={{ width: `${Math.max(1, (x.week / maxPeer) * 100)}%`, background: x.isNebius ? p.accent : p.muted }} />
                 </span>
                 <span className="tnum text-right">{tokens(x.week)}</span>
                 <span className={`tnum text-right text-xs ${x.change == null ? "text-ink-3" : x.change >= 0 ? "text-good" : "text-bad"}`}>{pct(x.change, { signed: true })}</span>

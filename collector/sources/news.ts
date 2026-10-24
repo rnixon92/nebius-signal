@@ -25,8 +25,18 @@ export type Site = {
 
 export type NewsItem = { title: string; publisher: string; date: string; url: string; sites: string[]; tag: "risk" | "progress" | null; firstSeen: string };
 
-const RISK = /lawsuit|sue[sd]?\b|halt|injunction|postpone|delay|oppos|moratorium|backlash|restrict|denied|reject|protest|petition|appeal|zoning fight|pause/i;
-const PROGRESS = /online|operational|energi[sz]ed|power block|goes live|go live|launch|opens?\b|completes?|completed|approv|break(s)? ground|groundbreaking|first (phase|capacity)|delivered|ready/i;
+// Decisive outcomes for the project win over mentions of the fight around it: "judge rejects referendum
+// petition" or "breaks ground amid opposition" are progress for Nebius, not risk.
+const STRONG_PROGRESS = /break(s|ing)? ground|groundbreaking|moves? forward|to move forward|approv(es|ed|al)|(judge|court) (rejects|dismisses|tosses|denies)|(rejects|dismisses|denies) (the )?(referendum|petition|lawsuit|suit|appeal)|lawsuit (dismissed|tossed)|energi[sz]ed|power block|goes live|operational|comes online|first (phase|capacity)/i;
+const RISK = /lawsuit|sue[sd]?\b|halt|injunction|postpone|delay|oppos|moratorium|backlash|restrict|denied|reject|protest|petition|appeal|zoning fight|pause|cancel|scrap|withdraw/i;
+const PROGRESS = /online|launch|opens?\b|completes?|completed|delivered|ready|secures?|signs?\b/i;
+
+export function tagHeadline(title: string): "risk" | "progress" | null {
+  if (STRONG_PROGRESS.test(title)) return "progress";
+  if (RISK.test(title)) return "risk";
+  if (PROGRESS.test(title)) return "progress";
+  return null;
+}
 
 const decode = (s: string) =>
   s.replace(/<!\[CDATA\[|\]\]>/g, "").replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#39;|&apos;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">").trim();
@@ -62,7 +72,7 @@ export async function collectNews(): Promise<SourceResult> {
       const key = it.title.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim().slice(0, 140);
       if (!key || store[key]) continue;
       const siteIds = matchSites(it.title, sites);
-      const tag = RISK.test(it.title) ? "risk" : PROGRESS.test(it.title) ? "progress" : null;
+      const tag = tagHeadline(it.title);
       store[key] = { ...it, sites: siteIds, tag, firstSeen: date };
       if (!bootstrap && siteIds.length && tag) {
         const names = siteIds.map((id) => sites.find((s) => s.id === id)?.name ?? id).join(", ");
@@ -79,6 +89,8 @@ export async function collectNews(): Promise<SourceResult> {
     }
   }
 
+  // Re-tag stored items too, so improvements to the tagger apply to history.
+  for (const v of Object.values(store)) v.tag = tagHeadline(v.title);
   const cutoff = new Date(Date.now() - KEEP_DAYS * 864e5).toISOString().slice(0, 10);
   const kept = Object.fromEntries(Object.entries(store).filter(([, v]) => v.date >= cutoff));
   await writeJson("news/items.json", kept);

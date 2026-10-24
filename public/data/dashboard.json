@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-24T05:00:56.114Z",
+ "generatedAt": "2026-10-24T05:10:52.300Z",
  "sources": [
   {
    "id": "gpu-ondemand",
@@ -15,8 +15,8 @@
    "label": "Nebius spot price API",
    "url": "https://nebius.com/spot-prices",
    "ok": true,
-   "lastSuccess": "2026-10-24T05:00:30.300Z",
-   "summary": "12 SKUs listed; 12 series, 8617 hourly points",
+   "lastSuccess": "2026-10-24T05:10:28.564Z",
+   "summary": "12 SKUs listed; 12 series, 8628 hourly points",
    "stale": false
   },
   {
@@ -24,7 +24,7 @@
    "label": "Nebius regions docs",
    "url": "https://docs.nebius.com/overview/regions",
    "ok": true,
-   "lastSuccess": "2026-10-24T05:00:30.527Z",
+   "lastSuccess": "2026-10-24T05:10:29.170Z",
    "summary": "10 regions, 6 GPU platforms",
    "stale": false
   },
@@ -33,8 +33,8 @@
    "label": "Google News (data centers)",
    "url": "https://news.google.com/search?q=Nebius%20data%20center",
    "ok": true,
-   "lastSuccess": "2026-10-24T05:00:32.510Z",
-   "summary": "355 headlines fetched; 327 kept, 132 matched to sites",
+   "lastSuccess": "2026-10-24T05:10:33.015Z",
+   "summary": "363 headlines fetched; 296 kept, 116 matched to sites",
    "stale": false
   },
   {
@@ -87,7 +87,7 @@
    "label": "Yahoo Finance (NBIS)",
    "url": "https://finance.yahoo.com/quote/NBIS",
    "ok": true,
-   "lastSuccess": "2026-10-24T05:00:56.113Z",
+   "lastSuccess": "2026-10-24T05:10:37.619Z",
    "summary": "501 closes, last 2026-10-23 $158.74",
    "stale": false
   }
@@ -235,10 +235,10 @@
      ],
      "source": "https://www.marketbeat.com/stocks/NASDAQ/NBIS/earnings/"
     },
-    "estimate": 914.2383171739676,
-    "low": 880.9014503598893,
-    "high": 947.575183988046,
-    "tilt": 0.010208085275102245,
+    "estimate": 917.1512034713436,
+    "low": 883.708120913825,
+    "high": 950.5942860288621,
+    "tilt": 0.013426744167230525,
     "lean": "in line",
     "coverage": 0.37282608695652175,
     "priorFromLastSurprise": 0.01267828843106178,
@@ -256,12 +256,12 @@
      {
       "id": "site-news",
       "label": "News at billing sites",
-      "value": "1 progress · 1 risk headlines",
-      "score": 0,
+      "value": "2 progress · 1 risk headlines",
+      "score": 0.2,
       "weight": 1.5,
       "coverage": 1,
       "note": "Live and ramping sites only. Trouble at future campuses (Independence, Birmingham) is pipeline risk, shown in Data centers.",
-      "contribution": 0
+      "contribution": 0.00321865889212828
      },
      {
       "id": "dc-hiring",
@@ -329,14 +329,14 @@
     "reportDateConfirmed": false,
     "anchor": {
      "kind": "guidance-implied",
-     "value": 1304.4616828260323,
+     "value": 1301.548796528656,
      "range": null,
      "source": null
     },
-    "estimate": 1325.3884251047293,
-    "low": 1285.6267723515873,
-    "high": 1365.1500778578713,
-    "tilt": 0.016042435400141754,
+    "estimate": 1322.433054303896,
+    "low": 1282.760062674779,
+    "high": 1362.1060459330129,
+    "tilt": 0.016045697119416412,
     "lean": "no consensus",
     "coverage": 0.5554347826086956,
     "priorFromLastSurprise": 0.01267828843106178,
@@ -375,21 +375,21 @@
       "id": "blackwell-spot",
       "label": "Blackwell spot vs list",
       "value": "48% average",
-      "score": -0.47260949432404464,
+      "score": -0.472345098039215,
       "weight": 2,
       "coverage": 1,
       "note": "Above ~60% means spare Blackwell capacity is being taken up.",
-      "contribution": -0.006807056513160409
+      "contribution": -0.006803248378803567
      },
      {
       "id": "hopper-spot",
       "label": "Hopper spot vs list",
       "value": "37% average",
-      "score": -0.26337319958847716,
+      "score": -0.263449074074074,
       "weight": 1,
       "coverage": 1,
       "note": "Low Hopper prices point to idle older GPUs and pricing pressure on renewals.",
-      "contribution": -0.001896699362985511
+      "contribution": -0.0018972457780676952
      },
      {
       "id": "list-price",
@@ -434,8 +434,8 @@
   "history": [
    {
     "date": "2026-10-24",
-    "2026-Q3": 914.2,
-    "2026-Q4": 1325.4
+    "2026-Q3": 917.2,
+    "2026-Q4": 1322.4
    }
   ]
  },
@@ -490,7 +490,7 @@
      "title": "Nebius Signs 18MW Colocation Lease With Merlin Properties in Madrid, Enters Spain",
      "date": "2026-07-04",
      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNVWpBM3piWUZaQk15Snp4QTB3eHh3TUJWNDk5eEtxY0wySzQxeEdtRUdYaDIyS20xN2oxcE5oc1JoNUpuMTExU0lWMnhjNEZ0NGJNZkpsbkk5U3hRWldZQUYtMTdXZElNci1oQmplQVFmREZQRGVoLVd3YWh1dGZ1Y3VNTjhkTmtFcmRBRE91b3pZQWxxWFNWRGJ6Z0RJbjR6T3Vz?oc=5",
-     "tag": null
+     "tag": "progress"
     }
    },
    {
@@ -1000,7 +1000,7 @@
     "dcRolesPosted90d": 0,
     "news90d": 13,
     "risk90d": 0,
-    "progress90d": 0,
+    "progress90d": 4,
     "latest": {
      "title": "Nebius to anchor HUMAIN-DataVolt AI campus with up to 50MW at NEOM's Oxagon",
      "date": "2026-10-23",
@@ -1116,7 +1116,7 @@
     "sites": [
      "neom"
     ],
-    "tag": null
+    "tag": "progress"
    },
    {
     "title": "HUMAIN, DataVolt partner with Nebius for 50 MW AI campus",
@@ -1136,7 +1136,7 @@
     "sites": [
      "neom"
     ],
-    "tag": null
+    "tag": "progress"
    },
    {
     "title": "HUMAIN and NVIDIA Expand Saudi AI Factory Pipeline by 84MW",
@@ -1166,7 +1166,7 @@
     "sites": [
      "neom"
     ],
-    "tag": null
+    "tag": "progress"
    },
    {
     "title": "Nebius becomes Humain’s first customer for AI giga campus at Neom",
@@ -1226,7 +1226,7 @@
     "sites": [
      "neom"
     ],
-    "tag": null
+    "tag": "progress"
    },
    {
     "title": "Independence City Council postpones decision on 2nd data center project in Little Blue Valley",
@@ -3686,7 +3686,7 @@
   }
  },
  "gpu": {
-  "snapshotTime": "2026-10-24T04:55:49.983710Z",
+  "snapshotTime": "2026-10-24T05:05:45.699275Z",
   "onDemand": [
    {
     "name": "NVIDIA GB300 NVL72",
@@ -3959,7 +3959,8 @@
      9.34,
      9.04,
      8.74,
-     8.29
+     8.29,
+     7.99
     ]
    },
    {
@@ -4138,7 +4139,8 @@
      4.1,
      4.25,
      4.7,
-     5.15
+     5.15,
+     5.3
     ]
    },
    {
@@ -4317,7 +4319,8 @@
      7.09,
      7.39,
      7.39,
-     7.24
+     7.24,
+     7.09
     ]
    },
    {
@@ -4496,7 +4499,8 @@
      5.8,
      5.8,
      6,
-     6.15
+     6.15,
+     6
     ]
    },
    {
@@ -4675,7 +4679,8 @@
      5.25,
      5.55,
      5.85,
-     5.85
+     5.85,
+     5.7
     ]
    },
    {
@@ -4854,6 +4859,7 @@
      2.23,
      2.18,
      2.09,
+     2.1,
      2.1
     ]
    },
@@ -5213,6 +5219,7 @@
      0.95,
      0.95,
      0.95,
+     0.95,
      0.95
     ]
    },
@@ -5392,6 +5399,7 @@
      0.95,
      0.95,
      0.95,
+     0.95,
      0.95
     ]
    },
@@ -5502,6 +5510,7 @@
      1.23,
      0.935,
      1.086666667,
+     1.38,
      1.38,
      1.38,
      1.38,
@@ -5750,6 +5759,7 @@
      0.79,
      0.79,
      0.89,
+     0.79,
      0.79
     ]
    },
@@ -5929,7 +5939,8 @@
      0.94,
      0.89,
      0.94,
-     0.99
+     0.99,
+     1.09
     ]
    }
   ],
@@ -6183,11 +6194,11 @@
    },
    {
     "date": "2026-10-24",
-    "B300": 0.7206,
-    "B200": 0.6524,
-    "H200": 0.5091,
-    "H100": 0.2098,
-    "RTX PRO 6000": 0.5865
+    "B300": 0.7198,
+    "B200": 0.6576,
+    "H200": 0.5083,
+    "H100": 0.21,
+    "RTX PRO 6000": 0.5889
    }
   ],
   "priceDaily": [
@@ -6433,11 +6444,11 @@
    },
    {
     "date": "2026-10-24",
-    "B300": 4.45,
-    "B200": 5.283,
+    "B300": 4.571,
+    "B200": 5.343,
     "H200": 0.95,
-    "H100": 0.944,
-    "RTX PRO 6000": 0.856
+    "H100": 0.945,
+    "RTX PRO 6000": 0.846
    }
   ],
   "availability": [

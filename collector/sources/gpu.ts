@@ -144,7 +144,9 @@ export async function collectSpot(): Promise<SourceResult> {
   const skus = await readJson<Record<string, Sku>>("gpu/skus.json", {});
   const bootstrap = Object.keys(skus).length === 0;
   const listedNow = new Set(current.map((c) => c.skuId));
-  const listedBefore = new Set(Object.entries(skus).filter(([, s]) => s.lastSeen === lastRunDate(skus)).map(([id]) => id));
+  // Compare against the previous run's snapshot (runs are hourly, so dates are too coarse).
+  const prevSnapshot = await readJson<{ prices: Record<string, unknown> } | null>("gpu/spot-current.json", null);
+  const listedBefore = new Set(Object.keys(prevSnapshot?.prices ?? {}));
   for (const s of [...current, ...series]) {
     const prev = skus[s.skuId];
     skus[s.skuId] = {
@@ -234,10 +236,6 @@ async function nearCapAlerts(current: SpotItem[], skus: Record<string, Sku>, dai
     }
   }
   return alerts;
-}
-
-function lastRunDate(skus: Record<string, Sku>): string {
-  return Object.values(skus).reduce((m, s) => (s.lastSeen > m ? s.lastSeen : m), "");
 }
 
 const round = (n: number) => Math.round(n * 1000) / 1000;

@@ -1,9 +1,16 @@
-name: Daily collect and deploy
+name: Collect and deploy
 
 on:
   schedule:
-    - cron: "17 6 * * *" # 06:17 UTC daily, off the top of the hour when schedulers are busiest
+    - cron: "17 * * * *" # hourly: spot prices, filings, site news, regions, share price
+    - cron: "47 6 * * *" # daily full run: everything, incl. OpenRouter, Atlas, jobs, rate card
   workflow_dispatch:
+    inputs:
+      tier:
+        description: "Which sources to collect"
+        type: choice
+        options: [all, hourly]
+        default: all
   push:
     branches: [main]
     paths-ignore: ["data/**", "public/data/**"]
@@ -29,8 +36,16 @@ jobs:
           node-version: 24
           cache: npm
       - run: npm ci
-      - name: Collect all sources
-        run: npm run collect
+      - name: Collect
+        id: collect
+        run: |
+          if [ "${{ github.event.schedule }}" = "17 * * * *" ] || [ "${{ inputs.tier }}" = "hourly" ]; then
+            echo "tier=hourly" >> "$GITHUB_OUTPUT"
+            npm run collect -- --tier hourly
+          else
+            echo "tier=daily" >> "$GITHUB_OUTPUT"
+            npm run collect
+          fi
         env:
           # SEC rejects automated requests without a real contact email. Kept as a secret so it never appears in logs or the public repo.
           SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT || format('nebius-signal {0}@users.noreply.github.com', github.repository_owner) }}
@@ -40,7 +55,8 @@ jobs:
           git config user.name "nebius-signal-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data public/data
-          git diff --cached --quiet || git commit -m "data: daily collect $(date -u +%F)"
+          git diff --cached --quiet || git commit -m "data: ${{ steps.collect.outputs.tier }} collect $(date -u +'%F %H:%M') UTC"
+          git pull --rebase --quiet
           git push
 
   deploy:

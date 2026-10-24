@@ -60,7 +60,7 @@ export function CustomersSection({ d, p, range }: { d: Dashboard; p: Palette; ra
             p={p}
             globalRange={range}
             rows={a.cumulative}
-            series={[{ key: "total", label: "Customers", color: p.series[0]! }]}
+            series={[{ key: "total", label: "Customers", color: p.accent }]}
             kind="step"
             format={(v) => v.toLocaleString()}
             tooltipFooter={(r) => `+${r.added} that day`}
@@ -70,7 +70,7 @@ export function CustomersSection({ d, p, range }: { d: Dashboard; p: Palette; ra
         </div>
         <Card className="lg:col-span-2">
           <CardTitle title="By category" />
-          <BarList items={a.byCategory.slice(0, 10)} color={p.series[0]!} total={a.total} />
+          <BarList items={a.byCategory.slice(0, 10)} color={p.accent} total={a.total} />
         </Card>
       </div>
       <Card>
@@ -124,11 +124,11 @@ export function HiringSection({ d, p, range }: { d: Dashboard; p: Palette; range
       <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
         <Card>
           <CardTitle title="By function" />
-          <BarList items={j.byFunction} color={p.series[0]!} />
+          <BarList items={j.byFunction} color={p.accent} />
         </Card>
         <Card>
           <CardTitle title="By region" />
-          <BarList items={j.byRegion} color={p.series[0]!} />
+          <BarList items={j.byRegion} color={p.accent} />
         </Card>
         {j.daily.length < 2 ? (
           <Card>
@@ -136,7 +136,7 @@ export function HiringSection({ d, p, range }: { d: Dashboard; p: Palette; range
             <EmptyNote>Daily counts start {day(j.daily[0]?.date ?? d.generatedAt, true)}. A trend appears after a few daily runs.</EmptyNote>
           </Card>
         ) : (
-          <TimeSeriesCard title="Open roles over time" p={p} globalRange={range} rows={j.daily} series={[{ key: "total", label: "Open roles", color: p.series[0]! }]} format={(v) => String(v)} csvName="nebius-open-roles" height={180} />
+          <TimeSeriesCard title="Open roles over time" p={p} globalRange={range} rows={j.daily} series={[{ key: "total", label: "Open roles", color: p.accent }]} format={(v) => String(v)} csvName="nebius-open-roles" height={180} />
         )}
       </div>
       <Card>
@@ -256,9 +256,9 @@ export function FinancialsSection({ d, p }: { d: Dashboard; p: Palette }) {
                     <XAxis dataKey="quarter" tick={{ fill: p.ink3, fontSize: 11 }} tickLine={false} axisLine={{ stroke: p.rule }} tickMargin={6} />
                     <YAxis {...axisY(p, (v) => usdM(v))} />
                     <Tooltip cursor={{ fill: p.grid, opacity: 0.5 }} content={(t) => <RevenueTip {...(t as TipProps)} />} />
-                    <Bar dataKey="revenue" stackId="r" fill={p.series[0]} radius={[4, 4, 0, 0]} maxBarSize={24} isAnimationActive={false} />
-                    <Bar dataKey="low" stackId="r" fill={p.series[0]} fillOpacity={0.25} maxBarSize={24} isAnimationActive={false} />
-                    <Bar dataKey="span" stackId="r" fill={p.series[0]} fillOpacity={0.12} maxBarSize={24} radius={[4, 4, 0, 0]} isAnimationActive={false} />
+                    <Bar dataKey="revenue" stackId="r" fill={p.accent} radius={[4, 4, 0, 0]} maxBarSize={24} isAnimationActive={false} />
+                    <Bar dataKey="low" stackId="r" fill={p.accent} fillOpacity={0.25} maxBarSize={24} isAnimationActive={false} />
+                    <Bar dataKey="span" stackId="r" fill={p.accent} fillOpacity={0.12} maxBarSize={24} radius={[4, 4, 0, 0]} isAnimationActive={false} />
                   </BarChart>
                 </ResponsiveContainer>
               </div>

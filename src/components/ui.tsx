@@ -3,7 +3,7 @@ import type { Severity } from "../../shared/dashboard.ts";
 import { pct } from "../lib/format.ts";
 
 export function Card({ children, className = "", pad = true }: { children: ReactNode; className?: string; pad?: boolean }) {
-  return <div className={`rounded-xl border border-line bg-surface ${pad ? "p-4 sm:p-5" : ""} ${className}`}>{children}</div>;
+  return <div className={`rounded-2xl border border-line bg-surface shadow-card ${pad ? "p-4 sm:p-5" : ""} ${className}`}>{children}</div>;
 }
 
 export function Section({ id, title, kicker, intro, children }: { id: string; title: string; kicker?: string; intro?: ReactNode; children: ReactNode }) {
@@ -11,9 +11,9 @@ export function Section({ id, title, kicker, intro, children }: { id: string; ti
     <section id={id} aria-labelledby={`${id}-title`} className="scroll-mt-20">
       <header className="mb-4 flex flex-col gap-1">
         {kicker && <p className="text-xs font-medium uppercase tracking-[0.08em] text-ink-3">{kicker}</p>}
-        <h2 id={`${id}-title`} className="text-xl font-semibold tracking-tight text-ink sm:text-2xl">
+        <h1 id={`${id}-title`} className="text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
           {title}
-        </h2>
+        </h1>
         {intro && <p className="max-w-3xl text-sm leading-relaxed text-ink-2">{intro}</p>}
       </header>
       <div className="flex flex-col gap-4">{children}</div>
@@ -25,7 +25,7 @@ export function CardTitle({ title, sub, right }: { title: string; sub?: ReactNod
   return (
     <div className="mb-3 flex flex-wrap items-start justify-between gap-x-4 gap-y-2">
       <div className="min-w-0">
-        <h3 className="text-[15px] font-semibold text-ink">{title}</h3>
+        <h2 className="text-[15px] font-semibold text-ink">{title}</h2>
         {sub && <p className="mt-0.5 text-[13px] leading-snug text-ink-3">{sub}</p>}
       </div>
       {right}

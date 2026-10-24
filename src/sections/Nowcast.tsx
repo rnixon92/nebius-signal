@@ -201,12 +201,12 @@ function NumberLine({ q, p }: { q: Nowcast; p: Palette }) {
           <div className="absolute top-3 h-2 rounded-full" style={{ left: x(q.context.pathLow), width: `calc(${x(q.context.pathHigh)} - ${x(q.context.pathLow)})`, background: p.muted }} title="ARR path to guidance, low–high" />
         )}
         {q.anchor.range && (
-          <div className="absolute top-2.5 h-3 rounded-full" style={{ left: x(q.anchor.range[0]), width: `calc(${x(q.anchor.range[1])} - ${x(q.anchor.range[0])})`, background: `color-mix(in srgb, ${p.series[0]} 22%, transparent)` }} title="Analyst range" />
+          <div className="absolute top-2.5 h-3 rounded-full" style={{ left: x(q.anchor.range[0]), width: `calc(${x(q.anchor.range[1])} - ${x(q.anchor.range[0])})`, background: `color-mix(in srgb, ${p.accent} 22%, transparent)` }} title="Analyst range" />
         )}
         {marks.map((m) => (
           <div key={m.label} className="absolute top-1.5 h-5 w-px" style={{ left: x(m.v), background: p.ink3 }} />
         ))}
-        <div className="absolute top-1.5 h-5 w-5 -translate-x-1/2 rounded-full border-2" style={{ left: x(q.estimate), background: p.series[0], borderColor: p.surface }} title={`Nowcast ${usdM(q.estimate)}`} />
+        <div className="absolute top-1.5 h-5 w-5 -translate-x-1/2 rounded-full border-2" style={{ left: x(q.estimate), background: p.accent, borderColor: p.surface }} title={`Nowcast ${usdM(q.estimate)}`} />
       </div>
       <figcaption className="relative h-8 text-[11px] text-ink-3">
         {marks.map((m) => (

@@ -14,20 +14,25 @@ import { readJson, writeJson } from "./lib/store.ts";
 import type { Alert, RunStatus, SourceId, SourceResult } from "./lib/types.ts";
 
 // Order matters: on-demand prices feed the spot near-cap check.
-const SOURCES: [SourceId, () => Promise<SourceResult>][] = [
-  ["gpu-ondemand", collectOnDemand],
-  ["gpu-spot", collectSpot],
-  ["regions", collectRegions],
-  ["news", collectNews],
-  ["openrouter", collectOpenRouter],
-  ["openrouter-market", collectOpenRouterMarket],
-  ["atlas", collectAtlas],
-  ["sec", collectSec],
-  ["jobs", collectJobs],
-  ["stock", collectStock],
+// "hourly" sources change within a day (spot every 15 min, filings, news, go-lives, price);
+// "daily" ones publish daily or slower, so polling them more often only adds load.
+const SOURCES: [SourceId, () => Promise<SourceResult>, "hourly" | "daily"][] = [
+  ["gpu-ondemand", collectOnDemand, "daily"],
+  ["gpu-spot", collectSpot, "hourly"],
+  ["regions", collectRegions, "hourly"],
+  ["news", collectNews, "hourly"],
+  ["openrouter", collectOpenRouter, "daily"],
+  ["openrouter-market", collectOpenRouterMarket, "daily"],
+  ["atlas", collectAtlas, "daily"],
+  ["sec", collectSec, "hourly"],
+  ["jobs", collectJobs, "daily"],
+  ["stock", collectStock, "hourly"],
 ];
 
-const only = process.argv.slice(2);
+// `npm run collect` runs everything; `-- --tier hourly` the fast set; or name sources explicitly.
+const args = process.argv.slice(2);
+const tier = args.includes("--tier") ? args[args.indexOf("--tier") + 1] : null;
+const only = tier ? SOURCES.filter(([, , t]) => t === tier).map(([id]) => id) : args;
 const runs = await readJson<Record<string, RunStatus>>("meta/runs.json", {});
 const newAlerts: Alert[] = [];
 let failed = 0;

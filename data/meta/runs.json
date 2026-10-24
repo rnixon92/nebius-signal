@@ -7,9 +7,9 @@
  },
  "gpu-spot": {
   "ok": true,
-  "lastAttempt": "2026-10-24T05:00:30.300Z",
-  "lastSuccess": "2026-10-24T05:00:30.300Z",
-  "summary": "12 SKUs listed; 12 series, 8617 hourly points"
+  "lastAttempt": "2026-10-24T05:10:28.564Z",
+  "lastSuccess": "2026-10-24T05:10:28.564Z",
+  "summary": "12 SKUs listed; 12 series, 8628 hourly points"
  },
  "openrouter": {
   "ok": true,
@@ -43,20 +43,20 @@
  },
  "stock": {
   "ok": true,
-  "lastAttempt": "2026-10-24T05:00:56.113Z",
-  "lastSuccess": "2026-10-24T05:00:56.113Z",
+  "lastAttempt": "2026-10-24T05:10:37.619Z",
+  "lastSuccess": "2026-10-24T05:10:37.619Z",
   "summary": "501 closes, last 2026-10-23 $158.74"
  },
  "regions": {
   "ok": true,
-  "lastAttempt": "2026-10-24T05:00:30.527Z",
-  "lastSuccess": "2026-10-24T05:00:30.527Z",
+  "lastAttempt": "2026-10-24T05:10:29.170Z",
+  "lastSuccess": "2026-10-24T05:10:29.170Z",
   "summary": "10 regions, 6 GPU platforms"
  },
  "news": {
   "ok": true,
-  "lastAttempt": "2026-10-24T05:00:32.510Z",
-  "lastSuccess": "2026-10-24T05:00:32.510Z",
-  "summary": "355 headlines fetched; 327 kept, 132 matched to sites"
+  "lastAttempt": "2026-10-24T05:10:33.015Z",
+  "lastSuccess": "2026-10-24T05:10:33.015Z",
+  "summary": "363 headlines fetched; 296 kept, 116 matched to sites"
  }
 }

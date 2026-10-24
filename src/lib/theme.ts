@@ -6,9 +6,12 @@ const SERIES = {
   dark: ["#3987e5", "#d95926", "#199e70", "#c98500", "#d55181", "#008300", "#9085e9", "#e66767"],
 };
 
+// Validated against these surfaces (navy #072233 dark, white light) with the dataviz palette checker.
+// `accent` is the single-series color: brand lime on navy, deep navy on light. Multi-series charts
+// always use the categorical `series` order instead.
 const CHROME = {
-  light: { surface: "#fcfcfb", ink: "#0b0b0b", ink2: "#52514e", ink3: "#898781", grid: "#e1e0d9", rule: "#c3c2b7", other: "#c3c2b7", muted: "#d6d5cf" },
-  dark: { surface: "#1a1a19", ink: "#f0efec", ink2: "#c3c2b7", ink3: "#898781", grid: "#2c2c2a", rule: "#383835", other: "#5a5955", muted: "#3a3a37" },
+  light: { surface: "#ffffff", ink: "#052b42", ink2: "#3d5568", ink3: "#6b7f8e", grid: "#e3e8f0", rule: "#c5cfdb", other: "#c5cfdb", muted: "#d9e0ea", accent: "#0b4a6e" },
+  dark: { surface: "#072233", ink: "#eef3f7", ink2: "#b2c3d0", ink3: "#7590a3", grid: "#10324a", rule: "#1e4a66", other: "#3a5a70", muted: "#1b4058", accent: "#d4f43e" },
 };
 
 export type Mode = "light" | "dark";

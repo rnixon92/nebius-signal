@@ -1,64 +1,84 @@
 @import "tailwindcss";
+@import "@fontsource-variable/inter";
 
-/* Design tokens. Chart colors live in src/lib/theme.ts (SVG attributes can't read CSS vars reliably);
-   these mirror the same values for HTML chrome. */
+/* Design tokens. A palette in the Nebius family (deep navy, acid lime, lavender tints) without the
+   Nebius marks: this is an independent community project. Chart colors live in src/lib/theme.ts
+   (SVG attributes can't read CSS vars reliably); these mirror them for HTML chrome. */
 :root {
   color-scheme: light;
-  --page: #f9f9f7;
-  --surface: #fcfcfb;
-  --surface-2: #f3f2ee;
-  --ink: #0b0b0b;
-  --ink-2: #52514e;
-  --ink-3: #898781;
-  --grid: #e1e0d9;
-  --rule: #c3c2b7;
-  --border: rgba(11, 11, 11, 0.1);
-  --accent: #2a78d6;
-  --accent-wash: rgba(42, 120, 214, 0.1);
-  --good: #006300;
-  --bad: #d03b3b;
-  --warn: #b77f00;
-  --focus: #2a78d6;
+  --page: #eef1f8;
+  --surface: #ffffff;
+  --surface-2: #f3f5fb;
+  --ink: #052b42;
+  --ink-2: #3d5568;
+  --ink-3: #6b7f8e;
+  --grid: #e3e8f0;
+  --rule: #c5cfdb;
+  --border: rgba(5, 43, 66, 0.1);
+  --accent: #3b3fc4;
+  --accent-wash: rgba(59, 63, 196, 0.09);
+  --brand: #052b42;
+  --brand-ink: #e0ff4f;
+  --highlight: #e0ff4f;
+  --highlight-ink: #052b42;
+  --good: #0f7a3a;
+  --bad: #c43535;
+  --warn: #9a6a00;
+  --focus: #3b3fc4;
+  --shadow: 0 1px 2px rgba(5, 43, 66, 0.04), 0 4px 16px rgba(5, 43, 66, 0.04);
+  --hero: linear-gradient(135deg, #052b42 0%, #0b3d5c 60%, #123f6b 100%);
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
-    --page: #0d0d0d;
-    --surface: #1a1a19;
-    --surface-2: #232321;
-    --ink: #f0efec;
-    --ink-2: #c3c2b7;
-    --ink-3: #898781;
-    --grid: #2c2c2a;
-    --rule: #383835;
-    --border: rgba(255, 255, 255, 0.1);
-    --accent: #3987e5;
-    --accent-wash: rgba(57, 135, 229, 0.14);
-    --good: #0ca30c;
-    --bad: #e66767;
-    --warn: #fab219;
-    --focus: #3987e5;
+    --page: #031521;
+    --surface: #072233;
+    --surface-2: #0c2c41;
+    --ink: #eef3f7;
+    --ink-2: #b2c3d0;
+    --ink-3: #7590a3;
+    --grid: #10324a;
+    --rule: #1e4a66;
+    --border: rgba(238, 243, 247, 0.09);
+    --accent: #d4f43e;
+    --accent-wash: rgba(212, 244, 62, 0.12);
+    --brand: #052b42;
+    --brand-ink: #e0ff4f;
+    --highlight: #d4f43e;
+    --highlight-ink: #052b42;
+    --good: #3ccf7a;
+    --bad: #ff7070;
+    --warn: #f2b84b;
+    --focus: #d4f43e;
+    --shadow: none;
+    --hero: linear-gradient(135deg, #072a40 0%, #0a3350 55%, #0f3a5e 100%);
   }
 }
 
 :root[data-theme="dark"] {
   color-scheme: dark;
-  --page: #0d0d0d;
-  --surface: #1a1a19;
-  --surface-2: #232321;
-  --ink: #f0efec;
-  --ink-2: #c3c2b7;
-  --ink-3: #898781;
-  --grid: #2c2c2a;
-  --rule: #383835;
-  --border: rgba(255, 255, 255, 0.1);
-  --accent: #3987e5;
-  --accent-wash: rgba(57, 135, 229, 0.14);
-  --good: #0ca30c;
-  --bad: #e66767;
-  --warn: #fab219;
-  --focus: #3987e5;
+  --page: #031521;
+  --surface: #072233;
+  --surface-2: #0c2c41;
+  --ink: #eef3f7;
+  --ink-2: #b2c3d0;
+  --ink-3: #7590a3;
+  --grid: #10324a;
+  --rule: #1e4a66;
+  --border: rgba(238, 243, 247, 0.09);
+  --accent: #d4f43e;
+  --accent-wash: rgba(212, 244, 62, 0.12);
+  --brand: #052b42;
+  --brand-ink: #e0ff4f;
+  --highlight: #d4f43e;
+  --highlight-ink: #052b42;
+  --good: #3ccf7a;
+  --bad: #ff7070;
+  --warn: #f2b84b;
+  --focus: #d4f43e;
+  --shadow: none;
+  --hero: linear-gradient(135deg, #072a40 0%, #0a3350 55%, #0f3a5e 100%);
 }
 
 @theme inline {
@@ -73,22 +93,26 @@
   --color-line: var(--border);
   --color-accent: var(--accent);
   --color-accent-wash: var(--accent-wash);
+  --color-brand: var(--brand);
+  --color-brand-ink: var(--brand-ink);
+  --color-highlight: var(--highlight);
+  --color-highlight-ink: var(--highlight-ink);
   --color-good: var(--good);
   --color-bad: var(--bad);
   --color-warn: var(--warn);
-  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-sans: "Inter Variable", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --shadow-card: var(--shadow);
 }
 
 html {
   background: var(--page);
-  scroll-behavior: smooth;
-  scroll-padding-top: 4.5rem;
 }
 
 body {
   background: var(--page);
   color: var(--ink);
   font-family: var(--font-sans);
+  font-feature-settings: "cv11", "ss01";
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -96,7 +120,7 @@ body {
 :focus-visible {
   outline: 2px solid var(--focus);
   outline-offset: 2px;
-  border-radius: 4px;
+  border-radius: 6px;
 }
 
 .tnum {
@@ -109,12 +133,15 @@ body {
   outline: none;
 }
 
-input[type="range"] {
+input[type="range"],
+input[type="checkbox"] {
   accent-color: var(--accent);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
+/* Horizontal nav scrolls on small screens without a visible scrollbar. */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }

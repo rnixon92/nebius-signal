@@ -1,69 +1,10 @@
 import { useMemo, useState } from "react";
 import type { Dashboard, Severity } from "../../shared/dashboard.ts";
-import { Card, CardTitle, ExtLink, Segmented, SeverityBadge, Sparkline, Stat } from "../components/ui.tsx";
 import { TimeSeriesCard } from "../components/TimeSeriesCard.tsx";
-import { day, pct, tokens, usd, usdM } from "../lib/format.ts";
+import { Card, CardTitle, ExtLink, Segmented, SeverityBadge } from "../components/ui.tsx";
+import { day, usd } from "../lib/format.ts";
 import type { Range } from "../lib/range.ts";
 import type { Palette } from "../lib/theme.ts";
-
-export function KpiRow({ d, p }: { d: Dashboard; p: Palette }) {
-  const lastQ = d.fundamentals.quarters.at(-1);
-  const market = d.tokens.market.at(-1);
-  const recentAtlas = d.atlas.cumulative.filter((c) => c.date >= addDays(d.generatedAt.slice(0, 10), -7)).reduce((a, c) => a + c.added, 0);
-  const dc = d.jobs.byFunction.find((f) => f.name === "Data center & power")?.count ?? 0;
-  const stock90 = d.stock.series.slice(-90).map(([, c]) => c);
-  const next = d.nowcast.quarters[0];
-
-  return (
-    <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
-      <Stat
-        label="Blackwell spot vs on-demand"
-        value={pct(d.gpu.tightness.blackwell)}
-        note={<>Hopper {pct(d.gpu.tightness.hopper)}. Spot is capped just under list, so higher means less spare capacity.</>}
-      />
-      <Stat
-        label="NBIS share price"
-        value={d.stock.last ? usd(d.stock.last.close, { cents: true }) : "—"}
-        delta={d.stock.last?.chg30d}
-        note={d.stock.last ? `30-day change · close ${day(d.stock.last.date)}` : "No price data yet"}
-      >
-        <div className="mt-1">
-          <Sparkline values={stock90} color={p.series[0]!} width={140} />
-        </div>
-      </Stat>
-      <Stat
-        label="Reported ARR"
-        value={lastQ?.arr ? usdM(lastQ.arr) : "—"}
-        note={lastQ ? `As of ${day(lastQ.end, true)}. Guidance ${usdM(d.fundamentals.guidance.arrExit[0])}–${usdM(d.fundamentals.guidance.arrExit[1])} by year-end.` : undefined}
-      />
-      <Stat label="Insider sales, last 90 days" value={usd(d.sec.totals90d.sold)} note={`Purchases ${usd(d.sec.totals90d.bought)}. From Form 4 filings.`} />
-      <Stat
-        label="Token Factory on OpenRouter, 7 days"
-        value={`${tokens(d.tokens.week.tokens)} tokens`}
-        delta={d.tokens.week.change}
-        note={market ? `Rank ${market.rank} of ${market.providers} providers · ${pct(market.share, { digits: 2 })} of OpenRouter` : undefined}
-      />
-      <Stat label="Customers on Nebius Atlas" value={d.atlas.total.toLocaleString()} note={`${recentAtlas} listed in the last 7 days · ${d.atlas.tokenFactory} use Token Factory`} />
-      <Stat label="Open roles" value={d.jobs.total.toLocaleString()} note={`${dc} in data center & power · ${d.jobs.new7d} new this week`} />
-      {next ? (
-        <Stat
-          label={`${next.quarter.replace(/(\d{4})-(Q\d)/, "$2 $1")} revenue nowcast`}
-          value={usdM(next.estimate)}
-          note={
-            <>
-              {next.anchor.kind === "consensus" ? `${pct(next.estimate / next.anchor.value - 1, { signed: true, digits: 1 })} vs ${usdM(next.anchor.value)} consensus · ` : ""}
-              <a href="#nowcast" className="font-medium text-accent hover:underline">
-                {next.lean === "beat" ? "Lean beat" : next.lean === "miss" ? "Lean miss" : next.lean === "in line" ? "In line" : "See nowcast"}
-              </a>
-            </>
-          }
-        />
-      ) : (
-        <Stat label={lastQ ? `${lastQ.quarter.replace(/(\d{4})-(Q\d)/, "$2 $1")} revenue` : "Latest quarterly revenue"} value={lastQ ? usdM(lastQ.revenue) : "—"} />
-      )}
-    </div>
-  );
-}
 
 export function StockChart({ d, p, range }: { d: Dashboard; p: Palette; range: Range }) {
   const rows = useMemo(() => d.stock.series.map(([date, close]) => ({ date, close })), [d.stock.series]);
@@ -75,22 +16,22 @@ export function StockChart({ d, p, range }: { d: Dashboard; p: Palette; range: R
       p={p}
       globalRange={range}
       rows={rows}
-      series={[{ key: "close", label: "NBIS", color: p.series[0]! }]}
+      series={[{ key: "close", label: "NBIS", color: p.accent }]}
       format={(v) => usd(v, { cents: true })}
       axisFormat={(v) => `$${Math.round(v)}`}
       yDomain={["auto", "auto"]}
       events={d.events}
       csvName="nbis-daily-close"
-      height={260}
+      height={240}
     />
   );
 }
 
 const SOURCE_LABEL: Record<string, string> = {
-  regions: "Regions",
-  news: "Site news",
   "gpu-ondemand": "GPU rate card",
   "gpu-spot": "Spot prices",
+  regions: "Regions",
+  news: "Site news",
   openrouter: "OpenRouter",
   "openrouter-market": "OpenRouter market",
   atlas: "Atlas",
@@ -99,33 +40,41 @@ const SOURCE_LABEL: Record<string, string> = {
   stock: "Stock",
 };
 
-export function Alerts({ d }: { d: Dashboard }) {
+/** Alert feed. On the landing page it shows the latest few with a link to the full list. */
+export function Alerts({ d, limit, moreHref }: { d: Dashboard; limit?: number; moreHref?: string }) {
   const [filter, setFilter] = useState<"all" | Severity>("all");
   const [expanded, setExpanded] = useState(false);
   const list = useMemo(() => d.alerts.filter((a) => filter === "all" || a.severity === filter), [d.alerts, filter]);
-  const shown = expanded ? list : list.slice(0, 8);
+  const cap = limit ?? 12;
+  const shown = expanded ? list : list.slice(0, cap);
 
   return (
     <Card>
       <CardTitle
         title="What changed"
-        sub="Alerts from the daily run: price changes, capacity shifts, filings and new customers."
+        sub="Alerts from the collector: price changes, capacity, filings, site news and new customers"
         right={
-          <Segmented
-            label="Alert severity"
-            value={filter}
-            onChange={setFilter}
-            options={[
-              { value: "all", label: "All" },
-              { value: "high", label: "High" },
-              { value: "medium", label: "Medium" },
-              { value: "info", label: "Info" },
-            ]}
-          />
+          moreHref ? (
+            <a href={moreHref} className="text-sm font-medium text-accent hover:underline">
+              All alerts →
+            </a>
+          ) : (
+            <Segmented
+              label="Alert severity"
+              value={filter}
+              onChange={setFilter}
+              options={[
+                { value: "all", label: "All" },
+                { value: "high", label: "High" },
+                { value: "medium", label: "Medium" },
+                { value: "info", label: "Info" },
+              ]}
+            />
+          )
         }
       />
       {shown.length === 0 ? (
-        <p className="py-4 text-sm text-ink-3">No alerts {filter === "all" ? "yet" : `at ${filter} severity`}. They appear as the daily run spots changes.</p>
+        <p className="py-4 text-sm text-ink-3">No alerts {filter === "all" ? "yet" : `at ${filter} severity`}. They appear as the collector spots changes.</p>
       ) : (
         <ul className="divide-y divide-[var(--border)]">
           {shown.map((a) => (
@@ -143,17 +92,11 @@ export function Alerts({ d }: { d: Dashboard }) {
           ))}
         </ul>
       )}
-      {list.length > 8 && (
+      {!moreHref && list.length > cap && (
         <button type="button" onClick={() => setExpanded((v) => !v)} className="mt-2 text-sm font-medium text-accent hover:underline">
           {expanded ? "Show fewer" : `Show all ${list.length}`}
         </button>
       )}
     </Card>
   );
-}
-
-function addDays(date: string, n: number) {
-  const d = new Date(date + "T00:00:00Z");
-  d.setUTCDate(d.getUTCDate() + n);
-  return d.toISOString().slice(0, 10);
 }
