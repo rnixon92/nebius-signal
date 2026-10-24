@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-24T05:10:52.300Z",
+ "generatedAt": "2026-10-24T05:13:01.616Z",
  "sources": [
   {
    "id": "gpu-ondemand",
@@ -15,7 +15,7 @@
    "label": "Nebius spot price API",
    "url": "https://nebius.com/spot-prices",
    "ok": true,
-   "lastSuccess": "2026-10-24T05:10:28.564Z",
+   "lastSuccess": "2026-10-24T05:12:59.316Z",
    "summary": "12 SKUs listed; 12 series, 8628 hourly points",
    "stale": false
   },
@@ -24,7 +24,7 @@
    "label": "Nebius regions docs",
    "url": "https://docs.nebius.com/overview/regions",
    "ok": true,
-   "lastSuccess": "2026-10-24T05:10:29.170Z",
+   "lastSuccess": "2026-10-24T05:12:59.538Z",
    "summary": "10 regions, 6 GPU platforms",
    "stale": false
   },
@@ -33,8 +33,8 @@
    "label": "Google News (data centers)",
    "url": "https://news.google.com/search?q=Nebius%20data%20center",
    "ok": true,
-   "lastSuccess": "2026-10-24T05:10:33.015Z",
-   "summary": "363 headlines fetched; 296 kept, 116 matched to sites",
+   "lastSuccess": "2026-10-24T05:13:01.386Z",
+   "summary": "334 headlines fetched; 341 kept, 139 matched to sites",
    "stale": false
   },
   {
@@ -69,7 +69,7 @@
    "label": "SEC EDGAR",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845",
    "ok": true,
-   "lastSuccess": "2026-10-24T05:00:55.751Z",
+   "lastSuccess": "2026-10-24T05:13:01.548Z",
    "summary": "167 filings since 2025-01-01 (0 parsed this run)",
    "stale": false
   },
@@ -87,12 +87,30 @@
    "label": "Yahoo Finance (NBIS)",
    "url": "https://finance.yahoo.com/quote/NBIS",
    "ok": true,
-   "lastSuccess": "2026-10-24T05:10:37.619Z",
+   "lastSuccess": "2026-10-24T05:13:01.614Z",
    "summary": "501 closes, last 2026-10-23 $158.74",
    "stale": false
   }
  ],
  "alerts": [
+  {
+   "id": "news-blinded by dollar signs independence wrestles with 90 tax abatement for massive ",
+   "date": "2026-10-24",
+   "source": "news",
+   "severity": "info",
+   "title": "Site progress (Independence, Missouri): ‘Blinded by dollar signs’: Independence wrestles with 90% tax abatement for massive AI data center",
+   "detail": "The Kansas City Beacon",
+   "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNQmdLNW5mdHlUWXFUbTZSNmM4QWN0LTNYekpoaTRQWjE4Z0tCSGkyd3hpU25GMW81UkRLRmlVOVpnQUI0QzRqVWRhY2w1c29LOF9ONFVNdWtoc3dmNzZaWTFvOVNOUlpxWUxKZHpUSDhqQWdIaFlzQUpZZ0JlYzFLbWE2Tlp6Z04ycXc2QUl1b2E?oc=5"
+  },
+  {
+   "id": "news-nebius breaks ground on gigawatt scale ai factory in independence missouri",
+   "date": "2026-10-24",
+   "source": "news",
+   "severity": "info",
+   "title": "Site progress (Independence, Missouri): Nebius breaks ground on gigawatt-scale AI factory in Independence, Missouri",
+   "detail": "Business Wire",
+   "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNQWw3TVZ3RDZ6elZJX3g5MDVRNTFjQlI2MGRXVWhtX25UUDR4VjFYX0UzY1YxYmVZUGRGQUV1UTZ6UUktZEVoZ2JSRnNIeUVXNWdYbWs5XzRWQkdpYWx2TXFRVlNpT3hKelRUYnMtV3I1UzlYNTFPaklGMGlRZnpGQUlfNURkUm5DMV9jcm9Id3NlZy1rOWxCWVV3cVZUQ2dZSWp3ZnN1MUVjNlRpOUVsQ1JZWUN4bEIzQmF3ZV9lbDdsbk1TWmxkQjNPdw?oc=5"
+  },
   {
    "id": "news-independence hits pause on data centers as nebius construction moves forward",
    "date": "2026-10-24",
@@ -822,9 +840,9 @@
     "risk90d": 0,
     "progress90d": 0,
     "latest": {
-     "title": "Nebius to build 310MW AI factory in Finland’s Lappeenranta",
-     "date": "2026-04-01",
-     "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA2bTdZakVxa3l6dngzUWowY19KWW9tZl9UNUNJTXVHVXVYSzFyeXB2VzBzUEpTQVdMMExJSlN5N19IOXhLUXJYNUZxaDVFYTd4bU95UnFORnJoNWszWko2aDVoNlhTcHVJengyNi1vYkFPbmE3czZ5VkZldDF3Zw?oc=5",
+     "title": "NBIS Lappeenranta Data Center: The 310 MW Finland AI Factory",
+     "date": "2026-04-26",
+     "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE00MEE2S3NXN1h2cTdGYjE2NURXckhRWkNOMWZWcklTNTVPXzNvYXhmZ0p5VG45a2hmZEFjenFveFh4NTFyN2pSSF9iWEdicVdJTWRyNHBiUUFodkp5MU1jeE9GUHJwckpuVVhGY0ZaT3A0bi00WVE?oc=5",
      "tag": null
     }
    },
@@ -3686,7 +3704,7 @@
   }
  },
  "gpu": {
-  "snapshotTime": "2026-10-24T05:05:45.699275Z",
+  "snapshotTime": "2026-10-24T05:08:46.887609Z",
   "onDemand": [
    {
     "name": "NVIDIA GB300 NVL72",
