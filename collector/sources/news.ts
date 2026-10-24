@@ -17,6 +17,9 @@ export type Site = {
   model: string;
   mw: number | null;
   mwNote?: string;
+  /** Live IT power estimated another way (e.g. from GPU counts), used to weight regions when no MW is disclosed. */
+  itMwEstimate?: number;
+  itMwBasis?: string;
   status: "live" | "ramping" | "construction" | "planned" | "contracted" | "unconfirmed";
   expected?: string;
   region?: string | null;

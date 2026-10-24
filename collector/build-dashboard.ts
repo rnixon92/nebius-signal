@@ -330,6 +330,27 @@ async function gpu(): Promise<Dashboard["gpu"]> {
     priceDaily.push(priceRow as Dashboard["gpu"]["priceDaily"][number]);
   }
 
+  // Per-pool daily series, so the page can filter regions and weight them however the reader chooses.
+  const pools = Object.entries(skus)
+    .filter(([id, s]) => s.family && daily[id])
+    .map(([skuId, s]) => ({ skuId, family: s.family!, region: s.region }))
+    .sort((a, b) => familyRank(a.family) - familyRank(b.family) || a.region.localeCompare(b.region));
+  const poolRatioDaily: Dashboard["gpu"]["poolRatioDaily"] = [];
+  const poolPriceDaily: Dashboard["gpu"]["poolPriceDaily"] = [];
+  for (const date of dates) {
+    const ratioRow: Record<string, number | string> = { date };
+    const priceRow: Record<string, number | string> = { date };
+    for (const pl of pools) {
+      const v = daily[pl.skuId]?.[date]?.[1];
+      if (v === undefined) continue;
+      priceRow[pl.skuId] = v;
+      const list = listAt(pl.family, date);
+      if (list) ratioRow[pl.skuId] = r4(v / list);
+    }
+    poolRatioDaily.push(ratioRow as Dashboard["gpu"]["poolRatioDaily"][number]);
+    poolPriceDaily.push(priceRow as Dashboard["gpu"]["poolPriceDaily"][number]);
+  }
+
   const latestRatio = (set: Set<string>) => mean(spotNow.filter((s) => set.has(s.family) && s.ratio !== null).map((s) => s.ratio!));
   return {
     snapshotTime: current?.snapshotTime ?? null,
@@ -341,7 +362,42 @@ async function gpu(): Promise<Dashboard["gpu"]> {
     priceDaily,
     availability: Object.entries(avail).map(([date, ids]) => ({ date, skus: ids.length })),
     tightness: { blackwell: latestRatio(BLACKWELL), hopper: latestRatio(HOPPER) },
+    pools,
+    poolRatioDaily,
+    poolPriceDaily,
+    regionWeights: await regionWeights(new Set(pools.map((p) => p.region))),
   };
+}
+
+/**
+ * Best public proxy for live capacity per region. Nebius doesn't publish it, so each region takes the
+ * strongest evidence available: satellite-observed IT power (Epoch AI), then an estimate from disclosed
+ * GPU counts, then announced MW for live/ramping sites. Anything else is null and the page fills it in.
+ */
+async function regionWeights(spotRegions: Set<string>): Promise<Dashboard["gpu"]["regionWeights"]> {
+  const registry = await readJson<Site[]>("sites.json", []);
+  const epoch = await readJson<EpochFile>("capacity/epoch.json", { updatedAt: "", sites: {} });
+  const regions = await readJson<RegionsFile>("capacity/regions.json", { lastChecked: "", regions: {}, platforms: {}, changes: [] });
+  const codes = [...new Set([...Object.keys(regions.regions), ...spotRegions])].sort();
+  return codes.map((region) => {
+    const sites = registry.filter((s) => s.region === region && (s.status === "live" || s.status === "ramping"));
+    let mwTotal = 0;
+    const bases: string[] = [];
+    for (const s of sites) {
+      const obs = s.epoch ? epoch.sites[s.epoch]?.timeline.filter((x) => !x.projected).at(-1) : undefined;
+      if (obs) {
+        mwTotal += obs.itMw;
+        bases.push(`${s.name}: satellite (Epoch AI, ${obs.date})`);
+      } else if (s.itMwEstimate) {
+        mwTotal += s.itMwEstimate;
+        bases.push(`${s.name}: ${s.itMwBasis ?? "estimate"}`);
+      } else if (s.mw) {
+        mwTotal += s.mw;
+        bases.push(`${s.name}: announced ${s.mw} MW${s.status === "ramping" ? " (ramping, not all live)" : ""}`);
+      }
+    }
+    return { region, location: regions.regions[region]?.location ?? "", mw: bases.length ? mwTotal : null, basis: bases.join("; ") || "No public capacity figure", sites: sites.map((s) => s.name) };
+  });
 }
 
 // ---------------------------------------------------------------- tokens

@@ -1,7 +1,6 @@
-import { useState } from "react";
 import type { Dashboard } from "../../shared/dashboard.ts";
-import { TimeSeriesCard } from "../components/TimeSeriesCard.tsx";
-import { Card, CardTitle, DataTable, ExtLink, Meter, Section, Segmented, Sparkline } from "../components/ui.tsx";
+import { Card, CardTitle, DataTable, ExtLink, Meter, Section, Sparkline } from "../components/ui.tsx";
+import { GpuSpotChart } from "./GpuSpotChart.tsx";
 import { day, pct, relativeTime, usd } from "../lib/format.ts";
 import type { Range } from "../lib/range.ts";
 import { GPU_SLOT, type Palette } from "../lib/theme.ts";
@@ -17,10 +16,7 @@ function tightness(ratio: number | null) {
 }
 
 export function GpuSection({ d, p, range }: { d: Dashboard; p: Palette; range: Range }) {
-  const [metric, setMetric] = useState<"ratio" | "price">("ratio");
   const g = d.gpu;
-  const rows = metric === "ratio" ? g.ratioDaily : g.priceDaily;
-  const fmt = metric === "ratio" ? (v: number) => pct(v) : (v: number) => usd(v, { cents: true });
 
   return (
     <Section
@@ -34,35 +30,7 @@ export function GpuSection({ d, p, range }: { d: Dashboard; p: Palette; range: R
         </>
       }
     >
-      <TimeSeriesCard
-        title={metric === "ratio" ? "Spot price as a share of on-demand" : "Cheapest spot price by GPU"}
-        sub={metric === "ratio" ? "Daily mean across regions, against the list price in force that day" : "Lowest regional daily mean, $ per GPU-hour"}
-        p={p}
-        globalRange={range}
-        rows={rows}
-        series={g.families.map((f) => ({ key: f, label: f, color: familyColor(p, f) }))}
-        format={fmt}
-        change={metric === "ratio" ? "diff" : "pct"}
-        diffFormat={(v) => `${Math.round(v * 100)} pts`}
-        yDomain={metric === "ratio" ? [0, 1] : [0, "auto"]}
-        yTicks={metric === "ratio" ? [0, 0.25, 0.5, 0.75, 1] : undefined}
-        refY={metric === "ratio" ? [{ y: 1, label: "On-demand cap" }] : undefined}
-        events={d.events.filter((e) => e.kind === "price" || e.kind === "capacity" || e.kind === "earnings")}
-        csvName={metric === "ratio" ? "nebius-spot-vs-list" : "nebius-spot-prices"}
-        height={300}
-        controls={
-          <Segmented
-            label="Spot metric"
-            value={metric}
-            onChange={setMetric}
-            options={[
-              { value: "ratio", label: "% of list" },
-              { value: "price", label: "$/GPU-hr" },
-            ]}
-          />
-        }
-        note="Change shown is from the first to the last day in view. Click a legend item to hide or show it."
-      />
+      <GpuSpotChart d={d} p={p} range={range} />
 
       <Card>
         <CardTitle

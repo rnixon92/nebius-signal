@@ -34,6 +34,8 @@ type Props<R extends { date: string }> = {
   csvName: string;
   height?: number;
   note?: ReactNode;
+  /** Extra filters shown under the header (e.g. region chips), in both the card and the expanded view. */
+  filters?: ReactNode;
 };
 
 const EVENT_LABEL: Record<ChartEvent["kind"], string> = { earnings: "Earnings", price: "Price change", capacity: "Capacity live", financing: "Financing", site: "Site" };
@@ -92,6 +94,7 @@ export function TimeSeriesCard<R extends { date: string }>(props: Props<R>) {
 
   const body = (big: boolean) => (
     <>
+      {props.filters && <div className="mb-3">{props.filters}</div>}
       <div className="mb-3 flex flex-wrap items-center gap-x-4 gap-y-2">
         <LegendButtons series={series} hidden={hidden} onToggle={toggle} rows={visible} change={change} format={props.format} diffFormat={props.diffFormat} kind={props.kind} />
         {props.events && props.events.length > 0 && (

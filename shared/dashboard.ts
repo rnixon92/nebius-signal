@@ -143,6 +143,14 @@ export type Dashboard = {
     priceDaily: ({ date: string } & Record<string, number | string>)[];
     availability: { date: string; skus: number }[];
     tightness: { blackwell: number | null; hopper: number | null };
+    /** Every spot pool (one GPU family in one region), for per-region views and client-side weighting. */
+    pools: { skuId: string; family: string; region: string }[];
+    /** Per pool per day: daily-mean spot ÷ the list price in force that day. Keys are skuIds. */
+    poolRatioDaily: ({ date: string } & Record<string, number | string>)[];
+    /** Per pool per day: daily-mean spot price, $/GPU-hour. */
+    poolPriceDaily: ({ date: string } & Record<string, number | string>)[];
+    /** Best available capacity proxy per region; mw is null when nothing is known. */
+    regionWeights: { region: string; location: string; mw: number | null; basis: string; sites: string[] }[];
   };
 
   tokens: {
