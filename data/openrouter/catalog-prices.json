@@ -55,9 +55,9 @@
  },
  "~moonshotai/kimi-latest": {
   "name": "~moonshotai/kimi-latest",
-  "input": 0.238,
-  "output": 16,
-  "cacheRead": 0.228
+  "input": 0.19,
+  "output": 8.94,
+  "cacheRead": 0.19
  },
  "~openai/gpt-astra-latest": {
   "name": "~openai/gpt-astra-latest",
@@ -103,15 +103,15 @@
  },
  "~z-ai/glm-flash-latest": {
   "name": "~z-ai/glm-flash-latest",
-  "input": 0.0262,
+  "input": 0.0393,
   "output": 0.1028,
-  "cacheRead": 0.0262
+  "cacheRead": 0.03
  },
  "~z-ai/glm-latest": {
   "name": "~z-ai/glm-latest",
-  "input": 0.079,
-  "output": 1.4,
-  "cacheRead": 0.078
+  "input": 0.075,
+  "output": 4.295,
+  "cacheRead": 0.075
  },
  "aion-labs/aion-2.0-20260223": {
   "name": "aion-labs/aion-2.0",
@@ -421,9 +421,9 @@
  },
  "deepseek/deepseek-v4-pro-20260423": {
   "name": "deepseek/deepseek-v4-pro",
-  "input": 0.560802,
-  "output": 1.121604,
-  "cacheRead": 0.046734
+  "input": 0.307284,
+  "output": 0.614568,
+  "cacheRead": 0.025607
  },
  "deepseek/deepseek-v4-pro-20260813": {
   "name": "deepseek/deepseek-v4-pro-0813",
@@ -865,8 +865,8 @@
  },
  "minimax/minimax-m2.5-20260211": {
   "name": "minimax/minimax-m2.5",
-  "input": 0.27,
-  "output": 0.95,
+  "input": 0.3,
+  "output": 1.2,
   "cacheRead": 0.03
  },
  "minimax/minimax-m2.7-20260318": {
@@ -2229,7 +2229,7 @@
   "name": "z-ai/glm-4.6v",
   "input": 0.3,
   "output": 0.9,
-  "cacheRead": 0.05
+  "cacheRead": 0.055
  },
  "z-ai/glm-4.7-20251222": {
   "name": "z-ai/glm-4.7",

@@ -52,7 +52,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-19",
   "baseline": false,
-  "latestEvidence": "2026-10-18"
+  "latestEvidence": "2026-10-24"
  },
  "acrovision": {
   "name": "Acrovision",
@@ -3153,7 +3153,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-09-28"
+  "latestEvidence": "2026-10-24"
  },
  "novis": {
   "name": "Novis",
@@ -4032,7 +4032,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-13"
+  "latestEvidence": "2026-10-24"
  },
  "revyn": {
   "name": "Revyn",
@@ -4589,7 +4589,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-13"
+  "latestEvidence": "2026-10-24"
  },
  "synthlabs": {
   "name": "SynthLabs",
@@ -5356,7 +5356,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-27",
   "baseline": false,
-  "latestEvidence": "2026-09-27"
+  "latestEvidence": "2024-11-12"
  },
  "wonder": {
   "name": "Wonder",
