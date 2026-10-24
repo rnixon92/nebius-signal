@@ -65,6 +65,8 @@ export async function collectNews(): Promise<SourceResult> {
   const bootstrap = Object.keys(store).length === 0;
   const alerts: Alert[] = [];
   let fetched = 0;
+  // Google News resurfaces old articles; only fresh ones are news to us.
+  const alertCutoff = new Date(Date.now() - 14 * 864e5).toISOString().slice(0, 10);
 
   for (const q of QUERIES) {
     const xml = await fetchText(`https://news.google.com/rss/search?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en`);
@@ -76,7 +78,7 @@ export async function collectNews(): Promise<SourceResult> {
       const siteIds = matchSites(it.title, sites);
       const tag = tagHeadline(it.title);
       store[key] = { ...it, sites: siteIds, tag, firstSeen: date };
-      if (!bootstrap && siteIds.length && tag) {
+      if (!bootstrap && siteIds.length && tag && it.date >= alertCutoff) {
         const names = siteIds.map((id) => sites.find((s) => s.id === id)?.name ?? id).join(", ");
         alerts.push({
           id: `news-${key.slice(0, 80)}`,

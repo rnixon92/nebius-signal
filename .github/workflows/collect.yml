@@ -4,6 +4,7 @@ on:
   schedule:
     - cron: "17 * * * *" # hourly: spot prices, filings, site news, regions, share price
     - cron: "47 6 * * *" # daily full run: everything, incl. OpenRouter, Atlas, jobs, rate card
+    - cron: "47 18 * * *" # second full run: GitHub delays or drops scheduled runs, so the daily sources get a backup
   workflow_dispatch:
     inputs:
       tier:
