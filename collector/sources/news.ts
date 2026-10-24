@@ -29,7 +29,7 @@ export type NewsItem = { title: string; publisher: string; date: string; url: st
 // petition" or "breaks ground amid opposition" are progress for Nebius, not risk.
 const STRONG_PROGRESS = /break(s|ing)? ground|groundbreaking|moves? forward|to move forward|approv(es|ed|al)|(judge|court) (rejects|dismisses|tosses|denies)|(rejects|dismisses|denies) (the )?(referendum|petition|lawsuit|suit|appeal)|lawsuit (dismissed|tossed)|energi[sz]ed|power block|goes live|operational|comes online|first (phase|capacity)/i;
 const RISK = /lawsuit|sue[sd]?\b|halt|injunction|postpone|delay|oppos|moratorium|backlash|restrict|denied|reject|protest|petition|appeal|zoning fight|pause|cancel|scrap|withdraw/i;
-const PROGRESS = /online|launch|opens?\b|completes?|completed|delivered|ready|secures?|signs?\b/i;
+const PROGRESS = /online|launch|opens?\b|completes?|completed|delivered|ready|secures?|signs? (on|for|a |an |deal|agreement|contract|lease)/i;
 
 export function tagHeadline(title: string): "risk" | "progress" | null {
   if (STRONG_PROGRESS.test(title)) return "progress";
