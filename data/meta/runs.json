@@ -1,50 +1,51 @@
 {
  "gpu-ondemand": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:31:06.805Z",
-  "lastSuccess": "2026-10-24T04:31:06.805Z",
+  "lastAttempt": "2026-10-24T04:33:51.848Z",
+  "lastSuccess": "2026-10-24T04:33:51.848Z",
   "summary": "9 GPU rows (7 with list prices)"
  },
  "gpu-spot": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:31:09.268Z",
-  "lastSuccess": "2026-10-24T04:31:09.268Z",
+  "lastAttempt": "2026-10-24T04:33:52.825Z",
+  "lastSuccess": "2026-10-24T04:33:52.825Z",
   "summary": "12 SKUs listed; 12 series, 8628 hourly points"
  },
  "openrouter": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:31:31.888Z",
-  "lastSuccess": "2026-10-24T04:31:31.888Z",
+  "lastAttempt": "2026-10-24T04:34:12.429Z",
+  "lastSuccess": "2026-10-24T04:34:12.429Z",
   "summary": "Nebius 90 days of history; 11/11 peers"
  },
  "openrouter-market": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:31:32.084Z",
-  "lastSuccess": "2026-10-24T04:31:32.084Z",
+  "lastAttempt": "2026-10-24T04:34:12.576Z",
+  "lastSuccess": "2026-10-24T04:34:12.576Z",
   "summary": "231 snapshots to 2026-10-23; Nebius rank 55 of 96"
  },
  "atlas": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:31:35.955Z",
-  "lastSuccess": "2026-10-24T04:31:35.955Z",
+  "lastAttempt": "2026-10-24T04:34:14.344Z",
+  "lastSuccess": "2026-10-24T04:34:14.344Z",
   "summary": "363 customers (0 new since last run)"
  },
  "sec": {
-  "ok": true,
-  "lastAttempt": "2026-10-24T04:31:36.027Z",
+  "ok": false,
+  "lastAttempt": "2026-10-24T04:34:17.415Z",
   "lastSuccess": "2026-10-24T04:31:36.027Z",
-  "summary": "167 filings since 2025-01-01 (0 parsed this run)"
+  "summary": "167 filings since 2025-01-01 (0 parsed this run)",
+  "error": "HTTP 403 for https://data.sec.gov/submissions/CIK0001513845.json"
  },
  "jobs": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:31:36.277Z",
-  "lastSuccess": "2026-10-24T04:31:36.277Z",
+  "lastAttempt": "2026-10-24T04:34:17.493Z",
+  "lastSuccess": "2026-10-24T04:34:17.493Z",
   "summary": "384 open roles (0 new)"
  },
  "stock": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:31:37.058Z",
-  "lastSuccess": "2026-10-24T04:31:37.058Z",
+  "lastAttempt": "2026-10-24T04:34:17.586Z",
+  "lastSuccess": "2026-10-24T04:34:17.586Z",
   "summary": "501 closes, last 2026-10-23 $158.74"
  }
 }

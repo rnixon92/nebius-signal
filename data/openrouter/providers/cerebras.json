@@ -1,6 +1,6 @@
 {
  "provider": "cerebras",
- "updatedAt": "2026-10-24T04:31:24.709Z",
+ "updatedAt": "2026-10-24T04:34:05.971Z",
  "days": {
   "2026-07-27": {
    "openai/gpt-oss-120b": 4185588919,

@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-10-24T04:31:37.059Z",
+ "generatedAt": "2026-10-24T04:34:17.587Z",
  "sources": [
   {
    "id": "gpu-ondemand",
    "label": "Nebius GPU rate card",
    "url": "https://nebius.com/prices",
    "ok": true,
-   "lastSuccess": "2026-10-24T04:31:06.805Z",
+   "lastSuccess": "2026-10-24T04:33:51.848Z",
    "summary": "9 GPU rows (7 with list prices)",
    "stale": false
   },
@@ -15,7 +15,7 @@
    "label": "Nebius spot price API",
    "url": "https://nebius.com/spot-prices",
    "ok": true,
-   "lastSuccess": "2026-10-24T04:31:09.268Z",
+   "lastSuccess": "2026-10-24T04:33:52.825Z",
    "summary": "12 SKUs listed; 12 series, 8628 hourly points",
    "stale": false
   },
@@ -24,7 +24,7 @@
    "label": "OpenRouter provider pages",
    "url": "https://openrouter.ai/provider/nebius",
    "ok": true,
-   "lastSuccess": "2026-10-24T04:31:31.888Z",
+   "lastSuccess": "2026-10-24T04:34:12.429Z",
    "summary": "Nebius 90 days of history; 11/11 peers",
    "stale": false
   },
@@ -33,7 +33,7 @@
    "label": "jimmyresearch OpenRouter CSV",
    "url": "https://jimmyresearch.com/openrouter/",
    "ok": true,
-   "lastSuccess": "2026-10-24T04:31:32.084Z",
+   "lastSuccess": "2026-10-24T04:34:12.576Z",
    "summary": "231 snapshots to 2026-10-23; Nebius rank 55 of 96",
    "stale": false
   },
@@ -42,7 +42,7 @@
    "label": "Nebius Atlas",
    "url": "https://nebiusatlas.com/",
    "ok": true,
-   "lastSuccess": "2026-10-24T04:31:35.955Z",
+   "lastSuccess": "2026-10-24T04:34:14.344Z",
    "summary": "363 customers (0 new since last run)",
    "stale": false
   },
@@ -50,9 +50,10 @@
    "id": "sec",
    "label": "SEC EDGAR",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845",
-   "ok": true,
+   "ok": false,
    "lastSuccess": "2026-10-24T04:31:36.027Z",
    "summary": "167 filings since 2025-01-01 (0 parsed this run)",
+   "error": "HTTP 403 for https://data.sec.gov/submissions/CIK0001513845.json",
    "stale": false
   },
   {
@@ -60,7 +61,7 @@
    "label": "Greenhouse job board",
    "url": "https://careers.nebius.com/",
    "ok": true,
-   "lastSuccess": "2026-10-24T04:31:36.277Z",
+   "lastSuccess": "2026-10-24T04:34:17.493Z",
    "summary": "384 open roles (0 new)",
    "stale": false
   },
@@ -69,7 +70,7 @@
    "label": "Yahoo Finance (NBIS)",
    "url": "https://finance.yahoo.com/quote/NBIS",
    "ok": true,
-   "lastSuccess": "2026-10-24T04:31:37.058Z",
+   "lastSuccess": "2026-10-24T04:34:17.586Z",
    "summary": "501 closes, last 2026-10-23 $158.74",
    "stale": false
   }
@@ -2100,7 +2101,7 @@
   }
  },
  "gpu": {
-  "snapshotTime": "2026-10-24T04:26:17.402210Z",
+  "snapshotTime": "2026-10-24T04:29:40.651026Z",
   "onDemand": [
    {
     "name": "NVIDIA GB300 NVL72",
