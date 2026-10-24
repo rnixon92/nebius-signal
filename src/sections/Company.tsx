@@ -1,7 +1,11 @@
 import { useState } from "react";
-import { Bar, BarChart, CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { Bar, BarChart, CartesianGrid, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import type { Dashboard } from "../../shared/dashboard.ts";
-import { CHART_MARGIN, TimeTip, axisX, axisY, cursor, grid, type TipProps } from "../components/chart.tsx";
+import { CHART_MARGIN, axisY, grid, type TipProps } from "../components/chart.tsx";
+import { TimeSeriesCard } from "../components/TimeSeriesCard.tsx";
+import type { Range } from "../lib/range.ts";
+
+const FUNCTION_ORDER = ["Engineering & product", "Sales & go-to-market", "Data center & power", "G&A & other"];
 import { Card, CardTitle, ChartFrame, DataTable, EmptyNote, ExtLink, Pill, Section, Segmented, Stat, TooltipCard } from "../components/ui.tsx";
 import { day, pct, usd, usdM } from "../lib/format.ts";
 import type { Palette } from "../lib/theme.ts";
@@ -29,7 +33,7 @@ function BarList({ items, color, total }: { items: { name: string; count: number
   );
 }
 
-export function CustomersSection({ d, p }: { d: Dashboard; p: Palette }) {
+export function CustomersSection({ d, p, range }: { d: Dashboard; p: Palette; range: Range }) {
   const a = d.atlas;
   return (
     <Section
@@ -48,30 +52,20 @@ export function CustomersSection({ d, p }: { d: Dashboard; p: Palette }) {
         <Stat label="Using AI Cloud (GPUs)" value={a.aiCloud.toLocaleString()} />
         <Stat label="Using Token Factory" value={a.tokenFactory.toLocaleString()} />
       </div>
-      <div className="grid gap-4 lg:grid-cols-5">
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-5">
         <div className="lg:col-span-3">
-          <ChartFrame
+          <TimeSeriesCard
             title="Customers listed over time"
             sub="Cumulative, by the date Atlas listed each one"
-            chart={
-              <div className="h-64">
-                <ResponsiveContainer>
-                  <LineChart data={a.cumulative} margin={CHART_MARGIN}>
-                    <CartesianGrid {...grid(p)} />
-                    <XAxis {...axisX(p)} />
-                    <YAxis {...axisY(p, (v) => String(v))} />
-                    <Tooltip cursor={cursor(p)} content={(t) => <TimeTip {...(t as object)} nameOf={() => "Customers"} format={(v) => v.toLocaleString()} footer={(r) => `+${r.added} that day`} />} />
-                    <Line dataKey="total" type="stepAfter" stroke={p.series[0]} strokeWidth={2} dot={false} activeDot={{ r: 4, strokeWidth: 2, stroke: p.surface }} isAnimationActive={false} />
-                  </LineChart>
-                </ResponsiveContainer>
-              </div>
-            }
+            p={p}
+            globalRange={range}
             rows={a.cumulative}
-            columns={[
-              { key: "date", label: "Date", render: (r) => day(r.date, true) },
-              { key: "added", label: "Added", align: "right", render: (r) => r.added },
-              { key: "total", label: "Total", align: "right", render: (r) => r.total },
-            ]}
+            series={[{ key: "total", label: "Customers", color: p.series[0]! }]}
+            kind="step"
+            format={(v) => v.toLocaleString()}
+            tooltipFooter={(r) => `+${r.added} that day`}
+            csvName="nebius-atlas-customers"
+            height={240}
           />
         </div>
         <Card className="lg:col-span-2">
@@ -98,8 +92,9 @@ export function CustomersSection({ d, p }: { d: Dashboard; p: Palette }) {
   );
 }
 
-export function HiringSection({ d, p }: { d: Dashboard; p: Palette }) {
+export function HiringSection({ d, p, range }: { d: Dashboard; p: Palette; range: Range }) {
   const j = d.jobs;
+  const fnColor = (f: string) => p.series[FUNCTION_ORDER.indexOf(f)] ?? p.other;
   return (
     <Section
       id="hiring"
@@ -110,9 +105,23 @@ export function HiringSection({ d, p }: { d: Dashboard; p: Palette }) {
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-3">
         <Stat label="Open roles" value={j.total.toLocaleString()} />
         <Stat label="Data center & power" value={(j.byFunction.find((f) => f.name === "Data center & power")?.count ?? 0).toLocaleString()} />
-        <Stat label="New in the last 7 days" value={j.new7d.toLocaleString()} note={j.daily.length < 8 ? "Counts start from the first run" : undefined} />
+        <Stat label="Posted in the last 7 days" value={j.new7d.toLocaleString()} note="By Greenhouse posting date" />
       </div>
-      <div className="grid gap-4 lg:grid-cols-3">
+      <TimeSeriesCard
+        title="Open roles by month posted"
+        sub="Still-open roles grouped by posting month and function"
+        p={p}
+        globalRange="All"
+        rows={j.postedByMonth}
+        series={FUNCTION_ORDER.map((f) => ({ key: f, label: f, color: fnColor(f) }))}
+        kind="stacked"
+        format={(v) => String(v)}
+        change="none"
+        csvName="nebius-roles-by-month"
+        height={240}
+        note="Only roles still open today are visible, so older months undercount: filled roles have dropped off. Read the recent months and the mix, not the long-run slope."
+      />
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
         <Card>
           <CardTitle title="By function" />
           <BarList items={j.byFunction} color={p.series[0]!} />
@@ -121,24 +130,14 @@ export function HiringSection({ d, p }: { d: Dashboard; p: Palette }) {
           <CardTitle title="By region" />
           <BarList items={j.byRegion} color={p.series[0]!} />
         </Card>
-        <Card>
-          <CardTitle title="Open roles over time" />
-          {j.daily.length < 2 ? (
-            <EmptyNote>History starts {day(j.daily[0]?.date ?? d.generatedAt, true)}. A trend appears after a few daily runs.</EmptyNote>
-          ) : (
-            <div className="h-44">
-              <ResponsiveContainer>
-                <LineChart data={j.daily} margin={CHART_MARGIN}>
-                  <CartesianGrid {...grid(p)} />
-                  <XAxis {...axisX(p)} />
-                  <YAxis {...axisY(p, (v) => String(v), { width: 36 })} />
-                  <Tooltip cursor={cursor(p)} content={(t) => <TimeTip {...(t as object)} nameOf={() => "Open roles"} format={(v) => String(v)} />} />
-                  <Line dataKey="total" stroke={p.series[0]} strokeWidth={2} dot={false} isAnimationActive={false} />
-                </LineChart>
-              </ResponsiveContainer>
-            </div>
-          )}
-        </Card>
+        {j.daily.length < 2 ? (
+          <Card>
+            <CardTitle title="Open roles over time" />
+            <EmptyNote>Daily counts start {day(j.daily[0]?.date ?? d.generatedAt, true)}. A trend appears after a few daily runs.</EmptyNote>
+          </Card>
+        ) : (
+          <TimeSeriesCard title="Open roles over time" p={p} globalRange={range} rows={j.daily} series={[{ key: "total", label: "Open roles", color: p.series[0]! }]} format={(v) => String(v)} csvName="nebius-open-roles" height={180} />
+        )}
       </div>
       <Card>
         <CardTitle title="Data center & power roles" sub="Where Nebius is staffing physical build-out" />
@@ -149,7 +148,7 @@ export function HiringSection({ d, p }: { d: Dashboard; p: Palette }) {
           columns={[
             { key: "title", label: "Role", render: (r) => <ExtLink href={r.url} className="no-underline hover:underline">{r.title}</ExtLink> },
             { key: "loc", label: "Location", render: (r) => <span className="text-ink-2">{r.location}</span> },
-            { key: "seen", label: "First seen", align: "right", render: (r) => day(r.firstSeen) },
+            { key: "posted", label: "Posted", align: "right", render: (r) => day(r.posted, r.posted.slice(0, 4) !== d.generatedAt.slice(0, 4)) },
           ]}
         />
       </Card>
@@ -244,7 +243,7 @@ export function FinancialsSection({ d, p }: { d: Dashboard; p: Palette }) {
           </p>
         </Card>
       )}
-      <div className="grid gap-4 lg:grid-cols-5">
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-5">
         <div className="lg:col-span-3">
           <ChartFrame
             title="Quarterly revenue"

@@ -12,6 +12,9 @@ import type { ModelPrice, ProviderHistory } from "./sources/openrouter.ts";
 import { NEBIUS, PEERS } from "./sources/openrouter.ts";
 import type { MarketWeek } from "./sources/openrouter-market.ts";
 import type { Filing } from "./sources/sec.ts";
+import { matchSites, type NewsItem, type Site } from "./sources/news.ts";
+import type { RegionsFile } from "./sources/regions.ts";
+import { buildNowcast } from "./nowcast.ts";
 
 const FAMILY_ORDER = ["GB300", "B300", "GB200", "B200", "H200", "H100", "RTX PRO 6000", "L40S"];
 const BLACKWELL = new Set(["GB300", "B300", "GB200", "B200"]);
@@ -21,6 +24,8 @@ const TOP_MODELS = 6;
 const SOURCE_META: Record<string, { label: string; url: string; maxAgeH: number }> = {
   "gpu-ondemand": { label: "Nebius GPU rate card", url: "https://nebius.com/prices", maxAgeH: 36 },
   "gpu-spot": { label: "Nebius spot price API", url: "https://nebius.com/spot-prices", maxAgeH: 36 },
+  regions: { label: "Nebius regions docs", url: "https://docs.nebius.com/overview/regions", maxAgeH: 36 },
+  news: { label: "Google News (data centers)", url: "https://news.google.com/search?q=Nebius%20data%20center", maxAgeH: 36 },
   openrouter: { label: "OpenRouter provider pages", url: "https://openrouter.ai/provider/nebius", maxAgeH: 36 },
   "openrouter-market": { label: "jimmyresearch OpenRouter CSV", url: "https://jimmyresearch.com/openrouter/", maxAgeH: 72 },
   atlas: { label: "Nebius Atlas", url: "https://nebiusatlas.com/", maxAgeH: 36 },
@@ -34,12 +39,16 @@ const mean = (xs: number[]) => (xs.length ? sum(xs) / xs.length : null);
 const r4 = (n: number) => Math.round(n * 1e4) / 1e4;
 const familyRank = (f: string) => (FAMILY_ORDER.indexOf(f) === -1 ? 99 : FAMILY_ORDER.indexOf(f));
 
-export async function buildDashboard(): Promise<Dashboard> {
+/** `persistNowcast` records today's estimates so the scorecard can later grade them (collector runs only). */
+export async function buildDashboard({ persistNowcast = false } = {}): Promise<Dashboard> {
   const now = new Date();
   const dash: Dashboard = {
     generatedAt: now.toISOString(),
     sources: await sources(now),
     alerts: await alerts(),
+    events: await events(),
+    nowcast: await nowcast(persistNowcast),
+    sites: await sites(),
     stock: await stock(),
     gpu: await gpu(),
     tokens: await tokens(),
@@ -59,6 +68,85 @@ async function sources(now: Date): Promise<SourceHealth[]> {
     const ageH = r?.lastSuccess ? (now.getTime() - Date.parse(r.lastSuccess)) / 36e5 : Infinity;
     return { id, label: meta.label, url: meta.url, ok: r?.ok ?? false, lastSuccess: r?.lastSuccess ?? null, summary: r?.summary, error: r?.error, stale: ageH > meta.maxAgeH };
   });
+}
+
+async function nowcast(persist: boolean): Promise<Dashboard["nowcast"]> {
+  const t = today();
+  const nc = await buildNowcast(t);
+  const history = await readJson<Record<string, Record<string, number>>>("nowcast/history.json", {});
+  history[t] = Object.fromEntries(nc.quarters.map((q) => [q.quarter, Math.round(q.estimate * 10) / 10]));
+  if (persist) await writeJson("nowcast/history.json", history);
+  return {
+    ...nc,
+    history: Object.entries(history)
+      .sort(([a], [b]) => a.localeCompare(b))
+      .map(([date, v]) => ({ date, ...v })),
+  };
+}
+
+/** Dated annotations shared by time-series charts: results, list price changes, capacity go-lives, financings. */
+async function events(): Promise<Dashboard["events"]> {
+  const out: Dashboard["events"] = [];
+  const filings = Object.values(await readJson<Record<string, Filing>>("sec/filings.json", {}));
+  for (const f of filings) {
+    if (f.form !== "6-K" || !f.title) continue;
+    if (/(first|second|third|fourth) quarter.*results|reports .*quarter/i.test(f.title)) out.push({ date: f.filed, label: f.title.replace(/^Nebius (Group )?reports /i, "").replace(/ financial( results)?$/i, " results"), kind: "earnings" });
+    else if (/financing|convertible|notes|facility/i.test(f.title) && /closing|secures|pricing/i.test(f.title)) out.push({ date: f.filed, label: f.title.replace(/^Nebius (Group )?/i, ""), kind: "financing" });
+  }
+  const od = await readJson<OnDemandFile>("gpu/ondemand.json", { lastChecked: "", current: {}, changes: [] });
+  for (const d of [...new Set(od.changes.map((c) => c.date))]) out.push({ date: d, label: "List price change", kind: "price" });
+  const regions = await readJson<RegionsFile>("capacity/regions.json", { lastChecked: "", regions: {}, platforms: {}, changes: [] });
+  for (const c of regions.changes.filter((c) => c.kind !== "region-removed" && c.kind !== "platform-removed")) {
+    out.push({ date: c.date, label: c.platform ? `${c.platform} live in ${c.region}` : `Region ${c.region} live`, kind: "capacity" });
+  }
+  return out.sort((a, b) => a.date.localeCompare(b.date));
+}
+
+async function sites(): Promise<Dashboard["sites"]> {
+  const registry = await readJson<Site[]>("sites.json", []);
+  const regions = await readJson<RegionsFile>("capacity/regions.json", { lastChecked: "", regions: {}, platforms: {}, changes: [] });
+  const skus = await readJson<Record<string, Sku>>("gpu/skus.json", {});
+  const current = await readJson<{ prices: Record<string, unknown> } | null>("gpu/spot-current.json", null);
+  const roles = Object.values(await readJson<Record<string, Job>>("jobs/roles.json", {}));
+  const news = Object.values(await readJson<Record<string, NewsItem>>("news/items.json", {})).sort((a, b) => b.date.localeCompare(a.date));
+  const since = addDays(today(), -90);
+  const live = new Set(Object.keys(current?.prices ?? {}));
+
+  const rows = registry.map((s) => {
+    const matches = (loc: string) => matchSites(loc, [s]).length > 0;
+    const dc = roles.filter((j) => j.function === "Data center & power" && matches(j.location));
+    const n90 = news.filter((n) => n.date >= since && n.sites.includes(s.id));
+    const latest = news.find((n) => n.sites.includes(s.id));
+    return {
+      id: s.id,
+      name: s.name,
+      country: s.country,
+      model: s.model,
+      mw: s.mw,
+      mwNote: s.mwNote,
+      status: s.status,
+      expected: s.expected,
+      region: s.region ?? null,
+      note: s.note,
+      sources: s.sources,
+      platforms: s.region ? Object.entries(regions.platforms).filter(([, rs]) => rs.includes(s.region!)).map(([fam]) => fam) : [],
+      spotPools: s.region ? Object.entries(skus).filter(([id, k]) => k.region === s.region && live.has(id)).length : 0,
+      dcRolesOpen: dc.filter((j) => !j.closedAt).length,
+      dcRolesPosted90d: dc.filter((j) => (j.posted ?? j.firstSeen) >= since).length,
+      news90d: n90.length,
+      risk90d: n90.filter((n) => n.tag === "risk").length,
+      progress90d: n90.filter((n) => n.tag === "progress").length,
+      latest: latest ? { title: latest.title, date: latest.date, url: latest.url, tag: latest.tag } : null,
+    };
+  });
+
+  const order: Dashboard["sites"]["rows"][number]["status"][] = ["live", "ramping", "construction", "contracted", "planned", "unconfirmed"];
+  return {
+    rows: rows.sort((a, b) => order.indexOf(a.status) - order.indexOf(b.status) || (b.mw ?? 0) - (a.mw ?? 0)),
+    mwByStatus: order.map((status) => ({ status, mw: sum(rows.filter((r) => r.status === status).map((r) => r.mw ?? 0)), sites: rows.filter((r) => r.status === status).length })).filter((x) => x.sites > 0),
+    news: news.filter((n) => n.sites.length).slice(0, 60).map(({ title, publisher, date, url, sites: ids, tag }) => ({ title, publisher, date, url, sites: ids, tag })),
+    regionChanges: [...regions.changes].reverse(),
+  };
 }
 
 async function alerts() {
@@ -253,8 +341,21 @@ async function jobs(): Promise<Dashboard["jobs"]> {
   const roles = await readJson<Record<string, Job>>("jobs/roles.json", {});
   const daily = await readJson<Record<string, JobsDay>>("jobs/daily.json", {});
   const open = Object.entries(roles).filter(([, j]) => !j.closedAt);
-  const firstRun = Object.keys(daily).sort()[0];
   const weekAgo = addDays(today(), -7);
+  const posted = (j: Job) => j.posted ?? j.firstSeen;
+
+  // Open roles by the month they were posted. Closed roles are invisible, so older months undercount.
+  const months = new Map<string, Record<string, number>>();
+  for (const [, j] of open) {
+    const m = posted(j).slice(0, 7);
+    const row = months.get(m) ?? {};
+    row[j.function] = (row[j.function] ?? 0) + 1;
+    months.set(m, row);
+  }
+  const postedByMonth = [...months.entries()]
+    .sort(([a], [b]) => a.localeCompare(b))
+    .filter(([m]) => m >= addDays(today(), -365).slice(0, 7))
+    .map(([m, row]) => ({ date: `${m}-01`, ...Object.fromEntries(FUNCTIONS.map((f) => [f, row[f] ?? 0])) }));
   const tally = (key: (j: Job) => string, order?: readonly string[]) => {
     const m = new Map<string, number>();
     for (const [, j] of open) m.set(key(j), (m.get(key(j)) ?? 0) + 1);
@@ -266,13 +367,13 @@ async function jobs(): Promise<Dashboard["jobs"]> {
     daily: Object.entries(daily).sort(([a], [b]) => a.localeCompare(b)).map(([date, d]) => ({ date, total: d.total })),
     byFunction: tally((j) => j.function, FUNCTIONS),
     byRegion: tally((j) => j.region),
-    // Roles seen on the first run aren't "new"; they were just first observed.
-    new7d: open.filter(([, j]) => j.firstSeen > (firstRun ?? "") && j.firstSeen >= weekAgo).length,
+    new7d: open.filter(([, j]) => posted(j) >= weekAgo).length,
     dcRoles: open
       .filter(([, j]) => j.function === "Data center & power")
-      .sort(([, a], [, b]) => b.firstSeen.localeCompare(a.firstSeen) || a.location.localeCompare(b.location))
-      .slice(0, 40)
-      .map(([id, j]) => ({ title: j.title, location: j.location, firstSeen: j.firstSeen, url: `https://careers.nebius.com/job?gh_jid=${id}` })),
+      .sort(([, a], [, b]) => posted(b).localeCompare(posted(a)) || a.location.localeCompare(b.location))
+      .slice(0, 60)
+      .map(([id, j]) => ({ title: j.title, location: j.location, posted: posted(j), url: `https://careers.nebius.com/job?gh_jid=${id}` })),
+    postedByMonth,
   };
 }
 

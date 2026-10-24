@@ -7,7 +7,8 @@ import type { Alert, SourceResult } from "../lib/types.ts";
 type GhJob = { id: number; title: string; location?: { name?: string }; absolute_url: string };
 type GhDept = { id: number; name: string; parent_id: number | null; jobs: GhJob[] };
 
-export type Job = { title: string; dept: string; function: string; location: string; region: string; firstSeen: string; closedAt?: string };
+/** `posted` is Greenhouse's first_published date; `firstSeen` is when this collector first saw the role. */
+export type Job = { title: string; dept: string; function: string; location: string; region: string; posted: string; firstSeen: string; closedAt?: string };
 export type JobsDay = { total: number; byFunction: Record<string, number>; byRegion: Record<string, number> };
 
 export const FUNCTIONS = ["Data center & power", "Sales & go-to-market", "Engineering & product", "G&A & other"] as const;
@@ -31,6 +32,9 @@ function region(location: string): string {
 export async function collectJobs(): Promise<SourceResult> {
   const date = today();
   const { departments } = await fetchJson<{ departments: GhDept[] }>("https://boards-api.greenhouse.io/v1/boards/nebius/departments");
+  // The departments view lacks posting dates; the flat jobs list has them.
+  const { jobs } = await fetchJson<{ jobs: { id: number; first_published?: string }[] }>("https://boards-api.greenhouse.io/v1/boards/nebius/jobs");
+  const postedOf = new Map(jobs.map((j) => [String(j.id), j.first_published?.slice(0, 10)]));
   const byId = new Map(departments.map((d) => [d.id, d]));
   const chainOf = (d: GhDept) => {
     const names: string[] = [];
@@ -43,7 +47,8 @@ export async function collectJobs(): Promise<SourceResult> {
     const chain = chainOf(d);
     for (const j of d.jobs) {
       const location = j.location?.name ?? "Unknown";
-      open.set(String(j.id), { title: j.title, dept: chain, function: classify(chain, j.title), location, region: region(location) });
+      const posted = postedOf.get(String(j.id)) ?? date;
+      open.set(String(j.id), { title: j.title, dept: chain, function: classify(chain, j.title), location, region: region(location), posted });
     }
   }
   if (open.size < 20) throw new Error(`only ${open.size} open roles parsed`);
@@ -76,7 +81,7 @@ export async function collectJobs(): Promise<SourceResult> {
     const knownDcLocations = new Set(Object.values(prev).filter((j) => j.function === "Data center & power").map((j) => j.location));
     const newDc = [...open.entries()].filter(([id, j]) => !prev[id] && j.function === "Data center & power" && !knownDcLocations.has(j.location));
     for (const [id, j] of newDc) {
-      alerts.push({ id: `jobs-dcloc-${id}`, date, source: "jobs", severity: "medium", title: `Data-center hiring in a new location: ${j.location}`, detail: j.title, url: `https://careers.nebius.com/job?gh_jid=${id}` });
+      alerts.push({ id: `jobs-dcloc-${id}`, date, source: "jobs", severity: "medium", title: `Data-center hiring in a new location: ${j.location}`, detail: `${j.title} (posted ${j.posted})`, url: `https://careers.nebius.com/job?gh_jid=${id}` });
     }
     const weekAgo = Object.keys(daily).filter((d) => d <= new Date(Date.now() - 7 * 864e5).toISOString().slice(0, 10)).at(-1);
     const then = weekAgo ? daily[weekAgo]!.total : null;
@@ -85,6 +90,6 @@ export async function collectJobs(): Promise<SourceResult> {
       alerts.push({ id: `jobs-wow-${date}`, date, source: "jobs", severity: "info", title: `Open roles ${up ? "up" : "down"} ${Math.round(Math.abs(open.size / then - 1) * 100)}% in a week`, detail: `${then} → ${open.size}` });
     }
   }
-  const newToday = [...open.keys()].filter((id) => !prev[id]).length;
+  const newToday = [...open.keys()].filter((id) => !prev[id] && !bootstrap).length;
   return { summary: `${open.size} open roles (${bootstrap ? "first run" : `${newToday} new`})`, alerts };
 }

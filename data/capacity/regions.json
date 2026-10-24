@@ -1,0 +1,84 @@
+{
+ "lastChecked": "2026-10-24",
+ "regions": {
+  "eu-north1": {
+   "location": "Finland",
+   "public": true,
+   "firstSeen": "2026-10-24"
+  },
+  "eu-south1": {
+   "location": "Madrid, Spain",
+   "public": true,
+   "firstSeen": "2026-10-24"
+  },
+  "eu-west1": {
+   "location": "France",
+   "public": true,
+   "firstSeen": "2026-10-24"
+  },
+  "eu-west2": {
+   "location": "France",
+   "public": true,
+   "firstSeen": "2026-10-24"
+  },
+  "me-west1": {
+   "location": "Israel",
+   "public": true,
+   "firstSeen": "2026-10-24"
+  },
+  "us-central1": {
+   "location": "Kansas City, Missouri, US",
+   "public": true,
+   "firstSeen": "2026-10-24"
+  },
+  "us-north1": {
+   "location": "Woodbury, Minnesota, US",
+   "public": true,
+   "firstSeen": "2026-10-24"
+  },
+  "uk-south1": {
+   "location": "United Kingdom",
+   "public": true,
+   "firstSeen": "2026-10-24"
+  },
+  "uk-south2": {
+   "location": "United Kingdom",
+   "public": true,
+   "firstSeen": "2026-10-24"
+  },
+  "eu-north2": {
+   "location": "Iceland",
+   "public": false,
+   "firstSeen": "2026-10-24"
+  }
+ },
+ "platforms": {
+  "B300": [
+   "eu-west2",
+   "uk-south1",
+   "us-north1"
+  ],
+  "B200": [
+   "me-west1",
+   "us-central1"
+  ],
+  "H200": [
+   "eu-north1",
+   "eu-north2",
+   "eu-west1",
+   "us-central1"
+  ],
+  "H100": [
+   "eu-north1"
+  ],
+  "RTX PRO 6000": [
+   "eu-south1",
+   "uk-south2",
+   "us-central1"
+  ],
+  "L40S": [
+   "eu-north1"
+  ]
+ },
+ "changes": []
+}

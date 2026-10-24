@@ -3,6 +3,8 @@
 import { collectAtlas } from "./sources/atlas.ts";
 import { collectOnDemand, collectSpot } from "./sources/gpu.ts";
 import { collectJobs } from "./sources/jobs.ts";
+import { collectNews } from "./sources/news.ts";
+import { collectRegions } from "./sources/regions.ts";
 import { collectOpenRouter } from "./sources/openrouter.ts";
 import { collectOpenRouterMarket } from "./sources/openrouter-market.ts";
 import { collectSec } from "./sources/sec.ts";
@@ -15,6 +17,8 @@ import type { Alert, RunStatus, SourceId, SourceResult } from "./lib/types.ts";
 const SOURCES: [SourceId, () => Promise<SourceResult>][] = [
   ["gpu-ondemand", collectOnDemand],
   ["gpu-spot", collectSpot],
+  ["regions", collectRegions],
+  ["news", collectNews],
   ["openrouter", collectOpenRouter],
   ["openrouter-market", collectOpenRouterMarket],
   ["atlas", collectAtlas],
@@ -27,9 +31,11 @@ const only = process.argv.slice(2);
 const runs = await readJson<Record<string, RunStatus>>("meta/runs.json", {});
 const newAlerts: Alert[] = [];
 let failed = 0;
+let ran = 0;
 
 for (const [id, collect] of SOURCES) {
   if (only.length && !only.includes(id)) continue;
+  ran++;
   const started = Date.now();
   const prev = runs[id];
   try {
@@ -53,9 +59,9 @@ await writeJson("alerts.json", [...fresh, ...existing].slice(0, 1000));
 for (const a of fresh) console.log(`  ! [${a.severity}] ${a.title}`);
 
 await notify(fresh.filter((a) => a.severity !== "info"));
-await buildDashboard();
-console.log(`Done: ${SOURCES.length - failed} ok, ${failed} failed, ${fresh.length} new alerts.`);
-if (failed === SOURCES.length) process.exit(1);
+await buildDashboard({ persistNowcast: true });
+console.log(`Done: ${ran - failed} ok, ${failed} failed, ${fresh.length} new alerts.`);
+if (ran > 0 && failed === ran) process.exit(1);
 
 /** Optional push via ntfy.sh. Only runs when NTFY_TOPIC is set (e.g. as a GitHub Actions secret). */
 async function notify(alerts: Alert[]) {

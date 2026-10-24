@@ -24,6 +24,9 @@ npm run dev         # dashboard at http://localhost:5173
 | SEC EDGAR | 6-K headlines, Form 4 insider trades, Form 144 planned sales | Material news and insider behaviour |
 | Greenhouse job board | Open roles by function and region | Build-out signal; new data-center hiring locations alert |
 | Yahoo Finance chart API | NBIS daily close | Price context |
+| `docs.nebius.com/overview/regions` | Live regions and the GPU types in each | A new region or GPU type = capacity going live (high alert) |
+| Google News RSS | Data-center headlines, matched to sites and tagged risk/progress | Lawsuits, halts and power milestones show up in local news first |
+| `data/sites.json` | Site registry: status, MW, region, timing (hand-maintained) | The capacity pipeline that revenue follows |
 | `data/fundamentals.json` | Quarterly revenue, ARR, guidance (hand-maintained) | Update after each results 6-K; the dashboard flags when one is out |
 
 ## Daily updates
@@ -31,10 +34,14 @@ npm run dev         # dashboard at http://localhost:5173
 `.github/workflows/daily.yml` runs the collector at 06:17 UTC, commits the new data and deploys the dashboard to GitHub Pages. To enable it on a GitHub repo:
 
 1. Settings → Pages → Source: **GitHub Actions**.
-2. Optional: repository variable `SEC_USER_AGENT` (e.g. `nebius-signal you@example.com`); SEC asks automated clients to identify themselves.
+2. Secret `SEC_USER_AGENT` (e.g. `nebius-signal you@example.com`). SEC rejects automated requests without a real contact email; `gh secret set SEC_USER_AGENT --body "nebius-signal you@example.com"`.
 3. Optional: secret `NTFY_TOPIC` to get high and medium alerts as push notifications via [ntfy](https://ntfy.sh).
 
 Run it on demand from the Actions tab (**Daily collect and deploy → Run workflow**).
+
+## Quarter nowcast
+
+`collector/nowcast.ts` produces one revenue estimate per unreported quarter: consensus (or what guidance implies) tilted by the collected signals, each scored −1…+1 and weighted by importance × how much of the quarter its data covers. Every run records the estimate in `data/nowcast/history.json`; the scorecard grades it against reported results. The weights are priors until a few quarters have been graded. Keep `data/fundamentals.json` current: add each reported quarter (with the consensus it was measured against) and next quarter's consensus.
 
 ## Layout
 

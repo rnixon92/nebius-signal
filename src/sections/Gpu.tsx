@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { CartesianGrid, Line, LineChart, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import type { Dashboard } from "../../shared/dashboard.ts";
-import { CHART_MARGIN, TimeTip, axisX, axisY, cursor, grid } from "../components/chart.tsx";
-import { Card, CardTitle, ChartFrame, DataTable, ExtLink, Legend, Meter, Section, Segmented, Sparkline } from "../components/ui.tsx";
+import { TimeSeriesCard } from "../components/TimeSeriesCard.tsx";
+import { Card, CardTitle, DataTable, ExtLink, Meter, Section, Segmented, Sparkline } from "../components/ui.tsx";
 import { day, pct, relativeTime, usd } from "../lib/format.ts";
-import { clip, type Range } from "../lib/range.ts";
+import type { Range } from "../lib/range.ts";
 import { GPU_SLOT, type Palette } from "../lib/theme.ts";
 
 const familyColor = (p: Palette, fam: string) => p.series[GPU_SLOT[fam] ?? 7]!;
@@ -20,9 +19,8 @@ function tightness(ratio: number | null) {
 export function GpuSection({ d, p, range }: { d: Dashboard; p: Palette; range: Range }) {
   const [metric, setMetric] = useState<"ratio" | "price">("ratio");
   const g = d.gpu;
-  const rows = clip(metric === "ratio" ? g.ratioDaily : g.priceDaily, range);
+  const rows = metric === "ratio" ? g.ratioDaily : g.priceDaily;
   const fmt = metric === "ratio" ? (v: number) => pct(v) : (v: number) => usd(v, { cents: true });
-  const lastChange = g.changes.at(-1)?.date;
 
   return (
     <Section
@@ -36,9 +34,22 @@ export function GpuSection({ d, p, range }: { d: Dashboard; p: Palette; range: R
         </>
       }
     >
-      <ChartFrame
+      <TimeSeriesCard
         title={metric === "ratio" ? "Spot price as a share of on-demand" : "Cheapest spot price by GPU"}
         sub={metric === "ratio" ? "Daily mean across regions, against the list price in force that day" : "Lowest regional daily mean, $ per GPU-hour"}
+        p={p}
+        globalRange={range}
+        rows={rows}
+        series={g.families.map((f) => ({ key: f, label: f, color: familyColor(p, f) }))}
+        format={fmt}
+        change={metric === "ratio" ? "diff" : "pct"}
+        diffFormat={(v) => `${Math.round(v * 100)} pts`}
+        yDomain={metric === "ratio" ? [0, 1] : [0, "auto"]}
+        yTicks={metric === "ratio" ? [0, 0.25, 0.5, 0.75, 1] : undefined}
+        refY={metric === "ratio" ? [{ y: 1, label: "On-demand cap" }] : undefined}
+        events={d.events.filter((e) => e.kind === "price" || e.kind === "capacity" || e.kind === "earnings")}
+        csvName={metric === "ratio" ? "nebius-spot-vs-list" : "nebius-spot-prices"}
+        height={300}
         controls={
           <Segmented
             label="Spot metric"
@@ -50,31 +61,7 @@ export function GpuSection({ d, p, range }: { d: Dashboard; p: Palette; range: R
             ]}
           />
         }
-        legend={<Legend items={g.families.map((f) => ({ label: f, color: familyColor(p, f) }))} />}
-        chart={
-          <div className="h-72">
-            <ResponsiveContainer>
-              <LineChart data={rows} margin={CHART_MARGIN}>
-                <CartesianGrid {...grid(p)} />
-                <XAxis {...axisX(p)} />
-                <YAxis {...axisY(p, fmt)} domain={metric === "ratio" ? [0, 1] : [0, "auto"]} ticks={metric === "ratio" ? [0, 0.25, 0.5, 0.75, 1] : undefined} />
-                {metric === "ratio" && <ReferenceLine y={1} stroke={p.rule} label={{ value: "On-demand cap", position: "insideTopRight", fill: p.ink3, fontSize: 11 }} />}
-                {lastChange && rows.some((r) => r.date === lastChange) && (
-                  <ReferenceLine x={lastChange} stroke={p.rule} label={{ value: "List price change", position: "insideTopLeft", fill: p.ink3, fontSize: 11 }} />
-                )}
-                <Tooltip cursor={cursor(p)} content={(t) => <TimeTip {...(t as object)} format={(v) => fmt(v)} />} />
-                {g.families.map((f) => (
-                  <Line key={f} dataKey={f} name={f} type="monotone" stroke={familyColor(p, f)} strokeWidth={2} dot={false} activeDot={{ r: 4, strokeWidth: 2, stroke: p.surface }} connectNulls isAnimationActive={false} />
-                ))}
-              </LineChart>
-            </ResponsiveContainer>
-          </div>
-        }
-        rows={rows}
-        columns={[
-          { key: "date", label: "Date", render: (r) => day(r.date, true) },
-          ...g.families.map((f) => ({ key: f, label: f, align: "right" as const, render: (r: (typeof rows)[number]) => (typeof r[f] === "number" ? fmt(r[f] as number) : "—") })),
-        ]}
+        note="Change shown is from the first to the last day in view. Click a legend item to hide or show it."
       />
 
       <Card>
@@ -133,7 +120,7 @@ export function GpuSection({ d, p, range }: { d: Dashboard; p: Palette; range: R
         />
       </Card>
 
-      <div className="grid gap-4 lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
         <Card>
           <CardTitle title="On-demand rate card" sub={<>Published list prices, per GPU-hour. <ExtLink href="https://nebius.com/prices">nebius.com/prices</ExtLink></>} />
           <DataTable

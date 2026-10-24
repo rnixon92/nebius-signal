@@ -9,10 +9,85 @@ export type SourceHealth = { id: string; label: string; url: string; ok: boolean
 /** $ per million tokens. `nebius` = Nebius's own OpenRouter endpoint price; `catalog` = OpenRouter list price (endpoint no longer listed). */
 export type ModelPricing = { id: string; name: string; input: number; output: number; cacheRead: number | null; priceSource: "nebius" | "catalog" };
 
+export type NowcastSignal = {
+  id: string;
+  label: string;
+  /** Human-readable reading, e.g. "72% average". */
+  value: string;
+  /** −1 (points to a miss) … +1 (points to a beat). */
+  score: number;
+  /** Prior importance (uncalibrated). */
+  weight: number;
+  /** Share of the quarter the data covers, 0–1. Effective weight = weight × coverage. */
+  coverage: number;
+  /** This signal's share of the tilt, as a fraction of the anchor. */
+  contribution: number;
+  note: string;
+};
+
+export type Nowcast = {
+  quarter: string;
+  end: string;
+  status: "ended" | "in progress";
+  expectedReport: string | null;
+  reportDateConfirmed: boolean;
+  anchor: { kind: "consensus" | "guidance-implied"; value: number; range: [number, number] | null; source: string | null };
+  /** USD millions. */
+  estimate: number;
+  low: number;
+  high: number;
+  tilt: number;
+  lean: "beat" | "miss" | "in line" | "no consensus";
+  /** Effective weight ÷ total weight: how much of the model has data behind it. */
+  coverage: number;
+  priorFromLastSurprise: number;
+  signals: NowcastSignal[];
+  /** Mechanical bounds from the ARR path, USD millions. */
+  context: { floor: number | null; pathLow: number | null; pathMid: number | null; pathHigh: number | null };
+};
+
+export type ScorecardRow = { quarter: string; consensus: number; actual: number; surprise: number; nowcast: number | null; correctDirection: boolean | null };
+
+export type SiteRow = {
+  id: string;
+  name: string;
+  country: string;
+  model: string;
+  mw: number | null;
+  mwNote?: string;
+  status: "live" | "ramping" | "construction" | "planned" | "contracted" | "unconfirmed";
+  expected?: string;
+  region: string | null;
+  note?: string;
+  sources: string[];
+  /** GPU families Nebius's docs list in this site's region. */
+  platforms: string[];
+  spotPools: number;
+  dcRolesOpen: number;
+  dcRolesPosted90d: number;
+  news90d: number;
+  risk90d: number;
+  progress90d: number;
+  latest: { title: string; date: string; url: string; tag: "risk" | "progress" | null } | null;
+};
+
+/** Dated annotation for time-series charts. */
+export type ChartEvent = { date: string; label: string; kind: "earnings" | "price" | "capacity" | "financing" | "site" };
+
 export type Dashboard = {
   generatedAt: string;
   sources: SourceHealth[];
   alerts: DashAlert[];
+  events: ChartEvent[];
+
+  nowcast: { quarters: Nowcast[]; scorecard: ScorecardRow[]; realization: number | null; history: { date: string; [quarter: string]: number | string }[] };
+
+  sites: {
+    rows: SiteRow[];
+    mwByStatus: { status: SiteRow["status"]; mw: number; sites: number }[];
+    news: { title: string; publisher: string; date: string; url: string; sites: string[]; tag: "risk" | "progress" | null }[];
+    regionChanges: { date: string; kind: string; region: string; platform?: string }[];
+  };
 
   stock: { series: [string, number][]; last: { date: string; close: number; chg1d: number | null; chg30d: number | null } | null };
 
@@ -59,7 +134,9 @@ export type Dashboard = {
     byFunction: { name: string; count: number }[];
     byRegion: { name: string; count: number }[];
     new7d: number;
-    dcRoles: { title: string; location: string; firstSeen: string; url: string }[];
+    dcRoles: { title: string; location: string; posted: string; url: string }[];
+    /** Open roles by posting month and function (survivorship-biased: closed roles are invisible). */
+    postedByMonth: ({ date: string } & Record<string, number | string>)[];
   };
 
   sec: {

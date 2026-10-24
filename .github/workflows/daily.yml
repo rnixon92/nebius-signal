@@ -32,8 +32,8 @@ jobs:
       - name: Collect all sources
         run: npm run collect
         env:
-          # SEC rejects automated requests without a contact email; the GitHub no-reply address identifies the repo owner without exposing a real inbox.
-          SEC_USER_AGENT: ${{ vars.SEC_USER_AGENT || format('nebius-signal {0}@users.noreply.github.com', github.repository_owner) }}
+          # SEC rejects automated requests without a real contact email. Kept as a secret so it never appears in logs or the public repo.
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT || format('nebius-signal {0}@users.noreply.github.com', github.repository_owner) }}
           NTFY_TOPIC: ${{ secrets.NTFY_TOPIC }}
       - name: Commit new data
         run: |

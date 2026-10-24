@@ -1,10 +1,9 @@
 import { useMemo, useState } from "react";
-import { Bar, BarChart, CartesianGrid, Line, LineChart, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import type { Dashboard } from "../../shared/dashboard.ts";
-import { CHART_MARGIN, TimeTip, axisX, axisY, cursor, grid } from "../components/chart.tsx";
-import { Card, CardTitle, ChartFrame, DataTable, ExtLink, Legend, Pill, Section } from "../components/ui.tsx";
-import { day, modelLabel, pct, tokens, usd, usdM } from "../lib/format.ts";
-import { clip, type Range } from "../lib/range.ts";
+import { TimeSeriesCard } from "../components/TimeSeriesCard.tsx";
+import { Card, CardTitle, DataTable, ExtLink, Pill, Section } from "../components/ui.tsx";
+import { modelLabel, pct, tokens, usd, usdM } from "../lib/format.ts";
+import type { Range } from "../lib/range.ts";
 import { dayRevenue, type RevenueAssumptions } from "../lib/revenue.ts";
 import type { Palette } from "../lib/theme.ts";
 
@@ -19,7 +18,7 @@ export function TokensSection({ d, p, range }: { d: Dashboard; p: Palette; range
   // Stacked series: top models by recent volume, the rest folded into "Other" (never a 7th+ hue).
   const stacked = useMemo(
     () =>
-      clip(t.daily, range).map((day) => {
+      t.daily.map((day) => {
         const row: Record<string, number | string | boolean> = { date: day.date, partial: day.partial, total: day.total };
         let other = 0;
         for (const [m, v] of Object.entries(day.byModel)) {
@@ -29,15 +28,15 @@ export function TokensSection({ d, p, range }: { d: Dashboard; p: Palette; range
         row[OTHER] = other;
         return row as { date: string; partial: boolean; total: number } & Record<string, number>;
       }),
-    [t, range],
+    [t],
   );
-  const series = [...t.topModels, OTHER];
+  const series = [...t.topModels, OTHER].map((s) => ({ key: s, label: name(s), color: color(s) }));
 
   // Revenue: trailing 7 complete days, recomputed live from the assumptions.
   const revenue = useMemo(() => {
     const complete = t.daily.filter((x) => !x.partial);
     const perDay = complete.map((x) => ({ date: x.date, rev: dayRevenue(x.byModel, t.pricing, a) }));
-    return perDay.map((x, i) => ({ date: x.date, week: i >= 6 ? perDay.slice(i - 6, i + 1).reduce((s, y) => s + y.rev, 0) : null })).filter((x): x is { date: string; week: number } => x.week !== null);
+    return perDay.flatMap((x, i) => (i >= 6 ? [{ date: x.date, week: perDay.slice(i - 6, i + 1).reduce((s, y) => s + y.rev, 0) }] : []));
   }, [t, a]);
   const week = revenue.at(-1)?.week ?? 0;
   const lastQ = d.fundamentals.quarters.at(-1);
@@ -52,8 +51,8 @@ export function TokensSection({ d, p, range }: { d: Dashboard; p: Palette; range
       .map(([id, tok]) => ({ id, tok, share: sum ? tok / sum : 0, price: t.pricing[id], rev: dayRevenue({ [id]: tok }, t.pricing, a) }));
   }, [t, a]);
 
-  const market = clip(t.market, range);
   const maxPeer = Math.max(...t.peers.map((x) => x.week), 1);
+  const tfEvents = d.events.filter((e) => e.kind === "earnings");
 
   return (
     <Section
@@ -62,56 +61,31 @@ export function TokensSection({ d, p, range }: { d: Dashboard; p: Palette; range
       title="Token Factory traffic on OpenRouter"
       intro={
         <>
-          OpenRouter publishes daily token counts per provider and model. It is the only public window into Token Factory demand, but it is a small one: even at today's
-          volumes it is worth roughly {usd(week * 52)} a year, against {lastQ?.arr ? usdM(lastQ.arr) : "billions"} of reported company ARR. Read it as a
-          competitive signal (which models Nebius wins, how it ranks), not a revenue driver.
+          OpenRouter publishes daily token counts per provider and model. It is the only public window into Token Factory demand, but it is a small one: at today's volumes it
+          is worth roughly {usd(week * 52)} a year, against {lastQ?.arr ? usdM(lastQ.arr) : "billions"} of reported company ARR. Read it as a competitive signal (which models
+          Nebius wins, how it ranks), not a revenue driver.
         </>
       }
     >
-      <ChartFrame
+      <TimeSeriesCard
         title="Daily tokens by model"
         sub="Nebius's OpenRouter traffic. Today's bar is a partial day, shown lighter."
-        legend={<Legend items={series.map((s) => ({ label: name(s), color: color(s), shape: "rect" }))} />}
-        chart={
-          <div className="h-72">
-            <ResponsiveContainer>
-              <BarChart data={stacked} margin={CHART_MARGIN} barCategoryGap="12%">
-                <CartesianGrid {...grid(p)} />
-                <XAxis {...axisX(p)} />
-                <YAxis {...axisY(p, (v) => tokens(v))} />
-                <Tooltip
-                  cursor={{ fill: p.grid, opacity: 0.5 }}
-                  content={(tp) => <TimeTip {...(tp as object)} nameOf={name} format={(v) => tokens(v, 1)} footer={(r) => `${tokens(r.total as number, 1)} total${r.partial ? " · partial day" : ""}`} />}
-                />
-                {series.map((s) => (
-                  <Bar
-                    key={s}
-                    dataKey={s}
-                    stackId="t"
-                    fill={color(s)}
-                    maxBarSize={24}
-                    isAnimationActive={false}
-                    // Custom shape: a 1px surface stroke keeps segments visually separate, and the partial day is dimmed.
-                    shape={(props: unknown) => {
-                      const b = props as { x: number; y: number; width: number; height: number; fill: string; payload: { partial: boolean } };
-                      if (!(b.height > 0) || !(b.width > 0)) return <g />;
-                      return <rect x={b.x} y={b.y} width={b.width} height={b.height} fill={b.fill} opacity={b.payload.partial ? 0.45 : 1} stroke={p.surface} strokeWidth={1} />;
-                    }}
-                  />
-                ))}
-              </BarChart>
-            </ResponsiveContainer>
-          </div>
-        }
+        p={p}
+        globalRange={range}
         rows={stacked}
-        columns={[
-          { key: "date", label: "Date", render: (r) => `${day(r.date, true)}${r.partial ? " (partial)" : ""}` },
-          { key: "total", label: "Total", align: "right", render: (r) => tokens(r.total, 1) },
-          ...series.map((s) => ({ key: s, label: name(s), align: "right" as const, render: (r: (typeof stacked)[number]) => (r[s] ? tokens(r[s], 1) : "—") })),
-        ]}
+        series={series}
+        kind="stacked"
+        format={(v) => tokens(v, 1)}
+        axisFormat={(v) => tokens(v)}
+        change="none"
+        events={tfEvents}
+        dimRow={(r) => r.partial}
+        tooltipFooter={(r) => `${tokens(r.total, 1)} total${r.partial ? " · partial day" : ""}`}
+        csvName="nebius-openrouter-daily-tokens"
+        height={300}
       />
 
-      <div className="grid gap-4 lg:grid-cols-5">
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-5">
         <Card className="lg:col-span-2">
           <CardTitle title="Revenue estimate" sub="Token counts × OpenRouter list prices. Adjust the two unknowns." />
           <div className="flex flex-col gap-4">
@@ -130,53 +104,39 @@ export function TokensSection({ d, p, range }: { d: Dashboard; p: Palette; range
             {lastQ && <p className="text-xs text-ink-3">That is {pct((week * 13) / (lastQ.revenue * 1e6), { digits: 2 })} of Nebius's last reported quarterly revenue.</p>}
           </div>
         </Card>
-        <Card className="lg:col-span-3">
-          <CardTitle title="Estimated revenue, trailing 7 days" sub="Updates with the assumptions on the left" />
-          <div className="h-60">
-            <ResponsiveContainer>
-              <LineChart data={clip(revenue, range)} margin={CHART_MARGIN}>
-                <CartesianGrid {...grid(p)} />
-                <XAxis {...axisX(p)} />
-                <YAxis {...axisY(p, (v) => usd(v))} />
-                <Tooltip cursor={cursor(p)} content={(tp) => <TimeTip {...(tp as object)} nameOf={() => "7-day revenue"} format={(v) => usd(v)} />} />
-                <Line dataKey="week" stroke={p.series[0]} strokeWidth={2} dot={false} activeDot={{ r: 4, strokeWidth: 2, stroke: p.surface }} isAnimationActive={false} />
-              </LineChart>
-            </ResponsiveContainer>
-          </div>
-        </Card>
+        <div className="lg:col-span-3">
+          <TimeSeriesCard
+            title="Estimated revenue, trailing 7 days"
+            sub="Updates with the assumptions on the left"
+            p={p}
+            globalRange={range}
+            rows={revenue}
+            series={[{ key: "week", label: "7-day revenue", color: p.series[0]! }]}
+            format={(v) => usd(v)}
+            csvName="nebius-openrouter-revenue-estimate"
+            height={220}
+          />
+        </div>
       </div>
 
-      <div className="grid gap-4 lg:grid-cols-2">
-        <ChartFrame
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
+        <TimeSeriesCard
           title="Nebius share of all OpenRouter tokens"
           sub={
             <>
-              Weekly, across ~{market.at(-1)?.providers ?? 96} providers. Market totals from <ExtLink href="https://jimmyresearch.com/openrouter/">jimmyresearch</ExtLink>.
+              Weekly, across ~{t.market.at(-1)?.providers ?? 96} providers. Market totals from <ExtLink href="https://jimmyresearch.com/openrouter/">jimmyresearch</ExtLink>.
             </>
           }
-          chart={
-            <div className="h-60">
-              <ResponsiveContainer>
-                <LineChart data={market} margin={CHART_MARGIN}>
-                  <CartesianGrid {...grid(p)} />
-                  <XAxis {...axisX(p)} />
-                  <YAxis {...axisY(p, (v) => pct(v, { digits: 2 }))} />
-                  <Tooltip
-                    cursor={cursor(p)}
-                    content={(tp) => <TimeTip {...(tp as object)} nameOf={() => "Share"} format={(v) => pct(v, { digits: 3 })} footer={(r) => `Rank ${r.rank} of ${r.providers} · ${tokens(r.nebius as number)} of ${tokens(r.total as number)}`} />}
-                  />
-                  <Line dataKey="share" stroke={p.series[0]} strokeWidth={2} dot={false} activeDot={{ r: 4, strokeWidth: 2, stroke: p.surface }} isAnimationActive={false} />
-                </LineChart>
-              </ResponsiveContainer>
-            </div>
-          }
-          rows={market}
-          columns={[
-            { key: "date", label: "Week to", render: (r) => day(r.date, true) },
-            { key: "neb", label: "Nebius", align: "right", render: (r) => tokens(r.nebius) },
-            { key: "share", label: "Share", align: "right", render: (r) => pct(r.share, { digits: 3 }) },
-            { key: "rank", label: "Rank", align: "right", render: (r) => `${r.rank ?? "—"} / ${r.providers}` },
-          ]}
+          p={p}
+          globalRange={range}
+          rows={t.market}
+          series={[{ key: "share", label: "Share", color: p.series[0]! }]}
+          format={(v) => pct(v, { digits: 2 })}
+          change="diff"
+          diffFormat={(v) => `${(v * 100).toFixed(2)} pts`}
+          tooltipFooter={(r) => `Rank ${r.rank} of ${r.providers} · ${tokens(r.nebius)} of ${tokens(r.total)}`}
+          csvName="nebius-openrouter-share"
+          height={220}
         />
         <Card>
           <CardTitle title="Against other open-model hosts" sub="OpenRouter tokens, last 7 complete days" />

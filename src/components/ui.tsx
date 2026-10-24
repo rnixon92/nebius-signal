@@ -174,23 +174,6 @@ export function ChartFrame<R>({ title, sub, controls, chart, rows, columns, lege
   );
 }
 
-export function Legend({ items }: { items: { label: string; color: string; shape?: "line" | "rect" }[] }) {
-  return (
-    <ul className="flex flex-wrap gap-x-4 gap-y-1.5" aria-label="Legend">
-      {items.map((it) => (
-        <li key={it.label} className="flex items-center gap-1.5 text-xs text-ink-2">
-          {it.shape === "rect" ? (
-            <span aria-hidden className="h-2.5 w-2.5 rounded-[3px]" style={{ background: it.color }} />
-          ) : (
-            <span aria-hidden className="h-0.5 w-3.5 rounded-full" style={{ background: it.color }} />
-          )}
-          {it.label}
-        </li>
-      ))}
-    </ul>
-  );
-}
-
 type TooltipRow = { name: string; value: string; color?: string };
 
 /** Tooltip body: values lead, series names follow, line keys instead of boxes. */

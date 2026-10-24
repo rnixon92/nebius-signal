@@ -2,16 +2,20 @@ import { useEffect, useState } from "react";
 import type { Dashboard } from "../shared/dashboard.ts";
 import { Segmented } from "./components/ui.tsx";
 import { relativeTime } from "./lib/format.ts";
-import { RANGE_OPTIONS, type Range } from "./lib/range.ts";
+import { RANGES, readStoredRange, type Range } from "./lib/range.ts";
 import { useTheme, type ThemePref } from "./lib/theme.ts";
 import { CustomersSection, FilingsSection, FinancialsSection, HiringSection, SourcesSection } from "./sections/Company.tsx";
+import { DataCentersSection } from "./sections/DataCenters.tsx";
 import { GpuSection } from "./sections/Gpu.tsx";
-import { Alerts, KpiRow } from "./sections/Overview.tsx";
+import { NowcastSection } from "./sections/Nowcast.tsx";
+import { Alerts, KpiRow, StockChart } from "./sections/Overview.tsx";
 import { TokensSection } from "./sections/Tokens.tsx";
 
 const NAV = [
   { id: "overview", label: "Overview" },
+  { id: "nowcast", label: "Nowcast" },
   { id: "gpu", label: "GPU pricing" },
+  { id: "datacenters", label: "Data centers" },
   { id: "tokens", label: "Token Factory" },
   { id: "customers", label: "Customers" },
   { id: "hiring", label: "Hiring" },
@@ -20,19 +24,10 @@ const NAV = [
   { id: "sources", label: "Sources" },
 ];
 
-function readRange(): Range {
-  try {
-    const v = localStorage.getItem("range");
-    return v === "30d" || v === "90d" || v === "all" ? v : "90d";
-  } catch {
-    return "90d";
-  }
-}
-
 export default function App() {
   const [data, setData] = useState<Dashboard | null>(null);
   const [error, setError] = useState<string | null>(null);
-  const [range, setRange] = useState<Range>(readRange);
+  const [range, setRange] = useState<Range>(readStoredRange);
   const { pref, setPref, palette } = useTheme();
 
   useEffect(() => {
@@ -119,19 +114,24 @@ export default function App() {
                   </p>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-xs text-ink-3">Time range</span>
-                  <Segmented label="Time range for charts" value={range} onChange={changeRange} options={RANGE_OPTIONS} />
+                  <span className="text-xs text-ink-3">Default range</span>
+                  <Segmented label="Default time range for all charts" value={range} onChange={changeRange} options={RANGES.map((r) => ({ value: r, label: r }))} />
                 </div>
               </div>
               <div className="flex flex-col gap-4">
                 <KpiRow d={data} p={palette} />
-                <Alerts d={data} />
+                <div className="grid grid-cols-1 gap-4 xl:grid-cols-2">
+                  <StockChart d={data} p={palette} range={range} />
+                  <Alerts d={data} />
+                </div>
               </div>
             </section>
+            <NowcastSection d={data} p={palette} range={range} />
             <GpuSection d={data} p={palette} range={range} />
+            <DataCentersSection d={data} />
             <TokensSection d={data} p={palette} range={range} />
-            <CustomersSection d={data} p={palette} />
-            <HiringSection d={data} p={palette} />
+            <CustomersSection d={data} p={palette} range={range} />
+            <HiringSection d={data} p={palette} range={range} />
             <FilingsSection d={data} />
             <FinancialsSection d={data} p={palette} />
             <SourcesSection d={data} />

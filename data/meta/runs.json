@@ -1,32 +1,32 @@
 {
  "gpu-ondemand": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:36:22.633Z",
-  "lastSuccess": "2026-10-24T04:36:22.633Z",
+  "lastAttempt": "2026-10-24T04:56:03.074Z",
+  "lastSuccess": "2026-10-24T04:56:03.074Z",
   "summary": "9 GPU rows (7 with list prices)"
  },
  "gpu-spot": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:36:23.490Z",
-  "lastSuccess": "2026-10-24T04:36:23.490Z",
+  "lastAttempt": "2026-10-24T04:56:05.571Z",
+  "lastSuccess": "2026-10-24T04:56:05.571Z",
   "summary": "12 SKUs listed; 12 series, 8616 hourly points"
  },
  "openrouter": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:36:44.056Z",
-  "lastSuccess": "2026-10-24T04:36:44.056Z",
+  "lastAttempt": "2026-10-24T04:56:32.843Z",
+  "lastSuccess": "2026-10-24T04:56:32.843Z",
   "summary": "Nebius 90 days of history; 11/11 peers"
  },
  "openrouter-market": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:36:44.218Z",
-  "lastSuccess": "2026-10-24T04:36:44.218Z",
+  "lastAttempt": "2026-10-24T04:56:32.967Z",
+  "lastSuccess": "2026-10-24T04:56:32.967Z",
   "summary": "231 snapshots to 2026-10-23; Nebius rank 55 of 96"
  },
  "atlas": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:36:45.749Z",
-  "lastSuccess": "2026-10-24T04:36:45.749Z",
+  "lastAttempt": "2026-10-24T04:56:36.027Z",
+  "lastSuccess": "2026-10-24T04:56:36.027Z",
   "summary": "363 customers (0 new since last run)"
  },
  "sec": {
@@ -38,14 +38,26 @@
  },
  "jobs": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:36:49.042Z",
-  "lastSuccess": "2026-10-24T04:36:49.042Z",
+  "lastAttempt": "2026-10-24T04:56:36.468Z",
+  "lastSuccess": "2026-10-24T04:56:36.468Z",
   "summary": "384 open roles (0 new)"
  },
  "stock": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:36:49.132Z",
-  "lastSuccess": "2026-10-24T04:36:49.132Z",
+  "lastAttempt": "2026-10-24T04:56:36.928Z",
+  "lastSuccess": "2026-10-24T04:56:36.928Z",
   "summary": "501 closes, last 2026-10-23 $158.74"
+ },
+ "regions": {
+  "ok": true,
+  "lastAttempt": "2026-10-24T04:56:06.187Z",
+  "lastSuccess": "2026-10-24T04:56:06.187Z",
+  "summary": "10 regions, 6 GPU platforms"
+ },
+ "news": {
+  "ok": true,
+  "lastAttempt": "2026-10-24T04:56:09.933Z",
+  "lastSuccess": "2026-10-24T04:56:09.933Z",
+  "summary": "363 headlines fetched; 293 kept, 116 matched to sites"
  }
 }
