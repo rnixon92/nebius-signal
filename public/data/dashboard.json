@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-24T06:07:17.722Z",
+ "generatedAt": "2026-10-24T09:11:34.263Z",
  "sources": [
   {
    "id": "gpu-ondemand",
@@ -685,6 +685,11 @@
     "date": "2026-08-12",
     "text": "All capacity tranches delivered to Microsoft, including two in the past month. Plan to deploy more than 1 GW per year starting 2027.",
     "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm"
+   },
+   {
+    "date": "2026-08-12",
+    "text": "Short-term capacity sells at $40–50M per MW per year versus $20–25M for 1–3 year deals; the first capacity auction cleared 15% above the previous top Blackwell price. Customer prepayments expected to exceed $9B in 2026. A Vineland site hearing was adjourned without a vote.",
+    "source": "https://www.fool.com/earnings/call-transcripts/2026/08/19/nebius-nbis-q2-2026-earnings-call-transcript/"
    }
   ],
   "contracts": [
@@ -744,6 +749,34 @@
    1000
   ],
   "spotPools": 12,
+  "yieldTiers": [
+   {
+    "label": "2026 base fleet",
+    "low": 12,
+    "high": 12,
+    "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm"
+   },
+   {
+    "label": "Mid-term deals (1–3 years), Q2 2026",
+    "low": 20,
+    "high": 25,
+    "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm"
+   },
+   {
+    "label": "Short-term capacity (up to ~6 months), Q3 2026",
+    "low": 40,
+    "high": 50,
+    "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm",
+    "note": "Letter chart: >$40M; call: $40-50M"
+   }
+  ],
+  "backlog": {
+   "value": 40000,
+   "asOf": "2026-08-12",
+   "note": "About $40B of committed customer backlog, cited on the Q2 2026 call (from an AI-assisted transcript; not stated in the letter).",
+   "source": "https://www.fool.com/earnings/call-transcripts/2026/08/19/nebius-nbis-q2-2026-earnings-call-transcript/"
+  },
+  "latestSecuredNote": "Last disclosed secured figure. The Aug 2026 letter raised the year-end target to 5 GW (\"we continue to secure power ahead of our expectations\") without updating the secured-to-date number.",
   "extracted": [
    {
     "filed": "2026-08-12",

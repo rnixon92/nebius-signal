@@ -112,6 +112,9 @@ type PowerFile = {
   yield?: { newDealsPerMwYear: [number, number] };
   statements: Dashboard["power"]["statements"];
   contracts: Omit<Dashboard["power"]["contracts"][number], "annual">[];
+  yieldTiers?: Dashboard["power"]["yieldTiers"];
+  backlog?: Dashboard["power"]["backlog"];
+  latestSecuredNote?: string;
 };
 
 async function power(): Promise<Dashboard["power"]> {
@@ -190,6 +193,9 @@ async function power(): Promise<Dashboard["power"]> {
     impliedActiveAtGuidance,
     connectedTarget: connectedTarget ? [connectedTarget.low!, connectedTarget.high!] : null,
     spotPools: Object.keys(current?.prices ?? {}).length,
+    yieldTiers: f.yieldTiers ?? [],
+    backlog: f.backlog ?? null,
+    latestSecuredNote: f.latestSecuredNote ?? null,
     extracted: filings
       .filter((x) => x.powerMentions?.length)
       .sort((a, b) => b.filed.localeCompare(a.filed))

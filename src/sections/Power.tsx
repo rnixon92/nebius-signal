@@ -135,7 +135,13 @@ export function PowerPanel({ d, p }: { d: Dashboard; p: Palette }) {
         <Stat
           label="Secured power (contracted)"
           value={lastContracted ? `>${mw(lastContracted.mw)}` : "—"}
-          note={lastContracted ? `As of ${day(lastContracted.date, true)} · target ${contractedTarget ? mw(contractedTarget.mw) : "—"} by year-end` : undefined}
+          note={
+            lastContracted ? (
+              <span title={pw.latestSecuredNote ?? undefined}>
+                Last disclosed {day(lastContracted.date, true)} · year-end target raised to {contractedTarget ? mw(contractedTarget.mw) : "—"} in {contractedTarget ? day(contractedTarget.asOf, true) : "—"}, without a new secured figure
+              </span>
+            ) : undefined
+          }
         />
         <Stat label="Connected power target" value={pw.connectedTarget ? `${mw(pw.connectedTarget[0])}–${mw(pw.connectedTarget[1])}` : "—"} note="Built and equipped, by year-end 2026" />
         <Stat
@@ -249,8 +255,36 @@ export function PowerPanel({ d, p }: { d: Dashboard; p: Palette }) {
             </p>
             <p className="text-sm leading-relaxed text-ink-2">
               On the capacity that is live, Nebius said it ran <span className="font-semibold text-ink">sold out at peak utilization</span> in Q4 2025, so the share selling at spot or
-              on-demand prices is a thin residual.
+              short-term prices is a thin residual, but a lucrative one: short-term capacity earns about twice the mid-term rate.
             </p>
+            {pw.yieldTiers.length > 0 && (
+              <div>
+                <p className="mb-1.5 text-[13px] font-medium text-ink-2">Revenue per MW per year, by contract type</p>
+                <ul className="flex flex-col gap-1.5">
+                  {pw.yieldTiers.map((t) => {
+                    const max = Math.max(...pw.yieldTiers.map((x) => x.high));
+                    return (
+                      <li key={t.label} className="grid grid-cols-[minmax(0,1fr)_7rem_4.5rem] items-center gap-2 text-[13px]" title={t.note}>
+                        <span className="truncate text-ink-2">{t.label}</span>
+                        <span className="h-2 rounded-full bg-surface-2" aria-hidden>
+                          <span className="block h-full rounded-r-[4px] rounded-l-full" style={{ width: `${(t.high / max) * 100}%`, background: p.accent }} />
+                        </span>
+                        <span className="tnum text-right font-semibold">{t.low === t.high ? `$${t.low}M` : `$${t.low}–${t.high}M`}</span>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            )}
+            {pw.backlog && (
+              <p className="text-sm leading-relaxed text-ink-2">
+                Total committed customer backlog: <span className="font-semibold text-ink">about {usdM(pw.backlog.value)}</span> (multi-year, {day(pw.backlog.asOf, true)}), well above the{" "}
+                {usdM(pw.contracts.reduce((a, c) => a + c.tcv, 0))} in the contracts listed here.{" "}
+                <ExtLink href={pw.backlog.source} className="text-xs text-ink-3">
+                  call transcript
+                </ExtLink>
+              </p>
+            )}
             <p className="text-sm leading-relaxed text-ink-2">
               That residual is visible directly: <span className="font-semibold text-ink">{pw.spotPools} GPU pools</span> are offering spot capacity right now.{" "}
               <a href={href("gpu")} className="font-medium text-accent hover:underline">
@@ -258,8 +292,8 @@ export function PowerPanel({ d, p }: { d: Dashboard; p: Palette }) {
               </a>
             </p>
             <p className="text-xs text-ink-3">
-              Annual values assume contract value spread evenly over the stated term. Revenue per MW was about {pw.arrPerActiveMw ? usdM(pw.arrPerActiveMw.value) : "—"} at end-2025 versus{" "}
-              {pw.newDealYield ? `$${pw.newDealYield[0]}–${pw.newDealYield[1]}M` : "—"} on the newest deals, so each new MW earns roughly three times the old fleet.
+              Annual values assume contract value spread evenly over the stated term. Per-MW rates are from the Q2 2026 letter; new mid-term deals earn roughly twice the 2026 base
+              fleet.
             </p>
           </div>
           <DataTable
@@ -280,8 +314,8 @@ export function PowerPanel({ d, p }: { d: Dashboard; p: Palette }) {
         <Card>
           <CardTitle title="What Nebius has said about capacity" />
           <ul className="flex flex-col gap-3">
-            {[...pw.statements].reverse().map((s) => (
-              <li key={s.date} className="flex gap-3 text-sm">
+            {[...pw.statements].reverse().map((s, i) => (
+              <li key={`${s.date}-${i}`} className="flex gap-3 text-sm">
                 <span className="tnum w-24 shrink-0 text-xs text-ink-3">{day(s.date, true)}</span>
                 <span className="text-ink-2">
                   {s.text}{" "}

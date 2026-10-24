@@ -95,6 +95,11 @@ export type PowerData = {
   connectedTarget: [number, number] | null;
   /** Live spot pools right now: the capacity visibly available outside committed contracts. */
   spotPools: number;
+  /** Annual revenue per MW by contract type, USD millions. */
+  yieldTiers: { label: string; low: number; high: number; note?: string; source: string }[];
+  /** Total committed customer backlog (multi-year), USD millions. */
+  backlog: { value: number; asOf: string; note: string; source: string } | null;
+  latestSecuredNote: string | null;
   /** Power statements auto-extracted from the newest shareholder letters, for review. */
   extracted: { filed: string; url: string; sentences: string[] }[];
   /** Satellite-observed IT power (Epoch AI), carried forward between observations; one column per site plus `total`. */
