@@ -133,7 +133,7 @@ function Page({ page, d, range, p }: { page: PageId; d: Dashboard; range: Range;
     case "gpu":
       return <GpuSection d={d} p={p} range={range} />;
     case "datacenters":
-      return <DataCentersSection d={d} />;
+      return <DataCentersSection d={d} p={p} />;
     case "tokens":
       return <TokensSection d={d} p={p} range={range} />;
     case "customers":

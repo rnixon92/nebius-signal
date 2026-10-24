@@ -2,6 +2,8 @@ import { useState } from "react";
 import type { Dashboard, SiteRow } from "../../shared/dashboard.ts";
 import { Card, CardTitle, DataTable, ExtLink, Pill, Section, Segmented, Stat } from "../components/ui.tsx";
 import { day } from "../lib/format.ts";
+import type { Palette } from "../lib/theme.ts";
+import { PowerPanel } from "./Power.tsx";
 
 const STATUS: Record<SiteRow["status"], { label: string; cls: string }> = {
   live: { label: "Live", cls: "text-good bg-[color-mix(in_srgb,var(--good)_12%,transparent)]" },
@@ -27,7 +29,7 @@ function Tag({ tag }: { tag: "risk" | "progress" | null }) {
   );
 }
 
-export function DataCentersSection({ d }: { d: Dashboard }) {
+export function DataCentersSection({ d, p }: { d: Dashboard; p: Palette }) {
   const s = d.sites;
   const [filter, setFilter] = useState<"all" | "risk" | "progress">("all");
   const news = s.news.filter((n) => filter === "all" || n.tag === filter);
@@ -38,15 +40,19 @@ export function DataCentersSection({ d }: { d: Dashboard }) {
     <Section
       id="datacenters"
       kicker="Capacity"
-      title="Data centers"
+      title="Data centers and power"
       intro={
         <>
-          Revenue follows capacity: a site only bills once it is powered and racked. Sites and megawatts come from Nebius announcements and third-party research (kept in{" "}
-          <code className="rounded bg-surface-2 px-1 text-[12px]">data/sites.json</code>). Each is enriched daily with which GPUs Nebius's docs list in its region, open
-          data-center roles nearby, and local news tagged as risk or progress.
+          Revenue follows power: capacity only bills once it's built, connected and running GPUs. Nebius reports three kinds of power: <b>contracted</b> (land and power
+          secured), <b>connected</b> (built data centers) and <b>active</b> (running, revenue-generating). Figures come from its shareholder letters (kept in{" "}
+          <code className="rounded bg-surface-2 px-1 text-[12px]">data/power.json</code>); sites from announcements and third-party research.
         </>
       }
     >
+      <h2 className="mt-2 text-lg font-semibold tracking-tight">Power</h2>
+      <PowerPanel d={d} p={p} />
+
+      <h2 className="mt-6 text-lg font-semibold tracking-tight">Sites</h2>
       <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
         <Stat label="Live" value={by("live") ? `${by("live")!.sites} sites` : "—"} note={by("live")?.mw ? `${mw(by("live")!.mw)} disclosed; most live sites don't publish MW` : undefined} />
         <Stat label="Ramping" value={by("ramping") ? mw(by("ramping")!.mw) : "—"} note={by("ramping") ? `${by("ramping")!.sites} sites coming online now` : undefined} />

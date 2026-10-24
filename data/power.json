@@ -1,0 +1,39 @@
+{
+ "_note": "Hand-maintained from Nebius shareholder letters (6-K exhibit 99.2) and contract filings. The SEC collector flags power statements in each new letter; add them here. MW throughout. kind: actual = reported as achieved, target = guidance for a future date (the date is the target date, `asOf` is when it was stated).",
+ "definitions": {
+  "contracted": "Power secured by contracted land and power commitments (supply side, not customer contracts).",
+  "connected": "Power connected into fully built and equipped data centers.",
+  "active": "Power consumed by installed, operational IT equipment and available for revenue generation."
+ },
+ "points": [
+  { "metric": "connected", "date": "2024-12-31", "mw": 25, "kind": "actual", "asOf": "2025-11-11", "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925109806/tm2530882d1_ex99-2.htm" },
+  { "metric": "connected", "date": "2025-12-31", "mw": 220, "kind": "target", "asOf": "2025-11-11", "note": "\"On track for 220 MW of connected power\"", "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925109806/tm2530882d1_ex99-2.htm" },
+  { "metric": "connected", "date": "2026-12-31", "mw": 900, "low": 800, "high": 1000, "kind": "target", "asOf": "2026-05-13", "note": "800 MW–1 GW connected by year-end, reiterated in Q1 2026", "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm" },
+  { "metric": "active", "date": "2025-12-31", "mw": 170, "kind": "actual", "asOf": "2026-02-12", "note": "~170 MW active vs a 100 MW target", "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926013946/tm266173d1_ex99-2.htm" },
+  { "metric": "contracted", "date": "2026-02-12", "mw": 2000, "kind": "actual", "asOf": "2026-02-12", "note": "\"More than 2 GW\" secured", "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926013946/tm266173d1_ex99-2.htm" },
+  { "metric": "contracted", "date": "2026-05-13", "mw": 3500, "kind": "actual", "asOf": "2026-05-13", "note": "\"Already exceeds 3.5 GW\", >75% owned", "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm" },
+  { "metric": "contracted", "date": "2026-12-31", "mw": 5000, "kind": "target", "asOf": "2026-08-12", "note": "Raised from >2.5 GW (Nov 2025) → >3 GW (Feb) → >4 GW (May) → 5 GW (Aug)", "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm" }
+ ],
+ "guidanceHistory": [
+  { "asOf": "2025-11-11", "metric": "contracted", "mw": 2500, "for": "2026-12-31" },
+  { "asOf": "2026-02-12", "metric": "contracted", "mw": 3000, "for": "2026-12-31" },
+  { "asOf": "2026-05-13", "metric": "contracted", "mw": 4000, "for": "2026-12-31" },
+  { "asOf": "2026-08-12", "metric": "contracted", "mw": 5000, "for": "2026-12-31" }
+ ],
+ "yield": {
+  "newDealsPerMwYear": [20, 25],
+  "asOf": "2026-08-12",
+  "note": "Q2 2026 letter: four deals averaging >$1B TCV each, annual contract value of $20-25M per MW.",
+  "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm"
+ },
+ "statements": [
+  { "date": "2026-02-12", "text": "Operated at peak utilization and were sold out of capacity in Q4 2025.", "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926013946/tm266173d1_ex99-2.htm" },
+  { "date": "2026-05-13", "text": "Expect to significantly increase capacity in place in Q3; majority of 2026 capacity comes online in the second half.", "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm" },
+  { "date": "2026-08-12", "text": "All capacity tranches delivered to Microsoft, including two in the past month. Plan to deploy more than 1 GW per year starting 2027.", "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm" }
+ ],
+ "contracts": [
+  { "customer": "Microsoft", "signed": "2025-09-08", "tcv": 17400, "tcvMax": 19400, "years": 5, "site": "Vineland, New Jersey", "status": "All tranches delivered (Aug 2026)", "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925110025/tm2530771-1_424b5.htm" },
+  { "customer": "Meta", "signed": "2025-11-11", "tcv": 2900, "tcvMax": null, "years": 5, "site": "Two dedicated GPU clusters", "status": "Delivering", "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925110025/tm2530771-1_424b5.htm" },
+  { "customer": "Four Q2 2026 AI cloud deals", "signed": "2026-06-30", "tcv": 4000, "tcvMax": null, "years": null, "site": "Various", "status": "Signed Q2 2026; average TCV >$1B, $20-25M per MW per year", "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm" }
+ ]
+}

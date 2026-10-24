@@ -71,6 +71,32 @@ export type SiteRow = {
   latest: { title: string; date: string; url: string; tag: "risk" | "progress" | null } | null;
 };
 
+export type PowerPoint = { date: string; mw: number; low?: number; high?: number; kind: "actual" | "target" | "implied"; asOf: string; note?: string; source?: string };
+
+export type PowerData = {
+  definitions: Record<"contracted" | "connected" | "active", string>;
+  contracted: PowerPoint[];
+  connected: PowerPoint[];
+  /** Reported active power, plus model points implied by ARR ÷ yield (kind "implied"). */
+  active: PowerPoint[];
+  guidanceHistory: { asOf: string; mw: number }[];
+  statements: { date: string; text: string; source: string }[];
+  contracts: { customer: string; signed: string; tcv: number; tcvMax: number | null; years: number | null; annual: number | null; site: string; status: string; source: string }[];
+  /** USD millions per year. */
+  committedAnnual: number;
+  latestArr: { value: number; date: string } | null;
+  /** $M of ARR per active MW, where both are reported for the same date. */
+  arrPerActiveMw: { value: number; date: string } | null;
+  newDealYield: [number, number] | null;
+  /** Active MW the year-end ARR guidance implies, at the new-deal yield: [low ARR & high yield, high ARR & low yield]. */
+  impliedActiveAtGuidance: [number, number] | null;
+  connectedTarget: [number, number] | null;
+  /** Live spot pools right now: the capacity visibly available outside committed contracts. */
+  spotPools: number;
+  /** Power statements auto-extracted from the newest shareholder letters, for review. */
+  extracted: { filed: string; url: string; sentences: string[] }[];
+};
+
 /** Dated annotation for time-series charts. */
 export type ChartEvent = { date: string; label: string; kind: "earnings" | "price" | "capacity" | "financing" | "site" };
 
@@ -81,6 +107,8 @@ export type Dashboard = {
   events: ChartEvent[];
 
   nowcast: { quarters: Nowcast[]; scorecard: ScorecardRow[]; realization: number | null; history: { date: string; [quarter: string]: number | string }[] };
+
+  power: PowerData;
 
   sites: {
     rows: SiteRow[];

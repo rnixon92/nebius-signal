@@ -24,7 +24,24 @@ export type Filing = {
   /** Form 144 */
   proposedShares?: number;
   proposedValue?: number;
+  /** 6-K: sentences about contracted/connected/active power, from every exhibit (shareholder letters). */
+  powerMentions?: string[];
 };
+
+const POWER_SENTENCE = /\b\d[\d,.]*\s*\+?\s*(MW|GW|megawatts?|gigawatts?)\b/i;
+const POWER_CONTEXT = /contracted|connected|active power|capacity|secured|deploy|online|data cent|AI factor/i;
+
+/** Sentences that state an amount of power, so new letters can be reviewed for data/power.json. */
+export function extractPowerMentions(html: string): string[] {
+  const text = decode(html.replace(/<[^>]+>/g, " ")).replace(/\s+/g, " ");
+  const out = new Set<string>();
+  for (const s of text.split(/(?<=[.;])\s+(?=[A-Z•○●])/)) {
+    // Long runs are usually page headers or chart labels glued together, not statements.
+    if (s.length < 30 || s.length > 320 || /^dear shareholders/i.test(s)) continue;
+    if (POWER_SENTENCE.test(s) && POWER_CONTEXT.test(s)) out.add(s.trim());
+  }
+  return [...out].slice(0, 25);
+}
 
 type Submissions = {
   filings: { recent: { accessionNumber: string[]; form: string[]; filingDate: string[]; primaryDocument: string[] } };
@@ -35,16 +52,30 @@ const valueOf = (xml: string, name: string) => {
   const block = tag(xml, name);
   return block === undefined ? undefined : (tag(block, "value") ?? block);
 };
-const decode = (s: string) => s.replace(/&amp;/g, "&").replace(/&#8217;|&rsquo;/g, "’").replace(/&nbsp;|&#160;/g, " ").replace(/&[a-z#0-9]+;/gi, "");
+const NAMED: Record<string, string> = { amp: "&", nbsp: " ", rsquo: "’", lsquo: "‘", rdquo: "”", ldquo: "“", ndash: "–", mdash: "—", quot: '"', apos: "'", lt: "<", gt: ">", cir: "○", bull: "•" };
+const decode = (s: string) =>
+  s
+    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
+    .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d)))
+    .replace(/&([a-z]+);/gi, (m, n) => NAMED[n.toLowerCase()] ?? m)
+    .replace(/ /g, " ");
 
 const archive = (acc: string) => `https://www.sec.gov/Archives/edgar/data/${CIK}/${acc.replace(/-/g, "")}`;
 const get = (url: string) => fetchText(url, { ua: SEC_UA });
 
 async function detail6K(f: Filing): Promise<void> {
   const index = await fetchJson<{ directory: { item: { name: string }[] } }>(`${archive(f.accession)}/index.json`, { ua: SEC_UA });
-  const exhibit = index.directory.item.map((i) => i.name).find((n) => /ex99[-_]?1.*\.htm/i.test(n)) ?? index.directory.item.map((i) => i.name).find((n) => /ex99.*\.htm/i.test(n));
+  const exhibits = index.directory.item.map((i) => i.name).filter((n) => /ex99.*\.htm/i.test(n));
+  const exhibit = exhibits.find((n) => /ex99[-_]?1.*\.htm/i.test(n)) ?? exhibits[0];
   if (!exhibit) return;
   const html = await get(`${archive(f.accession)}/${exhibit}`);
+  // Power figures usually live in the shareholder letter (exhibit 99.2), not the press release.
+  const mentions = new Set(extractPowerMentions(html));
+  for (const other of exhibits.filter((n) => n !== exhibit)) {
+    await sleep(150);
+    for (const m of extractPowerMentions(await get(`${archive(f.accession)}/${other}`))) mentions.add(m);
+  }
+  if (mentions.size) f.powerMentions = [...mentions].slice(0, 25);
   // Inline tags split headlines mid-sentence, so drop them before breaking on block elements;
   // the first block that names Nebius is reliably the press-release headline.
   const blocks = html.replace(/<\/?(span|font|b|strong|i|em|a|u|sup|sub)\b[^>]*>/gi, "").replace(/<[^>]+>/g, "\n");
@@ -115,13 +146,36 @@ export async function collectSec(): Promise<SourceResult> {
     if (!bootstrap) alerts.push(...alertFor(f, date));
   }
 
+  // One-time fill: results filings cached before power extraction existed.
+  for (const f of Object.values(cache)) {
+    if (f.form !== "6-K" || f.powerMentions !== undefined || f.filed < detailCutoff || !/results|quarter/i.test(f.title ?? "")) continue;
+    try {
+      const index = await fetchJson<{ directory: { item: { name: string }[] } }>(`${archive(f.accession)}/index.json`, { ua: SEC_UA });
+      const mentions = new Set<string>();
+      for (const n of index.directory.item.map((i) => i.name).filter((n) => /ex99.*\.htm/i.test(n))) {
+        await sleep(150);
+        for (const m of extractPowerMentions(await get(`${archive(f.accession)}/${n}`))) mentions.add(m);
+      }
+      f.powerMentions = [...mentions].slice(0, 25);
+      fetched++;
+    } catch {
+      // retry next run
+    }
+  }
+
   await writeJson("sec/filings.json", cache);
   return { summary: `${Object.keys(cache).length} filings since ${SINCE} (${fetched} parsed this run)`, alerts };
 }
 
 function alertFor(f: Filing, date: string): Alert[] {
   const base = { id: `sec-${f.accession}`, date, source: "sec" as const, url: f.url };
-  if (f.form === "6-K" || f.form === "20-F") return [{ ...base, severity: "high", title: `New ${f.form}: ${f.title ?? "filing"}` }];
+  if (f.form === "6-K" || f.form === "20-F") {
+    const out: Alert[] = [{ ...base, severity: "high", title: `New ${f.form}: ${f.title ?? "filing"}` }];
+    if (f.powerMentions?.length) {
+      out.push({ ...base, id: `sec-power-${f.accession}`, severity: "high", title: `New power figures disclosed (${f.powerMentions.length} statements): update data/power.json`, detail: f.powerMentions.slice(0, 3).join(" · ") });
+    }
+    return out;
+  }
   if (f.form === "4" && f.trades?.length) {
     const sold = f.trades.filter((t) => t.code === "S").reduce((a, t) => a + t.shares * (t.price ?? 0), 0);
     const bought = f.trades.filter((t) => t.code === "P").reduce((a, t) => a + t.shares * (t.price ?? 0), 0);

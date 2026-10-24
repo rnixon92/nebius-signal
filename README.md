@@ -27,6 +27,7 @@ npm run dev         # dashboard at http://localhost:5173
 | `docs.nebius.com/overview/regions` | Live regions and the GPU types in each | A new region or GPU type = capacity going live (high alert) |
 | Google News RSS | Data-center headlines, matched to sites and tagged risk/progress | Lawsuits, halts and power milestones show up in local news first |
 | `data/sites.json` | Site registry: status, MW, region, timing (hand-maintained) | The capacity pipeline that revenue follows |
+| `data/power.json` | Contracted / connected / active power, guidance history, revenue per MW, long-term contracts (hand-maintained from shareholder letters) | Power is the revenue driver; the SEC collector extracts power statements from each new letter and raises an alert to update this file |
 | `data/fundamentals.json` | Quarterly revenue, ARR, guidance (hand-maintained) | Update after each results 6-K; the dashboard flags when one is out |
 
 ## Daily updates

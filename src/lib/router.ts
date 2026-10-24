@@ -7,7 +7,7 @@ export const PAGES = [
   { id: "overview", label: "Overview", title: "Overview" },
   { id: "nowcast", label: "Nowcast", title: "Quarter nowcast" },
   { id: "gpu", label: "GPU pricing", title: "GPU pricing" },
-  { id: "datacenters", label: "Data centers", title: "Data centers" },
+  { id: "datacenters", label: "Data centers", title: "Data centers and power" },
   { id: "tokens", label: "Token Factory", title: "Token Factory" },
   { id: "customers", label: "Customers", title: "Customers" },
   { id: "hiring", label: "Hiring", title: "Hiring" },

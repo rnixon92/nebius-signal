@@ -334,7 +334,7 @@ function IconButton({ label, onClick, children }: { label: string; onClick: () =
 
 const fmtCell = (v: unknown, format: (v: number) => string) => (typeof v === "number" ? format(v) : "—");
 
-const toTime = (date: string) => Date.parse(`${date.slice(0, 10)}T00:00:00Z`);
+export const toTime = (date: string) => Date.parse(`${date.slice(0, 10)}T00:00:00Z`);
 
 const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
@@ -342,7 +342,7 @@ const MON = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct
  * Calendar-aligned ticks for a time axis: quarter or month starts for long spans, week starts for
  * medium ones, evenly stepped days for short ones. Labels gain a year when the span crosses one.
  */
-function timeTicks(min: number, max: number): { ticks: number[]; format: (t: number) => string } {
+export function timeTicks(min: number, max: number): { ticks: number[]; format: (t: number) => string } {
   const spanDays = (max - min) / 864e5;
   const d0 = new Date(min);
   const multiYear = d0.getUTCFullYear() !== new Date(max).getUTCFullYear();

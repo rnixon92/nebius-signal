@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-24T05:30:15.970Z",
+ "generatedAt": "2026-10-24T05:55:17.091Z",
  "sources": [
   {
    "id": "gpu-ondemand",
@@ -69,8 +69,8 @@
    "label": "SEC EDGAR",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845",
    "ok": true,
-   "lastSuccess": "2026-10-24T05:13:01.548Z",
-   "summary": "167 filings since 2025-01-01 (0 parsed this run)",
+   "lastSuccess": "2026-10-24T05:55:17.089Z",
+   "summary": "167 filings since 2025-01-01 (4 parsed this run)",
    "stale": false
   },
   {
@@ -454,6 +454,236 @@
     "date": "2026-10-24",
     "2026-Q3": 918.3,
     "2026-Q4": 1322.2
+   }
+  ]
+ },
+ "power": {
+  "definitions": {
+   "contracted": "Power secured by contracted land and power commitments (supply side, not customer contracts).",
+   "connected": "Power connected into fully built and equipped data centers.",
+   "active": "Power consumed by installed, operational IT equipment and available for revenue generation."
+  },
+  "contracted": [
+   {
+    "date": "2026-02-12",
+    "mw": 2000,
+    "kind": "actual",
+    "asOf": "2026-02-12",
+    "note": "\"More than 2 GW\" secured",
+    "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926013946/tm266173d1_ex99-2.htm"
+   },
+   {
+    "date": "2026-05-13",
+    "mw": 3500,
+    "kind": "actual",
+    "asOf": "2026-05-13",
+    "note": "\"Already exceeds 3.5 GW\", >75% owned",
+    "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm"
+   },
+   {
+    "date": "2026-12-31",
+    "mw": 5000,
+    "kind": "target",
+    "asOf": "2026-08-12",
+    "note": "Raised from >2.5 GW (Nov 2025) → >3 GW (Feb) → >4 GW (May) → 5 GW (Aug)",
+    "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm"
+   }
+  ],
+  "connected": [
+   {
+    "date": "2024-12-31",
+    "mw": 25,
+    "kind": "actual",
+    "asOf": "2025-11-11",
+    "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925109806/tm2530882d1_ex99-2.htm"
+   },
+   {
+    "date": "2025-12-31",
+    "mw": 220,
+    "kind": "target",
+    "asOf": "2025-11-11",
+    "note": "\"On track for 220 MW of connected power\"",
+    "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925109806/tm2530882d1_ex99-2.htm"
+   },
+   {
+    "date": "2026-12-31",
+    "mw": 900,
+    "low": 800,
+    "high": 1000,
+    "kind": "target",
+    "asOf": "2026-05-13",
+    "note": "800 MW–1 GW connected by year-end, reiterated in Q1 2026",
+    "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm"
+   }
+  ],
+  "active": [
+   {
+    "date": "2025-12-31",
+    "mw": 170,
+    "kind": "actual",
+    "asOf": "2026-02-12",
+    "note": "~170 MW active vs a 100 MW target",
+    "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926013946/tm266173d1_ex99-2.htm"
+   },
+   {
+    "date": "2026-03-31",
+    "mw": 200,
+    "low": 197,
+    "high": 204,
+    "kind": "implied",
+    "asOf": "2026-03-31",
+    "note": "ARR 1920M at $20–25M per MW for capacity added since 2025-12-31"
+   },
+   {
+    "date": "2026-06-30",
+    "mw": 249,
+    "low": 240,
+    "high": 258,
+    "kind": "implied",
+    "asOf": "2026-06-30",
+    "note": "ARR 3000M at $20–25M per MW for capacity added since 2025-12-31"
+   },
+   {
+    "date": "2026-12-31",
+    "mw": 479,
+    "low": 400,
+    "high": 558,
+    "kind": "implied",
+    "asOf": "2026-12-31",
+    "note": "Active power the year-end ARR guidance implies"
+   }
+  ],
+  "guidanceHistory": [
+   {
+    "asOf": "2025-11-11",
+    "mw": 2500
+   },
+   {
+    "asOf": "2026-02-12",
+    "mw": 3000
+   },
+   {
+    "asOf": "2026-05-13",
+    "mw": 4000
+   },
+   {
+    "asOf": "2026-08-12",
+    "mw": 5000
+   }
+  ],
+  "statements": [
+   {
+    "date": "2026-02-12",
+    "text": "Operated at peak utilization and were sold out of capacity in Q4 2025.",
+    "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926013946/tm266173d1_ex99-2.htm"
+   },
+   {
+    "date": "2026-05-13",
+    "text": "Expect to significantly increase capacity in place in Q3; majority of 2026 capacity comes online in the second half.",
+    "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm"
+   },
+   {
+    "date": "2026-08-12",
+    "text": "All capacity tranches delivered to Microsoft, including two in the past month. Plan to deploy more than 1 GW per year starting 2027.",
+    "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm"
+   }
+  ],
+  "contracts": [
+   {
+    "customer": "Microsoft",
+    "signed": "2025-09-08",
+    "tcv": 17400,
+    "tcvMax": 19400,
+    "years": 5,
+    "site": "Vineland, New Jersey",
+    "status": "All tranches delivered (Aug 2026)",
+    "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925110025/tm2530771-1_424b5.htm",
+    "annual": 3480
+   },
+   {
+    "customer": "Meta",
+    "signed": "2025-11-11",
+    "tcv": 2900,
+    "tcvMax": null,
+    "years": 5,
+    "site": "Two dedicated GPU clusters",
+    "status": "Delivering",
+    "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925110025/tm2530771-1_424b5.htm",
+    "annual": 580
+   },
+   {
+    "customer": "Four Q2 2026 AI cloud deals",
+    "signed": "2026-06-30",
+    "tcv": 4000,
+    "tcvMax": null,
+    "years": null,
+    "site": "Various",
+    "status": "Signed Q2 2026; average TCV >$1B, $20-25M per MW per year",
+    "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm",
+    "annual": null
+   }
+  ],
+  "committedAnnual": 4060,
+  "latestArr": {
+   "value": 3000,
+   "date": "2026-06-30"
+  },
+  "arrPerActiveMw": {
+   "value": 7.352941176470588,
+   "date": "2025-12-31"
+  },
+  "newDealYield": [
+   20,
+   25
+  ],
+  "impliedActiveAtGuidance": [
+   400,
+   558
+  ],
+  "connectedTarget": [
+   800,
+   1000
+  ],
+  "spotPools": 12,
+  "extracted": [
+   {
+    "filed": "2026-08-12",
+    "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-1.htm",
+    "sentences": [
+     "• The pace in which we bring capacity to market will accelerate as we plan to deploy more than 1 GW per year — and we plan to do so starting in 2027.",
+     "We now anticipate ending 2026 with 5 GW of contracted power(5), up from the +4 GW we indicated last quarter.",
+     "The pace at which we bring capacity to market will accelerate as we plan to deploy more than 1 GW per year, starting in 2027."
+    ]
+   },
+   {
+    "filed": "2026-05-13",
+    "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-1.htm",
+    "sentences": [
+     "Nebius today also announced that it has secured up to 1.2 GW of power and land for a new, owned AI factory at a site in Pennsylvania.",
+     "• Owned capacity continues to expand rapidly Contracted capacity already exceeds 3.5 GW, far surpassing the goal of 3 GW we set for the end of the year.",
+     "We broke ground at our Missouri location yesterday; today, we are announcing a new site in Pennsylvania where we have secured power for a deployment of up to 1.2 GW.",
+     "We continue to expect 800MW to 1GW of connected power by year-end.",
+     "The planned AI factory at this location will be delivered in phases beginning in 2027 and will add to Nebius’s rapidly expanding US footprint, alongside the 1.2 GW AI factory in Independence, Missouri.",
+     "In the quarter we also announced a new owned location in Finland that when fully deployed at 310 MW will be one of Europe’s larg-est dedicated AI factories.",
+     "This led us to surpass our 2026 year-end contracted power target of 3 GW.",
+     "Our contracted capacity now exceeds 3.5 GW, with owned capacity representing more than 75% of the total.",
+     "Given this momentum, we are raising our contracted power guidance to more than 4 GW by year-end, with any additional contracts contributing to capacity growth in 2027 and beyond.",
+     "In total, our owned facilities will deliver 3 GW of capacity across five sites, reinforcing our commitment to a capital-efficient mod-el with attractive long-term unit economics."
+    ]
+   },
+   {
+    "filed": "2026-02-12",
+    "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926013946/tm266173d1_ex99-1.htm",
+    "sentences": [
+     "● Capacity delivery ahead of plan ○ We ended the year with ~170MW of active power, vs our target of 100MW.",
+     "○ We have already secured more than 2 GW of contracted power, putting us well ahead of the target we set in November of more than 2.5 GW by the end of 2026.",
+     "As a result, we now expect to have more than 3 GW of contracted power by year-end .",
+     "We ended the year with ~170 MW of active power, significantly exceeding our 100 MW target.",
+     "We have made a strong start to our 2026 capacity plans, with today’s announcement of 9 new sites across the US and EMEA, already giving us a total of more than 2 GW of contracted power.",
+     "With our head start in securing power, we now expect to have more than 3GW of contracted power by the end of 2026 , up from our previous >2.5 GW target.",
+     "As we work to bring this capacity online, we also enter 2026 with strengthened conviction in achieving our 800MW to 1GW of connected power by the end of this year.",
+     "We are confident in our ability to deliver on our increased target for greater than 3 GW of contracted power by the end of 2026, having already secured more than 2 GW of contracted power to date."
+    ]
    }
   ]
  },

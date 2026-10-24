@@ -1,7 +1,7 @@
 // Derives the compact dashboard dataset from the raw history in data/. Pure transformation: no network.
 import { pathToFileURL } from "node:url";
 import { join } from "node:path";
-import type { Dashboard, ModelPricing, SourceHealth } from "../shared/dashboard.ts";
+import type { Dashboard, ModelPricing, PowerPoint, SourceHealth } from "../shared/dashboard.ts";
 import { ROOT, addDays, readJson, today, writeJson } from "./lib/store.ts";
 import type { Alert, RunStatus } from "./lib/types.ts";
 import type { Customer } from "./sources/atlas.ts";
@@ -48,6 +48,7 @@ export async function buildDashboard({ persistNowcast = false } = {}): Promise<D
     alerts: await alerts(),
     events: await events(),
     nowcast: await nowcast(persistNowcast),
+    power: await power(),
     sites: await sites(),
     stock: await stock(),
     gpu: await gpu(),
@@ -100,6 +101,75 @@ async function events(): Promise<Dashboard["events"]> {
     out.push({ date: c.date, label: c.platform ? `${c.platform} live in ${c.region}` : `Region ${c.region} live`, kind: "capacity" });
   }
   return out.sort((a, b) => a.date.localeCompare(b.date));
+}
+
+type PowerFile = {
+  definitions: Dashboard["power"]["definitions"];
+  points: (PowerPoint & { metric: "contracted" | "connected" | "active" })[];
+  guidanceHistory: { asOf: string; metric: string; mw: number }[];
+  yield?: { newDealsPerMwYear: [number, number] };
+  statements: Dashboard["power"]["statements"];
+  contracts: Omit<Dashboard["power"]["contracts"][number], "annual">[];
+};
+
+async function power(): Promise<Dashboard["power"]> {
+  const f = await readJson<PowerFile>("power.json", { definitions: { contracted: "", connected: "", active: "" }, points: [], guidanceHistory: [], statements: [], contracts: [] });
+  const fund = await readJson<{ quarters: { end: string; arr: number | null }[]; guidance: { arrExit: [number, number] } }>("fundamentals.json", { quarters: [], guidance: { arrExit: [0, 0] } });
+  const byMetric = (m: string) => f.points.filter((p) => p.metric === m).map(({ metric: _m, ...p }) => p).sort((a, b) => a.date.localeCompare(b.date));
+  const contracted = byMetric("contracted");
+  const connected = byMetric("connected");
+  const activeReported = byMetric("active");
+
+  // Revenue intensity where ARR and active power are both reported for the same date.
+  const arrAt = new Map(fund.quarters.filter((q) => q.arr).map((q) => [q.end, q.arr!]));
+  const anchor = [...activeReported].reverse().find((p) => p.kind === "actual" && arrAt.has(p.date));
+  const arrPerActiveMw = anchor ? { value: arrAt.get(anchor.date)! / anchor.mw, date: anchor.date } : null;
+  const y = f.yield?.newDealsPerMwYear ?? null;
+
+  // Implied active power: ARR added since the anchor, priced at the new-deal yield, on top of the anchor MW.
+  // A model, not a disclosure: older contracts earn less per MW, so this leans low on MW.
+  const implied: PowerPoint[] = [];
+  let impliedActiveAtGuidance: [number, number] | null = null;
+  if (anchor && y) {
+    const base = arrAt.get(anchor.date)!;
+    for (const q of fund.quarters.filter((q) => q.arr && q.end > anchor.date)) {
+      const lo = anchor.mw + (q.arr! - base) / y[1];
+      const hi = anchor.mw + (q.arr! - base) / y[0];
+      implied.push({ date: q.end, mw: Math.round((lo + hi) / 2), low: Math.round(lo), high: Math.round(hi), kind: "implied", asOf: q.end, note: `ARR ${Math.round(q.arr!)}M at $${y[0]}–${y[1]}M per MW for capacity added since ${anchor.date}` });
+    }
+    const [g0, g1] = fund.guidance.arrExit;
+    impliedActiveAtGuidance = [Math.round(anchor.mw + (g0 - base) / y[1]), Math.round(anchor.mw + (g1 - base) / y[0])];
+    const ye = `${new Date().getUTCFullYear()}-12-31`;
+    implied.push({ date: ye, mw: Math.round((impliedActiveAtGuidance[0] + impliedActiveAtGuidance[1]) / 2), low: impliedActiveAtGuidance[0], high: impliedActiveAtGuidance[1], kind: "implied", asOf: ye, note: "Active power the year-end ARR guidance implies" });
+  }
+
+  const contracts = f.contracts.map((c) => ({ ...c, annual: c.years ? c.tcv / c.years : null }));
+  const lastArr = [...fund.quarters].reverse().find((q) => q.arr);
+  const connectedTarget = connected.find((p) => p.kind === "target" && p.low !== undefined);
+  const current = await readJson<{ prices: Record<string, unknown> } | null>("gpu/spot-current.json", null);
+  const filings = Object.values(await readJson<Record<string, Filing>>("sec/filings.json", {}));
+
+  return {
+    definitions: f.definitions,
+    contracted,
+    connected,
+    active: [...activeReported, ...implied].sort((a, b) => a.date.localeCompare(b.date)),
+    guidanceHistory: f.guidanceHistory.filter((g) => g.metric === "contracted").map(({ asOf, mw }) => ({ asOf, mw })),
+    statements: f.statements,
+    contracts,
+    committedAnnual: sum(contracts.map((c) => c.annual ?? 0)),
+    latestArr: lastArr ? { value: lastArr.arr!, date: lastArr.end } : null,
+    arrPerActiveMw,
+    newDealYield: y,
+    impliedActiveAtGuidance,
+    connectedTarget: connectedTarget ? [connectedTarget.low!, connectedTarget.high!] : null,
+    spotPools: Object.keys(current?.prices ?? {}).length,
+    extracted: filings
+      .filter((x) => x.powerMentions?.length)
+      .sort((a, b) => b.filed.localeCompare(a.filed))
+      .slice(0, 3)
+      .map((x) => ({ filed: x.filed, url: x.url, sentences: x.powerMentions! })),
+  };
 }
 
 async function sites(): Promise<Dashboard["sites"]> {

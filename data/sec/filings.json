@@ -988,7 +988,12 @@
   "form": "6-K",
   "filed": "2026-08-12",
   "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-1.htm",
-  "title": "Nebius reports second quarter 2026 financial"
+  "title": "Nebius reports second quarter 2026 financial",
+  "powerMentions": [
+   "• The pace in which we bring capacity to market will accelerate as we plan to deploy more than 1 GW per year — and we plan to do so starting in 2027.",
+   "We now anticipate ending 2026 with 5 GW of contracted power(5), up from the +4 GW we indicated last quarter.",
+   "The pace at which we bring capacity to market will accelerate as we plan to deploy more than 1 GW per year, starting in 2027."
+  ]
  },
  "0000886982-26-000308": {
   "accession": "0000886982-26-000308",
@@ -1512,7 +1517,19 @@
   "form": "6-K",
   "filed": "2026-05-13",
   "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-1.htm",
-  "title": "Nebius reports first quarter 2026 financial results"
+  "title": "Nebius reports first quarter 2026 financial results",
+  "powerMentions": [
+   "Nebius today also announced that it has secured up to 1.2 GW of power and land for a new, owned AI factory at a site in Pennsylvania.",
+   "• Owned capacity continues to expand rapidly Contracted capacity already exceeds 3.5 GW, far surpassing the goal of 3 GW we set for the end of the year.",
+   "We broke ground at our Missouri location yesterday; today, we are announcing a new site in Pennsylvania where we have secured power for a deployment of up to 1.2 GW.",
+   "We continue to expect 800MW to 1GW of connected power by year-end.",
+   "The planned AI factory at this location will be delivered in phases beginning in 2027 and will add to Nebius’s rapidly expanding US footprint, alongside the 1.2 GW AI factory in Independence, Missouri.",
+   "In the quarter we also announced a new owned location in Finland that when fully deployed at 310 MW will be one of Europe’s larg-est dedicated AI factories.",
+   "This led us to surpass our 2026 year-end contracted power target of 3 GW.",
+   "Our contracted capacity now exceeds 3.5 GW, with owned capacity representing more than 75% of the total.",
+   "Given this momentum, we are raising our contracted power guidance to more than 4 GW by year-end, with any additional contracts contributing to capacity growth in 2027 and beyond.",
+   "In total, our owned facilities will deliver 3 GW of capacity across five sites, reinforcing our commitment to a capital-efficient mod-el with attractive long-term unit economics."
+  ]
  },
  "0001513845-26-000055": {
   "accession": "0001513845-26-000055",
@@ -1956,7 +1973,17 @@
   "form": "6-K",
   "filed": "2026-02-12",
   "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926013946/tm266173d1_ex99-1.htm",
-  "title": "Nebius reports fourth quarter and full-year 2025 financial results"
+  "title": "Nebius reports fourth quarter and full-year 2025 financial results",
+  "powerMentions": [
+   "● Capacity delivery ahead of plan ○ We ended the year with ~170MW of active power, vs our target of 100MW.",
+   "○ We have already secured more than 2 GW of contracted power, putting us well ahead of the target we set in November of more than 2.5 GW by the end of 2026.",
+   "As a result, we now expect to have more than 3 GW of contracted power by year-end .",
+   "We ended the year with ~170 MW of active power, significantly exceeding our 100 MW target.",
+   "We have made a strong start to our 2026 capacity plans, with today’s announcement of 9 new sites across the US and EMEA, already giving us a total of more than 2 GW of contracted power.",
+   "With our head start in securing power, we now expect to have more than 3GW of contracted power by the end of 2026 , up from our previous >2.5 GW target.",
+   "As we work to bring this capacity online, we also enter 2026 with strengthened conviction in achieving our 800MW to 1GW of connected power by the end of this year.",
+   "We are confident in our ability to deliver on our increased target for greater than 3 GW of contracted power by the end of 2026, having already secured more than 2 GW of contracted power to date."
+  ]
  },
  "0001104659-26-012492": {
   "accession": "0001104659-26-012492",
@@ -2036,7 +2063,12 @@
   "form": "6-K",
   "filed": "2025-11-12",
   "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925109806/tm2530882d1_ex99-1.htm",
-  "title": "Nebius reports third quarter financial results"
+  "title": "Nebius reports third quarter financial results",
+  "powerMentions": [
+   "• Last quarter we guided for 1GW of contracted power by the end of 2026.",
+   "We are currently in the process of secur-ing additional sites that would bring our total contracted power (i.e., secured land with power) to approximately 2.5GW by the end of 2026.",
+   "We now expect to have over 2.5GW of contracted power by the end of 2026, with 800MW to 1GW of connected power We are aggressively scaling our footprint to meet global demand for AI compute across the US, Europe, and Middle East."
+  ]
  },
  "0001104659-25-109803": {
   "accession": "0001104659-25-109803",
