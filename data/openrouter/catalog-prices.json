@@ -421,9 +421,9 @@
  },
  "deepseek/deepseek-v4-pro-20260423": {
   "name": "deepseek/deepseek-v4-pro",
-  "input": 0.570894,
-  "output": 1.141788,
-  "cacheRead": 0.047575
+  "input": 0.560802,
+  "output": 1.121604,
+  "cacheRead": 0.046734
  },
  "deepseek/deepseek-v4-pro-20260813": {
   "name": "deepseek/deepseek-v4-pro-0813",

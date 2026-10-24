@@ -1,5 +1,5 @@
 {
- "snapshotTime": "2026-10-24T04:51:06.247697Z",
+ "snapshotTime": "2026-10-24T04:55:49.983710Z",
  "prices": {
   "sku-e00agrh84hf7fwlrgsfsv": {
    "price": 2.1,
@@ -18,8 +18,8 @@
    "effectiveTime": "2026-10-24T04:46:00Z"
   },
   "sku-e00vd4x28cozliwb6g4vh": {
-   "price": 8.29,
-   "effectiveTime": "2026-10-24T04:01:00Z"
+   "price": 7.99,
+   "effectiveTime": "2026-10-24T04:56:00Z"
   },
   "sku-e00k58wq19wjszct65fwm": {
    "price": 6,

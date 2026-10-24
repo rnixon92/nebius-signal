@@ -1,63 +1,62 @@
 {
  "gpu-ondemand": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:56:03.074Z",
-  "lastSuccess": "2026-10-24T04:56:03.074Z",
+  "lastAttempt": "2026-10-24T05:00:29.221Z",
+  "lastSuccess": "2026-10-24T05:00:29.221Z",
   "summary": "9 GPU rows (7 with list prices)"
  },
  "gpu-spot": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:56:05.571Z",
-  "lastSuccess": "2026-10-24T04:56:05.571Z",
-  "summary": "12 SKUs listed; 12 series, 8616 hourly points"
+  "lastAttempt": "2026-10-24T05:00:30.300Z",
+  "lastSuccess": "2026-10-24T05:00:30.300Z",
+  "summary": "12 SKUs listed; 12 series, 8617 hourly points"
  },
  "openrouter": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:56:32.843Z",
-  "lastSuccess": "2026-10-24T04:56:32.843Z",
+  "lastAttempt": "2026-10-24T05:00:52.852Z",
+  "lastSuccess": "2026-10-24T05:00:52.852Z",
   "summary": "Nebius 90 days of history; 11/11 peers"
  },
  "openrouter-market": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:56:32.967Z",
-  "lastSuccess": "2026-10-24T04:56:32.967Z",
+  "lastAttempt": "2026-10-24T05:00:53.113Z",
+  "lastSuccess": "2026-10-24T05:00:53.113Z",
   "summary": "231 snapshots to 2026-10-23; Nebius rank 55 of 96"
  },
  "atlas": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:56:36.027Z",
-  "lastSuccess": "2026-10-24T04:56:36.027Z",
+  "lastAttempt": "2026-10-24T05:00:55.571Z",
+  "lastSuccess": "2026-10-24T05:00:55.571Z",
   "summary": "363 customers (0 new since last run)"
  },
  "sec": {
-  "ok": false,
-  "lastAttempt": "2026-10-24T04:36:48.923Z",
-  "lastSuccess": "2026-10-24T04:31:36.027Z",
-  "summary": "167 filings since 2025-01-01 (0 parsed this run)",
-  "error": "HTTP 403 for https://data.sec.gov/submissions/CIK0001513845.json"
+  "ok": true,
+  "lastAttempt": "2026-10-24T05:00:55.751Z",
+  "lastSuccess": "2026-10-24T05:00:55.751Z",
+  "summary": "167 filings since 2025-01-01 (0 parsed this run)"
  },
  "jobs": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:56:36.468Z",
-  "lastSuccess": "2026-10-24T04:56:36.468Z",
+  "lastAttempt": "2026-10-24T05:00:55.951Z",
+  "lastSuccess": "2026-10-24T05:00:55.951Z",
   "summary": "384 open roles (0 new)"
  },
  "stock": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:56:36.928Z",
-  "lastSuccess": "2026-10-24T04:56:36.928Z",
+  "lastAttempt": "2026-10-24T05:00:56.113Z",
+  "lastSuccess": "2026-10-24T05:00:56.113Z",
   "summary": "501 closes, last 2026-10-23 $158.74"
  },
  "regions": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:56:06.187Z",
-  "lastSuccess": "2026-10-24T04:56:06.187Z",
+  "lastAttempt": "2026-10-24T05:00:30.527Z",
+  "lastSuccess": "2026-10-24T05:00:30.527Z",
   "summary": "10 regions, 6 GPU platforms"
  },
  "news": {
   "ok": true,
-  "lastAttempt": "2026-10-24T04:56:09.933Z",
-  "lastSuccess": "2026-10-24T04:56:09.933Z",
-  "summary": "363 headlines fetched; 293 kept, 116 matched to sites"
+  "lastAttempt": "2026-10-24T05:00:32.510Z",
+  "lastSuccess": "2026-10-24T05:00:32.510Z",
+  "summary": "355 headlines fetched; 327 kept, 132 matched to sites"
  }
 }
