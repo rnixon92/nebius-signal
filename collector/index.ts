@@ -3,6 +3,7 @@
 import { collectAtlas } from "./sources/atlas.ts";
 import { collectOnDemand, collectSpot } from "./sources/gpu.ts";
 import { collectJobs } from "./sources/jobs.ts";
+import { collectEpoch } from "./sources/epoch.ts";
 import { collectNews } from "./sources/news.ts";
 import { collectRegions } from "./sources/regions.ts";
 import { collectOpenRouter } from "./sources/openrouter.ts";
@@ -21,6 +22,7 @@ const SOURCES: [SourceId, () => Promise<SourceResult>, "hourly" | "daily"][] = [
   ["gpu-spot", collectSpot, "hourly"],
   ["regions", collectRegions, "hourly"],
   ["news", collectNews, "hourly"],
+  ["epoch", collectEpoch, "daily"],
   ["openrouter", collectOpenRouter, "daily"],
   ["openrouter-market", collectOpenRouterMarket, "daily"],
   ["atlas", collectAtlas, "daily"],

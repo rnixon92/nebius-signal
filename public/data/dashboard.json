@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-24T05:55:17.091Z",
+ "generatedAt": "2026-10-24T06:07:17.722Z",
  "sources": [
   {
    "id": "gpu-ondemand",
@@ -26,6 +26,15 @@
    "ok": true,
    "lastSuccess": "2026-10-24T05:12:59.538Z",
    "summary": "10 regions, 6 GPU platforms",
+   "stale": false
+  },
+  {
+   "id": "epoch",
+   "label": "Epoch AI data centers (satellite)",
+   "url": "https://epoch.ai/data/data-centers",
+   "ok": true,
+   "lastSuccess": "2026-10-24T06:05:02.205Z",
+   "summary": "2 Nebius sites, 125 MW IT power observed",
    "stale": false
   },
   {
@@ -253,12 +262,12 @@
      ],
      "source": "https://www.marketbeat.com/stocks/NASDAQ/NBIS/earnings/"
     },
-    "estimate": 918.2975553842332,
-    "low": 884.812672149228,
-    "high": 951.7824386192384,
-    "tilt": 0.014693431363793717,
+    "estimate": 918.2066227571579,
+    "low": 884.7250552975047,
+    "high": 951.6881902168111,
+    "tilt": 0.014592953322826473,
     "lean": "in line",
-    "coverage": 0.37282608695652175,
+    "coverage": 0.34120982986767484,
     "priorFromLastSurprise": 0.01267828843106178,
     "signals": [
      {
@@ -272,6 +281,16 @@
       "contribution": 0
      },
      {
+      "id": "observed-power",
+      "label": "Observed live power (satellite)",
+      "value": "125 → 125 MW at tracked sites (to 2026-07-12)",
+      "score": 0,
+      "weight": 1.5,
+      "coverage": 0.13043478260869565,
+      "note": "Epoch AI's satellite estimates for Vineland (Microsoft) and Mäntsälä. +30% in a quarter scores +1. Only two sites are tracked, so it's a partial view.",
+      "contribution": 0
+     },
+     {
       "id": "site-news",
       "label": "News at billing sites",
       "value": "2 progress · 1 risk headlines",
@@ -279,7 +298,7 @@
       "weight": 1.5,
       "coverage": 1,
       "note": "Live and ramping sites only. Trouble at future campuses (Independence, Birmingham) is pipeline risk, shown in Data centers.",
-      "contribution": 0.00321865889212828
+      "contribution": 0.003058171745152355
      },
      {
       "id": "dc-hiring",
@@ -289,7 +308,7 @@
       "weight": 0.5,
       "coverage": 1,
       "note": "Build-out staffing leads capacity by one to three quarters, so it's weighted lightly for the current one. Survivorship-biased: only still-open roles are visible.",
-      "contribution": -0.0011411572715339501
+      "contribution": -0.0010842574629810109
      },
      {
       "id": "blackwell-spot",
@@ -299,7 +318,7 @@
       "weight": 2,
       "coverage": 0.07608695652173914,
       "note": "Above ~60% means spare Blackwell capacity is being taken up.",
-      "contribution": -0.000328872219682047
+      "contribution": -0.00031247415886687574
      },
      {
       "id": "hopper-spot",
@@ -309,7 +328,7 @@
       "weight": 1,
       "coverage": 0.07608695652173914,
       "note": "Low Hopper prices point to idle older GPUs and pricing pressure on renewals.",
-      "contribution": 0.000266513531819654
+      "contribution": 0.0002532247684602253
      },
      {
       "id": "list-price",
@@ -347,16 +366,16 @@
     "reportDateConfirmed": false,
     "anchor": {
      "kind": "guidance-implied",
-     "value": 1300.4024446157666,
+     "value": 1300.493377242842,
      "range": null,
      "source": null
     },
-    "estimate": 1322.1980854009341,
-    "low": 1282.532142838906,
-    "high": 1361.8640279629622,
+    "estimate": 1322.2905421214803,
+    "low": 1282.6218258578358,
+    "high": 1361.9592583851247,
     "tilt": 0.016760688873979697,
     "lean": "no consensus",
-    "coverage": 0.5554347826086956,
+    "coverage": 0.48298676748582225,
     "priorFromLastSurprise": 0.01267828843106178,
     "signals": [
      {
@@ -367,6 +386,16 @@
       "weight": 3,
       "coverage": 0.010869565217391304,
       "note": "From Nebius's regions page. Absence of go-lives only counts once tracking covers the quarter.",
+      "contribution": 0
+     },
+     {
+      "id": "observed-power",
+      "label": "Observed live power (satellite)",
+      "value": "No observations yet this quarter (125 MW at start)",
+      "score": 0,
+      "weight": 1.5,
+      "coverage": 0,
+      "note": "Epoch AI's satellite estimates for Vineland (Microsoft) and Mäntsälä. +30% in a quarter scores +1. Only two sites are tracked, so it's a partial view.",
       "contribution": 0
      },
      {
@@ -452,12 +481,82 @@
   "history": [
    {
     "date": "2026-10-24",
-    "2026-Q3": 918.3,
-    "2026-Q4": 1322.2
+    "2026-Q3": 918.2,
+    "2026-Q4": 1322.3
    }
   ]
  },
  "power": {
+  "observed": [
+   {
+    "date": "2024-05-31",
+    "total": 0,
+    "Microsoft-Nebius New Jersey": 0
+   },
+   {
+    "date": "2024-10-08",
+    "total": 40,
+    "Microsoft-Nebius New Jersey": 0,
+    "Nebius Mantsala": 40
+   },
+   {
+    "date": "2025-11-14",
+    "total": 40,
+    "Microsoft-Nebius New Jersey": 0,
+    "Nebius Mantsala": 40
+   },
+   {
+    "date": "2025-12-15",
+    "total": 40,
+    "Microsoft-Nebius New Jersey": 0,
+    "Nebius Mantsala": 40
+   },
+   {
+    "date": "2026-03-31",
+    "total": 75,
+    "Microsoft-Nebius New Jersey": 0,
+    "Nebius Mantsala": 75
+   },
+   {
+    "date": "2026-04-15",
+    "total": 125,
+    "Microsoft-Nebius New Jersey": 50,
+    "Nebius Mantsala": 75
+   },
+   {
+    "date": "2026-06-29",
+    "total": 125,
+    "Microsoft-Nebius New Jersey": 50,
+    "Nebius Mantsala": 75
+   },
+   {
+    "date": "2026-07-12",
+    "total": 125,
+    "Microsoft-Nebius New Jersey": 50,
+    "Nebius Mantsala": 75
+   }
+  ],
+  "observedSites": [
+   {
+    "name": "Microsoft-Nebius New Jersey",
+    "siteId": "vineland",
+    "latestMw": 50,
+    "latestDate": "2026-07-12",
+    "plannedMw": 300,
+    "projection": null
+   },
+   {
+    "name": "Nebius Mantsala",
+    "siteId": "mantsala-1",
+    "latestMw": 75,
+    "latestDate": "2026-06-29",
+    "plannedMw": 75,
+    "projection": {
+     "date": "2027-12-31",
+     "itMw": 145
+    }
+   }
+  ],
   "definitions": {
    "contracted": "Power secured by contracted land and power commitments (supply side, not customer contracts).",
    "connected": "Power connected into fully built and equipped data centers.",
@@ -596,7 +695,7 @@
     "tcvMax": 19400,
     "years": 5,
     "site": "Vineland, New Jersey",
-    "status": "All tranches delivered (Aug 2026)",
+    "status": "Tranches due so far delivered (Aug 2026); Vineland ~50 of 300 MW live per satellite estimates",
     "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925110025/tm2530771-1_424b5.htm",
     "annual": 3480
    },
@@ -707,6 +806,10 @@
      "L40S"
     ],
     "spotPools": 2,
+    "observedMw": {
+     "mw": 75,
+     "date": "2026-06-29"
+    },
     "dcRolesOpen": 0,
     "dcRolesPosted90d": 0,
     "news90d": 0,
@@ -729,6 +832,7 @@
      "RTX PRO 6000"
     ],
     "spotPools": 1,
+    "observedMw": null,
     "dcRolesOpen": 0,
     "dcRolesPosted90d": 0,
     "news90d": 0,
@@ -757,6 +861,7 @@
      "H200"
     ],
     "spotPools": 0,
+    "observedMw": null,
     "dcRolesOpen": 0,
     "dcRolesPosted90d": 1,
     "news90d": 0,
@@ -784,6 +889,7 @@
      "H200"
     ],
     "spotPools": 1,
+    "observedMw": null,
     "dcRolesOpen": 0,
     "dcRolesPosted90d": 0,
     "news90d": 0,
@@ -812,6 +918,7 @@
      "B300"
     ],
     "spotPools": 1,
+    "observedMw": null,
     "dcRolesOpen": 0,
     "dcRolesPosted90d": 0,
     "news90d": 0,
@@ -835,6 +942,7 @@
      "B300"
     ],
     "spotPools": 1,
+    "observedMw": null,
     "dcRolesOpen": 0,
     "dcRolesPosted90d": 0,
     "news90d": 0,
@@ -863,6 +971,7 @@
      "B200"
     ],
     "spotPools": 1,
+    "observedMw": null,
     "dcRolesOpen": 0,
     "dcRolesPosted90d": 0,
     "news90d": 0,
@@ -887,6 +996,7 @@
      "RTX PRO 6000"
     ],
     "spotPools": 3,
+    "observedMw": null,
     "dcRolesOpen": 2,
     "dcRolesPosted90d": 1,
     "news90d": 0,
@@ -914,6 +1024,7 @@
      "B300"
     ],
     "spotPools": 1,
+    "observedMw": null,
     "dcRolesOpen": 2,
     "dcRolesPosted90d": 1,
     "news90d": 0,
@@ -929,12 +1040,16 @@
     "mw": 300,
     "status": "ramping",
     "region": null,
-    "note": "Microsoft contract capacity. Bloom Energy said the first fuel-cell power block was ready on Oct 23, 2026.",
+    "note": "Dedicated Microsoft capacity. Satellite estimates (Epoch AI) put ~50 MW of the planned 300 MW live as of Jul 2026; Bloom Energy said the first fuel-cell power block was ready on Oct 23, 2026.",
     "sources": [
      "https://blockspace.media/insight/bloom-energy-readies-nebius-power/"
     ],
     "platforms": [],
     "spotPools": 0,
+    "observedMw": {
+     "mw": 50,
+     "date": "2026-07-12"
+    },
     "dcRolesOpen": 3,
     "dcRolesPosted90d": 2,
     "news90d": 8,
@@ -961,6 +1076,7 @@
     ],
     "platforms": [],
     "spotPools": 0,
+    "observedMw": null,
     "dcRolesOpen": 0,
     "dcRolesPosted90d": 0,
     "news90d": 0,
@@ -990,6 +1106,7 @@
      "RTX PRO 6000"
     ],
     "spotPools": 1,
+    "observedMw": null,
     "dcRolesOpen": 0,
     "dcRolesPosted90d": 0,
     "news90d": 1,
@@ -1016,6 +1133,7 @@
     ],
     "platforms": [],
     "spotPools": 0,
+    "observedMw": null,
     "dcRolesOpen": 0,
     "dcRolesPosted90d": 0,
     "news90d": 0,
@@ -1038,6 +1156,7 @@
     ],
     "platforms": [],
     "spotPools": 0,
+    "observedMw": null,
     "dcRolesOpen": 3,
     "dcRolesPosted90d": 0,
     "news90d": 4,
@@ -1064,6 +1183,7 @@
     ],
     "platforms": [],
     "spotPools": 0,
+    "observedMw": null,
     "dcRolesOpen": 6,
     "dcRolesPosted90d": 0,
     "news90d": 0,
@@ -1092,6 +1212,7 @@
     ],
     "platforms": [],
     "spotPools": 0,
+    "observedMw": null,
     "dcRolesOpen": 3,
     "dcRolesPosted90d": 2,
     "news90d": 12,
@@ -1117,6 +1238,7 @@
     ],
     "platforms": [],
     "spotPools": 0,
+    "observedMw": null,
     "dcRolesOpen": 3,
     "dcRolesPosted90d": 2,
     "news90d": 0,
@@ -1143,6 +1265,7 @@
     ],
     "platforms": [],
     "spotPools": 0,
+    "observedMw": null,
     "dcRolesOpen": 1,
     "dcRolesPosted90d": 0,
     "news90d": 6,
@@ -1168,6 +1291,7 @@
     ],
     "platforms": [],
     "spotPools": 0,
+    "observedMw": null,
     "dcRolesOpen": 1,
     "dcRolesPosted90d": 0,
     "news90d": 13,
@@ -1196,6 +1320,7 @@
     ],
     "platforms": [],
     "spotPools": 0,
+    "observedMw": null,
     "dcRolesOpen": 3,
     "dcRolesPosted90d": 2,
     "news90d": 14,
@@ -1222,6 +1347,7 @@
     ],
     "platforms": [],
     "spotPools": 0,
+    "observedMw": null,
     "dcRolesOpen": 0,
     "dcRolesPosted90d": 0,
     "news90d": 0,
@@ -1244,6 +1370,7 @@
     ],
     "platforms": [],
     "spotPools": 0,
+    "observedMw": null,
     "dcRolesOpen": 0,
     "dcRolesPosted90d": 0,
     "news90d": 13,
@@ -1270,6 +1397,7 @@
     ],
     "platforms": [],
     "spotPools": 0,
+    "observedMw": null,
     "dcRolesOpen": 5,
     "dcRolesPosted90d": 5,
     "news90d": 1,

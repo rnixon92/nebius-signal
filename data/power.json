@@ -32,7 +32,7 @@
   { "date": "2026-08-12", "text": "All capacity tranches delivered to Microsoft, including two in the past month. Plan to deploy more than 1 GW per year starting 2027.", "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm" }
  ],
  "contracts": [
-  { "customer": "Microsoft", "signed": "2025-09-08", "tcv": 17400, "tcvMax": 19400, "years": 5, "site": "Vineland, New Jersey", "status": "All tranches delivered (Aug 2026)", "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925110025/tm2530771-1_424b5.htm" },
+  { "customer": "Microsoft", "signed": "2025-09-08", "tcv": 17400, "tcvMax": 19400, "years": 5, "site": "Vineland, New Jersey", "status": "Tranches due so far delivered (Aug 2026); Vineland ~50 of 300 MW live per satellite estimates", "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925110025/tm2530771-1_424b5.htm" },
   { "customer": "Meta", "signed": "2025-11-11", "tcv": 2900, "tcvMax": null, "years": 5, "site": "Two dedicated GPU clusters", "status": "Delivering", "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925110025/tm2530771-1_424b5.htm" },
   { "customer": "Four Q2 2026 AI cloud deals", "signed": "2026-06-30", "tcv": 4000, "tcvMax": null, "years": null, "site": "Various", "status": "Signed Q2 2026; average TCV >$1B, $20-25M per MW per year", "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926094568/tm2622968d1_ex99-2.htm" }
  ]

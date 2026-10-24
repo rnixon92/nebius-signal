@@ -25,6 +25,7 @@ npm run dev         # dashboard at http://localhost:5173
 | Greenhouse job board | Open roles by function and region | Build-out signal; new data-center hiring locations alert |
 | Yahoo Finance chart API | NBIS daily close | Price context |
 | `docs.nebius.com/overview/regions` | Live regions and the GPU types in each | A new region or GPU type = capacity going live (high alert) |
+| Epoch AI Frontier Data Centers (CC BY) | Satellite-estimated IT power over time at the Nebius sites it tracks (Vineland, Mäntsälä) | An independent read on how much capacity is actually live between quarterly letters |
 | Google News RSS | Data-center headlines, matched to sites and tagged risk/progress | Lawsuits, halts and power milestones show up in local news first |
 | `data/sites.json` | Site registry: status, MW, region, timing (hand-maintained) | The capacity pipeline that revenue follows |
 | `data/power.json` | Contracted / connected / active power, guidance history, revenue per MW, long-term contracts (hand-maintained from shareholder letters) | Power is the revenue driver; the SEC collector extracts power statements from each new letter and raises an alert to update this file |

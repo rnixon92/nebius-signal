@@ -30,7 +30,7 @@ export function axisY(p: Palette, format: (v: number) => string, extra: Record<s
     tick: { fill: p.ink3, fontSize: 11 },
     tickLine: false,
     axisLine: false,
-    width: 48,
+    width: 58,
     ...extra,
   };
 }

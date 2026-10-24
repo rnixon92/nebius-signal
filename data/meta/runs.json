@@ -58,5 +58,11 @@
   "lastAttempt": "2026-10-24T05:13:01.386Z",
   "lastSuccess": "2026-10-24T05:13:01.386Z",
   "summary": "334 headlines fetched; 341 kept, 139 matched to sites"
+ },
+ "epoch": {
+  "ok": true,
+  "lastAttempt": "2026-10-24T06:05:02.205Z",
+  "lastSuccess": "2026-10-24T06:05:02.205Z",
+  "summary": "2 Nebius sites, 125 MW IT power observed"
  }
 }

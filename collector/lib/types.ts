@@ -11,7 +11,7 @@ export type Alert = {
   url?: string;
 };
 
-export type SourceId = "gpu-ondemand" | "gpu-spot" | "regions" | "news" | "openrouter" | "openrouter-market" | "atlas" | "sec" | "jobs" | "stock";
+export type SourceId = "gpu-ondemand" | "gpu-spot" | "regions" | "news" | "epoch" | "openrouter" | "openrouter-market" | "atlas" | "sec" | "jobs" | "stock";
 
 export type SourceResult = {
   summary: string;

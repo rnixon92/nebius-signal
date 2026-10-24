@@ -80,7 +80,21 @@ export function DataCentersSection({ d, p }: { d: Dashboard; p: Palette }) {
               ),
             },
             { key: "status", label: "Status", render: (r) => <span className={`whitespace-nowrap rounded-md px-1.5 py-0.5 text-[11px] font-semibold ${STATUS[r.status].cls}`}>{STATUS[r.status].label}</span> },
-            { key: "mw", label: "MW", align: "right", render: (r) => (r.mw ? <span title={r.mwNote}>{r.mw.toLocaleString()}{r.mwNote ? "*" : ""}</span> : <span className="text-ink-3">{r.mwNote ?? "—"}</span>) },
+            { key: "mw", label: "MW planned", align: "right", render: (r) => (r.mw ? <span title={r.mwNote}>{r.mw.toLocaleString()}{r.mwNote ? "*" : ""}</span> : <span className="text-ink-3">{r.mwNote ?? "—"}</span>) },
+            {
+              key: "live",
+              label: "Seen live",
+              align: "right",
+              render: (r) =>
+                r.observedMw ? (
+                  <span title={`Epoch AI satellite estimate, ${day(r.observedMw.date, true)}`}>
+                    {r.observedMw.mw} MW
+                    {r.mw ? <span className="ml-1 text-xs text-ink-3">({Math.round((r.observedMw.mw / r.mw) * 100)}%)</span> : null}
+                  </span>
+                ) : (
+                  <span className="text-ink-3">—</span>
+                ),
+            },
             {
               key: "gpus",
               label: "GPUs live",

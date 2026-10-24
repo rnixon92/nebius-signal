@@ -63,6 +63,8 @@ export type SiteRow = {
   /** GPU families Nebius's docs list in this site's region. */
   platforms: string[];
   spotPools: number;
+  /** Satellite-observed IT power (Epoch AI), when Epoch tracks the site. */
+  observedMw: { mw: number; date: string } | null;
   dcRolesOpen: number;
   dcRolesPosted90d: number;
   news90d: number;
@@ -95,6 +97,9 @@ export type PowerData = {
   spotPools: number;
   /** Power statements auto-extracted from the newest shareholder letters, for review. */
   extracted: { filed: string; url: string; sentences: string[] }[];
+  /** Satellite-observed IT power (Epoch AI), carried forward between observations; one column per site plus `total`. */
+  observed: ({ date: string; total: number } & Record<string, number | string>)[];
+  observedSites: { name: string; siteId: string | null; latestMw: number; latestDate: string; plannedMw: number | null; projection: { date: string; itMw: number } | null }[];
 };
 
 /** Dated annotation for time-series charts. */

@@ -1,0 +1,90 @@
+{
+ "updatedAt": "2026-10-24",
+ "sites": {
+  "Microsoft-Nebius New Jersey": {
+   "name": "Microsoft-Nebius New Jersey",
+   "owner": "Nebius",
+   "users": "Microsoft",
+   "chips": "B300",
+   "country": "United States",
+   "address": "3963 S Lincoln Ave, Vineland, New Jersey",
+   "currentMw": 50,
+   "timeline": [
+    {
+     "date": "2024-05-31",
+     "itMw": 0,
+     "buildings": 0,
+     "status": "Land clearing begins for northern two buildings (Building 1-2).",
+     "projected": false
+    },
+    {
+     "date": "2025-12-15",
+     "itMw": 0,
+     "buildings": 0,
+     "status": "By mid-December 2025 the building was still not complete. A satellite analysis by SemiAnalysis found that the air-cooled chillers serving the second half of the first 50 MW phase were not yet installed, so the phase was not yet operational. SemiAnalysis estimated the full 50 MW would be reached around January to February 2026.",
+     "projected": false
+    },
+    {
+     "date": "2026-04-15",
+     "itMw": 50,
+     "buildings": 1,
+     "status": "High-resolution satellite imagery shows the air-cooled chiller array has grown to roughly 30 units, enough to support the first phase. We estimate Building 1 became operational around early 2026 with about 50 MW of IT capacity (70 MW total facility power at a 1.4 PUE), based on DataOne's disclosure of a first 50 MW phase. SemiAnalysis estimated the full 50 MW was reached around January to February 2026 ([SemiAnalysis](https://newsletter.semianalysis.com/p/stop-saying-half-of-2026-us-datacenter)); this April image is our first high-resolution confirmation that the cooling is in place.",
+     "projected": false
+    },
+    {
+     "date": "2026-07-12",
+     "itMw": 50,
+     "buildings": 1,
+     "status": "Compared with the April 2026 image, the building shell is closer to completion, and several additional air-cooled chillers have appeared on the ground, though they do not yet appear to be connected or operating. We therefore keep IT capacity at 50 MW.",
+     "projected": false
+    }
+   ]
+  },
+  "Nebius Mantsala": {
+   "name": "Nebius Mantsala",
+   "owner": "Nebius",
+   "users": "Microsoft",
+   "chips": "H100,B300,H200",
+   "country": "Finland",
+   "address": "",
+   "currentMw": 75,
+   "timeline": [
+    {
+     "date": "2024-10-08",
+     "itMw": 40,
+     "buildings": 2,
+     "status": "[Nebius announces expansion of Mantsala campus to 75MW.](https://nebius.com/newsroom/nebius-to-triple-capacity-at-finland-data-center-to-75-mw)",
+     "projected": false
+    },
+    {
+     "date": "2025-11-14",
+     "itMw": 40,
+     "buildings": 2,
+     "status": "Satellite imagery suggests that installation of the cooling units is finalizing on the expansion building. Construction equipment remains around the site. We do not believe the building is operational at this point.",
+     "projected": false
+    },
+    {
+     "date": "2026-03-31",
+     "itMw": 75,
+     "buildings": 3,
+     "status": "[Nebius announces that the expansion to 75MW is operational at the beginning of 2026.](https://nebius.com/newsroom/nebius-to-construct-310-mw-ai-factory-in-finland)",
+     "projected": false
+    },
+    {
+     "date": "2026-06-29",
+     "itMw": 75,
+     "buildings": 3,
+     "status": "All three buildings in the first phase are operational.",
+     "projected": false
+    },
+    {
+     "date": "2027-12-31",
+     "itMw": 145,
+     "buildings": 4,
+     "status": "[According to company estimates, the second expansion of 70MW will be complete by the end of 2027.](https://www.linkedin.com/posts/at-earnings-we-said-nebius-is-expanding-its-share-7493603318020370433-hkGo/?utm_source=share&utm_medium=member_ios&rcm=ACoAAAA0mUUBRa3Pv7LQtyPOfMvNdkHncgpQUmc)",
+     "projected": true
+    }
+   ]
+  }
+ }
+}

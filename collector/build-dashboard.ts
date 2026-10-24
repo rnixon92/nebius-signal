@@ -14,6 +14,7 @@ import type { MarketWeek } from "./sources/openrouter-market.ts";
 import type { Filing } from "./sources/sec.ts";
 import { matchSites, type NewsItem, type Site } from "./sources/news.ts";
 import type { RegionsFile } from "./sources/regions.ts";
+import type { EpochFile } from "./sources/epoch.ts";
 import { buildNowcast } from "./nowcast.ts";
 
 const FAMILY_ORDER = ["GB300", "B300", "GB200", "B200", "H200", "H100", "RTX PRO 6000", "L40S"];
@@ -25,6 +26,7 @@ const SOURCE_META: Record<string, { label: string; url: string; maxAgeH: number 
   "gpu-ondemand": { label: "Nebius GPU rate card", url: "https://nebius.com/prices", maxAgeH: 36 },
   "gpu-spot": { label: "Nebius spot price API", url: "https://nebius.com/spot-prices", maxAgeH: 36 },
   regions: { label: "Nebius regions docs", url: "https://docs.nebius.com/overview/regions", maxAgeH: 36 },
+  epoch: { label: "Epoch AI data centers (satellite)", url: "https://epoch.ai/data/data-centers", maxAgeH: 72 },
   news: { label: "Google News (data centers)", url: "https://news.google.com/search?q=Nebius%20data%20center", maxAgeH: 36 },
   openrouter: { label: "OpenRouter provider pages", url: "https://openrouter.ai/provider/nebius", maxAgeH: 36 },
   "openrouter-market": { label: "jimmyresearch OpenRouter CSV", url: "https://jimmyresearch.com/openrouter/", maxAgeH: 72 },
@@ -149,7 +151,31 @@ async function power(): Promise<Dashboard["power"]> {
   const current = await readJson<{ prices: Record<string, unknown> } | null>("gpu/spot-current.json", null);
   const filings = Object.values(await readJson<Record<string, Filing>>("sec/filings.json", {}));
 
+  // Satellite-observed IT power: each site's value carried forward between its observations.
+  const epoch = await readJson<EpochFile>("capacity/epoch.json", { updatedAt: "", sites: {} });
+  const registry = await readJson<Site[]>("sites.json", []);
+  const epochSites = Object.values(epoch.sites);
+  const obsDates = [...new Set(epochSites.flatMap((s) => s.timeline.filter((x) => !x.projected).map((x) => x.date)))].sort();
+  const observed = obsDates.map((date) => {
+    const row: { date: string; total: number } & Record<string, number | string> = { date, total: 0 };
+    for (const s of epochSites) {
+      const pt = s.timeline.filter((x) => !x.projected && x.date <= date).at(-1);
+      if (!pt) continue;
+      row[s.name] = pt.itMw;
+      row.total += pt.itMw;
+    }
+    return row;
+  });
+  const observedSites = epochSites.map((s) => {
+    const last = s.timeline.filter((x) => !x.projected).at(-1);
+    const proj = s.timeline.filter((x) => x.projected).at(-1);
+    const site = registry.find((r) => r.epoch === s.name);
+    return { name: s.name, siteId: site?.id ?? null, latestMw: last?.itMw ?? 0, latestDate: last?.date ?? "", plannedMw: site?.mw ?? null, projection: proj ? { date: proj.date, itMw: proj.itMw } : null };
+  });
+
   return {
+    observed,
+    observedSites,
     definitions: f.definitions,
     contracted,
     connected,
@@ -179,6 +205,7 @@ async function sites(): Promise<Dashboard["sites"]> {
   const current = await readJson<{ prices: Record<string, unknown> } | null>("gpu/spot-current.json", null);
   const roles = Object.values(await readJson<Record<string, Job>>("jobs/roles.json", {}));
   const news = Object.values(await readJson<Record<string, NewsItem>>("news/items.json", {})).sort((a, b) => b.date.localeCompare(a.date));
+  const epoch = await readJson<EpochFile>("capacity/epoch.json", { updatedAt: "", sites: {} });
   const since = addDays(today(), -90);
   const live = new Set(Object.keys(current?.prices ?? {}));
 
@@ -201,6 +228,10 @@ async function sites(): Promise<Dashboard["sites"]> {
       sources: s.sources,
       platforms: s.region ? Object.entries(regions.platforms).filter(([, rs]) => rs.includes(s.region!)).map(([fam]) => fam) : [],
       spotPools: s.region ? Object.entries(skus).filter(([id, k]) => k.region === s.region && live.has(id)).length : 0,
+      observedMw: (() => {
+        const pt = s.epoch ? epoch.sites[s.epoch]?.timeline.filter((x) => !x.projected).at(-1) : undefined;
+        return pt ? { mw: pt.itMw, date: pt.date } : null;
+      })(),
       dcRolesOpen: dc.filter((j) => !j.closedAt).length,
       dcRolesPosted90d: dc.filter((j) => (j.posted ?? j.firstSeen) >= since).length,
       news90d: n90.length,

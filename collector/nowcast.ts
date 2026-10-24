@@ -14,6 +14,7 @@ import type { OnDemandFile, Sku, SpotDaily } from "./sources/gpu.ts";
 import type { Job } from "./sources/jobs.ts";
 import type { ProviderHistory } from "./sources/openrouter.ts";
 import type { RegionsFile } from "./sources/regions.ts";
+import type { EpochFile } from "./sources/epoch.ts";
 
 type Quarter = { quarter: string; end: string; revenue: number; arr: number | null; consensus?: number | null };
 type Upcoming = { quarter: string; end: string; consensus: number | null; consensusRange: [number, number] | null; expectedReport: string | null; reportDateConfirmed: boolean; source: string | null };
@@ -46,6 +47,7 @@ type Inputs = {
   sites: Site[];
   jobs: Record<string, Job>;
   tokens: ProviderHistory;
+  epoch: EpochFile;
 };
 
 async function load(): Promise<Inputs> {
@@ -59,6 +61,7 @@ async function load(): Promise<Inputs> {
     sites: await readJson<Site[]>("sites.json", []),
     jobs: await readJson<Record<string, Job>>("jobs/roles.json", {}),
     tokens: await readJson<ProviderHistory>("openrouter/providers/nebius.json", { provider: "nebius", updatedAt: "", days: {} }),
+    epoch: await readJson<EpochFile>("capacity/epoch.json", { updatedAt: "", sites: {} }),
   };
 }
 
@@ -103,6 +106,24 @@ function signalsFor(inp: Inputs, from: string, to: string, asOf: string): Nowcas
     weight: 3,
     coverage: Math.min(1, regionTracked / days(from, to)),
     note: "From Nebius's regions page. Absence of go-lives only counts once tracking covers the quarter.",
+  });
+
+  // 1b. Satellite-observed power at tracked sites (Epoch AI): IT MW at quarter start vs the latest
+  // observation inside the quarter. Only counts as far as observations reach into the quarter.
+  const obsAt = (date: string) =>
+    Object.values(inp.epoch.sites).reduce((sum, s) => sum + (s.timeline.filter((x) => !x.projected && x.date <= date).at(-1)?.itMw ?? 0), 0);
+  const obsInQuarter = Object.values(inp.epoch.sites).flatMap((s) => s.timeline.filter((x) => !x.projected && x.date >= from && x.date <= end).map((x) => x.date)).sort().at(-1);
+  const startMw = obsAt(addDays(from, -1));
+  const latestMw = obsInQuarter ? obsAt(obsInQuarter) : startMw;
+  const growth = startMw ? latestMw / startMw - 1 : 0;
+  push({
+    id: "observed-power",
+    label: "Observed live power (satellite)",
+    value: obsInQuarter ? `${startMw} → ${latestMw} MW at tracked sites (to ${obsInQuarter})` : `No observations yet this quarter (${startMw} MW at start)`,
+    score: clamp(growth / 0.3),
+    weight: 1.5,
+    coverage: obsInQuarter ? Math.min(1, days(from, obsInQuarter) / days(from, to)) : 0,
+    note: "Epoch AI's satellite estimates for Vineland (Microsoft) and Mäntsälä. +30% in a quarter scores +1. Only two sites are tracked, so it's a partial view.",
   });
 
   // 2. Site news: progress (power delivered, online) versus risk (lawsuits, halts, delays). Only sites

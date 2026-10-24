@@ -10,6 +10,8 @@ const KEEP_DAYS = 400;
 
 export type Site = {
   id: string;
+  /** Matching data-center name in Epoch AI's satellite dataset, when Epoch tracks the site. */
+  epoch?: string;
   name: string;
   country: string;
   model: string;

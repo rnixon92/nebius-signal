@@ -2,7 +2,7 @@ import { useMemo, useState } from "react";
 import { Area, CartesianGrid, ComposedChart, Line, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import type { Dashboard, PowerPoint } from "../../shared/dashboard.ts";
 import { CHART_MARGIN, axisX, axisY, grid, type TipProps } from "../components/chart.tsx";
-import { timeTicks, toTime } from "../components/TimeSeriesCard.tsx";
+import { TimeSeriesCard, timeTicks, toTime } from "../components/TimeSeriesCard.tsx";
 import { Card, CardTitle, DataTable, ExtLink, Stat, TooltipCard } from "../components/ui.tsx";
 import { day, usdM } from "../lib/format.ts";
 import { href } from "../lib/router.ts";
@@ -126,6 +126,8 @@ export function PowerPanel({ d, p }: { d: Dashboard; p: Palette }) {
 
   const arr = pw.latestArr?.value ?? 0;
   const maxBar = Math.max(arr, pw.committedAnnual, 1);
+  const vineland = pw.observedSites.find((s) => s.siteId === "vineland");
+  const siteLabel = (name: string) => d.sites.rows.find((r) => r.id === pw.observedSites.find((s) => s.name === name)?.siteId)?.name ?? name;
 
   return (
     <>
@@ -178,6 +180,40 @@ export function PowerPanel({ d, p }: { d: Dashboard; p: Palette }) {
         />
       </div>
 
+      {pw.observed.length > 1 && (
+        <TimeSeriesCard
+          title="Live power seen from space"
+          sub="IT power Epoch AI estimates is running at Nebius sites it tracks, from satellite imagery of buildings and cooling equipment"
+          p={p}
+          globalRange="All"
+          rows={pw.observed}
+          series={[
+            ...pw.observedSites.map((s, i) => ({ key: s.name, label: siteLabel(s.name), color: p.series[i + 1]! })),
+            { key: "total", label: "Total tracked", color: p.accent },
+          ]}
+          kind="step"
+          format={(v) => mw(v)}
+          change="diff"
+          diffFormat={(v) => mw(v)}
+          csvName="nebius-observed-power"
+          height={240}
+          note={
+            <>
+              Data:{" "}
+              <ExtLink href="https://epoch.ai/data/data-centers" className="text-ink-3">
+                Epoch AI, Frontier Data Centers
+              </ExtLink>{" "}
+              (CC BY). Only {pw.observedSites.length} Nebius sites are tracked so far, so this undercounts total live power; colocation sites aren't covered.
+              {pw.observedSites
+                .filter((s) => s.projection)
+                .map((s) => ` Epoch projects ${siteLabel(s.name)} at ${mw(s.projection!.itMw)} by ${day(s.projection!.date, true)}.`)
+                .join("")}{" "}
+              New observations raise an alert and feed the nowcast.
+            </>
+          }
+        />
+      )}
+
       <Card>
         <CardTitle title="Live capacity: committed vs open to spot" sub="How much running capacity is locked into long-term contracts, and how much is left to sell on-demand or as spot" />
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-[minmax(0,5fr)_minmax(0,7fr)]">
@@ -199,9 +235,21 @@ export function PowerPanel({ d, p }: { d: Dashboard; p: Palette }) {
               ))}
             </div>
             <p className="text-sm leading-relaxed text-ink-2">
-              The Microsoft and Meta contracts alone come to about <span className="font-semibold text-ink">{usdM(pw.committedAnnual)} a year</span>, more than the whole run-rate in
-              June, before counting the four $1B+ deals signed in Q2. Nebius also said it ran <span className="font-semibold text-ink">sold out at peak utilization</span> in Q4 2025.
-              So most live capacity is committed, and capacity selling at spot or on-demand prices is a thin residual.
+              Once fully delivered, the Microsoft and Meta contracts come to about <span className="font-semibold text-ink">{usdM(pw.committedAnnual)} a year</span>, more than the whole
+              run-rate in June, before counting the four $1B+ deals signed in Q2. Most of that isn't billing yet:{" "}
+              {vineland ? (
+                <>
+                  satellite estimates put Vineland, Microsoft's dedicated site, at about <span className="font-semibold text-ink">{vineland.latestMw} MW of {vineland.plannedMw ?? 300} MW</span> (
+                  {day(vineland.latestDate, true)}), and its on-site power was only just coming online in October.
+                </>
+              ) : (
+                "much of the contracted capacity is still being built."
+              )}{" "}
+              So contracted revenue steps up as those sites power on, which is why the power charts matter more than any single quarter.
+            </p>
+            <p className="text-sm leading-relaxed text-ink-2">
+              On the capacity that is live, Nebius said it ran <span className="font-semibold text-ink">sold out at peak utilization</span> in Q4 2025, so the share selling at spot or
+              on-demand prices is a thin residual.
             </p>
             <p className="text-sm leading-relaxed text-ink-2">
               That residual is visible directly: <span className="font-semibold text-ink">{pw.spotPools} GPU pools</span> are offering spot capacity right now.{" "}
