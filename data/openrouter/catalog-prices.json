@@ -409,9 +409,9 @@
  },
  "deepseek/deepseek-v4-flash-20260731": {
   "name": "deepseek/deepseek-v4-flash-0731",
-  "input": 0.04444,
-  "output": 0.13332,
-  "cacheRead": 0.001414
+  "input": 0.44,
+  "output": 1.32,
+  "cacheRead": 0.014
  },
  "deepseek/deepseek-v4-flash-vision-exp-20260821": {
   "name": "deepseek/deepseek-v4-flash-vision-exp",
