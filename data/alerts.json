@@ -1,5 +1,14 @@
 [
  {
+  "id": "or-wow-2026-10-24",
+  "date": "2026-10-25",
+  "source": "openrouter",
+  "severity": "medium",
+  "title": "Nebius OpenRouter tokens up 62% week over week",
+  "detail": "259.4B tokens in the 7 days to 2026-10-24 vs 159.9B the week before",
+  "url": "https://openrouter.ai/provider/nebius"
+ },
+ {
   "id": "spot-cap-sku-e00k58wq19wjszct65fwm-2026-10-24",
   "date": "2026-10-24",
   "source": "gpu-spot",

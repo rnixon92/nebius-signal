@@ -1,6 +1,6 @@
 {
  "provider": "groq",
- "updatedAt": "2026-10-24T19:57:26.134Z",
+ "updatedAt": "2026-10-25T01:00:25.555Z",
  "days": {
   "2026-07-27": {
    "openai/gpt-oss-120b": 9090729065,
@@ -107,7 +107,7 @@
    "meta-llama/llama-4-scout-17b-16e-instruct": 623651255,
    "qwen/qwen3-32b-04-28": 272552134,
    "minimax/minimax-m2.7-20260318": 109669038,
-   "openai/whisper-large-v3-turbo": 0,
+   "openai/whisper-large-v3": 0,
    "Others": 0
   },
   "2026-08-05": {
@@ -131,7 +131,7 @@
    "meta-llama/llama-3.3-70b-instruct": 729378726,
    "minimax/minimax-m2.7-20260318": 183172312,
    "qwen/qwen3-32b-04-28": 138460956,
-   "openai/whisper-large-v3": 0,
+   "openai/whisper-large-v3-turbo": 0,
    "Others": 0
   },
   "2026-08-07": {
@@ -167,7 +167,7 @@
    "meta-llama/llama-3.3-70b-instruct": 406025346,
    "qwen/qwen3-32b-04-28": 241634912,
    "minimax/minimax-m2.7-20260318": 78501504,
-   "openai/whisper-large-v3": 0,
+   "openai/whisper-large-v3-turbo": 0,
    "Others": 0
   },
   "2026-08-10": {
@@ -299,7 +299,7 @@
    "openai/gpt-oss-safeguard-20b": 759450177,
    "minimax/minimax-m2.7-20260318": 626400326,
    "qwen/qwen3-32b-04-28": 266020243,
-   "openai/whisper-large-v3-turbo": 0,
+   "openai/whisper-large-v3": 0,
    "Others": 0
   },
   "2026-08-21": {
@@ -311,7 +311,7 @@
    "meta-llama/llama-3.3-70b-instruct": 892777745,
    "openai/gpt-oss-safeguard-20b": 819471812,
    "qwen/qwen3-32b-04-28": 486909482,
-   "openai/whisper-large-v3-turbo": 0,
+   "openai/whisper-large-v3": 0,
    "Others": 0
   },
   "2026-08-22": {
@@ -323,7 +323,7 @@
    "minimax/minimax-m2.7-20260318": 697350785,
    "meta-llama/llama-3.3-70b-instruct": 615582508,
    "qwen/qwen3-32b-04-28": 465507316,
-   "openai/whisper-large-v3": 0,
+   "openai/whisper-large-v3-turbo": 0,
    "Others": 0
   },
   "2026-08-23": {
@@ -347,7 +347,7 @@
    "meta-llama/llama-4-scout-17b-16e-instruct": 867472073,
    "qwen/qwen3-32b-04-28": 483123334,
    "minimax/minimax-m2.7-20260318": 142539639,
-   "openai/whisper-large-v3-turbo": 0,
+   "openai/whisper-large-v3": 0,
    "Others": 0
   },
   "2026-08-25": {
@@ -371,7 +371,7 @@
    "openai/gpt-oss-safeguard-20b": 1012308579,
    "qwen/qwen3-32b-04-28": 573295548,
    "minimax/minimax-m2.7-20260318": 103768120,
-   "openai/whisper-large-v3-turbo": 0,
+   "openai/whisper-large-v3": 0,
    "Others": 0
   },
   "2026-08-27": {
@@ -395,7 +395,7 @@
    "meta-llama/llama-4-scout-17b-16e-instruct": 913511425,
    "qwen/qwen3-32b-04-28": 407394747,
    "minimax/minimax-m2.7-20260318": 130802525,
-   "openai/whisper-large-v3-turbo": 0,
+   "openai/whisper-large-v3": 0,
    "Others": 0
   },
   "2026-08-29": {
@@ -419,7 +419,7 @@
    "qwen/qwen3-32b-04-28": 723605507,
    "meta-llama/llama-3.3-70b-instruct": 409301868,
    "minimax/minimax-m2.7-20260318": 195526170,
-   "openai/whisper-large-v3-turbo": 0,
+   "openai/whisper-large-v3": 0,
    "Others": 0
   },
   "2026-08-31": {
@@ -431,7 +431,7 @@
    "meta-llama/llama-3.3-70b-instruct": 682349311,
    "qwen/qwen3-32b-04-28": 672689987,
    "minimax/minimax-m2.7-20260318": 135423070,
-   "openai/whisper-large-v3-turbo": 0,
+   "openai/whisper-large-v3": 0,
    "Others": 0
   },
   "2026-09-01": {
@@ -463,8 +463,8 @@
    "openai/gpt-oss-safeguard-20b": 1030257134,
    "meta-llama/llama-3.3-70b-instruct": 773183110,
    "minimax/minimax-m2.7-20260318": 90690951,
-   "openai/whisper-large-v3-turbo": 0,
-   "openai/whisper-large-v3": 0
+   "openai/whisper-large-v3": 0,
+   "openai/whisper-large-v3-turbo": 0
   },
   "2026-09-04": {
    "openai/gpt-oss-120b": 11331664466,
@@ -503,8 +503,8 @@
    "openai/gpt-oss-safeguard-20b": 1118081943,
    "meta-llama/llama-3.3-70b-instruct": 738001465,
    "minimax/minimax-m2.7-20260318": 47050209,
-   "openai/whisper-large-v3": 0,
-   "openai/whisper-large-v3-turbo": 0
+   "openai/whisper-large-v3-turbo": 0,
+   "openai/whisper-large-v3": 0
   },
   "2026-09-08": {
    "openai/gpt-oss-120b": 11003257080,
@@ -543,8 +543,8 @@
    "openai/gpt-oss-safeguard-20b": 1058610735,
    "meta-llama/llama-3.3-70b-instruct": 708694450,
    "minimax/minimax-m2.7-20260318": 100654129,
-   "openai/whisper-large-v3-turbo": 0,
-   "openai/whisper-large-v3": 0
+   "openai/whisper-large-v3": 0,
+   "openai/whisper-large-v3-turbo": 0
   },
   "2026-09-12": {
    "openai/gpt-oss-120b": 8740538737,
@@ -553,8 +553,8 @@
    "openai/gpt-oss-safeguard-20b": 1099166360,
    "meta-llama/llama-3.3-70b-instruct": 522470059,
    "minimax/minimax-m2.7-20260318": 27702353,
-   "openai/whisper-large-v3-turbo": 0,
-   "openai/whisper-large-v3": 0
+   "openai/whisper-large-v3": 0,
+   "openai/whisper-large-v3-turbo": 0
   },
   "2026-09-13": {
    "openai/gpt-oss-120b": 8400005949,
@@ -583,8 +583,8 @@
    "openai/gpt-oss-safeguard-20b": 995305207,
    "meta-llama/llama-3.3-70b-instruct": 779070471,
    "minimax/minimax-m2.7-20260318": 56974234,
-   "openai/whisper-large-v3-turbo": 0,
-   "openai/whisper-large-v3": 0
+   "openai/whisper-large-v3": 0,
+   "openai/whisper-large-v3-turbo": 0
   },
   "2026-09-16": {
    "openai/gpt-oss-120b": 33910705791,
@@ -603,8 +603,8 @@
    "openai/gpt-oss-safeguard-20b": 868334548,
    "meta-llama/llama-3.3-70b-instruct": 733448420,
    "minimax/minimax-m2.7-20260318": 83664013,
-   "openai/whisper-large-v3": 0,
-   "openai/whisper-large-v3-turbo": 0
+   "openai/whisper-large-v3-turbo": 0,
+   "openai/whisper-large-v3": 0
   },
   "2026-09-18": {
    "openai/gpt-oss-120b": 15107206093,
@@ -633,8 +633,8 @@
    "openai/gpt-oss-safeguard-20b": 963696865,
    "meta-llama/llama-3.3-70b-instruct": 514200217,
    "minimax/minimax-m2.7-20260318": 63624314,
-   "openai/whisper-large-v3-turbo": 0,
-   "openai/whisper-large-v3": 0
+   "openai/whisper-large-v3": 0,
+   "openai/whisper-large-v3-turbo": 0
   },
   "2026-09-21": {
    "openai/gpt-oss-120b": 21426825068,
@@ -663,8 +663,8 @@
    "meta-llama/llama-3.3-70b-instruct": 1177442244,
    "openai/gpt-oss-safeguard-20b": 867436016,
    "minimax/minimax-m2.7-20260318": 110825549,
-   "openai/whisper-large-v3": 0,
-   "openai/whisper-large-v3-turbo": 0
+   "openai/whisper-large-v3-turbo": 0,
+   "openai/whisper-large-v3": 0
   },
   "2026-09-24": {
    "openai/gpt-oss-120b": 20897531195,
@@ -703,8 +703,8 @@
    "meta-llama/llama-3.3-70b-instruct": 1007136808,
    "openai/gpt-oss-safeguard-20b": 385865817,
    "minimax/minimax-m2.7-20260318": 56293523,
-   "openai/whisper-large-v3": 0,
-   "openai/whisper-large-v3-turbo": 0
+   "openai/whisper-large-v3-turbo": 0,
+   "openai/whisper-large-v3": 0
   },
   "2026-09-28": {
    "openai/gpt-oss-120b": 12177578268,
@@ -713,8 +713,8 @@
    "meta-llama/llama-3.3-70b-instruct": 1296045034,
    "openai/gpt-oss-safeguard-20b": 436436054,
    "minimax/minimax-m2.7-20260318": 93227981,
-   "openai/whisper-large-v3": 0,
-   "openai/whisper-large-v3-turbo": 0
+   "openai/whisper-large-v3-turbo": 0,
+   "openai/whisper-large-v3": 0
   },
   "2026-09-29": {
    "openai/gpt-oss-120b": 12557482443,
@@ -723,8 +723,8 @@
    "meta-llama/llama-3.3-70b-instruct": 1306965820,
    "openai/gpt-oss-safeguard-20b": 411530629,
    "minimax/minimax-m2.7-20260318": 99557228,
-   "openai/whisper-large-v3": 0,
-   "openai/whisper-large-v3-turbo": 0
+   "openai/whisper-large-v3-turbo": 0,
+   "openai/whisper-large-v3": 0
   },
   "2026-09-30": {
    "openai/gpt-oss-120b": 13078825332,
@@ -733,8 +733,8 @@
    "meta-llama/llama-3.3-70b-instruct": 1320483606,
    "openai/gpt-oss-safeguard-20b": 412636631,
    "minimax/minimax-m2.7-20260318": 80378916,
-   "openai/whisper-large-v3": 0,
-   "openai/whisper-large-v3-turbo": 0
+   "openai/whisper-large-v3-turbo": 0,
+   "openai/whisper-large-v3": 0
   },
   "2026-10-01": {
    "openai/gpt-oss-120b": 13287021436,
@@ -743,8 +743,8 @@
    "meta-llama/llama-3.3-70b-instruct": 1499390142,
    "openai/gpt-oss-safeguard-20b": 403207331,
    "minimax/minimax-m2.7-20260318": 100668553,
-   "openai/whisper-large-v3": 0,
-   "openai/whisper-large-v3-turbo": 0
+   "openai/whisper-large-v3-turbo": 0,
+   "openai/whisper-large-v3": 0
   },
   "2026-10-02": {
    "openai/gpt-oss-120b": 15892767486,
@@ -753,8 +753,8 @@
    "meta-llama/llama-3.1-8b-instruct": 817362249,
    "openai/gpt-oss-safeguard-20b": 414729172,
    "minimax/minimax-m2.7-20260318": 64454564,
-   "openai/whisper-large-v3": 0,
-   "openai/whisper-large-v3-turbo": 0
+   "openai/whisper-large-v3-turbo": 0,
+   "openai/whisper-large-v3": 0
   },
   "2026-10-03": {
    "openai/gpt-oss-120b": 10863663073,
@@ -773,8 +773,8 @@
    "meta-llama/llama-3.3-70b-instruct": 1039392605,
    "openai/gpt-oss-safeguard-20b": 342616275,
    "minimax/minimax-m2.7-20260318": 32498847,
-   "openai/whisper-large-v3-turbo": 0,
-   "openai/whisper-large-v3": 0
+   "openai/whisper-large-v3": 0,
+   "openai/whisper-large-v3-turbo": 0
   },
   "2026-10-05": {
    "openai/gpt-oss-120b": 13257702772,
@@ -783,8 +783,8 @@
    "meta-llama/llama-3.3-70b-instruct": 1309964219,
    "openai/gpt-oss-safeguard-20b": 390384996,
    "minimax/minimax-m2.7-20260318": 158478287,
-   "openai/whisper-large-v3": 0,
-   "openai/whisper-large-v3-turbo": 0
+   "openai/whisper-large-v3-turbo": 0,
+   "openai/whisper-large-v3": 0
   },
   "2026-10-06": {
    "openai/gpt-oss-120b": 12013027502,
@@ -803,8 +803,8 @@
    "meta-llama/llama-3.3-70b-instruct": 1404208013,
    "openai/gpt-oss-safeguard-20b": 395330616,
    "minimax/minimax-m2.7-20260318": 69656371,
-   "openai/whisper-large-v3-turbo": 0,
-   "openai/whisper-large-v3": 0
+   "openai/whisper-large-v3": 0,
+   "openai/whisper-large-v3-turbo": 0
   },
   "2026-10-08": {
    "openai/gpt-oss-120b": 12497604138,
@@ -823,8 +823,8 @@
    "meta-llama/llama-3.1-8b-instruct": 1197069204,
    "openai/gpt-oss-safeguard-20b": 369577881,
    "minimax/minimax-m2.7-20260318": 49728996,
-   "openai/whisper-large-v3": 0,
-   "openai/whisper-large-v3-turbo": 0
+   "openai/whisper-large-v3-turbo": 0,
+   "openai/whisper-large-v3": 0
   },
   "2026-10-10": {
    "openai/gpt-oss-120b": 10334393719,
@@ -843,8 +843,8 @@
    "meta-llama/llama-3.3-70b-instruct": 1099483188,
    "openai/gpt-oss-safeguard-20b": 395302655,
    "minimax/minimax-m2.7-20260318": 44143686,
-   "openai/whisper-large-v3-turbo": 0,
-   "openai/whisper-large-v3": 0
+   "openai/whisper-large-v3": 0,
+   "openai/whisper-large-v3-turbo": 0
   },
   "2026-10-12": {
    "openai/gpt-oss-120b": 13455143310,
@@ -933,8 +933,8 @@
    "meta-llama/llama-3.3-70b-instruct": 802423913,
    "openai/gpt-oss-safeguard-20b": 551610038,
    "minimax/minimax-m2.7-20260318": 83128378,
-   "openai/whisper-large-v3-turbo": 0,
-   "openai/whisper-large-v3": 0
+   "openai/whisper-large-v3": 0,
+   "openai/whisper-large-v3-turbo": 0
   },
   "2026-10-21": {
    "openai/gpt-oss-120b": 15449450840,
@@ -953,8 +953,8 @@
    "meta-llama/llama-3.3-70b-instruct": 1145729510,
    "openai/gpt-oss-safeguard-20b": 372602687,
    "minimax/minimax-m2.7-20260318": 87774849,
-   "openai/whisper-large-v3-turbo": 0,
-   "openai/whisper-large-v3": 0
+   "openai/whisper-large-v3": 0,
+   "openai/whisper-large-v3-turbo": 0
   },
   "2026-10-23": {
    "openai/gpt-oss-120b": 12593935185,
@@ -967,12 +967,22 @@
    "openai/whisper-large-v3": 0
   },
   "2026-10-24": {
-   "openai/gpt-oss-120b": 7053826362,
-   "openai/gpt-oss-20b": 4337333928,
-   "meta-llama/llama-3.1-8b-instruct": 899594337,
-   "meta-llama/llama-3.3-70b-instruct": 613476126,
-   "openai/gpt-oss-safeguard-20b": 314887398,
-   "minimax/minimax-m2.7-20260318": 61653389,
+   "openai/gpt-oss-120b": 8507712240,
+   "openai/gpt-oss-20b": 5037112221,
+   "meta-llama/llama-3.1-8b-instruct": 1078125066,
+   "meta-llama/llama-3.3-70b-instruct": 753329007,
+   "openai/gpt-oss-safeguard-20b": 385983185,
+   "minimax/minimax-m2.7-20260318": 72202259,
+   "openai/whisper-large-v3": 0,
+   "openai/whisper-large-v3-turbo": 0
+  },
+  "2026-10-25": {
+   "openai/gpt-oss-120b": 241088020,
+   "openai/gpt-oss-20b": 112241911,
+   "meta-llama/llama-3.1-8b-instruct": 34080919,
+   "meta-llama/llama-3.3-70b-instruct": 29702516,
+   "openai/gpt-oss-safeguard-20b": 13427113,
+   "minimax/minimax-m2.7-20260318": 3572055,
    "openai/whisper-large-v3": 0,
    "openai/whisper-large-v3-turbo": 0
   }
