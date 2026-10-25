@@ -410,7 +410,22 @@
   "evidence": "named",
   "firstListedAt": "2026-10-18",
   "baseline": false,
-  "latestEvidence": "2026-10-18"
+  "latestEvidence": "2026-10-25"
+ },
+ "azena": {
+  "name": "azena",
+  "category": "Business services",
+  "use": "Open-model inference for Model Garden and Brand Studio",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-25",
+  "baseline": false,
+  "latestEvidence": "2026-10-21"
  },
  "bailar": {
   "name": "Bailar",
@@ -560,15 +575,17 @@
  "black-forest-labs": {
   "name": "Black Forest Labs",
   "category": "Model developers",
-  "use": "Named Nebius AI Cloud customer.",
+  "use": "Used Nebius B200 infrastructure for Self-Flow research.",
   "services": [
    "Nebius AI Cloud"
   ],
-  "workloads": [],
+  "workloads": [
+   "Model training"
+  ],
   "evidence": "named",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-13"
+  "latestEvidence": "2026-10-21"
  },
  "bladerunner-labs": {
   "name": "BladeRunner Labs",
@@ -717,7 +734,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-22",
   "baseline": false,
-  "latestEvidence": "2026-10-21"
+  "latestEvidence": "2026-10-25"
  },
  "businessmcp": {
   "name": "BusinessMCP",
@@ -943,7 +960,7 @@
   "evidence": "agreement",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-13"
+  "latestEvidence": "2026-10-25"
  },
  "compugen": {
   "name": "Compugen",
@@ -1724,7 +1741,7 @@
  "groq": {
   "name": "Groq",
   "category": "Data & infrastructure",
-  "use": "Used Tavily for web search in its retired Compound systems.",
+  "use": "Used Tavily for real-time search in Compound Beta.",
   "services": [
    "Tavily"
   ],
@@ -1891,7 +1908,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-13"
+  "latestEvidence": "2026-10-25"
  },
  "hostyourai": {
   "name": "HostYourAI",
@@ -1936,7 +1953,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-27",
   "baseline": false,
-  "latestEvidence": "2026-10-18"
+  "latestEvidence": "2026-10-14"
  },
  "iiit-delhi": {
   "name": "Indraprastha Institute of Information Technology, Delhi",
@@ -2072,10 +2089,11 @@
  "jetbrains": {
   "name": "JetBrains",
   "category": "Developer tools",
-  "use": "Nebius Mellum2 training infrastructure. Tavily search.",
+  "use": "Nebius Mellum2 training, TractoAI and Tavily search.",
   "services": [
    "Nebius AI Cloud",
-   "Tavily"
+   "Tavily",
+   "TractoAI"
   ],
   "workloads": [
    "Agentic search",
@@ -2085,7 +2103,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-22"
+  "latestEvidence": "2026-10-25"
  },
  "jinbay": {
   "name": "Jinbay",
@@ -2117,7 +2135,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-08-28"
+  "latestEvidence": "2026-10-21"
  },
  "k2k": {
   "name": "K2K",
@@ -2148,6 +2166,21 @@
   "firstListedAt": "2026-10-18",
   "baseline": false,
   "latestEvidence": "2026-10-19"
+ },
+ "kaon-ai": {
+  "name": "Kaon AI",
+  "category": "Media & creativity",
+  "use": "Custom inference infrastructure on Nebius",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-25",
+  "baseline": false,
+  "latestEvidence": "2026-10-25"
  },
  "kedalia": {
   "name": "Kedalia",
@@ -2319,7 +2352,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-09",
   "baseline": false,
-  "latestEvidence": "2025-12-05"
+  "latestEvidence": "2026-10-25"
  },
  "langwatch": {
   "name": "LangWatch",
@@ -2410,7 +2443,7 @@
   "evidence": "named",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-15"
+  "latestEvidence": "2026-10-25"
  },
  "liner": {
   "name": "Liner",
@@ -2713,7 +2746,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-19"
+  "latestEvidence": "2026-10-18"
  },
  "microsoft": {
   "name": "Microsoft",
@@ -2823,7 +2856,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-27",
   "baseline": false,
-  "latestEvidence": "2026-10-15"
+  "latestEvidence": "2026-09-27"
  },
  "modulawai": {
   "name": "ModulawAI",
@@ -2941,6 +2974,19 @@
   "firstListedAt": "2026-10-20",
   "baseline": false,
   "latestEvidence": "2026-10-20"
+ },
+ "myqanda": {
+  "name": "MyQandA",
+  "category": "Workplace tools",
+  "use": "Nebius infrastructure for website chatbot model requests",
+  "services": [],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-25",
+  "baseline": false,
+  "latestEvidence": "2026-10-25"
  },
  "nathan-brank": {
   "name": "Nathan & Brank",
@@ -3665,6 +3711,21 @@
   "baseline": true,
   "latestEvidence": "2026-10-18"
  },
+ "praxis-repina": {
+  "name": "Praxis Repina",
+  "category": "Health & biotech",
+  "use": "Uses Nebius to generate vectors for internal inquiry search.",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-25",
+  "baseline": false,
+  "latestEvidence": "2026-10-25"
+ },
  "prem-confidential-api": {
   "name": "PREM Confidential API",
   "category": "Data & infrastructure",
@@ -3754,6 +3815,23 @@
   "baseline": false,
   "latestEvidence": "2025-05-08"
  },
+ "prolumios": {
+  "name": "Prolumios",
+  "category": "Workplace tools",
+  "use": "Token Factory and Tavily research in hackathon implementation",
+  "services": [
+   "Nebius Token Factory",
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-25",
+  "baseline": false,
+  "latestEvidence": "2026-10-25"
+ },
  "prominai": {
   "name": "ProminAI",
   "category": "Business services",
@@ -3784,7 +3862,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-05"
+  "latestEvidence": "2026-10-25"
  },
  "prozessx": {
   "name": "XOS",
@@ -3970,7 +4048,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-20"
+  "latestEvidence": "2026-10-25"
  },
  "redis": {
   "name": "Redis",
@@ -3998,7 +4076,7 @@
   "evidence": "agreement",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-13"
+  "latestEvidence": "2026-10-19"
  },
  "requesty": {
   "name": "Requesty",
@@ -4032,7 +4110,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-24"
+  "latestEvidence": "2026-10-13"
  },
  "revyn": {
   "name": "Revyn",
@@ -4196,7 +4274,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-15",
   "baseline": false,
-  "latestEvidence": "2026-10-19"
+  "latestEvidence": "2026-10-25"
  },
  "schulki": {
   "name": "schulKI",
@@ -4325,7 +4403,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-17"
+  "latestEvidence": "2026-10-25"
  },
  "shout": {
   "name": "Shout",
@@ -4572,7 +4650,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-16",
   "baseline": false,
-  "latestEvidence": "2026-10-19"
+  "latestEvidence": "2026-10-25"
  },
  "sword-health": {
   "name": "Sword Health",
@@ -4814,7 +4892,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-04",
   "baseline": false,
-  "latestEvidence": "2026-10-04"
+  "latestEvidence": "2026-10-14"
  },
  "tilde-research": {
   "name": "Tilde Research",
@@ -4890,6 +4968,22 @@
   "firstListedAt": "2026-10-17",
   "baseline": false,
   "latestEvidence": "2026-10-17"
+ },
+ "trainloop": {
+  "name": "TrainLoop",
+  "category": "Model developers",
+  "use": "Trains clinical reasoning models on Nebius GPUs",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-25",
+  "baseline": false,
+  "latestEvidence": "2026-10-25"
  },
  "transcripta-bio": {
   "name": "Transcripta Bio",
@@ -5047,6 +5141,19 @@
   "baseline": false,
   "latestEvidence": "2026-10-15"
  },
+ "university-of-miami": {
+  "name": "University of Miami",
+  "category": "Science & research",
+  "use": "Nebius compute supports shared mathematics research",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-25",
+  "baseline": false,
+  "latestEvidence": "2026-10-25"
+ },
  "university-of-southern-california": {
   "name": "University of Southern California",
   "category": "Science & research",
@@ -5201,7 +5308,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-27",
   "baseline": false,
-  "latestEvidence": "2026-10-18"
+  "latestEvidence": "2026-10-25"
  },
  "voicely": {
   "name": "Voicely",

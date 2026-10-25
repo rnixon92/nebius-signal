@@ -10776,7 +10776,9 @@
   "location": "Israel",
   "region": "Israel",
   "posted": "2026-08-25",
-  "firstSeen": "2026-09-04"
+  "firstSeen": "2026-09-04",
+  "closedAt": "2026-10-25",
+  "closedApprox": false
  },
  "4959063101": {
   "title": "Account Executive, Digital Native",

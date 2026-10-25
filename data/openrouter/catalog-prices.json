@@ -55,9 +55,9 @@
  },
  "~moonshotai/kimi-latest": {
   "name": "~moonshotai/kimi-latest",
-  "input": 0.19,
-  "output": 8.94,
-  "cacheRead": 0.19
+  "input": 0.1615,
+  "output": 10.1551,
+  "cacheRead": 0.16
  },
  "~openai/gpt-astra-latest": {
   "name": "~openai/gpt-astra-latest",
@@ -103,15 +103,15 @@
  },
  "~z-ai/glm-flash-latest": {
   "name": "~z-ai/glm-flash-latest",
-  "input": 0.0191,
-  "output": 0.1352,
-  "cacheRead": 0.0191
+  "input": 0.0513,
+  "output": 0.0701,
+  "cacheRead": 0.03
  },
  "~z-ai/glm-latest": {
   "name": "~z-ai/glm-latest",
-  "input": 0.075,
-  "output": 4.295,
-  "cacheRead": 0.075
+  "input": 0.0703,
+  "output": 4.3843,
+  "cacheRead": 0.0703
  },
  "aion-labs/aion-2.0-20260223": {
   "name": "aion-labs/aion-2.0",
@@ -409,9 +409,9 @@
  },
  "deepseek/deepseek-v4-flash-20260731": {
   "name": "deepseek/deepseek-v4-flash-0731",
-  "input": 0.0422,
-  "output": 0.1694,
-  "cacheRead": 0.028
+  "input": 0.04444,
+  "output": 0.13332,
+  "cacheRead": 0.001414
  },
  "deepseek/deepseek-v4-flash-vision-exp-20260821": {
   "name": "deepseek/deepseek-v4-flash-vision-exp",
