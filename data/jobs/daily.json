@@ -589,14 +589,14 @@
   "total": 383,
   "byFunction": {
    "Engineering & product": 184,
-   "Sales & go-to-market": 71,
-   "G&A & other": 54,
+   "Sales & go-to-market": 72,
+   "G&A & other": 53,
    "Data center & power": 74
   },
   "byRegion": {
    "Europe & other": 172,
-   "Americas": 118,
-   "Israel": 48,
+   "Americas": 119,
+   "Israel": 47,
    "Asia-Pacific": 42,
    "Remote": 3
   }

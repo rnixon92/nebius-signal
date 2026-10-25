@@ -1,6 +1,6 @@
 {
  "provider": "novita",
- "updatedAt": "2026-10-25T12:03:50.553Z",
+ "updatedAt": "2026-10-25T21:16:25.422Z",
  "days": {
   "2026-07-27": {
    "deepseek/deepseek-v4-flash-20260423": 204360735482,
@@ -1083,16 +1083,16 @@
    "Others": 33007752042
   },
   "2026-10-25": {
-   "xiaomi/mimo-v2.6-pro-20260921": 22601778833,
-   "z-ai/glm-5.3-flash-20260826": 18854815287,
-   "deepseek/deepseek-v4.1-flash-20260910": 13150464770,
-   "tencent/hy4-preview-20260827": 11148168600,
-   "deepseek/deepseek-v4-pro-20260423": 6632486874,
-   "deepseek/deepseek-v4.1-flash-20261017": 4998044312,
-   "inclusionai/ling-3.0-flash-20260723": 4970825074,
-   "z-ai/glm-5.2-20260616": 4541153186,
-   "deepseek/deepseek-v4-flash-20260731": 3094857299,
-   "Others": 13698895560
+   "xiaomi/mimo-v2.6-pro-20260921": 35041001700,
+   "z-ai/glm-5.3-flash-20260826": 35037450232,
+   "tencent/hy4-preview-20260827": 19332706493,
+   "deepseek/deepseek-v4.1-flash-20260910": 15452227985,
+   "deepseek/deepseek-v4-pro-20260423": 12720256123,
+   "deepseek/deepseek-v4.1-flash-20261017": 10771289369,
+   "inclusionai/ling-3.0-flash-20260723": 9697465574,
+   "deepseek/deepseek-v4-flash-20260731": 5251509630,
+   "z-ai/glm-5.2-20260616": 4878360264,
+   "Others": 25683722331
   }
  }
 }

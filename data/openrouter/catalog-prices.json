@@ -38,8 +38,8 @@
  "~deepseek/deepseek-v4-flash-latest": {
   "name": "~deepseek/deepseek-v4-flash-latest",
   "input": 0.0422,
-  "output": 0.1694,
-  "cacheRead": 0.028
+  "output": 0.1763,
+  "cacheRead": 0.027
  },
  "~google/gemini-flash-latest": {
   "name": "~google/gemini-flash-latest",
@@ -55,9 +55,9 @@
  },
  "~moonshotai/kimi-latest": {
   "name": "~moonshotai/kimi-latest",
-  "input": 0.1615,
-  "output": 10.1551,
-  "cacheRead": 0.16
+  "input": 0.18,
+  "output": 16,
+  "cacheRead": 0.17
  },
  "~openai/gpt-astra-latest": {
   "name": "~openai/gpt-astra-latest",
@@ -1807,9 +1807,9 @@
  },
  "qwen/qwen3.6-27b-20260422": {
   "name": "qwen/qwen3.6-27b",
-  "input": 0.25,
-  "output": 2,
-  "cacheRead": 0.025
+  "input": 0.32,
+  "output": 3.2,
+  "cacheRead": null
  },
  "qwen/qwen3.6-35b-a3b-20260415": {
   "name": "qwen/qwen3.6-35b-a3b",
@@ -2011,9 +2011,9 @@
  },
  "tencent/hy3-20260706": {
   "name": "tencent/hy3",
-  "input": 0.132,
-  "output": 0.528,
-  "cacheRead": 0.033
+  "input": 0.0825,
+  "output": 0.33,
+  "cacheRead": 0.020625
  },
  "tencent/hy3-preview-20260421": {
   "name": "tencent/hy3-preview",
@@ -2023,9 +2023,9 @@
  },
  "tencent/hy4-preview-20260827": {
   "name": "tencent/hy4-preview",
-  "input": 0.834,
-  "output": 2.501,
-  "cacheRead": 0.042
+  "input": 0.7506,
+  "output": 2.2509,
+  "cacheRead": 0.0378
  },
  "thedrummer/cydonia-24b-v4.1": {
   "name": "thedrummer/cydonia-24b-v4.1",
