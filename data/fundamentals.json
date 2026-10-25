@@ -124,6 +124,17 @@
   }
  ],
  "_balanceNote": "USD millions except share counts. cash excludes restricted cash; debt = current + non-current debt (mostly convertible notes, at carrying value). clickhouse/toloka are balance-sheet values of the minority stakes (non-marketable, re-measured on observable transactions). otherInvestments = venture fund + other. Leases excluded.",
+ "_sotpNote": "USD millions. Sum-of-the-parts defaults, separate from the carrying values above. clickhouse $2,000M is the January 2026 Series D allocation to Nebius's securities before the 22.5% lack-of-marketability discount ($1,517.7 / 0.775). toloka $130M is the May 2025 fair value of the retained stake ($130.6M), not the $86.5M June 2026 book. Avride has no priced round and stays unset. TripleTen is a revenue multiple, not a transaction.",
+ "sotp": {
+  "clickhouse": {
+   "value": 2000,
+   "note": "January 2026 Series D, $15B headline. The filing marks Nebius's securities at $1,518M after an option-pricing allocation and a 22.5% illiquidity discount. $2,000M is that allocation before the discount. A 25-28% times $15B stake (about $4B) is not the method in the filing, and there has been no round since."
+  },
+  "toloka": {
+   "value": 130,
+   "note": "81% economic interest and 49% of the vote since the May 2025 round led by Bezos Expeditions. Nebius fair-valued the retained stake at $131M then. Books are $87M at June 30, 2026, after losses consumed the common. No later round. Community write-ups use roughly $300-500M."
+  }
+ },
  "capitalRaised": [
   {
    "date": "2025-09-30",
@@ -174,13 +185,13 @@
    "name": "Avride",
    "what": "Autonomous driving and delivery robots (consolidated)",
    "defaultValue": null,
-   "note": "No public valuation; outside investors have funded it via SAFEs. Set your own."
+   "note": "No priced round, so this stays at zero. Uber holds $175M of SAFEs (fair value $178M at June 30, 2026) that convert at a 20% discount to the next round; the filings state no valuation cap. H1 2026 revenue was $1.9M and adjusted EBITDA was -$74M. Posts citing a $2.7-2.8B post-money, and a Nebius stake near $2.5B, are not in the 20-F or the Uber announcement."
   },
   {
    "name": "TripleTen",
-   "what": "Edtech (consolidated)",
-   "defaultValue": null,
-   "note": "About 6% of group revenue in Q4 2025. Set your own."
+   "what": "Edtech (consolidated, wholly owned)",
+   "defaultValue": 150,
+   "note": "FY2025 revenue was $54M. H1 2026 revenue was $22M, down 5%, as U.S. student volumes reset. $150M is about 3-4x a ~$40M run-rate. Older posts used $250-300M, about 5x 2025 sales, before that decline."
   }
  ]
 }

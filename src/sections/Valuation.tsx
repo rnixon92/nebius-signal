@@ -9,6 +9,7 @@ const KEY = "valuationInputs";
 type Inputs = {
   price: number | null;
   clickhouse: number | null;
+  toloka: number | null;
   other: Record<string, number>;
   // Capacity scenario
   mw: number;
@@ -18,7 +19,7 @@ type Inputs = {
   dilution: number;
 };
 
-const DEFAULTS: Omit<Inputs, "price" | "clickhouse"> = { other: {}, mw: 1000, perMw: 15, multiple: 6, netDebtB: 15, dilution: 0.1 };
+const DEFAULTS: Omit<Inputs, "price" | "clickhouse" | "toloka"> = { other: {}, mw: 1000, perMw: 15, multiple: 6, netDebtB: 15, dilution: 0.1 };
 
 function readInputs(): Partial<Inputs> {
   try {
@@ -102,6 +103,7 @@ export function ValuationPanel({ d, p }: { d: Dashboard; p: Palette }) {
   const [inp, setInp] = useState<Inputs>({
     price: stored.price ?? null,
     clickhouse: stored.clickhouse ?? null,
+    toloka: stored.toloka ?? null,
     other: stored.other ?? {},
     mw: stored.mw ?? DEFAULTS.mw,
     perMw: stored.perMw ?? DEFAULTS.perMw,
@@ -124,12 +126,13 @@ export function ValuationPanel({ d, p }: { d: Dashboard; p: Palette }) {
     const sharesM = bs.shares / 1e6;
     const mcap = price * sharesM;
     const ev = mcap + bs.debt - bs.cash;
-    const clickhouse = inp.clickhouse ?? bs.clickhouse;
-    const investments = clickhouse + bs.toloka + bs.otherInvestments;
+    const clickhouse = inp.clickhouse ?? v.sotp?.clickhouse.value ?? bs.clickhouse;
+    const toloka = inp.toloka ?? v.sotp?.toloka.value ?? bs.toloka;
+    const investments = clickhouse + toloka + bs.otherInvestments;
     const others = v.otherBusinesses.map((b) => ({ ...b, value: inp.other[b.name] ?? b.defaultValue ?? 0 }));
     const othersTotal = others.reduce((a, b) => a + b.value, 0);
     const coreEv = ev - investments - othersTotal;
-    return { price, sharesM, mcap, ev, clickhouse, investments, others, othersTotal, coreEv };
+    return { price, sharesM, mcap, ev, clickhouse, toloka, investments, others, othersTotal, coreEv };
   }, [bs, v, inp]);
 
   if (!calc || !bs || !v.price) return <Card>Valuation inputs are missing from fundamentals.json.</Card>;
@@ -145,7 +148,7 @@ export function ValuationPanel({ d, p }: { d: Dashboard; p: Palette }) {
   const implied = scenario(inp.mw, inp.perMw);
   const mwRows = [500, 1000, 1500, 2000, 3000];
   const perMwCols = [12, 15, 20, 25, 40];
-  const changed = inp.price !== null || inp.clickhouse !== null || Object.keys(inp.other).length > 0;
+  const changed = inp.price !== null || inp.clickhouse !== null || inp.toloka !== null || Object.keys(inp.other).length > 0;
 
   return (
     <div className="flex flex-col gap-4">
@@ -167,7 +170,7 @@ export function ValuationPanel({ d, p }: { d: Dashboard; p: Palette }) {
             sub="What the market price implies for the AI cloud alone, after the stakes and other businesses"
             right={
               changed ? (
-                <button type="button" onClick={() => set({ price: null, clickhouse: null, other: {} })} className="text-sm font-medium text-accent hover:underline">
+                <button type="button" onClick={() => set({ price: null, clickhouse: null, toloka: null, other: {} })} className="text-sm font-medium text-accent hover:underline">
                   Reset
                 </button>
               ) : undefined
@@ -181,8 +184,9 @@ export function ValuationPanel({ d, p }: { d: Dashboard; p: Palette }) {
                 { label: "+ Debt", value: bs.debt },
                 { label: "− Cash", value: -bs.cash },
                 { label: "= Enterprise value", value: calc.ev, strong: true, rule: true },
-                { label: "− ClickHouse stake", value: -calc.clickhouse, edit: <NumberField label="" value={calc.clickhouse} step={50} prefix="$" suffix="M" width="w-24" onChange={(n) => set({ clickhouse: n })} />, hint: "Balance-sheet value, re-marked on a Jan 2026 transaction" },
-                { label: "− Toloka and other investments", value: -(bs.toloka + bs.otherInvestments) },
+                { label: "− ClickHouse stake", value: -calc.clickhouse, edit: <NumberField label="" value={calc.clickhouse} step={50} prefix="$" suffix="M" width="w-24" onChange={(n) => set({ clickhouse: n })} />, hint: v.sotp?.clickhouse.note ?? "Balance-sheet value, re-marked on a Jan 2026 transaction" },
+                { label: "− Toloka stake", value: -calc.toloka, edit: <NumberField label="" value={calc.toloka} step={10} prefix="$" suffix="M" width="w-24" onChange={(n) => set({ toloka: n })} />, hint: v.sotp?.toloka.note ?? "Balance-sheet value of the preferred shares" },
+                { label: "− Other investments", value: -bs.otherInvestments, hint: "Venture fund and smaller stakes, at book value." },
                 ...calc.others.map((o) => ({
                   label: `− ${o.name}`,
                   value: -o.value,
@@ -203,7 +207,7 @@ export function ValuationPanel({ d, p }: { d: Dashboard; p: Palette }) {
             </tbody>
           </table>
           <p className="mt-3 text-xs leading-relaxed text-ink-3">
-            Balance sheet at {day(bs.date, true)} (<ExtLink href={bs.source} className="text-ink-3">filing</ExtLink>). Since then the $775M secured loan and ~$5.75B of convertible
+            Balance sheet at {day(bs.date, true)} (<ExtLink href={bs.source} className="text-ink-3">filing</ExtLink>). ClickHouse and Toloka start from fair-value estimates above those carrying values; Avride stays at zero because it has no priced round. Since then the $775M secured loan and ~$5.75B of convertible
             notes added roughly equal cash and debt, and Q3 capex has been spending cash, so net debt today is likely higher; the next quarterly report updates it. Leases are left
             out. Your edits are saved in this browser.
           </p>

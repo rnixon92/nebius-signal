@@ -337,6 +337,7 @@ async function valuation(): Promise<Dashboard["valuation"]> {
     balanceSheets?: BS[];
     capitalRaised?: Dashboard["valuation"]["capitalRaised"];
     atmRemainingShares?: number;
+    sotp?: Dashboard["valuation"]["sotp"];
     otherBusinesses?: Dashboard["valuation"]["otherBusinesses"];
   }>("fundamentals.json", { quarters: [], guidance: { arrExit: [0, 0] } });
   const pw = await readJson<{ points: { metric: string; kind: string; mw: number; low?: number; high?: number; date: string }[] }>("power.json", { points: [] });
@@ -355,6 +356,7 @@ async function valuation(): Promise<Dashboard["valuation"]> {
     arrGuidance: f.guidance.arrExit,
     capitalRaised: [...(f.capitalRaised ?? [])].sort((a, b) => b.date.localeCompare(a.date)),
     atmRemainingShares: f.atmRemainingShares ?? null,
+    sotp: f.sotp ?? null,
     otherBusinesses: f.otherBusinesses ?? [],
     connectedTarget: connected ? [connected.low!, connected.high!] : null,
     contractedMw: contracted?.mw ?? null,

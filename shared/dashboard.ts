@@ -160,6 +160,8 @@ export type Dashboard = {
     arrGuidance: [number, number];
     capitalRaised: { date: string; kind: string; amount: number; detail: string; source: string }[];
     atmRemainingShares: number | null;
+    /** Fair-value defaults for the stakes, distinct from balance-sheet carrying values. USD millions. */
+    sotp: { clickhouse: { value: number; note: string }; toloka: { value: number; note: string } } | null;
     otherBusinesses: { name: string; what: string; defaultValue: number | null; note: string }[];
     connectedTarget: [number, number] | null;
     contractedMw: number | null;
