@@ -107,6 +107,14 @@ type SpotItem = {
 type SeriesItem = Omit<SpotItem, "price" | "effectiveTime"> & { points: { timestamp: string; value: string }[] };
 
 export type Sku = { region: string; platform: string; family: string | null; title: string; firstSeen: string; lastSeen: string };
+/**
+ * Spot became a market price on this day (capped one cent below on-demand). Before it, the "spot" feed was a
+ * fixed preemptible rate, so earlier days say nothing about spare capacity. The day itself is mixed.
+ */
+export const SPOT_DYNAMIC_FROM = "2026-10-08";
+/** Nebius removes the on-demand cap from this day, so spot can trade above list. */
+export const SPOT_UNCAPPED_FROM = "2026-11-02";
+
 /** Per SKU per day: [min, mean, max, last] of the hourly averages. */
 export type SpotDaily = Record<string, Record<string, [number, number, number, number]>>;
 
@@ -209,8 +217,9 @@ export async function collectSpot(): Promise<SourceResult> {
 }
 
 /**
- * Spot is capped one cent below on-demand, so a price at ≥95% of list means that pool is nearly full.
- * Fires on the crossing only, not every day the price stays there.
+ * A price at ≥95% of on-demand means that pool is nearly full; once the cap is gone (SPOT_UNCAPPED_FROM),
+ * a price above on-demand means buyers are bidding past list. Fires on the crossing only, not every day the
+ * price stays there.
  */
 async function nearCapAlerts(current: SpotItem[], skus: Record<string, Sku>, daily: SpotDaily, date: string): Promise<Alert[]> {
   const od = await readJson<OnDemandFile>("gpu/ondemand.json", { lastChecked: "", current: {}, changes: [] });
@@ -222,14 +231,26 @@ async function nearCapAlerts(current: SpotItem[], skus: Record<string, Sku>, dai
     const cap = fam ? list.get(fam) : null;
     const price = Number(c.price.value);
     const before = daily[c.skuId]?.[yesterday]?.[3];
+    if (cap && date >= SPOT_UNCAPPED_FROM && price > cap && (before === undefined || before <= cap)) {
+      alerts.push({
+        id: `spot-above-list-${c.skuId}-${date}`,
+        date,
+        source: "gpu-spot",
+        severity: "high",
+        title: `${fam} spot above on-demand in ${c.region}: $${price} vs $${cap} list`,
+        detail: `${Math.round((price / cap) * 100)}% of on-demand. Buyers are paying more than list for preemptible GPUs.`,
+        url: "https://nebius.com/spot-prices",
+      });
+      continue;
+    }
     const wasBelow = before === undefined || !cap || before / cap < 0.95;
-    if (cap && price / cap >= 0.95 && wasBelow) {
+    if (cap && price / cap >= 0.95 && price <= cap && wasBelow) {
       alerts.push({
         id: `spot-cap-${c.skuId}-${date}`,
         date,
         source: "gpu-spot",
         severity: "medium",
-        title: `${fam} spot near its cap in ${c.region}: $${price} vs $${cap} on-demand`,
+        title: `${fam} spot near ${date >= SPOT_UNCAPPED_FROM ? "on-demand" : "its cap"} in ${c.region}: $${price} vs $${cap} on-demand`,
         detail: `${Math.round((price / cap) * 100)}% of on-demand. Spare capacity is almost gone.`,
         url: "https://nebius.com/spot-prices",
       });

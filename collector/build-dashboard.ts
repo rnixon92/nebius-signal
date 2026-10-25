@@ -5,7 +5,7 @@ import type { Dashboard, ModelPricing, PowerPoint, SourceHealth } from "../share
 import { ROOT, addDays, readJson, today, writeJson } from "./lib/store.ts";
 import type { Alert, RunStatus } from "./lib/types.ts";
 import type { Customer } from "./sources/atlas.ts";
-import type { OnDemandFile, Sku, SpotDaily } from "./sources/gpu.ts";
+import { SPOT_DYNAMIC_FROM, type OnDemandFile, type Sku, type SpotDaily } from "./sources/gpu.ts";
 import type { Job, JobsDay } from "./sources/jobs.ts";
 import { FUNCTIONS } from "./sources/jobs.ts";
 import type { ModelPrice, ProviderHistory } from "./sources/openrouter.ts";
@@ -470,7 +470,8 @@ async function gpu(): Promise<Dashboard["gpu"]> {
     .sort((a, b) => familyRank(a.family) - familyRank(b.family) || a.region.localeCompare(b.region));
 
   const families = [...new Set(Object.values(skus).map((s) => s.family).filter((f): f is string => !!f))].sort((a, b) => familyRank(a) - familyRank(b));
-  const dates = [...new Set(Object.values(daily).flatMap((d) => Object.keys(d)))].sort();
+  // Charted from the first full day of market pricing; earlier days were a fixed preemptible rate.
+  const dates = [...new Set(Object.values(daily).flatMap((d) => Object.keys(d)))].filter((d) => d > SPOT_DYNAMIC_FROM).sort();
   const ratioDaily: Dashboard["gpu"]["ratioDaily"] = [];
   const priceDaily: Dashboard["gpu"]["priceDaily"] = [];
   for (const date of dates) {

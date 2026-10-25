@@ -10,7 +10,7 @@
 import type { Nowcast, NowcastSignal, ScorecardRow } from "../shared/dashboard.ts";
 import { addDays, readJson } from "./lib/store.ts";
 import type { NewsItem, Site } from "./sources/news.ts";
-import type { OnDemandFile, Sku, SpotDaily } from "./sources/gpu.ts";
+import { SPOT_DYNAMIC_FROM, type OnDemandFile, type Sku, type SpotDaily } from "./sources/gpu.ts";
 import type { Job } from "./sources/jobs.ts";
 import type { ProviderHistory } from "./sources/openrouter.ts";
 import type { RegionsFile } from "./sources/regions.ts";
@@ -81,7 +81,7 @@ function spotRatio(inp: Inputs, set: Set<string>, from: string, to: string): { a
     const fam = inp.skus[id]?.family;
     if (!fam || !set.has(fam)) continue;
     for (const [d, v] of Object.entries(series)) {
-      if (d < from || d > to) continue;
+      if (d < from || d > to || d <= SPOT_DYNAMIC_FROM) continue;
       const list = listAt(inp, fam, d);
       if (list) byDay.set(d, [...(byDay.get(d) ?? []), v[1] / list]);
     }
@@ -172,7 +172,7 @@ function signalsFor(inp: Inputs, from: string, to: string, asOf: string): Nowcas
     score: bw.avg === null ? 0 : clamp((bw.avg - 0.6) / 0.25),
     weight: 2,
     coverage: bw.coverage,
-    note: "Above ~60% means spare Blackwell capacity is being taken up.",
+    note: "Above ~60% means spare Blackwell capacity is being taken up. Market pricing only since Oct 8, 2026; uncapped from Nov 2, so later averages can run higher.",
   });
   const hp = spotRatio(inp, HOPPER, from, end);
   push({
@@ -182,7 +182,7 @@ function signalsFor(inp: Inputs, from: string, to: string, asOf: string): Nowcas
     score: hp.avg === null ? 0 : clamp((hp.avg - 0.45) / 0.3),
     weight: 1,
     coverage: hp.coverage,
-    note: "Low Hopper prices point to idle older GPUs and pricing pressure on renewals.",
+    note: "Low Hopper prices point to idle older GPUs and pricing pressure on renewals. Market pricing only since Oct 8, 2026.",
   });
 
   // 6. List price changes during the quarter.

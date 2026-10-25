@@ -100,6 +100,12 @@ export function GpuSpotChart({ d, p, range }: { d: Dashboard; p: Palette; range:
     };
   }, [view, family, excluded, agg, daily, weights, g, p]);
 
+  // Spot is uncapped from Nov 2, 2026, so the ratio axis grows past 100% when a pool trades above list.
+  const ratioTop = useMemo(() => {
+    const peak = Math.max(1, ...rows.flatMap((r) => series.map((s) => (r as Record<string, unknown>)[s.key]).filter((v): v is number => typeof v === "number")));
+    return Math.ceil(peak * 4) / 4;
+  }, [rows, series]);
+
   const fmt = metric === "ratio" ? (v: number) => pct(v) : (v: number) => usd(v, { cents: true });
   const title =
     view === "region"
@@ -174,9 +180,9 @@ export function GpuSpotChart({ d, p, range }: { d: Dashboard; p: Palette; range:
         format={fmt}
         change={metric === "ratio" ? "diff" : "pct"}
         diffFormat={(v) => `${Math.round(v * 100)} pts`}
-        yDomain={metric === "ratio" ? [0, 1] : [0, "auto"]}
-        yTicks={metric === "ratio" ? [0, 0.25, 0.5, 0.75, 1] : undefined}
-        refY={metric === "ratio" ? [{ y: 1, label: "On-demand cap" }] : undefined}
+        yDomain={metric === "ratio" ? [0, ratioTop] : [0, "auto"]}
+        yTicks={metric === "ratio" ? Array.from({ length: ratioTop / 0.25 + 1 }, (_, i) => i * 0.25) : undefined}
+        refY={metric === "ratio" ? [{ y: 1, label: "On-demand list price" }] : undefined}
         events={d.events.filter((e) => e.kind === "price" || e.kind === "capacity" || e.kind === "earnings")}
         csvName={`nebius-spot-${view === "region" ? family.replace(/\s+/g, "-").toLowerCase() + "-by-region" : agg}-${metric}`}
         height={300}

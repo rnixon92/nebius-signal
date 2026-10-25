@@ -10,6 +10,7 @@ const familyColor = (p: Palette, fam: string) => p.series[GPU_SLOT[fam] ?? 7]!;
 /** From a shareholder's view a tight pool is good news (pricing power); slack is the warning. */
 function tightness(ratio: number | null) {
   if (ratio === null) return null;
+  if (ratio > 1) return { label: "Above list", icon: "▲", cls: "text-good" };
   if (ratio >= 0.85) return { label: "Tight", icon: "▲", cls: "text-good" };
   if (ratio <= 0.4) return { label: "Slack", icon: "▼", cls: "text-warn" };
   return null;
@@ -25,8 +26,10 @@ export function GpuSection({ d, p, range }: { d: Dashboard; p: Palette; range: R
       title="GPU pricing and spare capacity"
       intro={
         <>
-          About 98% of Nebius revenue is GPU cloud. Spot (preemptible) prices move with spare capacity and are capped one cent below the on-demand list price. A ratio
-          near 100% means that pool is nearly sold out; a low ratio means idle GPUs. Nebius only publishes 30 days of spot history, so this tracker keeps the long-run series.
+          About 98% of Nebius revenue is GPU cloud. Spot (preemptible) prices have moved with spare capacity since Oct 8, 2026; before that they were a fixed rate, so the
+          series starts there. Spot is capped one cent below the on-demand list price up to Nov 2, 2026; from then on it can trade above list. A ratio near 100% means that pool is
+          nearly sold out, above 100% means buyers are paying more than list, and a low ratio means idle GPUs. Nebius only publishes 30 days of spot history, so this tracker
+          keeps the long-run series.
         </>
       }
     >
