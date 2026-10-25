@@ -118,8 +118,15 @@ export type PowerData = {
   };
 };
 
-/** Dated annotation for time-series charts. */
-export type ChartEvent = { date: string; label: string; kind: "earnings" | "price" | "capacity" | "financing" | "site" };
+/** Dated annotation for time-series charts; `end` turns it into a shaded window when the exact date isn't known. */
+export type ChartEvent = {
+  date: string;
+  end?: string;
+  label: string;
+  kind: "earnings" | "price" | "capacity" | "financing" | "site" | "model" | "product" | "contract";
+  note?: string;
+  source?: string;
+};
 
 export type Dashboard = {
   generatedAt: string;

@@ -52,7 +52,8 @@ export function TokensSection({ d, p, range }: { d: Dashboard; p: Palette; range
   }, [t, a]);
 
   const maxPeer = Math.max(...t.peers.map((x) => x.week), 1);
-  const tfEvents = d.events.filter((e) => e.kind === "earnings");
+  // Token charts show what can move token traffic: model launches, Token Factory changes (caching, acquisitions), results.
+  const tfEvents = d.events.filter((e) => e.kind === "model" || e.kind === "product" || e.kind === "earnings");
 
   return (
     <Section
@@ -113,6 +114,7 @@ export function TokensSection({ d, p, range }: { d: Dashboard; p: Palette; range
             rows={revenue}
             series={[{ key: "week", label: "7-day revenue", color: p.accent }]}
             format={(v) => usd(v)}
+            events={tfEvents}
             csvName="nebius-openrouter-revenue-estimate"
             height={220}
           />
@@ -134,6 +136,7 @@ export function TokensSection({ d, p, range }: { d: Dashboard; p: Palette; range
           format={(v) => pct(v, { digits: 2 })}
           change="diff"
           diffFormat={(v) => `${(v * 100).toFixed(2)} pts`}
+          events={tfEvents}
           tooltipFooter={(r) => `Rank ${r.rank} of ${r.providers} · ${tokens(r.nebius)} of ${tokens(r.total)}`}
           csvName="nebius-openrouter-share"
           height={220}

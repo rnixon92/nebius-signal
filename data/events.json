@@ -1,0 +1,37 @@
+{
+ "_note": "Hand-maintained dated events that charts annotate. kind: product (Token Factory changes), contract, earnings, financing, price, capacity, site. Use `end` for a window when the exact date isn't known. Model launches and contracts in power.json are added automatically; don't repeat them here.",
+ "events": [
+  {
+   "date": "2025-11-05",
+   "kind": "product",
+   "label": "Token Factory launched (successor to AI Studio)",
+   "source": "https://nebius.com/newsroom/nebius-launches-nebius-token-factory-to-deliver-production-ai-inference-at-scale"
+  },
+  {
+   "date": "2026-05-01",
+   "kind": "product",
+   "label": "Agreed to acquire Eigen AI (inference optimization)",
+   "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926053464/tm2613296d1_ex99-1.htm"
+  },
+  {
+   "date": "2026-06-16",
+   "kind": "product",
+   "label": "Eigen AI acquisition completed",
+   "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926074352/tm2618059d1_ex99-1.htm"
+  },
+  {
+   "date": "2026-10-01",
+   "kind": "product",
+   "label": "Acquired Inferize (production inference stack)",
+   "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926112824/tm2626792d1_ex99-1.htm"
+  },
+  {
+   "date": "2026-10-16",
+   "end": "2026-10-24",
+   "kind": "product",
+   "label": "Prompt caching: cached-input pricing appears on OpenRouter",
+   "note": "Not in the archived Oct 16 price list; present when this tracker first scraped on Oct 24. Exact launch date not announced.",
+   "source": "https://web.archive.org/web/20261016151353/https://openrouter.ai/provider/nebius"
+  }
+ ]
+}

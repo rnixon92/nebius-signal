@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-24T23:12:54.567Z",
+ "generatedAt": "2026-10-25T00:58:56.258Z",
  "sources": [
   {
    "id": "gpu-ondemand",
@@ -123,6 +123,24 @@
  ],
  "events": [
   {
+   "date": "2025-09-08",
+   "label": "Microsoft contract: $17.4B (up to $19.4B)",
+   "kind": "contract",
+   "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925110025/tm2530771-1_424b5.htm"
+  },
+  {
+   "date": "2025-11-05",
+   "kind": "product",
+   "label": "Token Factory launched (successor to AI Studio)",
+   "source": "https://nebius.com/newsroom/nebius-launches-nebius-token-factory-to-deliver-production-ai-inference-at-scale"
+  },
+  {
+   "date": "2025-11-11",
+   "label": "Meta (first agreement) contract: $2.9B",
+   "kind": "contract",
+   "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465925110025/tm2530771-1_424b5.htm"
+  },
+  {
    "date": "2025-11-12",
    "label": "third quarter results",
    "kind": "earnings"
@@ -131,6 +149,12 @@
    "date": "2026-02-12",
    "label": "fourth quarter and full-year 2025 results",
    "kind": "earnings"
+  },
+  {
+   "date": "2026-03-16",
+   "label": "Meta (second agreement) contract: $12.0B (up to $27.0B)",
+   "kind": "contract",
+   "source": "https://www.businesswire.com/news/home/20260316469367/en/Nebius-Signs-New-AI-Infrastructure-Agreement-with-Meta"
   },
   {
    "date": "2026-03-18",
@@ -143,9 +167,21 @@
    "kind": "financing"
   },
   {
+   "date": "2026-05-01",
+   "kind": "product",
+   "label": "Agreed to acquire Eigen AI (inference optimization)",
+   "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926053464/tm2613296d1_ex99-1.htm"
+  },
+  {
    "date": "2026-05-13",
    "label": "first quarter 2026 results",
    "kind": "earnings"
+  },
+  {
+   "date": "2026-06-16",
+   "kind": "product",
+   "label": "Eigen AI acquisition completed",
+   "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926074352/tm2618059d1_ex99-1.htm"
   },
   {
    "date": "2026-08-12",
@@ -168,9 +204,38 @@
    "kind": "price"
   },
   {
+   "date": "2026-10-01",
+   "kind": "product",
+   "label": "Acquired Inferize (production inference stack)",
+   "source": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926112824/tm2626792d1_ex99-1.htm"
+  },
+  {
+   "date": "2026-10-15",
+   "kind": "model",
+   "label": "muse-spark-open on Nebius: peaked at 5.9B tokens/day (9% of traffic)"
+  },
+  {
+   "date": "2026-10-16",
+   "end": "2026-10-24",
+   "kind": "product",
+   "label": "Prompt caching: cached-input pricing appears on OpenRouter",
+   "note": "Not in the archived Oct 16 price list; present when this tracker first scraped on Oct 24. Exact launch date not announced.",
+   "source": "https://web.archive.org/web/20261016151353/https://openrouter.ai/provider/nebius"
+  },
+  {
+   "date": "2026-10-16",
+   "kind": "model",
+   "label": "beam-1.0-501b-a23b on Nebius: peaked at 18.5B tokens/day (42% of traffic)"
+  },
+  {
    "date": "2026-10-22",
    "label": "secures $3.5 billion financing facility with Citi",
    "kind": "financing"
+  },
+  {
+   "date": "2026-10-23",
+   "kind": "model",
+   "label": "deepseek-v4.1-flash-1017 on Nebius: peaked at 16.7B tokens/day (35% of traffic)"
   }
  ],
  "nowcast": {
@@ -298,12 +363,12 @@
      "range": null,
      "source": null
     },
-    "estimate": 1325.0017524139264,
-    "low": 1285.2516998415085,
-    "high": 1364.7518049863443,
-    "tilt": 0.016681792337458572,
+    "estimate": 1325.623243345963,
+    "low": 1285.854546045584,
+    "high": 1365.391940646342,
+    "tilt": 0.017158666057476686,
     "lean": "no consensus",
-    "coverage": 0.48298676748582225,
+    "coverage": 0.47680529300567104,
     "priorFromLastSurprise": 0.01267828843106178,
     "signals": [
      {
@@ -312,7 +377,7 @@
       "value": "0 new region/GPU go-lives",
       "score": 0,
       "weight": 3,
-      "coverage": 0.010869565217391304,
+      "coverage": 0.021739130434782608,
       "note": "From Nebius's regions page. Absence of go-lives only counts once tracking covers the quarter.",
       "contribution": 0
      },
@@ -332,9 +397,9 @@
       "value": "1 progress · 0 risk headlines",
       "score": 0.3333333333333333,
       "weight": 1.5,
-      "coverage": 0.2608695652173913,
+      "coverage": 0.2717391304347826,
       "note": "Live and ramping sites only. Trouble at future campuses (Independence, Birmingham) is pipeline risk, shown in Data centers.",
-      "contribution": 0.0009393346379647751
+      "contribution": 0.0009911588629425525
      },
      {
       "id": "dc-hiring",
@@ -344,7 +409,7 @@
       "weight": 0.5,
       "coverage": 1,
       "note": "Build-out staffing leads capacity by one to three quarters, so it's weighted lightly for the current one. Survivorship-biased: only still-open roles are visible.",
-      "contribution": 0.0007039124229360091
+      "contribution": 0.0007130381955364165
      },
      {
       "id": "blackwell-spot",
@@ -352,9 +417,9 @@
       "value": "48% average",
       "score": -0.4788243550051594,
       "weight": 2,
-      "coverage": 1,
+      "coverage": 0.96,
       "note": "Above ~60% means spare Blackwell capacity is being taken up.",
-      "contribution": -0.0068965699664148205
+      "contribution": -0.006662177097442506
      },
      {
       "id": "hopper-spot",
@@ -362,9 +427,9 @@
       "value": "37% average",
       "score": -0.2660455246913579,
       "weight": 1,
-      "coverage": 1,
+      "coverage": 0.96,
       "note": "Low Hopper prices point to idle older GPUs and pricing pressure on renewals.",
-      "contribution": -0.001915944287405474
+      "contribution": -0.0018638093881588559
      },
      {
       "id": "list-price",
@@ -374,7 +439,7 @@
       "weight": 1.5,
       "coverage": 1,
       "note": "Raising list prices signals demand ahead of supply.",
-      "contribution": 0.010802348336594913
+      "contribution": 0.01094239384688578
      },
      {
       "id": "tokens",
@@ -384,7 +449,7 @@
       "weight": 0.5,
       "coverage": 0.2608695652173913,
       "note": "Under 0.1% of revenue: a demand-breadth read only.",
-      "contribution": 0.0003704227627213915
+      "contribution": 0.0003597732066515207
      }
     ],
     "context": {
@@ -411,6 +476,11 @@
     "date": "2026-10-24",
     "2026-Q3": 915.4,
     "2026-Q4": 1325
+   },
+   {
+    "date": "2026-10-25",
+    "2026-Q3": 915.4,
+    "2026-Q4": 1325.6
    }
   ]
  },
@@ -1931,7 +2001,7 @@
     "spotPools": 0,
     "observedMw": null,
     "dcRolesOpen": 5,
-    "dcRolesPosted90d": 5,
+    "dcRolesPosted90d": 3,
     "news90d": 1,
     "risk90d": 0,
     "progress90d": 0,
@@ -17616,8 +17686,8 @@
    },
    {
     "date": "2026-10-24",
-    "partial": true,
-    "total": 37180372719,
+    "partial": false,
+    "total": 24472682302,
     "byModel": {
      "qwen/qwen3-embedding-8b": 17024785840,
      "deepseek/deepseek-v4.1-flash-20261017": 11513939577,
@@ -17636,9 +17706,9 @@
    "qwen/qwen3-embedding-8b",
    "reflection/beam-1.0-501b-a23b-20261016",
    "deepseek/deepseek-v4.1-flash-20261017",
+   "deepseek/deepseek-v4.1-flash-20260910",
    "qwen/qwen3-30b-a3b-instruct-2507",
-   "meta/muse-spark-open-20261015",
-   "qwen/qwen3-235b-a22b-07-25"
+   "meta/muse-spark-open-20261015"
   ],
   "pricing": {
    "qwen/qwen3-embedding-8b": {
@@ -17835,10 +17905,10 @@
    }
   },
   "week": {
-   "end": "2026-10-23",
-   "tokens": 251337450631,
-   "prev": 140553048890,
-   "change": 0.7882034763095205
+   "end": "2026-10-24",
+   "tokens": 240584633542,
+   "prev": 159904338361,
+   "change": 0.5045535099795491
   },
   "market": [
    {
@@ -19694,97 +19764,97 @@
    {
     "slug": "together",
     "name": "Together",
-    "week": 7910478365538,
-    "prevWeek": 8109288967671,
-    "change": -0.024516403710065138,
+    "week": 7359647348760,
+    "prevWeek": 8036053318706,
+    "change": -0.08417141389187766,
     "isNebius": false
    },
    {
     "slug": "deepinfra",
     "name": "DeepInfra",
-    "week": 6088885550492,
-    "prevWeek": 5278841457984,
-    "change": 0.15345111213424412,
+    "week": 5816987562473,
+    "prevWeek": 5147805487315,
+    "change": 0.1299936597851199,
     "isNebius": false
    },
    {
     "slug": "novita",
     "name": "Novita",
-    "week": 2500721843236,
-    "prevWeek": 3642865474977,
-    "change": -0.31352890728093963,
-    "isNebius": false
-   },
-   {
-    "slug": "baseten",
-    "name": "Baseten",
-    "week": 2123489330813,
-    "prevWeek": 1059908989112,
-    "change": 1.0034638375810698,
-    "isNebius": false
-   },
-   {
-    "slug": "coreweave",
-    "name": "CoreWeave",
-    "week": 2015448228198,
-    "prevWeek": 4638312589437,
-    "change": -0.5654781368578188,
+    "week": 2276078594500,
+    "prevWeek": 3271154318473,
+    "change": -0.3041971203723305,
     "isNebius": false
    },
    {
     "slug": "fireworks",
     "name": "Fireworks",
-    "week": 1909320099835,
-    "prevWeek": 1788467574681,
-    "change": 0.06757322685906453,
+    "week": 2089530595084,
+    "prevWeek": 1659155818042,
+    "change": 0.2593938268859479,
+    "isNebius": false
+   },
+   {
+    "slug": "coreweave",
+    "name": "CoreWeave",
+    "week": 2045375756621,
+    "prevWeek": 4343221329941,
+    "change": -0.5290648112909353,
+    "isNebius": false
+   },
+   {
+    "slug": "baseten",
+    "name": "Baseten",
+    "week": 2028086137075,
+    "prevWeek": 1189399669723,
+    "change": 0.705134269582673,
     "isNebius": false
    },
    {
     "slug": "parasail",
     "name": "Parasail",
-    "week": 1788597104385,
-    "prevWeek": 2953652101155,
-    "change": -0.39444557343582043,
+    "week": 1410979225780,
+    "prevWeek": 2992990175470,
+    "change": -0.5285720490016548,
     "isNebius": false
    },
    {
     "slug": "siliconflow",
     "name": "SiliconFlow",
-    "week": 1531808039500,
-    "prevWeek": 1227035473240,
-    "change": 0.24838121872324104,
+    "week": 1377243717983,
+    "prevWeek": 1327939144969,
+    "change": 0.037128638914512235,
     "isNebius": false
    },
    {
     "slug": "crusoe",
     "name": "Crusoe",
-    "week": 1159313107813,
-    "prevWeek": 1025261470992,
-    "change": 0.1307487315321596,
+    "week": 1094176526605,
+    "prevWeek": 1058816852541,
+    "change": 0.03339545831665047,
     "isNebius": false
    },
    {
     "slug": "nebius",
     "name": "Nebius",
-    "week": 251337450631,
-    "prevWeek": 140553048890,
-    "change": 0.7882034763095205,
+    "week": 240584633542,
+    "prevWeek": 159904338361,
+    "change": 0.5045535099795491,
     "isNebius": true
    },
    {
     "slug": "groq",
     "name": "Groq",
-    "week": 144194492727,
-    "prevWeek": 159847703563,
-    "change": -0.09792577864486285,
+    "week": 132492551301,
+    "prevWeek": 161177622116,
+    "change": -0.17797179557814347,
     "isNebius": false
    },
    {
     "slug": "cerebras",
     "name": "Cerebras",
-    "week": 43978729299,
-    "prevWeek": 39796785757,
-    "change": 0.10508244478674822,
+    "week": 41880387899,
+    "prevWeek": 41483612630,
+    "change": 0.009564626700642398,
     "isNebius": false
    }
   ]

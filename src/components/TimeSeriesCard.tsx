@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState, type ReactNode } from "react";
-import { Bar, Brush, CartesianGrid, ComposedChart, Line, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
+import { Bar, Brush, CartesianGrid, ComposedChart, Line, ReferenceArea, ReferenceLine, ResponsiveContainer, Tooltip, XAxis, YAxis } from "recharts";
 import type { ChartEvent } from "../../shared/dashboard.ts";
 import { day, pct } from "../lib/format.ts";
 import { availableRanges, clip, type Range } from "../lib/range.ts";
@@ -40,7 +40,10 @@ type Props<R extends { date: string }> = {
   rebase?: boolean;
 };
 
-const EVENT_LABEL: Record<ChartEvent["kind"], string> = { earnings: "Earnings", price: "Price change", capacity: "Capacity live", financing: "Financing", site: "Site" };
+const EVENT_LABEL: Record<ChartEvent["kind"], string> = { earnings: "Earnings", price: "Price change", capacity: "Capacity live", financing: "Financing", site: "Site", model: "Model launch", product: "Token Factory", contract: "Contract" };
+
+const eventEnd = (e: ChartEvent) => e.end ?? e.date;
+const eventDates = (e: ChartEvent) => (e.end ? `${day(e.date)} – ${day(e.end, true)}` : day(e.date, true));
 
 export function TimeSeriesCard<R extends { date: string }>(props: Props<R>) {
   const { title, sub, rows, series, p, globalRange, change = "pct", controls, csvName, note } = props;
@@ -81,7 +84,8 @@ export function TimeSeriesCard<R extends { date: string }>(props: Props<R>) {
   const plotted = useMemo(() => (timeScale ? visible.map((r) => ({ ...r, t: toTime(r.date) })) : visible), [visible, timeScale]);
   const axisTicks = useMemo(() => (visible.length > 1 ? timeTicks(toTime(visible[0]!.date), toTime(visible.at(-1)!.date)) : { ticks: [], format: (t: number) => day(new Date(t).toISOString()) }), [visible]);
   const shown = series.filter((s) => !hidden.has(s.key));
-  const events = (props.events ?? []).filter((e) => visible.length && e.date >= visible[0]!.date && e.date <= visible.at(-1)!.date);
+  // Point events inside the view, and windows that overlap it.
+  const events = (props.events ?? []).filter((e) => visible.length && e.date <= visible.at(-1)!.date && eventEnd(e) >= visible[0]!.date);
 
   const toggle = (key: string) =>
     setHidden((h) => {
@@ -132,15 +136,19 @@ export function TimeSeriesCard<R extends { date: string }>(props: Props<R>) {
               <YAxis {...axisY(p, props.axisFormat ?? props.format)} domain={props.yDomain ?? [0, "auto"]} ticks={props.yTicks} />
               {props.refY?.map((r) => <ReferenceLine key={r.label} y={r.y} stroke={p.rule} label={{ value: r.label, position: "insideTopRight", fill: p.ink3, fontSize: 11 }} />)}
               {showEvents &&
-                events.map((e, i) => (
-                  <ReferenceLine
-                    key={`${e.date}-${i}`}
-                    x={timeScale ? toTime(e.date) : e.date}
-                    stroke={p.ink3}
-                    strokeOpacity={0.55}
-                    label={big ? { value: EVENT_LABEL[e.kind], position: "insideTopLeft", fill: p.ink3, fontSize: 10, offset: 4 } : undefined}
-                  />
-                ))}
+                events.map((e, i) => {
+                  // Numbered markers keyed to the list under the expanded chart: text labels collide when events cluster.
+                  const label = big ? { value: String(i + 1), position: "insideTopLeft" as const, fill: p.ink2, fontSize: 11, fontWeight: 600, offset: 4 } : undefined;
+                  if (e.end) {
+                    // A window, clamped to the view; on a category axis the edges must be dates that exist.
+                    const inView = visible.filter((r) => r.date >= e.date && r.date <= e.end!);
+                    const x1 = timeScale ? toTime(e.date < visible[0]!.date ? visible[0]!.date : e.date) : inView[0]?.date;
+                    const x2 = timeScale ? toTime(e.end > visible.at(-1)!.date ? visible.at(-1)!.date : e.end) : inView.at(-1)?.date;
+                    if (x1 === undefined || x2 === undefined) return null;
+                    return <ReferenceArea key={`${e.date}-${i}`} x1={x1} x2={x2} fill={p.accent} fillOpacity={0.08} stroke={p.accent} strokeOpacity={0.25} label={label} />;
+                  }
+                  return <ReferenceLine key={`${e.date}-${i}`} x={timeScale ? toTime(e.date) : e.date} stroke={e.kind === "model" ? p.accent : p.ink3} strokeOpacity={e.kind === "model" ? 0.7 : 0.55} label={label} />;
+                })}
               <Tooltip
                 cursor={props.kind === "stacked" ? { fill: p.grid, opacity: 0.5 } : cursor(p)}
                 content={(t) => <SeriesTip {...(t as TipProps)} series={shown} format={props.format} footer={props.tooltipFooter} events={showEvents ? events : []} stacked={props.kind === "stacked"} />}
@@ -195,7 +203,8 @@ export function TimeSeriesCard<R extends { date: string }>(props: Props<R>) {
         <ul className="mt-4 grid gap-1 border-t border-line pt-3 text-xs text-ink-2 sm:grid-cols-2">
           {events.map((e, i) => (
             <li key={i} className="flex gap-2">
-              <span className="tnum w-20 shrink-0 text-ink-3">{day(e.date, true)}</span>
+              <span className="tnum w-5 shrink-0 text-right font-semibold text-ink-2">{i + 1}</span>
+              <span className="tnum w-28 shrink-0 text-ink-3">{eventDates(e)}</span>
               <span>
                 <span className="font-medium text-ink">{EVENT_LABEL[e.kind]}:</span> {e.label}
               </span>
@@ -318,7 +327,7 @@ function SeriesTip<R>({ active, label, payload, series, format, footer, events, 
     .map((s) => ({ name: s.label, v: row[s.key], color: s.color }))
     .filter((x): x is { name: string; v: number; color: string } => typeof x.v === "number");
   const rows = (stacked ? [...items].reverse() : [...items].sort((a, b) => b.v - a.v)).map((x) => ({ name: x.name, value: format(x.v), color: x.color }));
-  const evs = events.filter((e) => e.date === label);
+  const evs = events.filter((e) => String(label) >= e.date && String(label) <= eventEnd(e));
   const extra = footer?.(row as R);
   return (
     <TooltipCard

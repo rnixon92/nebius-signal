@@ -104,7 +104,52 @@ async function events(): Promise<Dashboard["events"]> {
   for (const c of regions.changes.filter((c) => c.kind !== "region-removed" && c.kind !== "platform-removed")) {
     out.push({ date: c.date, label: c.platform ? `${c.platform} live in ${c.region}` : `Region ${c.region} live`, kind: "capacity" });
   }
+
+  // Hand-maintained product events (Token Factory changes, caching) from data/events.json.
+  const curated = await readJson<{ events: Dashboard["events"] }>("events.json", { events: [] });
+  out.push(...curated.events);
+
+  // Long-term customer contracts from power.json (skip grouped entries without a real signing date).
+  const pw = await readJson<{ contracts: { customer: string; signed: string; tcv: number; tcvMax: number | null; source: string }[] }>("power.json", { contracts: [] });
+  for (const c of pw.contracts.filter((c) => !/^Four /.test(c.customer))) {
+    out.push({ date: c.signed, label: `${c.customer} contract: ${usd(c.tcv * 1e6)}${c.tcvMax ? ` (up to ${usd(c.tcvMax * 1e6)})` : ""}`, kind: "contract", source: c.source });
+  }
+
+  out.push(...(await modelLaunches()));
   return out.sort((a, b) => a.date.localeCompare(b.date));
+}
+
+/**
+ * Model launches on Nebius that moved its OpenRouter traffic: a model's first day in the per-model chart,
+ * kept only if within two weeks it reached ≥15% of Nebius's daily tokens or ≥5B tokens in a day.
+ * Models already present on the first day of history are skipped (their launch is out of view).
+ */
+async function modelLaunches(): Promise<Dashboard["events"]> {
+  const neb = await readJson<ProviderHistory>(`openrouter/providers/${NEBIUS}.json`, { provider: NEBIUS, updatedAt: "", days: {} });
+  const models = await readJson<Record<string, ModelPrice>>("openrouter/nebius-models.json", {});
+  const catalog = await readJson<Record<string, { name: string }>>("openrouter/catalog-prices.json", {});
+  const dates = Object.keys(neb.days).sort();
+  if (dates.length < 15) return [];
+  const totals = new Map(dates.map((d) => [d, sum(Object.values(neb.days[d]!))]));
+  const first = new Map<string, string>();
+  for (const d of dates) for (const m of Object.keys(neb.days[d]!)) if (m !== "Others" && !first.has(m)) first.set(m, d);
+
+  const out: Dashboard["events"] = [];
+  for (const [m, start] of first) {
+    if (start === dates[0]) continue;
+    const window = dates.filter((d) => d >= start && d <= addDays(start, 14));
+    let peak = 0;
+    let peakShare = 0;
+    for (const d of window) {
+      const v = neb.days[d]?.[m] ?? 0;
+      peak = Math.max(peak, v);
+      peakShare = Math.max(peakShare, v / (totals.get(d) || 1));
+    }
+    if (peakShare < 0.15 && peak < 5e9) continue;
+    const name = (models[m]?.name ?? catalog[m]?.name ?? m).split("/").pop()!.replace(/-\d{8}$/, "");
+    out.push({ date: start, kind: "model", label: `${name} on Nebius: peaked at ${(peak / 1e9).toFixed(1)}B tokens/day (${Math.round(peakShare * 100)}% of traffic)` });
+  }
+  return out;
 }
 
 type PowerFile = {

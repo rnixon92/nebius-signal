@@ -54,7 +54,7 @@ export function StockChart({ d, p, range }: { d: Dashboard; p: Palette; range: R
   return (
     <TimeSeriesCard
       title="NBIS share price"
-      sub="Daily close, with earnings, financings, list-price changes and capacity go-lives marked"
+      sub="Daily close, with earnings, contracts, financings, list-price changes and capacity go-lives marked"
       p={p}
       globalRange={range}
       rows={rows}
@@ -62,7 +62,7 @@ export function StockChart({ d, p, range }: { d: Dashboard; p: Palette; range: R
       format={(v) => usd(v, { cents: true })}
       axisFormat={(v) => `$${Math.round(v)}`}
       yDomain={["auto", "auto"]}
-      events={d.events}
+      events={d.events.filter((e) => e.kind !== "model" && e.kind !== "product")}
       csvName="nbis-daily-close"
       height={240}
       controls={toggle}
