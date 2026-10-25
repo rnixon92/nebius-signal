@@ -8,6 +8,7 @@ import { collectNews } from "./sources/news.ts";
 import { collectRegions } from "./sources/regions.ts";
 import { collectOpenRouter } from "./sources/openrouter.ts";
 import { collectOpenRouterMarket } from "./sources/openrouter-market.ts";
+import { collectTokenFactory } from "./sources/tokenfactory.ts";
 import { collectSec } from "./sources/sec.ts";
 import { collectStock } from "./sources/stock.ts";
 import { buildDashboard } from "./build-dashboard.ts";
@@ -25,6 +26,7 @@ const SOURCES: [SourceId, () => Promise<SourceResult>, "hourly" | "daily"][] = [
   ["epoch", collectEpoch, "daily"],
   ["openrouter", collectOpenRouter, "daily"],
   ["openrouter-market", collectOpenRouterMarket, "daily"],
+  ["tokenfactory", collectTokenFactory, "daily"],
   ["atlas", collectAtlas, "daily"],
   ["sec", collectSec, "hourly"],
   ["jobs", collectJobs, "daily"],

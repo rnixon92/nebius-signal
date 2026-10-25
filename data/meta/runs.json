@@ -64,5 +64,11 @@
   "lastAttempt": "2026-10-25T21:16:16.665Z",
   "lastSuccess": "2026-10-25T21:16:16.665Z",
   "summary": "2 Nebius sites, 125 MW IT power observed"
+ },
+ "tokenfactory": {
+  "ok": true,
+  "lastAttempt": "2026-10-25T22:09:11.956Z",
+  "lastSuccess": "2026-10-25T22:09:11.956Z",
+  "summary": "30 models, 19 with a cached-input price"
  }
 }

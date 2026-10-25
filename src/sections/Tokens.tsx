@@ -8,6 +8,7 @@ import { dayRevenue, type RevenueAssumptions } from "../lib/revenue.ts";
 import type { Palette } from "../lib/theme.ts";
 
 const OTHER = "Other";
+const TYPE_LABEL: Record<string, string> = { text2text: "Text", image2text: "Image and text", embedding: "Embedding" };
 
 export function TokensSection({ d, p, range }: { d: Dashboard; p: Palette; range: Range }) {
   const t = d.tokens;
@@ -159,8 +160,45 @@ export function TokensSection({ d, p, range }: { d: Dashboard; p: Palette; range
         </Card>
       </div>
 
+      {t.catalog.models.length > 0 && (
+        <Card>
+          <CardTitle
+            title="Token Factory catalog"
+            sub={
+              <>
+                {t.catalog.models.length} public models, {t.catalog.models.filter((m) => m.cacheRead != null).length} with a cached-input price. Nebius's own list at{" "}
+                <ExtLink href="https://tokenfactory.nebius.com/model-catalog.md">tokenfactory.nebius.com</ExtLink>. OpenRouter only shows the ones it routes.
+              </>
+            }
+          />
+          <DataTable
+            caption="Token Factory public model catalog and prices"
+            maxHeight={480}
+            rows={t.catalog.models}
+            columns={[
+              {
+                key: "model",
+                label: "Model",
+                render: (r) => (
+                  <span className="flex flex-col">
+                    <span className="font-medium">{r.name}</span>
+                    <span className="font-mono text-[11px] text-ink-3">{r.id}</span>
+                  </span>
+                ),
+              },
+              { key: "type", label: "Type", render: (r) => TYPE_LABEL[r.type] ?? r.type },
+              { key: "region", label: "Region", render: (r) => r.regions.join(", ") || "—" },
+              { key: "ctx", label: "Context", align: "right", render: (r) => (r.contextK ? `${r.contextK}K` : "—") },
+              { key: "in", label: "Input $/M", align: "right", render: (r) => `$${r.input}` },
+              { key: "cache", label: "Cached $/M", align: "right", render: (r) => (r.cacheRead != null ? `$${r.cacheRead}` : "—") },
+              { key: "out", label: "Output $/M", align: "right", render: (r) => (r.output != null ? `$${r.output}` : "—") },
+            ]}
+          />
+        </Card>
+      )}
+
       <Card>
-        <CardTitle title="Models served" sub="Last 7 complete days. Revenue uses the assumptions above." />
+        <CardTitle title="Models served" sub="Last 7 complete days on OpenRouter. Revenue uses the assumptions above." />
         <DataTable
           caption="Models served by Nebius on OpenRouter"
           maxHeight={420}

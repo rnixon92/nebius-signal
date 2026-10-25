@@ -20,6 +20,7 @@ npm run dev         # dashboard at http://localhost:5173
 | `nebius.com/prices` | On-demand rate card | Detects list-price changes (pricing power) |
 | `openrouter.ai/provider/<slug>` | 90 days of daily tokens per model, for Nebius and 11 peers | Token Factory's competitive position |
 | `jimmyresearch.com/openrouter` CSV | Whole-market OpenRouter tokens per provider | Nebius share and rank |
+| `tokenfactory.nebius.com/api/public/models_info` | Every public model, with region, context and Nebius's own input, cached-input and output prices | The full catalog. OpenRouter only shows the models it routes |
 | `nebiusatlas.com` | Community-tracked customer list | Demand breadth (dates are discovery dates) |
 | SEC EDGAR | 6-K headlines, Form 4 insider trades, Form 144 planned sales | Material news and insider behaviour |
 | Greenhouse job board | Open roles by function and region | Build-out signal; new data-center hiring locations alert |

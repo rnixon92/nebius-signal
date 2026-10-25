@@ -200,6 +200,23 @@ export type Dashboard = {
     week: { end: string; tokens: number; prev: number; change: number | null };
     market: { date: string; nebius: number; total: number; share: number; rank: number | null; providers: number }[];
     peers: { slug: string; name: string; week: number; prevWeek: number; change: number | null; isNebius: boolean }[];
+    /** Nebius's own public catalog. OpenRouter only carries the models it routes. */
+    catalog: {
+      updatedAt: string | null;
+      models: {
+        id: string;
+        name: string;
+        vendor: string;
+        type: string;
+        regions: string[];
+        contextK: number;
+        input: number;
+        output: number | null;
+        cacheRead: number | null;
+        quantization: string | null;
+        tokensPerSecond: number | null;
+      }[];
+    };
   };
 
   atlas: {

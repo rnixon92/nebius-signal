@@ -11,6 +11,7 @@ import { FUNCTIONS } from "./sources/jobs.ts";
 import type { ModelPrice, ProviderHistory } from "./sources/openrouter.ts";
 import { NEBIUS, PEERS } from "./sources/openrouter.ts";
 import type { MarketWeek } from "./sources/openrouter-market.ts";
+import type { CatalogFile } from "./sources/tokenfactory.ts";
 import type { Filing } from "./sources/sec.ts";
 import { matchSites, type NewsItem, type Site } from "./sources/news.ts";
 import type { RegionsFile } from "./sources/regions.ts";
@@ -31,6 +32,7 @@ const SOURCE_META: Record<string, { label: string; url: string; maxAgeH: number 
   news: { label: "Google News (data centers)", url: "https://news.google.com/search?q=Nebius%20data%20center", maxAgeH: 36 },
   openrouter: { label: "OpenRouter provider pages", url: "https://openrouter.ai/provider/nebius", maxAgeH: 36 },
   "openrouter-market": { label: "jimmyresearch OpenRouter CSV", url: "https://jimmyresearch.com/openrouter/", maxAgeH: 72 },
+  tokenfactory: { label: "Token Factory model catalog", url: "https://tokenfactory.nebius.com/model-catalog.md", maxAgeH: 36 },
   atlas: { label: "Nebius Atlas", url: "https://nebiusatlas.com/", maxAgeH: 36 },
   sec: { label: "SEC EDGAR", url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845", maxAgeH: 36 },
   jobs: { label: "Greenhouse job board", url: "https://careers.nebius.com/", maxAgeH: 36 },
@@ -606,6 +608,11 @@ async function tokens(): Promise<Dashboard["tokens"]> {
   }
   peers.sort((a, b) => b.week - a.week);
 
+  const catalogFile = await readJson<CatalogFile>("tokenfactory/catalog.json", { updatedAt: "", models: {} });
+  const listed = Object.values(catalogFile.models)
+    .map((m) => ({ id: m.id, name: m.name, vendor: m.vendor, type: m.type, regions: m.regions, contextK: m.contextK, input: m.input, output: m.output, cacheRead: m.cacheRead, quantization: m.quantization, tokensPerSecond: m.tokensPerSecond }))
+    .sort((a, b) => a.name.localeCompare(b.name) || a.id.localeCompare(b.id));
+
   return {
     daily,
     topModels,
@@ -613,6 +620,7 @@ async function tokens(): Promise<Dashboard["tokens"]> {
     week: { end: complete.at(-1)?.date ?? "", tokens: cur, prev, change: prev ? cur / prev - 1 : null },
     market,
     peers,
+    catalog: { updatedAt: catalogFile.updatedAt || null, models: listed },
   };
 }
 
