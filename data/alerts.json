@@ -1,5 +1,23 @@
 [
  {
+  "id": "or-wow-2026-10-25",
+  "date": "2026-10-26",
+  "source": "openrouter",
+  "severity": "medium",
+  "title": "Nebius OpenRouter tokens up 67% week over week",
+  "detail": "287.7B tokens in the 7 days to 2026-10-25 vs 172.5B the week before",
+  "url": "https://openrouter.ai/provider/nebius"
+ },
+ {
+  "id": "atlas-added-2026-10-26",
+  "date": "2026-10-26",
+  "source": "atlas",
+  "severity": "info",
+  "title": "5 new customers on Nebius Atlas (3 using Token Factory)",
+  "detail": "9brains, Applied Compute, Inception, mandari, RespawnHost.com",
+  "url": "https://nebiusatlas.com/"
+ },
+ {
   "id": "spot-cap-sku-e00vd4x28cozliwb6g4vh-2026-10-26",
   "date": "2026-10-26",
   "source": "gpu-spot",

@@ -25,6 +25,22 @@
   "baseline": false,
   "latestEvidence": "2026-10-18"
  },
+ "9brains": {
+  "name": "9brains",
+  "category": "Workplace tools",
+  "use": "Nebius models for business chat and document analysis",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving",
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-26",
+  "baseline": false,
+  "latestEvidence": "2026-10-26"
+ },
  "accel": {
   "name": "Accel",
   "category": "Finance",
@@ -342,6 +358,19 @@
   "baseline": false,
   "latestEvidence": "2026-10-18"
  },
+ "applied-compute": {
+  "name": "Applied Compute",
+  "category": "Data & infrastructure",
+  "use": "Nebius cloud infrastructure for AI",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-26",
+  "baseline": false,
+  "latestEvidence": "2026-10-26"
+ },
  "arena": {
   "name": "Arena",
   "category": "Science & research",
@@ -635,7 +664,8 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-25",
   "baseline": false,
-  "latestEvidence": "2026-10-25"
+  "latestEvidence": "2026-10-25",
+  "removedAt": "2026-10-26"
  },
  "biophytis": {
   "name": "Biophytis",
@@ -2109,6 +2139,22 @@
   "baseline": false,
   "latestEvidence": "2026-10-10"
  },
+ "inception": {
+  "name": "Inception",
+  "category": "Model developers",
+  "use": "Nebius infrastructure for LLM training and serving",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-26",
+  "baseline": false,
+  "latestEvidence": "2026-10-26"
+ },
  "inceptron": {
   "name": "Inceptron",
   "category": "Data & infrastructure",
@@ -2812,6 +2858,22 @@
   "firstListedAt": "2026-09-27",
   "baseline": false,
   "latestEvidence": "2026-10-19"
+ },
+ "mandari": {
+  "name": "mandari",
+  "category": "Workplace tools",
+  "use": "Token Factory for council-document AI and a Work assistant",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Data processing",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-26",
+  "baseline": false,
+  "latestEvidence": "2026-10-26"
  },
  "mangoapps": {
   "name": "MangoApps",
@@ -4294,6 +4356,21 @@
   "baseline": false,
   "latestEvidence": "2026-10-25"
  },
+ "respawnhost": {
+  "name": "RespawnHost.com",
+  "category": "Data & infrastructure",
+  "use": "AI support replies via Eden AI and Nebius",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-26",
+  "baseline": false,
+  "latestEvidence": "2026-10-26"
+ },
  "revolut": {
   "name": "Revolut",
   "category": "Finance",
@@ -4604,7 +4681,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-25"
+  "latestEvidence": "2026-10-21"
  },
  "shout": {
   "name": "Shout",
