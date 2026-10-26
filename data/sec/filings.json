@@ -2315,5 +2315,37 @@
   "form": "SCHEDULE 13G",
   "filed": "2025-02-14",
   "url": "https://www.sec.gov/Archives/edgar/data/1513845/000108514625001440/primary_doc.xml"
+ },
+ "0001513845-26-000141": {
+  "accession": "0001513845-26-000141",
+  "form": "4",
+  "filed": "2026-10-26",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000141/form4.xml",
+  "owner": "Grimme Arne",
+  "role": "Director",
+  "plan10b5": true,
+  "trades": [
+   {
+    "date": "2026-10-22",
+    "code": "P",
+    "shares": 357,
+    "price": 161.97,
+    "acquired": true
+   },
+   {
+    "date": "2026-10-23",
+    "code": "P",
+    "shares": 205,
+    "price": 158.98,
+    "acquired": true
+   },
+   {
+    "date": "2026-10-26",
+    "code": "P",
+    "shares": 208,
+    "price": 153.96,
+    "acquired": true
+   }
+  ]
  }
 }

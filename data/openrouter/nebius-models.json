@@ -1,4 +1,12 @@
 {
+ "deepseek/deepseek-v4-pro-20260813": {
+  "name": "deepseek/deepseek-v4-pro-0813",
+  "input": 1.32,
+  "output": 3.96,
+  "cacheRead": 0.04,
+  "firstSeen": "2026-10-26",
+  "lastSeen": "2026-10-26"
+ },
  "deepseek/deepseek-v4.1-flash-20260910": {
   "name": "deepseek/deepseek-v4.1-flash",
   "input": 0.3,
@@ -61,6 +69,14 @@
   "output": 0.24,
   "cacheRead": null,
   "firstSeen": "2026-10-24",
+  "lastSeen": "2026-10-26"
+ },
+ "nvidia/nemotron-3.5-super-vl-20261015": {
+  "name": "nvidia/nemotron-3.5-super-vl",
+  "input": 0.3,
+  "output": 0.9,
+  "cacheRead": 0.06,
+  "firstSeen": "2026-10-26",
   "lastSeen": "2026-10-26"
  },
  "openai/gpt-oss-120b": {

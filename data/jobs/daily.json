@@ -604,10 +604,10 @@
  "2026-10-26": {
   "total": 376,
   "byFunction": {
-   "Engineering & product": 183,
+   "Engineering & product": 182,
    "Sales & go-to-market": 71,
    "G&A & other": 49,
-   "Data center & power": 73
+   "Data center & power": 74
   },
   "byRegion": {
    "Europe & other": 168,

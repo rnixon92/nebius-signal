@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-10-26T19:18:31.096Z",
+ "generatedAt": "2026-10-26T22:54:28.273Z",
  "sources": [
   {
    "id": "gpu-ondemand",
    "label": "Nebius GPU rate card",
    "url": "https://nebius.com/prices",
    "ok": true,
-   "lastSuccess": "2026-10-26T18:51:47.657Z",
+   "lastSuccess": "2026-10-26T22:53:57.046Z",
    "summary": "9 GPU rows (7 with list prices)",
    "stale": false
   },
@@ -15,8 +15,8 @@
    "label": "Nebius spot price API",
    "url": "https://nebius.com/spot-prices",
    "ok": true,
-   "lastSuccess": "2026-10-26T19:18:25.600Z",
-   "summary": "12 SKUs listed; 12 series, 8628 hourly points",
+   "lastSuccess": "2026-10-26T22:53:58.048Z",
+   "summary": "12 SKUs listed; 12 series, 8616 hourly points",
    "stale": false
   },
   {
@@ -24,7 +24,7 @@
    "label": "Nebius regions docs",
    "url": "https://docs.nebius.com/overview/regions",
    "ok": true,
-   "lastSuccess": "2026-10-26T19:18:25.819Z",
+   "lastSuccess": "2026-10-26T22:53:58.410Z",
    "summary": "10 regions, 6 GPU platforms",
    "stale": false
   },
@@ -33,7 +33,7 @@
    "label": "Epoch AI data centers (satellite)",
    "url": "https://epoch.ai/data/data-centers",
    "ok": true,
-   "lastSuccess": "2026-10-26T18:51:51.420Z",
+   "lastSuccess": "2026-10-26T22:54:00.486Z",
    "summary": "2 Nebius sites, 125 MW IT power observed",
    "stale": false
   },
@@ -42,8 +42,8 @@
    "label": "Google News (data centers)",
    "url": "https://news.google.com/search?q=Nebius%20data%20center",
    "ok": true,
-   "lastSuccess": "2026-10-26T19:18:27.416Z",
-   "summary": "377 headlines fetched; 404 kept, 156 matched to sites",
+   "lastSuccess": "2026-10-26T22:54:00.168Z",
+   "summary": "371 headlines fetched; 407 kept, 156 matched to sites",
    "stale": false
   },
   {
@@ -51,7 +51,7 @@
    "label": "OpenRouter provider pages",
    "url": "https://openrouter.ai/provider/nebius",
    "ok": true,
-   "lastSuccess": "2026-10-26T18:52:11.541Z",
+   "lastSuccess": "2026-10-26T22:54:20.631Z",
    "summary": "Nebius 92 days of history; 11/11 peers",
    "stale": false
   },
@@ -60,7 +60,7 @@
    "label": "jimmyresearch OpenRouter CSV",
    "url": "https://jimmyresearch.com/openrouter/",
    "ok": true,
-   "lastSuccess": "2026-10-26T18:52:11.805Z",
+   "lastSuccess": "2026-10-26T22:54:20.910Z",
    "summary": "233 snapshots to 2026-10-25; Nebius rank 55 of 96",
    "stale": false
   },
@@ -69,7 +69,7 @@
    "label": "Token Factory model catalog",
    "url": "https://tokenfactory.nebius.com/model-catalog.md",
    "ok": true,
-   "lastSuccess": "2026-10-26T18:52:12.237Z",
+   "lastSuccess": "2026-10-26T22:54:21.431Z",
    "summary": "30 models, 19 with a cached-input price",
    "stale": false
   },
@@ -78,8 +78,8 @@
    "label": "Nebius Atlas",
    "url": "https://nebiusatlas.com/",
    "ok": true,
-   "lastSuccess": "2026-10-26T18:52:14.112Z",
-   "summary": "396 customers (7 new since last run)",
+   "lastSuccess": "2026-10-26T22:54:23.706Z",
+   "summary": "396 customers (0 new since last run)",
    "stale": false
   },
   {
@@ -87,8 +87,8 @@
    "label": "SEC EDGAR",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845",
    "ok": true,
-   "lastSuccess": "2026-10-26T19:18:27.450Z",
-   "summary": "167 filings since 2025-01-01 (0 parsed this run)",
+   "lastSuccess": "2026-10-26T22:54:24.050Z",
+   "summary": "168 filings since 2025-01-01 (1 parsed this run)",
    "stale": false
   },
   {
@@ -96,8 +96,8 @@
    "label": "Greenhouse job board",
    "url": "https://careers.nebius.com/",
    "ok": true,
-   "lastSuccess": "2026-10-26T18:52:14.501Z",
-   "summary": "376 open roles (1 new)",
+   "lastSuccess": "2026-10-26T22:54:24.278Z",
+   "summary": "376 open roles (0 new)",
    "stale": false
   },
   {
@@ -105,12 +105,21 @@
    "label": "Yahoo Finance (NBIS)",
    "url": "https://finance.yahoo.com/quote/NBIS",
    "ok": true,
-   "lastSuccess": "2026-10-26T19:18:31.095Z",
-   "summary": "NBIS last 2026-10-26 $159.35; 4/4 peers",
+   "lastSuccess": "2026-10-26T22:54:28.271Z",
+   "summary": "NBIS last 2026-10-26 $153.27; 4/4 peers",
    "stale": false
   }
  ],
  "alerts": [
+  {
+   "id": "sec-0001513845-26-000141",
+   "date": "2026-10-26",
+   "source": "sec",
+   "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000141/form4.xml",
+   "severity": "medium",
+   "title": "Insider purchase: Grimme Arne bought $122K",
+   "detail": "Under a 10b5-1 plan"
+  },
   {
    "id": "or-wow-2026-10-25",
    "date": "2026-10-26",
@@ -430,10 +439,10 @@
      "range": null,
      "source": null
     },
-    "estimate": 1329.6834245152556,
-    "low": 1289.792921779798,
-    "high": 1369.5739272507133,
-    "tilt": 0.020268598293122796,
+    "estimate": 1329.7156391799758,
+    "low": 1289.8241700045764,
+    "high": 1369.6071083553752,
+    "tilt": 0.020293316666092413,
     "lean": "no consensus",
     "coverage": 0.4121710047986041,
     "priorFromLastSurprise": 0.01267828843106178,
@@ -481,22 +490,22 @@
      {
       "id": "blackwell-spot",
       "label": "Blackwell spot vs list",
-      "value": "48% average",
-      "score": -0.4606420364637085,
+      "value": "49% average",
+      "score": -0.4593618163054696,
       "weight": 2,
       "coverage": 0.6923076923076923,
       "note": "Above ~60% means spare Blackwell capacity is being taken up. Market pricing only since Oct 8, 2026; uncapped from Nov 2, so later averages can run higher.",
-      "contribution": -0.005382418150530262
+      "contribution": -0.005367459289482148
      },
      {
       "id": "hopper-spot",
       "label": "Hopper spot vs list",
       "value": "34% average",
-      "score": -0.36235082304526767,
+      "score": -0.3624399862825791,
       "weight": 1,
       "coverage": 0.6923076923076923,
       "note": "Low Hopper prices point to idle older GPUs and pricing pressure on renewals. Market pricing only since Oct 8, 2026.",
-      "contribution": -0.0021169622965706942
+      "contribution": -0.002117483214972485
      },
      {
       "id": "list-price",
@@ -511,12 +520,12 @@
      {
       "id": "tokens",
       "label": "Token Factory on OpenRouter",
-      "value": "+89% daily volume vs prior quarter",
-      "score": 0.45759602063333155,
+      "value": "+91% daily volume vs prior quarter",
+      "score": 0.46621728683196717,
       "weight": 0.5,
       "coverage": 0.2826086956521739,
       "note": "Under 0.1% of revenue: a demand-breadth read only.",
-      "contribution": 0.0005456604514872677
+      "contribution": 0.0005559408818105659
      }
     ],
     "context": {
@@ -558,7 +567,7 @@
  },
  "valuation": {
   "price": {
-   "value": 159.35,
+   "value": 153.27,
    "date": "2026-10-26"
   },
   "balanceSheet": {
@@ -1652,7 +1661,7 @@
     ],
     "spotPools": 1,
     "observedMw": null,
-    "dcRolesOpen": 2,
+    "dcRolesOpen": 3,
     "dcRolesPosted90d": 1,
     "news90d": 0,
     "risk90d": 0,
@@ -4739,14 +4748,14 @@
    ],
    [
     "2026-10-26",
-    159.35
+    153.27
    ]
   ],
   "last": {
    "date": "2026-10-26",
-   "close": 159.35,
-   "chg1d": 0.003842761748771517,
-   "chg30d": -0.32857203050604644
+   "close": 153.27,
+   "chg1d": -0.034458863550459906,
+   "chg30d": -0.354190367842245
   },
   "peers": [
    {
@@ -6339,7 +6348,7 @@
      ],
      [
       "2026-10-26",
-      56.32
+      55.19
      ]
     ]
    },
@@ -8353,7 +8362,7 @@
      ],
      [
       "2026-10-26",
-      216.6
+      216
      ]
     ]
    },
@@ -10367,7 +10376,7 @@
      ],
      [
       "2026-10-26",
-      126.83
+      126.06
      ]
     ]
    },
@@ -12381,14 +12390,14 @@
      ],
      [
       "2026-10-26",
-      544.7
+      541.62
      ]
     ]
    }
   ]
  },
  "gpu": {
-  "snapshotTime": "2026-10-26T19:13:28.366602Z",
+  "snapshotTime": "2026-10-26T22:49:42.425056Z",
   "onDemand": [
    {
     "name": "NVIDIA GB300 NVL72",
@@ -12494,9 +12503,6 @@
     "ratio": 0.9989,
     "effectiveTime": "2026-10-26T08:56:00Z",
     "spark": [
-     9.49,
-     9.49,
-     9.49,
      9.49,
      9.49,
      9.49,
@@ -12662,6 +12668,9 @@
      9.49,
      9.49,
      9.49,
+     9.49,
+     9.49,
+     9.49,
      9.49
     ]
    },
@@ -12669,14 +12678,11 @@
     "skuId": "sku-e00fmto201j24eyp0841g",
     "family": "B300",
     "region": "uk-south1",
-    "price": 2.5,
+    "price": 4.3,
     "onDemand": 9.5,
-    "ratio": 0.2632,
-    "effectiveTime": "2026-10-26T19:06:00Z",
+    "ratio": 0.4526,
+    "effectiveTime": "2026-10-26T22:31:00Z",
     "spark": [
-     4.45,
-     4.75,
-     5.05,
      5.35,
      5.5,
      5.35,
@@ -12842,7 +12848,10 @@
      1.9,
      1.75,
      2.05,
-     2.35
+     2.5,
+     3.1,
+     3.7,
+     4.15
     ]
    },
    {
@@ -12854,9 +12863,6 @@
     "ratio": 0.1042,
     "effectiveTime": "2026-10-25T06:26:00Z",
     "spark": [
-     9.49,
-     9.49,
-     9.49,
      9.49,
      9.49,
      9.49,
@@ -13022,6 +13028,9 @@
      0.99,
      0.99,
      0.99,
+     0.99,
+     0.99,
+     0.99,
      0.99
     ]
    },
@@ -13029,14 +13038,11 @@
     "skuId": "sku-e00k58wq19wjszct65fwm",
     "family": "B200",
     "region": "me-west1",
-    "price": 5.3,
+    "price": 5.6,
     "onDemand": 8.5,
-    "ratio": 0.6235,
-    "effectiveTime": "2026-10-26T19:06:00Z",
+    "ratio": 0.6588,
+    "effectiveTime": "2026-10-26T22:46:00Z",
     "spark": [
-     4.2,
-     3.75,
-     3.75,
      4.05,
      4.35,
      4.5,
@@ -13202,21 +13208,21 @@
      5.3,
      5.75,
      5.75,
-     5.45
+     5.3,
+     5.15,
+     5.45,
+     5.7
     ]
    },
    {
     "skuId": "sku-e00fjjc4gwdx48pck9b46",
     "family": "B200",
     "region": "us-central1",
-    "price": 6,
+    "price": 4.2,
     "onDemand": 8.5,
-    "ratio": 0.7059,
-    "effectiveTime": "2026-10-26T19:16:00Z",
+    "ratio": 0.4941,
+    "effectiveTime": "2026-10-26T22:31:00Z",
     "spark": [
-     2.746,
-     2.746,
-     3.196,
      3.496,
      3.546,
      3.796,
@@ -13382,21 +13388,21 @@
      6.6,
      6.6,
      6.45,
-     6.15
+     6,
+     5.4,
+     4.8,
+     4.35
     ]
    },
    {
     "skuId": "sku-e00agrh84hf7fwlrgsfsv",
     "family": "H200",
     "region": "eu-north1",
-    "price": 1.4,
+    "price": 1.09,
     "onDemand": 5.4,
-    "ratio": 0.2593,
-    "effectiveTime": "2026-10-26T17:31:00Z",
+    "ratio": 0.2019,
+    "effectiveTime": "2026-10-26T22:51:00Z",
     "spark": [
-     1.9365,
-     2,
-     1.85,
      1.6,
      1.85,
      1.85,
@@ -13562,7 +13568,10 @@
      1.25,
      1.25,
      1.4,
-     1.4
+     1.4,
+     1.25,
+     0.95,
+     0.893333333
     ]
    },
    {
@@ -13572,11 +13581,8 @@
     "price": 5.39,
     "onDemand": 5.4,
     "ratio": 0.9981,
-    "effectiveTime": "2026-10-26T08:01:00Z",
+    "effectiveTime": "2026-10-26T20:21:00Z",
     "spark": [
-     2.372,
-     2.672,
-     2.722,
      2.972,
      3.272,
      3.572,
@@ -13742,6 +13748,9 @@
      5.39,
      5.39,
      5.39,
+     5.24,
+     5.24,
+     5.39,
      5.39
     ]
    },
@@ -13754,9 +13763,6 @@
     "ratio": 0.2574,
     "effectiveTime": "2026-10-26T18:56:00Z",
     "spark": [
-     0.79,
-     0.79,
-     0.79,
      0.79,
      0.79,
      0.79,
@@ -13922,6 +13928,9 @@
      0.79,
      0.79,
      1.09,
+     1.39,
+     1.39,
+     1.39,
      1.39
     ]
    },
@@ -13929,14 +13938,11 @@
     "skuId": "sku-e00ljkedv5qtbwhikuoct",
     "family": "H100",
     "region": "eu-north1",
-    "price": 0.79,
+    "price": 1,
     "onDemand": 4.5,
-    "ratio": 0.1756,
-    "effectiveTime": "2026-10-26T18:41:00Z",
+    "ratio": 0.2222,
+    "effectiveTime": "2026-10-26T19:36:00Z",
     "spark": [
-     0.79,
-     0.79,
-     0.79,
      0.79,
      0.79,
      0.79,
@@ -14102,21 +14108,21 @@
      1,
      0.93,
      0.895,
-     0.79
+     0.895,
+     1,
+     1,
+     1
     ]
    },
    {
     "skuId": "sku-e00g61h0323jih8tkg5jv",
     "family": "RTX PRO 6000",
     "region": "eu-south1",
-    "price": 1.38,
+    "price": 0.79,
     "onDemand": 1.8,
-    "ratio": 0.7667,
-    "effectiveTime": "2026-10-26T02:36:00Z",
+    "ratio": 0.4389,
+    "effectiveTime": "2026-10-26T21:56:00Z",
     "spark": [
-     0.935,
-     0.94,
-     1.235,
      1.38,
      1.38,
      1.38,
@@ -14282,7 +14288,10 @@
      1.38,
      1.38,
      1.38,
-     1.38
+     1.38,
+     1.23,
+     0.935,
+     0.79
     ]
    },
    {
@@ -14294,9 +14303,6 @@
     "ratio": 0.7667,
     "effectiveTime": "2026-10-26T02:56:00Z",
     "spark": [
-     0.935,
-     0.795,
-     0.95,
      1.24,
      1.38,
      1.38,
@@ -14462,6 +14468,9 @@
      1.38,
      1.38,
      1.38,
+     1.38,
+     1.38,
+     1.38,
      1.38
     ]
    },
@@ -14469,14 +14478,11 @@
     "skuId": "sku-e00otwkvc6gea6nmvvsda",
     "family": "RTX PRO 6000",
     "region": "us-central1",
-    "price": 1.09,
+    "price": 0.79,
     "onDemand": 1.8,
-    "ratio": 0.6056,
-    "effectiveTime": "2026-10-26T19:16:00Z",
+    "ratio": 0.4389,
+    "effectiveTime": "2026-10-26T22:26:00Z",
     "spark": [
-     1.24,
-     1.24,
-     0.94,
      0.79,
      0.79,
      0.79,
@@ -14642,6 +14648,9 @@
      0.89,
      0.79,
      0.89,
+     1.09,
+     1.54,
+     1.39,
      0.94
     ]
    }
@@ -14792,11 +14801,11 @@
    },
    {
     "date": "2026-10-26",
-    "B300": 0.4199,
-    "B200": 0.6001,
-    "H200": 0.4891,
-    "H100": 0.2058,
-    "RTX PRO 6000": 0.66
+    "B300": 0.4296,
+    "B200": 0.5999,
+    "H200": 0.4875,
+    "H100": 0.2087,
+    "RTX PRO 6000": 0.6631
    }
   ],
   "priceDaily": [
@@ -14939,10 +14948,10 @@
    {
     "date": "2026-10-26",
     "B300": 0.99,
-    "B200": 4.892,
-    "H200": 1.284,
-    "H100": 0.926,
-    "RTX PRO 6000": 0.967
+    "B200": 4.953,
+    "H200": 1.253,
+    "H100": 0.939,
+    "RTX PRO 6000": 1.013
    }
   ],
   "availability": [
@@ -14960,8 +14969,8 @@
    }
   ],
   "tightness": {
-   "blackwell": 0.5391400000000001,
-   "hopper": 0.42260000000000003
+   "blackwell": 0.54172,
+   "hopper": 0.4199
   },
   "pools": [
    {
@@ -15283,18 +15292,18 @@
    },
    {
     "date": "2026-10-26",
-    "sku-e00vd4x28cozliwb6g4vh": 0.8832,
-    "sku-e00fmto201j24eyp0841g": 0.2722,
+    "sku-e00vd4x28cozliwb6g4vh": 0.8977,
+    "sku-e00fmto201j24eyp0841g": 0.2868,
     "sku-e00hfg6dlxtt9ji6fqo9u": 0.1042,
-    "sku-e00k58wq19wjszct65fwm": 0.5755,
-    "sku-e00fjjc4gwdx48pck9b46": 0.6247,
-    "sku-e00agrh84hf7fwlrgsfsv": 0.2378,
-    "sku-e00dh1moiqg9mc5ix6wj2": 0.9902,
-    "sku-e00em8l461xmyihec7sr8": 0.2393,
-    "sku-e00ljkedv5qtbwhikuoct": 0.2058,
-    "sku-e00g61h0323jih8tkg5jv": 0.7272,
-    "sku-e00lxawt0lavf9i0dutiz": 0.7156,
-    "sku-e00otwkvc6gea6nmvvsda": 0.5372
+    "sku-e00k58wq19wjszct65fwm": 0.5827,
+    "sku-e00fjjc4gwdx48pck9b46": 0.6172,
+    "sku-e00agrh84hf7fwlrgsfsv": 0.232,
+    "sku-e00dh1moiqg9mc5ix6wj2": 0.9889,
+    "sku-e00em8l461xmyihec7sr8": 0.2415,
+    "sku-e00ljkedv5qtbwhikuoct": 0.2087,
+    "sku-e00g61h0323jih8tkg5jv": 0.705,
+    "sku-e00lxawt0lavf9i0dutiz": 0.7217,
+    "sku-e00otwkvc6gea6nmvvsda": 0.5628
    }
   ],
   "poolPriceDaily": [
@@ -15555,18 +15564,18 @@
    },
    {
     "date": "2026-10-26",
-    "sku-e00vd4x28cozliwb6g4vh": 8.39,
-    "sku-e00fmto201j24eyp0841g": 2.586,
+    "sku-e00vd4x28cozliwb6g4vh": 8.528,
+    "sku-e00fmto201j24eyp0841g": 2.725,
     "sku-e00hfg6dlxtt9ji6fqo9u": 0.99,
-    "sku-e00k58wq19wjszct65fwm": 4.892,
-    "sku-e00fjjc4gwdx48pck9b46": 5.31,
-    "sku-e00agrh84hf7fwlrgsfsv": 1.284,
-    "sku-e00dh1moiqg9mc5ix6wj2": 5.347,
-    "sku-e00em8l461xmyihec7sr8": 1.292,
-    "sku-e00ljkedv5qtbwhikuoct": 0.926,
-    "sku-e00g61h0323jih8tkg5jv": 1.309,
-    "sku-e00lxawt0lavf9i0dutiz": 1.288,
-    "sku-e00otwkvc6gea6nmvvsda": 0.967
+    "sku-e00k58wq19wjszct65fwm": 4.953,
+    "sku-e00fjjc4gwdx48pck9b46": 5.246,
+    "sku-e00agrh84hf7fwlrgsfsv": 1.253,
+    "sku-e00dh1moiqg9mc5ix6wj2": 5.34,
+    "sku-e00em8l461xmyihec7sr8": 1.304,
+    "sku-e00ljkedv5qtbwhikuoct": 0.939,
+    "sku-e00g61h0323jih8tkg5jv": 1.269,
+    "sku-e00lxawt0lavf9i0dutiz": 1.299,
+    "sku-e00otwkvc6gea6nmvvsda": 1.013
    }
   ],
   "regionWeights": [
@@ -17187,18 +17196,18 @@
    {
     "date": "2026-10-26",
     "partial": true,
-    "total": 40406630524,
+    "total": 48523552403,
     "byModel": {
-     "qwen/qwen3-embedding-8b": 20450532602,
-     "deepseek/deepseek-v4.1-flash-20261017": 10084421420,
-     "qwen/qwen3-30b-a3b-instruct-2507": 3431993449,
-     "reflection/beam-1.0-501b-a23b-20261016": 1089013135,
-     "z-ai/glm-5.3-flash-20260826": 1068702253,
-     "nvidia/nemotron-3-nano-30b-a3b": 816958159,
-     "minimax/minimax-m3.1-flash-20261019": 734397883,
-     "z-ai/glm-5.2-20260616": 652258168,
-     "deepseek/deepseek-v4.1-flash-20260910": 601177281,
-     "Others": 1477176174
+     "qwen/qwen3-embedding-8b": 24155105116,
+     "deepseek/deepseek-v4.1-flash-20261017": 13065669313,
+     "qwen/qwen3-30b-a3b-instruct-2507": 3714726461,
+     "reflection/beam-1.0-501b-a23b-20261016": 1196409163,
+     "minimax/minimax-m3.1-flash-20261019": 1099216429,
+     "z-ai/glm-5.3-flash-20260826": 1098251091,
+     "z-ai/glm-5.2-20260616": 945421751,
+     "nvidia/nemotron-3-nano-30b-a3b": 898883140,
+     "deepseek/deepseek-v4.1-flash-20260910": 635325346,
+     "Others": 1714544593
     }
    }
   ],
@@ -17278,9 +17287,9 @@
    "moonshotai/kimi-k3-20260715": {
     "id": "moonshotai/kimi-k3-20260715",
     "name": "moonshotai/kimi-k3",
-    "input": 0.159,
+    "input": 0.189,
     "output": 20,
-    "cacheRead": 0.149,
+    "cacheRead": 0.179,
     "priceSource": "catalog"
    },
    "nousresearch/hermes-4-405b": {
@@ -17326,10 +17335,10 @@
    "deepseek/deepseek-v4-pro-20260813": {
     "id": "deepseek/deepseek-v4-pro-20260813",
     "name": "deepseek/deepseek-v4-pro-0813",
-    "input": 0.66,
-    "output": 1.98,
-    "cacheRead": 0.022,
-    "priceSource": "catalog"
+    "input": 1.32,
+    "output": 3.96,
+    "cacheRead": 0.04,
+    "priceSource": "nebius"
    },
    "deepseek/deepseek-v4.1-flash-20260910": {
     "id": "deepseek/deepseek-v4.1-flash-20260910",
@@ -19375,7 +19384,7 @@
    }
   ],
   "catalog": {
-   "updatedAt": "2026-10-26T18:52:12.237Z",
+   "updatedAt": "2026-10-26T22:54:21.430Z",
    "models": [
     {
      "id": "deepseek-ai/DeepSeek-V4.1-Flash",
@@ -20609,7 +20618,7 @@
   "byFunction": [
    {
     "name": "Data center & power",
-    "count": 73
+    "count": 74
    },
    {
     "name": "Sales & go-to-market",
@@ -20617,7 +20626,7 @@
    },
    {
     "name": "Engineering & product",
-    "count": 183
+    "count": 182
    },
    {
     "name": "G&A & other",
@@ -21003,10 +21012,10 @@
     "url": "https://careers.nebius.com/job?gh_jid=4780568101"
    },
    {
-    "title": "Data Center Technician",
+    "title": "Senior Data Center Diagnostic & RMA Specialist",
     "location": "Minnesota, United States",
-    "posted": "2026-02-20",
-    "url": "https://careers.nebius.com/job?gh_jid=4765032101"
+    "posted": "2026-02-24",
+    "url": "https://careers.nebius.com/job?gh_jid=4765077101"
    }
   ],
   "postedByMonth": [
@@ -21149,9 +21158,9 @@
     "date": "2026-02-01",
     "Still open": 15,
     "Closed": 94,
-    "Data center & power": 23,
+    "Data center & power": 24,
     "Sales & go-to-market": 35,
-    "Engineering & product": 39,
+    "Engineering & product": 38,
     "G&A & other": 12
    },
    {
@@ -21230,6 +21239,13 @@
  },
  "sec": {
   "filings": [
+   {
+    "filed": "2026-10-26",
+    "form": "4",
+    "title": "Grimme Arne (Director) bought $122K · 10b5-1 plan",
+    "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000141/form4.xml",
+    "kind": "insider"
+   },
    {
     "filed": "2026-10-22",
     "form": "6-K",
@@ -21782,13 +21798,6 @@
     "title": "20-F",
     "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm",
     "kind": "results"
-   },
-   {
-    "filed": "2026-04-16",
-    "form": "4",
-    "title": "Boroditsky Marc (Chief Revenue Officer) sold $720K · 10b5-1 plan",
-    "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000051/form4.xml",
-    "kind": "insider"
    }
   ],
   "insiders": [
@@ -21860,14 +21869,14 @@
     "owner": "Grimme Arne",
     "role": "Director",
     "sold": 0,
-    "bought": 125188.29999999999,
+    "bought": 247626.16999999998,
     "planned": 0,
-    "lastDate": "2026-10-21"
+    "lastDate": "2026-10-26"
    }
   ],
   "totals90d": {
    "sold": 162750530.21000004,
-   "bought": 125188.29999999999,
+   "bought": 247626.16999999998,
    "planned": 138311268.1
   }
  },
