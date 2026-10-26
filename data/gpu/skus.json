@@ -5,7 +5,7 @@
   "family": "H200",
   "title": "Preemptible NVIDIA H200 NVLink",
   "firstSeen": "2026-10-24",
-  "lastSeen": "2026-10-25"
+  "lastSeen": "2026-10-26"
  },
  "sku-e00dh1moiqg9mc5ix6wj2": {
   "region": "eu-west1",
@@ -13,7 +13,7 @@
   "family": "H200",
   "title": "Preemptible NVIDIA H200 NVLink",
   "firstSeen": "2026-10-24",
-  "lastSeen": "2026-10-25"
+  "lastSeen": "2026-10-26"
  },
  "sku-e00em8l461xmyihec7sr8": {
   "region": "us-central1",
@@ -21,7 +21,7 @@
   "family": "H200",
   "title": "Preemptible NVIDIA H200 NVLink",
   "firstSeen": "2026-10-24",
-  "lastSeen": "2026-10-25"
+  "lastSeen": "2026-10-26"
  },
  "sku-e00fjjc4gwdx48pck9b46": {
   "region": "us-central1",
@@ -29,7 +29,7 @@
   "family": "B200",
   "title": "Preemptible NVIDIA B200 NVLink",
   "firstSeen": "2026-10-24",
-  "lastSeen": "2026-10-25"
+  "lastSeen": "2026-10-26"
  },
  "sku-e00fmto201j24eyp0841g": {
   "region": "uk-south1",
@@ -37,7 +37,7 @@
   "family": "B300",
   "title": "Preemptible NVIDIA B300 NVLink",
   "firstSeen": "2026-10-24",
-  "lastSeen": "2026-10-25"
+  "lastSeen": "2026-10-26"
  },
  "sku-e00g61h0323jih8tkg5jv": {
   "region": "eu-south1",
@@ -45,7 +45,7 @@
   "family": "RTX PRO 6000",
   "title": "Preemptible NVIDIA RTX PRO 6000",
   "firstSeen": "2026-10-24",
-  "lastSeen": "2026-10-25"
+  "lastSeen": "2026-10-26"
  },
  "sku-e00hfg6dlxtt9ji6fqo9u": {
   "region": "us-north1",
@@ -53,7 +53,7 @@
   "family": "B300",
   "title": "Preemptible NVIDIA B300 NVLink",
   "firstSeen": "2026-10-24",
-  "lastSeen": "2026-10-25"
+  "lastSeen": "2026-10-26"
  },
  "sku-e00k58wq19wjszct65fwm": {
   "region": "me-west1",
@@ -61,7 +61,7 @@
   "family": "B200",
   "title": "Preemptible NVIDIA B200 NVLink",
   "firstSeen": "2026-10-24",
-  "lastSeen": "2026-10-25"
+  "lastSeen": "2026-10-26"
  },
  "sku-e00ljkedv5qtbwhikuoct": {
   "region": "eu-north1",
@@ -69,7 +69,7 @@
   "family": "H100",
   "title": "Preemptible NVIDIA H100 NVLink",
   "firstSeen": "2026-10-24",
-  "lastSeen": "2026-10-25"
+  "lastSeen": "2026-10-26"
  },
  "sku-e00lxawt0lavf9i0dutiz": {
   "region": "uk-south2",
@@ -77,7 +77,7 @@
   "family": "RTX PRO 6000",
   "title": "Preemptible NVIDIA RTX PRO 6000",
   "firstSeen": "2026-10-24",
-  "lastSeen": "2026-10-25"
+  "lastSeen": "2026-10-26"
  },
  "sku-e00otwkvc6gea6nmvvsda": {
   "region": "us-central1",
@@ -85,7 +85,7 @@
   "family": "RTX PRO 6000",
   "title": "Preemptible NVIDIA RTX PRO 6000",
   "firstSeen": "2026-10-24",
-  "lastSeen": "2026-10-25"
+  "lastSeen": "2026-10-26"
  },
  "sku-e00vd4x28cozliwb6g4vh": {
   "region": "eu-west2",
@@ -93,6 +93,6 @@
   "family": "B300",
   "title": "Preemptible NVIDIA B300 NVLink",
   "firstSeen": "2026-10-24",
-  "lastSeen": "2026-10-25"
+  "lastSeen": "2026-10-26"
  }
 }
