@@ -366,7 +366,7 @@
    "Nebius AI Cloud"
   ],
   "workloads": [],
-  "evidence": "documented-use",
+  "evidence": "named",
   "firstListedAt": "2026-10-26",
   "baseline": false,
   "latestEvidence": "2026-10-26"
@@ -1313,6 +1313,17 @@
   "baseline": false,
   "latestEvidence": "2026-10-15"
  },
+ "daytona": {
+  "name": "Daytona",
+  "category": "Data & infrastructure",
+  "use": "Lists Nebius as a cloud infrastructure subprocessor",
+  "services": [],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-10-26",
+  "baseline": false,
+  "latestEvidence": "2026-10-26"
+ },
  "decart": {
   "name": "Decart",
   "category": "Model developers",
@@ -1507,6 +1518,21 @@
   "baseline": false,
   "latestEvidence": "2026-10-20",
   "removedAt": "2026-10-25"
+ },
+ "evaluagent": {
+  "name": "EvaluAgent",
+  "category": "Workplace tools",
+  "use": "Hosts LLMs on Nebius",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-26",
+  "baseline": false,
+  "latestEvidence": "2026-10-26"
  },
  "ever-rec": {
   "name": "Ever Rec",
@@ -1923,6 +1949,19 @@
   "firstListedAt": "2026-10-15",
   "baseline": false,
   "latestEvidence": "2026-10-25"
+ },
+ "gysho": {
+  "name": "Gysho",
+  "category": "Business services",
+  "use": "Transient AI inference on Nebius",
+  "services": [],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-26",
+  "baseline": false,
+  "latestEvidence": "2026-10-26"
  },
  "hadba": {
   "name": "HADBA",
@@ -2787,6 +2826,22 @@
   "baseline": false,
   "latestEvidence": "2026-10-18"
  },
+ "loyjoy": {
+  "name": "LoyJoy",
+  "category": "Workplace tools",
+  "use": "Tavily web search for customer-facing AI agents",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-26",
+  "baseline": false,
+  "latestEvidence": "2026-10-26"
+ },
  "luma-ai": {
   "name": "Luma",
   "category": "Model developers",
@@ -3090,6 +3145,19 @@
   "firstListedAt": "2026-09-27",
   "baseline": false,
   "latestEvidence": "2026-09-27"
+ },
+ "modal": {
+  "name": "Modal",
+  "category": "Data & infrastructure",
+  "use": "Lists Nebius as a cloud hosting subprocessor",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-10-26",
+  "baseline": false,
+  "latestEvidence": "2026-10-26"
  },
  "modulawai": {
   "name": "ModulawAI",
@@ -4943,6 +5011,21 @@
   "baseline": false,
   "latestEvidence": "2026-10-19"
  },
+ "stonetotem": {
+  "name": "Stonetotem",
+  "category": "Workplace tools",
+  "use": "Token Factory for AI language processing",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-26",
+  "baseline": false,
+  "latestEvidence": "2026-10-26"
+ },
  "sword-health": {
   "name": "Sword Health",
   "category": "Health & biotech",
@@ -5583,6 +5666,19 @@
   "firstListedAt": "2026-09-27",
   "baseline": false,
   "latestEvidence": "2026-09-27"
+ },
+ "vessl-cloud": {
+  "name": "VESSL Cloud",
+  "category": "Data & infrastructure",
+  "use": "Nebius compute for customer-selected workloads",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-10-26",
+  "baseline": false,
+  "latestEvidence": "2026-10-26"
  },
  "vllm-project": {
   "name": "vLLM project",

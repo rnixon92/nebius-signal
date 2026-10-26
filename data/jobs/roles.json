@@ -3978,7 +3978,7 @@
   "closedApprox": true
  },
  "4752733101": {
-  "title": "Senior Data Center Support Engineer ",
+  "title": "Data Center Support Engineer ",
   "dept": "Product & Infrastructure",
   "function": "Data center & power",
   "location": "New Jersey, United States",
@@ -7480,7 +7480,9 @@
   "location": "Remote - United States",
   "region": "Americas",
   "posted": "2026-08-27",
-  "firstSeen": "2026-09-04"
+  "firstSeen": "2026-09-04",
+  "closedAt": "2026-10-26",
+  "closedApprox": false
  },
  "4864833101": {
   "title": "ML Infrastructure Engineer",
@@ -9765,7 +9767,9 @@
   "location": "Singapore",
   "region": "Asia-Pacific",
   "posted": "2026-09-08",
-  "firstSeen": "2026-09-14"
+  "firstSeen": "2026-09-14",
+  "closedAt": "2026-10-26",
+  "closedApprox": false
  },
  "4940692101": {
   "title": "Business Development Representative, East ",
@@ -10534,7 +10538,7 @@
   "closedApprox": true
  },
  "4952995101": {
-  "title": "Rewards Business Partner, GTM",
+  "title": "Compensation Business Partner, GTM",
   "dept": "Corporate › People › C&B",
   "function": "Sales & go-to-market",
   "location": "Remote - United States",
@@ -10635,14 +10639,12 @@
  },
  "4955928101": {
   "title": "Senior Product Designer - Compute, Nebius Console",
-  "dept": "Technology Product",
+  "dept": "Product & Infrastructure › Technology Product",
   "function": "Engineering & product",
   "location": "Remote - Europe",
   "region": "Europe & other",
   "posted": "2026-08-24",
-  "firstSeen": "2026-09-04",
-  "closedAt": "2026-09-14",
-  "closedApprox": true
+  "firstSeen": "2026-09-04"
  },
  "4955968101": {
   "title": " Technology Commercial Legal Counsel",
@@ -11709,7 +11711,7 @@
   "closedApprox": true
  },
  "4977840101": {
-  "title": "Lead Compensation Analyst ",
+  "title": "Compensation Lead ",
   "dept": "Corporate › People › C&B",
   "function": "G&A & other",
   "location": "Amsterdam, Netherlands",
@@ -11740,7 +11742,7 @@
   "closedApprox": true
  },
  "4979587101": {
-  "title": "Lead Compensation Analyst ",
+  "title": "Compensation Lead ",
   "dept": "Corporate › People › C&B",
   "function": "G&A & other",
   "location": "United States",
@@ -12868,7 +12870,9 @@
   "location": "United States",
   "region": "Americas",
   "posted": "2026-10-23",
-  "firstSeen": "2026-10-24"
+  "firstSeen": "2026-10-24",
+  "closedAt": "2026-10-26",
+  "closedApprox": false
  },
  "5009640101": {
   "title": "Regional Environmental, Health & Safety Specialist",
@@ -12961,5 +12965,14 @@
   "region": "Americas",
   "posted": "2026-10-23",
   "firstSeen": "2026-10-24"
+ },
+ "5013930101": {
+  "title": "Data Excellence Manager  ",
+  "dept": "Corporate",
+  "function": "Engineering & product",
+  "location": "Israel",
+  "region": "Israel",
+  "posted": "2026-10-26",
+  "firstSeen": "2026-10-26"
  }
 }
