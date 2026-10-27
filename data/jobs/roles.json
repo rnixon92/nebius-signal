@@ -5390,7 +5390,9 @@
   "location": "Israel",
   "region": "Israel",
   "posted": "2026-03-04",
-  "firstSeen": "2026-03-27"
+  "firstSeen": "2026-03-27",
+  "closedAt": "2026-10-27",
+  "closedApprox": false
  },
  "4784091101": {
   "title": "Data Center IT Technician - Modiin",
@@ -9134,7 +9136,7 @@
   "title": "Senior Technical Product Manager - Token Factory",
   "dept": "New Products › Token Factory-NP",
   "function": "Engineering & product",
-  "location": "Amsterdam, Netherlands; Remote - Europe; United Kingdom",
+  "location": "Amsterdam, Netherlands; Berlin, Germany; Remote - Europe; United Kingdom",
   "region": "Europe & other",
   "posted": "2026-07-15",
   "firstSeen": "2026-07-21"
@@ -12900,6 +12902,15 @@
   "region": "Israel",
   "posted": "2026-10-23",
   "firstSeen": "2026-10-24"
+ },
+ "5010284101": {
+  "title": "Lead Warehouse and Logistics Specialist",
+  "dept": "Product & Infrastructure",
+  "function": "Engineering & product",
+  "location": "Lappeenranta, Finland",
+  "region": "Europe & other",
+  "posted": "2026-10-27",
+  "firstSeen": "2026-10-27"
  },
  "5010361101": {
   "title": "Financial Controller",

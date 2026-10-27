@@ -616,5 +616,21 @@
    "Asia-Pacific": 42,
    "Remote": 3
   }
+ },
+ "2026-10-27": {
+  "total": 376,
+  "byFunction": {
+   "Engineering & product": 182,
+   "Sales & go-to-market": 71,
+   "G&A & other": 49,
+   "Data center & power": 74
+  },
+  "byRegion": {
+   "Europe & other": 169,
+   "Americas": 116,
+   "Israel": 46,
+   "Asia-Pacific": 42,
+   "Remote": 3
+  }
  }
 }

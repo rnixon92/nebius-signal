@@ -1,5 +1,23 @@
 [
  {
+  "id": "or-wow-2026-10-26",
+  "date": "2026-10-27",
+  "source": "openrouter",
+  "severity": "medium",
+  "title": "Nebius OpenRouter tokens up 74% week over week",
+  "detail": "314.2B tokens in the 7 days to 2026-10-26 vs 180.3B the week before",
+  "url": "https://openrouter.ai/provider/nebius"
+ },
+ {
+  "id": "atlas-added-2026-10-27",
+  "date": "2026-10-27",
+  "source": "atlas",
+  "severity": "info",
+  "title": "14 new customers on Nebius Atlas (4 using Token Factory)",
+  "detail": "CloudSigma AI Mission Control, codai, Duoc UC, ForestVPN, Leash Bio, NanoGPT, oneclick Assist, Permit.io, Quincy, Serna Bio, Super Protocol, Taski, …",
+  "url": "https://nebiusatlas.com/"
+ },
+ {
   "id": "sec-0001513845-26-000141",
   "date": "2026-10-26",
   "source": "sec",

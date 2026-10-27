@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-26T22:54:21.430Z",
+ "updatedAt": "2026-10-27T12:43:22.696Z",
  "models": {
   "deepseek-ai/DeepSeek-V4-Flash-0731": {
    "id": "deepseek-ai/DeepSeek-V4-Flash-0731",
@@ -16,7 +16,7 @@
    "quantization": "fp8",
    "tokensPerSecond": 351,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "deepseek-ai/DeepSeek-V4-Pro": {
    "id": "deepseek-ai/DeepSeek-V4-Pro",
@@ -33,7 +33,7 @@
    "quantization": "fp8",
    "tokensPerSecond": 24,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "deepseek-ai/DeepSeek-V4-Pro-0813": {
    "id": "deepseek-ai/DeepSeek-V4-Pro-0813",
@@ -50,7 +50,7 @@
    "quantization": "fp8",
    "tokensPerSecond": 37,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "deepseek-ai/DeepSeek-V4.1-Flash": {
    "id": "deepseek-ai/DeepSeek-V4.1-Flash",
@@ -67,7 +67,7 @@
    "quantization": "fp8",
    "tokensPerSecond": 139,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "deepseek-ai/DeepSeek-V4.1-Flash-1017": {
    "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
@@ -84,7 +84,7 @@
    "quantization": "fp8",
    "tokensPerSecond": 738,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "google/gemma-3-27b-it": {
    "id": "google/gemma-3-27b-it",
@@ -101,7 +101,7 @@
    "quantization": "fp8",
    "tokensPerSecond": 20,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "meta-models/muse-spark-open": {
    "id": "meta-models/muse-spark-open",
@@ -118,7 +118,7 @@
    "quantization": "fp4",
    "tokensPerSecond": 143,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "MiniMaxAI/MiniMax-M3": {
    "id": "MiniMaxAI/MiniMax-M3",
@@ -135,7 +135,7 @@
    "quantization": "fp4",
    "tokensPerSecond": 248,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "MiniMaxAI/MiniMax-M3.1-Flash": {
    "id": "MiniMaxAI/MiniMax-M3.1-Flash",
@@ -152,7 +152,7 @@
    "quantization": "fp4",
    "tokensPerSecond": 181.46,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "moonshotai/Kimi-K2.6": {
    "id": "moonshotai/Kimi-K2.6",
@@ -169,7 +169,7 @@
    "quantization": "int4",
    "tokensPerSecond": 60,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "moonshotai/Kimi-K2.7-Code": {
    "id": "moonshotai/Kimi-K2.7-Code",
@@ -186,7 +186,7 @@
    "quantization": "fp4",
    "tokensPerSecond": 231.26,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "moonshotai/Kimi-K3": {
    "id": "moonshotai/Kimi-K3",
@@ -203,7 +203,7 @@
    "quantization": "fp4",
    "tokensPerSecond": 264.55,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "NousResearch/Hermes-4-405B": {
    "id": "NousResearch/Hermes-4-405B",
@@ -220,7 +220,7 @@
    "quantization": "fp8",
    "tokensPerSecond": 20,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "nvidia/Nemotron-3_5-Lightning": {
    "id": "nvidia/Nemotron-3_5-Lightning",
@@ -237,7 +237,7 @@
    "quantization": "bf16",
    "tokensPerSecond": 314.12,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "nvidia/nemotron-3-super-120b-a12b": {
    "id": "nvidia/nemotron-3-super-120b-a12b",
@@ -254,7 +254,7 @@
    "quantization": "fp4",
    "tokensPerSecond": 127,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "nvidia/Nemotron-3-Ultra-550b-a55b": {
    "id": "nvidia/Nemotron-3-Ultra-550b-a55b",
@@ -271,7 +271,7 @@
    "quantization": "fp4",
    "tokensPerSecond": 523,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "nvidia/Nemotron-3.5-Super-VL": {
    "id": "nvidia/Nemotron-3.5-Super-VL",
@@ -288,7 +288,7 @@
    "quantization": "bf16",
    "tokensPerSecond": 282.4,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B": {
    "id": "nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B",
@@ -305,7 +305,7 @@
    "quantization": "fp8",
    "tokensPerSecond": 60,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "openai/gpt-oss-120b": {
    "id": "openai/gpt-oss-120b",
@@ -322,7 +322,7 @@
    "quantization": "fp4",
    "tokensPerSecond": 40,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "openbmb/MiniCPM-V-4_5": {
    "id": "openbmb/MiniCPM-V-4_5",
@@ -339,7 +339,7 @@
    "quantization": "fp16",
    "tokensPerSecond": 49.5,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "Qwen/Qwen3-235B-A22B-Instruct-2507": {
    "id": "Qwen/Qwen3-235B-A22B-Instruct-2507",
@@ -356,7 +356,7 @@
    "quantization": "fp8",
    "tokensPerSecond": 27,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "Qwen/Qwen3-30B-A3B-Instruct-2507": {
    "id": "Qwen/Qwen3-30B-A3B-Instruct-2507",
@@ -373,7 +373,7 @@
    "quantization": "fp8",
    "tokensPerSecond": 70,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "Qwen/Qwen3-Embedding-8B": {
    "id": "Qwen/Qwen3-Embedding-8B",
@@ -390,7 +390,7 @@
    "quantization": null,
    "tokensPerSecond": null,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "Qwen/Qwen3.5-397B-A17B": {
    "id": "Qwen/Qwen3.5-397B-A17B",
@@ -407,7 +407,7 @@
    "quantization": "fp4",
    "tokensPerSecond": 80,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "Qwen/Qwen3.8-27B": {
    "id": "Qwen/Qwen3.8-27B",
@@ -424,7 +424,7 @@
    "quantization": "fp4",
    "tokensPerSecond": 218,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "reflection/beam": {
    "id": "reflection/beam",
@@ -441,7 +441,7 @@
    "quantization": "fp4",
    "tokensPerSecond": 611,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "zai-org/GLM-5.1": {
    "id": "zai-org/GLM-5.1",
@@ -458,7 +458,7 @@
    "quantization": "fp8",
    "tokensPerSecond": 25,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "zai-org/GLM-5.2": {
    "id": "zai-org/GLM-5.2",
@@ -475,7 +475,7 @@
    "quantization": "fp4",
    "tokensPerSecond": 25,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "zai-org/GLM-5.3": {
    "id": "zai-org/GLM-5.3",
@@ -492,7 +492,7 @@
    "quantization": "fp4",
    "tokensPerSecond": 455,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   },
   "zai-org/GLM-5.3-Flash": {
    "id": "zai-org/GLM-5.3-Flash",
@@ -509,7 +509,7 @@
    "quantization": "fp4",
    "tokensPerSecond": 349,
    "firstSeen": "2026-10-25",
-   "lastSeen": "2026-10-26"
+   "lastSeen": "2026-10-27"
   }
  }
 }
