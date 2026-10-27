@@ -25,20 +25,20 @@
  },
  "~deepseek/deepseek-flash-latest": {
   "name": "~deepseek/deepseek-flash-latest",
-  "input": 0.02,
-  "output": 1,
-  "cacheRead": 0.015
+  "input": 0.0182,
+  "output": 1.8,
+  "cacheRead": 0.0165
  },
  "~deepseek/deepseek-pro-latest": {
   "name": "~deepseek/deepseek-pro-latest",
-  "input": 0.1948,
+  "input": 0.1259,
   "output": 8,
-  "cacheRead": 0.19
+  "cacheRead": 0.13
  },
  "~deepseek/deepseek-v4-flash-latest": {
   "name": "~deepseek/deepseek-v4-flash-latest",
-  "input": 0.0475,
-  "output": 0.1568,
+  "input": 0.0422,
+  "output": 0.1694,
   "cacheRead": 0.028
  },
  "~google/gemini-flash-latest": {
@@ -55,9 +55,9 @@
  },
  "~moonshotai/kimi-latest": {
   "name": "~moonshotai/kimi-latest",
-  "input": 0.1605,
-  "output": 9.7533,
-  "cacheRead": 0.16
+  "input": 0.189,
+  "output": 20,
+  "cacheRead": 0.179
  },
  "~openai/gpt-astra-latest": {
   "name": "~openai/gpt-astra-latest",
@@ -103,9 +103,9 @@
  },
  "~z-ai/glm-flash-latest": {
   "name": "~z-ai/glm-flash-latest",
-  "input": 0.0235,
-  "output": 0.1151,
-  "cacheRead": 0.0235
+  "input": 0.0457,
+  "output": 0.0771,
+  "cacheRead": 0.03
  },
  "~z-ai/glm-latest": {
   "name": "~z-ai/glm-latest",
@@ -397,9 +397,9 @@
  },
  "deepseek/deepseek-v4-flash-20260423": {
   "name": "deepseek/deepseek-v4-flash",
-  "input": 0.05,
-  "output": 0.45,
-  "cacheRead": 0.05
+  "input": 0.04732,
+  "output": 0.09464,
+  "cacheRead": 0.009464
  },
  "deepseek/deepseek-v4-flash-20260731": {
   "name": "deepseek/deepseek-v4-flash-0731",
@@ -415,9 +415,9 @@
  },
  "deepseek/deepseek-v4-pro-20260423": {
   "name": "deepseek/deepseek-v4-pro",
-  "input": 0.95526,
-  "output": 1.91052,
-  "cacheRead": 0.079605
+  "input": 0.875394,
+  "output": 1.750788,
+  "cacheRead": 0.07295
  },
  "deepseek/deepseek-v4-pro-20260813": {
   "name": "deepseek/deepseek-v4-pro-0813",
@@ -613,9 +613,9 @@
  },
  "google/gemma-4-26b-a4b-it-20260403": {
   "name": "google/gemma-4-26b-a4b-it",
-  "input": 0.09,
-  "output": 0.3,
-  "cacheRead": 0.05
+  "input": 0.0765,
+  "output": 0.255,
+  "cacheRead": 0.0425
  },
  "google/gemma-4-31b-it-20260402": {
   "name": "google/gemma-4-31b-it",
@@ -1039,15 +1039,15 @@
  },
  "moonshotai/kimi-k2.7-code-20260612": {
   "name": "moonshotai/kimi-k2.7-code",
-  "input": 0.6725,
+  "input": 0.56,
   "output": 3.1,
   "cacheRead": 0.15
  },
  "moonshotai/kimi-k3-20260715": {
   "name": "moonshotai/kimi-k3",
-  "input": 0.169,
+  "input": 0.189,
   "output": 20,
-  "cacheRead": 0.159
+  "cacheRead": 0.179
  },
  "moonshotai/kimi-k3.1-pro-20261023": {
   "name": "moonshotai/kimi-k3.1-pro",
@@ -1095,13 +1095,13 @@
   "name": "nousresearch/hermes-4-405b",
   "input": 1,
   "output": 3,
-  "cacheRead": null
+  "cacheRead": 0.2
  },
  "nvidia/nemotron-3-nano-30b-a3b": {
   "name": "nvidia/nemotron-3-nano-30b-a3b",
   "input": 0.06,
   "output": 0.24,
-  "cacheRead": null
+  "cacheRead": 0.012
  },
  "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning-20260428": {
   "name": "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",
@@ -1631,6 +1631,12 @@
   "output": 0.5,
   "cacheRead": 0.0375
  },
+ "prism-ml/ternary-bonsai-2-9b-20261015": {
+  "name": "prism-ml/ternary-bonsai-2-9b",
+  "input": 0.08,
+  "output": 0.13,
+  "cacheRead": 0.04
+ },
  "qwen/qwen-2.5-72b-instruct": {
   "name": "qwen/qwen-2.5-72b-instruct",
   "input": 0.36,
@@ -1689,7 +1695,7 @@
   "name": "qwen/qwen3-30b-a3b-instruct-2507",
   "input": 0.1,
   "output": 0.3,
-  "cacheRead": null
+  "cacheRead": 0.1
  },
  "qwen/qwen3-32b-04-28": {
   "name": "qwen/qwen3-32b",
@@ -2011,9 +2017,9 @@
  },
  "tencent/hy3-20260706": {
   "name": "tencent/hy3",
-  "input": 0.132,
-  "output": 0.528,
-  "cacheRead": 0.033
+  "input": 0.0825,
+  "output": 0.33,
+  "cacheRead": 0.020625
  },
  "tencent/hy3-preview-20260421": {
   "name": "tencent/hy3-preview",
@@ -2023,9 +2029,9 @@
  },
  "tencent/hy4-preview-20260827": {
   "name": "tencent/hy4-preview",
-  "input": 0.834,
-  "output": 2.501,
-  "cacheRead": 0.042
+  "input": 0.7506,
+  "output": 2.2509,
+  "cacheRead": 0.0378
  },
  "thedrummer/cydonia-24b-v4.1": {
   "name": "thedrummer/cydonia-24b-v4.1",

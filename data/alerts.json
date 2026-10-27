@@ -1,5 +1,103 @@
 [
  {
+  "id": "or-newmodel-nvidia/nemotron-3.5-super-vl-20261015",
+  "date": "2026-10-27",
+  "source": "openrouter",
+  "severity": "info",
+  "title": "New model in Nebius's OpenRouter top 10: nvidia/nemotron-3.5-super-vl-20261015",
+  "url": "https://openrouter.ai/provider/nebius"
+ },
+ {
+  "id": "tf-price-deepseek-ai/DeepSeek-V4-Pro-2026-10-27",
+  "date": "2026-10-27",
+  "source": "tokenfactory",
+  "severity": "medium",
+  "title": "Token Factory price change: DeepSeek-V4-Pro",
+  "detail": "cached input none → $0.14/M",
+  "url": "https://tokenfactory.nebius.com/model-catalog.md"
+ },
+ {
+  "id": "tf-price-google/gemma-3-27b-it-2026-10-27",
+  "date": "2026-10-27",
+  "source": "tokenfactory",
+  "severity": "medium",
+  "title": "Token Factory price change: Gemma-3-27b-it",
+  "detail": "cached input none → $0.04/M",
+  "url": "https://tokenfactory.nebius.com/model-catalog.md"
+ },
+ {
+  "id": "tf-price-NousResearch/Hermes-4-405B-2026-10-27",
+  "date": "2026-10-27",
+  "source": "tokenfactory",
+  "severity": "medium",
+  "title": "Token Factory price change: Hermes-4-405B",
+  "detail": "cached input none → $0.2/M",
+  "url": "https://tokenfactory.nebius.com/model-catalog.md"
+ },
+ {
+  "id": "tf-price-nvidia/Nemotron-3_5-Lightning-2026-10-27",
+  "date": "2026-10-27",
+  "source": "tokenfactory",
+  "severity": "medium",
+  "title": "Token Factory price change: Nemotron-3.5-Lightning",
+  "detail": "cached input none → $0.03/M",
+  "url": "https://tokenfactory.nebius.com/model-catalog.md"
+ },
+ {
+  "id": "tf-price-nvidia/NVIDIA-Nemotron-3-Nano-30B-A3B-2026-10-27",
+  "date": "2026-10-27",
+  "source": "tokenfactory",
+  "severity": "medium",
+  "title": "Token Factory price change: Nemotron-3-Nano-30B-A3B",
+  "detail": "cached input none → $0.012/M",
+  "url": "https://tokenfactory.nebius.com/model-catalog.md"
+ },
+ {
+  "id": "tf-price-openai/gpt-oss-120b-2026-10-27",
+  "date": "2026-10-27",
+  "source": "tokenfactory",
+  "severity": "medium",
+  "title": "Token Factory price change: gpt-oss-120b",
+  "detail": "cached input none → $0.1/M",
+  "url": "https://tokenfactory.nebius.com/model-catalog.md"
+ },
+ {
+  "id": "tf-price-openbmb/MiniCPM-V-4_5-2026-10-27",
+  "date": "2026-10-27",
+  "source": "tokenfactory",
+  "severity": "medium",
+  "title": "Token Factory price change: openbmb/MiniCPM-V-4_5",
+  "detail": "cached input none → $0.13/M",
+  "url": "https://tokenfactory.nebius.com/model-catalog.md"
+ },
+ {
+  "id": "tf-price-Qwen/Qwen3-235B-A22B-Instruct-2507-2026-10-27",
+  "date": "2026-10-27",
+  "source": "tokenfactory",
+  "severity": "medium",
+  "title": "Token Factory price change: Qwen3-235B-A22B-Instruct-2507",
+  "detail": "cached input none → $0.05/M",
+  "url": "https://tokenfactory.nebius.com/model-catalog.md"
+ },
+ {
+  "id": "tf-price-Qwen/Qwen3-30B-A3B-Instruct-2507-2026-10-27",
+  "date": "2026-10-27",
+  "source": "tokenfactory",
+  "severity": "medium",
+  "title": "Token Factory price change: Qwen3-30B-A3B-Instruct-2507",
+  "detail": "cached input none → $0.1/M",
+  "url": "https://tokenfactory.nebius.com/model-catalog.md"
+ },
+ {
+  "id": "tf-price-zai-org/GLM-5.1-2026-10-27",
+  "date": "2026-10-27",
+  "source": "tokenfactory",
+  "severity": "medium",
+  "title": "Token Factory price change: GLM-5.1",
+  "detail": "cached input none → $0.26/M",
+  "url": "https://tokenfactory.nebius.com/model-catalog.md"
+ },
+ {
   "id": "or-wow-2026-10-26",
   "date": "2026-10-27",
   "source": "openrouter",
