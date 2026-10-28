@@ -107,7 +107,7 @@
   "title": "Senior HPC Engineer, GPU Compute",
   "dept": "Technology › System Engineers",
   "function": "Engineering & product",
-  "location": "Amsterdam, Netherlands; Berlin, Germany; London, United Kingdom; Remote - Europe",
+  "location": "Amsterdam, Netherlands; Berlin, Germany; London, United Kingdom",
   "region": "Europe & other",
   "posted": "2024-08-27",
   "firstSeen": "2024-11-22"
@@ -9325,7 +9325,9 @@
   "location": "Remote - Europe",
   "region": "Europe & other",
   "posted": "2026-07-15",
-  "firstSeen": "2026-07-21"
+  "firstSeen": "2026-07-21",
+  "closedAt": "2026-10-28",
+  "closedApprox": false
  },
  "4929112101": {
   "title": "Senior Director, Global Systems Integrator (GSI) Partnerships ",
@@ -11221,7 +11223,9 @@
   "location": "Abu Dhabi, UAE; Dubai, UAE",
   "region": "Europe & other",
   "posted": "2026-09-07",
-  "firstSeen": "2026-09-14"
+  "firstSeen": "2026-09-14",
+  "closedAt": "2026-10-28",
+  "closedApprox": false
  },
  "4967927101": {
   "title": "Senior/Tech Lead Backend Engineer (Managed Kubernetes)",
@@ -12487,7 +12491,7 @@
   "firstSeen": "2026-10-16"
  },
  "5002215101": {
-  "title": "DevRel Communications Designer",
+  "title": "Communications Designer, Developer Experience",
   "dept": "Go-To-Market › Marketing › Content & Design",
   "function": "Sales & go-to-market",
   "location": "United States",
@@ -12915,6 +12919,15 @@
   "closedAt": "2026-10-26",
   "closedApprox": false
  },
+ "5009405101": {
+  "title": "Startup Community Manager",
+  "dept": "Go-To-Market › Start-ups",
+  "function": "Sales & go-to-market",
+  "location": "San Francisco Bay Area, California, United States; San Francisco, California, United States",
+  "region": "Americas",
+  "posted": "2026-10-28",
+  "firstSeen": "2026-10-28"
+ },
  "5009640101": {
   "title": "Regional Environmental, Health & Safety Specialist",
   "dept": "Corporate › People › HR Services › EHS",
@@ -12932,6 +12945,15 @@
   "region": "Europe & other",
   "posted": "2026-10-19",
   "firstSeen": "2026-10-20"
+ },
+ "5010126101": {
+  "title": "Senior Support Engineer",
+  "dept": "Go-To-Market › Customer Experience › Customer Support",
+  "function": "Sales & go-to-market",
+  "location": "Remote",
+  "region": "Remote",
+  "posted": "2026-10-28",
+  "firstSeen": "2026-10-28"
  },
  "5010269101": {
   "title": "DFIR Expert",
@@ -13033,6 +13055,24 @@
   "region": "Israel",
   "posted": "2026-10-26",
   "firstSeen": "2026-10-26"
+ },
+ "5015513101": {
+  "title": "Global Power Procurement & Strategy Manager ",
+  "dept": "Corporate",
+  "function": "Data center & power",
+  "location": "Amsterdam, Netherlands; Finland",
+  "region": "Europe & other",
+  "posted": "2026-10-28",
+  "firstSeen": "2026-10-28"
+ },
+ "5017776101": {
+  "title": "Head of Communications - EMEA",
+  "dept": "Communications",
+  "function": "Sales & go-to-market",
+  "location": "Amsterdam, Netherlands",
+  "region": "Europe & other",
+  "posted": "2026-10-28",
+  "firstSeen": "2026-10-28"
  },
  "5018716101": {
   "title": "Site Selection & Colocation Manager – Data Centers",

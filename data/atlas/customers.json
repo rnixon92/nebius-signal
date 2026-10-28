@@ -476,6 +476,22 @@
   "baseline": false,
   "latestEvidence": "2026-10-25"
  },
+ "axolotl": {
+  "name": "Axolotl",
+  "category": "Data & infrastructure",
+  "use": "Validated LoRA training on Nebius H100 GPUs",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training",
+   "Storage"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-28",
+  "baseline": false,
+  "latestEvidence": "2026-10-28"
+ },
  "azena": {
   "name": "azena",
   "category": "Business services",
@@ -949,6 +965,19 @@
   "firstListedAt": "2026-10-16",
   "baseline": false,
   "latestEvidence": "2026-10-19"
+ },
+ "cedana": {
+  "name": "Cedana",
+  "category": "Data & infrastructure",
+  "use": "Runs CUDA Kubernetes tests on Nebius",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-28",
+  "baseline": false,
+  "latestEvidence": "2026-10-28"
  },
  "centml": {
   "name": "CentML",
@@ -6279,6 +6308,36 @@
   "firstListedAt": "2026-10-10",
   "baseline": false,
   "latestEvidence": "2026-10-10"
+ },
+ "zama": {
+  "name": "Zama",
+  "category": "Security & compliance",
+  "use": "Benchmarks encrypted computation on Nebius H100 GPUs",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-28",
+  "baseline": false,
+  "latestEvidence": "2026-10-28"
+ },
+ "zellwo": {
+  "name": "Zellwo",
+  "category": "Workplace tools",
+  "use": "Uses Tavily for web research and profiling.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-28",
+  "baseline": false,
+  "latestEvidence": "2026-10-28"
  },
  "zencoder": {
   "name": "Zencoder",

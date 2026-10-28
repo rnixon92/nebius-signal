@@ -1,5 +1,14 @@
 [
  {
+  "id": "jobs-dcloc-5015513101",
+  "date": "2026-10-28",
+  "source": "jobs",
+  "severity": "medium",
+  "title": "Data-center hiring in a new location: Amsterdam, Netherlands; Finland",
+  "detail": "Global Power Procurement & Strategy Manager  (posted 2026-10-28)",
+  "url": "https://careers.nebius.com/job?gh_jid=5015513101"
+ },
+ {
   "id": "spot-cap-sku-e00dh1moiqg9mc5ix6wj2-2026-10-28",
   "date": "2026-10-28",
   "source": "gpu-spot",
