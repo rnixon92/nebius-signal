@@ -1,5 +1,32 @@
 [
  {
+  "id": "or-wow-2026-10-27",
+  "date": "2026-10-28",
+  "source": "openrouter",
+  "severity": "medium",
+  "title": "Nebius OpenRouter tokens up 85% week over week",
+  "detail": "341.9B tokens in the 7 days to 2026-10-27 vs 184.4B the week before",
+  "url": "https://openrouter.ai/provider/nebius"
+ },
+ {
+  "id": "atlas-added-2026-10-28",
+  "date": "2026-10-28",
+  "source": "atlas",
+  "severity": "info",
+  "title": "6 new customers on Nebius Atlas (1 using Token Factory)",
+  "detail": "BHI, Mimic Robotics, Moonlit, Naranja X, Parallel, Yma",
+  "url": "https://nebiusatlas.com/"
+ },
+ {
+  "id": "jobs-dcloc-5018716101",
+  "date": "2026-10-28",
+  "source": "jobs",
+  "severity": "medium",
+  "title": "Data-center hiring in a new location: Australia",
+  "detail": "Site Selection & Colocation Manager – Data Centers (posted 2026-10-28)",
+  "url": "https://careers.nebius.com/job?gh_jid=5018716101"
+ },
+ {
   "id": "or-newmodel-nvidia/nemotron-3.5-super-vl-20261015",
   "date": "2026-10-27",
   "source": "openrouter",

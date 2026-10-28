@@ -431,7 +431,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-25",
   "baseline": false,
-  "latestEvidence": "2026-10-27"
+  "latestEvidence": "2026-10-28"
  },
  "ataraxis-ai": {
   "name": "Ataraxis AI",
@@ -667,6 +667,21 @@
   "latestEvidence": "2026-10-25",
   "removedAt": "2026-10-26"
  },
+ "bhi": {
+  "name": "BHI",
+  "category": "Finance",
+  "use": "Tavily web research for investment memos",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-28",
+  "baseline": false,
+  "latestEvidence": "2026-10-28"
+ },
  "biophytis": {
   "name": "Biophytis",
   "category": "Health & biotech",
@@ -814,7 +829,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-17"
+  "latestEvidence": "2026-10-24"
  },
  "bryn": {
   "name": "Bryn",
@@ -1071,7 +1086,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-20",
   "baseline": false,
-  "latestEvidence": "2026-10-20"
+  "latestEvidence": "2025-07-03"
  },
  "cognition": {
   "name": "Cognition",
@@ -1616,7 +1631,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-25",
   "baseline": false,
-  "latestEvidence": "2026-10-25"
+  "latestEvidence": "2026-10-28"
  },
  "evidence": {
   "name": "Evidence",
@@ -2106,7 +2121,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-09-24"
+  "latestEvidence": "2026-10-28"
  },
  "heygen": {
   "name": "HeyGen",
@@ -2157,7 +2172,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-25"
+  "latestEvidence": "2026-10-28"
  },
  "hostyourai": {
   "name": "HostYourAI",
@@ -2475,7 +2490,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-25",
   "baseline": false,
-  "latestEvidence": "2026-10-25"
+  "latestEvidence": "2026-10-28"
  },
  "kindora": {
   "name": "Kindora",
@@ -2865,7 +2880,8 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-03",
   "baseline": false,
-  "latestEvidence": "2026-10-03"
+  "latestEvidence": "2026-10-03",
+  "removedAt": "2026-10-28"
  },
  "logical-intelligence": {
   "name": "Logical Intelligence",
@@ -3139,6 +3155,21 @@
   "baseline": false,
   "latestEvidence": "2026-10-15"
  },
+ "mimic-robotics": {
+  "name": "Mimic Robotics",
+  "category": "Robotics & industry",
+  "use": "Nebius compute for industrial robotics research",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-28",
+  "baseline": false,
+  "latestEvidence": "2026-10-28"
+ },
  "mimicx-ai": {
   "name": "Mimicx AI",
   "category": "Model developers",
@@ -3259,7 +3290,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-18"
+  "latestEvidence": "2026-10-19"
  },
  "mongodb": {
   "name": "MongoDB",
@@ -3288,6 +3319,21 @@
   "firstListedAt": "2026-10-22",
   "baseline": false,
   "latestEvidence": "2026-10-21"
+ },
+ "moonlit": {
+  "name": "Moonlit",
+  "category": "Workplace tools",
+  "use": "Query embeddings for legal search",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-28",
+  "baseline": false,
+  "latestEvidence": "2026-10-28"
  },
  "moonvalley": {
   "name": "Moonvalley",
@@ -3372,6 +3418,17 @@
   "firstListedAt": "2026-10-27",
   "baseline": false,
   "latestEvidence": "2026-10-27"
+ },
+ "naranja-x": {
+  "name": "Naranja X",
+  "category": "Finance",
+  "use": "AI training with Nebius Academy",
+  "services": [],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-10-28",
+  "baseline": false,
+  "latestEvidence": "2026-10-28"
  },
  "nathan-brank": {
   "name": "Nathan & Brank",
@@ -3535,7 +3592,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-20",
   "baseline": false,
-  "latestEvidence": "2026-10-15"
+  "latestEvidence": "2026-10-28"
  },
  "nomaris": {
   "name": "Nomaris",
@@ -3936,6 +3993,21 @@
   "baseline": false,
   "latestEvidence": "2026-10-15"
  },
+ "parallel": {
+  "name": "Parallel",
+  "category": "Data & infrastructure",
+  "use": "Evaluates Tavily search and extraction in agent benchmarks",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-28",
+  "baseline": false,
+  "latestEvidence": "2026-10-28"
+ },
  "parsr": {
   "name": "PARSR",
   "category": "Workplace tools",
@@ -4089,7 +4161,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-18",
   "baseline": false,
-  "latestEvidence": "2026-10-19"
+  "latestEvidence": "2026-10-28"
  },
  "pokta-labs": {
   "name": "Pokta Labs",
@@ -4155,7 +4227,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-27"
+  "latestEvidence": "2026-10-28"
  },
  "praxis-repina": {
   "name": "Praxis Repina",
@@ -4315,7 +4387,8 @@
   "category": "Workplace tools",
   "use": "Tavily web research for XOS agents",
   "services": [
-   "Tavily"
+   "Tavily",
+   "Nebius Token Factory"
   ],
   "workloads": [
    "Agentic search",
@@ -4552,7 +4625,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-18",
   "baseline": false,
-  "latestEvidence": "2026-10-25"
+  "latestEvidence": "2026-10-28"
  },
  "respawnhost": {
   "name": "RespawnHost.com",
@@ -5034,7 +5107,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-19",
   "baseline": false,
-  "latestEvidence": "2026-10-27"
+  "latestEvidence": "2026-10-28"
  },
  "solidagent": {
   "name": "Solidagent",
@@ -5293,7 +5366,7 @@
   "evidence": "agreement",
   "firstListedAt": "2026-09-27",
   "baseline": false,
-  "latestEvidence": "2026-10-23"
+  "latestEvidence": "2026-10-26"
  },
  "teamteacher": {
   "name": "TeamTeacher",
@@ -5794,7 +5867,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-21",
   "baseline": false,
-  "latestEvidence": "2026-10-21"
+  "latestEvidence": "2026-10-28"
  },
  "utrecht-university": {
   "name": "Utrecht University",
@@ -6162,6 +6235,22 @@
   "firstListedAt": "2026-09-27",
   "baseline": false,
   "latestEvidence": "2026-10-14"
+ },
+ "yma-health": {
+  "name": "Yma",
+  "category": "Health & biotech",
+  "use": "Confidential medical AI on Nebius AI Cloud",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Data processing",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-28",
+  "baseline": false,
+  "latestEvidence": "2026-10-28"
  },
  "yomi": {
   "name": "Yomi",

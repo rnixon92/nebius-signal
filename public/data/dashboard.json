@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-10-28T08:29:17.266Z",
+ "generatedAt": "2026-10-28T13:35:20.679Z",
  "sources": [
   {
    "id": "gpu-ondemand",
    "label": "Nebius GPU rate card",
    "url": "https://nebius.com/prices",
    "ok": true,
-   "lastSuccess": "2026-10-27T22:39:21.631Z",
+   "lastSuccess": "2026-10-28T13:34:48.417Z",
    "summary": "9 GPU rows (7 with list prices)",
    "stale": false
   },
@@ -15,7 +15,7 @@
    "label": "Nebius spot price API",
    "url": "https://nebius.com/spot-prices",
    "ok": true,
-   "lastSuccess": "2026-10-28T08:29:11.799Z",
+   "lastSuccess": "2026-10-28T13:34:49.445Z",
    "summary": "12 SKUs listed; 12 series, 8628 hourly points",
    "stale": false
   },
@@ -24,7 +24,7 @@
    "label": "Nebius regions docs",
    "url": "https://docs.nebius.com/overview/regions",
    "ok": true,
-   "lastSuccess": "2026-10-28T08:29:12.011Z",
+   "lastSuccess": "2026-10-28T13:34:49.752Z",
    "summary": "10 regions, 6 GPU platforms",
    "stale": false
   },
@@ -33,7 +33,7 @@
    "label": "Epoch AI data centers (satellite)",
    "url": "https://epoch.ai/data/data-centers",
    "ok": true,
-   "lastSuccess": "2026-10-27T22:39:24.513Z",
+   "lastSuccess": "2026-10-28T13:34:51.545Z",
    "summary": "2 Nebius sites, 125 MW IT power observed",
    "stale": false
   },
@@ -42,8 +42,8 @@
    "label": "Google News (data centers)",
    "url": "https://news.google.com/search?q=Nebius%20data%20center",
    "ok": true,
-   "lastSuccess": "2026-10-28T08:29:13.545Z",
-   "summary": "316 headlines fetched; 424 kept, 158 matched to sites",
+   "lastSuccess": "2026-10-28T13:34:51.352Z",
+   "summary": "287 headlines fetched; 428 kept, 158 matched to sites",
    "stale": false
   },
   {
@@ -51,8 +51,8 @@
    "label": "OpenRouter provider pages",
    "url": "https://openrouter.ai/provider/nebius",
    "ok": true,
-   "lastSuccess": "2026-10-27T22:39:44.745Z",
-   "summary": "Nebius 93 days of history; 11/11 peers",
+   "lastSuccess": "2026-10-28T13:35:11.994Z",
+   "summary": "Nebius 94 days of history; 11/11 peers",
    "stale": false
   },
   {
@@ -60,8 +60,8 @@
    "label": "jimmyresearch OpenRouter CSV",
    "url": "https://jimmyresearch.com/openrouter/",
    "ok": true,
-   "lastSuccess": "2026-10-27T22:39:44.926Z",
-   "summary": "234 snapshots to 2026-10-26; Nebius rank 55 of 96",
+   "lastSuccess": "2026-10-28T13:35:12.204Z",
+   "summary": "235 snapshots to 2026-10-27; Nebius rank 52 of 96",
    "stale": false
   },
   {
@@ -69,7 +69,7 @@
    "label": "Token Factory model catalog",
    "url": "https://tokenfactory.nebius.com/model-catalog.md",
    "ok": true,
-   "lastSuccess": "2026-10-27T22:39:45.328Z",
+   "lastSuccess": "2026-10-28T13:35:12.605Z",
    "summary": "30 models, 29 with a cached-input price",
    "stale": false
   },
@@ -78,8 +78,8 @@
    "label": "Nebius Atlas",
    "url": "https://nebiusatlas.com/",
    "ok": true,
-   "lastSuccess": "2026-10-27T22:39:47.655Z",
-   "summary": "410 customers (0 new since last run)",
+   "lastSuccess": "2026-10-28T13:35:14.351Z",
+   "summary": "415 customers (6 new since last run)",
    "stale": false
   },
   {
@@ -87,7 +87,7 @@
    "label": "SEC EDGAR",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845",
    "ok": true,
-   "lastSuccess": "2026-10-28T08:29:13.710Z",
+   "lastSuccess": "2026-10-28T13:35:14.461Z",
    "summary": "168 filings since 2025-01-01 (0 parsed this run)",
    "stale": false
   },
@@ -96,8 +96,8 @@
    "label": "Greenhouse job board",
    "url": "https://careers.nebius.com/",
    "ok": true,
-   "lastSuccess": "2026-10-27T22:39:49.591Z",
-   "summary": "375 open roles (3 new)",
+   "lastSuccess": "2026-10-28T13:35:16.476Z",
+   "summary": "375 open roles (2 new)",
    "stale": false
   },
   {
@@ -105,12 +105,39 @@
    "label": "Yahoo Finance (NBIS)",
    "url": "https://finance.yahoo.com/quote/NBIS",
    "ok": true,
-   "lastSuccess": "2026-10-28T08:29:17.265Z",
-   "summary": "NBIS last 2026-10-27 $170.47; 4/4 peers",
+   "lastSuccess": "2026-10-28T13:35:20.677Z",
+   "summary": "NBIS last 2026-10-28 $171.22; 4/4 peers",
    "stale": false
   }
  ],
  "alerts": [
+  {
+   "id": "or-wow-2026-10-27",
+   "date": "2026-10-28",
+   "source": "openrouter",
+   "severity": "medium",
+   "title": "Nebius OpenRouter tokens up 85% week over week",
+   "detail": "341.9B tokens in the 7 days to 2026-10-27 vs 184.4B the week before",
+   "url": "https://openrouter.ai/provider/nebius"
+  },
+  {
+   "id": "atlas-added-2026-10-28",
+   "date": "2026-10-28",
+   "source": "atlas",
+   "severity": "info",
+   "title": "6 new customers on Nebius Atlas (1 using Token Factory)",
+   "detail": "BHI, Mimic Robotics, Moonlit, Naranja X, Parallel, Yma",
+   "url": "https://nebiusatlas.com/"
+  },
+  {
+   "id": "jobs-dcloc-5018716101",
+   "date": "2026-10-28",
+   "source": "jobs",
+   "severity": "medium",
+   "title": "Data-center hiring in a new location: Australia",
+   "detail": "Site Selection & Colocation Manager – Data Centers (posted 2026-10-28)",
+   "url": "https://careers.nebius.com/job?gh_jid=5018716101"
+  },
   {
    "id": "or-newmodel-nvidia/nemotron-3.5-super-vl-20261015",
    "date": "2026-10-27",
@@ -420,7 +447,7 @@
   {
    "date": "2026-10-23",
    "kind": "model",
-   "label": "deepseek-v4.1-flash-1017 on Nebius: peaked at 16.7B tokens/day (32% of traffic)"
+   "label": "deepseek-v4.1-flash-1017 on Nebius: peaked at 16.7B tokens/day (34% of traffic)"
   },
   {
    "date": "2026-11-02",
@@ -555,12 +582,12 @@
      "range": null,
      "source": null
     },
-    "estimate": 1329.4734172003655,
-    "low": 1289.5892146843544,
-    "high": 1369.3576197163766,
-    "tilt": 0.020097998426150187,
+    "estimate": 1329.7412363309165,
+    "low": 1289.848999240989,
+    "high": 1369.633473420844,
+    "tilt": 0.020303494644036864,
     "lean": "no consensus",
-    "coverage": 0.4268836078854982,
+    "coverage": 0.4273561976775587,
     "priorFromLastSurprise": 0.01267828843106178,
     "signals": [
      {
@@ -591,37 +618,37 @@
       "weight": 1.5,
       "coverage": 0.30434782608695654,
       "note": "Live and ramping sites only. Trouble at future campuses (Independence, Birmingham) is pipeline risk, shown in Data centers.",
-      "contribution": 0.001239917760556698
+      "contribution": 0.0012385466034755136
      },
      {
       "id": "dc-hiring",
       "label": "Data-center hiring mix",
       "value": "14% of new roles (prior quarter 12%)",
-      "score": 0.13826940231935775,
+      "score": 0.1892543859649123,
       "weight": 0.5,
       "coverage": 1,
       "note": "Build-out staffing leads capacity by one to three quarters, so it's weighted lightly for the current one. Survivorship-biased: only still-open roles are visible.",
-      "contribution": 0.0005633116880826595
+      "contribution": 0.0007701726670546826
      },
      {
       "id": "blackwell-spot",
       "label": "Blackwell spot vs list",
       "value": "49% average",
-      "score": -0.4418632817337462,
+      "score": -0.4448956037151701,
       "weight": 2,
       "coverage": 0.7142857142857143,
       "note": "Above ~60% means spare Blackwell capacity is being taken up. Market pricing only since Oct 8, 2026; uncapped from Nov 2, so later averages can run higher.",
-      "contribution": -0.005143308166314048
+      "contribution": -0.005172877793591868
      },
      {
       "id": "hopper-spot",
       "label": "Hopper spot vs list",
-      "value": "34% average",
-      "score": -0.3518317901234571,
+      "value": "35% average",
+      "score": -0.3485216049382719,
       "weight": 1,
       "coverage": 0.7142857142857143,
       "note": "Low Hopper prices point to idle older GPUs and pricing pressure on renewals. Market pricing only since Oct 8, 2026.",
-      "contribution": -0.002047668808562901
+      "contribution": -0.0020261603573030655
      },
      {
       "id": "list-price",
@@ -631,17 +658,17 @@
       "weight": 1.5,
       "coverage": 1,
       "note": "Raising list prices signals demand ahead of supply.",
-      "contribution": 0.012222046496916023
+      "contribution": 0.012208530805687203
      },
      {
       "id": "tokens",
       "label": "Token Factory on OpenRouter",
       "value": "+97% daily volume vs prior quarter",
-      "score": 0.4896235327174972,
+      "score": 0.49008594908687153,
       "weight": 0.5,
-      "coverage": 0.29347826086956524,
+      "coverage": 0.30434782608695654,
       "note": "Under 0.1% of revenue: a demand-breadth read only.",
-      "contribution": 0.0005854110244099762
+      "contribution": 0.0006069942876526182
      }
     ],
     "context": {
@@ -687,14 +714,14 @@
    {
     "date": "2026-10-28",
     "2026-Q3": 915.4,
-    "2026-Q4": 1329.5
+    "2026-Q4": 1329.7
    }
   ]
  },
  "valuation": {
   "price": {
-   "value": 170.47,
-   "date": "2026-10-27"
+   "value": 171.22,
+   "date": "2026-10-28"
   },
   "balanceSheet": {
    "date": "2026-06-30",
@@ -4879,13 +4906,17 @@
    [
     "2026-10-27",
     170.47
+   ],
+   [
+    "2026-10-28",
+    171.22
    ]
   ],
   "last": {
-   "date": "2026-10-27",
-   "close": 170.47,
-   "chg1d": 0.11222026489202053,
-   "chg30d": -0.2817174398516834
+   "date": "2026-10-28",
+   "close": 171.22,
+   "chg1d": 0.004399601102833328,
+   "chg30d": -0.26160082801449025
   },
   "peers": [
    {
@@ -6483,6 +6514,10 @@
      [
       "2026-10-27",
       59.57
+     ],
+     [
+      "2026-10-28",
+      59.52
      ]
     ]
    },
@@ -8501,6 +8536,10 @@
      [
       "2026-10-27",
       217.94
+     ],
+     [
+      "2026-10-28",
+      219.26
      ]
     ]
    },
@@ -10519,6 +10558,10 @@
      [
       "2026-10-27",
       130.53
+     ],
+     [
+      "2026-10-28",
+      130.37
      ]
     ]
    },
@@ -12537,13 +12580,17 @@
      [
       "2026-10-27",
       557.98
+     ],
+     [
+      "2026-10-28",
+      564.4
      ]
     ]
    }
   ]
  },
  "gpu": {
-  "snapshotTime": "2026-10-28T08:24:43.038909Z",
+  "snapshotTime": "2026-10-28T13:30:10.913639Z",
   "onDemand": [
    {
     "name": "NVIDIA GB300 NVL72",
@@ -12649,11 +12696,6 @@
     "ratio": 0.9989,
     "effectiveTime": "2026-10-28T07:26:00Z",
     "spark": [
-     6.64,
-     6.19,
-     5.74,
-     5.29,
-     4.84,
      4.54,
      4.24,
      4.24,
@@ -12817,6 +12859,11 @@
      9.49,
      9.34,
      9.34,
+     9.49,
+     9.49,
+     9.49,
+     9.49,
+     9.49,
      9.49
     ]
    },
@@ -12824,16 +12871,11 @@
     "skuId": "sku-e00fmto201j24eyp0841g",
     "family": "B300",
     "region": "uk-south1",
-    "price": 1.9,
+    "price": 2.5,
     "onDemand": 9.5,
-    "ratio": 0.2,
-    "effectiveTime": "2026-10-28T08:06:00Z",
+    "ratio": 0.2632,
+    "effectiveTime": "2026-10-28T12:36:00Z",
     "spark": [
-     4,
-     3.95,
-     4.1,
-     4.55,
-     4.7,
      4.85,
      5.113333333,
      5.41,
@@ -12997,23 +13039,23 @@
      2.95,
      2.65,
      2.35,
-     2.05
+     2.1,
+     2.35,
+     2.65,
+     2.5,
+     2.35,
+     2.5
     ]
    },
    {
     "skuId": "sku-e00hfg6dlxtt9ji6fqo9u",
     "family": "B300",
     "region": "us-north1",
-    "price": 0.99,
+    "price": 1.38,
     "onDemand": 9.5,
-    "ratio": 0.1042,
-    "effectiveTime": "2026-10-28T05:56:00Z",
+    "ratio": 0.1453,
+    "effectiveTime": "2026-10-28T13:01:00Z",
     "spark": [
-     8.29,
-     7.69,
-     7.54,
-     7.84,
-     8.14,
      8.44,
      8.44,
      8.14,
@@ -13177,23 +13219,23 @@
      1.09,
      0.99,
      0.99,
-     0.99
+     0.99,
+     1.03,
+     1.07,
+     1.07,
+     1.075,
+     1.23
     ]
    },
    {
     "skuId": "sku-e00k58wq19wjszct65fwm",
     "family": "B200",
     "region": "me-west1",
-    "price": 3.8,
+    "price": 4.5,
     "onDemand": 8.5,
-    "ratio": 0.4471,
-    "effectiveTime": "2026-10-28T07:51:00Z",
+    "ratio": 0.5294,
+    "effectiveTime": "2026-10-28T13:01:00Z",
     "spark": [
-     3.95,
-     3.9,
-     3.65,
-     3.65,
-     3.95,
      4.25,
      4.7,
      5,
@@ -13357,7 +13399,12 @@
      5,
      4.55,
      4.1,
-     3.8
+     3.65,
+     3.65,
+     4.1,
+     4.45,
+     4.65,
+     4.65
     ]
    },
    {
@@ -13367,13 +13414,8 @@
     "price": 4.5,
     "onDemand": 8.5,
     "ratio": 0.5294,
-    "effectiveTime": "2026-10-28T07:56:00Z",
+    "effectiveTime": "2026-10-28T13:21:00Z",
     "spark": [
-     1.75,
-     1.9,
-     2.35,
-     2.8,
-     3.4,
      3.85,
      4.15,
      4.4,
@@ -13537,23 +13579,23 @@
      3.6,
      3.75,
      4.2,
-     4.5
+     4.65,
+     4.5,
+     4.05,
+     3.8,
+     4.05,
+     4.35
     ]
    },
    {
     "skuId": "sku-e00agrh84hf7fwlrgsfsv",
     "family": "H200",
     "region": "eu-north1",
-    "price": 2.2,
+    "price": 2.5,
     "onDemand": 5.4,
-    "ratio": 0.4074,
-    "effectiveTime": "2026-10-28T07:41:00Z",
+    "ratio": 0.463,
+    "effectiveTime": "2026-10-28T12:51:00Z",
     "spark": [
-     0.79,
-     0.845,
-     1.05,
-     1.5,
-     1.9,
      2,
      2,
      1.7,
@@ -13717,23 +13759,23 @@
      2.05,
      2.2,
      2.1,
-     2.2
+     2.05,
+     2.05,
+     1.9,
+     1.75,
+     2.25,
+     2.5
     ]
    },
    {
     "skuId": "sku-e00dh1moiqg9mc5ix6wj2",
     "family": "H200",
     "region": "eu-west1",
-    "price": 2.14,
+    "price": 4.24,
     "onDemand": 5.4,
-    "ratio": 0.3963,
-    "effectiveTime": "2026-10-28T07:46:00Z",
+    "ratio": 0.7852,
+    "effectiveTime": "2026-10-28T13:01:00Z",
     "spark": [
-     4.49,
-     4.34,
-     4.79,
-     5.24,
-     5.39,
      5.24,
      5.24,
      5.09,
@@ -13897,23 +13939,23 @@
      1.79,
      1.706666667,
      1.99,
-     2.14
+     2.14,
+     2.29,
+     2.74,
+     3.34,
+     3.79,
+     4.09
     ]
    },
    {
     "skuId": "sku-e00em8l461xmyihec7sr8",
     "family": "H200",
     "region": "us-central1",
-    "price": 1.5,
+    "price": 2,
     "onDemand": 5.4,
-    "ratio": 0.2778,
-    "effectiveTime": "2026-10-28T08:26:00Z",
+    "ratio": 0.3704,
+    "effectiveTime": "2026-10-28T12:26:00Z",
     "spark": [
-     0.838,
-     1.036,
-     1.036,
-     0.838,
-     0.896666667,
      1.15,
      1.4,
      1.5,
@@ -14077,23 +14119,23 @@
      0.79,
      0.79,
      1.09,
-     1.445
+     1.445,
+     1.5,
+     1.5,
+     1.65,
+     1.9,
+     2
     ]
    },
    {
     "skuId": "sku-e00ljkedv5qtbwhikuoct",
     "family": "H100",
     "region": "eu-north1",
-    "price": 0.79,
+    "price": 1,
     "onDemand": 4.5,
-    "ratio": 0.1756,
-    "effectiveTime": "2026-10-27T22:06:00Z",
+    "ratio": 0.2222,
+    "effectiveTime": "2026-10-28T11:06:00Z",
     "spark": [
-     0.79,
-     0.79,
-     0.79,
-     0.79,
-     0.79,
      0.79,
      0.79,
      0.79,
@@ -14257,23 +14299,23 @@
      0.79,
      0.79,
      0.79,
-     0.79
+     0.79,
+     0.79,
+     0.83,
+     0.935,
+     1,
+     1
     ]
    },
    {
     "skuId": "sku-e00g61h0323jih8tkg5jv",
     "family": "RTX PRO 6000",
     "region": "eu-south1",
-    "price": 0.79,
+    "price": 1,
     "onDemand": 1.8,
-    "ratio": 0.4389,
-    "effectiveTime": "2026-10-27T23:01:00Z",
+    "ratio": 0.5556,
+    "effectiveTime": "2026-10-28T12:46:00Z",
     "spark": [
-     1.38,
-     1.38,
-     1.38,
-     1.38,
-     1.38,
      1.38,
      1.38,
      1.38,
@@ -14437,23 +14479,23 @@
      0.79,
      0.79,
      0.79,
-     0.79
+     0.79,
+     0.79,
+     0.895,
+     0.895,
+     0.895,
+     1
     ]
    },
    {
     "skuId": "sku-e00lxawt0lavf9i0dutiz",
     "family": "RTX PRO 6000",
     "region": "uk-south2",
-    "price": 0.79,
+    "price": 1.09,
     "onDemand": 1.8,
-    "ratio": 0.4389,
-    "effectiveTime": "2026-10-27T23:01:00Z",
+    "ratio": 0.6056,
+    "effectiveTime": "2026-10-28T13:16:00Z",
     "spark": [
-     1.38,
-     1.38,
-     1.38,
-     1.38,
-     1.38,
      1.38,
      1.38,
      1.38,
@@ -14617,7 +14659,12 @@
      0.79,
      0.79,
      0.79,
-     0.79
+     0.79,
+     0.79,
+     0.79,
+     0.79,
+     0.81,
+     0.94
     ]
    },
    {
@@ -14627,13 +14674,8 @@
     "price": 0.79,
     "onDemand": 1.8,
     "ratio": 0.4389,
-    "effectiveTime": "2026-10-28T08:16:00Z",
+    "effectiveTime": "2026-10-28T13:26:00Z",
     "spark": [
-     0.79,
-     0.89,
-     0.94,
-     0.94,
-     0.94,
      1.326666667,
      1.645,
      1.64,
@@ -14795,6 +14837,11 @@
      1.656666667,
      1.19,
      0.84,
+     0.79,
+     0.94,
+     0.94,
+     0.79,
+     0.79,
      0.79,
      0.94,
      0.94
@@ -14963,11 +15010,11 @@
    },
    {
     "date": "2026-10-28",
-    "B300": 0.5009,
-    "B200": 0.5468,
-    "H200": 0.3628,
-    "H100": 0.1756,
-    "RTX PRO 6000": 0.4963
+    "B300": 0.4867,
+    "B200": 0.5302,
+    "H200": 0.3863,
+    "H100": 0.1844,
+    "RTX PRO 6000": 0.4894
    }
   ],
   "priceDaily": [
@@ -15125,11 +15172,11 @@
    },
    {
     "date": "2026-10-28",
-    "B300": 1.237,
-    "B200": 4.245,
-    "H200": 1.04,
-    "H100": 0.79,
-    "RTX PRO 6000": 0.793
+    "B300": 1.189,
+    "B200": 4.223,
+    "H200": 1.263,
+    "H100": 0.83,
+    "RTX PRO 6000": 0.803
    }
   ],
   "availability": [
@@ -15155,8 +15202,8 @@
    }
   ],
   "tightness": {
-   "blackwell": 0.45592000000000005,
-   "hopper": 0.31427499999999997
+   "blackwell": 0.49323999999999996,
+   "hopper": 0.4602
   },
   "pools": [
    {
@@ -15508,18 +15555,18 @@
    },
    {
     "date": "2026-10-28",
-    "sku-e00vd4x28cozliwb6g4vh": 0.9958,
-    "sku-e00fmto201j24eyp0841g": 0.3768,
-    "sku-e00hfg6dlxtt9ji6fqo9u": 0.1302,
-    "sku-e00k58wq19wjszct65fwm": 0.5941,
-    "sku-e00fjjc4gwdx48pck9b46": 0.4994,
-    "sku-e00agrh84hf7fwlrgsfsv": 0.4,
-    "sku-e00dh1moiqg9mc5ix6wj2": 0.4957,
-    "sku-e00em8l461xmyihec7sr8": 0.1926,
-    "sku-e00ljkedv5qtbwhikuoct": 0.1756,
-    "sku-e00g61h0323jih8tkg5jv": 0.4444,
-    "sku-e00lxawt0lavf9i0dutiz": 0.4406,
-    "sku-e00otwkvc6gea6nmvvsda": 0.6039
+    "sku-e00vd4x28cozliwb6g4vh": 0.9968,
+    "sku-e00fmto201j24eyp0841g": 0.3382,
+    "sku-e00hfg6dlxtt9ji6fqo9u": 0.1252,
+    "sku-e00k58wq19wjszct65fwm": 0.5635,
+    "sku-e00fjjc4gwdx48pck9b46": 0.4968,
+    "sku-e00agrh84hf7fwlrgsfsv": 0.3939,
+    "sku-e00dh1moiqg9mc5ix6wj2": 0.5311,
+    "sku-e00em8l461xmyihec7sr8": 0.2339,
+    "sku-e00ljkedv5qtbwhikuoct": 0.1844,
+    "sku-e00g61h0323jih8tkg5jv": 0.4622,
+    "sku-e00lxawt0lavf9i0dutiz": 0.4461,
+    "sku-e00otwkvc6gea6nmvvsda": 0.56
    }
   ],
   "poolPriceDaily": [
@@ -15810,18 +15857,18 @@
    },
    {
     "date": "2026-10-28",
-    "sku-e00vd4x28cozliwb6g4vh": 9.46,
-    "sku-e00fmto201j24eyp0841g": 3.58,
-    "sku-e00hfg6dlxtt9ji6fqo9u": 1.237,
-    "sku-e00k58wq19wjszct65fwm": 5.05,
-    "sku-e00fjjc4gwdx48pck9b46": 4.245,
-    "sku-e00agrh84hf7fwlrgsfsv": 2.16,
-    "sku-e00dh1moiqg9mc5ix6wj2": 2.677,
-    "sku-e00em8l461xmyihec7sr8": 1.04,
-    "sku-e00ljkedv5qtbwhikuoct": 0.79,
-    "sku-e00g61h0323jih8tkg5jv": 0.8,
-    "sku-e00lxawt0lavf9i0dutiz": 0.793,
-    "sku-e00otwkvc6gea6nmvvsda": 1.087
+    "sku-e00vd4x28cozliwb6g4vh": 9.47,
+    "sku-e00fmto201j24eyp0841g": 3.213,
+    "sku-e00hfg6dlxtt9ji6fqo9u": 1.189,
+    "sku-e00k58wq19wjszct65fwm": 4.79,
+    "sku-e00fjjc4gwdx48pck9b46": 4.223,
+    "sku-e00agrh84hf7fwlrgsfsv": 2.127,
+    "sku-e00dh1moiqg9mc5ix6wj2": 2.868,
+    "sku-e00em8l461xmyihec7sr8": 1.263,
+    "sku-e00ljkedv5qtbwhikuoct": 0.83,
+    "sku-e00g61h0323jih8tkg5jv": 0.832,
+    "sku-e00lxawt0lavf9i0dutiz": 0.803,
+    "sku-e00otwkvc6gea6nmvvsda": 1.008
    }
   ],
   "regionWeights": [
@@ -17459,18 +17506,35 @@
    {
     "date": "2026-10-27",
     "partial": false,
-    "total": 47153485626,
+    "total": 49896932262,
     "byModel": {
-     "qwen/qwen3-embedding-8b": 20731057929,
-     "deepseek/deepseek-v4.1-flash-20261017": 14910904346,
-     "openai/gpt-oss-120b": 1921478215,
-     "reflection/beam-1.0-501b-a23b-20261016": 1797165949,
-     "qwen/qwen3-30b-a3b-instruct-2507": 1735201396,
-     "nvidia/nemotron-3.5-super-vl-20261015": 1180238593,
-     "minimax/minimax-m3.1-flash-20261019": 805687677,
-     "deepseek/deepseek-v4.1-flash-20260910": 794035353,
-     "z-ai/glm-5.2-20260616": 775557457,
-     "Others": 2502158711
+     "qwen/qwen3-embedding-8b": 21549387213,
+     "deepseek/deepseek-v4.1-flash-20261017": 15691549190,
+     "openai/gpt-oss-120b": 2198800825,
+     "qwen/qwen3-30b-a3b-instruct-2507": 1827490606,
+     "reflection/beam-1.0-501b-a23b-20261016": 1827438903,
+     "nvidia/nemotron-3.5-super-vl-20261015": 1639736017,
+     "minimax/minimax-m3.1-flash-20261019": 869953800,
+     "deepseek/deepseek-v4.1-flash-20260910": 803608132,
+     "z-ai/glm-5.2-20260616": 783474675,
+     "Others": 2705492901
+    }
+   },
+   {
+    "date": "2026-10-28",
+    "partial": true,
+    "total": 24888070698,
+    "byModel": {
+     "deepseek/deepseek-v4.1-flash-20261017": 8440250525,
+     "qwen/qwen3-embedding-8b": 7569933954,
+     "reflection/beam-1.0-501b-a23b-20261016": 3039732762,
+     "openai/gpt-oss-120b": 1545280352,
+     "nvidia/nemotron-3.5-super-vl-20261015": 1109199030,
+     "google/gemma-3-27b-it": 680679600,
+     "qwen/qwen3-30b-a3b-instruct-2507": 643366401,
+     "minimax/minimax-m3.1-flash-20261019": 548402764,
+     "deepseek/deepseek-v4-pro-20260813": 336273137,
+     "Others": 974952173
     }
    }
   ],
@@ -17550,9 +17614,9 @@
    "moonshotai/kimi-k3-20260715": {
     "id": "moonshotai/kimi-k3-20260715",
     "name": "moonshotai/kimi-k3",
-    "input": 0.189,
+    "input": 0.191,
     "output": 20,
-    "cacheRead": 0.179,
+    "cacheRead": 0.181,
     "priceSource": "catalog"
    },
    "nousresearch/hermes-4-405b": {
@@ -17686,9 +17750,9 @@
   },
   "week": {
    "end": "2026-10-27",
-   "tokens": 339190061273,
+   "tokens": 341933507909,
    "prev": 184444129442,
-   "change": 0.8389854006151014
+   "change": 0.8538595342852799
   },
   "market": [
    {
@@ -19562,108 +19626,116 @@
     "share": 0.0017,
     "rank": 55,
     "providers": 96
+   },
+   {
+    "date": "2026-10-27",
+    "nebius": 341930000000,
+    "total": 188381911769998,
+    "share": 0.0018,
+    "rank": 52,
+    "providers": 96
    }
   ],
   "peers": [
    {
     "slug": "together",
     "name": "Together",
-    "week": 10617661934638,
+    "week": 10761331864869,
     "prevWeek": 7429883279673,
-    "change": 0.42904828177937393,
+    "change": 0.44838504991193107,
     "isNebius": false
    },
    {
     "slug": "deepinfra",
     "name": "DeepInfra",
-    "week": 6515655668871,
+    "week": 6597468969289,
     "prevWeek": 5273056844688,
-    "change": 0.2356505648966738,
+    "change": 0.25116591070608196,
     "isNebius": false
    },
    {
     "slug": "fireworks",
     "name": "Fireworks",
-    "week": 3654398265234,
+    "week": 3695075590610,
     "prevWeek": 1552645350634,
-    "change": 1.3536593619024333,
+    "change": 1.3798580848492992,
     "isNebius": false
    },
    {
     "slug": "coreweave",
     "name": "CoreWeave",
-    "week": 2614102918393,
+    "week": 2643200984680,
     "prevWeek": 3353757006225,
-    "change": -0.22054492512698676,
+    "change": -0.21186866556703943,
     "isNebius": false
    },
    {
     "slug": "baseten",
     "name": "Baseten",
-    "week": 2565117333262,
+    "week": 2584870979140,
     "prevWeek": 1505673479394,
-    "change": 0.7036345319002382,
+    "change": 0.7167540071040854,
     "isNebius": false
    },
    {
     "slug": "novita",
     "name": "Novita",
-    "week": 2044294285447,
+    "week": 2062472010053,
     "prevWeek": 2589061886378,
-    "change": -0.21041119325776692,
+    "change": -0.20339022373145332,
     "isNebius": false
    },
    {
     "slug": "siliconflow",
     "name": "SiliconFlow",
-    "week": 1229499244715,
+    "week": 1244330979288,
     "prevWeek": 1629997927179,
-    "change": -0.24570502562364227,
+    "change": -0.23660579038800678,
     "isNebius": false
    },
    {
     "slug": "parasail",
     "name": "Parasail",
-    "week": 1182683038770,
+    "week": 1193705962276,
     "prevWeek": 2757874735395,
-    "change": -0.5711614368878837,
+    "change": -0.5671645463240991,
     "isNebius": false
    },
    {
     "slug": "crusoe",
     "name": "Crusoe",
-    "week": 960838630829,
+    "week": 969902911255,
     "prevWeek": 1118456725818,
-    "change": -0.14092462529001615,
+    "change": -0.13282035069738884,
     "isNebius": false
    },
    {
     "slug": "nebius",
     "name": "Nebius",
-    "week": 339190061273,
+    "week": 341933507909,
     "prevWeek": 184444129442,
-    "change": 0.8389854006151014,
+    "change": 0.8538595342852799,
     "isNebius": true
    },
    {
     "slug": "groq",
     "name": "Groq",
-    "week": 134346127300,
+    "week": 135328485444,
     "prevWeek": 153541752721,
-    "change": -0.1250189286029597,
+    "change": -0.11862094156301084,
     "isNebius": false
    },
    {
     "slug": "cerebras",
     "name": "Cerebras",
-    "week": 45040064678,
+    "week": 45501862037,
     "prevWeek": 44152853136,
-    "change": 0.020094093110295752,
+    "change": 0.030553153537887345,
     "isNebius": false
    }
   ],
   "catalog": {
-   "updatedAt": "2026-10-27T22:39:45.326Z",
+   "updatedAt": "2026-10-28T13:35:12.605Z",
    "models": [
     {
      "id": "deepseek-ai/DeepSeek-V4.1-Flash",
@@ -20119,9 +20191,9 @@
   }
  },
  "atlas": {
-  "total": 410,
-  "tokenFactory": 86,
-  "aiCloud": 175,
+  "total": 415,
+  "tokenFactory": 87,
+  "aiCloud": 177,
   "cumulative": [
    {
     "date": "2026-09-24",
@@ -20155,113 +20227,118 @@
    },
    {
     "date": "2026-10-03",
-    "added": 2,
-    "total": 171
+    "added": 1,
+    "total": 170
    },
    {
     "date": "2026-10-04",
     "added": 2,
-    "total": 173
+    "total": 172
    },
    {
     "date": "2026-10-05",
     "added": 4,
-    "total": 177
+    "total": 176
    },
    {
     "date": "2026-10-06",
     "added": 5,
-    "total": 182
+    "total": 181
    },
    {
     "date": "2026-10-08",
     "added": 2,
-    "total": 184
+    "total": 183
    },
    {
     "date": "2026-10-09",
     "added": 2,
-    "total": 186
+    "total": 185
    },
    {
     "date": "2026-10-10",
     "added": 3,
-    "total": 189
+    "total": 188
    },
    {
     "date": "2026-10-11",
     "added": 8,
-    "total": 197
+    "total": 196
    },
    {
     "date": "2026-10-13",
     "added": 6,
-    "total": 203
+    "total": 202
    },
    {
     "date": "2026-10-14",
     "added": 4,
-    "total": 207
+    "total": 206
    },
    {
     "date": "2026-10-15",
     "added": 22,
-    "total": 229
+    "total": 228
    },
    {
     "date": "2026-10-16",
     "added": 10,
-    "total": 239
+    "total": 238
    },
    {
     "date": "2026-10-17",
     "added": 4,
-    "total": 243
+    "total": 242
    },
    {
     "date": "2026-10-18",
     "added": 27,
-    "total": 270
+    "total": 269
    },
    {
     "date": "2026-10-19",
     "added": 34,
-    "total": 304
+    "total": 303
    },
    {
     "date": "2026-10-20",
     "added": 28,
-    "total": 332
+    "total": 331
    },
    {
     "date": "2026-10-21",
     "added": 23,
-    "total": 355
+    "total": 354
    },
    {
     "date": "2026-10-22",
     "added": 6,
-    "total": 361
+    "total": 360
    },
    {
     "date": "2026-10-23",
     "added": 1,
-    "total": 362
+    "total": 361
    },
    {
     "date": "2026-10-25",
     "added": 22,
-    "total": 384
+    "total": 383
    },
    {
     "date": "2026-10-26",
     "added": 12,
-    "total": 396
+    "total": 395
    },
    {
     "date": "2026-10-27",
     "added": 14,
-    "total": 410
+    "total": 409
+   },
+   {
+    "date": "2026-10-28",
+    "added": 6,
+    "total": 415
    }
   ],
   "byCategory": [
@@ -20271,11 +20348,11 @@
    },
    {
     "name": "Data & infrastructure",
-    "count": 66
+    "count": 67
    },
    {
     "name": "Health & biotech",
-    "count": 38
+    "count": 39
    },
    {
     "name": "Model developers",
@@ -20299,7 +20376,11 @@
    },
    {
     "name": "Robotics & industry",
-    "count": 19
+    "count": 20
+   },
+   {
+    "name": "Finance",
+    "count": 17
    },
    {
     "name": "Media & creativity",
@@ -20308,24 +20389,20 @@
    {
     "name": "Security & compliance",
     "count": 15
-   },
-   {
-    "name": "Finance",
-    "count": 15
    }
   ],
   "byService": [
    {
     "name": "Tavily",
-    "count": 176
+    "count": 178
    },
    {
     "name": "Nebius AI Cloud",
-    "count": 175
+    "count": 177
    },
    {
     "name": "Nebius Token Factory",
-    "count": 86
+    "count": 87
    },
    {
     "name": "Nebius AI Studio",
@@ -20341,6 +20418,58 @@
    }
   ],
   "recent": [
+   {
+    "name": "BHI",
+    "category": "Finance",
+    "use": "Tavily web research for investment memos",
+    "services": [
+     "Tavily"
+    ],
+    "date": "2026-10-28"
+   },
+   {
+    "name": "Mimic Robotics",
+    "category": "Robotics & industry",
+    "use": "Nebius compute for industrial robotics research",
+    "services": [
+     "Nebius AI Cloud"
+    ],
+    "date": "2026-10-28"
+   },
+   {
+    "name": "Moonlit",
+    "category": "Workplace tools",
+    "use": "Query embeddings for legal search",
+    "services": [
+     "Nebius Token Factory"
+    ],
+    "date": "2026-10-28"
+   },
+   {
+    "name": "Naranja X",
+    "category": "Finance",
+    "use": "AI training with Nebius Academy",
+    "services": [],
+    "date": "2026-10-28"
+   },
+   {
+    "name": "Parallel",
+    "category": "Data & infrastructure",
+    "use": "Evaluates Tavily search and extraction in agent benchmarks",
+    "services": [
+     "Tavily"
+    ],
+    "date": "2026-10-28"
+   },
+   {
+    "name": "Yma",
+    "category": "Health & biotech",
+    "use": "Confidential medical AI on Nebius AI Cloud",
+    "services": [
+     "Nebius AI Cloud"
+    ],
+    "date": "2026-10-28"
+   },
    {
     "name": "CloudSigma AI Mission Control",
     "category": "Data & infrastructure",
@@ -20551,62 +20680,6 @@
      "Nebius Token Factory"
     ],
     "date": "2026-10-26"
-   },
-   {
-    "name": "Stonetotem",
-    "category": "Workplace tools",
-    "use": "Token Factory for AI language processing",
-    "services": [
-     "Nebius Token Factory"
-    ],
-    "date": "2026-10-26"
-   },
-   {
-    "name": "VESSL Cloud",
-    "category": "Data & infrastructure",
-    "use": "Nebius compute for customer-selected workloads",
-    "services": [
-     "Nebius AI Cloud"
-    ],
-    "date": "2026-10-26"
-   },
-   {
-    "name": "Aline",
-    "category": "Workplace tools",
-    "use": "Lists Tavily for LLM and RAG search",
-    "services": [
-     "Tavily"
-    ],
-    "date": "2026-10-25"
-   },
-   {
-    "name": "Artificial Analysis",
-    "category": "Science & research",
-    "use": "Benchmarks Nebius inference endpoints and Tavily search",
-    "services": [
-     "Nebius AI Studio",
-     "Nebius Token Factory",
-     "Tavily"
-    ],
-    "date": "2026-10-25"
-   },
-   {
-    "name": "azena",
-    "category": "Business services",
-    "use": "Open-model inference for Model Garden and Brand Studio",
-    "services": [
-     "Nebius Token Factory"
-    ],
-    "date": "2026-10-25"
-   },
-   {
-    "name": "Backdrop",
-    "category": "Workplace tools",
-    "use": "Named in Tavily’s trusted-user list",
-    "services": [
-     "Tavily"
-    ],
-    "date": "2026-10-25"
    }
   ]
  },
@@ -20878,11 +20951,18 @@
     "posted": 1252,
     "closed": 877,
     "archive": false
+   },
+   {
+    "date": "2026-10-28",
+    "total": 375,
+    "posted": 1254,
+    "closed": 879,
+    "archive": false
    }
   ],
-  "tracked": 1252,
+  "tracked": 1254,
   "trackedSince": "2024-11-22",
-  "closed30d": 164,
+  "closed30d": 166,
   "medianDaysToClose": 98,
   "daysToCloseByFunction": [
    {
@@ -20898,7 +20978,7 @@
    {
     "name": "Engineering & product",
     "days": 109,
-    "n": 232
+    "n": 234
    },
    {
     "name": "G&A & other",
@@ -20909,7 +20989,7 @@
   "byFunction": [
    {
     "name": "Data center & power",
-    "count": 73
+    "count": 74
    },
    {
     "name": "Sales & go-to-market",
@@ -20917,7 +20997,7 @@
    },
    {
     "name": "Engineering & product",
-    "count": 182
+    "count": 181
    },
    {
     "name": "G&A & other",
@@ -20927,7 +21007,7 @@
   "byRegion": [
    {
     "name": "Europe & other",
-    "count": 169
+    "count": 168
    },
    {
     "name": "Americas",
@@ -20939,15 +21019,21 @@
    },
    {
     "name": "Asia-Pacific",
-    "count": 43
+    "count": 44
    },
    {
     "name": "Remote",
     "count": 3
    }
   ],
-  "new7d": 17,
+  "new7d": 19,
   "dcRoles": [
+   {
+    "title": "Site Selection & Colocation Manager – Data Centers",
+    "location": "Australia",
+    "posted": "2026-10-28",
+    "url": "https://careers.nebius.com/job?gh_jid=5018716101"
+   },
    {
     "title": "Data Center Technician Manager",
     "location": "Missouri, United States",
@@ -21301,12 +21387,6 @@
     "location": "Minnesota, United States",
     "posted": "2026-02-24",
     "url": "https://careers.nebius.com/job?gh_jid=4765077101"
-   },
-   {
-    "title": "Data Center Technician",
-    "location": "Minnesota, United States",
-    "posted": "2026-02-20",
-    "url": "https://careers.nebius.com/job?gh_jid=4765032101"
    }
   ],
   "postedByMonth": [
@@ -21510,8 +21590,8 @@
    },
    {
     "date": "2026-09-01",
-    "Still open": 66,
-    "Closed": 37,
+    "Still open": 65,
+    "Closed": 38,
     "Data center & power": 10,
     "Sales & go-to-market": 17,
     "Engineering & product": 55,
@@ -21519,11 +21599,11 @@
    },
    {
     "date": "2026-10-01",
-    "Still open": 108,
-    "Closed": 10,
-    "Data center & power": 16,
+    "Still open": 109,
+    "Closed": 11,
+    "Data center & power": 17,
     "Sales & go-to-market": 34,
-    "Engineering & product": 36,
+    "Engineering & product": 37,
     "G&A & other": 32
    }
   ]
