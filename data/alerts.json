@@ -1,5 +1,14 @@
 [
  {
+  "id": "spot-cap-sku-e00agrh84hf7fwlrgsfsv-2026-10-29",
+  "date": "2026-10-29",
+  "source": "gpu-spot",
+  "severity": "medium",
+  "title": "H200 spot near its cap in eu-north1: $5.39 vs $5.4 on-demand",
+  "detail": "100% of on-demand. Spare capacity is almost gone.",
+  "url": "https://nebius.com/spot-prices"
+ },
+ {
   "id": "or-wow-2026-10-28",
   "date": "2026-10-29",
   "source": "openrouter",
