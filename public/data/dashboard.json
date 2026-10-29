@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-29T23:00:20.563Z",
+ "generatedAt": "2026-10-29T23:56:42.751Z",
  "sources": [
   {
    "id": "gpu-ondemand",
@@ -15,7 +15,7 @@
    "label": "Nebius spot price API",
    "url": "https://nebius.com/spot-prices",
    "ok": true,
-   "lastSuccess": "2026-10-29T22:59:48.795Z",
+   "lastSuccess": "2026-10-29T23:56:36.784Z",
    "summary": "12 SKUs listed; 12 series, 8616 hourly points",
    "stale": false
   },
@@ -24,7 +24,7 @@
    "label": "Nebius regions docs",
    "url": "https://docs.nebius.com/overview/regions",
    "ok": true,
-   "lastSuccess": "2026-10-29T22:59:48.977Z",
+   "lastSuccess": "2026-10-29T23:56:37.135Z",
    "summary": "10 regions, 6 GPU platforms",
    "stale": false
   },
@@ -42,8 +42,8 @@
    "label": "Google News (data centers)",
    "url": "https://news.google.com/search?q=Nebius%20data%20center",
    "ok": true,
-   "lastSuccess": "2026-10-29T22:59:50.548Z",
-   "summary": "265 headlines fetched; 450 kept, 161 matched to sites",
+   "lastSuccess": "2026-10-29T23:56:38.555Z",
+   "summary": "324 headlines fetched; 450 kept, 161 matched to sites",
    "stale": false
   },
   {
@@ -87,8 +87,8 @@
    "label": "SEC EDGAR",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845",
    "ok": true,
-   "lastSuccess": "2026-10-29T23:00:16.918Z",
-   "summary": "170 filings since 2025-01-01 (1 parsed this run)",
+   "lastSuccess": "2026-10-29T23:56:38.668Z",
+   "summary": "170 filings since 2025-01-01 (0 parsed this run)",
    "stale": false
   },
   {
@@ -105,7 +105,7 @@
    "label": "Yahoo Finance (NBIS)",
    "url": "https://finance.yahoo.com/quote/NBIS",
    "ok": true,
-   "lastSuccess": "2026-10-29T23:00:20.561Z",
+   "lastSuccess": "2026-10-29T23:56:42.749Z",
    "summary": "NBIS last 2026-10-29 $171.99; 4/4 peers",
    "stale": false
   }
@@ -12678,7 +12678,7 @@
   ]
  },
  "gpu": {
-  "snapshotTime": "2026-10-29T22:55:04.713600Z",
+  "snapshotTime": "2026-10-29T23:51:56.932999Z",
   "onDemand": [
    {
     "name": "NVIDIA GB300 NVL72",
@@ -12779,12 +12779,11 @@
     "skuId": "sku-e00vd4x28cozliwb6g4vh",
     "family": "B300",
     "region": "eu-west2",
-    "price": 4.99,
+    "price": 5.29,
     "onDemand": 9.5,
-    "ratio": 0.5253,
-    "effectiveTime": "2026-10-29T22:41:00Z",
+    "ratio": 0.5568,
+    "effectiveTime": "2026-10-29T23:31:00Z",
     "spark": [
-     9.49,
      9.49,
      9.49,
      9.49,
@@ -12952,19 +12951,19 @@
      5.44,
      5.59,
      5.59,
-     5.29
+     5.29,
+     5.14
     ]
    },
    {
     "skuId": "sku-e00fmto201j24eyp0841g",
     "family": "B300",
     "region": "uk-south1",
-    "price": 5.2,
+    "price": 4.6,
     "onDemand": 9.5,
-    "ratio": 0.5474,
-    "effectiveTime": "2026-10-29T22:51:00Z",
+    "ratio": 0.4842,
+    "effectiveTime": "2026-10-29T23:36:00Z",
     "spark": [
-     9.49,
      9.49,
      9.49,
      9.49,
@@ -13132,7 +13131,8 @@
      4.3,
      4.75,
      5.2,
-     5.35
+     5.35,
+     4.9
     ]
    },
    {
@@ -13144,7 +13144,6 @@
     "ratio": 0.2105,
     "effectiveTime": "2026-10-28T15:26:00Z",
     "spark": [
-     8,
      8.45,
      8.9,
      9.345,
@@ -13312,6 +13311,7 @@
      2,
      2,
      2,
+     2,
      2
     ]
    },
@@ -13319,12 +13319,11 @@
     "skuId": "sku-e00k58wq19wjszct65fwm",
     "family": "B200",
     "region": "me-west1",
-    "price": 4.4,
+    "price": 4.1,
     "onDemand": 8.5,
-    "ratio": 0.5176,
-    "effectiveTime": "2026-10-29T22:41:00Z",
+    "ratio": 0.4824,
+    "effectiveTime": "2026-10-29T23:06:00Z",
     "spark": [
-     5.9,
      6.05,
      5.6,
      5.15,
@@ -13492,19 +13491,19 @@
      5,
      5.3,
      5.15,
-     4.7
+     4.7,
+     4.25
     ]
    },
    {
     "skuId": "sku-e00fjjc4gwdx48pck9b46",
     "family": "B200",
     "region": "us-central1",
-    "price": 4.7,
+    "price": 3.8,
     "onDemand": 8.5,
-    "ratio": 0.5529,
-    "effectiveTime": "2026-10-29T22:26:00Z",
+    "ratio": 0.4471,
+    "effectiveTime": "2026-10-29T23:51:00Z",
     "spark": [
-     3.246666667,
      3.35,
      2.9,
      2.45,
@@ -13672,7 +13671,8 @@
      4.7,
      4.85,
      5,
-     4.85
+     4.85,
+     4.25
     ]
    },
    {
@@ -13684,7 +13684,6 @@
     "ratio": 0.9981,
     "effectiveTime": "2026-10-29T17:56:00Z",
     "spark": [
-     2.3,
      2.3,
      2.45,
      2.3,
@@ -13852,6 +13851,7 @@
      5.39,
      5.39,
      5.39,
+     5.39,
      5.39
     ]
    },
@@ -13859,12 +13859,11 @@
     "skuId": "sku-e00dh1moiqg9mc5ix6wj2",
     "family": "H200",
     "region": "eu-west1",
-    "price": 4.79,
+    "price": 5.09,
     "onDemand": 5.4,
-    "ratio": 0.887,
-    "effectiveTime": "2026-10-29T22:56:00Z",
+    "ratio": 0.9426,
+    "effectiveTime": "2026-10-29T23:26:00Z",
     "spark": [
-     5.39,
      5.29,
      5.39,
      5.29,
@@ -14032,19 +14031,19 @@
      5.24,
      4.94,
      4.49,
-     4.49
+     4.49,
+     4.94
     ]
    },
    {
     "skuId": "sku-e00em8l461xmyihec7sr8",
     "family": "H200",
     "region": "us-central1",
-    "price": 4.7,
+    "price": 5,
     "onDemand": 5.4,
-    "ratio": 0.8704,
-    "effectiveTime": "2026-10-29T20:51:00Z",
+    "ratio": 0.9259,
+    "effectiveTime": "2026-10-29T23:46:00Z",
     "spark": [
-     0.95,
      0.95,
      0.95,
      0.95,
@@ -14212,19 +14211,19 @@
      4.1,
      4.55,
      4.7,
-     4.7
+     4.7,
+     4.85
     ]
    },
    {
     "skuId": "sku-e00ljkedv5qtbwhikuoct",
     "family": "H100",
     "region": "eu-north1",
-    "price": 1.1,
+    "price": 1.4,
     "onDemand": 4.5,
-    "ratio": 0.2444,
-    "effectiveTime": "2026-10-29T21:36:00Z",
+    "ratio": 0.3111,
+    "effectiveTime": "2026-10-29T23:01:00Z",
     "spark": [
-     0.79,
      0.79,
      0.79,
      0.79,
@@ -14392,7 +14391,8 @@
      1.7,
      1.3,
      1.25,
-     1.1
+     1.1,
+     1.4
     ]
    },
    {
@@ -14404,7 +14404,6 @@
     "ratio": 0.7667,
     "effectiveTime": "2026-10-29T12:46:00Z",
     "spark": [
-     1.38,
      1.38,
      1.38,
      1.38,
@@ -14572,6 +14571,7 @@
      1.38,
      1.38,
      1.38,
+     1.38,
      1.38
     ]
    },
@@ -14584,7 +14584,6 @@
     "ratio": 0.7667,
     "effectiveTime": "2026-10-29T21:01:00Z",
     "spark": [
-     1.38,
      1.23,
      1.08,
      1.267333333,
@@ -14752,6 +14751,7 @@
      1.38,
      1.23,
      1.23,
+     1.38,
      1.38
     ]
    },
@@ -14759,12 +14759,11 @@
     "skuId": "sku-e00otwkvc6gea6nmvvsda",
     "family": "RTX PRO 6000",
     "region": "us-central1",
-    "price": 1.09,
+    "price": 1.39,
     "onDemand": 1.8,
-    "ratio": 0.6056,
-    "effectiveTime": "2026-10-29T22:46:00Z",
+    "ratio": 0.7722,
+    "effectiveTime": "2026-10-29T23:06:00Z",
     "spark": [
-     0.963333333,
      0.79,
      0.79,
      0.79,
@@ -14932,7 +14931,8 @@
      1.09,
      0.99,
      0.94,
-     0.94
+     0.94,
+     1.24
     ]
    }
   ],
@@ -15111,6 +15111,14 @@
     "H200": 0.7343,
     "H100": 0.3187,
     "RTX PRO 6000": 0.6993
+   },
+   {
+    "date": "2026-10-30",
+    "B300": 0.4225,
+    "B200": 0.5,
+    "H200": 0.937,
+    "H100": 0.3111,
+    "RTX PRO 6000": 0.7407
    }
   ],
   "priceDaily": [
@@ -15281,6 +15289,14 @@
     "H200": 3.064,
     "H100": 1.434,
     "RTX PRO 6000": 1.07
+   },
+   {
+    "date": "2026-10-30",
+    "B300": 2,
+    "B200": 4.25,
+    "H200": 4.85,
+    "H100": 1.4,
+    "RTX PRO 6000": 1.24
    }
   ],
   "availability": [
@@ -15310,8 +15326,8 @@
    }
   ],
   "tightness": {
-   "blackwell": 0.47074,
-   "hopper": 0.7499750000000001
+   "blackwell": 0.4361999999999999,
+   "hopper": 0.794425
   },
   "pools": [
    {
@@ -15690,6 +15706,21 @@
     "sku-e00g61h0323jih8tkg5jv": 0.7461,
     "sku-e00lxawt0lavf9i0dutiz": 0.7572,
     "sku-e00otwkvc6gea6nmvvsda": 0.5944
+   },
+   {
+    "date": "2026-10-30",
+    "sku-e00vd4x28cozliwb6g4vh": 0.5411,
+    "sku-e00fmto201j24eyp0841g": 0.5158,
+    "sku-e00hfg6dlxtt9ji6fqo9u": 0.2105,
+    "sku-e00k58wq19wjszct65fwm": 0.5,
+    "sku-e00fjjc4gwdx48pck9b46": 0.5,
+    "sku-e00agrh84hf7fwlrgsfsv": 0.9981,
+    "sku-e00dh1moiqg9mc5ix6wj2": 0.9148,
+    "sku-e00em8l461xmyihec7sr8": 0.8981,
+    "sku-e00ljkedv5qtbwhikuoct": 0.3111,
+    "sku-e00g61h0323jih8tkg5jv": 0.7667,
+    "sku-e00lxawt0lavf9i0dutiz": 0.7667,
+    "sku-e00otwkvc6gea6nmvvsda": 0.6889
    }
   ],
   "poolPriceDaily": [
@@ -16007,6 +16038,21 @@
     "sku-e00g61h0323jih8tkg5jv": 1.343,
     "sku-e00lxawt0lavf9i0dutiz": 1.363,
     "sku-e00otwkvc6gea6nmvvsda": 1.07
+   },
+   {
+    "date": "2026-10-30",
+    "sku-e00vd4x28cozliwb6g4vh": 5.14,
+    "sku-e00fmto201j24eyp0841g": 4.9,
+    "sku-e00hfg6dlxtt9ji6fqo9u": 2,
+    "sku-e00k58wq19wjszct65fwm": 4.25,
+    "sku-e00fjjc4gwdx48pck9b46": 4.25,
+    "sku-e00agrh84hf7fwlrgsfsv": 5.39,
+    "sku-e00dh1moiqg9mc5ix6wj2": 4.94,
+    "sku-e00em8l461xmyihec7sr8": 4.85,
+    "sku-e00ljkedv5qtbwhikuoct": 1.4,
+    "sku-e00g61h0323jih8tkg5jv": 1.38,
+    "sku-e00lxawt0lavf9i0dutiz": 1.38,
+    "sku-e00otwkvc6gea6nmvvsda": 1.24
    }
   ],
   "regionWeights": [
