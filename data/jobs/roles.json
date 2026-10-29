@@ -10959,7 +10959,9 @@
   "location": "Amsterdam, Netherlands",
   "region": "Europe & other",
   "posted": "2026-08-27",
-  "firstSeen": "2026-09-04"
+  "firstSeen": "2026-09-04",
+  "closedAt": "2026-10-29",
+  "closedApprox": false
  },
  "4961809101": {
   "title": "HR Operations Specialist",
@@ -12607,7 +12609,9 @@
   "location": "United States",
   "region": "Americas",
   "posted": "2026-10-25",
-  "firstSeen": "2026-10-25"
+  "firstSeen": "2026-10-25",
+  "closedAt": "2026-10-29",
+  "closedApprox": false
  },
  "5004563101": {
   "title": "Solution Marketing Lead — Financial Services  ",
@@ -13036,7 +13040,9 @@
   "location": "United States",
   "region": "Americas",
   "posted": "2026-10-23",
-  "firstSeen": "2026-10-24"
+  "firstSeen": "2026-10-24",
+  "closedAt": "2026-10-29",
+  "closedApprox": false
  },
  "5013576101": {
   "title": "Payroll Systems Specialist",
@@ -13073,6 +13079,15 @@
   "region": "Europe & other",
   "posted": "2026-10-28",
   "firstSeen": "2026-10-28"
+ },
+ "5017938101": {
+  "title": "Benefits Lead ",
+  "dept": "Corporate › People › C&B › Benefits",
+  "function": "G&A & other",
+  "location": "United States",
+  "region": "Americas",
+  "posted": "2026-10-29",
+  "firstSeen": "2026-10-29"
  },
  "5018716101": {
   "title": "Site Selection & Colocation Manager – Data Centers",

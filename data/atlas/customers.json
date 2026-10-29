@@ -1,4 +1,19 @@
 {
+ "01tek": {
+  "name": "01TEK",
+  "category": "Workplace tools",
+  "use": "Nebius GPU credits for KH-1 model research",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-29",
+  "baseline": false,
+  "latestEvidence": "2026-10-29"
+ },
  "1x-technologies": {
   "name": "1X Technologies",
   "category": "Robotics & industry",
@@ -16,7 +31,9 @@
   "name": "2comply",
   "category": "Security & compliance",
   "use": "Nebius hosting for its compliance platform",
-  "services": [],
+  "services": [
+   "Nebius AI Cloud"
+  ],
   "workloads": [
    "Storage"
   ],
@@ -281,7 +298,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-08-12"
+  "latestEvidence": "2026-10-21"
  },
  "anemos-bio": {
   "name": "Anemos Bio",
@@ -431,7 +448,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-25",
   "baseline": false,
-  "latestEvidence": "2026-10-28"
+  "latestEvidence": "2026-10-29"
  },
  "ataraxis-ai": {
   "name": "Ataraxis AI",
@@ -665,6 +682,19 @@
   "baseline": false,
   "latestEvidence": "2026-10-21"
  },
+ "bending-spoons": {
+  "name": "Bending Spoons",
+  "category": "Consumer & commerce",
+  "use": "Named as a Nebius customer",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-10-29",
+  "baseline": false,
+  "latestEvidence": "2026-10-28"
+ },
  "bettergov-ph": {
   "name": "BetterGov.ph",
   "category": "Data & infrastructure",
@@ -726,7 +756,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-27"
+  "latestEvidence": "2026-10-29"
  },
  "bladerunner-labs": {
   "name": "BladeRunner Labs",
@@ -784,7 +814,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-27",
   "baseline": false,
-  "latestEvidence": "2026-10-06"
+  "latestEvidence": "2026-10-28"
  },
  "boardwalk": {
   "name": "Boardwalk",
@@ -814,7 +844,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-19",
   "baseline": false,
-  "latestEvidence": "2026-10-26"
+  "latestEvidence": "2026-10-19"
  },
  "brain-orchestra": {
   "name": "Brain Orchestra",
@@ -1025,6 +1055,22 @@
   "firstListedAt": "2026-09-24",
   "baseline": true,
   "latestEvidence": "2026-09-24"
+ },
+ "city-of-palermo": {
+  "name": "City of Palermo",
+  "category": "Business services",
+  "use": "Urban video analysis on Nebius cloud infrastructure",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Data processing",
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-29",
+  "baseline": false,
+  "latestEvidence": "2026-10-29"
  },
  "cloop": {
   "name": "Cloop",
@@ -1310,6 +1356,22 @@
   "baseline": false,
   "latestEvidence": "2026-10-15"
  },
+ "cursive": {
+  "name": "Cursive",
+  "category": "Model developers",
+  "use": "Model serving on Nebius GPUs and Token Factory",
+  "services": [
+   "Nebius AI Cloud",
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-29",
+  "baseline": false,
+  "latestEvidence": "2026-10-29"
+ },
  "cursor": {
   "name": "Cursor",
   "category": "Developer tools",
@@ -1389,7 +1451,9 @@
   "name": "Daytona",
   "category": "Data & infrastructure",
   "use": "Lists Nebius as a cloud infrastructure subprocessor",
-  "services": [],
+  "services": [
+   "Nebius AI Cloud"
+  ],
   "workloads": [],
   "evidence": "named",
   "firstListedAt": "2026-10-26",
@@ -1504,7 +1568,9 @@
   "name": "Duoc UC",
   "category": "Science & research",
   "use": "Instructor training through Nebius Academy",
-  "services": [],
+  "services": [
+   "Nebius Academy"
+  ],
   "workloads": [],
   "evidence": "documented-use",
   "firstListedAt": "2026-10-27",
@@ -2001,7 +2067,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-27",
   "baseline": false,
-  "latestEvidence": "2026-09-27"
+  "latestEvidence": "2026-10-29"
  },
  "grax": {
   "name": "GRAX",
@@ -2052,7 +2118,9 @@
   "name": "Gysho",
   "category": "Business services",
   "use": "Transient AI inference on Nebius",
-  "services": [],
+  "services": [
+   "Nebius Token Factory"
+  ],
   "workloads": [
    "Inference/serving"
   ],
@@ -2613,7 +2681,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-18",
   "baseline": false,
-  "latestEvidence": "2026-10-18"
+  "latestEvidence": "2026-10-29"
  },
  "konwo": {
   "name": "Konwo",
@@ -2784,7 +2852,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-27",
   "baseline": false,
-  "latestEvidence": "2026-10-21"
+  "latestEvidence": "2026-10-29"
  },
  "lightning-ai": {
   "name": "Lightning AI",
@@ -2880,6 +2948,19 @@
   "firstListedAt": "2026-09-27",
   "baseline": false,
   "latestEvidence": "2026-09-27"
+ },
+ "lleverage": {
+  "name": "Lleverage",
+  "category": "Workplace tools",
+  "use": "Lists Nebius as an AI model subprocessor",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-10-29",
+  "baseline": false,
+  "latestEvidence": "2026-10-29"
  },
  "lmsys-sglang": {
   "name": "LMSYS · SGLang",
@@ -3133,7 +3214,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-26"
+  "latestEvidence": "2026-10-29"
  },
  "microsoft": {
   "name": "Microsoft",
@@ -3167,7 +3248,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-15"
+  "latestEvidence": "2026-10-13"
  },
  "mills-it-consulting": {
   "name": "WASH AI",
@@ -3245,7 +3326,7 @@
   "latestEvidence": "2025-11-06"
  },
  "mistral-ai": {
-  "name": "Mistral AI",
+  "name": "Mistral",
   "category": "Model developers",
   "use": "Uses Nebius GPUs for model training.",
   "services": [
@@ -3424,7 +3505,9 @@
   "name": "MyQandA",
   "category": "Workplace tools",
   "use": "Nebius infrastructure for website chatbot model requests",
-  "services": [],
+  "services": [
+   "Nebius Token Factory"
+  ],
   "workloads": [
    "Inference/serving"
   ],
@@ -3452,7 +3535,9 @@
   "name": "Naranja X",
   "category": "Finance",
   "use": "AI training with Nebius Academy",
-  "services": [],
+  "services": [
+   "Nebius Academy"
+  ],
   "workloads": [],
   "evidence": "named",
   "firstListedAt": "2026-10-28",
@@ -3486,6 +3571,19 @@
   "firstListedAt": "2026-10-16",
   "baseline": false,
   "latestEvidence": "2026-10-16"
+ },
+ "needle": {
+  "name": "Needle",
+  "category": "Data & infrastructure",
+  "use": "Nebius GPU and CPU machines execute platform runs",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-10-29",
+  "baseline": false,
+  "latestEvidence": "2026-10-29"
  },
  "neodemos": {
   "name": "NeoDemos",
@@ -3855,7 +3953,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-28",
   "baseline": false,
-  "latestEvidence": "2026-10-25"
+  "latestEvidence": "2026-10-29"
  },
  "openhands": {
   "name": "OpenHands",
@@ -4021,6 +4119,19 @@
   "firstListedAt": "2026-10-15",
   "baseline": false,
   "latestEvidence": "2026-10-15"
+ },
+ "paradev": {
+  "name": "Paradev",
+  "category": "Developer tools",
+  "use": "Lists Tavily as a web search subprocessor.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-10-29",
+  "baseline": false,
+  "latestEvidence": "2026-10-29"
  },
  "parallel": {
   "name": "Parallel",
@@ -4256,7 +4367,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-28"
+  "latestEvidence": "2026-10-29"
  },
  "praxis-repina": {
   "name": "Praxis Repina",
@@ -4336,7 +4447,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-05",
   "baseline": false,
-  "latestEvidence": "2026-10-19"
+  "latestEvidence": "2026-10-29"
  },
  "prior-labs": {
   "name": "Prior Labs",
@@ -4641,6 +4752,21 @@
   "baseline": true,
   "latestEvidence": "2026-10-19"
  },
+ "rembi": {
+  "name": "Rembi",
+  "category": "Health & biotech",
+  "use": "Tavily web searches for a personal health companion",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-29",
+  "baseline": false,
+  "latestEvidence": "2026-10-29"
+ },
  "requesty": {
   "name": "Requesty",
   "category": "Data & infrastructure",
@@ -4755,7 +4881,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-25"
+  "latestEvidence": "2026-10-21"
  },
  "robot-company": {
   "name": "Robot Company",
@@ -4926,7 +5052,8 @@
   ],
   "workloads": [
    "Inference/serving",
-   "Data processing"
+   "Data processing",
+   "Storage"
   ],
   "evidence": "documented-use",
   "firstListedAt": "2026-09-27",
@@ -4949,7 +5076,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-21",
   "baseline": false,
-  "latestEvidence": "2026-10-25"
+  "latestEvidence": "2026-10-29"
  },
  "serna-bio": {
   "name": "Serna Bio",
@@ -5107,6 +5234,21 @@
   "baseline": true,
   "latestEvidence": "2026-10-08"
  },
+ "smart-job-match": {
+  "name": "smart-job-match",
+  "category": "Workplace tools",
+  "use": "Tavily company research for job applications",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-29",
+  "baseline": false,
+  "latestEvidence": "2026-10-29"
+ },
  "snowflake": {
   "name": "Snowflake",
   "category": "Data & infrastructure",
@@ -5256,7 +5398,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-16",
   "baseline": false,
-  "latestEvidence": "2026-10-19"
+  "latestEvidence": "2026-10-29"
  },
  "stonetotem": {
   "name": "Stonetotem",
@@ -6111,6 +6253,19 @@
   "firstListedAt": "2026-09-27",
   "baseline": false,
   "latestEvidence": "2026-10-19"
+ },
+ "white-circle": {
+  "name": "White Circle",
+  "category": "Security & compliance",
+  "use": "Lists Nebius as a cloud subprocessor",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-10-29",
+  "baseline": false,
+  "latestEvidence": "2026-10-29"
  },
  "wildflow": {
   "name": "Wildflow",

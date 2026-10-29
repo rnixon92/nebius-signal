@@ -1,5 +1,41 @@
 [
  {
+  "id": "or-wow-2026-10-28",
+  "date": "2026-10-29",
+  "source": "openrouter",
+  "severity": "medium",
+  "title": "Nebius OpenRouter tokens up 88% week over week",
+  "detail": "362.5B tokens in the 7 days to 2026-10-28 vs 193.0B the week before",
+  "url": "https://openrouter.ai/provider/nebius"
+ },
+ {
+  "id": "tf-region-Qwen/Qwen3.5-397B-A17B-2026-10-29",
+  "date": "2026-10-29",
+  "source": "tokenfactory",
+  "severity": "info",
+  "title": "Token Factory region change: Qwen3.5-397B-A17B",
+  "detail": "us-central1 → eu-north1",
+  "url": "https://tokenfactory.nebius.com/model-catalog.md"
+ },
+ {
+  "id": "atlas-added-2026-10-29",
+  "date": "2026-10-29",
+  "source": "atlas",
+  "severity": "info",
+  "title": "10 new customers on Nebius Atlas (2 using Token Factory)",
+  "detail": "01TEK, Bending Spoons, City of Palermo, Cursive, Lleverage, Needle, Paradev, Rembi, smart-job-match, White Circle",
+  "url": "https://nebiusatlas.com/"
+ },
+ {
+  "id": "sec-0001513845-26-000143",
+  "date": "2026-10-29",
+  "source": "sec",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000143/form4.xml",
+  "severity": "medium",
+  "title": "Insider purchase: Grimme Arne bought $58K",
+  "detail": "Under a 10b5-1 plan"
+ },
+ {
   "id": "jobs-dcloc-5015513101",
   "date": "2026-10-28",
   "source": "jobs",

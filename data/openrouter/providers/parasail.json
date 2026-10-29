@@ -1,6 +1,6 @@
 {
  "provider": "parasail",
- "updatedAt": "2026-10-28T22:53:33.159Z",
+ "updatedAt": "2026-10-29T13:45:56.277Z",
  "days": {
   "2026-07-27": {
    "deepseek/deepseek-v4-flash-20260423": 7341835142,
@@ -1119,16 +1119,28 @@
    "Others": 38454965432
   },
   "2026-10-28": {
-   "deepseek/deepseek-v4.1-flash-20261017": 36287399270,
-   "deepseek/deepseek-v4-flash-20260423": 24076839958,
-   "deepseek/deepseek-v4-flash-20260731": 20445691970,
-   "minimax/minimax-m3.1-flash-20261019": 16129271095,
-   "deepseek/deepseek-v4.1-flash-20260910": 13376139500,
-   "z-ai/glm-5.3-flash-20260826": 7690911725,
-   "openai/gpt-oss-20b": 4916967888,
-   "google/gemma-4-31b-it-20260402": 4718890449,
-   "qwen/qwen3-coder-next-2025-02-03": 4707181936,
-   "Others": 40616389833
+   "deepseek/deepseek-v4.1-flash-20261017": 40226535488,
+   "deepseek/deepseek-v4-flash-20260423": 25478230706,
+   "deepseek/deepseek-v4-flash-20260731": 21088139645,
+   "minimax/minimax-m3.1-flash-20261019": 17127588687,
+   "deepseek/deepseek-v4.1-flash-20260910": 14641442845,
+   "z-ai/glm-5.3-flash-20260826": 8307456334,
+   "qwen/qwen3-coder-next-2025-02-03": 5335247940,
+   "openai/gpt-oss-20b": 5077090109,
+   "google/gemma-4-31b-it-20260402": 5003256651,
+   "Others": 42760141901
+  },
+  "2026-10-29": {
+   "deepseek/deepseek-v4.1-flash-20261017": 29977400602,
+   "deepseek/deepseek-v4.1-flash-20260910": 12725830075,
+   "deepseek/deepseek-v4-flash-20260423": 12106362768,
+   "minimax/minimax-m3.1-flash-20261019": 10901767280,
+   "z-ai/glm-5.3-flash-20260826": 8716740895,
+   "deepseek/deepseek-v4-flash-20260731": 8038052228,
+   "qwen/qwen3.5-9b-20260310": 3144519908,
+   "qwen/qwen3-coder-next-2025-02-03": 2945161192,
+   "qwen/qwen3.8-27b-20260814": 2549479911,
+   "Others": 21787496749
   }
  }
 }
