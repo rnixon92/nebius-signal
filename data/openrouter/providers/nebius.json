@@ -1,6 +1,6 @@
 {
  "provider": "nebius",
- "updatedAt": "2026-10-29T13:45:46.209Z",
+ "updatedAt": "2026-10-29T22:59:50.960Z",
  "days": {
   "2026-07-27": {
    "qwen/qwen3-embedding-8b": 11333107392,
@@ -1104,16 +1104,16 @@
    "Others": 2153262684
   },
   "2026-10-29": {
-   "deepseek/deepseek-v4.1-flash-20261017": 12287570409,
-   "qwen/qwen3-embedding-8b": 12048562368,
-   "reflection/beam-1.0-501b-a23b-20261016": 5493539945,
-   "nvidia/nemotron-3.5-super-vl-20261015": 2811968199,
-   "deepseek/deepseek-v4-pro-20260813": 746467486,
-   "qwen/qwen3-30b-a3b-instruct-2507": 514591420,
-   "openai/gpt-oss-120b": 477623952,
-   "deepseek/deepseek-v4.1-flash-20260910": 474781083,
-   "minimax/minimax-m3.1-flash-20261019": 447167216,
-   "Others": 1744296988
+   "deepseek/deepseek-v4.1-flash-20261017": 21651222719,
+   "qwen/qwen3-embedding-8b": 19720472330,
+   "reflection/beam-1.0-501b-a23b-20261016": 6190881258,
+   "nvidia/nemotron-3.5-super-vl-20261015": 4130216342,
+   "openai/gpt-oss-120b": 2080693602,
+   "deepseek/deepseek-v4.1-flash-20260910": 1423537726,
+   "qwen/qwen3-30b-a3b-instruct-2507": 1065066795,
+   "deepseek/deepseek-v4-pro-20260813": 1009872768,
+   "z-ai/glm-5.3-flash-20260826": 616736334,
+   "Others": 3143661151
   }
  }
 }

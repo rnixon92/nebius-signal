@@ -2372,5 +2372,15 @@
     "acquired": true
    }
   ]
+ },
+ "0001950047-26-010478": {
+  "accession": "0001950047-26-010478",
+  "form": "144",
+  "filed": "2026-10-29",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000195004726010478/primary_doc.xml",
+  "owner": "THE JOHN W BOYNTON IV TR OF 2006",
+  "role": "Director",
+  "proposedShares": 333,
+  "proposedValue": 60719.22
  }
 }

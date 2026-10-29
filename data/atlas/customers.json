@@ -1195,7 +1195,8 @@
   "category": "Health & biotech",
   "use": "Trained a cancer immune-feature model on Nebius AI Cloud.",
   "services": [
-   "Nebius AI Cloud"
+   "Nebius AI Cloud",
+   "Nebius Academy"
   ],
   "workloads": [
    "Model training"
@@ -3011,7 +3012,8 @@
   "category": "Science & research",
   "use": "Uses Nebius compute for mathematics and physics research.",
   "services": [
-   "Nebius AI Cloud"
+   "Nebius AI Cloud",
+   "Nebius Academy"
   ],
   "workloads": [
    "Model training"
@@ -5392,7 +5394,8 @@
   "category": "Science & research",
   "use": "Nebius compute supports mathematics research",
   "services": [
-   "Nebius AI Cloud"
+   "Nebius AI Cloud",
+   "Nebius Academy"
   ],
   "workloads": [],
   "evidence": "documented-use",

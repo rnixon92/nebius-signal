@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-10-29T13:46:06.703Z",
+ "updatedAt": "2026-10-29T23:00:11.200Z",
  "models": {
   "deepseek-ai/DeepSeek-V4-Flash-0731": {
    "id": "deepseek-ai/DeepSeek-V4-Flash-0731",
@@ -398,7 +398,7 @@
    "vendor": "Qwen",
    "type": "text2text",
    "regions": [
-    "eu-north1"
+    "us-central1"
    ],
    "contextK": 262,
    "input": 0.6,

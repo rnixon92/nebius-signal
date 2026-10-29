@@ -7177,7 +7177,9 @@
   "location": "Taiwan",
   "region": "Asia-Pacific",
   "posted": "2026-04-21",
-  "firstSeen": "2026-06-22"
+  "firstSeen": "2026-06-22",
+  "closedAt": "2026-10-29",
+  "closedApprox": false
  },
  "4845016101": {
   "title": "Senior Developer Advocate",
@@ -9265,7 +9267,9 @@
   "location": "Palo Alto, California, United States",
   "region": "Americas",
   "posted": "2026-07-22",
-  "firstSeen": "2026-07-30"
+  "firstSeen": "2026-07-30",
+  "closedAt": "2026-10-29",
+  "closedApprox": false
  },
  "4927011101": {
   "title": "Offensive Security Lead",
@@ -11116,7 +11120,9 @@
   "location": "Amsterdam, Netherlands",
   "region": "Europe & other",
   "posted": "2026-09-02",
-  "firstSeen": "2026-09-04"
+  "firstSeen": "2026-09-04",
+  "closedAt": "2026-10-29",
+  "closedApprox": false
  },
  "4965870101": {
   "title": "Warehouse Logistics Specialist",
@@ -11183,7 +11189,9 @@
   "location": "Amsterdam, Netherlands",
   "region": "Europe & other",
   "posted": "2026-09-04",
-  "firstSeen": "2026-09-04"
+  "firstSeen": "2026-09-04",
+  "closedAt": "2026-10-29",
+  "closedApprox": false
  },
  "4967578101": {
   "title": "  GRC Program Coordinator",
@@ -12418,7 +12426,9 @@
   "location": "South Korea",
   "region": "Asia-Pacific",
   "posted": "2026-10-12",
-  "firstSeen": "2026-10-13"
+  "firstSeen": "2026-10-13",
+  "closedAt": "2026-10-29",
+  "closedApprox": false
  },
  "5000674101": {
   "title": "Senior Program Manager ",
@@ -12883,7 +12893,9 @@
   "location": "Amsterdam, Netherlands",
   "region": "Europe & other",
   "posted": "2026-10-20",
-  "firstSeen": "2026-10-24"
+  "firstSeen": "2026-10-24",
+  "closedAt": "2026-10-29",
+  "closedApprox": false
  },
  "5008964101": {
   "title": "Warehouse and Logistics Team Lead",
@@ -12954,8 +12966,8 @@
   "title": "Senior Support Engineer",
   "dept": "Go-To-Market › Customer Experience › Customer Support",
   "function": "Sales & go-to-market",
-  "location": "Remote",
-  "region": "Remote",
+  "location": "Remote - United States",
+  "region": "Americas",
   "posted": "2026-10-28",
   "firstSeen": "2026-10-28"
  },
@@ -13070,6 +13082,15 @@
   "region": "Europe & other",
   "posted": "2026-10-28",
   "firstSeen": "2026-10-28"
+ },
+ "5017733101": {
+  "title": "Support Engineering Team Lead ",
+  "dept": "Go-To-Market › Customer Experience › Customer Support",
+  "function": "Sales & go-to-market",
+  "location": "United States",
+  "region": "Americas",
+  "posted": "2026-10-29",
+  "firstSeen": "2026-10-29"
  },
  "5017776101": {
   "title": "Head of Communications - EMEA",
