@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-10-29T00:54:58.030Z",
+ "generatedAt": "2026-10-29T07:03:51.259Z",
  "sources": [
   {
    "id": "gpu-ondemand",
@@ -15,8 +15,8 @@
    "label": "Nebius spot price API",
    "url": "https://nebius.com/spot-prices",
    "ok": true,
-   "lastSuccess": "2026-10-29T00:54:51.944Z",
-   "summary": "12 SKUs listed; 12 series, 8616 hourly points",
+   "lastSuccess": "2026-10-29T07:03:45.484Z",
+   "summary": "12 SKUs listed; 12 series, 8628 hourly points",
    "stale": false
   },
   {
@@ -24,7 +24,7 @@
    "label": "Nebius regions docs",
    "url": "https://docs.nebius.com/overview/regions",
    "ok": true,
-   "lastSuccess": "2026-10-29T00:54:52.319Z",
+   "lastSuccess": "2026-10-29T07:03:45.652Z",
    "summary": "10 regions, 6 GPU platforms",
    "stale": false
   },
@@ -42,8 +42,8 @@
    "label": "Google News (data centers)",
    "url": "https://news.google.com/search?q=Nebius%20data%20center",
    "ok": true,
-   "lastSuccess": "2026-10-29T00:54:53.702Z",
-   "summary": "251 headlines fetched; 437 kept, 160 matched to sites",
+   "lastSuccess": "2026-10-29T07:03:47.608Z",
+   "summary": "318 headlines fetched; 443 kept, 161 matched to sites",
    "stale": false
   },
   {
@@ -87,7 +87,7 @@
    "label": "SEC EDGAR",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845",
    "ok": true,
-   "lastSuccess": "2026-10-29T00:54:53.805Z",
+   "lastSuccess": "2026-10-29T07:03:47.686Z",
    "summary": "168 filings since 2025-01-01 (0 parsed this run)",
    "stale": false
   },
@@ -105,7 +105,7 @@
    "label": "Yahoo Finance (NBIS)",
    "url": "https://finance.yahoo.com/quote/NBIS",
    "ok": true,
-   "lastSuccess": "2026-10-29T00:54:58.029Z",
+   "lastSuccess": "2026-10-29T07:03:51.257Z",
    "summary": "NBIS last 2026-10-28 $182.34; 4/4 peers",
    "stale": false
   }
@@ -600,10 +600,10 @@
      "range": null,
      "source": null
     },
-    "estimate": 1330.5274700422997,
-    "low": 1290.6116459410307,
-    "high": 1370.4432941435687,
-    "tilt": 0.02090676765792385,
+    "estimate": 1330.4627628595488,
+    "low": 1290.5488799737623,
+    "high": 1370.3766457453353,
+    "tilt": 0.020857118175087987,
     "lean": "no consensus",
     "coverage": 0.43417964930578185,
     "priorFromLastSurprise": 0.01267828843106178,
@@ -652,21 +652,21 @@
       "id": "blackwell-spot",
       "label": "Blackwell spot vs list",
       "value": "50% average",
-      "score": -0.41606250921421206,
+      "score": -0.4168541353383457,
       "weight": 2,
       "coverage": 0.7241379310344828,
       "note": "Above ~60% means spare Blackwell capacity is being taken up. Market pricing only since Oct 8, 2026; uncapped from Nov 2, so later averages can run higher.",
-      "contribution": -0.004827280818537599
+      "contribution": -0.004836465499973331
      },
      {
       "id": "hopper-spot",
       "label": "Hopper spot vs list",
       "value": "36% average",
-      "score": -0.2962698412698417,
+      "score": -0.303245149911817,
       "weight": 1,
       "coverage": 0.7241379310344828,
       "note": "Low Hopper prices point to idle older GPUs and pricing pressure on renewals. Market pricing only since Oct 8, 2026.",
-      "contribution": -0.0017187053509990142
+      "contribution": -0.0017591701523991458
      },
      {
       "id": "list-price",
@@ -2067,8 +2067,8 @@
     "observedMw": null,
     "dcRolesOpen": 3,
     "dcRolesPosted90d": 2,
-    "news90d": 12,
-    "risk90d": 6,
+    "news90d": 13,
+    "risk90d": 7,
     "progress90d": 0,
     "latest": {
      "title": "Birmingham, developers seek dismissal of lawsuit over Nebius data center project",
@@ -2634,6 +2634,16 @@
     "tag": null
    },
    {
+    "title": "Action picks up in lawsuits targeting Birmingham data center",
+    "publisher": "WBHM",
+    "date": "2026-09-18",
+    "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNd2hIcFNuMkN2eGNPVFQ1NEU2MDFRYXh6Zk92N0kyNTNYSVJ1RTFJZHJQajgwdUpUdWwtc0dIV09ac1d2MHJFenVfN0d6R3hJcFpYX21sYTl6RnI5VlR3WWRmbnF3bDladzNhckJPdmFjSDlBdzhlV3R1a1pOVFVxN05oTzJFeEtvQklnX3pwSkZOQm5QMWdOYVpRM3RQb3FjM01rTkVR?oc=5",
+    "sites": [
+     "birmingham"
+    ],
+    "tag": "risk"
+   },
+   {
     "title": "Judge in Jefferson County merges Birmingham lawsuits over Nebius AI Factory zoning and construction impacts",
     "publisher": "wvtm",
     "date": "2026-09-17",
@@ -2902,16 +2912,6 @@
      "independence"
     ],
     "tag": "risk"
-   },
-   {
-    "title": "Nebius to lease data center capacity from Vantage in Newport, Wales",
-    "publisher": "Data Center Dynamics",
-    "date": "2026-08-13",
-    "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQNy1yLVhpUTIxdmYxRkJSNUVkb2h0NlRKamFpMXJnYnN4TXNOSEgtd0Y0WXQwdHhxS0NOd0Jybkh5WU1aZV9MVk91MFp1VkgxSG9hSnMzNzQyamROVDdVa2ZiTTFRX0U3Zzl1ck9LM19Fd2FiRXh2d1lIZmlIWC1UeEY0SWJ6Vko0SkVEWERuRTNGQXZ5QXZMazZBT1lRM0ppRk5CM2g1UlpSMGFrSGhF?oc=5",
-    "sites": [
-     "uk-newport"
-    ],
-    "tag": null
    }
   ],
   "regionChanges": []
@@ -12613,7 +12613,7 @@
   ]
  },
  "gpu": {
-  "snapshotTime": "2026-10-29T00:50:01.303668Z",
+  "snapshotTime": "2026-10-29T06:59:05.693008Z",
   "onDemand": [
    {
     "name": "NVIDIA GB300 NVL72",
@@ -12717,15 +12717,8 @@
     "price": 9.49,
     "onDemand": 9.5,
     "ratio": 0.9989,
-    "effectiveTime": "2026-10-29T00:36:00Z",
+    "effectiveTime": "2026-10-29T05:51:00Z",
     "spark": [
-     6.19,
-     6.64,
-     6.79,
-     6.64,
-     6.79,
-     7.24,
-     7.49,
      7.24,
      6.94,
      6.49,
@@ -12887,25 +12880,25 @@
      9.34,
      9.49,
      9.34,
-     9.34
+     9.34,
+     9.34,
+     9.34,
+     9.34,
+     8.89,
+     9.19,
+     9.49,
+     9.49
     ]
    },
    {
     "skuId": "sku-e00fmto201j24eyp0841g",
     "family": "B300",
     "region": "uk-south1",
-    "price": 5.5,
+    "price": 4.9,
     "onDemand": 9.5,
-    "ratio": 0.5789,
-    "effectiveTime": "2026-10-28T23:11:00Z",
+    "ratio": 0.5158,
+    "effectiveTime": "2026-10-29T06:11:00Z",
     "spark": [
-     5.95,
-     5.8,
-     5.2,
-     4.6,
-     4.45,
-     4.5,
-     4.75,
      5.05,
      5.35,
      5.5,
@@ -13067,7 +13060,14 @@
      4.75,
      5.05,
      5.35,
-     5.5
+     5.5,
+     5.5,
+     5.5,
+     5.5,
+     5.2,
+     4.75,
+     4.75,
+     4.9
     ]
    },
    {
@@ -13079,13 +13079,6 @@
     "ratio": 0.2105,
     "effectiveTime": "2026-10-28T15:26:00Z",
     "spark": [
-     4.99,
-     4.54,
-     4.54,
-     4.39,
-     3.79,
-     3.64,
-     4.09,
      4.54,
      4.84,
      5.29,
@@ -13247,6 +13240,13 @@
      2,
      2,
      2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
      2
     ]
    },
@@ -13254,18 +13254,11 @@
     "skuId": "sku-e00k58wq19wjszct65fwm",
     "family": "B200",
     "region": "me-west1",
-    "price": 7.1,
+    "price": 5.6,
     "onDemand": 8.5,
-    "ratio": 0.8353,
-    "effectiveTime": "2026-10-29T00:31:00Z",
+    "ratio": 0.6588,
+    "effectiveTime": "2026-10-29T06:41:00Z",
     "spark": [
-     4.85,
-     5.15,
-     5.45,
-     5.7,
-     5.75,
-     6.2,
-     6.35,
      5.9,
      6.05,
      6.65,
@@ -13427,25 +13420,25 @@
      6.1,
      6,
      6.45,
-     6.833333333
+     6.833333333,
+     7.4,
+     7.55,
+     7.1,
+     6.5,
+     6.05,
+     5.75,
+     5.6
     ]
    },
    {
     "skuId": "sku-e00fjjc4gwdx48pck9b46",
     "family": "B200",
     "region": "us-central1",
-    "price": 5,
+    "price": 4.4,
     "onDemand": 8.5,
-    "ratio": 0.5882,
-    "effectiveTime": "2026-10-29T00:06:00Z",
+    "ratio": 0.5176,
+    "effectiveTime": "2026-10-29T06:36:00Z",
     "spark": [
-     4.5,
-     4.5,
-     4.5,
-     4.65,
-     4.95,
-     5.2,
-     4.95,
      4.65,
      4.2,
      3.75,
@@ -13607,25 +13600,25 @@
      5,
      4.7,
      4.55,
-     4.85
+     4.85,
+     5,
+     5,
+     5,
+     5,
+     4.85,
+     4.55,
+     4.4
     ]
    },
    {
     "skuId": "sku-e00agrh84hf7fwlrgsfsv",
     "family": "H200",
     "region": "eu-north1",
-    "price": 3,
+    "price": 2.7,
     "onDemand": 5.4,
-    "ratio": 0.5556,
-    "effectiveTime": "2026-10-28T23:11:00Z",
+    "ratio": 0.5,
+    "effectiveTime": "2026-10-29T07:01:00Z",
     "spark": [
-     2,
-     2,
-     2,
-     2,
-     2,
-     2,
-     1.9,
      2,
      2.15,
      2.375,
@@ -13787,25 +13780,25 @@
      2.35,
      2.5,
      2.9,
-     3
+     3,
+     3,
+     3,
+     3,
+     3,
+     2.7,
+     2.3,
+     2.55
     ]
    },
    {
     "skuId": "sku-e00dh1moiqg9mc5ix6wj2",
     "family": "H200",
     "region": "eu-west1",
-    "price": 5.09,
+    "price": 4.79,
     "onDemand": 5.4,
-    "ratio": 0.9426,
-    "effectiveTime": "2026-10-29T00:36:00Z",
+    "ratio": 0.887,
+    "effectiveTime": "2026-10-29T06:51:00Z",
     "spark": [
-     5.24,
-     5.09,
-     4.64,
-     4.34,
-     4.09,
-     4.04,
-     3.79,
      4.04,
      4.34,
      4.59,
@@ -13967,7 +13960,14 @@
      5.39,
      5.39,
      5.39,
-     5.24
+     5.24,
+     5.24,
+     5.09,
+     4.64,
+     4.34,
+     4.09,
+     4.49,
+     4.79
     ]
    },
    {
@@ -13979,13 +13979,6 @@
     "ratio": 0.5556,
     "effectiveTime": "2026-10-29T00:31:00Z",
     "spark": [
-     4.25,
-     4.45,
-     4.5,
-     4.35,
-     3.75,
-     3.15,
-     2.7,
      2.25,
      1.8,
      1.35,
@@ -14147,25 +14140,25 @@
      1.85,
      2.15,
      2.6,
-     2.95
+     2.95,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3,
+     3
     ]
    },
    {
     "skuId": "sku-e00ljkedv5qtbwhikuoct",
     "family": "H100",
     "region": "eu-north1",
-    "price": 1.4,
+    "price": 0.79,
     "onDemand": 4.5,
-    "ratio": 0.3111,
-    "effectiveTime": "2026-10-29T00:51:00Z",
+    "ratio": 0.1756,
+    "effectiveTime": "2026-10-29T06:06:00Z",
     "spark": [
-     0.79,
-     0.79,
-     0.79,
-     0.79,
-     0.79,
-     0.79,
-     0.79,
      0.79,
      0.79,
      0.79,
@@ -14327,7 +14320,14 @@
      1.85,
      1.85,
      1.85,
-     1.55
+     1.55,
+     1.55,
+     1.8,
+     1.4,
+     0.95,
+     0.835,
+     0.83,
+     0.79
     ]
    },
    {
@@ -14339,13 +14339,6 @@
     "ratio": 0.7667,
     "effectiveTime": "2026-10-28T16:26:00Z",
     "spark": [
-     1.38,
-     1.38,
-     1.38,
-     1.38,
-     1.38,
-     1.38,
-     1.38,
      1.38,
      1.38,
      1.38,
@@ -14507,6 +14500,13 @@
      1.38,
      1.38,
      1.38,
+     1.38,
+     1.38,
+     1.38,
+     1.38,
+     1.38,
+     1.38,
+     1.38,
      1.38
     ]
    },
@@ -14519,13 +14519,6 @@
     "ratio": 0.7667,
     "effectiveTime": "2026-10-28T16:06:00Z",
     "spark": [
-     0.79,
-     0.79,
-     0.79,
-     0.79,
-     0.79,
-     0.86,
-     0.86,
      0.79,
      0.79,
      0.895,
@@ -14687,6 +14680,13 @@
      1.38,
      1.38,
      1.38,
+     1.38,
+     1.38,
+     1.38,
+     1.38,
+     1.38,
+     1.38,
+     1.38,
      1.38
     ]
    },
@@ -14694,18 +14694,11 @@
     "skuId": "sku-e00otwkvc6gea6nmvvsda",
     "family": "RTX PRO 6000",
     "region": "us-central1",
-    "price": 1.39,
+    "price": 0.79,
     "onDemand": 1.8,
-    "ratio": 0.7722,
-    "effectiveTime": "2026-10-29T00:46:00Z",
+    "ratio": 0.4389,
+    "effectiveTime": "2026-10-29T06:41:00Z",
     "spark": [
-     1.49,
-     1.04,
-     0.84,
-     0.79,
-     0.94,
-     0.99,
-     1.24,
      1.24,
      0.94,
      0.89,
@@ -14867,7 +14860,14 @@
      1.26,
      1.11,
      0.8,
-     1.09
+     1.09,
+     1.39,
+     1.54,
+     1.69,
+     1.54,
+     1.24,
+     0.94,
+     0.79
     ]
    }
   ],
@@ -15041,11 +15041,11 @@
    },
    {
     "date": "2026-10-29",
-    "B300": 0.5882,
-    "B200": 0.6672,
-    "H200": 0.6815,
-    "H100": 0.3778,
-    "RTX PRO 6000": 0.6861
+    "B300": 0.5798,
+    "B200": 0.6695,
+    "H200": 0.6537,
+    "H100": 0.2853,
+    "RTX PRO 6000": 0.7378
    }
   ],
   "priceDaily": [
@@ -15212,10 +15212,10 @@
    {
     "date": "2026-10-29",
     "B300": 2,
-    "B200": 4.7,
-    "H200": 2.775,
-    "H100": 1.7,
-    "RTX PRO 6000": 0.945
+    "B200": 4.8,
+    "H200": 2.828,
+    "H100": 1.284,
+    "RTX PRO 6000": 1.224
    }
   ],
   "availability": [
@@ -15245,8 +15245,8 @@
    }
   ],
   "tightness": {
-   "blackwell": 0.6423599999999999,
-   "hopper": 0.591225
+   "blackwell": 0.58032,
+   "hopper": 0.5295500000000001
   },
   "pools": [
    {
@@ -15613,18 +15613,18 @@
    },
    {
     "date": "2026-10-29",
-    "sku-e00vd4x28cozliwb6g4vh": 0.9832,
-    "sku-e00fmto201j24eyp0841g": 0.5711,
+    "sku-e00vd4x28cozliwb6g4vh": 0.9797,
+    "sku-e00fmto201j24eyp0841g": 0.5492,
     "sku-e00hfg6dlxtt9ji6fqo9u": 0.2105,
-    "sku-e00k58wq19wjszct65fwm": 0.7814,
-    "sku-e00fjjc4gwdx48pck9b46": 0.5529,
-    "sku-e00agrh84hf7fwlrgsfsv": 0.5463,
-    "sku-e00dh1moiqg9mc5ix6wj2": 0.9843,
-    "sku-e00em8l461xmyihec7sr8": 0.5139,
-    "sku-e00ljkedv5qtbwhikuoct": 0.3778,
+    "sku-e00k58wq19wjszct65fwm": 0.7742,
+    "sku-e00fjjc4gwdx48pck9b46": 0.5647,
+    "sku-e00agrh84hf7fwlrgsfsv": 0.5237,
+    "sku-e00dh1moiqg9mc5ix6wj2": 0.8911,
+    "sku-e00em8l461xmyihec7sr8": 0.5463,
+    "sku-e00ljkedv5qtbwhikuoct": 0.2853,
     "sku-e00g61h0323jih8tkg5jv": 0.7667,
     "sku-e00lxawt0lavf9i0dutiz": 0.7667,
-    "sku-e00otwkvc6gea6nmvvsda": 0.525
+    "sku-e00otwkvc6gea6nmvvsda": 0.68
    }
   ],
   "poolPriceDaily": [
@@ -15930,18 +15930,18 @@
    },
    {
     "date": "2026-10-29",
-    "sku-e00vd4x28cozliwb6g4vh": 9.34,
-    "sku-e00fmto201j24eyp0841g": 5.425,
+    "sku-e00vd4x28cozliwb6g4vh": 9.307,
+    "sku-e00fmto201j24eyp0841g": 5.217,
     "sku-e00hfg6dlxtt9ji6fqo9u": 2,
-    "sku-e00k58wq19wjszct65fwm": 6.642,
-    "sku-e00fjjc4gwdx48pck9b46": 4.7,
-    "sku-e00agrh84hf7fwlrgsfsv": 2.95,
-    "sku-e00dh1moiqg9mc5ix6wj2": 5.315,
-    "sku-e00em8l461xmyihec7sr8": 2.775,
-    "sku-e00ljkedv5qtbwhikuoct": 1.7,
+    "sku-e00k58wq19wjszct65fwm": 6.581,
+    "sku-e00fjjc4gwdx48pck9b46": 4.8,
+    "sku-e00agrh84hf7fwlrgsfsv": 2.828,
+    "sku-e00dh1moiqg9mc5ix6wj2": 4.812,
+    "sku-e00em8l461xmyihec7sr8": 2.95,
+    "sku-e00ljkedv5qtbwhikuoct": 1.284,
     "sku-e00g61h0323jih8tkg5jv": 1.38,
     "sku-e00lxawt0lavf9i0dutiz": 1.38,
-    "sku-e00otwkvc6gea6nmvvsda": 0.945
+    "sku-e00otwkvc6gea6nmvvsda": 1.224
    }
   ],
   "regionWeights": [
