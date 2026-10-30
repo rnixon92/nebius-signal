@@ -1,5 +1,14 @@
 [
  {
+  "id": "sec-0001513845-26-000145",
+  "date": "2026-10-30",
+  "source": "sec",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000145/form4.xml",
+  "severity": "medium",
+  "title": "Insider purchase: Grimme Arne bought $25K",
+  "detail": "Under a 10b5-1 plan"
+ },
+ {
   "id": "or-wow-2026-10-29",
   "date": "2026-10-30",
   "source": "openrouter",

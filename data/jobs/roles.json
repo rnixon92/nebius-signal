@@ -10778,7 +10778,9 @@
   "location": "United States",
   "region": "Americas",
   "posted": "2026-08-25",
-  "firstSeen": "2026-09-04"
+  "firstSeen": "2026-09-04",
+  "closedAt": "2026-10-30",
+  "closedApprox": false
  },
  "4958485101": {
   "title": "Security Engineering Lead",
@@ -12051,6 +12053,15 @@
   "posted": "2026-09-28",
   "firstSeen": "2026-10-04"
  },
+ "4988767101": {
+  "title": "U.S. Regional Intelligence Analyst",
+  "dept": "Communications › PR",
+  "function": "G&A & other",
+  "location": "United States",
+  "region": "Americas",
+  "posted": "2026-10-05",
+  "firstSeen": "2026-10-30"
+ },
  "4988854101": {
   "title": "Automation Engineer (Customer Service)",
   "dept": "Customer Experience",
@@ -12984,6 +12995,15 @@
   "posted": "2026-10-19",
   "firstSeen": "2026-10-20"
  },
+ "5009936101": {
+  "title": "Warehouse Logistics Specialist",
+  "dept": "Product & Infrastructure › Infrastructure",
+  "function": "Engineering & product",
+  "location": "Chennai, Tamil Nadu, India",
+  "region": "Asia-Pacific",
+  "posted": "2026-10-30",
+  "firstSeen": "2026-10-30"
+ },
  "5010126101": {
   "title": "Senior Support Engineer",
   "dept": "Go-To-Market › Customer Experience › Customer Support",
@@ -13132,6 +13152,24 @@
   "posted": "2026-10-29",
   "firstSeen": "2026-10-29"
  },
+ "5017942101": {
+  "title": "Head of Financial Internal Controls ",
+  "dept": "Corporate",
+  "function": "G&A & other",
+  "location": "Amsterdam, Netherlands",
+  "region": "Europe & other",
+  "posted": "2026-10-30",
+  "firstSeen": "2026-10-30"
+ },
+ "5017949101": {
+  "title": "Product & Technology Communications Lead Job Description ",
+  "dept": "Corporate",
+  "function": "Engineering & product",
+  "location": "United States",
+  "region": "Americas",
+  "posted": "2026-10-30",
+  "firstSeen": "2026-10-30"
+ },
  "5018233101": {
   "title": "Business Operations Team Lead",
   "dept": "Corporate › Operations › Business Operations (O) › P2P Operations",
@@ -13165,6 +13203,15 @@
   "function": "Data center & power",
   "location": "Lappeenranta, Finland",
   "region": "Europe & other",
+  "posted": "2026-10-30",
+  "firstSeen": "2026-10-30"
+ },
+ "5024143101": {
+  "title": "Network Supply Manager",
+  "dept": "Product & Infrastructure › Infrastructure › Network Infrastructure",
+  "function": "Engineering & product",
+  "location": "Remote - United States",
+  "region": "Americas",
   "posted": "2026-10-30",
   "firstSeen": "2026-10-30"
  }

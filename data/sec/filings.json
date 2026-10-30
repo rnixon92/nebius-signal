@@ -2382,5 +2382,23 @@
   "role": "Director",
   "proposedShares": 333,
   "proposedValue": 60719.22
+ },
+ "0001513845-26-000145": {
+  "accession": "0001513845-26-000145",
+  "form": "4",
+  "filed": "2026-10-30",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000145/form4.xml",
+  "owner": "Grimme Arne",
+  "role": "Director",
+  "plan10b5": true,
+  "trades": [
+   {
+    "date": "2026-10-29",
+    "code": "P",
+    "shares": 148,
+    "price": 169.42,
+    "acquired": true
+   }
+  ]
  }
 }

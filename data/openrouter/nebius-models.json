@@ -45,7 +45,7 @@
   "output": 0.6,
   "cacheRead": 0.015,
   "firstSeen": "2026-10-24",
-  "lastSeen": "2026-10-29"
+  "lastSeen": "2026-10-30"
  },
  "moonshotai/kimi-k2.7-code-20260612": {
   "name": "moonshotai/kimi-k2.7-code",
@@ -77,7 +77,7 @@
   "output": 0.9,
   "cacheRead": 0.06,
   "firstSeen": "2026-10-26",
-  "lastSeen": "2026-10-29"
+  "lastSeen": "2026-10-30"
  },
  "openai/gpt-oss-120b": {
   "name": "openai/gpt-oss-120b",

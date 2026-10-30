@@ -1,6 +1,6 @@
 {
  "provider": "parasail",
- "updatedAt": "2026-10-30T13:38:49.565Z",
+ "updatedAt": "2026-10-30T22:40:56.737Z",
  "days": {
   "2026-07-27": {
    "deepseek/deepseek-v4-flash-20260423": 7341835142,
@@ -1143,16 +1143,16 @@
    "Others": 39303610696
   },
   "2026-10-30": {
-   "deepseek/deepseek-v4.1-flash-20260910": 34830909435,
-   "deepseek/deepseek-v4.1-flash-20261017": 15718548051,
-   "minimax/minimax-m3.1-flash-20261019": 12745434215,
-   "deepseek/deepseek-v4-flash-20260731": 10881648347,
-   "deepseek/deepseek-v4-flash-20260423": 8776935312,
-   "z-ai/glm-5.3-flash-20260826": 8228119499,
-   "google/gemma-4-31b-it-20260402": 2833079564,
-   "qwen/qwen3.5-9b-20260310": 2687942005,
-   "baai/bge-m3-20251117": 2544101677,
-   "Others": 19521779364
+   "deepseek/deepseek-v4.1-flash-20260910": 52471874741,
+   "deepseek/deepseek-v4.1-flash-20261017": 32725567446,
+   "minimax/minimax-m3.1-flash-20261019": 22254370905,
+   "deepseek/deepseek-v4-flash-20260731": 19962877880,
+   "deepseek/deepseek-v4-flash-20260423": 15791551191,
+   "z-ai/glm-5.3-flash-20260826": 11201253581,
+   "google/gemma-4-31b-it-20260402": 6376006929,
+   "baai/bge-m3-20251117": 4861640177,
+   "qwen/qwen3.6-35b-a3b-20260415": 4095555582,
+   "Others": 35640608125
   }
  }
 }
