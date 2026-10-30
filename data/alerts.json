@@ -1,5 +1,23 @@
 [
  {
+  "id": "spot-cap-sku-e00dh1moiqg9mc5ix6wj2-2026-10-30",
+  "date": "2026-10-30",
+  "source": "gpu-spot",
+  "severity": "medium",
+  "title": "H200 spot near its cap in eu-west1: $5.39 vs $5.4 on-demand",
+  "detail": "100% of on-demand. Spare capacity is almost gone.",
+  "url": "https://nebius.com/spot-prices"
+ },
+ {
+  "id": "spot-cap-sku-e00em8l461xmyihec7sr8-2026-10-30",
+  "date": "2026-10-30",
+  "source": "gpu-spot",
+  "severity": "medium",
+  "title": "H200 spot near its cap in us-central1: $5.39 vs $5.4 on-demand",
+  "detail": "100% of on-demand. Spare capacity is almost gone.",
+  "url": "https://nebius.com/spot-prices"
+ },
+ {
   "id": "spot-cap-sku-e00agrh84hf7fwlrgsfsv-2026-10-29",
   "date": "2026-10-29",
   "source": "gpu-spot",
