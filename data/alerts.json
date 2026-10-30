@@ -1,5 +1,32 @@
 [
  {
+  "id": "or-wow-2026-10-29",
+  "date": "2026-10-30",
+  "source": "openrouter",
+  "severity": "medium",
+  "title": "Nebius OpenRouter tokens up 76% week over week",
+  "detail": "381.8B tokens in the 7 days to 2026-10-29 vs 216.5B the week before",
+  "url": "https://openrouter.ai/provider/nebius"
+ },
+ {
+  "id": "atlas-added-2026-10-30",
+  "date": "2026-10-30",
+  "source": "atlas",
+  "severity": "info",
+  "title": "5 new customers on Nebius Atlas",
+  "detail": "Astelia, Ganju, Hypatos, Plaithy, Telem AI",
+  "url": "https://nebiusatlas.com/"
+ },
+ {
+  "id": "jobs-dcloc-4973315101",
+  "date": "2026-10-30",
+  "source": "jobs",
+  "severity": "medium",
+  "title": "Data-center hiring in a new location: Longcross, United Kingdom",
+  "detail": "L1 Data Centre IT Technician (posted 2026-10-30)",
+  "url": "https://careers.nebius.com/job?gh_jid=4973315101"
+ },
+ {
   "id": "spot-cap-sku-e00dh1moiqg9mc5ix6wj2-2026-10-30",
   "date": "2026-10-30",
   "source": "gpu-spot",

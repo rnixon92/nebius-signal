@@ -5454,7 +5454,9 @@
   "location": "Israel",
   "region": "Israel",
   "posted": "2026-04-21",
-  "firstSeen": "2026-06-22"
+  "firstSeen": "2026-06-22",
+  "closedAt": "2026-10-30",
+  "closedApprox": false
  },
  "4784215101": {
   "title": "Data Center Regional Operations Manager",
@@ -10916,7 +10918,9 @@
   "location": "Prague, Czech Republic",
   "region": "Europe & other",
   "posted": "2026-09-02",
-  "firstSeen": "2026-09-04"
+  "firstSeen": "2026-09-04",
+  "closedAt": "2026-10-30",
+  "closedApprox": false
  },
  "4960679101": {
   "title": "Solutions Architect",
@@ -11428,6 +11432,15 @@
   "firstSeen": "2026-09-14",
   "closedAt": "2026-10-27",
   "closedApprox": false
+ },
+ "4973315101": {
+  "title": "L1 Data Centre IT Technician",
+  "dept": "Product & Infrastructure › Infrastructure › EMEA-DC IT Infrastructure › DC UK IT Support Group",
+  "function": "Data center & power",
+  "location": "Longcross, United Kingdom",
+  "region": "Europe & other",
+  "posted": "2026-10-30",
+  "firstSeen": "2026-10-30"
  },
  "4973519101": {
   "title": "Engineering Manager - Network Infrastructure- US ",
@@ -12944,6 +12957,15 @@
   "posted": "2026-10-28",
   "firstSeen": "2026-10-28"
  },
+ "5009601101": {
+  "title": "Senior Customer AI Engineer - Token Factory",
+  "dept": "New Products › Token Factory-NP › Customer Delivery & Success › Technical Account Management",
+  "function": "Sales & go-to-market",
+  "location": "Tel Aviv, Israel",
+  "region": "Israel",
+  "posted": "2026-10-30",
+  "firstSeen": "2026-10-30"
+ },
  "5009640101": {
   "title": "Regional Environmental, Health & Safety Specialist",
   "dept": "Corporate › People › HR Services › EHS",
@@ -13110,6 +13132,24 @@
   "posted": "2026-10-29",
   "firstSeen": "2026-10-29"
  },
+ "5018233101": {
+  "title": "Business Operations Team Lead",
+  "dept": "Corporate › Operations › Business Operations (O) › P2P Operations",
+  "function": "G&A & other",
+  "location": "Amsterdam, Netherlands",
+  "region": "Europe & other",
+  "posted": "2026-10-30",
+  "firstSeen": "2026-10-30"
+ },
+ "5018234101": {
+  "title": "Operations Specialist",
+  "dept": "Corporate › Operations › Business Operations (O) › P2P Operations",
+  "function": "G&A & other",
+  "location": "Amsterdam, Netherlands",
+  "region": "Europe & other",
+  "posted": "2026-10-30",
+  "firstSeen": "2026-10-30"
+ },
  "5018716101": {
   "title": "Site Selection & Colocation Manager – Data Centers",
   "dept": "Product & Infrastructure › Infrastructure",
@@ -13118,5 +13158,14 @@
   "region": "Asia-Pacific",
   "posted": "2026-10-28",
   "firstSeen": "2026-10-28"
+ },
+ "5022195101": {
+  "title": "Data Center L1 IT Technician (Lappeenranta)",
+  "dept": "Product & Infrastructure › Infrastructure",
+  "function": "Data center & power",
+  "location": "Lappeenranta, Finland",
+  "region": "Europe & other",
+  "posted": "2026-10-30",
+  "firstSeen": "2026-10-30"
  }
 }
