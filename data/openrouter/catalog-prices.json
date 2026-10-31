@@ -26,7 +26,7 @@
  "~deepseek/deepseek-flash-latest": {
   "name": "~deepseek/deepseek-flash-latest",
   "input": 0.0141,
-  "output": 0.144,
+  "output": 0.11,
   "cacheRead": 0.013
  },
  "~deepseek/deepseek-pro-latest": {
@@ -37,9 +37,9 @@
  },
  "~deepseek/deepseek-v4-flash-latest": {
   "name": "~deepseek/deepseek-v4-flash-latest",
-  "input": 0.05764,
-  "output": 0.17292,
-  "cacheRead": 0.001834
+  "input": 0.0461,
+  "output": 0.3,
+  "cacheRead": 0.035
  },
  "~google/gemini-flash-latest": {
   "name": "~google/gemini-flash-latest",
@@ -103,9 +103,9 @@
  },
  "~z-ai/glm-flash-latest": {
   "name": "~z-ai/glm-flash-latest",
-  "input": 0.0163,
-  "output": 0.1479,
-  "cacheRead": 0.0163
+  "input": 0.0149,
+  "output": 0.1543,
+  "cacheRead": 0.0149
  },
  "~z-ai/glm-latest": {
   "name": "~z-ai/glm-latest",
@@ -421,9 +421,9 @@
  },
  "deepseek/deepseek-v4-pro-20260813": {
   "name": "deepseek/deepseek-v4-pro-0813",
-  "input": 0.66,
-  "output": 1.98,
-  "cacheRead": 0.022
+  "input": 0.115,
+  "output": 4,
+  "cacheRead": 0.11
  },
  "deepseek/deepseek-v4.1-flash-20260910": {
   "name": "deepseek/deepseek-v4.1-flash",
@@ -871,9 +871,9 @@
  },
  "minimax/minimax-m3.1-flash-20261019": {
   "name": "minimax/minimax-m3.1-flash",
-  "input": 0.15,
-  "output": 0.6,
-  "cacheRead": 0.015
+  "input": 0.075,
+  "output": 0.3,
+  "cacheRead": 0.0075
  },
  "mistralai/codestral-2508": {
   "name": "mistralai/codestral-2508",
@@ -1981,9 +1981,9 @@
  },
  "tencent/hy3-20260706": {
   "name": "tencent/hy3",
-  "input": 0.132,
-  "output": 0.528,
-  "cacheRead": 0.033
+  "input": 0.0825,
+  "output": 0.33,
+  "cacheRead": 0.020625
  },
  "tencent/hy3-preview-20260421": {
   "name": "tencent/hy3-preview",
@@ -1993,9 +1993,9 @@
  },
  "tencent/hy4-preview-20260827": {
   "name": "tencent/hy4-preview",
-  "input": 0.834,
-  "output": 2.501,
-  "cacheRead": 0.042
+  "input": 0.7506,
+  "output": 2.2509,
+  "cacheRead": 0.0378
  },
  "thedrummer/cydonia-24b-v4.1": {
   "name": "thedrummer/cydonia-24b-v4.1",
@@ -2185,9 +2185,9 @@
  },
  "z-ai/glm-4.7-20251222": {
   "name": "z-ai/glm-4.7",
-  "input": 0.54,
-  "output": 1.98,
-  "cacheRead": 0.099
+  "input": 0.6,
+  "output": 2.2,
+  "cacheRead": 0.11
  },
  "z-ai/glm-4.7-flash-20260119": {
   "name": "z-ai/glm-4.7-flash",
@@ -2227,9 +2227,9 @@
  },
  "z-ai/glm-5.3-flash-20260826": {
   "name": "z-ai/glm-5.3-flash",
-  "input": 0.0163,
-  "output": 0.1479,
-  "cacheRead": 0.0163
+  "input": 0.0149,
+  "output": 0.1543,
+  "cacheRead": 0.0149
  },
  "z-ai/glm-5.3-flashx-20260918": {
   "name": "z-ai/glm-5.3-flashx",

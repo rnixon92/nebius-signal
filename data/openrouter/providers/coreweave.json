@@ -1,6 +1,6 @@
 {
  "provider": "coreweave",
- "updatedAt": "2026-10-31T13:07:52.783Z",
+ "updatedAt": "2026-10-31T21:54:38.117Z",
  "days": {
   "2026-07-27": {
    "z-ai/glm-5.2-20260616": 13924780831,
@@ -1155,16 +1155,16 @@
    "Others": 16999007150
   },
   "2026-10-31": {
-   "z-ai/glm-5.3-flash-20260826": 89960166841,
-   "deepseek/deepseek-v4.1-flash-20260910": 75032159330,
-   "deepseek/deepseek-v4-flash-20260731": 19983560186,
-   "z-ai/glm-5.2-20260616": 7331738797,
-   "openai/gpt-oss-120b": 5776834202,
-   "google/gemma-4-31b-it-20260402": 4862944396,
-   "openai/gpt-oss-20b": 3744291428,
-   "deepseek/deepseek-v4-pro-20260813": 1796887792,
-   "moonshotai/kimi-k2.6-20260420": 1583091486,
-   "Others": 6966443714
+   "deepseek/deepseek-v4.1-flash-20260910": 162495689385,
+   "z-ai/glm-5.3-flash-20260826": 136665481710,
+   "deepseek/deepseek-v4-flash-20260731": 32247473935,
+   "z-ai/glm-5.2-20260616": 15433994526,
+   "google/gemma-4-31b-it-20260402": 15267178249,
+   "openai/gpt-oss-120b": 7062008448,
+   "openai/gpt-oss-20b": 5660781254,
+   "deepseek/deepseek-v4-pro-20260813": 4904802152,
+   "moonshotai/kimi-k2.6-20260420": 3471227697,
+   "Others": 11505467784
   }
  }
 }
