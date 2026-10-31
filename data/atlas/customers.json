@@ -7,7 +7,8 @@
    "Nebius AI Cloud"
   ],
   "workloads": [
-   "Model training"
+   "Model training",
+   "Storage"
   ],
   "evidence": "documented-use",
   "firstListedAt": "2026-10-29",
@@ -448,7 +449,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-25",
   "baseline": false,
-  "latestEvidence": "2026-10-29"
+  "latestEvidence": "2026-10-31"
  },
  "astelia": {
   "name": "Astelia",
@@ -463,7 +464,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-30",
   "baseline": false,
-  "latestEvidence": "2026-10-30"
+  "latestEvidence": "2026-10-29"
  },
  "ataraxis-ai": {
   "name": "Ataraxis AI",
@@ -846,6 +847,21 @@
   "baseline": false,
   "latestEvidence": "2026-10-18"
  },
+ "bonsai": {
+  "name": "Bonsai",
+  "category": "Workplace tools",
+  "use": "Tavily powers default hosted web search.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-31",
+  "baseline": false,
+  "latestEvidence": "2026-10-31"
+ },
  "botts-ai": {
   "name": "botts.ai",
   "category": "Workplace tools",
@@ -920,7 +936,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-22",
   "baseline": false,
-  "latestEvidence": "2026-10-25"
+  "latestEvidence": "2026-10-31"
  },
  "businessmcp": {
   "name": "BusinessMCP",
@@ -1638,6 +1654,21 @@
   "baseline": false,
   "latestEvidence": "2026-09-27"
  },
+ "elo": {
+  "name": "Elo",
+  "category": "Workplace tools",
+  "use": "Routes web searches through Tavily with its own provider key.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-31",
+  "baseline": false,
+  "latestEvidence": "2026-10-31"
+ },
  "estateview": {
   "name": "EstateView",
   "category": "Finance",
@@ -1831,6 +1862,21 @@
   "firstListedAt": "2026-09-27",
   "baseline": false,
   "latestEvidence": "2026-09-27"
+ },
+ "forecasting-research-institute": {
+  "name": "Forecasting Research Institute",
+  "category": "Science & research",
+  "use": "Tavily search for agentic forecasting",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-31",
+  "baseline": false,
+  "latestEvidence": "2026-10-31"
  },
  "forestvpn": {
   "name": "ForestVPN",
@@ -2525,7 +2571,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-25"
+  "latestEvidence": "2026-10-31"
  },
  "jinbay": {
   "name": "Jinbay",
@@ -2589,6 +2635,21 @@
   "baseline": false,
   "latestEvidence": "2026-10-19"
  },
+ "kaldune": {
+  "name": "Kaldune",
+  "category": "Business services",
+  "use": "Tavily search and page retrieval for research briefs",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-31",
+  "baseline": false,
+  "latestEvidence": "2026-10-31"
+ },
  "kaon-ai": {
   "name": "Kaon AI",
   "category": "Media & creativity",
@@ -2632,7 +2693,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-25",
   "baseline": false,
-  "latestEvidence": "2026-10-28"
+  "latestEvidence": "2026-10-31"
  },
  "kindora": {
   "name": "Kindora",
@@ -3067,6 +3128,21 @@
   "baseline": false,
   "latestEvidence": "2026-10-18"
  },
+ "loquent": {
+  "name": "Loquent",
+  "category": "Workplace tools",
+  "use": "Tavily search and crawling for research and onboarding",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-31",
+  "baseline": false,
+  "latestEvidence": "2026-10-31"
+ },
  "loyjoy": {
   "name": "LoyJoy",
   "category": "Workplace tools",
@@ -3081,7 +3157,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-26",
   "baseline": false,
-  "latestEvidence": "2026-10-26"
+  "latestEvidence": "2026-10-31"
  },
  "luma-ai": {
   "name": "Luma",
@@ -3186,6 +3262,21 @@
   "baseline": false,
   "latestEvidence": "2026-09-27"
  },
+ "marsstein": {
+  "name": "Marsstein",
+  "category": "Workplace tools",
+  "use": "Tavily web research for company enrichment and B2B outreach",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-31",
+  "baseline": false,
+  "latestEvidence": "2026-10-31"
+ },
  "mastercard": {
   "name": "Mastercard",
   "category": "Finance",
@@ -3246,6 +3337,21 @@
   "baseline": false,
   "latestEvidence": "2026-10-15"
  },
+ "mesy": {
+  "name": "Mesy",
+  "category": "Workplace tools",
+  "use": "Tavily web research for its AI assistant",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-31",
+  "baseline": false,
+  "latestEvidence": "2026-10-31"
+ },
  "meta-platforms": {
   "name": "Meta",
   "category": "Consumer & commerce",
@@ -3260,7 +3366,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-29"
+  "latestEvidence": "2026-10-31"
  },
  "microsoft": {
   "name": "Microsoft",
@@ -3430,6 +3536,19 @@
   "baseline": false,
   "latestEvidence": "2026-10-14"
  },
+ "modus": {
+  "name": "Modus",
+  "category": "Data & infrastructure",
+  "use": "Lists Tavily for web search and research add-ons",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-10-31",
+  "baseline": false,
+  "latestEvidence": "2026-10-31"
+ },
  "monday-com": {
   "name": "monday.com",
   "category": "Workplace tools",
@@ -3461,7 +3580,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-30",
   "baseline": false,
-  "latestEvidence": "2026-10-25"
+  "latestEvidence": "2026-10-31"
  },
  "moon-surgical": {
   "name": "Moon Surgical",
@@ -3608,15 +3727,17 @@
  "nebulock": {
   "name": "Nebulock",
   "category": "Security & compliance",
-  "use": "Listed among Tavily’s trusted developers",
+  "use": "Uses Tavily for AI-agent web search and content retrieval",
   "services": [
    "Tavily"
   ],
-  "workloads": [],
-  "evidence": "named",
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
   "firstListedAt": "2026-10-16",
   "baseline": false,
-  "latestEvidence": "2026-10-16"
+  "latestEvidence": "2026-10-31"
  },
  "needle": {
   "name": "Needle",
@@ -3814,7 +3935,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-09-28"
+  "latestEvidence": "2026-10-31"
  },
  "novis": {
   "name": "Novis",
@@ -3891,7 +4012,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-27",
   "baseline": false,
-  "latestEvidence": "2026-10-19"
+  "latestEvidence": "2026-10-31"
  },
  "nyb-ai": {
   "name": "NYB.AI",
@@ -3921,7 +4042,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-13",
   "baseline": false,
-  "latestEvidence": "2026-10-14"
+  "latestEvidence": "2026-10-31"
  },
  "odin": {
   "name": "Odin",
@@ -4149,7 +4270,7 @@
   "evidence": "agreement",
   "firstListedAt": "2026-10-08",
   "baseline": false,
-  "latestEvidence": "2026-10-27"
+  "latestEvidence": "2026-10-31"
  },
  "palatial": {
   "name": "Palatial",
@@ -4192,7 +4313,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-28",
   "baseline": false,
-  "latestEvidence": "2026-10-28"
+  "latestEvidence": "2026-10-29"
  },
  "parsr": {
   "name": "PARSR",
@@ -4280,7 +4401,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-19",
   "baseline": false,
-  "latestEvidence": "2026-10-12"
+  "latestEvidence": "2026-10-31"
  },
  "permit-io": {
   "name": "Permit.io",
@@ -4362,7 +4483,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-18",
   "baseline": false,
-  "latestEvidence": "2026-10-30"
+  "latestEvidence": "2026-10-31"
  },
  "pokta-labs": {
   "name": "Pokta Labs",
@@ -4428,7 +4549,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-28"
+  "latestEvidence": "2026-10-30"
  },
  "praxis-repina": {
   "name": "Praxis Repina",
@@ -4660,7 +4781,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-14"
+  "latestEvidence": "2026-10-31"
  },
  "quincy": {
   "name": "Quincy",
@@ -4676,6 +4797,21 @@
   "firstListedAt": "2026-10-27",
   "baseline": false,
   "latestEvidence": "2026-10-27"
+ },
+ "quizgen": {
+  "name": "QuizGen",
+  "category": "Workplace tools",
+  "use": "Tavily search for keyword-based quiz generation",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-31",
+  "baseline": false,
+  "latestEvidence": "2026-10-31"
  },
  "rasa": {
   "name": "Rasa",
@@ -4841,7 +4977,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-18",
   "baseline": false,
-  "latestEvidence": "2026-10-28"
+  "latestEvidence": "2026-10-31"
  },
  "respawnhost": {
   "name": "RespawnHost.com",
@@ -5087,7 +5223,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-18",
   "baseline": false,
-  "latestEvidence": "2026-10-20"
+  "latestEvidence": "2026-10-31"
  },
  "sentientpro": {
   "name": "SentientPro",
@@ -5184,7 +5320,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-21"
+  "latestEvidence": "2026-10-31"
  },
  "shout": {
   "name": "Shout",
@@ -5249,6 +5385,21 @@
   "firstListedAt": "2026-09-24",
   "baseline": true,
   "latestEvidence": "2026-10-16"
+ },
+ "since-today": {
+  "name": "Since Today",
+  "category": "Business services",
+  "use": "Nebius powers its website assistant’s GLM replies.",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-31",
+  "baseline": false,
+  "latestEvidence": "2026-10-31"
  },
  "skypilot-tokens": {
   "name": "SkyPilot Tokens",
@@ -5339,7 +5490,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-19",
   "baseline": false,
-  "latestEvidence": "2026-10-28"
+  "latestEvidence": "2026-10-31"
  },
  "solidagent": {
   "name": "Solidagent",
@@ -5476,6 +5627,21 @@
   "firstListedAt": "2026-10-26",
   "baseline": false,
   "latestEvidence": "2026-10-26"
+ },
+ "studio1": {
+  "name": "Studio1",
+  "category": "Business services",
+  "use": "Token Factory tools and code-review evaluation",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-10-31",
+  "baseline": false,
+  "latestEvidence": "2026-10-31"
  },
  "super-protocol": {
   "name": "Super Protocol",
@@ -5974,7 +6140,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-20",
   "baseline": false,
-  "latestEvidence": "2026-10-20"
+  "latestEvidence": "2026-10-31"
  },
  "ultimarii": {
   "name": "Ultimarii",
@@ -6511,7 +6677,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-28",
   "baseline": false,
-  "latestEvidence": "2026-10-28"
+  "latestEvidence": "2026-10-31"
  },
  "yomi": {
   "name": "Yomi",
