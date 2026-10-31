@@ -7,9 +7,9 @@
  },
  "gpu-spot": {
   "ok": true,
-  "lastAttempt": "2026-10-30T22:57:56.656Z",
-  "lastSuccess": "2026-10-30T22:57:56.656Z",
-  "summary": "12 SKUs listed; 12 series, 8616 hourly points"
+  "lastAttempt": "2026-10-31T02:21:14.171Z",
+  "lastSuccess": "2026-10-31T02:21:14.171Z",
+  "summary": "12 SKUs listed; 12 series, 8628 hourly points"
  },
  "openrouter": {
   "ok": true,
@@ -31,8 +31,8 @@
  },
  "sec": {
   "ok": true,
-  "lastAttempt": "2026-10-30T22:57:58.520Z",
-  "lastSuccess": "2026-10-30T22:57:58.520Z",
+  "lastAttempt": "2026-10-31T02:21:16.055Z",
+  "lastSuccess": "2026-10-31T02:21:16.055Z",
   "summary": "171 filings since 2025-01-01 (0 parsed this run)"
  },
  "jobs": {
@@ -43,21 +43,21 @@
  },
  "stock": {
   "ok": true,
-  "lastAttempt": "2026-10-30T22:58:02.271Z",
-  "lastSuccess": "2026-10-30T22:58:02.271Z",
+  "lastAttempt": "2026-10-31T02:21:19.836Z",
+  "lastSuccess": "2026-10-31T02:21:19.836Z",
   "summary": "NBIS last 2026-10-30 $154.14; 4/4 peers"
  },
  "regions": {
   "ok": true,
-  "lastAttempt": "2026-10-30T22:57:56.845Z",
-  "lastSuccess": "2026-10-30T22:57:56.845Z",
+  "lastAttempt": "2026-10-31T02:21:14.430Z",
+  "lastSuccess": "2026-10-31T02:21:14.430Z",
   "summary": "10 regions, 6 GPU platforms"
  },
  "news": {
   "ok": true,
-  "lastAttempt": "2026-10-30T22:57:58.367Z",
-  "lastSuccess": "2026-10-30T22:57:58.367Z",
-  "summary": "323 headlines fetched; 458 kept, 163 matched to sites"
+  "lastAttempt": "2026-10-31T02:21:15.971Z",
+  "lastSuccess": "2026-10-31T02:21:15.971Z",
+  "summary": "253 headlines fetched; 460 kept, 163 matched to sites"
  },
  "epoch": {
   "ok": true,
