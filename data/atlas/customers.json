@@ -953,6 +953,21 @@
   "baseline": false,
   "latestEvidence": "2026-10-19"
  },
+ "c-building": {
+  "name": "C Building",
+  "category": "Developer tools",
+  "use": "Tavily supplies backup web search for its AI.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-11-01",
+  "baseline": false,
+  "latestEvidence": "2026-11-01"
+ },
  "caltech": {
   "name": "Caltech",
   "category": "Science & research",
@@ -1136,7 +1151,7 @@
   "latestEvidence": "2026-08-12"
  },
  "cloudsigma-ai-mission-control": {
-  "name": "CloudSigma AI Mission Control",
+  "name": "AI Mission Control",
   "category": "Data & infrastructure",
   "use": "Lists Nebius AI for LLM inference",
   "services": [
@@ -1908,6 +1923,21 @@
   "baseline": false,
   "latestEvidence": "2026-10-18"
  },
+ "framekind": {
+  "name": "Framekind",
+  "category": "Developer tools",
+  "use": "Flutter code generation with Nebius Token Factory",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-11-01",
+  "baseline": false,
+  "latestEvidence": "2026-11-01"
+ },
  "freeme": {
   "name": "FreeMe",
   "category": "Consumer & commerce",
@@ -2511,7 +2541,8 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-21",
   "baseline": false,
-  "latestEvidence": "2026-10-21"
+  "latestEvidence": "2026-10-21",
+  "removedAt": "2026-11-01"
  },
  "insightopus": {
   "name": "InsightOpus",
@@ -2898,7 +2929,8 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-27",
   "baseline": false,
-  "latestEvidence": "2026-10-27"
+  "latestEvidence": "2026-10-27",
+  "removedAt": "2026-11-01"
  },
  "legalon": {
   "name": "LegalOn",
@@ -3567,6 +3599,19 @@
   "baseline": true,
   "latestEvidence": "2026-10-19"
  },
+ "mondrian-ai": {
+  "name": "Mondrian AI",
+  "category": "Data & infrastructure",
+  "use": "Nebius GPU supply for its cloud business",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "agreement",
+  "firstListedAt": "2026-11-01",
+  "baseline": false,
+  "latestEvidence": "2026-09-30"
+ },
  "mongodb": {
   "name": "MongoDB",
   "category": "Data & infrastructure",
@@ -3650,6 +3695,21 @@
   "firstListedAt": "2026-10-18",
   "baseline": false,
   "latestEvidence": "2026-10-18"
+ },
+ "mrspeech": {
+  "name": "Mr.Speech",
+  "category": "Workplace tools",
+  "use": "Nebius text AI for cleanup, rewrites and summaries",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-11-01",
+  "baseline": false,
+  "latestEvidence": "2026-11-01"
  },
  "multiply-labs": {
   "name": "Multiply Labs",
@@ -4012,7 +4072,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-27",
   "baseline": false,
-  "latestEvidence": "2026-10-31"
+  "latestEvidence": "2026-11-01"
  },
  "nyb-ai": {
   "name": "NYB.AI",
@@ -4466,6 +4526,19 @@
   "baseline": false,
   "latestEvidence": "2026-10-30"
  },
+ "playrix": {
+  "name": "Playrix",
+  "category": "Media & creativity",
+  "use": "AI coding training with Nebius Academy",
+  "services": [
+   "Nebius Academy"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-11-01",
+  "baseline": false,
+  "latestEvidence": "2026-11-01"
+ },
  "pleias": {
   "name": "Pleias",
   "category": "Data & infrastructure",
@@ -4499,6 +4572,21 @@
   "firstListedAt": "2026-09-28",
   "baseline": false,
   "latestEvidence": "2026-08-18"
+ },
+ "polarbear": {
+  "name": "Polarbear",
+  "category": "Consumer & commerce",
+  "use": "Nebius model processing for marking and learning content",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Inference/serving"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-11-01",
+  "baseline": false,
+  "latestEvidence": "2026-11-01"
  },
  "porsche": {
   "name": "Porsche",
@@ -4670,7 +4758,8 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-25",
   "baseline": false,
-  "latestEvidence": "2026-10-25"
+  "latestEvidence": "2026-10-25",
+  "removedAt": "2026-11-01"
  },
  "prominai": {
   "name": "ProminAI",
@@ -5142,6 +5231,21 @@
   "firstListedAt": "2026-10-18",
   "baseline": false,
   "latestEvidence": "2026-03-15"
+ },
+ "sales-triage": {
+  "name": "Sales Triage",
+  "category": "Business services",
+  "use": "Tavily web searches for prospect research",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-11-01",
+  "baseline": false,
+  "latestEvidence": "2026-11-01"
  },
  "salesforce": {
   "name": "Salesforce",
@@ -5641,7 +5745,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-31",
   "baseline": false,
-  "latestEvidence": "2026-10-31"
+  "latestEvidence": "2026-11-01"
  },
  "super-protocol": {
   "name": "Super Protocol",
