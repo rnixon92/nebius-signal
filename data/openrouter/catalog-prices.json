@@ -613,9 +613,9 @@
  },
  "google/gemma-4-26b-a4b-it-20260403": {
   "name": "google/gemma-4-26b-a4b-it",
-  "input": 0.0675,
-  "output": 0.225,
-  "cacheRead": 0.0375
+  "input": 0.091,
+  "output": 0.274,
+  "cacheRead": 0.046
  },
  "google/gemma-4-31b-it-20260402": {
   "name": "google/gemma-4-31b-it",
@@ -739,8 +739,8 @@
  },
  "meta-llama/llama-3.2-3b-instruct": {
   "name": "meta-llama/llama-3.2-3b-instruct",
-  "input": 0.05,
-  "output": 0.33,
+  "input": 0.0509,
+  "output": 0.335,
   "cacheRead": null
  },
  "meta-llama/llama-3.3-70b-instruct": {
@@ -1078,18 +1078,6 @@
   "input": 0.075,
   "output": 0.25,
   "cacheRead": 0.015
- },
- "nousresearch/hermes-3-llama-3.1-405b": {
-  "name": "nousresearch/hermes-3-llama-3.1-405b",
-  "input": 1,
-  "output": 1,
-  "cacheRead": null
- },
- "nousresearch/hermes-3-llama-3.1-70b": {
-  "name": "nousresearch/hermes-3-llama-3.1-70b",
-  "input": 0.7,
-  "output": 0.7,
-  "cacheRead": null
  },
  "nousresearch/hermes-4-405b": {
   "name": "nousresearch/hermes-4-405b",
@@ -1471,15 +1459,15 @@
  },
  "openai/gpt-oss-120b": {
   "name": "openai/gpt-oss-120b",
-  "input": 0.023,
-  "output": 0.086,
-  "cacheRead": 0.021
+  "input": 0.15,
+  "output": 0.6,
+  "cacheRead": 0.075
  },
  "openai/gpt-oss-20b": {
   "name": "openai/gpt-oss-20b",
-  "input": 0.03,
-  "output": 0.13,
-  "cacheRead": 0.03
+  "input": 0.018,
+  "output": 0.09,
+  "cacheRead": 0.009
  },
  "openai/gpt-oss-safeguard-20b": {
   "name": "openai/gpt-oss-safeguard-20b",
@@ -2235,7 +2223,13 @@
   "name": "z-ai/glm-5.3-flashx",
   "input": 0.37,
   "output": 1.25,
-  "cacheRead": 0.09
+  "cacheRead": 0.075
+ },
+ "z-ai/glm-5.3-flashx-legal-20261102": {
+  "name": "z-ai/glm-5.3-flashx-legal",
+  "input": 0.37,
+  "output": 1.25,
+  "cacheRead": 0.075
  },
  "z-ai/glm-5.3-prime-20260921": {
   "name": "z-ai/glm-5.3-prime",

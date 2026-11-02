@@ -2400,5 +2400,23 @@
     "acquired": true
    }
   ]
+ },
+ "0001513845-26-000147": {
+  "accession": "0001513845-26-000147",
+  "form": "4",
+  "filed": "2026-11-02",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000151384526000147/form4.xml",
+  "owner": "Boynton John Wilson IV",
+  "role": "Director",
+  "plan10b5": true,
+  "trades": [
+   {
+    "date": "2026-10-29",
+    "code": "S",
+    "shares": 333,
+    "price": 173.07,
+    "acquired": false
+   }
+  ]
  }
 }

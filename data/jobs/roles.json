@@ -2152,7 +2152,9 @@
   "location": "Canada; Remote - United States",
   "region": "Americas",
   "posted": "2025-09-17",
-  "firstSeen": "2025-10-08"
+  "firstSeen": "2025-10-08",
+  "closedAt": "2026-11-02",
+  "closedApprox": false
  },
  "4633971101": {
   "title": "Account Executive - AI Studio",
@@ -6179,9 +6181,7 @@
   "location": "United States",
   "region": "Americas",
   "posted": "2026-03-16",
-  "firstSeen": "2026-03-27",
-  "closedAt": "2026-06-22",
-  "closedApprox": true
+  "firstSeen": "2026-03-27"
  },
  "4812140101": {
   "title": "AI Researcher (Early Talent)",
@@ -9067,7 +9067,9 @@
   "location": "United States",
   "region": "Americas",
   "posted": "2026-10-23",
-  "firstSeen": "2026-10-24"
+  "firstSeen": "2026-10-24",
+  "closedAt": "2026-11-02",
+  "closedApprox": false
  },
  "4918839101": {
   "title": "Legal Counsel",
@@ -9150,7 +9152,7 @@
   "firstSeen": "2026-07-30"
  },
  "4921994101": {
-  "title": "Senior Technical Product Manager - Token Factory",
+  "title": "Senior Technical Product Manager - Inference Platform",
   "dept": "New Products › Token Factory-NP",
   "function": "Engineering & product",
   "location": "Amsterdam, Netherlands; Berlin, Germany; Remote - Europe; United Kingdom",
@@ -10080,7 +10082,9 @@
   "location": "United States",
   "region": "Americas",
   "posted": "2026-08-03",
-  "firstSeen": "2026-08-05"
+  "firstSeen": "2026-08-05",
+  "closedAt": "2026-11-02",
+  "closedApprox": false
  },
  "4942759101": {
   "title": "Healthcare Solutions Partner -United States ",
@@ -10884,14 +10888,12 @@
  },
  "4959957101": {
   "title": "Finance Business Partner",
-  "dept": "",
+  "dept": "Corporate › Finance › FP&A",
   "function": "Sales & go-to-market",
   "location": "Amsterdam, Netherlands",
   "region": "Europe & other",
   "posted": "2026-08-26",
-  "firstSeen": "2026-09-04",
-  "closedAt": "2026-10-14",
-  "closedApprox": true
+  "firstSeen": "2026-09-04"
  },
  "4960195101": {
   "title": "Senior Public Affairs Specialist",
@@ -12008,14 +12010,12 @@
  },
  "4988440101": {
   "title": "Senior HR Business Partner ",
-  "dept": "",
+  "dept": "Corporate › People › HRBP",
   "function": "Sales & go-to-market",
   "location": "Singapore",
   "region": "Asia-Pacific",
   "posted": "2026-10-07",
-  "firstSeen": "2026-10-10",
-  "closedAt": "2026-10-13",
-  "closedApprox": true
+  "firstSeen": "2026-10-10"
  },
  "4988457101": {
   "title": "Electrical Design Engineer (MV/HV)",
@@ -12551,7 +12551,9 @@
   "location": "Amsterdam, Netherlands",
   "region": "Europe & other",
   "posted": "2026-10-12",
-  "firstSeen": "2026-10-13"
+  "firstSeen": "2026-10-13",
+  "closedAt": "2026-11-02",
+  "closedApprox": false
  },
  "5003033101": {
   "title": "Data Analyst ",
@@ -12580,7 +12582,9 @@
   "location": "Hyderabad, India",
   "region": "Asia-Pacific",
   "posted": "2026-10-12",
-  "firstSeen": "2026-10-13"
+  "firstSeen": "2026-10-13",
+  "closedAt": "2026-11-02",
+  "closedApprox": false
  },
  "5003253101": {
   "title": "Global EOR Payroll Specialist",
@@ -13150,7 +13154,9 @@
   "location": "United States",
   "region": "Americas",
   "posted": "2026-10-29",
-  "firstSeen": "2026-10-29"
+  "firstSeen": "2026-10-29",
+  "closedAt": "2026-11-02",
+  "closedApprox": false
  },
  "5017942101": {
   "title": "Head of Financial Internal Controls ",
@@ -13214,5 +13220,14 @@
   "region": "Americas",
   "posted": "2026-10-30",
   "firstSeen": "2026-10-30"
+ },
+ "5024583101": {
+  "title": "Assistant Financial Controller",
+  "dept": "New Products",
+  "function": "Engineering & product",
+  "location": "Israel",
+  "region": "Israel",
+  "posted": "2026-11-02",
+  "firstSeen": "2026-11-02"
  }
 }
