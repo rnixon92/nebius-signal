@@ -1,5 +1,23 @@
 [
  {
+  "id": "spot-cap-sku-e00vd4x28cozliwb6g4vh-2026-11-02",
+  "date": "2026-11-02",
+  "source": "gpu-spot",
+  "severity": "medium",
+  "title": "B300 spot near on-demand in eu-west2: $9.49 vs $9.5 on-demand",
+  "detail": "100% of on-demand. Spare capacity is almost gone.",
+  "url": "https://nebius.com/spot-prices"
+ },
+ {
+  "id": "spot-cap-sku-e00fmto201j24eyp0841g-2026-11-02",
+  "date": "2026-11-02",
+  "source": "gpu-spot",
+  "severity": "medium",
+  "title": "B300 spot near on-demand in uk-south1: $9.2 vs $9.5 on-demand",
+  "detail": "97% of on-demand. Spare capacity is almost gone.",
+  "url": "https://nebius.com/spot-prices"
+ },
+ {
   "id": "atlas-added-2026-11-01",
   "date": "2026-11-01",
   "source": "atlas",
