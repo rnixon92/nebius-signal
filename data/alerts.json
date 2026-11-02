@@ -1,5 +1,14 @@
 [
  {
+  "id": "spot-above-list-sku-e00vd4x28cozliwb6g4vh-2026-11-02",
+  "date": "2026-11-02",
+  "source": "gpu-spot",
+  "severity": "high",
+  "title": "B300 spot above on-demand in eu-west2: $10.99 vs $9.5 list",
+  "detail": "116% of on-demand. Buyers are paying more than list for preemptible GPUs.",
+  "url": "https://nebius.com/spot-prices"
+ },
+ {
   "id": "spot-cap-sku-e00hfg6dlxtt9ji6fqo9u-2026-11-02",
   "date": "2026-11-02",
   "source": "gpu-spot",
