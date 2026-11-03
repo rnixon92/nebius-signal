@@ -10662,7 +10662,9 @@
   "location": "Amsterdam, Netherlands",
   "region": "Europe & other",
   "posted": "2026-08-24",
-  "firstSeen": "2026-09-04"
+  "firstSeen": "2026-09-04",
+  "closedAt": "2026-11-03",
+  "closedApprox": false
  },
  "4955928101": {
   "title": "Senior Product Designer - Compute, Nebius Console",
@@ -13044,6 +13046,15 @@
   "posted": "2026-10-23",
   "firstSeen": "2026-10-24"
  },
+ "5010282101": {
+  "title": "Data Center Warehouse Specialist",
+  "dept": "Product & Infrastructure",
+  "function": "Data center & power",
+  "location": "Amsterdam, Netherlands",
+  "region": "Europe & other",
+  "posted": "2026-11-03",
+  "firstSeen": "2026-11-03"
+ },
  "5010284101": {
   "title": "Lead Warehouse and Logistics Specialist",
   "dept": "Product & Infrastructure",
@@ -13248,6 +13259,15 @@
   "posted": "2026-10-30",
   "firstSeen": "2026-10-30"
  },
+ "5024562101": {
+  "title": "Sales Operations Specialist - Amsterdam ",
+  "dept": "Corporate",
+  "function": "Sales & go-to-market",
+  "location": "Amsterdam, Netherlands",
+  "region": "Europe & other",
+  "posted": "2026-11-03",
+  "firstSeen": "2026-11-03"
+ },
  "5024583101": {
   "title": "Assistant Financial Controller",
   "dept": "New Products",
@@ -13273,6 +13293,15 @@
   "location": "Amsterdam, Netherlands",
   "region": "Europe & other",
   "posted": "2026-11-02",
+  "firstSeen": "2026-11-03"
+ },
+ "5026027101": {
+  "title": "Software Engineer (Early Talent) ",
+  "dept": "Technology",
+  "function": "Engineering & product",
+  "location": "Amsterdam, Netherlands",
+  "region": "Europe & other",
+  "posted": "2026-11-03",
   "firstSeen": "2026-11-03"
  }
 }

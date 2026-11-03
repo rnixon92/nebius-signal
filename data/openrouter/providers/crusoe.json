@@ -1,6 +1,6 @@
 {
  "provider": "crusoe",
- "updatedAt": "2026-11-03T01:19:36.506Z",
+ "updatedAt": "2026-11-03T14:42:47.383Z",
  "days": {
   "2026-07-27": {
    "google/gemma-4-31b-it-20260402": 2097599978,
@@ -946,16 +946,16 @@
    "Others": 1998709297
   },
   "2026-11-03": {
-   "z-ai/glm-5.3-flash-20260826": 6861617399,
-   "deepseek/deepseek-v4-flash-20260423": 5213010096,
-   "deepseek/deepseek-v4.1-flash-20261017": 1370394261,
-   "deepseek/deepseek-v4.1-flash-20260910": 849715098,
-   "deepseek/deepseek-v4-pro-20260423": 780388481,
-   "openai/gpt-oss-120b": 453298800,
-   "z-ai/glm-5.3-20260816": 251824659,
-   "google/gemma-4-31b-it-20260402": 105044941,
-   "nvidia/nemotron-3.5-super-vl-20261015": 90187650,
-   "Others": 80966355
+   "z-ai/glm-5.3-flash-20260826": 64980273088,
+   "deepseek/deepseek-v4-flash-20260423": 60889002765,
+   "deepseek/deepseek-v4.1-flash-20261017": 42009355430,
+   "deepseek/deepseek-v4-pro-20260423": 18508769351,
+   "deepseek/deepseek-v4.1-flash-20260910": 18314758198,
+   "z-ai/glm-5.3-20260816": 8988792247,
+   "openai/gpt-oss-120b": 3025480101,
+   "google/gemma-4-31b-it-20260402": 1101477912,
+   "moonshotai/kimi-k2.6-20260420": 476915850,
+   "Others": 528551475
   }
  }
 }

@@ -1,5 +1,14 @@
 [
  {
+  "id": "spot-above-list-sku-e00g61h0323jih8tkg5jv-2026-11-03",
+  "date": "2026-11-03",
+  "source": "gpu-spot",
+  "severity": "high",
+  "title": "RTX PRO 6000 spot above on-demand in eu-south1: $2.09 vs $1.8 list",
+  "detail": "116% of on-demand. Buyers are paying more than list for preemptible GPUs.",
+  "url": "https://nebius.com/spot-prices"
+ },
+ {
   "id": "spot-cap-sku-e00otwkvc6gea6nmvvsda-2026-11-03",
   "date": "2026-11-03",
   "source": "gpu-spot",
