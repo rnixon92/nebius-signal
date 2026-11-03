@@ -4055,10 +4055,10 @@
   "closedApprox": true
  },
  "4752950101": {
-  "title": "Manager, US Data Center Facilities",
+  "title": "Manager, Data Center Facilities",
   "dept": "Product & Infrastructure",
   "function": "Data center & power",
-  "location": "Philadelphia, Pennsylvania, United States",
+  "location": "New Jersey, United States",
   "region": "Americas",
   "posted": "2026-01-26",
   "firstSeen": "2026-03-27"
@@ -11963,6 +11963,15 @@
   "posted": "2026-09-28",
   "firstSeen": "2026-10-04"
  },
+ "4987895101": {
+  "title": "Director of Product, Ecosystem",
+  "dept": "New Products › Strategy & Ecosystem",
+  "function": "Engineering & product",
+  "location": "San Francisco Bay Area, California, United States; United States",
+  "region": "Americas",
+  "posted": "2026-11-02",
+  "firstSeen": "2026-11-03"
+ },
  "4988211101": {
   "title": "Head of Data Center IT Infrastructure",
   "dept": "Product & Infrastructure › Infrastructure › EMEA-DC IT Infrastructure",
@@ -12770,6 +12779,15 @@
   "posted": "2026-10-14",
   "firstSeen": "2026-10-15"
  },
+ "5006506101": {
+  "title": "Field CTO, Financial Services AI Infrastructure ",
+  "dept": "Go-To-Market › Verticals",
+  "function": "Sales & go-to-market",
+  "location": "United States",
+  "region": "Americas",
+  "posted": "2026-11-02",
+  "firstSeen": "2026-11-03"
+ },
  "5006764101": {
   "title": "Senior Public Affairs Specialist",
   "dept": "Government Relations & Global Intelligence › Government Relations",
@@ -13203,6 +13221,15 @@
   "posted": "2026-10-28",
   "firstSeen": "2026-10-28"
  },
+ "5020394101": {
+  "title": "Account Receivable Accountant",
+  "dept": "Corporate › Finance",
+  "function": "G&A & other",
+  "location": "Amsterdam, Netherlands",
+  "region": "Europe & other",
+  "posted": "2026-11-02",
+  "firstSeen": "2026-11-03"
+ },
  "5022195101": {
   "title": "Data Center L1 IT Technician (Lappeenranta)",
   "dept": "Product & Infrastructure › Infrastructure",
@@ -13229,5 +13256,23 @@
   "region": "Israel",
   "posted": "2026-11-02",
   "firstSeen": "2026-11-02"
+ },
+ "5024930101": {
+  "title": "Compensation Business Partner, Infrastructure ",
+  "dept": "Corporate › People › C&B",
+  "function": "Sales & go-to-market",
+  "location": "Amsterdam, Netherlands",
+  "region": "Europe & other",
+  "posted": "2026-11-02",
+  "firstSeen": "2026-11-03"
+ },
+ "5024957101": {
+  "title": "Internal Communications Specialist ",
+  "dept": "Communications › Internal Comms",
+  "function": "G&A & other",
+  "location": "Amsterdam, Netherlands",
+  "region": "Europe & other",
+  "posted": "2026-11-02",
+  "firstSeen": "2026-11-03"
  }
 }
