@@ -1,6 +1,6 @@
 {
  "provider": "nebius",
- "updatedAt": "2026-11-03T14:42:30.985Z",
+ "updatedAt": "2026-11-03T23:43:47.676Z",
  "days": {
   "2026-07-27": {
    "qwen/qwen3-embedding-8b": 11333107392,
@@ -1164,16 +1164,16 @@
    "Others": 4525440149
   },
   "2026-11-03": {
-   "qwen/qwen3-embedding-8b": 13437788670,
-   "meta/muse-spark-open-20261015": 5409870210,
-   "deepseek/deepseek-v4.1-flash-20261017": 2589143494,
-   "deepseek/deepseek-v4-pro-20260813": 2263566849,
-   "openai/gpt-oss-120b": 1404800683,
-   "reflection/beam-1.0-501b-a23b-20261016": 1359907096,
-   "qwen/qwen3-30b-a3b-instruct-2507": 664259444,
-   "deepseek/deepseek-v4.1-flash-20260910": 565640751,
-   "z-ai/glm-5.3-flash-20260826": 545889208,
-   "Others": 2132503075
+   "qwen/qwen3-embedding-8b": 18770450423,
+   "deepseek/deepseek-v4.1-flash-20261017": 8850453810,
+   "meta/muse-spark-open-20261015": 5948152200,
+   "deepseek/deepseek-v4-pro-20260813": 2842567306,
+   "reflection/beam-1.0-501b-a23b-20261016": 2116484976,
+   "openai/gpt-oss-120b": 2089787379,
+   "qwen/qwen3-30b-a3b-instruct-2507": 1253938621,
+   "z-ai/glm-5.3-flash-20260826": 966384141,
+   "z-ai/glm-5.1-20260406": 928554850,
+   "Others": 3733462295
   }
  }
 }

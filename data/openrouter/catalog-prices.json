@@ -25,9 +25,9 @@
  },
  "~deepseek/deepseek-flash-latest": {
   "name": "~deepseek/deepseek-flash-latest",
-  "input": 0.035,
-  "output": 0.315,
-  "cacheRead": 0.006
+  "input": 0.0333,
+  "output": 0.475,
+  "cacheRead": 0.00475
  },
  "~deepseek/deepseek-pro-latest": {
   "name": "~deepseek/deepseek-pro-latest",
@@ -55,8 +55,8 @@
  },
  "~moonshotai/kimi-latest": {
   "name": "~moonshotai/kimi-latest",
-  "input": 0.1558,
-  "output": 10.1427,
+  "input": 0.1529,
+  "output": 10.1551,
   "cacheRead": 0.15
  },
  "~openai/gpt-astra-latest": {
@@ -613,9 +613,9 @@
  },
  "google/gemma-4-26b-a4b-it-20260403": {
   "name": "google/gemma-4-26b-a4b-it",
-  "input": 0.1,
-  "output": 0.3,
-  "cacheRead": 0.05
+  "input": 0.062,
+  "output": 0.187,
+  "cacheRead": 0.031
  },
  "google/gemma-4-31b-it-20260402": {
   "name": "google/gemma-4-31b-it",
@@ -871,9 +871,9 @@
  },
  "minimax/minimax-m3.1-flash-20261019": {
   "name": "minimax/minimax-m3.1-flash",
-  "input": 0.15,
-  "output": 0.6,
-  "cacheRead": 0.015
+  "input": 0.075,
+  "output": 0.3,
+  "cacheRead": 0.0075
  },
  "mistralai/codestral-2508": {
   "name": "mistralai/codestral-2508",
@@ -1045,9 +1045,9 @@
  },
  "moonshotai/kimi-k3-20260715": {
   "name": "moonshotai/kimi-k3",
-  "input": 0.192,
-  "output": 15,
-  "cacheRead": 0.182
+  "input": 0.276,
+  "output": 9.6,
+  "cacheRead": 0.13
  },
  "moonshotai/kimi-k3.1-pro-20261023": {
   "name": "moonshotai/kimi-k3.1-pro",
@@ -1459,9 +1459,9 @@
  },
  "openai/gpt-oss-120b": {
   "name": "openai/gpt-oss-120b",
-  "input": 0.026,
-  "output": 0.094,
-  "cacheRead": 0.023
+  "input": 0.15,
+  "output": 0.6,
+  "cacheRead": 0.075
  },
  "openai/gpt-oss-20b": {
   "name": "openai/gpt-oss-20b",
@@ -1633,9 +1633,9 @@
  },
  "qwen/qwen3-235b-a22b-07-25": {
   "name": "qwen/qwen3-235b-a22b-2507",
-  "input": 0.09,
-  "output": 0.55,
-  "cacheRead": null
+  "input": 0.14,
+  "output": 0.8,
+  "cacheRead": 0.05
  },
  "qwen/qwen3-235b-a22b-thinking-2507": {
   "name": "qwen/qwen3-235b-a22b-thinking-2507",
@@ -1925,6 +1925,12 @@
   "output": 0,
   "cacheRead": null
  },
+ "stealth/crouton-alpha": {
+  "name": "stealth/crouton-alpha",
+  "input": 0,
+  "output": 0,
+  "cacheRead": null
+ },
  "stepfun/step-3.5-flash": {
   "name": "stepfun/step-3.5-flash",
   "input": 0.1,
@@ -1969,9 +1975,9 @@
  },
  "tencent/hy3-20260706": {
   "name": "tencent/hy3",
-  "input": 0.132,
-  "output": 0.528,
-  "cacheRead": 0.033
+  "input": 0.0825,
+  "output": 0.33,
+  "cacheRead": 0.020625
  },
  "tencent/hy3-preview-20260421": {
   "name": "tencent/hy3-preview",
@@ -1981,9 +1987,9 @@
  },
  "tencent/hy4-preview-20260827": {
   "name": "tencent/hy4-preview",
-  "input": 0.834,
-  "output": 2.501,
-  "cacheRead": 0.042
+  "input": 0.7506,
+  "output": 2.2509,
+  "cacheRead": 0.0378
  },
  "thedrummer/cydonia-24b-v4.1": {
   "name": "thedrummer/cydonia-24b-v4.1",

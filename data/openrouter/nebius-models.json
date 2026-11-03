@@ -1,4 +1,12 @@
 {
+ "deepseek/deepseek-v4-pro-20260423": {
+  "name": "deepseek/deepseek-v4-pro",
+  "input": 1.75,
+  "output": 3.5,
+  "cacheRead": 0.14,
+  "firstSeen": "2026-11-03",
+  "lastSeen": "2026-11-03"
+ },
  "deepseek/deepseek-v4-pro-20260813": {
   "name": "deepseek/deepseek-v4-pro-0813",
   "input": 1.32,

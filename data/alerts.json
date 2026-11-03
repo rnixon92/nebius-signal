@@ -1,5 +1,14 @@
 [
  {
+  "id": "spot-cap-sku-e00fjjc4gwdx48pck9b46-2026-11-03",
+  "date": "2026-11-03",
+  "source": "gpu-spot",
+  "severity": "medium",
+  "title": "B200 spot near on-demand in us-central1: $8.4 vs $8.5 on-demand",
+  "detail": "99% of on-demand. Spare capacity is almost gone.",
+  "url": "https://nebius.com/spot-prices"
+ },
+ {
   "id": "spot-above-list-sku-e00g61h0323jih8tkg5jv-2026-11-03",
   "date": "2026-11-03",
   "source": "gpu-spot",

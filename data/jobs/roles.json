@@ -7190,7 +7190,9 @@
   "location": "San Francisco Bay Area, California, United States",
   "region": "Americas",
   "posted": "2026-04-17",
-  "firstSeen": "2026-06-22"
+  "firstSeen": "2026-06-22",
+  "closedAt": "2026-11-03",
+  "closedApprox": false
  },
  "4845681101": {
   "title": "AV Live events & Operations Engineer",
@@ -7307,7 +7309,9 @@
   "location": "Remote - United States",
   "region": "Americas",
   "posted": "2026-05-12",
-  "firstSeen": "2026-06-22"
+  "firstSeen": "2026-06-22",
+  "closedAt": "2026-11-03",
+  "closedApprox": false
  },
  "4850132101": {
   "title": "Mechanical Design Engineer ",
@@ -8183,14 +8187,12 @@
  },
  "4879927101": {
   "title": "Transportation Logistics Specialist",
-  "dept": "Hardware Infrastructure",
+  "dept": "Product & Infrastructure › Infrastructure",
   "function": "Engineering & product",
   "location": "Remote - United States",
   "region": "Americas",
   "posted": "2026-06-08",
-  "firstSeen": "2026-06-22",
-  "closedAt": "2026-07-21",
-  "closedApprox": true
+  "firstSeen": "2026-06-22"
  },
  "4879929101": {
   "title": "Warehouse & Logistics Specialist",
@@ -8868,7 +8870,7 @@
   "firstSeen": "2026-08-13"
  },
  "4906480101": {
-  "title": "Senior SRE (Search)",
+  "title": "Senior Site Reliability Engineer (Agentic Search)",
   "dept": "New Products › Agentic Search",
   "function": "Engineering & product",
   "location": "New York City, New York, United States",
@@ -9114,7 +9116,7 @@
   "closedApprox": true
  },
  "4919759101": {
-  "title": "Senior SWE (Search) - Billing",
+  "title": "Senior SWE (Agentic Search) - Billing",
   "dept": "New Products › Agentic Search",
   "function": "Engineering & product",
   "location": "New York City, New York, United States",
@@ -9263,6 +9265,15 @@
   "firstSeen": "2026-07-21",
   "closedAt": "2026-08-20",
   "closedApprox": true
+ },
+ "4925185101": {
+  "title": "Transport Back Office Specialist",
+  "dept": "Product & Infrastructure › Infrastructure",
+  "function": "Engineering & product",
+  "location": "United States",
+  "region": "Americas",
+  "posted": "2026-07-15",
+  "firstSeen": "2026-11-03"
  },
  "4926274101": {
   "title": "Senior Machine Learning Engineer, Model Training and Reinforcement Learning",
@@ -11828,7 +11839,7 @@
   "title": "Solutions Architect, Enterprise",
   "dept": "Go-To-Market › Customer Experience › Solutions Architecture › AMER (SoA)",
   "function": "Sales & go-to-market",
-  "location": "Remote - United States",
+  "location": "Canada; Remote - United States",
   "region": "Americas",
   "posted": "2026-09-18",
   "firstSeen": "2026-10-20"
@@ -12535,7 +12546,9 @@
   "location": "United States",
   "region": "Americas",
   "posted": "2026-10-15",
-  "firstSeen": "2026-10-16"
+  "firstSeen": "2026-10-16",
+  "closedAt": "2026-11-03",
+  "closedApprox": false
  },
  "5002215101": {
   "title": "Communications Designer, Developer Experience",
@@ -12649,7 +12662,9 @@
   "location": "Amsterdam, Netherlands",
   "region": "Europe & other",
   "posted": "2026-10-14",
-  "firstSeen": "2026-10-16"
+  "firstSeen": "2026-10-16",
+  "closedAt": "2026-11-03",
+  "closedApprox": false
  },
  "5004452101": {
   "title": "Business Development Representative (BDR)- AI Native",
@@ -13091,7 +13106,9 @@
   "location": "Amsterdam, Netherlands",
   "region": "Europe & other",
   "posted": "2026-10-21",
-  "firstSeen": "2026-10-24"
+  "firstSeen": "2026-10-24",
+  "closedAt": "2026-11-03",
+  "closedApprox": false
  },
  "5011775101": {
   "title": "Data Center Technician Manager ",
@@ -13127,9 +13144,7 @@
   "location": "United States",
   "region": "Americas",
   "posted": "2026-10-23",
-  "firstSeen": "2026-10-24",
-  "closedAt": "2026-10-29",
-  "closedApprox": false
+  "firstSeen": "2026-10-24"
  },
  "5013576101": {
   "title": "Payroll Systems Specialist",
@@ -13197,7 +13212,7 @@
   "firstSeen": "2026-10-30"
  },
  "5017949101": {
-  "title": "Product & Technology Communications Lead Job Description ",
+  "title": "Product & Technology Communications Lead",
   "dept": "Corporate",
   "function": "Engineering & product",
   "location": "United States",
@@ -13301,6 +13316,15 @@
   "function": "Engineering & product",
   "location": "Amsterdam, Netherlands",
   "region": "Europe & other",
+  "posted": "2026-11-03",
+  "firstSeen": "2026-11-03"
+ },
+ "5026688101": {
+  "title": "Senior Full Stack Engineer (Agentic Search) - Platform",
+  "dept": "New Products › Agentic Search",
+  "function": "Engineering & product",
+  "location": "New York City, New York, United States",
+  "region": "Americas",
   "posted": "2026-11-03",
   "firstSeen": "2026-11-03"
  }
