@@ -1,53 +1,53 @@
 {
- "snapshotTime": "2026-11-03T02:49:36.010114Z",
+ "snapshotTime": "2026-11-03T10:45:44.154692Z",
  "prices": {
   "sku-e00agrh84hf7fwlrgsfsv": {
-   "price": 1.25,
-   "effectiveTime": "2026-11-03T02:41:00Z"
+   "price": 1.7,
+   "effectiveTime": "2026-11-03T10:21:00Z"
   },
   "sku-e00ljkedv5qtbwhikuoct": {
-   "price": 0.82,
-   "effectiveTime": "2026-11-02T17:51:00Z"
+   "price": 0.85,
+   "effectiveTime": "2026-11-03T10:06:00Z"
   },
   "sku-e00g61h0323jih8tkg5jv": {
-   "price": 0.79,
-   "effectiveTime": "2026-11-02T18:16:00Z"
+   "price": 1.09,
+   "effectiveTime": "2026-11-03T10:01:00Z"
   },
   "sku-e00dh1moiqg9mc5ix6wj2": {
-   "price": 2.5,
-   "effectiveTime": "2026-11-03T02:46:00Z"
+   "price": 1.6,
+   "effectiveTime": "2026-11-03T10:36:00Z"
   },
   "sku-e00vd4x28cozliwb6g4vh": {
-   "price": 12.19,
-   "effectiveTime": "2026-11-03T02:41:00Z"
+   "price": 12.5,
+   "effectiveTime": "2026-11-03T03:41:00Z"
   },
   "sku-e00k58wq19wjszct65fwm": {
-   "price": 2.3,
-   "effectiveTime": "2026-11-03T01:46:00Z"
+   "price": 3.3,
+   "effectiveTime": "2026-11-03T10:36:00Z"
   },
   "sku-e00fmto201j24eyp0841g": {
-   "price": 9.19,
-   "effectiveTime": "2026-11-03T02:36:00Z"
+   "price": 9.49,
+   "effectiveTime": "2026-11-03T07:36:00Z"
   },
   "sku-e00lxawt0lavf9i0dutiz": {
    "price": 0.79,
    "effectiveTime": "2026-11-02T14:26:00Z"
   },
   "sku-e00em8l461xmyihec7sr8": {
-   "price": 1.1,
-   "effectiveTime": "2026-11-03T02:51:00Z"
+   "price": 2.3,
+   "effectiveTime": "2026-11-03T10:41:00Z"
   },
   "sku-e00fjjc4gwdx48pck9b46": {
-   "price": 4,
-   "effectiveTime": "2026-11-03T02:36:00Z"
+   "price": 4.9,
+   "effectiveTime": "2026-11-03T10:26:00Z"
   },
   "sku-e00otwkvc6gea6nmvvsda": {
-   "price": 1.49,
-   "effectiveTime": "2026-11-03T02:36:00Z"
+   "price": 1.79,
+   "effectiveTime": "2026-11-03T10:31:00Z"
   },
   "sku-e00hfg6dlxtt9ji6fqo9u": {
-   "price": 7.39,
-   "effectiveTime": "2026-11-03T02:11:00Z"
+   "price": 4.99,
+   "effectiveTime": "2026-11-03T08:46:00Z"
   }
  }
 }
