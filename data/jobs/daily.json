@@ -746,17 +746,17 @@
   }
  },
  "2026-11-04": {
-  "total": 381,
+  "total": 383,
   "byFunction": {
-   "Engineering & product": 182,
+   "Engineering & product": 180,
    "Sales & go-to-market": 73,
-   "G&A & other": 51,
-   "Data center & power": 75
+   "G&A & other": 53,
+   "Data center & power": 77
   },
   "byRegion": {
-   "Europe & other": 171,
-   "Americas": 117,
-   "Israel": 47,
+   "Europe & other": 176,
+   "Americas": 116,
+   "Israel": 45,
    "Asia-Pacific": 43,
    "Remote": 3
   }

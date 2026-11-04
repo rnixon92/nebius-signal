@@ -6181,7 +6181,9 @@
   "location": "United States",
   "region": "Americas",
   "posted": "2026-03-16",
-  "firstSeen": "2026-03-27"
+  "firstSeen": "2026-03-27",
+  "closedAt": "2026-11-04",
+  "closedApprox": false
  },
  "4812140101": {
   "title": "AI Researcher (Early Talent)",
@@ -7710,14 +7712,12 @@
  },
  "4869232101": {
   "title": "Data Center IT Technician",
-  "dept": "DC UK IT Support Group",
+  "dept": "Product & Infrastructure › Infrastructure › EMEA-DC IT Infrastructure › DC UK IT Support Group",
   "function": "Data center & power",
-  "location": "London, United Kingdom",
+  "location": "Harlow, United Kingdom",
   "region": "Europe & other",
   "posted": "2026-05-27",
-  "firstSeen": "2026-06-22",
-  "closedAt": "2026-09-28",
-  "closedApprox": true
+  "firstSeen": "2026-06-22"
  },
  "4869381101": {
   "title": "Data Center IT Manager ",
@@ -10684,7 +10684,9 @@
   "location": "Remote - Europe",
   "region": "Europe & other",
   "posted": "2026-08-24",
-  "firstSeen": "2026-09-04"
+  "firstSeen": "2026-09-04",
+  "closedAt": "2026-11-04",
+  "closedApprox": false
  },
  "4955968101": {
   "title": " Technology Commercial Legal Counsel",
@@ -11943,7 +11945,9 @@
   "location": "Amsterdam, Netherlands",
   "region": "Europe & other",
   "posted": "2026-09-28",
-  "firstSeen": "2026-10-04"
+  "firstSeen": "2026-10-04",
+  "closedAt": "2026-11-04",
+  "closedApprox": false
  },
  "4986847101": {
   "title": "General Accountant",
@@ -12342,7 +12346,9 @@
   "location": "Tel Aviv, Israel",
   "region": "Israel",
   "posted": "2026-10-12",
-  "firstSeen": "2026-10-13"
+  "firstSeen": "2026-10-13",
+  "closedAt": "2026-11-04",
+  "closedApprox": false
  },
  "4999585101": {
   "title": "Electrical Design Engineer (MV/HV)",
@@ -12492,7 +12498,9 @@
   "location": "Israel; Tel Aviv, Israel",
   "region": "Israel",
   "posted": "2026-10-13",
-  "firstSeen": "2026-10-14"
+  "firstSeen": "2026-10-14",
+  "closedAt": "2026-11-04",
+  "closedApprox": false
  },
  "5000693101": {
   "title": "Senior ML Solutions Architect - Token Factory",
@@ -12662,9 +12670,7 @@
   "location": "Amsterdam, Netherlands",
   "region": "Europe & other",
   "posted": "2026-10-14",
-  "firstSeen": "2026-10-16",
-  "closedAt": "2026-11-03",
-  "closedApprox": false
+  "firstSeen": "2026-10-16"
  },
  "5004452101": {
   "title": "Business Development Representative (BDR)- AI Native",
@@ -13310,6 +13316,42 @@
   "posted": "2026-11-02",
   "firstSeen": "2026-11-03"
  },
+ "5025559101": {
+  "title": "M&A Integration Manager",
+  "dept": "Corporate › Corporate Development",
+  "function": "G&A & other",
+  "location": "Amsterdam, Netherlands",
+  "region": "Europe & other",
+  "posted": "2026-11-04",
+  "firstSeen": "2026-11-04"
+ },
+ "5025600101": {
+  "title": "Compliance Due Diligence Specialist ",
+  "dept": "Corporate › Legal",
+  "function": "G&A & other",
+  "location": "Amsterdam, Netherlands",
+  "region": "Europe & other",
+  "posted": "2026-11-04",
+  "firstSeen": "2026-11-04"
+ },
+ "5025613101": {
+  "title": "Contract Manager – OFCI Procurement (Data Centers) ",
+  "dept": "Corporate › Finance › Procurement",
+  "function": "Data center & power",
+  "location": "Remote - Europe",
+  "region": "Europe & other",
+  "posted": "2026-11-04",
+  "firstSeen": "2026-11-04"
+ },
+ "5025616101": {
+  "title": "OFCI Equipment Procurement Manager",
+  "dept": "Corporate › Finance",
+  "function": "G&A & other",
+  "location": "Remote - Europe",
+  "region": "Europe & other",
+  "posted": "2026-11-04",
+  "firstSeen": "2026-11-04"
+ },
  "5026027101": {
   "title": "Software Engineer (Early Talent) ",
   "dept": "Technology",
@@ -13327,5 +13369,14 @@
   "region": "Americas",
   "posted": "2026-11-03",
   "firstSeen": "2026-11-03"
+ },
+ "5027012101": {
+  "title": "M&A Integration Manager ",
+  "dept": "Corporate › Corporate Development",
+  "function": "G&A & other",
+  "location": "London, United Kingdom",
+  "region": "Europe & other",
+  "posted": "2026-11-04",
+  "firstSeen": "2026-11-04"
  }
 }

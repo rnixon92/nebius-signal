@@ -13,7 +13,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-29",
   "baseline": false,
-  "latestEvidence": "2026-10-29"
+  "latestEvidence": "2026-11-04"
  },
  "1x-technologies": {
   "name": "1X Technologies",
@@ -525,7 +525,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-30",
   "baseline": false,
-  "latestEvidence": "2026-10-29"
+  "latestEvidence": "2026-11-04"
  },
  "ataraxis-ai": {
   "name": "Ataraxis AI",
@@ -3198,7 +3198,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-09",
   "baseline": false,
-  "latestEvidence": "2026-10-07"
+  "latestEvidence": "2026-11-04"
  },
  "langwatch": {
   "name": "LangWatch",
@@ -3320,7 +3320,7 @@
   "evidence": "named",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-25"
+  "latestEvidence": "2026-11-04"
  },
  "liner": {
   "name": "Liner",
@@ -3958,7 +3958,7 @@
   "evidence": "agreement",
   "firstListedAt": "2026-11-01",
   "baseline": false,
-  "latestEvidence": "2026-09-30"
+  "latestEvidence": "2026-11-04"
  },
  "mongodb": {
   "name": "MongoDB",
@@ -4102,7 +4102,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-27",
   "baseline": false,
-  "latestEvidence": "2026-10-27"
+  "latestEvidence": "2026-11-04"
  },
  "naranja-x": {
   "name": "Naranja X",
@@ -4307,7 +4307,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-20",
   "baseline": false,
-  "latestEvidence": "2026-10-28"
+  "latestEvidence": "2026-11-04"
  },
  "nomaris": {
   "name": "Nomaris",
@@ -4371,7 +4371,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-11-03"
+  "latestEvidence": "2026-11-04"
  },
  "novis": {
   "name": "Novis",
@@ -5472,7 +5472,7 @@
   "evidence": "agreement",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-19"
+  "latestEvidence": "2026-11-04"
  },
  "rembi": {
   "name": "Rembi",
@@ -5502,7 +5502,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-18",
   "baseline": false,
-  "latestEvidence": "2026-11-03"
+  "latestEvidence": "2026-11-04"
  },
  "respawnhost": {
   "name": "RespawnHost.com",
@@ -5526,11 +5526,13 @@
   "services": [
    "Tavily"
   ],
-  "workloads": [],
-  "evidence": "named",
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
   "firstListedAt": "2026-11-02",
   "baseline": false,
-  "latestEvidence": "2026-11-02"
+  "latestEvidence": "2026-11-04"
  },
  "revolut": {
   "name": "Revolut",
@@ -6043,7 +6045,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-19",
   "baseline": false,
-  "latestEvidence": "2026-11-02"
+  "latestEvidence": "2026-11-04"
  },
  "solidagent": {
   "name": "Solidagent",
@@ -6194,7 +6196,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-31",
   "baseline": false,
-  "latestEvidence": "2026-11-02"
+  "latestEvidence": "2026-11-04"
  },
  "super-protocol": {
   "name": "Super Protocol",
@@ -6348,7 +6350,7 @@
   "evidence": "agreement",
   "firstListedAt": "2026-09-27",
   "baseline": false,
-  "latestEvidence": "2026-10-26"
+  "latestEvidence": "2026-11-04"
  },
  "teamteacher": {
   "name": "TeamTeacher",
@@ -7030,7 +7032,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-27",
   "baseline": false,
-  "latestEvidence": "2026-10-19"
+  "latestEvidence": "2026-11-04"
  },
  "walddialog": {
   "name": "WaldDialog",
@@ -7075,7 +7077,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-11-02",
   "baseline": false,
-  "latestEvidence": "2026-11-02"
+  "latestEvidence": "2026-11-04"
  },
  "weinwolf-gruppe": {
   "name": "Weinwolf Gruppe",
@@ -7105,7 +7107,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-20",
   "baseline": false,
-  "latestEvidence": "2026-10-20"
+  "latestEvidence": "2026-11-04"
  },
  "weka": {
   "name": "WEKA",
