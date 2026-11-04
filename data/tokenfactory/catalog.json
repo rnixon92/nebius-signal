@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-04T14:54:12.600Z",
+ "updatedAt": "2026-11-04T23:57:28.865Z",
  "models": {
   "deepseek-ai/DeepSeek-V4-Flash-0731": {
    "id": "deepseek-ai/DeepSeek-V4-Flash-0731",
@@ -150,7 +150,7 @@
    "output": 0.6,
    "cacheRead": 0.015,
    "quantization": "fp4",
-   "tokensPerSecond": 181.46,
+   "tokensPerSecond": 25,
    "firstSeen": "2026-10-25",
    "lastSeen": "2026-11-04"
   },
@@ -203,6 +203,23 @@
    "quantization": "fp4",
    "tokensPerSecond": 264.55,
    "firstSeen": "2026-10-25",
+   "lastSeen": "2026-11-04"
+  },
+  "moonshotai/Kimi-K3.1-Pro": {
+   "id": "moonshotai/Kimi-K3.1-Pro",
+   "name": "Kimi-K3.1-Pro",
+   "vendor": "moonshotai",
+   "type": "image2text",
+   "regions": [
+    "us-north1"
+   ],
+   "contextK": 1048,
+   "input": 2,
+   "output": 10,
+   "cacheRead": 0.2,
+   "quantization": "fp4",
+   "tokensPerSecond": 195,
+   "firstSeen": "2026-11-04",
    "lastSeen": "2026-11-04"
   },
   "NousResearch/Hermes-4-405B": {

@@ -12106,7 +12106,9 @@
   "location": "Tel Aviv, Israel",
   "region": "Israel",
   "posted": "2026-09-30",
-  "firstSeen": "2026-10-04"
+  "firstSeen": "2026-10-04",
+  "closedAt": "2026-11-04",
+  "closedApprox": false
  },
  "4989900101": {
   "title": "Europe Regional Intelligence Analyst ",
@@ -12625,7 +12627,9 @@
   "location": "Amsterdam, Netherlands",
   "region": "Europe & other",
   "posted": "2026-10-16",
-  "firstSeen": "2026-10-17"
+  "firstSeen": "2026-10-17",
+  "closedAt": "2026-11-04",
+  "closedApprox": false
  },
  "5003407101": {
   "title": "Senior Applied Scientist, Efficient LLM Inference & Model Optimization",
@@ -13094,6 +13098,15 @@
   "posted": "2026-10-23",
   "firstSeen": "2026-10-24"
  },
+ "5010391101": {
+  "title": "Senior Technical Program Manager, Corporate Builds",
+  "dept": "Corporate › People › Talent Acquisition › Product & Infra",
+  "function": "Engineering & product",
+  "location": "United States",
+  "region": "Americas",
+  "posted": "2026-11-04",
+  "firstSeen": "2026-11-04"
+ },
  "5011060101": {
   "title": "Technical Operations & Project Management (Early Talent)",
   "dept": "Product & Infrastructure",
@@ -13374,6 +13387,15 @@
   "title": "M&A Integration Manager ",
   "dept": "Corporate › Corporate Development",
   "function": "G&A & other",
+  "location": "London, United Kingdom",
+  "region": "Europe & other",
+  "posted": "2026-11-04",
+  "firstSeen": "2026-11-04"
+ },
+ "5027589101": {
+  "title": "Senior/Staff Evaluation Data Analyst (Agentic Search)",
+  "dept": "New Products › Agentic Search › Analytics",
+  "function": "Engineering & product",
   "location": "London, United Kingdom",
   "region": "Europe & other",
   "posted": "2026-11-04",

@@ -1,6 +1,6 @@
 {
  "provider": "fireworks",
- "updatedAt": "2026-11-04T14:53:55.777Z",
+ "updatedAt": "2026-11-04T23:57:11.078Z",
  "days": {
   "2026-07-27": {
    "z-ai/glm-5.2-20260616": 26477715430,
@@ -1093,16 +1093,16 @@
    "Others": 623754463
   },
   "2026-11-04": {
-   "deepseek/deepseek-v4.1-flash-20261017": 75832771170,
-   "deepseek/deepseek-v4.1-flash-20260910": 51698752707,
-   "z-ai/glm-5.3-20260816": 28826604076,
-   "z-ai/glm-5.3-flash-20260826": 21466280700,
-   "moonshotai/kimi-k3-20260715": 8922908537,
-   "minimax/minimax-m3.1-flash-20261019": 8369594453,
-   "meta/muse-spark-open-20261015": 1013740686,
-   "qwen/qwen3-reranker-8b": 604086111,
-   "deepseek/deepseek-v4-flash-20260423": 562415522,
-   "Others": 231882240
+   "deepseek/deepseek-v4.1-flash-20261017": 129494158008,
+   "deepseek/deepseek-v4.1-flash-20260910": 82006715901,
+   "z-ai/glm-5.3-20260816": 47184595862,
+   "z-ai/glm-5.3-flash-20260826": 33234010961,
+   "minimax/minimax-m3.1-flash-20261019": 11587993898,
+   "moonshotai/kimi-k3-20260715": 9763467035,
+   "meta/muse-spark-open-20261015": 4861558215,
+   "qwen/qwen3-reranker-8b": 1390194081,
+   "deepseek/deepseek-v4-flash-20260423": 879068200,
+   "Others": 452110908
   }
  }
 }
