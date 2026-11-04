@@ -1,5 +1,22 @@
 [
  {
+  "id": "or-newmodel-deepseek/deepseek-v4-pro-20260423",
+  "date": "2026-11-04",
+  "source": "openrouter",
+  "severity": "info",
+  "title": "New model in Nebius's OpenRouter top 10: deepseek/deepseek-v4-pro-20260423",
+  "url": "https://openrouter.ai/provider/nebius"
+ },
+ {
+  "id": "atlas-added-2026-11-04",
+  "date": "2026-11-04",
+  "source": "atlas",
+  "severity": "info",
+  "title": "35 new customers on Nebius Atlas (5 using Token Factory)",
+  "detail": "Agenia, ALICE, AlphaJuris BR, Asamla, Atlas, bmdonline, brain.space, Career Compass, Cerebrium, Conduta, Cortex Research, Daqard, …",
+  "url": "https://nebiusatlas.com/"
+ },
+ {
   "id": "spot-cap-sku-e00fjjc4gwdx48pck9b46-2026-11-03",
   "date": "2026-11-03",
   "source": "gpu-spot",
