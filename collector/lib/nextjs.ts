@@ -48,6 +48,17 @@ function parseAt(src: string, start: number): { value: unknown; end: number } | 
   }
 }
 
+/** Every JSON array in `src` that is the value of `key`, e.g. `"customers":[…]`. Unaffected by key order inside the items. */
+export function arraysAt<T = unknown>(src: string, key: string): T[][] {
+  const out: T[][] = [];
+  const prefix = `"${key}":[`;
+  for (let i = src.indexOf(prefix); i !== -1; i = src.indexOf(prefix, i + prefix.length)) {
+    const parsed = parseAt(src, i + prefix.length - 1);
+    if (parsed && Array.isArray(parsed.value)) out.push(parsed.value as T[]);
+  }
+  return out;
+}
+
 /** Every JSON object in `src` whose text starts with `prefix`, e.g. `{"firstListedAt"`. */
 export function objectsStartingWith<T = unknown>(src: string, prefix: string): T[] {
   const out: T[] = [];

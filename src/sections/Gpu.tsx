@@ -27,7 +27,7 @@ export function GpuSection({ d, p, range }: { d: Dashboard; p: Palette; range: R
       intro={
         <>
           About 98% of Nebius revenue is GPU cloud. Spot (preemptible) prices have moved with spare capacity since Oct 8, 2026; before that they were a fixed rate, so the
-          series starts there. Spot is capped one cent below the on-demand list price up to Nov 2, 2026; from then on it can trade above list. A ratio near 100% means that pool is
+          series starts there. Until Nov 2, 2026 spot was capped one cent below the on-demand list price; since then it can trade above list. A ratio near 100% means that pool is
           nearly sold out, above 100% means buyers are paying more than list, and a low ratio means idle GPUs. Nebius only publishes 30 days of spot history, so this tracker
           keeps the long-run series.
         </>

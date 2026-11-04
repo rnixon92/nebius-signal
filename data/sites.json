@@ -174,16 +174,24 @@
    "Hauts-de-France"
   ],
   "sources": [
-   "https://www.datacenterdynamics.com/en/news/nebius-plans-240mw-data-center-in-b%C3%A9thune-france/"
+   "https://www.datacenterdynamics.com/en/news/nebius-plans-240mw-data-center-in-b%C3%A9thune-france/",
+   "https://stocktwits.com/news-articles/markets/equity/nbis-stock-rises-overnight-neocloud-reportedly-raises-nearly-280-m-for-france-data-center/cZUIuskRBzS"
   ],
   "phases": [
+   {
+    "by": "2026-12-31",
+    "mw": 60,
+    "basis": "estimate",
+    "note": "First 60 MW phase; German press says it opens in December 2026, not confirmed by Nebius"
+   },
    {
     "by": "2028-12-31",
     "mw": 240,
     "basis": "estimate",
     "note": "240 MW at full deployment; no dates disclosed"
    }
-  ]
+  ],
+  "note": "Former Bridgestone site; ~€8B investment for 240 MW, first phase 60 MW. L'Informé reported a €250M raise for the site (Oct 27, 2026); structure undisclosed and not confirmed by Nebius."
  },
  {
   "id": "madrid",
@@ -420,7 +428,7 @@
    "Vineland",
    "New Jersey"
   ],
-  "note": "Dedicated Microsoft capacity. Satellite estimates (Epoch AI) put ~50 MW of the planned 300 MW live as of Jul 2026; Bloom Energy said the first fuel-cell power block was ready on Oct 23, 2026.",
+  "note": "Dedicated Microsoft capacity. Satellite estimates (Epoch AI) put ~50 MW of the planned 300 MW live as of Jul 2026. Bloom Energy said on its Oct 22, 2026 earnings call that the first fuel-cell power block is ready for customer use; its size is undisclosed. Full plan ~328 MW of Bloom capacity, ~250 MW guaranteed (May 2026 filing).",
   "sources": [
    "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm",
    "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm",
@@ -617,28 +625,30 @@
  },
  {
   "id": "aib-southeast",
-  "name": "AIB Data Centers (southeastern US)",
+  "name": "Spartanburg County, South Carolina (AIB CLT1)",
   "country": "US",
-  "model": "Leased (12-year term)",
+  "model": "Leased (12-year term + two 5-year options)",
   "mw": 50,
   "mwNote": "50 MW critical IT in two data halls",
   "status": "contracted",
-  "expected": "Not disclosed",
+  "expected": "Two 25 MW halls, Q4 2027 (AIB investor presentation)",
   "region": null,
   "keywords": [
-   "AIB Data Centers"
+   "AIB Data Centers",
+   "Spartanburg"
   ],
-  "note": "Announced Sep 30, 2026. City not disclosed.",
+  "note": "Announced Sep 30, 2026. Former bitcoin-mining site with a 65 MW utility supply. Nebius prepayments, project debt and preferred equity are to fund construction; project financing not yet closed. Spartanburg County has a one-year data-center moratorium, but it exempts qualifying former industrial sites up to 65 MW.",
   "phases": [
    {
     "by": "2027-12-31",
     "mw": 50,
     "basis": "estimate",
-    "note": "Online date not disclosed; placed at end-2027"
+    "note": "Two 25 MW halls in Q4 2027 per AIB investor presentation (DCD); another report says first hall within 10 months"
    }
   ],
   "sources": [
-   "https://finance.yahoo.com/technology/ai/articles/aib-data-centers-signs-contract-121700973.html"
+   "https://www.sec.gov/Archives/edgar/data/0002070542/000121390026105865/ea030737801ex99-1.htm",
+   "https://datacenterdynamics.com/en/news/aib-plans-50mw-ai-data-center-at-former-spartanburg-cryptomine-to-serve-nebius"
   ]
  }
 ]

@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-03T23:58:54.756Z",
+ "generatedAt": "2026-11-04T02:16:45.809Z",
  "sources": [
   {
    "id": "gpu-ondemand",
@@ -689,8 +689,8 @@
     "quarter": "2026-Q3",
     "end": "2026-09-30",
     "status": "ended",
-    "expectedReport": "2026-11-10",
-    "reportDateConfirmed": false,
+    "expectedReport": "2026-11-12",
+    "reportDateConfirmed": true,
     "anchor": {
      "kind": "consensus",
      "value": 905,
@@ -808,12 +808,12 @@
      "range": null,
      "source": null
     },
-    "estimate": 1330.8209152768497,
-    "low": 1290.8962878185441,
-    "high": 1370.7455427351554,
-    "tilt": 0.021122515568186416,
+    "estimate": 1331.4029794475582,
+    "low": 1291.4608900641315,
+    "high": 1371.345068830985,
+    "tilt": 0.021569126245395573,
     "lean": "no consensus",
-    "coverage": 0.46886467252307357,
+    "coverage": 0.47487172562786933,
     "priorFromLastSurprise": 0.01267828843106178,
     "signals": [
      {
@@ -822,7 +822,7 @@
       "value": "0 new region/GPU go-lives",
       "score": 0,
       "weight": 3,
-      "coverage": 0.11956521739130435,
+      "coverage": 0.13043478260869565,
       "note": "From Nebius's regions page. Absence of go-lives only counts once tracking covers the quarter.",
       "contribution": 0
      },
@@ -842,9 +842,9 @@
       "value": "1 progress · 0 risk headlines",
       "score": 0.3333333333333333,
       "weight": 1.5,
-      "coverage": 0.3695652173913043,
+      "coverage": 0.3804347826086957,
       "note": "Live and ramping sites only. Trouble at future campuses (Independence, Birmingham) is pipeline risk, shown in Data centers.",
-      "contribution": 0.0013708051701648285
+      "contribution": 0.001393272484290142
      },
      {
       "id": "dc-hiring",
@@ -854,27 +854,27 @@
       "weight": 0.5,
       "coverage": 1,
       "note": "Build-out staffing leads capacity by one to three quarters, so it's weighted lightly for the current one. Survivorship-biased: only still-open roles are visible.",
-      "contribution": 0.0007835663973655184
+      "contribution": 0.0007736544049134836
      },
      {
       "id": "blackwell-spot",
       "label": "Blackwell spot vs list",
-      "value": "51% average",
-      "score": -0.36375879971421776,
+      "value": "52% average",
+      "score": -0.32193335626648345,
       "weight": 2,
-      "coverage": 0.7647058823529411,
+      "coverage": 0.7714285714285715,
       "note": "Above ~60% means spare Blackwell capacity is being taken up. Market pricing only since Oct 8, 2026; uncapped from Nov 2, so later averages can run higher.",
-      "contribution": -0.004127172056997077
+      "contribution": -0.0036381242888495887
      },
      {
       "id": "hopper-spot",
       "label": "Hopper spot vs list",
       "value": "37% average",
-      "score": -0.2668779677113013,
+      "score": -0.25096364883401945,
       "weight": 1,
-      "coverage": 0.7647058823529411,
+      "coverage": 0.7714285714285715,
       "note": "Low Hopper prices point to idle older GPUs and pricing pressure on renewals. Market pricing only since Oct 8, 2026.",
-      "contribution": -0.0015139857672606014
+      "contribution": -0.001418052725306274
      },
      {
       "id": "list-price",
@@ -884,7 +884,7 @@
       "weight": 1.5,
       "coverage": 1,
       "note": "Raising list prices signals demand ahead of supply.",
-      "contribution": 0.01112771255780861
+      "contribution": 0.010986948733259403
      },
      {
       "id": "tokens",
@@ -894,7 +894,7 @@
       "weight": 0.5,
       "coverage": 0.3695652173913043,
       "note": "Under 0.1% of revenue: a demand-breadth read only.",
-      "contribution": 0.0008033008360433614
+      "contribution": 0.0007931392060266256
      }
     ],
     "context": {
@@ -971,6 +971,11 @@
     "date": "2026-11-03",
     "2026-Q3": 915.4,
     "2026-Q4": 1330.8
+   },
+   {
+    "date": "2026-11-04",
+    "2026-Q3": 915.4,
+    "2026-Q4": 1331.4
    }
   ]
  },
@@ -1220,11 +1225,11 @@
     },
     {
      "date": "2026-12-31",
-     "total": 516.4,
+     "total": 576.4,
      "announced": 442,
      "United States": 340,
      "Finland": 75,
-     "Rest of Europe & other": 40,
+     "Rest of Europe & other": 100,
      "United Kingdom": 4.4,
      "Israel": 57,
      "guidanceLow": 800,
@@ -1232,41 +1237,41 @@
     },
     {
      "date": "2027-03-31",
-     "total": 563,
+     "total": 623,
      "announced": 500,
      "United States": 340,
      "Finland": 75,
-     "Rest of Europe & other": 40,
+     "Rest of Europe & other": 100,
      "United Kingdom": 22,
      "Israel": 86
     },
     {
      "date": "2027-06-30",
-     "total": 763,
+     "total": 823,
      "announced": 600,
      "United States": 440,
      "Finland": 175,
-     "Rest of Europe & other": 40,
+     "Rest of Europe & other": 100,
      "United Kingdom": 22,
      "Israel": 86
     },
     {
      "date": "2027-09-30",
-     "total": 763,
+     "total": 823,
      "announced": 600,
      "United States": 440,
      "Finland": 175,
-     "Rest of Europe & other": 40,
+     "Rest of Europe & other": 100,
      "United Kingdom": 22,
      "Israel": 86
     },
     {
      "date": "2027-12-31",
-     "total": 1393,
+     "total": 1453,
      "announced": 860,
      "United States": 1000,
      "Finland": 245,
-     "Rest of Europe & other": 40,
+     "Rest of Europe & other": 100,
      "United Kingdom": 22,
      "Israel": 86,
      "guidanceLow": 1800,
@@ -1274,31 +1279,31 @@
     },
     {
      "date": "2028-03-31",
-     "total": 1393,
+     "total": 1453,
      "announced": 860,
      "United States": 1000,
      "Finland": 245,
-     "Rest of Europe & other": 40,
+     "Rest of Europe & other": 100,
      "United Kingdom": 22,
      "Israel": 86
     },
     {
      "date": "2028-06-30",
-     "total": 1393,
+     "total": 1453,
      "announced": 860,
      "United States": 1000,
      "Finland": 245,
-     "Rest of Europe & other": 40,
+     "Rest of Europe & other": 100,
      "United Kingdom": 22,
      "Israel": 86
     },
     {
      "date": "2028-09-30",
-     "total": 1393,
+     "total": 1453,
      "announced": 860,
      "United States": 1000,
      "Finland": 245,
-     "Rest of Europe & other": 40,
+     "Rest of Europe & other": 100,
      "United Kingdom": 22,
      "Israel": 86
     },
@@ -1399,6 +1404,14 @@
      "note": "Phased Q3 2026 to Q1 2027; half placed at end-2026"
     },
     {
+     "site": "Béthune (near Lille)",
+     "group": "Rest of Europe & other",
+     "by": "2026-12-31",
+     "mw": 60,
+     "basis": "estimate",
+     "note": "First 60 MW phase; German press says it opens in December 2026, not confirmed by Nebius"
+    },
+    {
      "site": "Kansas City (Patmos)",
      "group": "United States",
      "by": "2026-12-31",
@@ -1471,20 +1484,20 @@
      "note": "Nebius: Missouri operational in 2027. Size of the first phase not disclosed; the utility plant's first 250 MW is due Oct 2027"
     },
     {
-     "site": "AIB Data Centers (southeastern US)",
-     "group": "United States",
-     "by": "2027-12-31",
-     "mw": 50,
-     "basis": "estimate",
-     "note": "Online date not disclosed; placed at end-2027"
-    },
-    {
      "site": "Mäntsälä 2",
      "group": "Finland",
      "by": "2027-12-31",
      "mw": 70,
      "basis": "estimate",
      "note": "Announced as 'capacity from 2027'; placed at end-2027"
+    },
+    {
+     "site": "Spartanburg County, South Carolina (AIB CLT1)",
+     "group": "United States",
+     "by": "2027-12-31",
+     "mw": 50,
+     "basis": "estimate",
+     "note": "Two 25 MW halls in Q4 2027 per AIB investor presentation (DCD); another report says first hall within 10 months"
     },
     {
      "site": "Birmingham, Alabama",
@@ -2085,7 +2098,7 @@
     "mw": 300,
     "status": "ramping",
     "region": null,
-    "note": "Dedicated Microsoft capacity. Satellite estimates (Epoch AI) put ~50 MW of the planned 300 MW live as of Jul 2026; Bloom Energy said the first fuel-cell power block was ready on Oct 23, 2026.",
+    "note": "Dedicated Microsoft capacity. Satellite estimates (Epoch AI) put ~50 MW of the planned 300 MW live as of Jul 2026. Bloom Energy said on its Oct 22, 2026 earnings call that the first fuel-cell power block is ready for customer use; its size is undisclosed. Full plan ~328 MW of Bloom capacity, ~250 MW guaranteed (May 2026 filing).",
     "sources": [
      "https://www.sec.gov/Archives/edgar/data/1513845/000110465926052948/nbis-20251231x20f.htm",
      "https://www.sec.gov/Archives/edgar/data/1513845/000110465926059872/tm2614392d1_ex99-2.htm",
@@ -2300,7 +2313,7 @@
     "observedMw": null,
     "dcRolesOpen": 3,
     "dcRolesPosted90d": 2,
-    "news90d": 14,
+    "news90d": 13,
     "risk90d": 8,
     "progress90d": 0,
     "latest": {
@@ -2318,8 +2331,10 @@
     "mw": 240,
     "status": "construction",
     "region": null,
+    "note": "Former Bridgestone site; ~€8B investment for 240 MW, first phase 60 MW. L'Informé reported a €250M raise for the site (Oct 27, 2026); structure undisclosed and not confirmed by Nebius.",
     "sources": [
-     "https://www.datacenterdynamics.com/en/news/nebius-plans-240mw-data-center-in-b%C3%A9thune-france/"
+     "https://www.datacenterdynamics.com/en/news/nebius-plans-240mw-data-center-in-b%C3%A9thune-france/",
+     "https://stocktwits.com/news-articles/markets/equity/nbis-stock-rises-overnight-neocloud-reportedly-raises-nearly-280-m-for-france-data-center/cZUIuskRBzS"
     ],
     "platforms": [],
     "spotPools": 0,
@@ -2365,17 +2380,18 @@
    },
    {
     "id": "aib-southeast",
-    "name": "AIB Data Centers (southeastern US)",
+    "name": "Spartanburg County, South Carolina (AIB CLT1)",
     "country": "US",
-    "model": "Leased (12-year term)",
+    "model": "Leased (12-year term + two 5-year options)",
     "mw": 50,
     "mwNote": "50 MW critical IT in two data halls",
     "status": "contracted",
-    "expected": "Not disclosed",
+    "expected": "Two 25 MW halls, Q4 2027 (AIB investor presentation)",
     "region": null,
-    "note": "Announced Sep 30, 2026. City not disclosed.",
+    "note": "Announced Sep 30, 2026. Former bitcoin-mining site with a 65 MW utility supply. Nebius prepayments, project debt and preferred equity are to fund construction; project financing not yet closed. Spartanburg County has a one-year data-center moratorium, but it exempts qualifying former industrial sites up to 65 MW.",
     "sources": [
-     "https://finance.yahoo.com/technology/ai/articles/aib-data-centers-signs-contract-121700973.html"
+     "https://www.sec.gov/Archives/edgar/data/0002070542/000121390026105865/ea030737801ex99-1.htm",
+     "https://datacenterdynamics.com/en/news/aib-plans-50mw-ai-data-center-at-former-spartanburg-cryptomine-to-serve-nebius"
     ],
     "platforms": [],
     "spotPools": 0,
@@ -18311,7 +18327,7 @@
    },
    {
     "date": "2026-11-03",
-    "partial": true,
+    "partial": false,
     "total": 47500236001,
     "byModel": {
      "qwen/qwen3-embedding-8b": 18770450423,
@@ -18331,8 +18347,8 @@
    "qwen/qwen3-embedding-8b",
    "deepseek/deepseek-v4.1-flash-20261017",
    "reflection/beam-1.0-501b-a23b-20261016",
-   "nvidia/nemotron-3.5-super-vl-20261015",
    "openai/gpt-oss-120b",
+   "nvidia/nemotron-3.5-super-vl-20261015",
    "qwen/qwen3-30b-a3b-instruct-2507"
   ],
   "pricing": {
@@ -18538,10 +18554,10 @@
    }
   },
   "week": {
-   "end": "2026-11-02",
-   "tokens": 321593702674,
-   "prev": 314182803972,
-   "change": 0.023587855886156195
+   "end": "2026-11-03",
+   "tokens": 319197006413,
+   "prev": 341933507909,
+   "change": -0.06649392636316576
   },
   "market": [
    {
@@ -20477,97 +20493,97 @@
    {
     "slug": "deepinfra",
     "name": "DeepInfra",
-    "week": 9246511649205,
-    "prevWeek": 6421313089020,
-    "change": 0.43997209309352847,
+    "week": 10521198214944,
+    "prevWeek": 6597468969289,
+    "change": 0.5947325048317513,
     "isNebius": false
    },
    {
     "slug": "together",
     "name": "Together",
-    "week": 8596154354599,
-    "prevWeek": 10473543374633,
-    "change": -0.17925060821164407,
+    "week": 8724451362602,
+    "prevWeek": 10761331864869,
+    "change": -0.18927773326241482,
     "isNebius": false
    },
    {
     "slug": "fireworks",
     "name": "Fireworks",
-    "week": 3755956702295,
-    "prevWeek": 3234177974478,
-    "change": 0.16133271945283578,
+    "week": 3475236988722,
+    "prevWeek": 3695075590610,
+    "change": -0.05949502154885766,
     "isNebius": false
    },
    {
     "slug": "coreweave",
     "name": "CoreWeave",
-    "week": 3266680657999,
-    "prevWeek": 2455448504597,
-    "change": 0.3303804383937359,
+    "week": 3420193385954,
+    "prevWeek": 2643200984680,
+    "change": 0.2939588800766382,
     "isNebius": false
    },
    {
     "slug": "novita",
     "name": "Novita",
-    "week": 2103515729520,
-    "prevWeek": 2176609245605,
-    "change": -0.033581368007413404,
-    "isNebius": false
-   },
-   {
-    "slug": "baseten",
-    "name": "Baseten",
-    "week": 1874282470583,
-    "prevWeek": 2558142931266,
-    "change": -0.2673269160705435,
+    "week": 2007620697508,
+    "prevWeek": 2062472010053,
+    "change": -0.02659493669617874,
     "isNebius": false
    },
    {
     "slug": "parasail",
     "name": "Parasail",
-    "week": 1632097254599,
-    "prevWeek": 1263653634969,
-    "change": 0.29157010230816827,
+    "week": 1838185867073,
+    "prevWeek": 1193705962276,
+    "change": 0.5398983712607008,
+    "isNebius": false
+   },
+   {
+    "slug": "baseten",
+    "name": "Baseten",
+    "week": 1750313751103,
+    "prevWeek": 2584870979140,
+    "change": -0.3228622375243895,
     "isNebius": false
    },
    {
     "slug": "crusoe",
     "name": "Crusoe",
-    "week": 1132755270332,
-    "prevWeek": 1018378858184,
-    "change": 0.11231224139114504,
+    "week": 1305377736996,
+    "prevWeek": 969902911255,
+    "change": 0.34588495595596713,
     "isNebius": false
    },
    {
     "slug": "siliconflow",
     "name": "SiliconFlow",
-    "week": 959518261932,
-    "prevWeek": 1392354187942,
-    "change": -0.31086625066985485,
+    "week": 932278298839,
+    "prevWeek": 1244330979288,
+    "change": -0.2507794836286684,
     "isNebius": false
    },
    {
     "slug": "nebius",
     "name": "Nebius",
-    "week": 321593702674,
-    "prevWeek": 314182803972,
-    "change": 0.023587855886156195,
+    "week": 319197006413,
+    "prevWeek": 341933507909,
+    "change": -0.06649392636316576,
     "isNebius": true
    },
    {
     "slug": "groq",
     "name": "Groq",
-    "week": 114286880557,
-    "prevWeek": 138623751330,
-    "change": -0.17556061309482962,
+    "week": 112025748341,
+    "prevWeek": 135328485444,
+    "change": -0.17219388088580112,
     "isNebius": false
    },
    {
     "slug": "cerebras",
     "name": "Cerebras",
-    "week": 42505446005,
-    "prevWeek": 45857360085,
-    "change": -0.07309435331181258,
+    "week": 41448159402,
+    "prevWeek": 45501862037,
+    "change": -0.08908871974741861,
     "isNebius": false
    }
   ],
@@ -21873,7 +21889,7 @@
   ],
   "tracked": 1281,
   "trackedSince": "2024-11-22",
-  "closed30d": 180,
+  "closed30d": 149,
   "medianDaysToClose": 96,
   "daysToCloseByFunction": [
    {
@@ -21937,7 +21953,7 @@
     "count": 3
    }
   ],
-  "new7d": 28,
+  "new7d": 26,
   "dcRoles": [
    {
     "title": "Data Center Warehouse Specialist",

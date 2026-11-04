@@ -16,7 +16,7 @@ npm run dev         # dashboard at http://localhost:5173
 
 | Source | What it gives | Why it matters |
 |---|---|---|
-| `api.nebius.cloud/billing/v1alpha1/spot-price` | Live and 30-day hourly spot prices per GPU and region (public, no key) | Spot is capped just under list price, so spot ÷ list is a proxy for spare capacity. Nebius keeps only 30 days; this repo keeps it forever. |
+| `api.nebius.cloud/billing/v1alpha1/spot-price` | Live and 30-day hourly spot prices per GPU and region (public, no key) | Spot has been a market price since Oct 8, 2026 (capped just under list until Nov 2, uncapped since), so spot ÷ list is a proxy for spare capacity, and above 100% means buyers pay over list. Nebius keeps only 30 days; this repo keeps it forever. |
 | `nebius.com/prices` | On-demand rate card | Detects list-price changes (pricing power) |
 | `openrouter.ai/provider/<slug>` | 90 days of daily tokens per model, for Nebius and 11 peers | Token Factory's competitive position |
 | `jimmyresearch.com/openrouter` CSV | Whole-market OpenRouter tokens per provider | Nebius share and rank |

@@ -163,7 +163,7 @@ function signalsFor(inp: Inputs, from: string, to: string, asOf: string): Nowcas
     note: "Build-out staffing leads capacity by one to three quarters, so it's weighted lightly for the current one. Survivorship-biased: only still-open roles are visible.",
   });
 
-  // 4–5. Spot tightness: Blackwell near its cap = new capacity absorbed; Hopper slack = older-fleet pressure.
+  // 4–5. Spot tightness: Blackwell near or above list = new capacity absorbed; Hopper slack = older-fleet pressure.
   const bw = spotRatio(inp, BLACKWELL, from, end);
   push({
     id: "blackwell-spot",

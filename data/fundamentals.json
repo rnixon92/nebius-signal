@@ -53,8 +53,9 @@
     877,
     943
    ],
-   "expectedReport": "2026-11-10",
-   "reportDateConfirmed": false,
+   "expectedReport": "2026-11-12",
+   "reportDateConfirmed": true,
+   "reportDateNote": "Before US market open; call at 8:00 a.m. ET. Announced Oct 30, 2026: https://nebius.com/newsroom/nebius-group-announces-date-of-third-quarter-2026-results-and-conference-call",
    "consensusAsOf": "2026-10-24",
    "source": "https://www.marketbeat.com/stocks/NASDAQ/NBIS/earnings/"
   },

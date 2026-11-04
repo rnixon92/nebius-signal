@@ -77,7 +77,7 @@ export function Home({ d, p, range }: { d: Dashboard; p: Palette; range: Range }
         <SummaryCard
           label="Blackwell spot vs list price"
           value={pct(d.gpu.tightness.blackwell)}
-          note={<>Hopper {pct(d.gpu.tightness.hopper)}. Higher means less spare capacity; the cap is 100%.</>}
+          note={<>Hopper {pct(d.gpu.tightness.hopper)}. Higher means less spare capacity; above 100% means spot trades over list.</>}
           trend={trends.blackwell}
           trendFormat={(v) => pct(v)}
           p={p}

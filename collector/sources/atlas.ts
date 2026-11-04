@@ -2,7 +2,7 @@
 // evidence of using Nebius. Note: "firstListedAt" is when Atlas found the customer, not when Nebius
 // signed them, so growth here partly reflects the researcher's pace.
 import { fetchText } from "../lib/http.ts";
-import { objectsStartingWith, rscPayload } from "../lib/nextjs.ts";
+import { arraysAt, objectsStartingWith, rscPayload } from "../lib/nextjs.ts";
 import { readJson, sortKeys, today, writeJson } from "../lib/store.ts";
 import type { Alert, SourceResult } from "../lib/types.ts";
 
@@ -35,7 +35,12 @@ export type Customer = {
 export async function collectAtlas(): Promise<SourceResult> {
   const date = today();
   const payload = rscPayload(await fetchText("https://nebiusatlas.com/"));
-  const raw = objectsStartingWith<AtlasRaw>(payload, '{"firstListedAt"').filter((c) => c.slug && c.name);
+  // The page's `customers` array, falling back to the record prefix the page used before Nov 2026.
+  const isCustomer = (c: AtlasRaw) => !!(c && c.slug && c.name && c.firstListedAt);
+  const fromArray = arraysAt<AtlasRaw>(payload, "customers")
+    .map((a) => a.filter(isCustomer))
+    .sort((a, b) => b.length - a.length)[0];
+  const raw = fromArray?.length ? fromArray : objectsStartingWith<AtlasRaw>(payload, '{"firstListedAt"').filter(isCustomer);
 
   const prev = await readJson<Record<string, Customer>>("atlas/customers.json", {});
   const prevActive = Object.entries(prev).filter(([, c]) => !c.removedAt);
