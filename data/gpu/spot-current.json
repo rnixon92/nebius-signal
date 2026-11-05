@@ -1,53 +1,53 @@
 {
- "snapshotTime": "2026-11-05T14:53:43.362207Z",
+ "snapshotTime": "2026-11-05T18:39:22.605889Z",
  "prices": {
   "sku-e00agrh84hf7fwlrgsfsv": {
-   "price": 1.25,
-   "effectiveTime": "2026-11-05T14:16:00Z"
+   "price": 1.85,
+   "effectiveTime": "2026-11-05T18:01:00Z"
   },
   "sku-e00ljkedv5qtbwhikuoct": {
-   "price": 1.5,
-   "effectiveTime": "2026-11-05T12:41:00Z"
+   "price": 1,
+   "effectiveTime": "2026-11-05T17:41:00Z"
   },
   "sku-e00g61h0323jih8tkg5jv": {
-   "price": 1.38,
-   "effectiveTime": "2026-11-05T14:06:00Z"
+   "price": 1,
+   "effectiveTime": "2026-11-05T18:26:00Z"
   },
   "sku-e00dh1moiqg9mc5ix6wj2": {
-   "price": 3.05,
-   "effectiveTime": "2026-11-05T14:21:00Z"
+   "price": 1.25,
+   "effectiveTime": "2026-11-05T18:26:00Z"
   },
   "sku-e00vd4x28cozliwb6g4vh": {
-   "price": 11.9,
-   "effectiveTime": "2026-11-05T14:41:00Z"
+   "price": 10.4,
+   "effectiveTime": "2026-11-05T18:36:00Z"
   },
   "sku-e00k58wq19wjszct65fwm": {
-   "price": 4.4,
-   "effectiveTime": "2026-11-05T14:31:00Z"
+   "price": 3.8,
+   "effectiveTime": "2026-11-05T18:36:00Z"
   },
   "sku-e00fmto201j24eyp0841g": {
    "price": 9,
-   "effectiveTime": "2026-11-05T14:16:00Z"
+   "effectiveTime": "2026-11-05T18:41:00Z"
   },
   "sku-e00lxawt0lavf9i0dutiz": {
-   "price": 0.79,
-   "effectiveTime": "2026-11-05T11:36:00Z"
+   "price": 0.99,
+   "effectiveTime": "2026-11-05T18:21:00Z"
   },
   "sku-e00em8l461xmyihec7sr8": {
-   "price": 1.5,
-   "effectiveTime": "2026-11-05T13:51:00Z"
+   "price": 0.9,
+   "effectiveTime": "2026-11-05T18:06:00Z"
   },
   "sku-e00fjjc4gwdx48pck9b46": {
    "price": 5.9,
-   "effectiveTime": "2026-11-05T14:11:00Z"
+   "effectiveTime": "2026-11-05T18:31:00Z"
   },
   "sku-e00otwkvc6gea6nmvvsda": {
-   "price": 1.3,
-   "effectiveTime": "2026-11-05T14:36:00Z"
+   "price": 1.789,
+   "effectiveTime": "2026-11-05T18:16:00Z"
   },
   "sku-e00hfg6dlxtt9ji6fqo9u": {
-   "price": 7.5,
-   "effectiveTime": "2026-11-05T12:46:00Z"
+   "price": 8.7,
+   "effectiveTime": "2026-11-05T18:31:00Z"
   }
  }
 }
