@@ -37,7 +37,7 @@
  },
  "~deepseek/deepseek-v4-flash-latest": {
   "name": "~deepseek/deepseek-v4-flash-latest",
-  "input": 0.0527,
+  "input": 0.059,
   "output": 0.3,
   "cacheRead": 0.035
  },
@@ -403,7 +403,7 @@
  },
  "deepseek/deepseek-v4-flash-20260731": {
   "name": "deepseek/deepseek-v4-flash-0731",
-  "input": 0.0527,
+  "input": 0.059,
   "output": 0.3,
   "cacheRead": 0.035
  },
@@ -587,6 +587,18 @@
   "output": 7.5,
   "cacheRead": null
  },
+ "google/gemini-omni-1.1-flash-20260911": {
+  "name": "google/gemini-omni-1.1-flash",
+  "input": 1.5,
+  "output": 9,
+  "cacheRead": null
+ },
+ "google/gemini-omni-1.2-flash-20261105": {
+  "name": "google/gemini-omni-1.2-flash",
+  "input": 1.5,
+  "output": 9,
+  "cacheRead": null
+ },
  "google/gemma-2-27b-it": {
   "name": "google/gemma-2-27b-it",
   "input": 0.65,
@@ -613,9 +625,9 @@
  },
  "google/gemma-4-26b-a4b-it-20260403": {
   "name": "google/gemma-4-26b-a4b-it",
-  "input": 0.024,
-  "output": 0.071,
-  "cacheRead": 0.012
+  "input": 0.0765,
+  "output": 0.255,
+  "cacheRead": 0.0425
  },
  "google/gemma-4-31b-it-20260402": {
   "name": "google/gemma-4-31b-it",
@@ -751,9 +763,9 @@
  },
  "meta-llama/llama-3.3-70b-instruct": {
   "name": "meta-llama/llama-3.3-70b-instruct",
-  "input": 0.2,
-  "output": 0.52,
-  "cacheRead": 0.1
+  "input": 0.59,
+  "output": 0.79,
+  "cacheRead": 0.295
  },
  "meta-llama/llama-4-maverick-17b-128e-instruct": {
   "name": "meta-llama/llama-4-maverick",
@@ -853,9 +865,9 @@
  },
  "minimax/minimax-m3.1-flash-20261019": {
   "name": "minimax/minimax-m3.1-flash",
-  "input": 0.15,
-  "output": 0.6,
-  "cacheRead": 0.015
+  "input": 0.075,
+  "output": 0.3,
+  "cacheRead": 0.0075
  },
  "mistralai/codestral-2508": {
   "name": "mistralai/codestral-2508",
@@ -1441,9 +1453,9 @@
  },
  "openai/gpt-oss-120b": {
   "name": "openai/gpt-oss-120b",
-  "input": 0.15,
-  "output": 0.6,
-  "cacheRead": 0.075
+  "input": 0.025,
+  "output": 0.093,
+  "cacheRead": 0.023
  },
  "openai/gpt-oss-20b": {
   "name": "openai/gpt-oss-20b",
@@ -1837,9 +1849,9 @@
  },
  "reflection/beam-1.0-501b-a23b-20261016": {
   "name": "reflection/beam-1.0-501b-a23b",
-  "input": 0.25,
+  "input": 0.3,
   "output": 1,
-  "cacheRead": 0.05
+  "cacheRead": 0.04
  },
  "rekaai/reka-edge-2603": {
   "name": "rekaai/reka-edge",
@@ -1969,9 +1981,9 @@
  },
  "tencent/hy3-20260706": {
   "name": "tencent/hy3",
-  "input": 0.132,
-  "output": 0.528,
-  "cacheRead": 0.033
+  "input": 0.0825,
+  "output": 0.33,
+  "cacheRead": 0.020625
  },
  "tencent/hy3-preview-20260421": {
   "name": "tencent/hy3-preview",
@@ -1987,9 +1999,9 @@
  },
  "tencent/hy4-preview-20260827": {
   "name": "tencent/hy4-preview",
-  "input": 0.834,
-  "output": 2.501,
-  "cacheRead": 0.042
+  "input": 0.7506,
+  "output": 2.2509,
+  "cacheRead": 0.0378
  },
  "thedrummer/cydonia-24b-v4.1": {
   "name": "thedrummer/cydonia-24b-v4.1",

@@ -1,6 +1,6 @@
 {
  "provider": "novita",
- "updatedAt": "2026-11-05T14:58:54.545Z",
+ "updatedAt": "2026-11-05T23:51:42.232Z",
  "days": {
   "2026-07-27": {
    "deepseek/deepseek-v4-flash-20260423": 204360735482,
@@ -1215,16 +1215,16 @@
    "Others": 25321402251
   },
   "2026-11-05": {
-   "deepseek/deepseek-v4.1-flash-20261017": 54106804422,
-   "minimax/minimax-m3.1-flash-20261019": 19789030899,
-   "z-ai/glm-5.3-flash-20260826": 17503479790,
-   "z-ai/glm-5.3-20260816": 10973444665,
-   "deepseek/deepseek-v4.1-flash-20260910": 10591880854,
-   "inclusionai/ling-3.0-flash-20260723": 10546698426,
-   "deepseek/deepseek-v4-pro-20260423": 9916934223,
-   "deepseek/deepseek-v4-pro-20260813": 6227378012,
-   "inclusionai/ling-3.1-flash-20261002": 6201374681,
-   "Others": 21805107940
+   "deepseek/deepseek-v4.1-flash-20261017": 67972555180,
+   "z-ai/glm-5.3-flash-20260826": 34067296228,
+   "z-ai/glm-5.3-20260816": 24592923761,
+   "minimax/minimax-m3.1-flash-20261019": 20040742046,
+   "deepseek/deepseek-v4-pro-20260423": 16280368917,
+   "inclusionai/ling-3.0-flash-20260723": 15744548235,
+   "deepseek/deepseek-v4.1-flash-20260910": 14237429075,
+   "deepseek/deepseek-v4-pro-20260813": 10182420920,
+   "minimax/minimax-m3-20260531": 7737585209,
+   "Others": 37762030736
   }
  }
 }

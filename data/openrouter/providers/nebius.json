@@ -1,6 +1,6 @@
 {
  "provider": "nebius",
- "updatedAt": "2026-11-05T14:58:45.859Z",
+ "updatedAt": "2026-11-05T23:51:33.861Z",
  "days": {
   "2026-07-27": {
    "qwen/qwen3-embedding-8b": 11333107392,
@@ -1188,16 +1188,16 @@
    "Others": 3354558815
   },
   "2026-11-05": {
-   "nvidia/nemotron-3.5-super-vl-20261015": 25623274012,
-   "qwen/qwen3-embedding-8b": 12004424377,
-   "deepseek/deepseek-v4.1-flash-20261017": 8033518009,
-   "deepseek/deepseek-v4.1-flash-20260910": 4503316462,
-   "minimax/minimax-m3.1-flash-20261019": 4166261198,
-   "qwen/qwen3.8-27b-20260814": 2816758183,
-   "qwen/qwen3-30b-a3b-instruct-2507": 1208433324,
-   "deepseek/deepseek-v4-pro-20260813": 1022075040,
-   "z-ai/glm-5.3-flash-20260826": 1004953979,
-   "Others": 2774144506
+   "nvidia/nemotron-3.5-super-vl-20261015": 34400263714,
+   "qwen/qwen3-embedding-8b": 19749512564,
+   "deepseek/deepseek-v4.1-flash-20261017": 11062053480,
+   "deepseek/deepseek-v4.1-flash-20260910": 7908982766,
+   "qwen/qwen3.8-27b-20260814": 4740706005,
+   "minimax/minimax-m3.1-flash-20261019": 4484787024,
+   "reflection/beam-1.0-501b-a23b-20261016": 3397085559,
+   "qwen/qwen3-30b-a3b-instruct-2507": 2231119228,
+   "z-ai/glm-5.3-flash-20260826": 1711314299,
+   "Others": 6511010063
   }
  }
 }
