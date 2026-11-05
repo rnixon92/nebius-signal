@@ -1,5 +1,22 @@
 [
  {
+  "id": "or-newmodel-qwen/qwen3.8-27b-20260814",
+  "date": "2026-11-05",
+  "source": "openrouter",
+  "severity": "info",
+  "title": "New model in Nebius's OpenRouter top 10: qwen/qwen3.8-27b-20260814",
+  "url": "https://openrouter.ai/provider/nebius"
+ },
+ {
+  "id": "atlas-added-2026-11-05",
+  "date": "2026-11-05",
+  "source": "atlas",
+  "severity": "info",
+  "title": "1 new customer on Nebius Atlas",
+  "detail": "Coral Bricks",
+  "url": "https://nebiusatlas.com/"
+ },
+ {
   "id": "tf-new-moonshotai/Kimi-K3.1-Pro",
   "date": "2026-11-04",
   "source": "tokenfactory",

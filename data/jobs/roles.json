@@ -7920,7 +7920,7 @@
  },
  "4872697101": {
   "title": "Senior Software Engineer (Managed PostgreSQL)",
-  "dept": "Technology › Backend",
+  "dept": "Technology",
   "function": "Engineering & product",
   "location": "Amsterdam, Netherlands; Germany; United Kingdom",
   "region": "Europe & other",
@@ -9124,6 +9124,15 @@
   "posted": "2026-07-06",
   "firstSeen": "2026-07-21"
  },
+ "4921167101": {
+  "title": "Corporate Operational Project Specialist",
+  "dept": "Corporate › Operations",
+  "function": "G&A & other",
+  "location": "Tel Aviv, Israel",
+  "region": "Israel",
+  "posted": "2026-07-13",
+  "firstSeen": "2026-11-05"
+ },
  "4921283101": {
   "title": "Channel Partner Manager, United States",
   "dept": "Channel & Alliances",
@@ -9200,7 +9209,9 @@
   "location": "Singapore",
   "region": "Asia-Pacific",
   "posted": "2026-07-15",
-  "firstSeen": "2026-07-21"
+  "firstSeen": "2026-07-21",
+  "closedAt": "2026-11-05",
+  "closedApprox": false
  },
  "4923774101": {
   "title": "Data Center - Technical Due Diligence Manager",
@@ -11294,7 +11305,9 @@
   "location": "Béthune, Pas-de-Calais, France",
   "region": "Europe & other",
   "posted": "2026-09-04",
-  "firstSeen": "2026-09-04"
+  "firstSeen": "2026-09-04",
+  "closedAt": "2026-11-05",
+  "closedApprox": false
  },
  "4969011101": {
   "title": "Team Assistant - Infrastructure",
@@ -11439,7 +11452,9 @@
   "location": "Hauts-de-France, France",
   "region": "Europe & other",
   "posted": "2026-09-15",
-  "firstSeen": "2026-09-23"
+  "firstSeen": "2026-09-23",
+  "closedAt": "2026-11-05",
+  "closedApprox": false
  },
  "4972367101": {
   "title": "OFCI (Data Centers) Procurement Manager",
@@ -12207,7 +12222,9 @@
   "location": "Hyderabad, India",
   "region": "Asia-Pacific",
   "posted": "2026-10-07",
-  "firstSeen": "2026-10-10"
+  "firstSeen": "2026-10-10",
+  "closedAt": "2026-11-05",
+  "closedApprox": false
  },
  "4995853101": {
   "title": "Transportation Logistics Specialist",
@@ -13192,6 +13209,15 @@
   "posted": "2026-10-28",
   "firstSeen": "2026-10-28"
  },
+ "5016650101": {
+  "title": "SFO Office Site Security Manager",
+  "dept": "CEO & CSO Office",
+  "function": "Engineering & product",
+  "location": "United States",
+  "region": "Americas",
+  "posted": "2026-11-04",
+  "firstSeen": "2026-11-05"
+ },
  "5017733101": {
   "title": "Support Engineering Team Lead ",
   "dept": "Go-To-Market › Customer Experience › Customer Support",
@@ -13265,6 +13291,15 @@
   "region": "Asia-Pacific",
   "posted": "2026-10-28",
   "firstSeen": "2026-10-28"
+ },
+ "5018918101": {
+  "title": "Service Desk L3 - IT Operations Technical Lead",
+  "dept": "Product & Infrastructure › Enterprise Technologies › IT Operations",
+  "function": "Engineering & product",
+  "location": "Amsterdam, Netherlands; Remote - Europe",
+  "region": "Europe & other",
+  "posted": "2026-11-05",
+  "firstSeen": "2026-11-05"
  },
  "5020394101": {
   "title": "Account Receivable Accountant",
@@ -13391,6 +13426,15 @@
   "region": "Europe & other",
   "posted": "2026-11-04",
   "firstSeen": "2026-11-04"
+ },
+ "5027430101": {
+  "title": "Team Assistant ",
+  "dept": "Corporate › Corporate Functions › Investor Relations",
+  "function": "G&A & other",
+  "location": "Amsterdam, Netherlands",
+  "region": "Europe & other",
+  "posted": "2026-11-05",
+  "firstSeen": "2026-11-05"
  },
  "5027589101": {
   "title": "Senior/Staff Evaluation Data Analyst (Agentic Search)",
