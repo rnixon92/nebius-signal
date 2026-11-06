@@ -1,53 +1,53 @@
 {
- "snapshotTime": "2026-11-06T00:11:28.657800Z",
+ "snapshotTime": "2026-11-06T06:48:33.604425Z",
  "prices": {
   "sku-e00agrh84hf7fwlrgsfsv": {
-   "price": 0.79,
-   "effectiveTime": "2026-11-05T23:06:00Z"
+   "price": 1.4,
+   "effectiveTime": "2026-11-06T05:01:00Z"
   },
   "sku-e00ljkedv5qtbwhikuoct": {
-   "price": 1,
-   "effectiveTime": "2026-11-05T21:51:00Z"
+   "price": 0.79,
+   "effectiveTime": "2026-11-06T03:36:00Z"
   },
   "sku-e00g61h0323jih8tkg5jv": {
-   "price": 1.3,
-   "effectiveTime": "2026-11-05T22:11:00Z"
+   "price": 1.38,
+   "effectiveTime": "2026-11-06T03:36:00Z"
   },
   "sku-e00dh1moiqg9mc5ix6wj2": {
-   "price": 1.99,
-   "effectiveTime": "2026-11-06T00:01:00Z"
+   "price": 1.1,
+   "effectiveTime": "2026-11-06T06:11:00Z"
   },
   "sku-e00vd4x28cozliwb6g4vh": {
-   "price": 9.8,
-   "effectiveTime": "2026-11-05T23:26:00Z"
+   "price": 8.6,
+   "effectiveTime": "2026-11-06T06:11:00Z"
   },
   "sku-e00k58wq19wjszct65fwm": {
-   "price": 3.5,
-   "effectiveTime": "2026-11-06T00:06:00Z"
+   "price": 5.6,
+   "effectiveTime": "2026-11-06T06:06:00Z"
   },
   "sku-e00fmto201j24eyp0841g": {
-   "price": 9.49,
-   "effectiveTime": "2026-11-05T20:01:00Z"
+   "price": 9,
+   "effectiveTime": "2026-11-06T04:21:00Z"
   },
   "sku-e00lxawt0lavf9i0dutiz": {
-   "price": 1,
-   "effectiveTime": "2026-11-05T22:11:00Z"
+   "price": 0.79,
+   "effectiveTime": "2026-11-06T06:31:00Z"
   },
   "sku-e00em8l461xmyihec7sr8": {
-   "price": 0.79,
-   "effectiveTime": "2026-11-05T21:36:00Z"
+   "price": 1.7,
+   "effectiveTime": "2026-11-06T06:31:00Z"
   },
   "sku-e00fjjc4gwdx48pck9b46": {
-   "price": 6,
-   "effectiveTime": "2026-11-05T23:06:00Z"
+   "price": 4.5,
+   "effectiveTime": "2026-11-06T05:51:00Z"
   },
   "sku-e00otwkvc6gea6nmvvsda": {
-   "price": 1.789,
-   "effectiveTime": "2026-11-05T20:56:00Z"
+   "price": 0.79,
+   "effectiveTime": "2026-11-06T06:16:00Z"
   },
   "sku-e00hfg6dlxtt9ji6fqo9u": {
-   "price": 9.3,
-   "effectiveTime": "2026-11-05T23:41:00Z"
+   "price": 8.59,
+   "effectiveTime": "2026-11-06T06:26:00Z"
   }
  }
 }
