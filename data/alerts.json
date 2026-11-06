@@ -1,5 +1,22 @@
 [
  {
+  "id": "spot-above-list-sku-e00k58wq19wjszct65fwm-2026-11-06",
+  "date": "2026-11-06",
+  "source": "gpu-spot",
+  "severity": "high",
+  "title": "B200 spot above on-demand in me-west1: $9.8 vs $8.5 list",
+  "detail": "115% of on-demand. Buyers are paying more than list for preemptible GPUs.",
+  "url": "https://nebius.com/spot-prices"
+ },
+ {
+  "id": "or-newmodel-moonshotai/kimi-k3.1-pro-20261023",
+  "date": "2026-11-06",
+  "source": "openrouter",
+  "severity": "info",
+  "title": "New model in Nebius's OpenRouter top 10: moonshotai/kimi-k3.1-pro-20261023",
+  "url": "https://openrouter.ai/provider/nebius"
+ },
+ {
   "id": "spot-cap-sku-e00hfg6dlxtt9ji6fqo9u-2026-11-06",
   "date": "2026-11-06",
   "source": "gpu-spot",

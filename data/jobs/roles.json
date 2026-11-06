@@ -9961,14 +9961,12 @@
  },
  "4941795101": {
   "title": "Electrical Engineer- Data Centers",
-  "dept": "",
+  "dept": "Product & Infrastructure",
   "function": "Data center & power",
   "location": "Remote - Europe",
   "region": "Europe & other",
   "posted": "2026-07-30",
-  "firstSeen": "2026-08-05",
-  "closedAt": "2026-10-17",
-  "closedApprox": true
+  "firstSeen": "2026-08-05"
  },
  "4941807101": {
   "title": "MEP Engineer",
@@ -11658,7 +11656,9 @@
   "location": "Singapore",
   "region": "Asia-Pacific",
   "posted": "2026-09-22",
-  "firstSeen": "2026-09-23"
+  "firstSeen": "2026-09-23",
+  "closedAt": "2026-11-06",
+  "closedApprox": false
  },
  "4976988101": {
   "title": "Forward Deployed Engineer, Physical AI Infrastructure",
@@ -11811,7 +11811,7 @@
   "title": "Compensation Lead ",
   "dept": "Corporate › People › C&B",
   "function": "G&A & other",
-  "location": "Amsterdam, Netherlands",
+  "location": "Amsterdam, Netherlands; Remote - Europe",
   "region": "Europe & other",
   "posted": "2026-09-17",
   "firstSeen": "2026-09-23"
@@ -13078,6 +13078,15 @@
   "posted": "2026-10-30",
   "firstSeen": "2026-10-30"
  },
+ "5010079101": {
+  "title": "Data Center Technician (Early Talent)",
+  "dept": "Product & Infrastructure",
+  "function": "Data center & power",
+  "location": "Kansas City, Missouri, United States",
+  "region": "Americas",
+  "posted": "2026-11-06",
+  "firstSeen": "2026-11-06"
+ },
  "5010126101": {
   "title": "Senior Support Engineer",
   "dept": "Go-To-Market › Customer Experience › Customer Support",
@@ -13217,6 +13226,15 @@
   "posted": "2026-10-28",
   "firstSeen": "2026-10-28"
  },
+ "5015607101": {
+  "title": "Data Center Technician (Early Talent)",
+  "dept": "Product & Infrastructure",
+  "function": "Data center & power",
+  "location": "Minnesota, United States",
+  "region": "Americas",
+  "posted": "2026-11-06",
+  "firstSeen": "2026-11-06"
+ },
  "5016650101": {
   "title": "SFO Office Site Security Manager",
   "dept": "CEO & CSO Office",
@@ -13225,6 +13243,15 @@
   "region": "Americas",
   "posted": "2026-11-04",
   "firstSeen": "2026-11-05"
+ },
+ "5017360101": {
+  "title": "Senior Product Analyst / Data Scientist ",
+  "dept": "New Products",
+  "function": "Engineering & product",
+  "location": "Amsterdam, Netherlands; Remote - Europe",
+  "region": "Europe & other",
+  "posted": "2026-11-06",
+  "firstSeen": "2026-11-06"
  },
  "5017726101": {
   "title": "Warehouse Logistics 3PL Manager",
@@ -13362,6 +13389,15 @@
   "region": "Israel",
   "posted": "2026-11-02",
   "firstSeen": "2026-11-02"
+ },
+ "5024849101": {
+  "title": "Senior / Lead Program Manager",
+  "dept": "Product & Infrastructure",
+  "function": "Engineering & product",
+  "location": "Berlin, Germany",
+  "region": "Europe & other",
+  "posted": "2026-11-06",
+  "firstSeen": "2026-11-06"
  },
  "5024930101": {
   "title": "Compensation Business Partner, Infrastructure ",
