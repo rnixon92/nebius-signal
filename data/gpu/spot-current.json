@@ -1,5 +1,5 @@
 {
- "snapshotTime": "2026-11-06T14:33:36.556589Z",
+ "snapshotTime": "2026-11-06T14:58:12.671509Z",
  "prices": {
   "sku-e00agrh84hf7fwlrgsfsv": {
    "price": 1.5,
@@ -18,8 +18,8 @@
    "effectiveTime": "2026-11-06T12:46:00Z"
   },
   "sku-e00vd4x28cozliwb6g4vh": {
-   "price": 5,
-   "effectiveTime": "2026-11-06T14:21:00Z"
+   "price": 4.7,
+   "effectiveTime": "2026-11-06T14:56:00Z"
   },
   "sku-e00k58wq19wjszct65fwm": {
    "price": 9.8,
@@ -38,16 +38,16 @@
    "effectiveTime": "2026-11-06T14:31:00Z"
   },
   "sku-e00fjjc4gwdx48pck9b46": {
-   "price": 1.5,
-   "effectiveTime": "2026-11-06T13:46:00Z"
+   "price": 1.8,
+   "effectiveTime": "2026-11-06T14:46:00Z"
   },
   "sku-e00otwkvc6gea6nmvvsda": {
    "price": 0.79,
    "effectiveTime": "2026-11-06T13:21:00Z"
   },
   "sku-e00hfg6dlxtt9ji6fqo9u": {
-   "price": 7.09,
-   "effectiveTime": "2026-11-06T12:31:00Z"
+   "price": 6.79,
+   "effectiveTime": "2026-11-06T14:36:00Z"
   }
  }
 }
