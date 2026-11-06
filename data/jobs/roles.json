@@ -11865,7 +11865,9 @@
   "location": "Canada; Remote - United States",
   "region": "Americas",
   "posted": "2026-09-18",
-  "firstSeen": "2026-10-20"
+  "firstSeen": "2026-10-20",
+  "closedAt": "2026-11-06",
+  "closedApprox": false
  },
  "4981489101": {
   "title": "AI Science Writer, Nebius Academy (Contract)",
@@ -12107,7 +12109,9 @@
   "location": "United States",
   "region": "Americas",
   "posted": "2026-10-05",
-  "firstSeen": "2026-10-30"
+  "firstSeen": "2026-10-30",
+  "closedAt": "2026-11-06",
+  "closedApprox": false
  },
  "4988854101": {
   "title": "Automation Engineer (Customer Service)",
@@ -12802,7 +12806,9 @@
   "location": "Remote - United States",
   "region": "Americas",
   "posted": "2026-10-14",
-  "firstSeen": "2026-10-15"
+  "firstSeen": "2026-10-15",
+  "closedAt": "2026-11-06",
+  "closedApprox": false
  },
  "5005913101": {
   "title": "People Program Manager ",
@@ -12829,7 +12835,9 @@
   "location": "Canada",
   "region": "Americas",
   "posted": "2026-10-14",
-  "firstSeen": "2026-10-15"
+  "firstSeen": "2026-10-15",
+  "closedAt": "2026-11-06",
+  "closedApprox": false
  },
  "5006506101": {
   "title": "Field CTO, Financial Services AI Infrastructure ",
@@ -13527,8 +13535,8 @@
  },
  "5027907101": {
   "title": "Senior/Staff Evaluation Data Analyst (Agentic Search)",
-  "dept": "Z Archived › Z Tavily GTM",
-  "function": "Sales & go-to-market",
+  "dept": "New Products › Agentic Search › Analytics",
+  "function": "Engineering & product",
   "location": "London, United Kingdom",
   "region": "Europe & other",
   "posted": "2026-11-05",

@@ -1,6 +1,6 @@
 {
  "provider": "coreweave",
- "updatedAt": "2026-11-06T14:38:39.561Z",
+ "updatedAt": "2026-11-06T23:33:29.391Z",
  "days": {
   "2026-07-27": {
    "z-ai/glm-5.2-20260616": 13924780831,
@@ -1227,16 +1227,16 @@
    "Others": 40973996396
   },
   "2026-11-06": {
-   "z-ai/glm-5.3-flash-20260826": 133140085525,
-   "nvidia/nemotron-3.5-super-vl-20261015": 126224308378,
-   "deepseek/deepseek-v4.1-flash-20260910": 112868765866,
-   "deepseek/deepseek-v4.1-flash-20261017": 32644787151,
-   "deepseek/deepseek-v4-flash-20260731": 23475864257,
-   "z-ai/glm-5.2-20260616": 18168165980,
-   "google/gemma-4-31b-it-20260402": 11861499764,
-   "reflection/beam-1.0-501b-a23b-20261016": 11618332345,
-   "z-ai/glm-5.3-20260816": 11127819063,
-   "Others": 28229347608
+   "z-ai/glm-5.3-flash-20260826": 202442404607,
+   "nvidia/nemotron-3.5-super-vl-20261015": 189846768557,
+   "deepseek/deepseek-v4.1-flash-20260910": 183567911575,
+   "deepseek/deepseek-v4.1-flash-20261017": 44489847591,
+   "deepseek/deepseek-v4-flash-20260731": 39925302744,
+   "z-ai/glm-5.2-20260616": 29486595075,
+   "google/gemma-4-31b-it-20260402": 18487612198,
+   "z-ai/glm-5.3-20260816": 18256396093,
+   "reflection/beam-1.0-501b-a23b-20261016": 16517651143,
+   "Others": 50205417212
   }
  }
 }
