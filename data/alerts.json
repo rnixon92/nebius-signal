@@ -1,5 +1,14 @@
 [
  {
+  "id": "spot-cap-sku-e00hfg6dlxtt9ji6fqo9u-2026-11-06",
+  "date": "2026-11-06",
+  "source": "gpu-spot",
+  "severity": "medium",
+  "title": "B300 spot near on-demand in us-north1: $9.3 vs $9.5 on-demand",
+  "detail": "98% of on-demand. Spare capacity is almost gone.",
+  "url": "https://nebius.com/spot-prices"
+ },
+ {
   "id": "spot-cap-sku-e00fmto201j24eyp0841g-2026-11-05",
   "date": "2026-11-05",
   "source": "gpu-spot",
