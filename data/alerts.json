@@ -1,5 +1,14 @@
 [
  {
+  "id": "spot-cap-sku-e00otwkvc6gea6nmvvsda-2026-11-07",
+  "date": "2026-11-07",
+  "source": "gpu-spot",
+  "severity": "medium",
+  "title": "RTX PRO 6000 spot near on-demand in us-central1: $1.79 vs $1.8 on-demand",
+  "detail": "99% of on-demand. Spare capacity is almost gone.",
+  "url": "https://nebius.com/spot-prices"
+ },
+ {
   "id": "spot-above-list-sku-e00k58wq19wjszct65fwm-2026-11-06",
   "date": "2026-11-06",
   "source": "gpu-spot",

@@ -37,9 +37,9 @@
  },
  "~deepseek/deepseek-v4-flash-latest": {
   "name": "~deepseek/deepseek-v4-flash-latest",
-  "input": 0.0434,
-  "output": 0.3,
-  "cacheRead": 0.035
+  "input": 0.04708,
+  "output": 0.14124,
+  "cacheRead": 0.001498
  },
  "~google/gemini-flash-latest": {
   "name": "~google/gemini-flash-latest",
@@ -55,9 +55,9 @@
  },
  "~moonshotai/kimi-latest": {
   "name": "~moonshotai/kimi-latest",
-  "input": 0.1539,
-  "output": 10.5539,
-  "cacheRead": 0.15
+  "input": 0.1824,
+  "output": 9.7471,
+  "cacheRead": 0.18
  },
  "~openai/gpt-astra-latest": {
   "name": "~openai/gpt-astra-latest",
@@ -103,9 +103,9 @@
  },
  "~z-ai/glm-flash-latest": {
   "name": "~z-ai/glm-flash-latest",
-  "input": 0.0284,
+  "input": 0.0285,
   "output": 0.0923,
-  "cacheRead": 0.0284
+  "cacheRead": 0.0285
  },
  "~z-ai/glm-latest": {
   "name": "~z-ai/glm-latest",
@@ -183,7 +183,7 @@
   "name": "anthracite-org/magnum-v4-72b",
   "input": 2.5,
   "output": 5,
-  "cacheRead": null
+  "cacheRead": 2.5
  },
  "anthropic/claude-4.1-opus-20250805": {
   "name": "anthropic/claude-opus-4.1",
@@ -403,7 +403,7 @@
  },
  "deepseek/deepseek-v4-flash-20260731": {
   "name": "deepseek/deepseek-v4-flash-0731",
-  "input": 0.0434,
+  "input": 0.0474,
   "output": 0.3,
   "cacheRead": 0.035
  },
@@ -415,9 +415,9 @@
  },
  "deepseek/deepseek-v4-pro-20260423": {
   "name": "deepseek/deepseek-v4-pro",
-  "input": 0.69948,
-  "output": 1.39896,
-  "cacheRead": 0.05829
+  "input": 0.69774,
+  "output": 1.39548,
+  "cacheRead": 0.058145
  },
  "deepseek/deepseek-v4-pro-20260813": {
   "name": "deepseek/deepseek-v4-pro-0813",
@@ -697,9 +697,9 @@
  },
  "inclusionai/ling-3.1-flash-20261002": {
   "name": "inclusionai/ling-3.1-flash",
-  "input": 0.075,
-  "output": 0.225,
-  "cacheRead": 0.015
+  "input": 0.045,
+  "output": 0.135,
+  "cacheRead": 0.009
  },
  "inference-net/schematron-v2-small-20260902": {
   "name": "inference-net/schematron-v2-small",
@@ -725,11 +725,17 @@
   "output": 0.7,
   "cacheRead": 0.025
  },
+ "liquid/lfm-3-1.7b-20261106": {
+  "name": "liquid/lfm-3-1.7b",
+  "input": 0.08,
+  "output": 0.2,
+  "cacheRead": 0.02
+ },
  "mancer/weaver": {
   "name": "mancer/weaver",
   "input": 0.4,
   "output": 0.75,
-  "cacheRead": null
+  "cacheRead": 0.4
  },
  "meituan/longcat-2.0-20260720": {
   "name": "meituan/longcat-2.0",
@@ -847,9 +853,9 @@
  },
  "minimax/minimax-m2.5-20260211": {
   "name": "minimax/minimax-m2.5",
-  "input": 0.27,
-  "output": 0.95,
-  "cacheRead": 0.03
+  "input": 0.3,
+  "output": 1.2,
+  "cacheRead": 0.06
  },
  "minimax/minimax-m2.7-20260318": {
   "name": "minimax/minimax-m2.7",
@@ -865,9 +871,9 @@
  },
  "minimax/minimax-m3.1-flash-20261019": {
   "name": "minimax/minimax-m3.1-flash",
-  "input": 0.075,
-  "output": 0.3,
-  "cacheRead": 0.0075
+  "input": 0.15,
+  "output": 0.6,
+  "cacheRead": 0.015
  },
  "mistralai/codestral-2508": {
   "name": "mistralai/codestral-2508",
@@ -1453,9 +1459,9 @@
  },
  "openai/gpt-oss-120b": {
   "name": "openai/gpt-oss-120b",
-  "input": 0.01,
-  "output": 0.037,
-  "cacheRead": 0.009
+  "input": 0.017,
+  "output": 0.062,
+  "cacheRead": 0.015
  },
  "openai/gpt-oss-20b": {
   "name": "openai/gpt-oss-20b",
@@ -1981,9 +1987,9 @@
  },
  "tencent/hy3-20260706": {
   "name": "tencent/hy3",
-  "input": 0.0825,
-  "output": 0.33,
-  "cacheRead": 0.020625
+  "input": 0.132,
+  "output": 0.528,
+  "cacheRead": 0.033
  },
  "tencent/hy3-preview-20260421": {
   "name": "tencent/hy3-preview",
@@ -1999,9 +2005,9 @@
  },
  "tencent/hy4-preview-20260827": {
   "name": "tencent/hy4-preview",
-  "input": 0.7506,
-  "output": 2.2509,
-  "cacheRead": 0.0378
+  "input": 0.834,
+  "output": 2.501,
+  "cacheRead": 0.042
  },
  "thedrummer/cydonia-24b-v4.1": {
   "name": "thedrummer/cydonia-24b-v4.1",
@@ -2055,7 +2061,7 @@
   "name": "undi95/remm-slerp-l2-13b",
   "input": 0.35,
   "output": 0.65,
-  "cacheRead": null
+  "cacheRead": 0.35
  },
  "upstage/solar-mini4-20260922": {
   "name": "upstage/solar-mini4",

@@ -1450,7 +1450,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-11-05",
   "baseline": false,
-  "latestEvidence": "2026-11-05"
+  "latestEvidence": "2026-06-10"
  },
  "core-automation": {
   "name": "Core Automation",
@@ -3638,7 +3638,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-26",
   "baseline": false,
-  "latestEvidence": "2026-10-26"
+  "latestEvidence": "2026-11-07"
  },
  "mangoapps": {
   "name": "MangoApps",
@@ -3776,7 +3776,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-22"
+  "latestEvidence": "2026-11-07"
  },
  "milestone-systems": {
   "name": "Milestone Systems",
@@ -4742,7 +4742,7 @@
  "palantir": {
   "name": "Palantir",
   "category": "Workplace tools",
-  "use": "Signed Nebius deal for planned sovereign AI integration.",
+  "use": "Signed Nebius deal includes planned dedicated GPU fine-tuning.",
   "services": [
    "Nebius AI Cloud"
   ],
@@ -4858,7 +4858,7 @@
  "peerbound": {
   "name": "Peerbound",
   "category": "Workplace tools",
-  "use": "Uses Tavily for company enrichment and Slack agent web search.",
+  "use": "Uses Tavily for company enrichment and Slack agent search.",
   "services": [
    "Tavily"
   ],
@@ -4868,7 +4868,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-27",
   "baseline": false,
-  "latestEvidence": "2026-09-27"
+  "latestEvidence": "2026-11-07"
  },
  "perforated": {
   "name": "Perforated",
@@ -5905,7 +5905,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-27",
   "baseline": false,
-  "latestEvidence": "2026-09-25"
+  "latestEvidence": "2026-09-27"
  },
  "sievestack": {
   "name": "SieveStack",
@@ -6410,7 +6410,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-30",
   "baseline": false,
-  "latestEvidence": "2026-11-02"
+  "latestEvidence": "2026-11-07"
  },
  "temple-university": {
   "name": "Temple University",
@@ -7304,7 +7304,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-27",
   "baseline": false,
-  "latestEvidence": "2026-10-14"
+  "latestEvidence": "2026-11-07"
  },
  "yma-health": {
   "name": "Yma",
