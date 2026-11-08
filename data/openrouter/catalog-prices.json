@@ -55,9 +55,9 @@
  },
  "~moonshotai/kimi-latest": {
   "name": "~moonshotai/kimi-latest",
-  "input": 0.1824,
-  "output": 9.3388,
-  "cacheRead": 0.18
+  "input": 0.1624,
+  "output": 9.7471,
+  "cacheRead": 0.16
  },
  "~openai/gpt-astra-latest": {
   "name": "~openai/gpt-astra-latest",
@@ -415,9 +415,9 @@
  },
  "deepseek/deepseek-v4-pro-20260423": {
   "name": "deepseek/deepseek-v4-pro",
-  "input": 0.231246,
-  "output": 0.462492,
-  "cacheRead": 0.019271
+  "input": 0.2088,
+  "output": 0.4176,
+  "cacheRead": 0.0174
  },
  "deepseek/deepseek-v4-pro-20260813": {
   "name": "deepseek/deepseek-v4-pro-0813",
@@ -733,9 +733,9 @@
  },
  "meta-llama/llama-3.1-8b-instruct": {
   "name": "meta-llama/llama-3.1-8b-instruct",
-  "input": 0.05,
-  "output": 0.08,
-  "cacheRead": 0.025
+  "input": 0.02,
+  "output": 0.04,
+  "cacheRead": null
  },
  "meta-llama/llama-3.2-1b-instruct": {
   "name": "meta-llama/llama-3.2-1b-instruct",
@@ -853,9 +853,9 @@
  },
  "minimax/minimax-m3.1-flash-20261019": {
   "name": "minimax/minimax-m3.1-flash",
-  "input": 0.15,
-  "output": 0.6,
-  "cacheRead": 0.015
+  "input": 0.075,
+  "output": 0.3,
+  "cacheRead": 0.0075
  },
  "mistralai/codestral-2508": {
   "name": "mistralai/codestral-2508",
@@ -1441,9 +1441,9 @@
  },
  "openai/gpt-oss-120b": {
   "name": "openai/gpt-oss-120b",
-  "input": 0.026,
-  "output": 0.096,
-  "cacheRead": 0.023
+  "input": 0.018,
+  "output": 0.065,
+  "cacheRead": 0.016
  },
  "openai/gpt-oss-20b": {
   "name": "openai/gpt-oss-20b",
@@ -1969,9 +1969,9 @@
  },
  "tencent/hy3-20260706": {
   "name": "tencent/hy3",
-  "input": 0.132,
-  "output": 0.528,
-  "cacheRead": 0.033
+  "input": 0.0825,
+  "output": 0.33,
+  "cacheRead": 0.020625
  },
  "tencent/hy3-preview-20260421": {
   "name": "tencent/hy3-preview",
@@ -1987,9 +1987,9 @@
  },
  "tencent/hy4-preview-20260827": {
   "name": "tencent/hy4-preview",
-  "input": 0.834,
-  "output": 2.501,
-  "cacheRead": 0.042
+  "input": 0.7506,
+  "output": 2.2509,
+  "cacheRead": 0.0378
  },
  "thedrummer/cydonia-24b-v4.1": {
   "name": "thedrummer/cydonia-24b-v4.1",
