@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-11-08T02:28:45.393Z",
+ "generatedAt": "2026-11-08T10:18:33.612Z",
  "sources": [
   {
    "id": "gpu-ondemand",
@@ -15,7 +15,7 @@
    "label": "Nebius spot price API",
    "url": "https://nebius.com/spot-prices",
    "ok": true,
-   "lastSuccess": "2026-11-08T02:28:39.981Z",
+   "lastSuccess": "2026-11-08T10:18:28.443Z",
    "summary": "12 SKUs listed; 12 series, 8628 hourly points",
    "stale": false
   },
@@ -24,7 +24,7 @@
    "label": "Nebius regions docs",
    "url": "https://docs.nebius.com/overview/regions",
    "ok": true,
-   "lastSuccess": "2026-11-08T02:28:40.202Z",
+   "lastSuccess": "2026-11-08T10:18:28.584Z",
    "summary": "10 regions, 6 GPU platforms",
    "stale": false
   },
@@ -42,8 +42,8 @@
    "label": "Google News (data centers)",
    "url": "https://news.google.com/search?q=Nebius%20data%20center",
    "ok": true,
-   "lastSuccess": "2026-11-08T02:28:41.761Z",
-   "summary": "230 headlines fetched; 558 kept, 169 matched to sites",
+   "lastSuccess": "2026-11-08T10:18:29.936Z",
+   "summary": "230 headlines fetched; 561 kept, 170 matched to sites",
    "stale": false
   },
   {
@@ -87,7 +87,7 @@
    "label": "SEC EDGAR",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845",
    "ok": true,
-   "lastSuccess": "2026-11-08T02:28:41.884Z",
+   "lastSuccess": "2026-11-08T10:18:30.005Z",
    "summary": "172 filings since 2025-01-01 (0 parsed this run)",
    "stale": false
   },
@@ -105,7 +105,7 @@
    "label": "Yahoo Finance (NBIS)",
    "url": "https://finance.yahoo.com/quote/NBIS",
    "ok": true,
-   "lastSuccess": "2026-11-08T02:28:45.391Z",
+   "lastSuccess": "2026-11-08T10:18:33.610Z",
    "summary": "NBIS last 2026-11-06 $129.49; 4/4 peers",
    "stale": false
   }
@@ -959,10 +959,10 @@
      "range": null,
      "source": null
     },
-    "estimate": 1331.75837550879,
-    "low": 1291.8056242435264,
-    "high": 1371.7111267740538,
-    "tilt": 0.02183245840759923,
+    "estimate": 1331.7506470620333,
+    "low": 1291.7981276501723,
+    "high": 1371.7031664738943,
+    "tilt": 0.021826528519795114,
     "lean": "no consensus",
     "coverage": 0.49989094081721674,
     "priorFromLastSurprise": 0.01267828843106178,
@@ -1011,21 +1011,21 @@
       "id": "blackwell-spot",
       "label": "Blackwell spot vs list",
       "value": "53% average",
-      "score": -0.269051353240787,
+      "score": -0.27012307999600527,
       "weight": 2,
       "coverage": 0.7948717948717948,
       "note": "Above ~60% means spare Blackwell capacity is being taken up. Market pricing only since Oct 8, 2026; uncapped from Nov 2, so later averages can run higher.",
-      "contribution": -0.0029761111558149938
+      "contribution": -0.0029879660597720683
      },
      {
       "id": "hopper-spot",
       "label": "Hopper spot vs list",
-      "value": "36% average",
-      "score": -0.2838759458383115,
+      "value": "37% average",
+      "score": -0.28280465949820777,
       "weight": 1,
       "coverage": 0.7948717948717948,
       "note": "Low Hopper prices point to idle older GPUs and pricing pressure on renewals. Market pricing only since Oct 8, 2026.",
-      "contribution": -0.001570046682725357
+      "contribution": -0.001564121666572397
      },
      {
       "id": "list-price",
@@ -2569,13 +2569,13 @@
     "observedMw": null,
     "dcRolesOpen": 0,
     "dcRolesPosted90d": 0,
-    "news90d": 2,
+    "news90d": 3,
     "risk90d": 0,
     "progress90d": 0,
     "latest": {
-     "title": "AIB Data Centers Lands Nebius Lease, Expands Contracted Power to 120 MW",
-     "date": "2026-10-29",
-     "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPa2tLdUk2RW45SlRIWWRhSEk2ZHZUWVZHUF8xSkZtLXBPanhMdWdkVHN6clFBQkZzaEhCVTl6alY5SmllYXJuRm9HTTFnUDJlN05VMDNRcVpJakJ0SzQwQWMtZUxXanNZejdITjAzOVk1Mk1SUVZKaFlZVkJwbnhHMG9RMEF4SklyeDl3T1piU2N5NGlPZHlfSlF2ckpkOFNyNGtTSGlLQ0dzOW5QVlZvaHhldUVTS19YY25lVnpVTGtGRzBCd25URVFB?oc=5",
+     "title": "Nebius Stock: Microsoft's Scrutiny, a 50 MW Site in Spartanburg, and the November 12 Verdict",
+     "date": "2026-11-08",
+     "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPV1hHbExKeHllS25FbE8xRzNaYTZ5S3o5Qjk5NkktRTkteHdaaVVWS3BFNHFZSE9XUFVqYUl6dWdsVmd2SW1NVkk2NzZDZXJiZkVQZVRYdkJfWTh0bHI5NjdYeGg3ZkM1RVpfX0pwS2NoT0UtOUYtNFVGUVZURFZMbWc3SDd3TGRHTXl4eGUzU0l0NXQ5N3A4bjN5X0JHM3BXY0FGeFhxTWE2RE9rLXAyVFA2T09peXU1NVBkalRDbnN4VW5SN2RPQTdmWTZEWDZpWHpFZ1dtVFBrRUJZVXJRbS1semp6QWdPM3NRS2x0aWVycGs?oc=5",
      "tag": null
     }
    },
@@ -2738,6 +2738,16 @@
    }
   ],
   "news": [
+   {
+    "title": "Nebius Stock: Microsoft's Scrutiny, a 50 MW Site in Spartanburg, and the November 12 Verdict",
+    "publisher": "ad-hoc-news.de",
+    "date": "2026-11-08",
+    "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPV1hHbExKeHllS25FbE8xRzNaYTZ5S3o5Qjk5NkktRTkteHdaaVVWS3BFNHFZSE9XUFVqYUl6dWdsVmd2SW1NVkk2NzZDZXJiZkVQZVRYdkJfWTh0bHI5NjdYeGg3ZkM1RVpfX0pwS2NoT0UtOUYtNFVGUVZURFZMbWc3SDd3TGRHTXl4eGUzU0l0NXQ5N3A4bjN5X0JHM3BXY0FGeFhxTWE2RE9rLXAyVFA2T09peXU1NVBkalRDbnN4VW5SN2RPQTdmWTZEWDZpWHpFZ1dtVFBrRUJZVXJRbS1semp6QWdPM3NRS2x0aWVycGs?oc=5",
+    "sites": [
+     "aib-southeast"
+    ],
+    "tag": null
+   },
    {
     "title": "Vineland Data Center, Who Owns It and What’s Next",
     "publisher": "SNJ Today",
@@ -3325,16 +3335,6 @@
     "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBaX1RBdE1SN3JIVUllQ0ZBbFQ0QlVYSlpmdUtFSjNDeG91TFY4eVFLRlk0UEUyWXRQMEp2Y01GNTNNMi1SQVJMVDgtamt2NUE1WGktNGJLZEl2enBlYnY0Yk5zVnN1QVY5ZmtoYTFEWWsyUQ?oc=5",
     "sites": [
      "vineland"
-    ],
-    "tag": "risk"
-   },
-   {
-    "title": "Judge hits pause on hearings in lawsuit challenging Oxmoor Valley data center",
-    "publisher": "WBHM",
-    "date": "2026-08-14",
-    "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxNSkVmVE5wQW5rQWw1VVFKRjdtcWtqNEQ2Z0N2emZFS0Zjb0JFYjFiR2RnVXY3R2hBMlN6cGw1cGRaNlBvcm81RVRCN3NhdDMtT3VjTkZZSElIdTdLbkt5VWVadGNlVlhDQ2NJR1poZ0hxUEN1TVVEOUg4X2NQSkpkTkxZaEVsRkF2d2pSSFJ3YU9PRzU3ZGtyWW1HQWVXT0djR256QjloWWZGQXhPWnVFc3hHa0w0RUhWdWxOdg?oc=5",
-    "sites": [
-     "birmingham"
     ],
     "tag": "risk"
    }
@@ -13178,7 +13178,7 @@
   ]
  },
  "gpu": {
-  "snapshotTime": "2026-11-08T02:23:56.783180Z",
+  "snapshotTime": "2026-11-08T10:13:44.016035Z",
   "onDemand": [
    {
     "name": "NVIDIA GB300 NVL72",
@@ -13279,19 +13279,11 @@
     "skuId": "sku-e00vd4x28cozliwb6g4vh",
     "family": "B300",
     "region": "eu-west2",
-    "price": 4.9,
+    "price": 6.4,
     "onDemand": 9.5,
-    "ratio": 0.5158,
-    "effectiveTime": "2026-11-08T02:01:00Z",
+    "ratio": 0.6737,
+    "effectiveTime": "2026-11-08T07:26:00Z",
     "spark": [
-     9.49,
-     9.49,
-     9.49,
-     9.19,
-     8.74,
-     8.29,
-     7.84,
-     7.39,
      6.94,
      6.64,
      6.04,
@@ -13452,26 +13444,26 @@
      3.25,
      3.85,
      4.45,
-     4.75
+     4.9,
+     5.2,
+     5.35,
+     5.65,
+     5.95,
+     6.25,
+     6.4,
+     6.4,
+     6.4
     ]
    },
    {
     "skuId": "sku-e00fmto201j24eyp0841g",
     "family": "B300",
     "region": "uk-south1",
-    "price": 4,
+    "price": 3.7,
     "onDemand": 9.5,
-    "ratio": 0.4211,
-    "effectiveTime": "2026-11-07T23:31:00Z",
+    "ratio": 0.3895,
+    "effectiveTime": "2026-11-08T10:11:00Z",
     "spark": [
-     2.44,
-     1.99,
-     1.54,
-     1.69,
-     2.14,
-     2.14,
-     1.84,
-     1.69,
      1.69,
      1.99,
      2.59,
@@ -13632,26 +13624,26 @@
      3.7,
      4,
      4,
-     4
+     4.15,
+     4.45,
+     4.9,
+     5.35,
+     5.35,
+     4.9,
+     4.45,
+     4.15,
+     3.85
     ]
    },
    {
     "skuId": "sku-e00hfg6dlxtt9ji6fqo9u",
     "family": "B300",
     "region": "us-north1",
-    "price": 4.1,
+    "price": 4.4,
     "onDemand": 9.5,
-    "ratio": 0.4316,
-    "effectiveTime": "2026-11-08T02:11:00Z",
+    "ratio": 0.4632,
+    "effectiveTime": "2026-11-08T09:26:00Z",
     "spark": [
-     1.237,
-     1.237,
-     1.237,
-     1.3685,
-     1.5,
-     1.52,
-     1.545,
-     1.55,
      1.55,
      1.55,
      1.575,
@@ -13812,26 +13804,26 @@
      4.95,
      4.85,
      4.55,
-     4.25
+     4.3,
+     4.7,
+     5.15,
+     5.3,
+     5.3,
+     5.15,
+     4.85,
+     4.55,
+     4.4
     ]
    },
    {
     "skuId": "sku-e00k58wq19wjszct65fwm",
     "family": "B200",
     "region": "me-west1",
-    "price": 0.99,
+    "price": 2.34,
     "onDemand": 8.5,
-    "ratio": 0.1165,
-    "effectiveTime": "2026-11-08T00:31:00Z",
+    "ratio": 0.2753,
+    "effectiveTime": "2026-11-08T09:46:00Z",
     "spark": [
-     2.956,
-     2.656,
-     2.056,
-     1.906,
-     2.206,
-     2.206,
-     1.756,
-     1.606,
      2.056,
      2.656,
      3.256,
@@ -13992,26 +13984,26 @@
      1.25,
      1.045,
      0.99,
-     0.99
+     0.99,
+     1.14,
+     1.54,
+     1.59,
+     1.59,
+     1.59,
+     1.59,
+     2.04,
+     2.34
     ]
    },
    {
     "skuId": "sku-e00fjjc4gwdx48pck9b46",
     "family": "B200",
     "region": "us-central1",
-    "price": 1.2,
+    "price": 3.09,
     "onDemand": 8.5,
-    "ratio": 0.1412,
-    "effectiveTime": "2026-11-08T02:06:00Z",
+    "ratio": 0.3635,
+    "effectiveTime": "2026-11-08T09:56:00Z",
     "spark": [
-     3.15,
-     3.6,
-     4.2,
-     4.65,
-     4.9,
-     4.7,
-     4.25,
-     4.55,
      5,
      5.266666667,
      5.5,
@@ -14172,26 +14164,26 @@
      2.55,
      2.1,
      1.65,
-     1.35
+     1.35,
+     1.095,
+     0.99,
+     1.14,
+     1.44,
+     1.89,
+     2.34,
+     2.79,
+     3.09
     ]
    },
    {
     "skuId": "sku-e00agrh84hf7fwlrgsfsv",
     "family": "H200",
     "region": "eu-north1",
-    "price": 0.79,
+    "price": 1.09,
     "onDemand": 5.4,
-    "ratio": 0.1463,
-    "effectiveTime": "2026-11-08T01:31:00Z",
+    "ratio": 0.2019,
+    "effectiveTime": "2026-11-08T10:16:00Z",
     "spark": [
-     0.95,
-     0.893333333,
-     0.94,
-     0.94,
-     1.39,
-     1.84,
-     1.99,
-     1.99,
      1.995,
      2,
      2,
@@ -14352,26 +14344,26 @@
      1.7,
      1.1,
      0.795,
-     0.79
+     0.79,
+     0.79,
+     0.79,
+     0.79,
+     0.89,
+     1.14,
+     1.023333333,
+     0.79,
+     0.94
     ]
    },
    {
     "skuId": "sku-e00dh1moiqg9mc5ix6wj2",
     "family": "H200",
     "region": "eu-west1",
-    "price": 2,
+    "price": 1.4,
     "onDemand": 5.4,
-    "ratio": 0.3704,
-    "effectiveTime": "2026-11-07T19:41:00Z",
+    "ratio": 0.2593,
+    "effectiveTime": "2026-11-08T09:41:00Z",
     "spark": [
-     0.94,
-     0.94,
-     0.89,
-     0.94,
-     1.24,
-     1.69,
-     1.995,
-     1.7,
      1.7,
      1.85,
      1.7,
@@ -14532,7 +14524,15 @@
      2,
      2,
      2,
-     2
+     2,
+     2,
+     2,
+     2,
+     2,
+     2,
+     1.85,
+     1.55,
+     1.4
     ]
    },
    {
@@ -14542,16 +14542,8 @@
     "price": 1.5,
     "onDemand": 5.4,
     "ratio": 0.2778,
-    "effectiveTime": "2026-11-07T18:31:00Z",
+    "effectiveTime": "2026-11-08T08:26:00Z",
     "spark": [
-     0.94,
-     1.39,
-     1.84,
-     2.14,
-     2.59,
-     2.74,
-     2.74,
-     2.74,
      3.04,
      3.34,
      3.64,
@@ -14712,6 +14704,14 @@
      1.5,
      1.5,
      1.5,
+     1.5,
+     1.4,
+     1.5,
+     1.5,
+     1.5,
+     1.35,
+     1.35,
+     1.5,
      1.5
     ]
    },
@@ -14724,14 +14724,6 @@
     "ratio": 0.1778,
     "effectiveTime": "2026-11-07T13:51:00Z",
     "spark": [
-     0.79,
-     0.79,
-     0.79,
-     0.79,
-     0.79,
-     0.79,
-     0.79,
-     0.79,
      0.79,
      0.79,
      0.79,
@@ -14892,6 +14884,14 @@
      0.8,
      0.8,
      0.8,
+     0.8,
+     0.8,
+     0.8,
+     0.8,
+     0.8,
+     0.8,
+     0.8,
+     0.8,
      0.8
     ]
    },
@@ -14902,16 +14902,8 @@
     "price": 1.09,
     "onDemand": 1.8,
     "ratio": 0.6056,
-    "effectiveTime": "2026-11-08T02:11:00Z",
+    "effectiveTime": "2026-11-08T10:11:00Z",
     "spark": [
-     1.38,
-     1.38,
-     1.38,
-     1.38,
-     1.38,
-     1.083333333,
-     0.79,
-     0.79,
      0.79,
      0.79,
      0.79,
@@ -15072,6 +15064,14 @@
      0.94,
      0.94,
      0.94,
+     0.89,
+     1.086666667,
+     1.38,
+     1.38,
+     1.39,
+     1.25,
+     0.896666667,
+     0.79,
      0.94
     ]
    },
@@ -15084,14 +15084,6 @@
     "ratio": 0.4389,
     "effectiveTime": "2026-11-06T18:41:00Z",
     "spark": [
-     1.23,
-     0.935,
-     0.79,
-     0.79,
-     0.79,
-     0.79,
-     0.79,
-     0.79,
      0.79,
      0.79,
      0.79,
@@ -15252,6 +15244,14 @@
      0.79,
      0.79,
      0.79,
+     0.79,
+     0.79,
+     0.79,
+     0.79,
+     0.79,
+     0.79,
+     0.79,
+     0.79,
      0.79
     ]
    },
@@ -15262,16 +15262,8 @@
     "price": 0.79,
     "onDemand": 1.8,
     "ratio": 0.4389,
-    "effectiveTime": "2026-11-07T22:26:00Z",
+    "effectiveTime": "2026-11-08T09:16:00Z",
     "spark": [
-     0.79,
-     0.89,
-     0.79,
-     0.79,
-     0.79,
-     0.79,
-     0.79,
-     0.79,
      0.79,
      0.79,
      0.79,
@@ -15432,6 +15424,14 @@
      0.79,
      0.79,
      0.79,
+     0.79,
+     0.79,
+     0.79,
+     0.79,
+     0.79,
+     0.94,
+     1.19,
+     0.94,
      0.79
     ]
    }
@@ -15446,11 +15446,11 @@
   "ratioDaily": [
    {
     "date": "2026-10-09",
-    "B300": 0.4513,
-    "B200": 0.1948,
-    "H200": 0.3801,
-    "H100": 0.1804,
-    "RTX PRO 6000": 0.6376
+    "B300": 0.3878,
+    "B200": 0.1447,
+    "H200": 0.4101,
+    "H100": 0.1796,
+    "RTX PRO 6000": 0.6726
    },
    {
     "date": "2026-10-10",
@@ -15686,21 +15686,21 @@
    },
    {
     "date": "2026-11-08",
-    "B300": 0.4439,
-    "B200": 0.1754,
-    "H200": 0.2837,
+    "B300": 0.5127,
+    "B200": 0.1967,
+    "H200": 0.2672,
     "H100": 0.1778,
-    "RTX PRO 6000": 0.4667
+    "RTX PRO 6000": 0.5013
    }
   ],
   "priceDaily": [
    {
     "date": "2026-10-09",
-    "B300": 1.246,
-    "B200": 1.089,
-    "H200": 0.792,
-    "H100": 0.812,
-    "RTX PRO 6000": 0.883
+    "B300": 1.175,
+    "B200": 0.99,
+    "H200": 0.79,
+    "H100": 0.808,
+    "RTX PRO 6000": 0.951
    },
    {
     "date": "2026-10-10",
@@ -15936,9 +15936,9 @@
    },
    {
     "date": "2026-11-08",
-    "B300": 3.925,
-    "B200": 1.069,
-    "H200": 1.096,
+    "B300": 4.438,
+    "B200": 1.475,
+    "H200": 0.962,
     "H100": 0.8,
     "RTX PRO 6000": 0.79
    }
@@ -16010,8 +16010,8 @@
    }
   ],
   "tightness": {
-   "blackwell": 0.32524000000000003,
-   "hopper": 0.24307499999999999
+   "blackwell": 0.43304,
+   "hopper": 0.22919999999999996
   },
   "pools": [
    {
@@ -16078,18 +16078,18 @@
   "poolRatioDaily": [
    {
     "date": "2026-10-09",
-    "sku-e00vd4x28cozliwb6g4vh": 0.1312,
-    "sku-e00fmto201j24eyp0841g": 0.9305,
-    "sku-e00hfg6dlxtt9ji6fqo9u": 0.2922,
-    "sku-e00k58wq19wjszct65fwm": 0.1281,
-    "sku-e00fjjc4gwdx48pck9b46": 0.2614,
-    "sku-e00agrh84hf7fwlrgsfsv": 0.1467,
-    "sku-e00dh1moiqg9mc5ix6wj2": 0.1641,
-    "sku-e00em8l461xmyihec7sr8": 0.8294,
-    "sku-e00ljkedv5qtbwhikuoct": 0.1804,
-    "sku-e00g61h0323jih8tkg5jv": 0.4906,
-    "sku-e00lxawt0lavf9i0dutiz": 0.525,
-    "sku-e00otwkvc6gea6nmvvsda": 0.8972
+    "sku-e00vd4x28cozliwb6g4vh": 0.1237,
+    "sku-e00fmto201j24eyp0841g": 0.8837,
+    "sku-e00hfg6dlxtt9ji6fqo9u": 0.156,
+    "sku-e00k58wq19wjszct65fwm": 0.1165,
+    "sku-e00fjjc4gwdx48pck9b46": 0.1729,
+    "sku-e00agrh84hf7fwlrgsfsv": 0.1463,
+    "sku-e00dh1moiqg9mc5ix6wj2": 0.1498,
+    "sku-e00em8l461xmyihec7sr8": 0.9343,
+    "sku-e00ljkedv5qtbwhikuoct": 0.1796,
+    "sku-e00g61h0323jih8tkg5jv": 0.5283,
+    "sku-e00lxawt0lavf9i0dutiz": 0.5578,
+    "sku-e00otwkvc6gea6nmvvsda": 0.9317
    },
    {
     "date": "2026-10-10",
@@ -16528,35 +16528,35 @@
    },
    {
     "date": "2026-11-08",
-    "sku-e00vd4x28cozliwb6g4vh": 0.4289,
-    "sku-e00fmto201j24eyp0841g": 0.4132,
-    "sku-e00hfg6dlxtt9ji6fqo9u": 0.4895,
-    "sku-e00k58wq19wjszct65fwm": 0.1258,
-    "sku-e00fjjc4gwdx48pck9b46": 0.2251,
-    "sku-e00agrh84hf7fwlrgsfsv": 0.203,
-    "sku-e00dh1moiqg9mc5ix6wj2": 0.3704,
-    "sku-e00em8l461xmyihec7sr8": 0.2778,
+    "sku-e00vd4x28cozliwb6g4vh": 0.5618,
+    "sku-e00fmto201j24eyp0841g": 0.4672,
+    "sku-e00hfg6dlxtt9ji6fqo9u": 0.5092,
+    "sku-e00k58wq19wjszct65fwm": 0.1735,
+    "sku-e00fjjc4gwdx48pck9b46": 0.2199,
+    "sku-e00agrh84hf7fwlrgsfsv": 0.1781,
+    "sku-e00dh1moiqg9mc5ix6wj2": 0.3519,
+    "sku-e00em8l461xmyihec7sr8": 0.2717,
     "sku-e00ljkedv5qtbwhikuoct": 0.1778,
-    "sku-e00g61h0323jih8tkg5jv": 0.5222,
+    "sku-e00g61h0323jih8tkg5jv": 0.5939,
     "sku-e00lxawt0lavf9i0dutiz": 0.4389,
-    "sku-e00otwkvc6gea6nmvvsda": 0.4389
+    "sku-e00otwkvc6gea6nmvvsda": 0.4711
    }
   ],
   "poolPriceDaily": [
    {
     "date": "2026-10-09",
-    "sku-e00vd4x28cozliwb6g4vh": 1.246,
-    "sku-e00fmto201j24eyp0841g": 8.84,
-    "sku-e00hfg6dlxtt9ji6fqo9u": 2.776,
-    "sku-e00k58wq19wjszct65fwm": 1.089,
-    "sku-e00fjjc4gwdx48pck9b46": 2.222,
-    "sku-e00agrh84hf7fwlrgsfsv": 0.792,
-    "sku-e00dh1moiqg9mc5ix6wj2": 0.886,
-    "sku-e00em8l461xmyihec7sr8": 4.479,
-    "sku-e00ljkedv5qtbwhikuoct": 0.812,
-    "sku-e00g61h0323jih8tkg5jv": 0.883,
-    "sku-e00lxawt0lavf9i0dutiz": 0.945,
-    "sku-e00otwkvc6gea6nmvvsda": 1.615
+    "sku-e00vd4x28cozliwb6g4vh": 1.175,
+    "sku-e00fmto201j24eyp0841g": 8.395,
+    "sku-e00hfg6dlxtt9ji6fqo9u": 1.482,
+    "sku-e00k58wq19wjszct65fwm": 0.99,
+    "sku-e00fjjc4gwdx48pck9b46": 1.47,
+    "sku-e00agrh84hf7fwlrgsfsv": 0.79,
+    "sku-e00dh1moiqg9mc5ix6wj2": 0.809,
+    "sku-e00em8l461xmyihec7sr8": 5.045,
+    "sku-e00ljkedv5qtbwhikuoct": 0.808,
+    "sku-e00g61h0323jih8tkg5jv": 0.951,
+    "sku-e00lxawt0lavf9i0dutiz": 1.004,
+    "sku-e00otwkvc6gea6nmvvsda": 1.677
    },
    {
     "date": "2026-10-10",
@@ -16995,18 +16995,18 @@
    },
    {
     "date": "2026-11-08",
-    "sku-e00vd4x28cozliwb6g4vh": 4.075,
-    "sku-e00fmto201j24eyp0841g": 3.925,
-    "sku-e00hfg6dlxtt9ji6fqo9u": 4.65,
-    "sku-e00k58wq19wjszct65fwm": 1.069,
-    "sku-e00fjjc4gwdx48pck9b46": 1.913,
-    "sku-e00agrh84hf7fwlrgsfsv": 1.096,
-    "sku-e00dh1moiqg9mc5ix6wj2": 2,
-    "sku-e00em8l461xmyihec7sr8": 1.5,
+    "sku-e00vd4x28cozliwb6g4vh": 5.337,
+    "sku-e00fmto201j24eyp0841g": 4.438,
+    "sku-e00hfg6dlxtt9ji6fqo9u": 4.837,
+    "sku-e00k58wq19wjszct65fwm": 1.475,
+    "sku-e00fjjc4gwdx48pck9b46": 1.869,
+    "sku-e00agrh84hf7fwlrgsfsv": 0.962,
+    "sku-e00dh1moiqg9mc5ix6wj2": 1.9,
+    "sku-e00em8l461xmyihec7sr8": 1.467,
     "sku-e00ljkedv5qtbwhikuoct": 0.8,
-    "sku-e00g61h0323jih8tkg5jv": 0.94,
+    "sku-e00g61h0323jih8tkg5jv": 1.069,
     "sku-e00lxawt0lavf9i0dutiz": 0.79,
-    "sku-e00otwkvc6gea6nmvvsda": 0.79
+    "sku-e00otwkvc6gea6nmvvsda": 0.848
    }
   ],
   "regionWeights": [
