@@ -3319,7 +3319,9 @@
   "location": "Amsterdam, Netherlands; Israel; Remote - Europe; United Kingdom",
   "region": "Israel",
   "posted": "2025-11-05",
-  "firstSeen": "2026-03-27"
+  "firstSeen": "2026-03-27",
+  "closedAt": "2026-11-09",
+  "closedApprox": false
  },
  "4705078101": {
   "title": "Incident Manager",
@@ -3886,7 +3888,9 @@
   "location": "Béthune, Pas-de-Calais, France",
   "region": "Europe & other",
   "posted": "2026-01-30",
-  "firstSeen": "2026-03-27"
+  "firstSeen": "2026-03-27",
+  "closedAt": "2026-11-09",
+  "closedApprox": false
  },
  "4752295101": {
   "title": "DC IT Support Manager",
@@ -6095,7 +6099,9 @@
   "location": "Amsterdam, Netherlands; Remote - Europe; Remote - United States",
   "region": "Americas",
   "posted": "2026-03-16",
-  "firstSeen": "2026-03-27"
+  "firstSeen": "2026-03-27",
+  "closedAt": "2026-11-09",
+  "closedApprox": false
  },
  "4809246101": {
   "title": "Senior HR Systems Administrator",
@@ -7397,7 +7403,9 @@
   "location": "Israel",
   "region": "Israel",
   "posted": "2026-05-18",
-  "firstSeen": "2026-06-22"
+  "firstSeen": "2026-06-22",
+  "closedAt": "2026-11-09",
+  "closedApprox": false
  },
  "4856174101": {
   "title": "Field Technical Lead – Data Center Deployments (Israel)",
@@ -11189,7 +11197,9 @@
   "location": "Amsterdam, Netherlands",
   "region": "Europe & other",
   "posted": "2026-09-02",
-  "firstSeen": "2026-09-04"
+  "firstSeen": "2026-09-04",
+  "closedAt": "2026-11-09",
+  "closedApprox": false
  },
  "4966952101": {
   "title": "Technical Project Manager",
@@ -12064,7 +12074,9 @@
   "location": "Singapore",
   "region": "Asia-Pacific",
   "posted": "2026-10-07",
-  "firstSeen": "2026-10-10"
+  "firstSeen": "2026-10-10",
+  "closedAt": "2026-11-09",
+  "closedApprox": false
  },
  "4988457101": {
   "title": "Electrical Design Engineer (MV/HV)",
@@ -13147,7 +13159,9 @@
   "location": "United States",
   "region": "Americas",
   "posted": "2026-11-04",
-  "firstSeen": "2026-11-04"
+  "firstSeen": "2026-11-04",
+  "closedAt": "2026-11-09",
+  "closedApprox": false
  },
  "5011060101": {
   "title": "Technical Operations & Project Management (Early Talent)",
@@ -13242,6 +13256,15 @@
   "region": "Americas",
   "posted": "2026-11-06",
   "firstSeen": "2026-11-06"
+ },
+ "5016255101": {
+  "title": "Data Center Technician (Early Talent) - Masmiya",
+  "dept": "Product & Infrastructure",
+  "function": "Data center & power",
+  "location": "Israel",
+  "region": "Israel",
+  "posted": "2026-11-09",
+  "firstSeen": "2026-11-09"
  },
  "5016650101": {
   "title": "SFO Office Site Security Manager",
@@ -13541,5 +13564,14 @@
   "region": "Europe & other",
   "posted": "2026-11-05",
   "firstSeen": "2026-11-05"
+ },
+ "5028951101": {
+  "title": "Security Analyst - Tier 2",
+  "dept": "CEO & CSO Office › CISO",
+  "function": "Engineering & product",
+  "location": "Amsterdam, Netherlands",
+  "region": "Europe & other",
+  "posted": "2026-11-09",
+  "firstSeen": "2026-11-09"
  }
 }

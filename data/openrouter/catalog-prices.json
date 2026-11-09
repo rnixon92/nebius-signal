@@ -55,9 +55,9 @@
  },
  "~moonshotai/kimi-latest": {
   "name": "~moonshotai/kimi-latest",
-  "input": 0.1624,
-  "output": 9.7471,
-  "cacheRead": 0.16
+  "input": 0.1824,
+  "output": 9.3388,
+  "cacheRead": 0.18
  },
  "~openai/gpt-astra-latest": {
   "name": "~openai/gpt-astra-latest",
@@ -415,9 +415,9 @@
  },
  "deepseek/deepseek-v4-pro-20260423": {
   "name": "deepseek/deepseek-v4-pro",
-  "input": 0.2088,
-  "output": 0.4176,
-  "cacheRead": 0.0174
+  "input": 0.894012,
+  "output": 1.788024,
+  "cacheRead": 0.074501
  },
  "deepseek/deepseek-v4-pro-20260813": {
   "name": "deepseek/deepseek-v4-pro-0813",
@@ -614,7 +614,7 @@
  "google/gemma-3-27b-it": {
   "name": "google/gemma-3-27b-it",
   "input": 0.08,
-  "output": 0.35,
+  "output": 0.45,
   "cacheRead": 0.04
  },
  "google/gemma-3-4b-it": {
@@ -625,9 +625,9 @@
  },
  "google/gemma-4-26b-a4b-it-20260403": {
   "name": "google/gemma-4-26b-a4b-it",
-  "input": 0.0675,
-  "output": 0.225,
-  "cacheRead": 0.0375
+  "input": 0.09,
+  "output": 0.3,
+  "cacheRead": 0.05
  },
  "google/gemma-4-31b-it-20260402": {
   "name": "google/gemma-4-31b-it",
@@ -827,12 +827,6 @@
   "output": 0.14,
   "cacheRead": null
  },
- "minimax/minimax-m1": {
-  "name": "minimax/minimax-m1",
-  "input": 0.55,
-  "output": 2.2,
-  "cacheRead": null
- },
  "minimax/minimax-m2.5-20260211": {
   "name": "minimax/minimax-m2.5",
   "input": 0.3,
@@ -961,9 +955,9 @@
  },
  "mistralai/mistral-small-3.2-24b-instruct-2506": {
   "name": "mistralai/mistral-small-3.2-24b-instruct",
-  "input": 0.075,
-  "output": 0.2,
-  "cacheRead": null
+  "input": 0.1,
+  "output": 0.3,
+  "cacheRead": 0.01
  },
  "mistralai/mixtral-8x22b-instruct": {
   "name": "mistralai/mixtral-8x22b-instruct",
@@ -1441,9 +1435,9 @@
  },
  "openai/gpt-oss-120b": {
   "name": "openai/gpt-oss-120b",
-  "input": 0.018,
-  "output": 0.065,
-  "cacheRead": 0.016
+  "input": 0.15,
+  "output": 0.6,
+  "cacheRead": 0.075
  },
  "openai/gpt-oss-20b": {
   "name": "openai/gpt-oss-20b",
@@ -1723,9 +1717,9 @@
  },
  "qwen/qwen3.5-397b-a17b-20260216": {
   "name": "qwen/qwen3.5-397b-a17b",
-  "input": 0.5,
+  "input": 0.6,
   "output": 3.6,
-  "cacheRead": 0.3
+  "cacheRead": 0.12
  },
  "qwen/qwen3.5-9b-20260310": {
   "name": "qwen/qwen3.5-9b",
@@ -2155,9 +2149,9 @@
  },
  "z-ai/glm-4.5-air": {
   "name": "z-ai/glm-4.5-air",
-  "input": 0.13,
-  "output": 0.85,
-  "cacheRead": 0.025
+  "input": 0.2,
+  "output": 1.1,
+  "cacheRead": 0.03
  },
  "z-ai/glm-4.5v": {
   "name": "z-ai/glm-4.5v",

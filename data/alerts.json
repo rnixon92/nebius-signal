@@ -1,5 +1,23 @@
 [
  {
+  "id": "or-wow-2026-11-08",
+  "date": "2026-11-09",
+  "source": "openrouter",
+  "severity": "medium",
+  "title": "Nebius OpenRouter tokens up 45% week over week",
+  "detail": "478.4B tokens in the 7 days to 2026-11-08 vs 329.2B the week before",
+  "url": "https://openrouter.ai/provider/nebius"
+ },
+ {
+  "id": "atlas-added-2026-11-09",
+  "date": "2026-11-09",
+  "source": "atlas",
+  "severity": "info",
+  "title": "1 new customer on Nebius Atlas",
+  "detail": "Archelon",
+  "url": "https://nebiusatlas.com/"
+ },
+ {
   "id": "spot-cap-sku-e00otwkvc6gea6nmvvsda-2026-11-07",
   "date": "2026-11-07",
   "source": "gpu-spot",

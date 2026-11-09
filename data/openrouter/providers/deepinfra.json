@@ -1,6 +1,6 @@
 {
  "provider": "deepinfra",
- "updatedAt": "2026-11-08T22:30:53.966Z",
+ "updatedAt": "2026-11-09T16:54:40.420Z",
  "days": {
   "2026-07-27": {
    "deepseek/deepseek-v4-flash-20260423": 78909893131,
@@ -1251,16 +1251,28 @@
    "Others": 144066917488
   },
   "2026-11-08": {
-   "deepseek/deepseek-v4.1-flash-20261017": 579388700765,
-   "deepseek/deepseek-v4.1-flash-20260910": 218774421428,
-   "deepseek/deepseek-v4-flash-20260423": 55579307901,
-   "deepseek/deepseek-v4-flash-20260731": 52084106412,
-   "mistralai/mistral-nemo": 48881266066,
-   "qwen/qwen3-embedding-8b": 37564867223,
-   "z-ai/glm-5.3-flash-20260826": 33281720490,
-   "google/gemma-4-31b-it-20260402": 17504745173,
-   "xiaomi/mimo-v2.6-pro-20260921": 16366416900,
-   "Others": 119665453028
+   "deepseek/deepseek-v4.1-flash-20261017": 632115001133,
+   "deepseek/deepseek-v4.1-flash-20260910": 235529714953,
+   "deepseek/deepseek-v4-flash-20260423": 57981414292,
+   "deepseek/deepseek-v4-flash-20260731": 55307724508,
+   "mistralai/mistral-nemo": 53275361897,
+   "qwen/qwen3-embedding-8b": 41311649391,
+   "z-ai/glm-5.3-flash-20260826": 34867844141,
+   "google/gemma-4-31b-it-20260402": 19349606368,
+   "xiaomi/mimo-v2.6-pro-20260921": 17420737997,
+   "Others": 130173504863
+  },
+  "2026-11-09": {
+   "deepseek/deepseek-v4.1-flash-20261017": 537394425982,
+   "deepseek/deepseek-v4.1-flash-20260910": 183415784751,
+   "deepseek/deepseek-v4-flash-20260423": 60715959589,
+   "deepseek/deepseek-v4-flash-20260731": 40371294952,
+   "mistralai/mistral-nemo": 28832920918,
+   "qwen/qwen3-embedding-8b": 27106334822,
+   "z-ai/glm-5.3-flash-20260826": 23962914838,
+   "qwen/qwen3.8-27b-20260814": 14267290868,
+   "google/gemma-4-31b-it-20260402": 14240013862,
+   "Others": 98855865404
   }
  }
 }

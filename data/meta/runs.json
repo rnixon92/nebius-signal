@@ -1,74 +1,74 @@
 {
  "gpu-ondemand": {
   "ok": true,
-  "lastAttempt": "2026-11-08T22:30:45.717Z",
-  "lastSuccess": "2026-11-08T22:30:45.717Z",
+  "lastAttempt": "2026-11-09T16:54:32.100Z",
+  "lastSuccess": "2026-11-09T16:54:32.100Z",
   "summary": "9 GPU rows (7 with list prices)"
  },
  "gpu-spot": {
   "ok": true,
-  "lastAttempt": "2026-11-09T07:57:28.976Z",
-  "lastSuccess": "2026-11-09T07:57:28.976Z",
+  "lastAttempt": "2026-11-09T16:54:33.126Z",
+  "lastSuccess": "2026-11-09T16:54:33.126Z",
   "summary": "12 SKUs listed; 12 series, 8616 hourly points"
  },
  "openrouter": {
   "ok": true,
-  "lastAttempt": "2026-11-08T22:31:08.905Z",
-  "lastSuccess": "2026-11-08T22:31:08.905Z",
-  "summary": "Nebius 105 days of history; 11/11 peers"
+  "lastAttempt": "2026-11-09T16:54:55.988Z",
+  "lastSuccess": "2026-11-09T16:54:55.988Z",
+  "summary": "Nebius 106 days of history; 11/11 peers"
  },
  "openrouter-market": {
   "ok": true,
-  "lastAttempt": "2026-11-08T22:31:09.153Z",
-  "lastSuccess": "2026-11-08T22:31:09.153Z",
-  "summary": "246 snapshots to 2026-11-07; Nebius rank 50 of 100"
+  "lastAttempt": "2026-11-09T16:54:56.239Z",
+  "lastSuccess": "2026-11-09T16:54:56.239Z",
+  "summary": "247 snapshots to 2026-11-08; Nebius rank 48 of 100"
  },
  "atlas": {
   "ok": true,
-  "lastAttempt": "2026-11-08T22:31:12.478Z",
-  "lastSuccess": "2026-11-08T22:31:12.478Z",
-  "summary": "483 customers (0 new since last run)"
+  "lastAttempt": "2026-11-09T16:54:59.893Z",
+  "lastSuccess": "2026-11-09T16:54:59.893Z",
+  "summary": "484 customers (1 new since last run)"
  },
  "sec": {
   "ok": true,
-  "lastAttempt": "2026-11-09T07:57:30.889Z",
-  "lastSuccess": "2026-11-09T07:57:30.889Z",
+  "lastAttempt": "2026-11-09T16:55:00.153Z",
+  "lastSuccess": "2026-11-09T16:55:00.153Z",
   "summary": "172 filings since 2025-01-01 (0 parsed this run)"
  },
  "jobs": {
   "ok": true,
-  "lastAttempt": "2026-11-08T22:31:12.888Z",
-  "lastSuccess": "2026-11-08T22:31:12.888Z",
-  "summary": "384 open roles (0 new)"
+  "lastAttempt": "2026-11-09T16:55:02.082Z",
+  "lastSuccess": "2026-11-09T16:55:02.082Z",
+  "summary": "379 open roles (2 new)"
  },
  "stock": {
   "ok": true,
-  "lastAttempt": "2026-11-09T07:57:34.845Z",
-  "lastSuccess": "2026-11-09T07:57:34.845Z",
-  "summary": "NBIS last 2026-11-06 $129.49; 4/4 peers"
+  "lastAttempt": "2026-11-09T16:55:06.025Z",
+  "lastSuccess": "2026-11-09T16:55:06.025Z",
+  "summary": "NBIS last 2026-11-09 $140.63; 4/4 peers"
  },
  "regions": {
   "ok": true,
-  "lastAttempt": "2026-11-09T07:57:29.228Z",
-  "lastSuccess": "2026-11-09T07:57:29.228Z",
+  "lastAttempt": "2026-11-09T16:54:33.369Z",
+  "lastSuccess": "2026-11-09T16:54:33.369Z",
   "summary": "10 regions, 6 GPU platforms"
  },
  "news": {
   "ok": true,
-  "lastAttempt": "2026-11-09T07:57:30.741Z",
-  "lastSuccess": "2026-11-09T07:57:30.741Z",
-  "summary": "231 headlines fetched; 566 kept, 170 matched to sites"
+  "lastAttempt": "2026-11-09T16:54:34.899Z",
+  "lastSuccess": "2026-11-09T16:54:34.899Z",
+  "summary": "259 headlines fetched; 570 kept, 172 matched to sites"
  },
  "epoch": {
   "ok": true,
-  "lastAttempt": "2026-11-08T22:30:48.707Z",
-  "lastSuccess": "2026-11-08T22:30:48.707Z",
+  "lastAttempt": "2026-11-09T16:54:35.090Z",
+  "lastSuccess": "2026-11-09T16:54:35.090Z",
   "summary": "2 Nebius sites, 125 MW IT power observed"
  },
  "tokenfactory": {
   "ok": true,
-  "lastAttempt": "2026-11-08T22:31:09.617Z",
-  "lastSuccess": "2026-11-08T22:31:09.617Z",
+  "lastAttempt": "2026-11-09T16:54:56.743Z",
+  "lastSuccess": "2026-11-09T16:54:56.743Z",
   "summary": "31 models, 30 with a cached-input price"
  }
 }

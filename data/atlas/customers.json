@@ -435,6 +435,21 @@
   "baseline": false,
   "latestEvidence": "2026-10-26"
  },
+ "archelon": {
+  "name": "Archelon",
+  "category": "Business services",
+  "use": "Integrated Tavily-powered web search into a client AI chat app.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-11-09",
+  "baseline": false,
+  "latestEvidence": "2026-11-09"
+ },
  "arena": {
   "name": "Arena",
   "category": "Science & research",
@@ -1371,7 +1386,7 @@
   "evidence": "agreement",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-25"
+  "latestEvidence": "2026-10-13"
  },
  "compugen": {
   "name": "Compugen",
@@ -2414,7 +2429,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-05",
   "baseline": false,
-  "latestEvidence": "2026-10-19"
+  "latestEvidence": "2026-11-09"
  },
  "gptree": {
   "name": "GPTree",
@@ -3759,7 +3774,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-31"
+  "latestEvidence": "2026-11-09"
  },
  "microsoft": {
   "name": "Microsoft",
@@ -3776,7 +3791,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-11-07"
+  "latestEvidence": "2026-11-09"
  },
  "milestone-systems": {
   "name": "Milestone Systems",
@@ -4750,7 +4765,7 @@
   "evidence": "agreement",
   "firstListedAt": "2026-10-08",
   "baseline": false,
-  "latestEvidence": "2026-10-31"
+  "latestEvidence": "2026-10-27"
  },
  "palatial": {
   "name": "Palatial",
