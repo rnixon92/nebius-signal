@@ -1,6 +1,6 @@
 {
  "provider": "siliconflow",
- "updatedAt": "2026-11-09T16:54:51.094Z",
+ "updatedAt": "2026-11-10T01:46:51.979Z",
  "days": {
   "2026-07-27": {
    "z-ai/glm-5.2-20260616": 29356079767,
@@ -1263,16 +1263,28 @@
    "Others": 10667391056
   },
   "2026-11-09": {
-   "deepseek/deepseek-v4-flash-20260423": 11168459571,
-   "deepseek/deepseek-v4.1-flash-20261017": 6917717451,
-   "deepseek/deepseek-v3.2-20251201": 5568793865,
-   "deepseek/deepseek-v4-pro-20260423": 5231851846,
-   "tencent/hy4-preview-20260827": 4058064625,
-   "z-ai/glm-5.3-20260816": 1897722347,
-   "z-ai/glm-5.2-20260616": 1698833346,
-   "deepseek/deepseek-v4.1-flash-20260910": 1486258815,
-   "deepseek/deepseek-v3.2-exp": 1245732172,
-   "Others": 8663272958
+   "deepseek/deepseek-v4-flash-20260423": 19242533566,
+   "deepseek/deepseek-v4.1-flash-20261017": 14650884817,
+   "deepseek/deepseek-v3.2-20251201": 8406147815,
+   "deepseek/deepseek-v4-pro-20260423": 8103498772,
+   "tencent/hy4-preview-20260827": 6672556575,
+   "z-ai/glm-5.3-flash-20260826": 5208239462,
+   "z-ai/glm-5.3-20260816": 3168049048,
+   "z-ai/glm-5.2-20260616": 2802760377,
+   "deepseek/deepseek-v4.1-flash-20260910": 2128764154,
+   "Others": 13564351292
+  },
+  "2026-11-10": {
+   "deepseek/deepseek-v4.1-flash-20261017": 1825348669,
+   "z-ai/glm-5.3-flash-20260826": 1405494619,
+   "deepseek/deepseek-v4-flash-20260423": 971581600,
+   "deepseek/deepseek-v3.2-20251201": 412839088,
+   "deepseek/deepseek-v4-pro-20260423": 320409672,
+   "tencent/hy4-preview-20260827": 282900716,
+   "deepseek/deepseek-chat-v3-0324": 127986459,
+   "z-ai/glm-5.3-20260816": 111682230,
+   "z-ai/glm-5.2-20260616": 93679082,
+   "Others": 888953883
   }
  }
 }

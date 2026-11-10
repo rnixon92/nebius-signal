@@ -1,6 +1,6 @@
 {
  "provider": "deepinfra",
- "updatedAt": "2026-11-09T16:54:40.420Z",
+ "updatedAt": "2026-11-10T01:46:42.193Z",
  "days": {
   "2026-07-27": {
    "deepseek/deepseek-v4-flash-20260423": 78909893131,
@@ -1263,16 +1263,28 @@
    "Others": 130173504863
   },
   "2026-11-09": {
-   "deepseek/deepseek-v4.1-flash-20261017": 537394425982,
-   "deepseek/deepseek-v4.1-flash-20260910": 183415784751,
-   "deepseek/deepseek-v4-flash-20260423": 60715959589,
-   "deepseek/deepseek-v4-flash-20260731": 40371294952,
-   "mistralai/mistral-nemo": 28832920918,
-   "qwen/qwen3-embedding-8b": 27106334822,
-   "z-ai/glm-5.3-flash-20260826": 23962914838,
-   "qwen/qwen3.8-27b-20260814": 14267290868,
-   "google/gemma-4-31b-it-20260402": 14240013862,
-   "Others": 98855865404
+   "deepseek/deepseek-v4.1-flash-20261017": 861707096135,
+   "deepseek/deepseek-v4.1-flash-20260910": 268237733344,
+   "deepseek/deepseek-v4-flash-20260423": 79389910635,
+   "deepseek/deepseek-v4-flash-20260731": 49735278791,
+   "mistralai/mistral-nemo": 41932024693,
+   "z-ai/glm-5.3-flash-20260826": 38671798582,
+   "qwen/qwen3-embedding-8b": 30462254423,
+   "qwen/qwen3.8-27b-20260814": 24183894438,
+   "google/gemma-4-31b-it-20260402": 20218916585,
+   "Others": 144469513668
+  },
+  "2026-11-10": {
+   "deepseek/deepseek-v4.1-flash-20261017": 58774644008,
+   "deepseek/deepseek-v4.1-flash-20260910": 19859187595,
+   "z-ai/glm-5.3-flash-20260826": 4956434717,
+   "mistralai/mistral-nemo": 2912663736,
+   "deepseek/deepseek-v4-flash-20260423": 2342446343,
+   "deepseek/deepseek-v4-flash-20260731": 2308985442,
+   "qwen/qwen3.8-27b-20260814": 1548052023,
+   "google/gemma-4-31b-it-20260402": 1323457712,
+   "deepseek/deepseek-v3.2-20251201": 1200234859,
+   "Others": 10199783189
   }
  }
 }

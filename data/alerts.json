@@ -1,5 +1,71 @@
 [
  {
+  "id": "news-independence road reopens to local residents as data center construction continu",
+  "date": "2026-11-10",
+  "source": "news",
+  "severity": "info",
+  "title": "Site progress (Independence, Missouri): Independence road reopens to local residents as data center construction continues",
+  "detail": "KMBC",
+  "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQZkpvTHB0RWpEeFl2S3NUUDlMek90VFdSRlg0blc3YmVFZldOUlUzUlBqN3pUUThVdXJoQTZDVEdyWXRVaVpfNl9janBvcmpLQjluOXVqUDBDUTRkeldMdXlaVjhCbjV5OTkyWUNYV0ROWVdyTHFsdHFNeXpfMzU5b2FOR2JhRmREMnRrQnVB?oc=5"
+ },
+ {
+  "id": "or-wow-2026-11-09",
+  "date": "2026-11-10",
+  "source": "openrouter",
+  "severity": "medium",
+  "title": "Nebius OpenRouter tokens up 56% week over week",
+  "detail": "500.2B tokens in the 7 days to 2026-11-09 vs 321.6B the week before",
+  "url": "https://openrouter.ai/provider/nebius"
+ },
+ {
+  "id": "tf-gone-deepseek-ai/DeepSeek-V4-Flash-0731",
+  "date": "2026-11-10",
+  "source": "tokenfactory",
+  "severity": "medium",
+  "title": "Token Factory removed DeepSeek-V4-Flash-0731",
+  "url": "https://tokenfactory.nebius.com/model-catalog.md"
+ },
+ {
+  "id": "tf-gone-deepseek-ai/DeepSeek-V4.1-Flash",
+  "date": "2026-11-10",
+  "source": "tokenfactory",
+  "severity": "medium",
+  "title": "Token Factory removed DeepSeek V4.1 Flash",
+  "url": "https://tokenfactory.nebius.com/model-catalog.md"
+ },
+ {
+  "id": "tf-gone-moonshotai/Kimi-K2.6",
+  "date": "2026-11-10",
+  "source": "tokenfactory",
+  "severity": "medium",
+  "title": "Token Factory removed Kimi-K2.6",
+  "url": "https://tokenfactory.nebius.com/model-catalog.md"
+ },
+ {
+  "id": "tf-gone-moonshotai/Kimi-K2.7-Code",
+  "date": "2026-11-10",
+  "source": "tokenfactory",
+  "severity": "medium",
+  "title": "Token Factory removed Kimi-K2.7-Code",
+  "url": "https://tokenfactory.nebius.com/model-catalog.md"
+ },
+ {
+  "id": "tf-gone-openbmb/MiniCPM-V-4_5",
+  "date": "2026-11-10",
+  "source": "tokenfactory",
+  "severity": "medium",
+  "title": "Token Factory removed openbmb/MiniCPM-V-4_5",
+  "url": "https://tokenfactory.nebius.com/model-catalog.md"
+ },
+ {
+  "id": "tf-gone-Qwen/Qwen3.5-397B-A17B",
+  "date": "2026-11-10",
+  "source": "tokenfactory",
+  "severity": "medium",
+  "title": "Token Factory removed Qwen3.5-397B-A17B",
+  "url": "https://tokenfactory.nebius.com/model-catalog.md"
+ },
+ {
   "id": "spot-cap-sku-e00dh1moiqg9mc5ix6wj2-2026-11-09",
   "date": "2026-11-09",
   "source": "gpu-spot",

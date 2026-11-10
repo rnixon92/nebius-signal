@@ -7896,7 +7896,7 @@
   "firstSeen": "2026-08-05"
  },
  "4872193101": {
-  "title": "Frontend Engineer - User Interface",
+  "title": "Senior Frontend Engineer ",
   "dept": "Product & Infrastructure",
   "function": "Engineering & product",
   "location": "Remote - United States",
@@ -9307,9 +9307,7 @@
   "location": "Palo Alto, California, United States",
   "region": "Americas",
   "posted": "2026-07-22",
-  "firstSeen": "2026-07-30",
-  "closedAt": "2026-10-29",
-  "closedApprox": false
+  "firstSeen": "2026-07-30"
  },
  "4927011101": {
   "title": "Offensive Security Lead",
@@ -12297,14 +12295,12 @@
  },
  "4997083101": {
   "title": "BI Analyst",
-  "dept": "",
-  "function": "G&A & other",
+  "dept": "Corporate › Operations › Data & Analytics",
+  "function": "Engineering & product",
   "location": "Amsterdam, Netherlands",
   "region": "Europe & other",
   "posted": "2026-10-08",
-  "firstSeen": "2026-10-10",
-  "closedAt": "2026-10-24",
-  "closedApprox": true
+  "firstSeen": "2026-10-10"
  },
  "4997919101": {
   "title": "Security Compliance Coordinator",
@@ -13219,7 +13215,9 @@
   "location": "United States",
   "region": "Americas",
   "posted": "2026-10-23",
-  "firstSeen": "2026-10-24"
+  "firstSeen": "2026-10-24",
+  "closedAt": "2026-11-10",
+  "closedApprox": false
  },
  "5013576101": {
   "title": "Payroll Systems Specialist",
