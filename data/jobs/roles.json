@@ -8374,7 +8374,9 @@
   "location": "United States",
   "region": "Americas",
   "posted": "2026-06-17",
-  "firstSeen": "2026-06-22"
+  "firstSeen": "2026-06-22",
+  "closedAt": "2026-11-10",
+  "closedApprox": false
  },
  "4883833101": {
   "title": "IT Infrastructure Engineer (RMA & Diag)",
@@ -10717,14 +10719,12 @@
  },
  "4955968101": {
   "title": " Technology Commercial Legal Counsel",
-  "dept": "Tavily GTM",
+  "dept": "Z Archived › Z Tavily GTM",
   "function": "Sales & go-to-market",
   "location": "Austin, Texas, United States; New York, United States",
   "region": "Americas",
   "posted": "2026-08-24",
-  "firstSeen": "2026-09-04",
-  "closedAt": "2026-10-04",
-  "closedApprox": true
+  "firstSeen": "2026-09-04"
  },
  "4956405101": {
   "title": "Senior GTM Analyst",
@@ -12306,7 +12306,9 @@
   "location": "Amsterdam, Netherlands",
   "region": "Europe & other",
   "posted": "2026-10-08",
-  "firstSeen": "2026-10-10"
+  "firstSeen": "2026-10-10",
+  "closedAt": "2026-11-10",
+  "closedApprox": false
  },
  "4997919101": {
   "title": "Security Compliance Coordinator",
@@ -13601,6 +13603,15 @@
   "function": "Engineering & product",
   "location": "Tel Aviv, Israel",
   "region": "Israel",
+  "posted": "2026-11-10",
+  "firstSeen": "2026-11-10"
+ },
+ "5029678101": {
+  "title": "GPU Compute Partnerships & Commercial Operations Manager",
+  "dept": "New Products",
+  "function": "Sales & go-to-market",
+  "location": "United States",
+  "region": "Americas",
   "posted": "2026-11-10",
   "firstSeen": "2026-11-10"
  }

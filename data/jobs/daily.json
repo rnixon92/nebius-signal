@@ -844,14 +844,14 @@
  "2026-11-10": {
   "total": 375,
   "byFunction": {
-   "Engineering & product": 186,
-   "Sales & go-to-market": 63,
+   "Engineering & product": 185,
+   "Sales & go-to-market": 64,
    "G&A & other": 50,
    "Data center & power": 76
   },
   "byRegion": {
-   "Europe & other": 178,
-   "Americas": 114,
+   "Europe & other": 177,
+   "Americas": 115,
    "Israel": 42,
    "Asia-Pacific": 38,
    "Remote": 3

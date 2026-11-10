@@ -111,6 +111,14 @@
   "firstSeen": "2026-10-24",
   "lastSeen": "2026-11-10"
  },
+ "qwen/qwen3-235b-a22b-07-25": {
+  "name": "qwen/qwen3-235b-a22b-2507",
+  "input": 0.2,
+  "output": 0.6,
+  "cacheRead": 0.05,
+  "firstSeen": "2026-11-10",
+  "lastSeen": "2026-11-10"
+ },
  "qwen/qwen3-30b-a3b-instruct-2507": {
   "name": "qwen/qwen3-30b-a3b-instruct-2507",
   "input": 0.1,

@@ -1,12 +1,12 @@
 {
- "generatedAt": "2026-11-10T23:18:55.249Z",
+ "generatedAt": "2026-11-10T23:46:23.057Z",
  "sources": [
   {
    "id": "gpu-ondemand",
    "label": "Nebius GPU rate card",
    "url": "https://nebius.com/prices",
    "ok": true,
-   "lastSuccess": "2026-11-10T15:15:24.147Z",
+   "lastSuccess": "2026-11-10T23:45:52.992Z",
    "summary": "9 GPU rows (7 with list prices)",
    "stale": false
   },
@@ -15,8 +15,8 @@
    "label": "Nebius spot price API",
    "url": "https://nebius.com/spot-prices",
    "ok": true,
-   "lastSuccess": "2026-11-10T23:18:49.768Z",
-   "summary": "12 SKUs listed; 12 series, 8628 hourly points",
+   "lastSuccess": "2026-11-10T23:45:54.053Z",
+   "summary": "12 SKUs listed; 12 series, 8616 hourly points",
    "stale": false
   },
   {
@@ -24,7 +24,7 @@
    "label": "Nebius regions docs",
    "url": "https://docs.nebius.com/overview/regions",
    "ok": true,
-   "lastSuccess": "2026-11-10T23:18:49.985Z",
+   "lastSuccess": "2026-11-10T23:45:54.306Z",
    "summary": "10 regions, 6 GPU platforms",
    "stale": false
   },
@@ -33,7 +33,7 @@
    "label": "Epoch AI data centers (satellite)",
    "url": "https://epoch.ai/data/data-centers",
    "ok": true,
-   "lastSuccess": "2026-11-10T15:15:27.233Z",
+   "lastSuccess": "2026-11-10T23:45:56.047Z",
    "summary": "2 Nebius sites, 125 MW IT power observed",
    "stale": false
   },
@@ -42,8 +42,8 @@
    "label": "Google News (data centers)",
    "url": "https://news.google.com/search?q=Nebius%20data%20center",
    "ok": true,
-   "lastSuccess": "2026-11-10T23:18:51.473Z",
-   "summary": "225 headlines fetched; 585 kept, 173 matched to sites",
+   "lastSuccess": "2026-11-10T23:45:55.795Z",
+   "summary": "229 headlines fetched; 586 kept, 173 matched to sites",
    "stale": false
   },
   {
@@ -51,7 +51,7 @@
    "label": "OpenRouter provider pages",
    "url": "https://openrouter.ai/provider/nebius",
    "ok": true,
-   "lastSuccess": "2026-11-10T15:15:47.641Z",
+   "lastSuccess": "2026-11-10T23:46:16.362Z",
    "summary": "Nebius 107 days of history; 11/11 peers",
    "stale": false
   },
@@ -60,7 +60,7 @@
    "label": "jimmyresearch OpenRouter CSV",
    "url": "https://jimmyresearch.com/openrouter/",
    "ok": true,
-   "lastSuccess": "2026-11-10T15:15:47.805Z",
+   "lastSuccess": "2026-11-10T23:46:16.647Z",
    "summary": "248 snapshots to 2026-11-09; Nebius rank 49 of 101",
    "stale": false
   },
@@ -69,8 +69,8 @@
    "label": "Token Factory model catalog",
    "url": "https://tokenfactory.nebius.com/model-catalog.md",
    "ok": true,
-   "lastSuccess": "2026-11-10T15:15:48.212Z",
-   "summary": "25 models, 24 with a cached-input price",
+   "lastSuccess": "2026-11-10T23:46:17.159Z",
+   "summary": "23 models, 22 with a cached-input price",
    "stale": false
   },
   {
@@ -78,8 +78,8 @@
    "label": "Nebius Atlas",
    "url": "https://nebiusatlas.com/",
    "ok": true,
-   "lastSuccess": "2026-11-10T15:15:52.486Z",
-   "summary": "524 customers (40 new since last run)",
+   "lastSuccess": "2026-11-10T23:46:18.744Z",
+   "summary": "524 customers (0 new since last run)",
    "stale": false
   },
   {
@@ -87,7 +87,7 @@
    "label": "SEC EDGAR",
    "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001513845",
    "ok": true,
-   "lastSuccess": "2026-11-10T23:18:51.613Z",
+   "lastSuccess": "2026-11-10T23:46:18.916Z",
    "summary": "172 filings since 2025-01-01 (0 parsed this run)",
    "stale": false
   },
@@ -96,8 +96,8 @@
    "label": "Greenhouse job board",
    "url": "https://careers.nebius.com/",
    "ok": true,
-   "lastSuccess": "2026-11-10T15:15:54.393Z",
-   "summary": "375 open roles (2 new)",
+   "lastSuccess": "2026-11-10T23:46:19.220Z",
+   "summary": "375 open roles (1 new)",
    "stale": false
   },
   {
@@ -105,12 +105,28 @@
    "label": "Yahoo Finance (NBIS)",
    "url": "https://finance.yahoo.com/quote/NBIS",
    "ok": true,
-   "lastSuccess": "2026-11-10T23:18:55.248Z",
+   "lastSuccess": "2026-11-10T23:46:23.056Z",
    "summary": "NBIS last 2026-11-10 $134; 4/4 peers",
    "stale": false
   }
  ],
  "alerts": [
+  {
+   "id": "tf-gone-deepseek-ai/DeepSeek-V4-Pro",
+   "date": "2026-11-10",
+   "source": "tokenfactory",
+   "severity": "medium",
+   "title": "Token Factory removed DeepSeek-V4-Pro",
+   "url": "https://tokenfactory.nebius.com/model-catalog.md"
+  },
+  {
+   "id": "tf-gone-zai-org/GLM-5.1",
+   "date": "2026-11-10",
+   "source": "tokenfactory",
+   "severity": "medium",
+   "title": "Token Factory removed GLM-5.1",
+   "url": "https://tokenfactory.nebius.com/model-catalog.md"
+  },
   {
    "id": "atlas-added-2026-11-10",
    "date": "2026-11-10",
@@ -937,7 +953,7 @@
   {
    "date": "2026-11-05",
    "kind": "model",
-   "label": "qwen3.8-27b on Nebius: peaked at 14.1B tokens/day (21% of traffic)"
+   "label": "qwen3.8-27b on Nebius: peaked at 14.3B tokens/day (22% of traffic)"
   },
   {
    "date": "2026-11-06",
@@ -1070,10 +1086,10 @@
      "range": null,
      "source": null
     },
-    "estimate": 1331.7494299097953,
-    "low": 1291.7969470125013,
-    "high": 1371.7019128070892,
-    "tilt": 0.021825594622410578,
+    "estimate": 1331.74167546813,
+    "low": 1291.7894252040862,
+    "high": 1371.693925732174,
+    "tilt": 0.02181964478921572,
     "lean": "no consensus",
     "coverage": 0.5124256535571027,
     "priorFromLastSurprise": 0.01267828843106178,
@@ -1112,31 +1128,31 @@
       "id": "dc-hiring",
       "label": "Data-center hiring mix",
       "value": "15% of new roles (prior quarter 12%)",
-      "score": 0.24961071317346628,
+      "score": 0.2422600619195047,
       "weight": 0.5,
       "coverage": 1,
       "note": "Build-out staffing leads capacity by one to three quarters, so it's weighted lightly for the current one. Survivorship-biased: only still-open roles are visible.",
-      "contribution": 0.0008471581879524158
+      "contribution": 0.0008222106834266437
      },
      {
       "id": "blackwell-spot",
       "label": "Blackwell spot vs list",
       "value": "53% average",
-      "score": -0.26996753916877747,
+      "score": -0.2698738718453888,
       "weight": 2,
       "coverage": 0.8048780487804879,
       "note": "Above ~60% means spare Blackwell capacity is being taken up. Market pricing only since Oct 8, 2026; uncapped from Nov 2, so later averages can run higher.",
-      "contribution": -0.0029498702498341133
+      "contribution": -0.002948846769561276
      },
      {
       "id": "hopper-spot",
       "label": "Hopper spot vs list",
       "value": "37% average",
-      "score": -0.2825514403292181,
+      "score": -0.2826262626262625,
       "weight": 1,
       "coverage": 0.8048780487804879,
       "note": "Low Hopper prices point to idle older GPUs and pricing pressure on renewals. Market pricing only since Oct 8, 2026.",
-      "contribution": -0.0015436857528153792
+      "contribution": -0.00154409453542079
      },
      {
       "id": "list-price",
@@ -1151,12 +1167,12 @@
      {
       "id": "tokens",
       "label": "Token Factory on OpenRouter",
-      "value": "+174% daily volume vs prior quarter",
-      "score": 0.7269022202970754,
+      "value": "+179% daily volume vs prior quarter",
+      "score": 0.7390561982444879,
       "weight": 0.5,
       "coverage": 0.44565217391304346,
       "note": "Under 0.1% of revenue: a demand-breadth read only.",
-      "contribution": 0.0010994445135139317
+      "contribution": 0.0011178274871774198
      }
     ],
     "context": {
@@ -13339,7 +13355,7 @@
   ]
  },
  "gpu": {
-  "snapshotTime": "2026-11-10T23:13:45.549700Z",
+  "snapshotTime": "2026-11-10T23:40:55.295288Z",
   "onDemand": [
    {
     "name": "NVIDIA GB300 NVL72",
@@ -13440,10 +13456,10 @@
     "skuId": "sku-e00vd4x28cozliwb6g4vh",
     "family": "B300",
     "region": "eu-west2",
-    "price": 14.9,
+    "price": 15,
     "onDemand": 9.5,
-    "ratio": 1.5684,
-    "effectiveTime": "2026-11-10T22:46:00Z",
+    "ratio": 1.5789,
+    "effectiveTime": "2026-11-10T23:26:00Z",
     "spark": [
      7.85,
      7.55,
@@ -13613,7 +13629,7 @@
      14.15,
      14.45,
      14.75,
-     14.9
+     14.95
     ]
    },
    {
@@ -13983,7 +13999,7 @@
     "price": 2.5,
     "onDemand": 8.5,
     "ratio": 0.2941,
-    "effectiveTime": "2026-11-10T18:36:00Z",
+    "effectiveTime": "2026-11-10T23:41:00Z",
     "spark": [
      4.5,
      4.2,
@@ -14153,17 +14169,17 @@
      2.5,
      2.5,
      2.5,
-     2.5
+     2.4
     ]
    },
    {
     "skuId": "sku-e00fjjc4gwdx48pck9b46",
     "family": "B200",
     "region": "us-central1",
-    "price": 3.4,
+    "price": 3.1,
     "onDemand": 8.5,
-    "ratio": 0.4,
-    "effectiveTime": "2026-11-10T23:06:00Z",
+    "ratio": 0.3647,
+    "effectiveTime": "2026-11-10T23:41:00Z",
     "spark": [
      8.4,
      7.95,
@@ -14333,7 +14349,7 @@
      2.5,
      2.8,
      3.4,
-     3.55
+     3.4
     ]
    },
    {
@@ -15060,10 +15076,10 @@
     "skuId": "sku-e00g61h0323jih8tkg5jv",
     "family": "RTX PRO 6000",
     "region": "eu-south1",
-    "price": 1,
+    "price": 0.79,
     "onDemand": 1.8,
-    "ratio": 0.5556,
-    "effectiveTime": "2026-11-10T21:46:00Z",
+    "ratio": 0.4389,
+    "effectiveTime": "2026-11-10T23:36:00Z",
     "spark": [
      0.935,
      0.89,
@@ -15233,17 +15249,17 @@
      0.79,
      0.895,
      1,
-     1
+     0.895
     ]
    },
    {
     "skuId": "sku-e00lxawt0lavf9i0dutiz",
     "family": "RTX PRO 6000",
     "region": "uk-south2",
-    "price": 0.79,
+    "price": 1,
     "onDemand": 1.8,
-    "ratio": 0.4389,
-    "effectiveTime": "2026-11-10T22:31:00Z",
+    "ratio": 0.5556,
+    "effectiveTime": "2026-11-10T23:21:00Z",
     "spark": [
      0.79,
      0.79,
@@ -15413,7 +15429,7 @@
      1.23,
      0.935,
      0.86,
-     0.79
+     0.895
     ]
    },
    {
@@ -15631,11 +15647,11 @@
    },
    {
     "date": "2026-10-12",
-    "B300": 0.3881,
-    "B200": 0.2114,
-    "H200": 0.4719,
+    "B300": 0.3878,
+    "B200": 0.2137,
+    "H200": 0.4709,
     "H100": 0.1756,
-    "RTX PRO 6000": 0.5198
+    "RTX PRO 6000": 0.52
    },
    {
     "date": "2026-10-13",
@@ -15871,8 +15887,8 @@
    },
    {
     "date": "2026-11-11",
-    "B300": 1.1281,
-    "B200": 0.3559,
+    "B300": 1.1298,
+    "B200": 0.3412,
     "H200": 0.1531,
     "H100": 0.1756,
     "RTX PRO 6000": 0.4981
@@ -15905,9 +15921,9 @@
    },
    {
     "date": "2026-10-12",
-    "B300": 2.734,
-    "B200": 1.025,
-    "H200": 0.828,
+    "B300": 2.755,
+    "B200": 1.026,
+    "H200": 0.829,
     "H100": 0.79,
     "RTX PRO 6000": 0.79
    },
@@ -16146,10 +16162,10 @@
    {
     "date": "2026-11-11",
     "B300": 8.25,
-    "B200": 2.5,
+    "B200": 2.4,
     "H200": 0.79,
     "H100": 0.79,
-    "RTX PRO 6000": 0.79
+    "RTX PRO 6000": 0.895
    }
   ],
   "availability": [
@@ -16227,7 +16243,7 @@
    }
   ],
   "tightness": {
-   "blackwell": 0.81882,
+   "blackwell": 0.81386,
    "hopper": 0.158725
   },
   "pools": [
@@ -16340,18 +16356,18 @@
    },
    {
     "date": "2026-10-12",
-    "sku-e00vd4x28cozliwb6g4vh": 0.4105,
-    "sku-e00fmto201j24eyp0841g": 0.4659,
-    "sku-e00hfg6dlxtt9ji6fqo9u": 0.2878,
-    "sku-e00k58wq19wjszct65fwm": 0.1206,
-    "sku-e00fjjc4gwdx48pck9b46": 0.3021,
-    "sku-e00agrh84hf7fwlrgsfsv": 0.2656,
-    "sku-e00dh1moiqg9mc5ix6wj2": 0.1533,
+    "sku-e00vd4x28cozliwb6g4vh": 0.42,
+    "sku-e00fmto201j24eyp0841g": 0.4534,
+    "sku-e00hfg6dlxtt9ji6fqo9u": 0.29,
+    "sku-e00k58wq19wjszct65fwm": 0.1207,
+    "sku-e00fjjc4gwdx48pck9b46": 0.3067,
+    "sku-e00agrh84hf7fwlrgsfsv": 0.2624,
+    "sku-e00dh1moiqg9mc5ix6wj2": 0.1535,
     "sku-e00em8l461xmyihec7sr8": 0.9969,
     "sku-e00ljkedv5qtbwhikuoct": 0.1756,
     "sku-e00g61h0323jih8tkg5jv": 0.4389,
     "sku-e00lxawt0lavf9i0dutiz": 0.4467,
-    "sku-e00otwkvc6gea6nmvvsda": 0.6739
+    "sku-e00otwkvc6gea6nmvvsda": 0.6744
    },
    {
     "date": "2026-10-13",
@@ -16790,17 +16806,17 @@
    },
    {
     "date": "2026-11-11",
-    "sku-e00vd4x28cozliwb6g4vh": 1.5684,
+    "sku-e00vd4x28cozliwb6g4vh": 1.5737,
     "sku-e00fmto201j24eyp0841g": 0.9474,
     "sku-e00hfg6dlxtt9ji6fqo9u": 0.8684,
-    "sku-e00k58wq19wjszct65fwm": 0.2941,
-    "sku-e00fjjc4gwdx48pck9b46": 0.4176,
+    "sku-e00k58wq19wjszct65fwm": 0.2824,
+    "sku-e00fjjc4gwdx48pck9b46": 0.4,
     "sku-e00agrh84hf7fwlrgsfsv": 0.1667,
     "sku-e00dh1moiqg9mc5ix6wj2": 0.1463,
     "sku-e00em8l461xmyihec7sr8": 0.1463,
     "sku-e00ljkedv5qtbwhikuoct": 0.1756,
-    "sku-e00g61h0323jih8tkg5jv": 0.5556,
-    "sku-e00lxawt0lavf9i0dutiz": 0.4389,
+    "sku-e00g61h0323jih8tkg5jv": 0.4972,
+    "sku-e00lxawt0lavf9i0dutiz": 0.4972,
     "sku-e00otwkvc6gea6nmvvsda": 0.5
    }
   ],
@@ -16852,18 +16868,18 @@
    },
    {
     "date": "2026-10-12",
-    "sku-e00vd4x28cozliwb6g4vh": 3.9,
-    "sku-e00fmto201j24eyp0841g": 4.426,
-    "sku-e00hfg6dlxtt9ji6fqo9u": 2.734,
-    "sku-e00k58wq19wjszct65fwm": 1.025,
-    "sku-e00fjjc4gwdx48pck9b46": 2.568,
-    "sku-e00agrh84hf7fwlrgsfsv": 1.434,
-    "sku-e00dh1moiqg9mc5ix6wj2": 0.828,
+    "sku-e00vd4x28cozliwb6g4vh": 3.99,
+    "sku-e00fmto201j24eyp0841g": 4.307,
+    "sku-e00hfg6dlxtt9ji6fqo9u": 2.755,
+    "sku-e00k58wq19wjszct65fwm": 1.026,
+    "sku-e00fjjc4gwdx48pck9b46": 2.607,
+    "sku-e00agrh84hf7fwlrgsfsv": 1.417,
+    "sku-e00dh1moiqg9mc5ix6wj2": 0.829,
     "sku-e00em8l461xmyihec7sr8": 5.383,
     "sku-e00ljkedv5qtbwhikuoct": 0.79,
     "sku-e00g61h0323jih8tkg5jv": 0.79,
     "sku-e00lxawt0lavf9i0dutiz": 0.804,
-    "sku-e00otwkvc6gea6nmvvsda": 1.213
+    "sku-e00otwkvc6gea6nmvvsda": 1.214
    },
    {
     "date": "2026-10-13",
@@ -17302,17 +17318,17 @@
    },
    {
     "date": "2026-11-11",
-    "sku-e00vd4x28cozliwb6g4vh": 14.9,
+    "sku-e00vd4x28cozliwb6g4vh": 14.95,
     "sku-e00fmto201j24eyp0841g": 9,
     "sku-e00hfg6dlxtt9ji6fqo9u": 8.25,
-    "sku-e00k58wq19wjszct65fwm": 2.5,
-    "sku-e00fjjc4gwdx48pck9b46": 3.55,
+    "sku-e00k58wq19wjszct65fwm": 2.4,
+    "sku-e00fjjc4gwdx48pck9b46": 3.4,
     "sku-e00agrh84hf7fwlrgsfsv": 0.9,
     "sku-e00dh1moiqg9mc5ix6wj2": 0.79,
     "sku-e00em8l461xmyihec7sr8": 0.79,
     "sku-e00ljkedv5qtbwhikuoct": 0.79,
-    "sku-e00g61h0323jih8tkg5jv": 1,
-    "sku-e00lxawt0lavf9i0dutiz": 0.79,
+    "sku-e00g61h0323jih8tkg5jv": 0.895,
+    "sku-e00lxawt0lavf9i0dutiz": 0.895,
     "sku-e00otwkvc6gea6nmvvsda": 0.9
    }
   ],
@@ -19189,18 +19205,18 @@
    {
     "date": "2026-11-10",
     "partial": true,
-    "total": 38891081384,
+    "total": 65166748831,
     "byModel": {
-     "qwen/qwen3.8-27b-20260814": 8254448574,
-     "minimax/minimax-m3.1-flash-20261019": 7921258092,
-     "qwen/qwen3-embedding-8b": 7383362518,
-     "nvidia/nemotron-3.5-super-vl-20261015": 4573210090,
-     "deepseek/deepseek-v4.1-flash-20261017": 2956832802,
-     "reflection/beam-1.0-501b-a23b-20261016": 1925710751,
-     "qwen/qwen3-30b-a3b-instruct-2507": 1532883067,
-     "z-ai/glm-5.2-20260616": 759672308,
-     "deepseek/deepseek-v4-pro-20260813": 730963437,
-     "Others": 2852739745
+     "qwen/qwen3.8-27b-20260814": 14256223153,
+     "qwen/qwen3-embedding-8b": 12313664972,
+     "minimax/minimax-m3.1-flash-20261019": 12160189492,
+     "nvidia/nemotron-3.5-super-vl-20261015": 7644350541,
+     "deepseek/deepseek-v4.1-flash-20261017": 4212037313,
+     "qwen/qwen3-30b-a3b-instruct-2507": 2663020603,
+     "reflection/beam-1.0-501b-a23b-20261016": 2422786707,
+     "deepseek/deepseek-v4-pro-20260813": 1485222357,
+     "moonshotai/kimi-k3.1-pro-20261023": 1422678829,
+     "Others": 6586574864
     }
    }
   ],
@@ -19240,10 +19256,10 @@
    "qwen/qwen3-235b-a22b-07-25": {
     "id": "qwen/qwen3-235b-a22b-07-25",
     "name": "qwen/qwen3-235b-a22b-2507",
-    "input": 0.14,
-    "output": 0.8,
+    "input": 0.2,
+    "output": 0.6,
     "cacheRead": 0.05,
-    "priceSource": "catalog"
+    "priceSource": "nebius"
    },
    "google/gemma-3-27b-it": {
     "id": "google/gemma-3-27b-it",
@@ -21521,7 +21537,7 @@
    }
   ],
   "catalog": {
-   "updatedAt": "2026-11-10T15:15:48.212Z",
+   "updatedAt": "2026-11-10T23:46:17.159Z",
    "models": [
     {
      "id": "deepseek-ai/DeepSeek-V4.1-Flash-1017",
@@ -21537,21 +21553,6 @@
      "cacheRead": 0.006,
      "quantization": "fp8",
      "tokensPerSecond": 738
-    },
-    {
-     "id": "deepseek-ai/DeepSeek-V4-Pro",
-     "name": "DeepSeek-V4-Pro",
-     "vendor": "deepseek",
-     "type": "text2text",
-     "regions": [
-      "uk-south1"
-     ],
-     "contextK": 1000,
-     "input": 1.75,
-     "output": 3.5,
-     "cacheRead": 0.14,
-     "quantization": "fp8",
-     "tokensPerSecond": 24
     },
     {
      "id": "deepseek-ai/DeepSeek-V4-Pro-0813",
@@ -21582,21 +21583,6 @@
      "cacheRead": 0.04,
      "quantization": "fp8",
      "tokensPerSecond": 20
-    },
-    {
-     "id": "zai-org/GLM-5.1",
-     "name": "GLM-5.1",
-     "vendor": "zai-org",
-     "type": "text2text",
-     "regions": [
-      "eu-north1"
-     ],
-     "contextK": 200,
-     "input": 1.4,
-     "output": 4.4,
-     "cacheRead": 0.26,
-     "quantization": "fp8",
-     "tokensPerSecond": 25
     },
     {
      "id": "zai-org/GLM-5.2",
@@ -22626,202 +22612,202 @@
     "date": "2026-10-04",
     "total": 364,
     "posted": 1141,
-    "closed": 750,
+    "closed": 749,
     "archive": true
    },
    {
     "date": "2026-10-10",
     "total": 376,
     "posted": 1173,
-    "closed": 775,
+    "closed": 774,
     "archive": true
    },
    {
     "date": "2026-10-11",
     "total": 376,
     "posted": 1173,
-    "closed": 775,
+    "closed": 774,
     "archive": true
    },
    {
     "date": "2026-10-12",
     "total": 376,
     "posted": 1188,
-    "closed": 775,
+    "closed": 774,
     "archive": true
    },
    {
     "date": "2026-10-13",
     "total": 382,
     "posted": 1194,
-    "closed": 788,
+    "closed": 787,
     "archive": true
    },
    {
     "date": "2026-10-14",
     "total": 378,
     "posted": 1207,
-    "closed": 797,
+    "closed": 796,
     "archive": true
    },
    {
     "date": "2026-10-15",
     "total": 383,
     "posted": 1209,
-    "closed": 808,
+    "closed": 807,
     "archive": true
    },
    {
     "date": "2026-10-16",
     "total": 376,
     "posted": 1225,
-    "closed": 818,
+    "closed": 817,
     "archive": true
    },
    {
     "date": "2026-10-17",
     "total": 375,
     "posted": 1225,
-    "closed": 833,
+    "closed": 832,
     "archive": true
    },
    {
     "date": "2026-10-20",
     "total": 382,
     "posted": 1236,
-    "closed": 834,
+    "closed": 833,
     "archive": true
    },
    {
     "date": "2026-10-24",
     "total": 384,
     "posted": 1250,
-    "closed": 851,
+    "closed": 850,
     "archive": false
    },
    {
     "date": "2026-10-25",
     "total": 383,
     "posted": 1251,
-    "closed": 853,
+    "closed": 852,
     "archive": false
    },
    {
     "date": "2026-10-26",
     "total": 376,
     "posted": 1253,
-    "closed": 863,
+    "closed": 862,
     "archive": false
    },
    {
     "date": "2026-10-27",
     "total": 375,
     "posted": 1255,
-    "closed": 869,
+    "closed": 868,
     "archive": false
    },
    {
     "date": "2026-10-28",
     "total": 377,
     "posted": 1261,
-    "closed": 873,
+    "closed": 872,
     "archive": false
    },
    {
     "date": "2026-10-29",
     "total": 370,
     "posted": 1263,
-    "closed": 880,
+    "closed": 879,
     "archive": false
    },
    {
     "date": "2026-10-30",
     "total": 377,
     "posted": 1272,
-    "closed": 883,
+    "closed": 882,
     "archive": false
    },
    {
     "date": "2026-10-31",
     "total": 377,
     "posted": 1272,
-    "closed": 883,
+    "closed": 882,
     "archive": false
    },
    {
     "date": "2026-11-01",
     "total": 377,
     "posted": 1272,
-    "closed": 883,
+    "closed": 882,
     "archive": false
    },
    {
     "date": "2026-11-02",
     "total": 375,
     "posted": 1278,
-    "closed": 888,
+    "closed": 887,
     "archive": false
    },
    {
     "date": "2026-11-03",
     "total": 381,
     "posted": 1282,
-    "closed": 893,
+    "closed": 892,
     "archive": false
    },
    {
     "date": "2026-11-04",
     "total": 383,
     "posted": 1291,
-    "closed": 900,
+    "closed": 899,
     "archive": false
    },
    {
     "date": "2026-11-05",
     "total": 384,
     "posted": 1297,
-    "closed": 908,
+    "closed": 907,
     "archive": false
    },
    {
     "date": "2026-11-06",
     "total": 384,
     "posted": 1301,
-    "closed": 913,
+    "closed": 912,
     "archive": false
    },
    {
     "date": "2026-11-07",
     "total": 384,
     "posted": 1301,
-    "closed": 913,
+    "closed": 912,
     "archive": false
    },
    {
     "date": "2026-11-08",
     "total": 384,
     "posted": 1301,
-    "closed": 913,
+    "closed": 912,
     "archive": false
    },
    {
     "date": "2026-11-09",
     "total": 379,
     "posted": 1303,
-    "closed": 920,
+    "closed": 919,
     "archive": false
    },
    {
     "date": "2026-11-10",
     "total": 375,
-    "posted": 1305,
-    "closed": 930,
+    "posted": 1306,
+    "closed": 931,
     "archive": false
    }
   ],
-  "tracked": 1305,
+  "tracked": 1306,
   "trackedSince": "2024-11-22",
-  "closed30d": 155,
+  "closed30d": 157,
   "medianDaysToClose": 94,
   "daysToCloseByFunction": [
    {
@@ -22831,13 +22817,13 @@
    },
    {
     "name": "Sales & go-to-market",
-    "days": 94,
+    "days": 95,
     "n": 191
    },
    {
     "name": "Engineering & product",
     "days": 107,
-    "n": 249
+    "n": 250
    },
    {
     "name": "G&A & other",
@@ -22852,11 +22838,11 @@
    },
    {
     "name": "Sales & go-to-market",
-    "count": 63
+    "count": 64
    },
    {
     "name": "Engineering & product",
-    "count": 186
+    "count": 185
    },
    {
     "name": "G&A & other",
@@ -22866,11 +22852,11 @@
   "byRegion": [
    {
     "name": "Europe & other",
-    "count": 178
+    "count": 177
    },
    {
     "name": "Americas",
-    "count": 114
+    "count": 115
    },
    {
     "name": "Israel",
@@ -22885,7 +22871,7 @@
     "count": 3
    }
   ],
-  "new7d": 26,
+  "new7d": 27,
   "dcRoles": [
    {
     "title": "Data Center Technician (Early Talent) - Masmiya",
@@ -23422,8 +23408,8 @@
    },
    {
     "date": "2026-06-01",
-    "Still open": 22,
-    "Closed": 66,
+    "Still open": 21,
+    "Closed": 67,
     "Data center & power": 14,
     "Sales & go-to-market": 22,
     "Engineering & product": 33,
@@ -23440,8 +23426,8 @@
    },
    {
     "date": "2026-08-01",
-    "Still open": 36,
-    "Closed": 70,
+    "Still open": 37,
+    "Closed": 69,
     "Data center & power": 9,
     "Sales & go-to-market": 29,
     "Engineering & product": 43,
@@ -23458,8 +23444,8 @@
    },
    {
     "date": "2026-10-01",
-    "Still open": 104,
-    "Closed": 32,
+    "Still open": 103,
+    "Closed": 33,
     "Data center & power": 20,
     "Sales & go-to-market": 39,
     "Engineering & product": 41,
@@ -23467,10 +23453,10 @@
    },
    {
     "date": "2026-11-01",
-    "Still open": 32,
+    "Still open": 33,
     "Closed": 1,
     "Data center & power": 5,
-    "Sales & go-to-market": 4,
+    "Sales & go-to-market": 5,
     "Engineering & product": 15,
     "G&A & other": 9
    }

@@ -1,5 +1,21 @@
 [
  {
+  "id": "tf-gone-deepseek-ai/DeepSeek-V4-Pro",
+  "date": "2026-11-10",
+  "source": "tokenfactory",
+  "severity": "medium",
+  "title": "Token Factory removed DeepSeek-V4-Pro",
+  "url": "https://tokenfactory.nebius.com/model-catalog.md"
+ },
+ {
+  "id": "tf-gone-zai-org/GLM-5.1",
+  "date": "2026-11-10",
+  "source": "tokenfactory",
+  "severity": "medium",
+  "title": "Token Factory removed GLM-5.1",
+  "url": "https://tokenfactory.nebius.com/model-catalog.md"
+ },
+ {
   "id": "atlas-added-2026-11-10",
   "date": "2026-11-10",
   "source": "atlas",

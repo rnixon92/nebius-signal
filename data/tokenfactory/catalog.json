@@ -1,23 +1,6 @@
 {
- "updatedAt": "2026-11-10T15:15:48.212Z",
+ "updatedAt": "2026-11-10T23:46:17.159Z",
  "models": {
-  "deepseek-ai/DeepSeek-V4-Pro": {
-   "id": "deepseek-ai/DeepSeek-V4-Pro",
-   "name": "DeepSeek-V4-Pro",
-   "vendor": "deepseek",
-   "type": "text2text",
-   "regions": [
-    "uk-south1"
-   ],
-   "contextK": 1000,
-   "input": 1.75,
-   "output": 3.5,
-   "cacheRead": 0.14,
-   "quantization": "fp8",
-   "tokensPerSecond": 24,
-   "firstSeen": "2026-10-25",
-   "lastSeen": "2026-11-10"
-  },
   "deepseek-ai/DeepSeek-V4-Pro-0813": {
    "id": "deepseek-ai/DeepSeek-V4-Pro-0813",
    "name": "DeepSeek-V4-Pro-0813",
@@ -355,23 +338,6 @@
    "cacheRead": 0.05,
    "quantization": "fp4",
    "tokensPerSecond": 611,
-   "firstSeen": "2026-10-25",
-   "lastSeen": "2026-11-10"
-  },
-  "zai-org/GLM-5.1": {
-   "id": "zai-org/GLM-5.1",
-   "name": "GLM-5.1",
-   "vendor": "zai-org",
-   "type": "text2text",
-   "regions": [
-    "eu-north1"
-   ],
-   "contextK": 200,
-   "input": 1.4,
-   "output": 4.4,
-   "cacheRead": 0.26,
-   "quantization": "fp8",
-   "tokensPerSecond": 25,
    "firstSeen": "2026-10-25",
    "lastSeen": "2026-11-10"
   },
