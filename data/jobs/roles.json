@@ -3899,7 +3899,9 @@
   "location": "Lappeenranta, Finland",
   "region": "Europe & other",
   "posted": "2026-05-15",
-  "firstSeen": "2026-06-22"
+  "firstSeen": "2026-06-22",
+  "closedAt": "2026-11-10",
+  "closedApprox": false
  },
  "4752307101": {
   "title": "Data Center IT Manager - Modiin",
@@ -9143,7 +9145,9 @@
   "location": "Tel Aviv, Israel",
   "region": "Israel",
   "posted": "2026-07-13",
-  "firstSeen": "2026-11-05"
+  "firstSeen": "2026-11-05",
+  "closedAt": "2026-11-10",
+  "closedApprox": false
  },
  "4921283101": {
   "title": "Channel Partner Manager, United States",
@@ -9778,7 +9782,7 @@
   "closedApprox": true
  },
  "4939855101": {
-  "title": "Solutions Architect",
+  "title": "Senior Solutions Architect",
   "dept": "Go-To-Market › Customer Experience › Solutions Architecture",
   "function": "Sales & go-to-market",
   "location": "Singapore",
@@ -10373,7 +10377,7 @@
   "closedApprox": true
  },
  "4948062101": {
-  "title": "Senior Site Reliability Engineer (Agentic Search)",
+  "title": "Senior SRE (Search)",
   "dept": "New Products › Agentic Search",
   "function": "Engineering & product",
   "location": "Israel",
@@ -10472,7 +10476,9 @@
   "location": "Singapore",
   "region": "Asia-Pacific",
   "posted": "2026-08-10",
-  "firstSeen": "2026-08-13"
+  "firstSeen": "2026-08-13",
+  "closedAt": "2026-11-10",
+  "closedApprox": false
  },
  "4949901101": {
   "title": "Delivery Manager",
@@ -10980,7 +10986,9 @@
   "location": "London, United Kingdom",
   "region": "Europe & other",
   "posted": "2026-09-08",
-  "firstSeen": "2026-09-14"
+  "firstSeen": "2026-09-14",
+  "closedAt": "2026-11-10",
+  "closedApprox": false
  },
  "4961188101": {
   "title": "Head of Proactive Security ",
@@ -11252,14 +11260,12 @@
  },
  "4967584101": {
   "title": "Security Risk Lead",
-  "dept": "",
+  "dept": "CEO & CSO Office › Security Operations",
   "function": "Engineering & product",
   "location": "Tel Aviv, Israel",
   "region": "Israel",
   "posted": "2026-09-07",
-  "firstSeen": "2026-09-14",
-  "closedAt": "2026-10-24",
-  "closedApprox": true
+  "firstSeen": "2026-09-14"
  },
  "4967692101": {
   "title": "Presentation & Customer-facing Assets Designer",
@@ -12468,7 +12474,9 @@
   "location": "United States",
   "region": "Americas",
   "posted": "2026-10-09",
-  "firstSeen": "2026-10-10"
+  "firstSeen": "2026-10-10",
+  "closedAt": "2026-11-10",
+  "closedApprox": false
  },
  "5000604101": {
   "title": "Delivery Operations Manager - Token Factory",
@@ -12546,7 +12554,9 @@
   "location": "Tel Aviv, Israel",
   "region": "Israel",
   "posted": "2026-10-12",
-  "firstSeen": "2026-10-13"
+  "firstSeen": "2026-10-13",
+  "closedAt": "2026-11-10",
+  "closedApprox": false
  },
  "5000700101": {
   "title": "Operations Specialist ",
@@ -12751,7 +12761,9 @@
   "location": "Tel Aviv, Israel",
   "region": "Israel",
   "posted": "2026-10-14",
-  "firstSeen": "2026-10-15"
+  "firstSeen": "2026-10-15",
+  "closedAt": "2026-11-10",
+  "closedApprox": false
  },
  "5004904101": {
   "title": "People Program Manager ",
@@ -12760,7 +12772,9 @@
   "location": "London, United Kingdom",
   "region": "Europe & other",
   "posted": "2026-10-14",
-  "firstSeen": "2026-10-15"
+  "firstSeen": "2026-10-15",
+  "closedAt": "2026-11-10",
+  "closedApprox": false
  },
  "5004919101": {
   "title": "Technical Accounting & Financial Reporting Manager",
@@ -12825,7 +12839,9 @@
   "location": "Amsterdam, Netherlands",
   "region": "Europe & other",
   "posted": "2026-10-14",
-  "firstSeen": "2026-10-15"
+  "firstSeen": "2026-10-15",
+  "closedAt": "2026-11-10",
+  "closedApprox": false
  },
  "5006458101": {
   "title": "Solutions Architect",
@@ -12858,7 +12874,7 @@
  },
  "5006764101": {
   "title": "Senior Public Affairs Specialist",
-  "dept": "Government Relations & Global Intelligence › Government Relations",
+  "dept": "Government Relations & Global Intelligence",
   "function": "G&A & other",
   "location": "Finland",
   "region": "Europe & other",
@@ -13316,9 +13332,7 @@
   "location": "United States",
   "region": "Americas",
   "posted": "2026-10-29",
-  "firstSeen": "2026-10-29",
-  "closedAt": "2026-11-02",
-  "closedApprox": false
+  "firstSeen": "2026-10-29"
  },
  "5017942101": {
   "title": "Head of Financial Internal Controls ",
@@ -13571,5 +13585,23 @@
   "region": "Europe & other",
   "posted": "2026-11-09",
   "firstSeen": "2026-11-09"
+ },
+ "5029394101": {
+  "title": "Ethics & Compliance Training and Implementation Manager ",
+  "dept": "Corporate › Legal › Ethics & Compliance",
+  "function": "G&A & other",
+  "location": "Amsterdam, Netherlands",
+  "region": "Europe & other",
+  "posted": "2026-11-10",
+  "firstSeen": "2026-11-10"
+ },
+ "5029513101": {
+  "title": "Legal Counsel — Cyber Security, Technology Safety & Physical Security ",
+  "dept": "Corporate › Legal",
+  "function": "Engineering & product",
+  "location": "Tel Aviv, Israel",
+  "region": "Israel",
+  "posted": "2026-11-10",
+  "firstSeen": "2026-11-10"
  }
 }

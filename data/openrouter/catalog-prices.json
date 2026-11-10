@@ -55,9 +55,9 @@
  },
  "~moonshotai/kimi-latest": {
   "name": "~moonshotai/kimi-latest",
-  "input": 0.1529,
-  "output": 10.5572,
-  "cacheRead": 0.15
+  "input": 0.1824,
+  "output": 9.3388,
+  "cacheRead": 0.18
  },
  "~openai/gpt-astra-latest": {
   "name": "~openai/gpt-astra-latest",
@@ -103,8 +103,8 @@
  },
  "~z-ai/glm-flash-latest": {
   "name": "~z-ai/glm-flash-latest",
-  "input": 0.0335,
-  "output": 0.083,
+  "input": 0.0399,
+  "output": 0.0784,
   "cacheRead": 0.03
  },
  "~z-ai/glm-latest": {
@@ -433,9 +433,9 @@
  },
  "deepseek/deepseek-v4.1-flash-20260910": {
   "name": "deepseek/deepseek-v4.1-flash",
-  "input": 0.051,
-  "output": 0.567,
-  "cacheRead": 0.018
+  "input": 0.3,
+  "output": 1.2,
+  "cacheRead": 0.006
  },
  "deepseek/deepseek-v4.1-flash-20261017": {
   "name": "deepseek/deepseek-v4.1-flash-1017",
@@ -859,9 +859,9 @@
  },
  "minimax/minimax-m3.1-flash-20261019": {
   "name": "minimax/minimax-m3.1-flash",
-  "input": 0.15,
-  "output": 0.6,
-  "cacheRead": 0.015
+  "input": 0.075,
+  "output": 0.3,
+  "cacheRead": 0.0075
  },
  "mistralai/codestral-2508": {
   "name": "mistralai/codestral-2508",
@@ -1066,6 +1066,12 @@
   "input": 0.075,
   "output": 0.25,
   "cacheRead": 0.015
+ },
+ "nex-agi/nex-n2.6-20261110": {
+  "name": "nex-agi/nex-n2.6",
+  "input": 0.12,
+  "output": 0.4,
+  "cacheRead": 0.024
  },
  "nousresearch/hermes-4-405b": {
   "name": "nousresearch/hermes-4-405b",
@@ -2215,9 +2221,9 @@
  },
  "z-ai/glm-5.2-20260616": {
   "name": "z-ai/glm-5.2",
-  "input": 0.006,
+  "input": 0.007,
   "output": 6.8,
-  "cacheRead": 0.005
+  "cacheRead": 0.006
  },
  "z-ai/glm-5.3-20260816": {
   "name": "z-ai/glm-5.3",
@@ -2227,8 +2233,8 @@
  },
  "z-ai/glm-5.3-flash-20260826": {
   "name": "z-ai/glm-5.3-flash",
-  "input": 0.15,
-  "output": 0.5,
+  "input": 0.0399,
+  "output": 0.0784,
   "cacheRead": 0.03
  },
  "z-ai/glm-5.3-flashx-20260918": {
