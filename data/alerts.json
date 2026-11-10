@@ -1,5 +1,14 @@
 [
  {
+  "id": "spot-above-list-sku-e00vd4x28cozliwb6g4vh-2026-11-10",
+  "date": "2026-11-10",
+  "source": "gpu-spot",
+  "severity": "high",
+  "title": "B300 spot above on-demand in eu-west2: $10.1 vs $9.5 list",
+  "detail": "106% of on-demand. Buyers are paying more than list for preemptible GPUs.",
+  "url": "https://nebius.com/spot-prices"
+ },
+ {
   "id": "news-independence road reopens to local residents as data center construction continu",
   "date": "2026-11-10",
   "source": "news",
