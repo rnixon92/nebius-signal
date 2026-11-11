@@ -1,5 +1,23 @@
 [
  {
+  "id": "or-wow-2026-11-10",
+  "date": "2026-11-11",
+  "source": "openrouter",
+  "severity": "medium",
+  "title": "Nebius OpenRouter tokens up 61% week over week",
+  "detail": "517.4B tokens in the 7 days to 2026-11-10 vs 320.4B the week before",
+  "url": "https://openrouter.ai/provider/nebius"
+ },
+ {
+  "id": "atlas-added-2026-11-11",
+  "date": "2026-11-11",
+  "source": "atlas",
+  "severity": "info",
+  "title": "5 new customers on Nebius Atlas (1 using Token Factory)",
+  "detail": "HomeRates.ai, Orases, RoryPlans, SimpleHelp, Skygen",
+  "url": "https://nebiusatlas.com/"
+ },
+ {
   "id": "tf-gone-deepseek-ai/DeepSeek-V4-Pro",
   "date": "2026-11-10",
   "source": "tokenfactory",

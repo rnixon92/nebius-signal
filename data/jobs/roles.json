@@ -11006,7 +11006,9 @@
   "location": "Amsterdam, Netherlands",
   "region": "Europe & other",
   "posted": "2026-08-26",
-  "firstSeen": "2026-09-04"
+  "firstSeen": "2026-09-04",
+  "closedAt": "2026-11-11",
+  "closedApprox": false
  },
  "4961454101": {
   "title": "Project Manager — Cyber Security PMO ",
@@ -13439,7 +13441,7 @@
   "title": "Senior / Lead Program Manager",
   "dept": "Product & Infrastructure",
   "function": "Engineering & product",
-  "location": "Berlin, Germany",
+  "location": "Remote - Europe",
   "region": "Europe & other",
   "posted": "2026-11-06",
   "firstSeen": "2026-11-06"
@@ -13515,6 +13517,15 @@
   "region": "Europe & other",
   "posted": "2026-11-05",
   "firstSeen": "2026-11-05"
+ },
+ "5026517101": {
+  "title": "Technical Program Manager - IP Backbone",
+  "dept": "Product & Infrastructure › Infrastructure › Network Infrastructure",
+  "function": "Engineering & product",
+  "location": "Remote - Europe; Remote - United States",
+  "region": "Americas",
+  "posted": "2026-11-11",
+  "firstSeen": "2026-11-11"
  },
  "5026688101": {
   "title": "Senior Full Stack Engineer (Agentic Search) - Platform",
@@ -13604,7 +13615,9 @@
   "location": "Tel Aviv, Israel",
   "region": "Israel",
   "posted": "2026-11-10",
-  "firstSeen": "2026-11-10"
+  "firstSeen": "2026-11-10",
+  "closedAt": "2026-11-11",
+  "closedApprox": false
  },
  "5029678101": {
   "title": "GPU Compute Partnerships & Commercial Operations Manager",
@@ -13614,5 +13627,14 @@
   "region": "Americas",
   "posted": "2026-11-10",
   "firstSeen": "2026-11-10"
+ },
+ "5030796101": {
+  "title": "Senior AP Accountant",
+  "dept": "Corporate › Finance",
+  "function": "G&A & other",
+  "location": "Remote - Europe",
+  "region": "Europe & other",
+  "posted": "2026-11-11",
+  "firstSeen": "2026-11-11"
  }
 }

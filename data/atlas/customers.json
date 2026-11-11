@@ -2871,6 +2871,21 @@
   "baseline": false,
   "latestEvidence": "2026-11-10"
  },
+ "homerates-ai": {
+  "name": "HomeRates.ai",
+  "category": "Finance",
+  "use": "Tavily search for property intelligence",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-11-11",
+  "baseline": false,
+  "latestEvidence": "2026-11-11"
+ },
  "hostyourai": {
   "name": "HostYourAI",
   "category": "Data & infrastructure",
@@ -4969,6 +4984,19 @@
   "baseline": false,
   "latestEvidence": "2026-10-25"
  },
+ "orases": {
+  "name": "Orases",
+  "category": "Business services",
+  "use": "Lists Tavily as an LLM services subprocessor",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-11-11",
+  "baseline": false,
+  "latestEvidence": "2026-11-11"
+ },
  "orbiq": {
   "name": "Orbiq",
   "category": "Security & compliance",
@@ -6049,6 +6077,21 @@
   "baseline": true,
   "latestEvidence": "2026-02-12"
  },
+ "roryplans": {
+  "name": "RoryPlans",
+  "category": "Workplace tools",
+  "use": "Uses Tavily for agent web search.",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-11-11",
+  "baseline": false,
+  "latestEvidence": "2026-11-11"
+ },
  "rox": {
   "name": "Rox",
   "category": "Workplace tools",
@@ -6394,6 +6437,21 @@
   "baseline": false,
   "latestEvidence": "2026-08-01"
  },
+ "simplehelp": {
+  "name": "SimpleHelp",
+  "category": "Data & infrastructure",
+  "use": "Nebius AI for support log processing",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [
+   "Data processing"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-11-11",
+  "baseline": false,
+  "latestEvidence": "2026-11-11"
+ },
  "simulacra-ai": {
   "name": "Simulacra AI",
   "category": "Science & research",
@@ -6439,6 +6497,19 @@
   "firstListedAt": "2026-11-10",
   "baseline": false,
   "latestEvidence": "2026-11-10"
+ },
+ "skygen": {
+  "name": "Skygen",
+  "category": "Workplace tools",
+  "use": "Tavily for feature-dependent research lookups",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-11-11",
+  "baseline": false,
+  "latestEvidence": "2026-11-11"
  },
  "skypilot-tokens": {
   "name": "SkyPilot Tokens",
@@ -7567,7 +7638,7 @@
   "evidence": "named",
   "firstListedAt": "2026-10-26",
   "baseline": false,
-  "latestEvidence": "2026-10-26"
+  "latestEvidence": "2026-11-11"
  },
  "vllm-project": {
   "name": "vLLM project",
@@ -7617,7 +7688,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-27",
   "baseline": false,
-  "latestEvidence": "2026-11-05"
+  "latestEvidence": "2026-11-11"
  },
  "vulk": {
   "name": "VULK",

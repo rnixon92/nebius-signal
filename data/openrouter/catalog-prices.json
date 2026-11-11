@@ -56,7 +56,7 @@
  "~moonshotai/kimi-latest": {
   "name": "~moonshotai/kimi-latest",
   "input": 0.1824,
-  "output": 9.3388,
+  "output": 11.0055,
   "cacheRead": 0.18
  },
  "~openai/gpt-astra-latest": {
@@ -282,10 +282,10 @@
   "cacheRead": 0.1
  },
  "baidu/ernie-5.5-flash-preview-20261110": {
-  "name": "baidu/ernie-5.5-flash-preview",
-  "input": 0.28,
-  "output": 1.13,
-  "cacheRead": 0.028
+  "name": "baidu/ernie-5.5-flash-preview:free",
+  "input": 0,
+  "output": 0,
+  "cacheRead": null
  },
  "baidu/ernie-light-dt-1.0-intl-20261110": {
   "name": "baidu/ernie-light-dt-1.0-intl",
@@ -293,28 +293,10 @@
   "output": 3.94,
   "cacheRead": 0.113
  },
- "bytedance-seed/seed-1.6-20250625": {
-  "name": "bytedance-seed/seed-1.6",
-  "input": 0.25,
-  "output": 2,
-  "cacheRead": null
- },
- "bytedance-seed/seed-1.6-flash-20250625": {
-  "name": "bytedance-seed/seed-1.6-flash",
-  "input": 0.075,
-  "output": 0.3,
-  "cacheRead": null
- },
  "bytedance-seed/seed-2-1-turbo-20260810": {
   "name": "bytedance-seed/seed-2-1-turbo",
   "input": 0.5,
   "output": 2.5,
-  "cacheRead": null
- },
- "bytedance-seed/seed-2.0-code-20260730": {
-  "name": "bytedance-seed/seed-2.0-code",
-  "input": 0.5,
-  "output": 3,
   "cacheRead": null
  },
  "bytedance-seed/seed-2.0-lite-20260309": {
@@ -415,9 +397,9 @@
  },
  "deepseek/deepseek-v4-flash-20260423": {
   "name": "deepseek/deepseek-v4-flash",
-  "input": 0.091,
-  "output": 0.182,
-  "cacheRead": 0.0182
+  "input": 0.09,
+  "output": 0.18,
+  "cacheRead": 0.018
  },
  "deepseek/deepseek-v4-flash-20260731": {
   "name": "deepseek/deepseek-v4-flash-0731",
@@ -433,9 +415,9 @@
  },
  "deepseek/deepseek-v4-pro-20260423": {
   "name": "deepseek/deepseek-v4-pro",
-  "input": 0.95526,
-  "output": 1.91052,
-  "cacheRead": 0.079605
+  "input": 0.887226,
+  "output": 1.774452,
+  "cacheRead": 0.073935
  },
  "deepseek/deepseek-v4-pro-20260813": {
   "name": "deepseek/deepseek-v4-pro-0813",
@@ -445,9 +427,9 @@
  },
  "deepseek/deepseek-v4.1-flash-20260910": {
   "name": "deepseek/deepseek-v4.1-flash",
-  "input": 0.3,
-  "output": 1.2,
-  "cacheRead": 0.006
+  "input": 0.051,
+  "output": 0.567,
+  "cacheRead": 0.018
  },
  "deepseek/deepseek-v4.1-flash-20261017": {
   "name": "deepseek/deepseek-v4.1-flash-1017",
@@ -719,6 +701,12 @@
   "output": 0.15,
   "cacheRead": 0.03
  },
+ "kt/midm-k-3.0-pro": {
+  "name": "kt/midm-k-3.0-pro",
+  "input": 0.2,
+  "output": 0.8,
+  "cacheRead": 0.04
+ },
  "liquid/lfm-2.5-2.6b-20260811": {
   "name": "liquid/lfm-2.5-2.6b",
   "input": 0.35,
@@ -877,9 +865,9 @@
  },
  "minimax/minimax-m3.1-flash-20261019": {
   "name": "minimax/minimax-m3.1-flash",
-  "input": 0.075,
-  "output": 0.3,
-  "cacheRead": 0.0075
+  "input": 0.15,
+  "output": 0.6,
+  "cacheRead": 0.015
  },
  "mistralai/codestral-2508": {
   "name": "mistralai/codestral-2508",
@@ -1072,6 +1060,12 @@
   "input": 0.9,
   "output": 1.9,
   "cacheRead": null
+ },
+ "motif-technologies/motif-3": {
+  "name": "motif-technologies/motif-3",
+  "input": 0.3,
+  "output": 1.2,
+  "cacheRead": 0.06
  },
  "nex-agi/nex-n2.5-mini-20260908": {
   "name": "nex-agi/nex-n2.5-mini",
@@ -1619,12 +1613,6 @@
   "output": 0.4,
   "cacheRead": null
  },
- "qwen/qwen-2.5-7b-instruct": {
-  "name": "qwen/qwen-2.5-7b-instruct",
-  "input": 0.1,
-  "output": 0.2,
-  "cacheRead": null
- },
  "qwen/qwen-2.5-coder-32b-instruct": {
   "name": "qwen/qwen-2.5-coder-32b-instruct",
   "input": 0.66,
@@ -1993,9 +1981,9 @@
  },
  "tencent/hy3-20260706": {
   "name": "tencent/hy3",
-  "input": 0.0825,
-  "output": 0.33,
-  "cacheRead": 0.020625
+  "input": 0.132,
+  "output": 0.528,
+  "cacheRead": 0.033
  },
  "tencent/hy3-preview-20260421": {
   "name": "tencent/hy3-preview",
@@ -2011,9 +1999,9 @@
  },
  "tencent/hy4-preview-20260827": {
   "name": "tencent/hy4-preview",
-  "input": 0.7506,
-  "output": 2.2509,
-  "cacheRead": 0.0378
+  "input": 0.834,
+  "output": 2.501,
+  "cacheRead": 0.042
  },
  "thedrummer/cydonia-24b-v4.1": {
   "name": "thedrummer/cydonia-24b-v4.1",
@@ -2171,12 +2159,6 @@
   "output": 8.7,
   "cacheRead": 0.036
  },
- "xingchen-agi/xing4.0-29b-a4b-20261015": {
-  "name": "xingchen-agi/xing4.0-29b-a4b:free",
-  "input": 0,
-  "output": 0,
-  "cacheRead": null
- },
  "z-ai/glm-4.5": {
   "name": "z-ai/glm-4.5",
   "input": 0.6,
@@ -2233,9 +2215,9 @@
  },
  "z-ai/glm-5.1-20260406": {
   "name": "z-ai/glm-5.1",
-  "input": 1.4,
-  "output": 4.4,
-  "cacheRead": 0.26
+  "input": 1.33,
+  "output": 4.18,
+  "cacheRead": 0.247
  },
  "z-ai/glm-5.2-20260616": {
   "name": "z-ai/glm-5.2",

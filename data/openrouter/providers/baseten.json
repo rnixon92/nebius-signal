@@ -1,6 +1,6 @@
 {
  "provider": "baseten",
- "updatedAt": "2026-11-10T23:46:03.020Z",
+ "updatedAt": "2026-11-11T14:44:19.767Z",
  "days": {
   "2026-07-27": {
    "z-ai/glm-5.2-20260616": 3020565780,
@@ -1189,16 +1189,28 @@
    "Others": 3765173756
   },
   "2026-11-10": {
-   "z-ai/glm-5.3-flash-20260826": 71712230452,
-   "deepseek/deepseek-v4.1-flash-20260910": 44492194809,
-   "deepseek/deepseek-v4.1-flash-20261017": 23955409713,
-   "z-ai/glm-5.3-20260816": 13805728238,
-   "deepseek/deepseek-v4-flash-20260731": 5107519699,
-   "z-ai/glm-5.2-20260616": 3892830990,
-   "nvidia/nemotron-3-ultra-550b-a55b-20260604": 1958769614,
-   "openai/gpt-oss-120b": 1385040692,
-   "nvidia/nemotron-3.5-super-vl-20261015": 1377994107,
-   "Others": 3653904862
+   "z-ai/glm-5.3-flash-20260826": 73006247257,
+   "deepseek/deepseek-v4.1-flash-20260910": 45407155939,
+   "deepseek/deepseek-v4.1-flash-20261017": 24747965801,
+   "z-ai/glm-5.3-20260816": 14355139764,
+   "deepseek/deepseek-v4-flash-20260731": 5267652212,
+   "z-ai/glm-5.2-20260616": 3975756226,
+   "nvidia/nemotron-3-ultra-550b-a55b-20260604": 2062556505,
+   "nvidia/nemotron-3.5-super-vl-20261015": 1416054928,
+   "openai/gpt-oss-120b": 1408096967,
+   "Others": 3721572541
+  },
+  "2026-11-11": {
+   "deepseek/deepseek-v4.1-flash-20260910": 39497393668,
+   "z-ai/glm-5.3-flash-20260826": 28352415130,
+   "deepseek/deepseek-v4.1-flash-20261017": 13860997845,
+   "z-ai/glm-5.3-20260816": 10635642698,
+   "deepseek/deepseek-v4-flash-20260731": 3294965121,
+   "z-ai/glm-5.2-20260616": 2314944444,
+   "baseten/elephant-1-20261021": 1376128757,
+   "nvidia/nemotron-3.5-super-vl-20261015": 850022895,
+   "nvidia/nemotron-3-ultra-550b-a55b-20260604": 845702537,
+   "Others": 2868344169
   }
  }
 }
