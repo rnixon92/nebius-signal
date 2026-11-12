@@ -6844,8 +6844,8 @@
  },
  "4828978101": {
   "title": "L1 IT Technician",
-  "dept": "Product & Infrastructure › Infrastructure",
-  "function": "Engineering & product",
+  "dept": "Product & Infrastructure › Infrastructure › EMEA-DC IT Infrastructure › DC Mantsala IT Support Group",
+  "function": "Data center & power",
   "location": "Lappeenranta, Finland",
   "region": "Europe & other",
   "posted": "2026-05-15",
@@ -9324,7 +9324,9 @@
   "location": "Remote - Europe",
   "region": "Europe & other",
   "posted": "2026-07-15",
-  "firstSeen": "2026-07-21"
+  "firstSeen": "2026-07-21",
+  "closedAt": "2026-11-12",
+  "closedApprox": false
  },
  "4927521101": {
   "title": "Site Security Manager  (London)",
@@ -11941,7 +11943,9 @@
   "location": "Remote - Europe",
   "region": "Europe & other",
   "posted": "2026-10-05",
-  "firstSeen": "2026-10-10"
+  "firstSeen": "2026-10-10",
+  "closedAt": "2026-11-12",
+  "closedApprox": false
  },
  "4984012101": {
   "title": "Senior Machine Learning Engineer, LLM Inference Optimization",
@@ -12321,7 +12325,9 @@
   "location": "Tel Aviv, Israel",
   "region": "Israel",
   "posted": "2026-10-08",
-  "firstSeen": "2026-10-10"
+  "firstSeen": "2026-10-10",
+  "closedAt": "2026-11-12",
+  "closedApprox": false
  },
  "4997944101": {
   "title": "Executive Assistant ",
@@ -12727,7 +12733,9 @@
   "location": "Amsterdam, Netherlands",
   "region": "Europe & other",
   "posted": "2026-10-14",
-  "firstSeen": "2026-10-16"
+  "firstSeen": "2026-10-16",
+  "closedAt": "2026-11-12",
+  "closedApprox": false
  },
  "5004452101": {
   "title": "Business Development Representative (BDR)- AI Native",
@@ -12751,14 +12759,12 @@
  },
  "5004681101": {
   "title": "Intercompany Accountant",
-  "dept": "",
+  "dept": "Corporate › Finance",
   "function": "G&A & other",
   "location": "Remote - Europe",
   "region": "Europe & other",
   "posted": "2026-10-13",
-  "firstSeen": "2026-10-14",
-  "closedAt": "2026-10-16",
-  "closedApprox": true
+  "firstSeen": "2026-10-14"
  },
  "5004901101": {
   "title": "People Program Manager ",
@@ -13405,7 +13411,7 @@
  },
  "5022195101": {
   "title": "Data Center L1 IT Technician (Lappeenranta)",
-  "dept": "Product & Infrastructure › Infrastructure",
+  "dept": "Product & Infrastructure › Infrastructure › EMEA-DC IT Infrastructure › DC Mantsala IT Support Group",
   "function": "Data center & power",
   "location": "Lappeenranta, Finland",
   "region": "Europe & other",
@@ -13554,7 +13560,9 @@
   "location": "Amsterdam, Netherlands",
   "region": "Europe & other",
   "posted": "2026-11-05",
-  "firstSeen": "2026-11-05"
+  "firstSeen": "2026-11-05",
+  "closedAt": "2026-11-12",
+  "closedApprox": false
  },
  "5027589101": {
   "title": "Senior/Staff Evaluation Data Analyst (Agentic Search)",
@@ -13653,6 +13661,15 @@
   "location": "Hyderabad, India; Singapore",
   "region": "Asia-Pacific",
   "posted": "2026-11-11",
+  "firstSeen": "2026-11-12"
+ },
+ "5034776101": {
+  "title": "Compensation Business Partner, Infrastructure ",
+  "dept": "Corporate › People › C&B",
+  "function": "Sales & go-to-market",
+  "location": "London, United Kingdom",
+  "region": "Europe & other",
+  "posted": "2026-11-12",
   "firstSeen": "2026-11-12"
  }
 }

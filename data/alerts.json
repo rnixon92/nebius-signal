@@ -1,5 +1,40 @@
 [
  {
+  "id": "tf-new-deepseek-ai/DeepSeek-V4-Flash-0731",
+  "date": "2026-11-12",
+  "source": "tokenfactory",
+  "severity": "info",
+  "title": "Token Factory listed DeepSeek-V4-Flash-0731",
+  "detail": "us-central1 · input $0.14/M, cached $0.01/M, output $0.28/M",
+  "url": "https://tokenfactory.nebius.com/model-catalog.md"
+ },
+ {
+  "id": "atlas-added-2026-11-12",
+  "date": "2026-11-12",
+  "source": "atlas",
+  "severity": "info",
+  "title": "6 new customers on Nebius Atlas (1 using Token Factory)",
+  "detail": "AFNB, BIMcloud SaaS, distil labs, Grantable, Ortet, Upsales",
+  "url": "https://nebiusatlas.com/"
+ },
+ {
+  "id": "sec-0001104659-26-126008",
+  "date": "2026-11-12",
+  "source": "sec",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926126008/tm2629571d1_ex99-1.htm",
+  "severity": "high",
+  "title": "New 6-K: Nebius reports third quarter 2026 financial results"
+ },
+ {
+  "id": "sec-power-0001104659-26-126008",
+  "date": "2026-11-12",
+  "source": "sec",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926126008/tm2629571d1_ex99-1.htm",
+  "severity": "high",
+  "title": "New power figures disclosed (9 statements): update data/power.json",
+  "detail": "We continue to expect to bring online more than 1 GW of new capacity each year. · At scale, these sites represent more than 3 GW of capacity, which we expect to be delivered over the next 3 to 3.5 years. ... · COs letter Customers Capacity Cloud inancial update Other businesses aaity a rogreing a we hift to owned ite Laying the foundation for future growth • We continue to expect to have 5 GW of contracted power by year-end 2026."
+ },
+ {
   "id": "or-wow-2026-11-11",
   "date": "2026-11-12",
   "source": "openrouter",

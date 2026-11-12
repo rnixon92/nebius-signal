@@ -131,6 +131,21 @@
   "baseline": false,
   "latestEvidence": "2026-10-22"
  },
+ "afnb": {
+  "name": "AFNB",
+  "category": "Business services",
+  "use": "Tavily search for business and learning research",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-11-12",
+  "baseline": false,
+  "latestEvidence": "2026-11-12"
+ },
  "agenia": {
   "name": "Agenia",
   "category": "Workplace tools",
@@ -425,15 +440,19 @@
  "applied-compute": {
   "name": "Applied Compute",
   "category": "Data & infrastructure",
-  "use": "Nebius cloud infrastructure for AI",
+  "use": "Nebius AI Cloud and Token Factory for custom models",
   "services": [
-   "Nebius AI Cloud"
+   "Nebius AI Cloud",
+   "Nebius Token Factory"
   ],
-  "workloads": [],
+  "workloads": [
+   "Inference/serving",
+   "Model training"
+  ],
   "evidence": "named",
   "firstListedAt": "2026-10-26",
   "baseline": false,
-  "latestEvidence": "2026-10-26"
+  "latestEvidence": "2026-11-12"
  },
  "archelon": {
   "name": "Archelon",
@@ -896,6 +915,19 @@
   "firstListedAt": "2026-10-28",
   "baseline": false,
   "latestEvidence": "2026-10-28"
+ },
+ "bimcloud-saas": {
+  "name": "BIMcloud SaaS",
+  "category": "Robotics & industry",
+  "use": "Lists Tavily as a web-search subprocessor",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-11-12",
+  "baseline": false,
+  "latestEvidence": "2026-11-12"
  },
  "biophytis": {
   "name": "Biophytis",
@@ -1441,13 +1473,15 @@
  "cognition": {
   "name": "Cognition",
   "category": "Developer tools",
-  "use": "Named by Nebius as a customer.",
-  "services": [],
+  "use": "Cognition partners with Nebius AI Cloud for Vera Rubin clusters.",
+  "services": [
+   "Nebius AI Cloud"
+  ],
   "workloads": [],
-  "evidence": "named",
+  "evidence": "agreement",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-18"
+  "latestEvidence": "2026-11-12"
  },
  "cohere": {
   "name": "Cohere",
@@ -1743,20 +1777,21 @@
  "databricks": {
   "name": "Databricks",
   "category": "Data & infrastructure",
-  "use": "Named by Nebius and Tavily among Tavily users.",
+  "use": "Selected Nebius AI Cloud. Also named among Tavily users.",
   "services": [
+   "Nebius AI Cloud",
    "Tavily"
   ],
   "workloads": [],
   "evidence": "named",
   "firstListedAt": "2026-09-27",
   "baseline": false,
-  "latestEvidence": "2026-10-07"
+  "latestEvidence": "2026-11-12"
  },
  "datadog": {
   "name": "Datadog",
   "category": "Data & infrastructure",
-  "use": "Nebius AI services and H200 monitoring validation",
+  "use": "Nebius AI cloud deployment and infrastructure partnership",
   "services": [
    "Nebius AI Cloud"
   ],
@@ -1764,7 +1799,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-22",
   "baseline": false,
-  "latestEvidence": "2026-10-23"
+  "latestEvidence": "2026-11-12"
  },
  "datarobot": {
   "name": "DataRobot",
@@ -1854,6 +1889,21 @@
   "firstListedAt": "2026-11-10",
   "baseline": false,
   "latestEvidence": "2026-11-10"
+ },
+ "distil-labs": {
+  "name": "distil labs",
+  "category": "Data & infrastructure",
+  "use": "Post-training specialized models on Nebius AI Cloud",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-11-12",
+  "baseline": false,
+  "latestEvidence": "2026-11-12"
  },
  "dp-services": {
   "name": "dp/Services",
@@ -2625,6 +2675,21 @@
   "firstListedAt": "2026-09-27",
   "baseline": false,
   "latestEvidence": "2026-10-29"
+ },
+ "grantable": {
+  "name": "Grantable",
+  "category": "Workplace tools",
+  "use": "Uses Tavily to search public funder records",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-11-12",
+  "baseline": false,
+  "latestEvidence": "2026-11-11"
  },
  "grax": {
   "name": "GRAX",
@@ -5027,6 +5092,19 @@
   "baseline": false,
   "latestEvidence": "2026-10-20"
  },
+ "ortet": {
+  "name": "Ortet",
+  "category": "Health & biotech",
+  "use": "Initial Blackwell cluster with Nebius",
+  "services": [
+   "Nebius AI Cloud"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-11-12",
+  "baseline": false,
+  "latestEvidence": "2026-11-12"
+ },
  "outerbounds": {
   "name": "Outerbounds",
   "category": "Data & infrastructure",
@@ -6280,7 +6358,7 @@
  "sentientpro": {
   "name": "SentientPro",
   "category": "Workplace tools",
-  "use": "Tavily web search for research and industry news",
+  "use": "Tavily search for research and industry news features",
   "services": [
    "Tavily"
   ],
@@ -6574,9 +6652,10 @@
  "snowflake": {
   "name": "Snowflake",
   "category": "Data & infrastructure",
-  "use": "Used Tavily search in ArcticSwarm research.",
+  "use": "Used Tavily in ArcticSwarm. Signed a Nebius AI Cloud agreement.",
   "services": [
-   "Tavily"
+   "Tavily",
+   "Nebius AI Cloud"
   ],
   "workloads": [
    "Agentic search"
@@ -6584,7 +6663,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-15",
   "baseline": false,
-  "latestEvidence": "2026-10-15"
+  "latestEvidence": "2026-11-12"
  },
  "socialcrawl": {
   "name": "SocialCrawl",
@@ -7524,6 +7603,19 @@
   "baseline": false,
   "latestEvidence": "2026-11-03"
  },
+ "upsales": {
+  "name": "Upsales",
+  "category": "Workplace tools",
+  "use": "Nebius subprocessor for EU-only AI features",
+  "services": [
+   "Nebius Token Factory"
+  ],
+  "workloads": [],
+  "evidence": "named",
+  "firstListedAt": "2026-11-12",
+  "baseline": false,
+  "latestEvidence": "2026-11-12"
+ },
  "upstage-console": {
   "name": "Upstage Console",
   "category": "Data & infrastructure",
@@ -7638,7 +7730,7 @@
   "evidence": "named",
   "firstListedAt": "2026-10-26",
   "baseline": false,
-  "latestEvidence": "2026-11-11"
+  "latestEvidence": "2026-10-26"
  },
  "vllm-project": {
   "name": "vLLM project",

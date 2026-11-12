@@ -1,6 +1,23 @@
 {
- "updatedAt": "2026-11-12T01:03:33.244Z",
+ "updatedAt": "2026-11-12T15:38:30.117Z",
  "models": {
+  "deepseek-ai/DeepSeek-V4-Flash-0731": {
+   "id": "deepseek-ai/DeepSeek-V4-Flash-0731",
+   "name": "DeepSeek-V4-Flash-0731",
+   "vendor": "deepseek",
+   "type": "text2text",
+   "regions": [
+    "us-central1"
+   ],
+   "contextK": 1024,
+   "input": 0.14,
+   "output": 0.28,
+   "cacheRead": 0.01,
+   "quantization": "fp8",
+   "tokensPerSecond": 351,
+   "firstSeen": "2026-11-12",
+   "lastSeen": "2026-11-12"
+  },
   "deepseek-ai/DeepSeek-V4-Pro-0813": {
    "id": "deepseek-ai/DeepSeek-V4-Pro-0813",
    "name": "DeepSeek-V4-Pro-0813",
