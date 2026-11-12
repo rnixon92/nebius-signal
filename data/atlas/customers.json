@@ -855,7 +855,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-27",
   "baseline": false,
-  "latestEvidence": "2026-11-03"
+  "latestEvidence": "2026-11-12"
  },
  "bellboy-robotics": {
   "name": "Bellboy Robotics",
@@ -1725,7 +1725,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-29",
   "baseline": false,
-  "latestEvidence": "2026-10-29"
+  "latestEvidence": "2026-11-12"
  },
  "cursor": {
   "name": "Cursor",
@@ -1777,7 +1777,7 @@
  "databricks": {
   "name": "Databricks",
   "category": "Data & infrastructure",
-  "use": "Selected Nebius AI Cloud. Also named among Tavily users.",
+  "use": "Selected Nebius AI Cloud after a rigorous evaluation.",
   "services": [
    "Nebius AI Cloud",
    "Tavily"
@@ -2820,7 +2820,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-14",
   "baseline": false,
-  "latestEvidence": "2026-10-13"
+  "latestEvidence": "2026-11-12"
  },
  "heatseeker": {
   "name": "Heatseeker",
@@ -4165,7 +4165,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-11-09"
+  "latestEvidence": "2026-11-12"
  },
  "milestone-systems": {
   "name": "Milestone Systems",
@@ -4347,7 +4347,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-11-04"
+  "latestEvidence": "2026-11-12"
  },
  "mondrian-ai": {
   "name": "Mondrian AI",

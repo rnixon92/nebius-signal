@@ -159,6 +159,14 @@
   "firstSeen": "2026-10-24",
   "lastSeen": "2026-11-12"
  },
+ "thinkingmachines/inkling-2-small-20261107": {
+  "name": "thinkingmachines/inkling-2-small",
+  "input": 0.3,
+  "output": 1,
+  "cacheRead": 0.06,
+  "firstSeen": "2026-11-12",
+  "lastSeen": "2026-11-12"
+ },
  "z-ai/glm-5.1-20260406": {
   "name": "z-ai/glm-5.1",
   "input": 1.4,

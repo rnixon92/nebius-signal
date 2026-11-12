@@ -1,23 +1,6 @@
 {
- "updatedAt": "2026-11-12T15:38:30.117Z",
+ "updatedAt": "2026-11-12T23:54:06.108Z",
  "models": {
-  "deepseek-ai/DeepSeek-V4-Flash-0731": {
-   "id": "deepseek-ai/DeepSeek-V4-Flash-0731",
-   "name": "DeepSeek-V4-Flash-0731",
-   "vendor": "deepseek",
-   "type": "text2text",
-   "regions": [
-    "us-central1"
-   ],
-   "contextK": 1024,
-   "input": 0.14,
-   "output": 0.28,
-   "cacheRead": 0.01,
-   "quantization": "fp8",
-   "tokensPerSecond": 351,
-   "firstSeen": "2026-11-12",
-   "lastSeen": "2026-11-12"
-  },
   "deepseek-ai/DeepSeek-V4-Pro-0813": {
    "id": "deepseek-ai/DeepSeek-V4-Pro-0813",
    "name": "DeepSeek-V4-Pro-0813",
@@ -356,6 +339,23 @@
    "quantization": "fp4",
    "tokensPerSecond": 611,
    "firstSeen": "2026-10-25",
+   "lastSeen": "2026-11-12"
+  },
+  "thinkingmachines/Inkling-2-Small": {
+   "id": "thinkingmachines/Inkling-2-Small",
+   "name": "Inkling-2-Small",
+   "vendor": "thinkingmachines",
+   "type": "image2text",
+   "regions": [
+    "eu-west2"
+   ],
+   "contextK": 1048,
+   "input": 0.3,
+   "output": 1,
+   "cacheRead": 0.06,
+   "quantization": "fp4",
+   "tokensPerSecond": 130,
+   "firstSeen": "2026-11-12",
    "lastSeen": "2026-11-12"
   },
   "zai-org/GLM-5.2": {

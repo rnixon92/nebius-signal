@@ -1,5 +1,22 @@
 [
  {
+  "id": "tf-new-thinkingmachines/Inkling-2-Small",
+  "date": "2026-11-12",
+  "source": "tokenfactory",
+  "severity": "info",
+  "title": "Token Factory listed Inkling-2-Small",
+  "detail": "eu-west2 · input $0.3/M, cached $0.06/M, output $1/M",
+  "url": "https://tokenfactory.nebius.com/model-catalog.md"
+ },
+ {
+  "id": "sec-0001104659-26-126238",
+  "date": "2026-11-12",
+  "source": "sec",
+  "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926126238/nbis-ex99d1.htm",
+  "severity": "high",
+  "title": "New 6-K: Nebius offers one of the few global, at scale, multi-tenant clouds purpose-built for AI, with a significant presence in Europe, the U.S., and other geographies around the world."
+ },
+ {
   "id": "tf-new-deepseek-ai/DeepSeek-V4-Flash-0731",
   "date": "2026-11-12",
   "source": "tokenfactory",
