@@ -6824,7 +6824,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-31",
   "baseline": false,
-  "latestEvidence": "2026-11-04"
+  "latestEvidence": "2026-11-11"
  },
  "super-protocol": {
   "name": "Super Protocol",
@@ -8032,7 +8032,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-28",
   "baseline": false,
-  "latestEvidence": "2026-10-28"
+  "latestEvidence": "2026-11-11"
  },
  "zellwo": {
   "name": "Zellwo",

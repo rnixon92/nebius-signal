@@ -415,9 +415,9 @@
  },
  "deepseek/deepseek-v4-pro-20260423": {
   "name": "deepseek/deepseek-v4-pro",
-  "input": 0.887226,
-  "output": 1.774452,
-  "cacheRead": 0.073935
+  "input": 0.95526,
+  "output": 1.91052,
+  "cacheRead": 0.079605
  },
  "deepseek/deepseek-v4-pro-20260813": {
   "name": "deepseek/deepseek-v4-pro-0813",
@@ -427,9 +427,9 @@
  },
  "deepseek/deepseek-v4.1-flash-20260910": {
   "name": "deepseek/deepseek-v4.1-flash",
-  "input": 0.051,
-  "output": 0.567,
-  "cacheRead": 0.018
+  "input": 0.006,
+  "output": 0.5,
+  "cacheRead": 0.005
  },
  "deepseek/deepseek-v4.1-flash-20261017": {
   "name": "deepseek/deepseek-v4.1-flash-1017",
@@ -620,7 +620,7 @@
  "google/gemma-3-27b-it": {
   "name": "google/gemma-3-27b-it",
   "input": 0.08,
-  "output": 0.45,
+  "output": 0.35,
   "cacheRead": 0.04
  },
  "google/gemma-3-4b-it": {
@@ -662,7 +662,7 @@
  "ibm-granite/granite-4.2-8b-20260831": {
   "name": "ibm-granite/granite-4.2-8b",
   "input": 0.06,
-  "output": 0.25,
+  "output": 0.15,
   "cacheRead": 0.015
  },
  "inclusionai/ling-3.0-flash-20260723": {
@@ -865,9 +865,9 @@
  },
  "minimax/minimax-m3.1-flash-20261019": {
   "name": "minimax/minimax-m3.1-flash",
-  "input": 0.15,
-  "output": 0.6,
-  "cacheRead": 0.015
+  "input": 0.075,
+  "output": 0.3,
+  "cacheRead": 0.0075
  },
  "mistralai/codestral-2508": {
   "name": "mistralai/codestral-2508",
@@ -1363,9 +1363,9 @@
  },
  "openai/gpt-5.6-sol-20260709": {
   "name": "openai/gpt-5.6-sol",
-  "input": 4,
-  "output": 20,
-  "cacheRead": 0.4
+  "input": 4.4,
+  "output": 22,
+  "cacheRead": 0.44
  },
  "openai/gpt-5.6-sol-pro-20260709": {
   "name": "openai/gpt-5.6-sol-pro",
@@ -1747,9 +1747,9 @@
  },
  "qwen/qwen3.5-9b-20260310": {
   "name": "qwen/qwen3.5-9b",
-  "input": 0.17,
-  "output": 0.25,
-  "cacheRead": null
+  "input": 0.139,
+  "output": 0.204,
+  "cacheRead": 0.125
  },
  "qwen/qwen3.5-flash-20260224": {
   "name": "qwen/qwen3.5-flash-02-23",
@@ -2051,6 +2051,12 @@
   "output": 3.2,
   "cacheRead": 0.03
  },
+ "unbiased/pareto-26.10-preview-20260929": {
+  "name": "unbiased/pareto-26.10-preview",
+  "input": 0.8,
+  "output": 3.2,
+  "cacheRead": 0.03
+ },
  "unbiased/pareto-26.9-20260917": {
   "name": "unbiased/pareto-26.9",
   "input": 2.5,
@@ -2215,9 +2221,9 @@
  },
  "z-ai/glm-5.1-20260406": {
   "name": "z-ai/glm-5.1",
-  "input": 1.33,
-  "output": 4.18,
-  "cacheRead": 0.247
+  "input": 1.4,
+  "output": 4.4,
+  "cacheRead": 0.26
  },
  "z-ai/glm-5.2-20260616": {
   "name": "z-ai/glm-5.2",

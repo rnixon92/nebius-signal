@@ -4692,7 +4692,7 @@
  },
  "4767717101": {
   "title": "Data Center IT Technician",
-  "dept": "Product & Infrastructure › Infrastructure",
+  "dept": "Product & Infrastructure › Infrastructure › EMEA-DC IT Infrastructure › DC UK IT Support Group",
   "function": "Data center & power",
   "location": "London, United Kingdom",
   "region": "Europe & other",
@@ -6853,8 +6853,8 @@
  },
  "4829005101": {
   "title": "Advanced IT Technician",
-  "dept": "Product & Infrastructure › Infrastructure",
-  "function": "Engineering & product",
+  "dept": "Product & Infrastructure › Infrastructure › EMEA-DC IT Infrastructure › DC Mantsala IT Support Group",
+  "function": "Data center & power",
   "location": "Lappeenranta, Finland",
   "region": "Europe & other",
   "posted": "2026-05-15",
@@ -9016,7 +9016,9 @@
   "location": "Lappeenranta, Finland",
   "region": "Europe & other",
   "posted": "2026-07-08",
-  "firstSeen": "2026-07-21"
+  "firstSeen": "2026-07-21",
+  "closedAt": "2026-11-12",
+  "closedApprox": false
  },
  "4911725101": {
   "title": "Supply Chain Manager",
@@ -13615,9 +13617,7 @@
   "location": "Tel Aviv, Israel",
   "region": "Israel",
   "posted": "2026-11-10",
-  "firstSeen": "2026-11-10",
-  "closedAt": "2026-11-11",
-  "closedApprox": false
+  "firstSeen": "2026-11-10"
  },
  "5029678101": {
   "title": "GPU Compute Partnerships & Commercial Operations Manager",
@@ -13636,5 +13636,23 @@
   "region": "Europe & other",
   "posted": "2026-11-11",
   "firstSeen": "2026-11-11"
+ },
+ "5032228101": {
+  "title": "Corporate Operational Project Manager",
+  "dept": "Corporate",
+  "function": "G&A & other",
+  "location": "Amsterdam, Netherlands",
+  "region": "Europe & other",
+  "posted": "2026-11-11",
+  "firstSeen": "2026-11-12"
+ },
+ "5032268101": {
+  "title": "Financial Controller — APJ",
+  "dept": "Corporate › Finance",
+  "function": "G&A & other",
+  "location": "Hyderabad, India; Singapore",
+  "region": "Asia-Pacific",
+  "posted": "2026-11-11",
+  "firstSeen": "2026-11-12"
  }
 }
