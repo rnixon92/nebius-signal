@@ -2899,7 +2899,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-10-23",
   "baseline": false,
-  "latestEvidence": "2026-08-19"
+  "latestEvidence": "2026-11-13"
  },
  "higgsfield-ai": {
   "name": "Higgsfield AI",
@@ -3011,6 +3011,21 @@
   "firstListedAt": "2026-09-27",
   "baseline": false,
   "latestEvidence": "2026-10-14"
+ },
+ "ibm-research": {
+  "name": "IBM Research",
+  "category": "Science & research",
+  "use": "Tavily for Granite model post-training",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Model training"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-11-13",
+  "baseline": false,
+  "latestEvidence": "2026-11-12"
  },
  "iiit-delhi": {
   "name": "Indraprastha Institute of Information Technology, Delhi",
@@ -3160,7 +3175,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-11-02",
   "baseline": false,
-  "latestEvidence": "2026-11-02"
+  "latestEvidence": "2026-11-13"
  },
  "intergral": {
   "name": "Intergral",
@@ -4148,7 +4163,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-10-31"
+  "latestEvidence": "2026-11-13"
  },
  "microsoft": {
   "name": "Microsoft",
@@ -4165,7 +4180,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-11-12"
+  "latestEvidence": "2026-11-13"
  },
  "milestone-systems": {
   "name": "Milestone Systems",
@@ -4787,7 +4802,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-11-04"
+  "latestEvidence": "2026-11-13"
  },
  "novis": {
   "name": "Novis",
@@ -5178,7 +5193,7 @@
   "evidence": "agreement",
   "firstListedAt": "2026-10-08",
   "baseline": false,
-  "latestEvidence": "2026-10-27"
+  "latestEvidence": "2026-11-12"
  },
  "palatial": {
   "name": "Palatial",
@@ -7719,6 +7734,21 @@
   "baseline": false,
   "latestEvidence": "2026-09-27"
  },
+ "verdict": {
+  "name": "Verdict",
+  "category": "Finance",
+  "use": "Tavily search for investment-professional research",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-11-13",
+  "baseline": false,
+  "latestEvidence": "2026-11-13"
+ },
  "vessl-cloud": {
   "name": "VESSL Cloud",
   "category": "Data & infrastructure",
@@ -7731,6 +7761,21 @@
   "firstListedAt": "2026-10-26",
   "baseline": false,
   "latestEvidence": "2026-10-26"
+ },
+ "vibely": {
+  "name": "Vibely",
+  "category": "Developer tools",
+  "use": "Tavily web search during app builds",
+  "services": [
+   "Tavily"
+  ],
+  "workloads": [
+   "Agentic search"
+  ],
+  "evidence": "documented-use",
+  "firstListedAt": "2026-11-13",
+  "baseline": false,
+  "latestEvidence": "2026-11-13"
  },
  "vllm-project": {
   "name": "vLLM project",
@@ -7930,7 +7975,7 @@
   "evidence": "documented-use",
   "firstListedAt": "2026-09-24",
   "baseline": true,
-  "latestEvidence": "2026-09-24"
+  "latestEvidence": "2026-11-13"
  },
  "wincom-solutions": {
   "name": "WinCom Solutions",

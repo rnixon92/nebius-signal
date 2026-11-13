@@ -9596,7 +9596,9 @@
   "location": "Amsterdam, Netherlands; Remote - Europe",
   "region": "Europe & other",
   "posted": "2026-07-29",
-  "firstSeen": "2026-07-30"
+  "firstSeen": "2026-07-30",
+  "closedAt": "2026-11-13",
+  "closedApprox": false
  },
  "4933788101": {
   "title": "UK Immigration Specialist ",
@@ -13463,6 +13465,15 @@
   "posted": "2026-11-02",
   "firstSeen": "2026-11-03"
  },
+ "5024943101": {
+  "title": "Product Manager, Model Launches",
+  "dept": "New Products",
+  "function": "Engineering & product",
+  "location": "Remote - United States",
+  "region": "Americas",
+  "posted": "2026-11-13",
+  "firstSeen": "2026-11-13"
+ },
  "5024957101": {
   "title": "Internal Communications Specialist ",
   "dept": "Communications › Internal Comms",
@@ -13543,6 +13554,15 @@
   "region": "Americas",
   "posted": "2026-11-03",
   "firstSeen": "2026-11-03"
+ },
+ "5026803101": {
+  "title": "Data Center Technician Manager",
+  "dept": "Product & Infrastructure",
+  "function": "Data center & power",
+  "location": "United States",
+  "region": "Americas",
+  "posted": "2026-11-12",
+  "firstSeen": "2026-11-13"
  },
  "5027012101": {
   "title": "M&A Integration Manager ",

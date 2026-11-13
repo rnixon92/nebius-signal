@@ -1,5 +1,23 @@
 [
  {
+  "id": "or-wow-2026-11-12",
+  "date": "2026-11-13",
+  "source": "openrouter",
+  "severity": "medium",
+  "title": "Nebius OpenRouter tokens up 56% week over week",
+  "detail": "550.6B tokens in the 7 days to 2026-11-12 vs 353.1B the week before",
+  "url": "https://openrouter.ai/provider/nebius"
+ },
+ {
+  "id": "atlas-added-2026-11-13",
+  "date": "2026-11-13",
+  "source": "atlas",
+  "severity": "info",
+  "title": "3 new customers on Nebius Atlas",
+  "detail": "IBM Research, Verdict, Vibely",
+  "url": "https://nebiusatlas.com/"
+ },
+ {
   "id": "spot-cap-sku-e00otwkvc6gea6nmvvsda-2026-11-13",
   "date": "2026-11-13",
   "source": "gpu-spot",
